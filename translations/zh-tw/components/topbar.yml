@@ -6,7 +6,7 @@
 Title: 頂部列
 Description: 應用程式最上方的功能列。
 Intro: |
-    通常被擺放在應用程式的最上方，可與[格局劃分](./app-layout.html)一起使用。
+    通常被擺放在應用程式的最上方，可與[格局劃分](./layout.html)一起使用。
 
 #=======================================================
 # 設定
@@ -22,7 +22,7 @@ Type: Article
 
 Example:
     HTML: |
-        <div class="[[ts-app-topbar]]">
+        <div class="[[ts-topbar]]">
             <div class="start">
                 <div class="item is-text">應用程式</div>
             </div>
@@ -46,7 +46,7 @@ Definitions:
             Remove:
                 - <div class="ts-space"></div>
             HTML: |
-                <div class="ts-app-topbar">
+                <div class="ts-topbar">
                     <div class="[[start]]">
                         <button class="item">
                             <span class="{{ts-icon}} is-chevron-left-icon"></span>
@@ -71,7 +71,7 @@ Definitions:
             Remove:
                 - <div class="ts-space"></div>
             HTML: |
-                <div class="ts-app-topbar">
+                <div class="ts-topbar">
                     <div class="start">
                         <div class="item [[is-text]]">檢視 PDF 文件</div>
                     </div>
@@ -86,7 +86,7 @@ Definitions:
             Anchor: Content
             Description: 頂部列可以擺放額外的內容或選單。
             HTML: |
-                <div class="ts-app-topbar">
+                <div class="ts-topbar">
                     <div class="start">
                         <button class="item">
                             <span class="{{ts-icon}} is-arrow-left-icon"></span>
@@ -112,7 +112,7 @@ Definitions:
         #    Anchor: Composition Hamburger Menu
         #    Description: 透過[顯示切換](./collapse.html)來開、關進階選單。
         #    HTML: |
-        #        <div class="ts-app-topbar">
+        #        <div class="ts-topbar">
         #            <div class="start">
         #                <button class="item" [[data-collapse]]="((menu))">
         #                    <span class="{{ts-icon}} is-bars-icon"></span>
@@ -141,7 +141,7 @@ Definitions:
             Anchor: Composition Dropdown
             Description: 使用[彈出式選單](./dropdown.html)讓尾端的額外功能選單起作用。
             HTML: |
-                <div class="ts-app-topbar">
+                <div class="ts-topbar">
                     <div class="start">
                         <div class="item is-text">遊戲存檔修改器</div>
                     </div>

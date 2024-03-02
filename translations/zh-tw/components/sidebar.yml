@@ -22,7 +22,7 @@ Type: Article
 
 Example:
     HTML: |
-        <div class="[[ts-app-sidebar]]">
+        <div class="[[ts-sidebar]]">
             <div class="header">
                 啟動
             </div>
@@ -48,7 +48,7 @@ Definitions:
             Anchor: Header
             Description: 以標題文字區分每個功能區塊。
             HTML: |
-                <div class="ts-app-sidebar">
+                <div class="ts-sidebar">
                     <div class="[[header]]">
                         常用
                     </div>
@@ -73,7 +73,7 @@ Definitions:
             Anchor: Active
             Description: 啟用某個特定項目可以告訴使用者目前頁面屬於哪個功能。
             HTML: |
-                <div class="ts-app-sidebar">
+                <div class="ts-sidebar">
                     <div class="header">
                         管理
                     </div>
@@ -92,7 +92,7 @@ Definitions:
             Anchor: Disabled
             Description: 使項目呈現無法互動、點擊的模樣。若項目是一個超連結，則需套用 `.is-disabled` 樣式。
             HTML: |
-                <div class="ts-app-sidebar">
+                <div class="ts-sidebar">
                     <div class="header">
                         時間軸
                     </div>
@@ -114,7 +114,7 @@ Definitions:
             Anchor: Dense
             Description: 變更元件的內距，令元素之間看起來更密集。
             HTML: |
-                <div class="ts-app-sidebar [[is-dense]]">
+                <div class="ts-sidebar [[is-dense]]">
                     <div class="header">
                         系統
                     </div>

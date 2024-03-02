@@ -32,29 +32,6 @@ type ArticleDefinitionSectionOmitted struct {
 	Icons []string `yaml:"Icons"`
 }
 
-//func path(typ string) string {
-//	exe, err := os.Executable()
-//	if err != nil {
-//		log.Fatalln(err)
-//	}
-//	r := pathx.JoinDir(strings.Split(exe, "tocas/")[0], "tocas")
-//
-//	switch typ {
-//	case "src":
-//		return pathx.JoinDir(r, "src")
-//	case "icon":
-//		return pathx.Join(r, "src/icons.css")
-//	case "list":
-//		return pathx.Join(r, "list.yml")
-//	case "icons":
-//		return pathx.JoinDir(r, "src/fonts/icons")
-//	case "/":
-//		return r
-//	}
-//	log.Fatalf("無法找到 %s 路徑", typ)
-//	return ""
-//}
-
 func fontawesome(c *cli.Context) error {
 	// 初始化一個新的 GitHub 客戶端。
 	client := github.NewClient(nil)

@@ -99,9 +99,20 @@ type ArticleExampleSectionItem struct {
 type Meta struct {
 	UI                 MetaUI `yaml:"UI"`
 	GlobalInformations []MetaInformation
+	Versions           []MetaVersion     `yaml:"Versions"`
 	Components         []MetaComponent   `yaml:"Components"`
 	Contributors       []MetaContributor `yaml:"Contributors"`
 	Information        MetaInformation   `yaml:"Information"`
+}
+
+type MetaVersion struct {
+	Name  string            `yaml:"Name"`
+	Items []MetaVersionItem `yaml:"Items"`
+}
+
+type MetaVersionItem struct {
+	Name    string `yaml:"Name"`
+	Website string `yaml:"Website"`
 }
 
 type MetaComponent struct {
@@ -116,6 +127,7 @@ type MetaInformation struct {
 	Flag         string `yaml:"Flag"`
 	Version      string `yaml:"Version"`
 	Path         string `yaml:"Path"`
+	ShortVersion string `yaml:"ShortVersion"`
 }
 
 // MetaContributor

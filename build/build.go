@@ -184,7 +184,7 @@ func build(c *cli.Context) error {
 				}
 				// 如果這個元件的範例 HTML 不是空的話，就透過 Highlight JS 跟 Beautify 處理。
 				if article.Example.HTML != "" {
-					article.Example.FormattedHTML = tmplCode(trim(trim(article.Example.HTML, []string{}), article.Example.Remove))
+					article.Example.FormattedHTML = tmplCode(trim(article.Example.HTML, article.Example.Remove))
 				}
 				// 事後幫 HTML 加上 alt，避免出現在 FormattedHTML 裡。
 				article.Example.HTML = imgAlt(meta, article.Example.HTML)
@@ -192,7 +192,8 @@ func build(c *cli.Context) error {
 					for ji, j := range v.Sections {
 						// 如果這個段落有附加的 HTML 片段，就透過 Highlight JS 跟 Beautify 處理。
 						if j.AttachedHTML != "" {
-							article.Definitions[vi].Sections[ji].FormattedHTML = tmplCode(trim(trim(j.AttachedHTML, j.Remove), article.Remove))
+							v := strings.ReplaceAll(j.AttachedHTML, "{version}", meta.Information.Version)
+							article.Definitions[vi].Sections[ji].FormattedHTML = tmplCode(trim(trim(v, j.Remove), article.Remove))
 						}
 						// 如果這個段落有 HTML 標籤內容，就透過 Highlight JS 跟 Beautify 處理。
 						if j.HTML != "" {
@@ -251,19 +252,7 @@ func funcMap(meta Meta) template.FuncMap {
 		"anchor":      tmplAnchor,
 		"i18n":        tmplI18N(meta),
 		"translators": tmplTranslators(meta),
-		"isModule":    tmplIsModule,
-		"trimModule":  tmplTrimModule,
 	}
-}
-
-// tmplIsModule
-func tmplIsModule(s string) bool {
-	return strings.HasPrefix(s, "Module")
-}
-
-// tmplTrimModule
-func tmplTrimModule(s string) string {
-	return strings.TrimPrefix(s, "Module")
 }
 
 // highlight 會將純文字透過 Node 版本的 Highlight.js 來轉化為格式化後的螢光程式碼。
@@ -289,43 +278,6 @@ func highlight(s string) string {
 	os.WriteFile(Path("{docs}/build/caches/hljs/"+hash), output, 0777)
 	return string(output)
 }
-
-// cssminify 會將透過 css-minify 最小化 CSS 樣式。
-/*func cssminify(content string) string {
-	hash := fmt.Sprintf("%x", md5.Sum([]byte(content)))
-	b, err := os.ReadFile(Path("{docs}/build/caches/cssminify/" + hash))
-	if err != nil {
-		if os.IsNotExist(err) {
-			os.MkdirAll(Path("{docs}/build/caches/cssminify"), 0777)
-		} else {
-			log.Fatalln(err)
-		}
-	}
-	if len(b) != 0 {
-		return string(b)
-	}
-	tmp, err := os.Create(Path("{docs}/build/caches/cssminify/" + strconv.Itoa(int(time.Now().Unix()))))
-	if err != nil {
-		log.Fatalln(err)
-	}
-	if _, err := tmp.WriteString(content); err != nil {
-		log.Fatalln(err)
-	}
-	if err := tmp.Close(); err != nil {
-		log.Fatalln(err)
-	}
-	if err := exec.Command("css-minify", "-f", tmp.Name(), "-o", Path("{docs}/build/caches/cssminify")).Run(); err != nil {
-		log.Fatalln(err)
-	}
-	b, err = os.ReadFile(tmp.Name() + ".min.css")
-	if err != nil {
-		log.Fatalln(err)
-	}
-	if err := os.WriteFile(Path("{docs}/build/caches/cssminify"+hash), b, 0777); err != nil {
-		log.Fatalln(err)
-	}
-	return string(b)
-}*/
 
 // beautify 會透過 js-beautify 美化程式碼。
 func beautify(s string, typ string) string {
@@ -362,6 +314,7 @@ func beautify(s string, typ string) string {
 // asset
 func asset(s string, real bool) string {
 	if real {
+
 		switch s {
 		case "16:9":
 			s = "16-9.png"

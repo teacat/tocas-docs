@@ -7,7 +7,6 @@
         <link rel="stylesheet" href="./assets/style.css" />
         <link rel="stylesheet" href="./assets/highlight.css" />
         <link rel="stylesheet" href="./assets/tocas/tocas.min.css" />
-        <link rel="stylesheet" href="./assets/tocas/src/email.css" />
         <script src="./assets/tocas/tocas.min.js"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -51,11 +50,11 @@
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content="{{ .Title }} - Tocas UI" />
         <meta name="twitter:description" content="{{ .Description }}" />
-        <meta name="twitter:image" content="https://v4.tocas-ui.com/{{ .Meta.Information.Path }}/assets/images/og.png" />
+        <meta name="twitter:image" content="https://tocas-ui.com/{{ .Meta.Information.ShortVersion }}/{{ .Meta.Information.Path }}/assets/images/og.png" />
         <meta property="og:title" content="{{ .Title }} - Tocas UI" />
         <meta property="og:type" content="article" />
-        <meta property="og:image" content="https://v4.tocas-ui.com/{{ .Meta.Information.Path }}/assets/images/og.png" />
-        <meta property="og:url" content="https://v4.tocas-ui.com/{{ .Meta.Information.Path }}/{{ kebablize $.This }}.html" />
+        <meta property="og:image" content="https://tocas-ui.com/{{ .Meta.Information.ShortVersion }}/{{ .Meta.Information.Path }}/assets/images/og.png" />
+        <meta property="og:url" content="https://tocas-ui.com/{{ .Meta.Information.ShortVersion }}/{{ .Meta.Information.Path }}/{{ kebablize $.This }}.html" />
         <meta property="og:image:width" content="1280" />
         <meta property="og:image:height" content="720" />
         <meta property="og:description" content="{{ .Description }}" />
@@ -71,17 +70,27 @@
                         <a class="穹頂-導航列-項目" href="./examples.html">{{ "Navbar_Examples" | i18n }}</a>
                     </div>
                     <div class="穹頂-導航列-右側">
-                        <div class="穹頂-導航列-項目 穹頂-導航列-項目_語系的">
+                        <button class="穹頂-導航列-項目" data-dropdown="dropdown-language">
                             <span class="ts-flag is-{{ .Meta.Information.Flag }}-flag"></span> {{ .Meta.Information.Language }}
-                            <div class="穹頂-導航列-項目-語系下拉式選單">
-                                {{ range .Meta.GlobalInformations }}
-                                <a
-                                    class="穹頂-導航列-項目-語系下拉式選單-項目 {{ if eq $.Meta.Information.Path .Path }}穹頂-導航列-項目-語系下拉式選單-項目_啟用的{{end}}"
-                                    href="./../{{ .Path }}/{{ kebablize $.This }}.html"
-                                    ><span class="ts-flag is-{{ .Flag }}-flag"></span> {{ .Language }}</a
-                                >
-                                {{ end }}
-                            </div>
+                        </button>
+                        <div class="ts-dropdown" id="dropdown-language" data-position="bottom">
+                            {{ range .Meta.GlobalInformations }}
+                            <a class="item {{ if eq $.Meta.Information.Path .Path }}is-selected{{end}}" href="./../{{ .Path }}/{{ kebablize $.This }}.html">
+                                <span class="ts-flag is-{{ .Flag }}-flag"></span> {{ .Language }}
+                            </a>
+                            {{ end }}
+                        </div>
+                        <button class="穹頂-導航列-項目" data-dropdown="dropdown-version">
+                            <span class="ts-icon is-code-branch-icon"></span> v{{ .Meta.Information.ShortVersion }}
+                        </button>
+                        <div class="ts-dropdown" id="dropdown-version" data-position="bottom">
+                            {{ range .Meta.Versions }}
+                            <div class="header">{{ .Name }}</div>
+                            {{ range .Items }}
+                            <a class="item {{ if eq $.Meta.Information.Version .Name }}is-selected{{ end }}" {{ if .Website }}href="{{ .Website }}" {{ end }}>v{{ .Name }}</a>
+                            {{ end }}
+                            <div class="divider"></div>
+                            {{ end }}
                         </div>
                         <a class="穹頂-導航列-項目" href="https://github.com/teacat/tocas" target="_blank"><span class="ts-icon is-github-icon"></span> GitHub</a>
                     </div>
@@ -91,17 +100,15 @@
                         <a class="穹頂-導航列-項目 穹頂-導航列-項目_主要" href="./index.html">Tocas UI</a>
                     </div>
                     <div class="穹頂-導航列-右側">
-                        <div class="穹頂-導航列-項目 穹頂-導航列-項目_語系的">
+                        <button class="穹頂-導航列-項目" data-dropdown="dropdown-language-mobile">
                             <span class="ts-flag is-{{ .Meta.Information.Flag }}-flag"></span> {{ .Meta.Information.Language }}
-                            <div class="穹頂-導航列-項目-語系下拉式選單">
-                                {{ range .Meta.GlobalInformations }}
-                                <a
-                                    class="穹頂-導航列-項目-語系下拉式選單-項目 {{ if eq $.Meta.Information.Path .Path }}穹頂-導航列-項目-語系下拉式選單-項目_啟用的{{end}}"
-                                    href="./../{{ .Path }}/{{ kebablize $.This }}.html"
-                                    ><span class="ts-flag is-{{ .Flag }}-flag"></span> {{ .Language }}</a
-                                >
-                                {{ end }}
-                            </div>
+                        </button>
+                        <div class="ts-dropdown" id="dropdown-language-mobile" data-position="bottom">
+                            {{ range .Meta.GlobalInformations }}
+                            <a class="item {{ if eq $.Meta.Information.Path .Path }}is-selected{{end}}" href="./../{{ .Path }}/{{ kebablize $.This }}.html">
+                                <span class="ts-flag is-{{ .Flag }}-flag"></span> {{ .Language }}
+                            </a>
+                            {{ end }}
                         </div>
                         <button class="穹頂-導航列-項目 穹頂-導航列-項目_選單按鈕" aria-label='{{ "Article_Hamburger_Aria" | i18n }}'>
                             <span class="ts-icon is-bars-icon"></span>
@@ -124,9 +131,9 @@
                         <div class="主體-格局-導覽-標題">{{ index $.Meta.UI.ComponentsCategories .Name }}</div>
                         {{ range .Items }}
                         <a href="./{{ . | kebablize }}.html" class="主體-格局-導覽-項目{{ if eq $.This (kebablize .) }} 主體-格局-導覽-項目_啟用的{{ end }}">
-                            {{ index $.Meta.UI.Components . }} {{ if ne (index $.Meta.UI.Components .) (capitalize (trimModule .)) }}<span class="主體-格局-導覽-項目-英文"
-                                >{{ capitalize (trimModule .) }}</span
-                            >{{ end }}<!--{{ if isModule . }}<span class="主體-格局-導覽-項目-模組">JS</span>{{ end }}-->
+                            {{ index $.Meta.UI.Components . }} {{ if ne (index $.Meta.UI.Components .) (capitalize .) }}<span class="主體-格局-導覽-項目-英文"
+                                >{{ capitalize . }}</span
+                            >{{ end }}
                         </a>
                         {{ end }} {{ end }}
                         <div class="主體-格局-導覽-關閉按鈕">
@@ -280,14 +287,7 @@
 
                             <!-- 附帶程式片段 -->
                             {{ if .AttachedHTML }}
-                            <div class="主體-格局-內容-單個範例-附帶程式碼 {{ if .IsDownloadable }}主體-格局-內容-單個範例-附帶程式碼_可下載的{{ end }}">
-                                {{ .FormattedHTML }} {{ if .IsDownloadable }}<button
-                                    class="主體-格局-內容-單個範例-附帶程式碼-下載按鈕"
-                                    onclick="(function(event){download(event)})(event)"
-                                >
-                                    下載原始碼</button
-                                >{{ end }}
-                            </div>
+                            <div class="主體-格局-內容-單個範例-附帶程式碼">{{ .FormattedHTML }}</div>
                             {{ end }}
                             <!-- / 附帶程式片段 -->
 
@@ -452,17 +452,16 @@
                         <div class="ts-rail" data-rail>
                             <div class="content is-locked-top">
                                 {{ range .Definitions }}
-                        <div class="主體-格局-索引-標題">{{ .Title }}</div>
-                        <div class="主體-格局-索引-清單">
-                            {{ range .Sections }}
-                            <a class="主體-格局-索引-清單-項目" href="#{{ .Anchor | kebablize }}">
-                                {{ .Title }} <span class="主體-格局-索引-清單-項目-英文">{{ .HTML | marked }}</span>
-                            </a>
-                            {{ end }}
-                        </div>
-                        {{ end }}
-                        <button class="主體-格局-索引-回到頂部"><span class="ts-icon is-arrow-up-icon"></span> {{ "Article_ToTop" | i18n }}</button>
-
+                                <div class="主體-格局-索引-標題">{{ .Title }}</div>
+                                <div class="主體-格局-索引-清單">
+                                    {{ range .Sections }}
+                                    <a class="主體-格局-索引-清單-項目" href="#{{ .Anchor | kebablize }}">
+                                        {{ .Title }} <span class="主體-格局-索引-清單-項目-英文">{{ .HTML | marked }}</span>
+                                    </a>
+                                    {{ end }}
+                                </div>
+                                {{ end }}
+                                <button class="主體-格局-索引-回到頂部"><span class="ts-icon is-arrow-up-icon"></span> {{ "Article_ToTop" | i18n }}</button>
                             </div>
                         </div>
                     </div>

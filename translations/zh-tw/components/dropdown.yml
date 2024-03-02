@@ -107,7 +107,7 @@ Definitions:
 
           - Title: 停用的
             Anchor: Disabled
-            Description: 使項目呈現無法互動、點擊的模樣。若項目是一個超連結，則需套用 `.is-disabled` 樣式。
+            Description: 使項目呈現無法互動、點擊的模樣。若項目是超連結，則需套用 `.is-disabled` 樣式。
             Remove:
                 - <div class="ts-space is-huge"></div>
                 - <div class="ts-space is-big"></div>
@@ -566,9 +566,9 @@ Definitions:
           - Title: 頂部列選單
             Anchor: Composition Topbar
             Description: |
-                [頂部列](./app-topbar.html)的尾側可以擺放一個帶有進階功能的選單。
+                [頂部列](./topbar.html)的尾側可以擺放一個帶有進階功能的選單。
             HTML: |
-                <div class="{{ts-app-topbar}}">
+                <div class="{{ts-topbar}}">
                     <div class="start">
                         <div class="item is-text">應用程式</div>
                     </div>

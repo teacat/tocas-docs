@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="./assets/style.css" />
         <link rel="stylesheet" href="./assets/highlight.css" />
         <link rel="stylesheet" href="./assets/tocas/tocas.min.css" />
+        <script src="./assets/tocas/tocas.min.js"></script>
         <link rel="stylesheet" href="./assets/examples.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -50,11 +51,11 @@
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content="{{ .Title }} - Tocas UI" />
         <meta name="twitter:description" content="{{ .Description }}" />
-        <meta name="twitter:image" content="https://v4.tocas-ui.com/{{ .Meta.Information.Path }}/assets/images/og.png" />
+        <meta name="twitter:image" content="https://tocas-ui.com/{{ .Meta.Information.ShortVersion }}/{{ .Meta.Information.Path }}/assets/images/og.png" />
         <meta property="og:title" content="{{ .Title }} - Tocas UI" />
         <meta property="og:type" content="article" />
-        <meta property="og:image" content="https://v4.tocas-ui.com/{{ .Meta.Information.Path }}/assets/images/og.png" />
-        <meta property="og:url" content="https://v4.tocas-ui.com/{{ .Meta.Information.Path }}/examples.html" />
+        <meta property="og:image" content="https://tocas-ui.com/{{ .Meta.Information.ShortVersion }}/{{ .Meta.Information.Path }}/assets/images/og.png" />
+        <meta property="og:url" content="https://tocas-ui.com/{{ .Meta.Information.ShortVersion }}/{{ .Meta.Information.Path }}/examples.html" />
         <meta property="og:image:width" content="1280" />
         <meta property="og:image:height" content="720" />
         <meta property="og:description" content="{{ .Description }}" />
@@ -70,17 +71,27 @@
                         <a class="穹頂-導航列-項目" href="./examples.html">{{ "Navbar_Examples" | i18n }}</a>
                     </div>
                     <div class="穹頂-導航列-右側">
-                        <div class="穹頂-導航列-項目 穹頂-導航列-項目_語系的">
+                        <button class="穹頂-導航列-項目" data-dropdown="dropdown-language">
                             <span class="ts-flag is-{{ .Meta.Information.Flag }}-flag"></span> {{ .Meta.Information.Language }}
-                            <div class="穹頂-導航列-項目-語系下拉式選單">
-                                {{ range .Meta.GlobalInformations }}
-                                <a
-                                    class="穹頂-導航列-項目-語系下拉式選單-項目 {{ if eq $.Meta.Information.Path .Path }}穹頂-導航列-項目-語系下拉式選單-項目_啟用的{{end}}"
-                                    href="./../{{ .Path }}/examples.html"
-                                    ><span class="ts-flag is-{{ .Flag }}-flag"></span> {{ .Language }}</a
-                                >
-                                {{ end }}
-                            </div>
+                        </button>
+                        <div class="ts-dropdown" id="dropdown-language" data-position="bottom">
+                            {{ range .Meta.GlobalInformations }}
+                            <a class="item {{ if eq $.Meta.Information.Path .Path }}is-selected{{end}}" href="./../{{ .Path }}/{{ kebablize $.This }}.html">
+                                <span class="ts-flag is-{{ .Flag }}-flag"></span> {{ .Language }}
+                            </a>
+                            {{ end }}
+                        </div>
+                        <button class="穹頂-導航列-項目" data-dropdown="dropdown-version">
+                            <span class="ts-icon is-code-branch-icon"></span> v{{ .Meta.Information.ShortVersion }}
+                        </button>
+                        <div class="ts-dropdown" id="dropdown-version" data-position="bottom">
+                            {{ range .Meta.Versions }}
+                            <div class="header">{{ .Name }}</div>
+                            {{ range .Items }}
+                            <a class="item {{ if eq $.Meta.Information.Version .Name }}is-selected{{ end }}" href="{{ .Website }}">v{{ .Name }}</a>
+                            {{ end }}
+                            <div class="divider"></div>
+                            {{ end }}
                         </div>
                         <a class="穹頂-導航列-項目" href="https://github.com/teacat/tocas" target="_blank"><span class="ts-icon is-github-icon"></span> GitHub</a>
                     </div>
@@ -133,8 +144,8 @@
                                 target="_blank"
                                 class='文件內容-範例清單-段落-項目清單-項目 {{if eq .Link "#!"}}文件內容-範例清單-段落-項目清單-項目_停用的{{ end }}'
                             >
-                                <img src="./examples/screenshots/{{ .Image }}_dark.png" class="文件內容-範例清單-段落-項目清單-項目-螢幕截圖 has-light-hidden" />
-                                <img src="./examples/screenshots/{{ .Image }}_light.png" class="文件內容-範例清單-段落-項目清單-項目-螢幕截圖 has-dark-hidden" />
+                                <img src="./examples/screenshots/{{ .Image }}_dark.png" class="文件內容-範例清單-段落-項目清單-項目-螢幕截圖 has-hidden-light" />
+                                <img src="./examples/screenshots/{{ .Image }}_light.png" class="文件內容-範例清單-段落-項目清單-項目-螢幕截圖 has-hidden-dark" />
                                 <div class="文件內容-範例清單-段落-項目清單-項目-標題">{{ .Title }}</div>
                                 <div class="文件內容-範例清單-段落-項目清單-項目-說明">{{ .Description }}</div>
                                 <span class="ts-icon is-{{ .Symbol }}-icon 文件內容-範例清單-段落-項目清單-項目-圖示"></span>

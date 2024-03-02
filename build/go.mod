@@ -32,7 +32,9 @@ require (
 	github.com/mailru/easyjson v0.7.7 // indirect
 	github.com/nwaples/rardecode v1.1.3 // indirect
 	github.com/pierrec/lz4 v2.6.1+incompatible // indirect
+	github.com/tdewolff/minify/v2 v2.20.17 // indirect
 	github.com/tdewolff/parse v2.3.4+incompatible // indirect
+	github.com/tdewolff/parse/v2 v2.7.12 // indirect
 	github.com/tdewolff/test v1.0.11-0.20240106005702-7de5f7df4739 // indirect
 	github.com/ulikunitz/xz v0.5.11 // indirect
 	github.com/xi2/xz v0.0.0-20171230120015-48954b6210f8 // indirect

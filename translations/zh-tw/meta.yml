@@ -1,5 +1,5 @@
 #=======================================================
-# Translation Information
+# Information
 #=======================================================
 
 Information:
@@ -8,9 +8,10 @@ Information:
     Path: zh-tw
     Flag: taiwan
     Version: 5.0.0
+    ShortVersion: 5.0
 
 #=======================================================
-# Translation Contributors
+# Contributors
 #=======================================================
 
 Contributors:
@@ -20,6 +21,22 @@ Contributors:
       Website:
     - Name: Sea-n
       Website: https://www.sean.taipei/
+
+#=======================================================
+# Versions
+#=======================================================
+
+Versions:
+    - Name: 最新版本
+      Items:
+          - Name: 5.0.0
+            Website:
+    - Name: 過往版本
+      Items:
+          - Name: 4.2.5
+            Website: https://v4.tocas-ui.com/zh-tw/
+          - Name: 2.3.3
+            Website: https://v2.tocas-ui.com/
 
 #=======================================================
 #
@@ -123,8 +140,8 @@ UI:
         Index_LetsGo_Description: 複製下列 HTML 標籤至你的網頁，然後盡情地大鬧一番✨
         Index_LetsGo_Code: >
             <!-- 核心：Tocas UI -->
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocas/5.0.0/tocas.min.css">
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/tocas/5.0.0/tocas.min.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocas/{version}/tocas.min.css">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/tocas/{version}/tocas.min.js"></script>
 
 
             <!-- 字體：Noto Sans TC -->
@@ -178,17 +195,16 @@ UI:
         TranslatorSeperator: 、
 
     ComponentsCategories:
-        Introduction: 初入上手
+        Introduction: 從此開始
         Layout: 格局設計
         Form: 表單
-        Paragraphy: 文字與段落
+        Paragraphy: 內容與段落
         Feedback: 視覺回饋
         Media: 多媒體與圖示
         Data: 資料顯示
         Navigation: 導覽
         Application: 應用程式
-        Others: 其他
-        Module: JavaScript 模組
+        Interaction: 互動元素
 
     Components:
         GettingStarted: 開始使用
@@ -245,9 +261,7 @@ UI:
         Menu: 選單
         Pagination: 頁數導覽列
         Tab: 分頁籤
-        AppDialog: 對話視窗
         AppLayout: 格局劃分
-        AppModal: 模態視窗
         AppNavbar: 導航列
         AppSidebar: 側邊欄
         Comment: 留言
@@ -260,6 +274,12 @@ UI:
         Blankslate: 空白看板
         Popover: 彈出內容
         Collapse: 顯示切換
+        Navbar: 導航列
+        Topbar: 頂部列
+        Center: 中央區塊
+        Sidebar: 側邊欄
+        Layout: 格局劃分
+        Drawer: 邊緣抽屜
 
 Components:
     - Name: Introduction
@@ -270,12 +290,20 @@ Components:
           - Utilities
     - Name: Layout
       Items:
-          - Card
+          - Center
           - Container
-          - Content
           - Control
           - Grid
+          - Layout
           - Wrap
+    - Name: Paragraphy
+      Items:
+          - Card
+          - Content
+          - Divider
+          - Header
+          - Quote
+          - Text
     - Name: Form
       Items:
           - Button
@@ -287,26 +315,25 @@ Components:
           - Select
           - Selection
           - Switch
-    - Name: Paragraphy
-      Items:
-          - Divider
-          - Header
-          - Mask
-          - Quote
-          - Text
     - Name: Feedback
       Items:
           - Blankslate
-          #- Collapse
           - Gauge
           - Loading
-          - Modal
+          - Mask
           - Notice
           - Placeholder
-          - Popover
           - Steps
           - Progress
           - Snackbar
+    - Name: Interaction
+      Items:
+          - Accordion
+          - Collapse
+          - Dropdown
+          - Drawer
+          - Modal
+          - Popover
           - Tooltip
     - Name: Media
       Items:
@@ -318,7 +345,6 @@ Components:
           - Imageset
     - Name: Data
       Items:
-          - Accordion
           - Badge
           - Checklist
           - Chip
@@ -333,15 +359,11 @@ Components:
     - Name: Navigation
       Items:
           - Breadcrumb
-          - Dropdown
           - Menu
           - Pagination
           - Tab
     - Name: Application
       Items:
-          - AppCenter
-          - AppDrawer
-          - AppLayout
-          - AppNavbar
-          - AppSidebar
-          - AppTopbar
+          - Navbar
+          - Sidebar
+          - Topbar

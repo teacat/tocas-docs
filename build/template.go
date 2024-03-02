@@ -47,7 +47,7 @@ func tmplAnchor(s string) string {
 // tmplI18N 會取得語系的 i18n 字串。
 func tmplI18N(meta Meta) func(string) string {
 	return func(key string) string {
-		return meta.UI.Paragraph[key]
+		return strings.ReplaceAll(meta.UI.Paragraph[key], "{version}", meta.Information.Version)
 	}
 }
 

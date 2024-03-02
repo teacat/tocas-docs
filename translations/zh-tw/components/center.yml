@@ -22,7 +22,7 @@ Type: Article
 
 Example:
     HTML: |
-        <div class="[[ts-app-center]]">
+        <div class="[[ts-center]]">
             <div class="content">
                 <div class="{{ts-card}}">
                     <div class="{{ts-content}} is-padded">
@@ -41,7 +41,7 @@ Definitions:
             Description: |
                 中央區塊的主要內容擺放於內容區塊裡。
             AttachedHTML: |
-                <div class="ts-app-center">
+                <div class="ts-center">
                     <div class="[[content]]">
                         <!-- ... -->
                     </div>
@@ -55,7 +55,7 @@ Definitions:
             Description: 登入頁面會有置中的表單與輸入欄位。
             Since: 4.0.0
             HTML: |
-                <div class="[[ts-app-center]]">
+                <div class="[[ts-center]]">
                     <div class="content">
                         <div class="{{ts-card}}" style="width: 270px">
                             <div class="ts-content">
@@ -82,9 +82,9 @@ Definitions:
             Description: 某些應用程式啟動的時候，畫面中央會有建議行為或上次開啟的檔案路徑。
             Since: 4.0.0
             HTML: |
-                <div class="{{ts-app-layout}} is-vertical">
+                <div class="{{ts-layout}} is-vertical">
                     <div class="cell is-secondary" style="height: 300px">
-                        <div class="[[ts-app-center]]">
+                        <div class="[[ts-center]]">
                             <div class="content">
                                 <div class="{{ts-content}} is-rounded is-padded is-tertiary">
                                     <div class="{{ts-header}}">選擇初始專案…</div>
@@ -99,7 +99,7 @@ Definitions:
                     </div>
                     <div class="cell">
                         <div class="{{ts-content}}">
-                            <div class="{{ts-app-navbar}} is-fluid">
+                            <div class="{{ts-navbar}} is-fluid">
                                 <a class="item">
                                     <span class="{{ts-icon}} is-diagram-project-icon"></span>
                                     <div class="label">專案</div>

@@ -57,9 +57,9 @@ Definitions:
           - Title: 進階選單
             Anchor: Composition Topbar
             Description: |
-                在[頂部列](./app-topbar.html)擺放選單按鈕以顯示、隱藏進階選單。
+                在[頂部列](./topbar.html)擺放選單按鈕以顯示、隱藏進階選單。
             HTML: |
-                <div class="{{ts-app-topbar}}">
+                <div class="{{ts-topbar}}">
                     <div class="start">
                         <button class="item" [[data-collapse]]="((menu))">
                             <span class="{{ts-icon}} is-bars-icon"></span>

@@ -143,7 +143,7 @@ Definitions:
     - Title: JavaScript 功能
       Sections:
           - Title: 透過屬性標籤控制
-            Anchor: Dialog Trigger
+            Anchor: Popover Trigger
             Description: |
                 點擊帶有 [`[popovertarget]`](https://developer.mozilla.org/en-US/docs/Web/API/Popover_API/Using) 屬性的按鈕可以開、關對應 `[id]` 的彈出內容。
             HTML: |

@@ -6,9 +6,9 @@
 Title: 格局劃分
 Description: 切分應用程式畫面的格局外框。
 Intro: |
-    這個元件能用來規劃頁面的主要格局，通常用於單頁應用程式。格局劃分預設會以 `100%` 的寬高填滿父容器。
+    通常用於規劃單頁應用程式的主要格局，預設會以 `100%` 的寬高填滿父容器。
 
-    格局劃分經常與[側邊欄](./app-sidebar.html)和[導航列](./app-navbar.html)元件一同使用。
+    格局劃分經常與[側邊欄](./sidebar.html)和[導航列](./navbar.html)元件一同使用。
 
 #=======================================================
 # 設定
@@ -26,7 +26,7 @@ Relatives:
 
 Example:
     HTML: |
-        <div class="[[ts-app-layout]] is-horizontal">
+        <div class="[[ts-layout]] is-horizontal">
             <div class="cell">
                 <div class="{{ts-content}}">側邊欄</div>
             </div>
@@ -48,7 +48,7 @@ Definitions:
             Anchor: Horizontal
             Description: 格局內的子欄位會依照左右排列。
             HTML: |
-                <div class="ts-app-layout [[is-horizontal]]">
+                <div class="ts-layout [[is-horizontal]]">
                     <div class="cell is-fluid">
                         <div class="{{ts-content}}">左</div>
                     </div>
@@ -64,7 +64,7 @@ Definitions:
             Anchor: Vertical
             Description: 格局內的子欄位會依照上下排列。
             HTML: |
-                <div class="ts-app-layout [[is-vertical]]">
+                <div class="ts-layout [[is-vertical]]">
                     <div class="cell">
                         <div class="{{ts-content}}">上</div>
                     </div>
@@ -80,7 +80,7 @@ Definitions:
             Anchor: Fullscreen
             Description: 使格局劃分貼滿整個螢幕，而不只是父容器。
             HTML: |
-                <div class="ts-app-layout is-horizontal [[is-fullscreen]]">
+                <div class="ts-layout is-horizontal [[is-fullscreen]]">
                     <div class="cell">
                         <div class="{{ts-content}}">欄位</div>
                     </div>
@@ -93,7 +93,7 @@ Definitions:
             Anchor: Fluid Cell
             Description: 預設的欄位寬度會以其最小內容為主，若要某個欄位填滿剩餘空間則需使用此樣式。
             HTML: |
-                <div class="ts-app-layout is-horizontal">
+                <div class="ts-layout is-horizontal">
                     <div class="cell">
                         <div class="{{ts-content}}">一般欄位</div>
                     </div>
@@ -106,7 +106,7 @@ Definitions:
             Anchor: Horizontal Cell
             Description: 欄位裡的巢狀子欄位會依照左右排列。
             HTML: |
-                <div class="ts-app-layout is-vertical">
+                <div class="ts-layout is-vertical">
                     <div class="cell">
                         <div class="{{ts-content}}">上</div>
                     </div>
@@ -127,7 +127,7 @@ Definitions:
             Anchor: Vertical Cell
             Description: 欄位裡的巢狀子欄位會依照上下排列。
             HTML: |
-                <div class="ts-app-layout is-horizontal">
+                <div class="ts-layout is-horizontal">
                     <div class="cell">
                         <div class="{{ts-content}}">左</div>
                     </div>
@@ -148,7 +148,7 @@ Definitions:
             Anchor: Scrollable Cell
             Description: 使其中一個欄位在內容過長時可以上下捲動其捲軸。
             HTML: |
-                <div class="ts-app-layout is-vertical" style="height: 260px">
+                <div class="ts-layout is-vertical" style="height: 260px">
                     <div class="cell">
                         <div class="{{ts-content}}">頁頭</div>
                     </div>
@@ -169,7 +169,7 @@ Definitions:
             Anchor: Secondary Cell
             Description: 其次的背景色調令使用者知道這不是內容主體。
             HTML: |
-                <div class="ts-app-layout is-horizontal">
+                <div class="ts-layout is-horizontal">
                     <div class="cell [[is-secondary]]">
                         <div class="{{ts-content}}">側邊欄</div>
                     </div>
@@ -182,7 +182,7 @@ Definitions:
             Anchor: Tertiary Cell
             Description: 最不重要的背景色能夠使主體突出。
             HTML: |
-                <div class="ts-app-layout is-horizontal">
+                <div class="ts-layout is-horizontal">
                     <div class="cell">
                         <div class="{{ts-content}}">側邊欄</div>
                     </div>
@@ -202,9 +202,9 @@ Definitions:
       Sections:
           - Title: 單頁應用程式
             Anchor: Composition App
-            Description: 透過搭配[側邊欄](./app-sidebar.html)和[導航列](./app-navbar.html)就能夠很輕鬆地做出一個單頁應用程式的框架。
+            Description: 透過搭配[側邊欄](./sidebar.html)和[導航列](./navbar.html)就能夠很輕鬆地做出一個單頁應用程式的框架。
             HTML: |
-                <div class="{{ts-app-layout}} is-horizontal">
+                <div class="{{ts-layout}} is-horizontal">
                     <div class="cell" style="width: 245px">
                         <div class="{{ts-content}}">
                             <div class="{{ts-header}} is-big is-heavy">
@@ -214,7 +214,7 @@ Definitions:
                                 VERSION 1.3.4
                             </div>
                         </div>
-                        <div class="[[{{ts-app-sidebar}}]]">
+                        <div class="[[{{ts-sidebar}}]]">
                             <div class="header">
                                 啟動
                             </div>
@@ -247,7 +247,7 @@ Definitions:
                         <div class="cell is-fluid is-secondary"></div>
                         <div class="cell">
                             <div class="{{ts-content}}">
-                                <div class="[[{{ts-app-navbar}}]] is-fluid">
+                                <div class="[[{{ts-navbar}}]] is-fluid">
                                     <a class="item">
                                         <span class="{{ts-icon}} is-user-icon"></span>
                                         <div class="label">使用者</div>
