@@ -5,7 +5,6 @@
 
 Title: 內容遮罩
 Description: 可淡化背景並強調特定主體的遮蔽元素。
-Intro: 遮罩預設會覆蓋整個父容器，但也可以指定只遮蔽某半部份。
 
 #=======================================================
 # 設定
@@ -24,7 +23,7 @@ Example:
     HTML: |
         <div class="{{ts-image}}">
             <img src="!-16:9-!" style="max-width: 450px">
-            <div class="[[ts-mask]] {{has-flex-center}}">
+            <div class="[[ts-mask]] is-centered">
                 <div class="{{ts-loading}} is-large" style="color: #FFF"></div>
             </div>
         </div>
@@ -35,7 +34,7 @@ Definitions:
       Sections:
           - Title: 半部的
             Anchor: Partially
-            Description: 遮罩可以處於父容器的上、中、下部份。
+            Description: 遮罩可以只覆蓋父容器的上、中、下部份。
             Remove:
                 - <div class="ts-space"></div>
             HTML: |
@@ -66,6 +65,19 @@ Definitions:
                             <div class="{{ts-header}}">置底遮罩</div>
                             然後這裡會放一段文字。
                         </div>
+                    </div>
+                </div>
+
+          - Title: 內容置中的
+            Anchor: Centered
+            Description: 置中遮罩的內容，適合用來擺放[讀取狀態](./loading.html)。
+            Remove:
+                - <div class="ts-space"></div>
+            HTML: |
+                <div class="{{ts-image}}">
+                    <img src="!-16:9-!" style="max-width: 450px">
+                    <div class="ts-mask [[is-centered]]">
+                        <div class="{{ts-loading}} is-large" style="color: #FFF"></div>
                     </div>
                 </div>
 

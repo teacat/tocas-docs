@@ -17,7 +17,7 @@ Grid: true
 #=======================================================
 
 Definitions:
-    - Title: 定義
+    - Title: 裝置定義
       Sections:
           - Title: 中斷點尺寸
             Anchor: Default Breakpoints
@@ -197,7 +197,7 @@ Definitions:
           - Title: 在 … 時隱藏/顯示元素
             Anchor: Responsive Visibility
             Description: |
-                在指定中斷點套用 `has-hidden` [輔助樣式](./utilities.html)就能隱藏元素，善用此功能可以讓元素只在特定裝置顯示。
+                在指定中斷點套用 [`.has-hidden`](./utilities.html) 就能隱藏元素，善用此功能可以讓元素只在特定裝置顯示。
             HTML: |
                 <!-- 在 tablet, desktop, widescreen 隱藏 -->
                 <!-- 等同於：只在 mobile 顯示 -->

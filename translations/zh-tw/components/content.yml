@@ -28,6 +28,7 @@ Example:
             <div class="[[ts-content]] is-dense {{has-dark}}">
                 透過 CSS Variable 取代 Sass 並設計一個臻至完美的動態色彩主題系統
             </div>
+            <div class="{{ts-divider}}"></div>
             <div class="[[ts-content]]">
                 色彩佈景系統在前端實作時常常都是個不小的問題，直到 Sass、Less 這種預先處理器的出現才解決了不少的麻煩，因為你能夠透過短短幾行程式碼就讓程式幫你自動處理顏色的部份，而這方面的教學在國外網站中也不是少數。
             </div>
@@ -44,7 +45,7 @@ Definitions:
                 <div class="{{ts-card}}">
                     <div class="ts-content is-dense">蘋果</div>
                     <div class="ts-content [[is-active]] is-dense">菠羅</div>
-                    <div class="ts-content is-dense">拔鳳梨</div>
+                    <div class="ts-content is-dense">麵包</div>
                 </div>
 
           - Title: 停用的
@@ -62,7 +63,7 @@ Definitions:
       Sections:
           - Title: 次要的
             Anchor: Secondary
-            Description: 淡化的內容區塊會以較不顯眼的方式出現，通常用以呈現某個資訊概要或頁腳。
+            Description: 淡化的內容區塊會以較不顯眼的方式出現，通常用以呈現次要資訊。
             HTML: |
                 <div class="{{ts-card}}">
                     <div class="ts-content">
@@ -76,11 +77,15 @@ Definitions:
 
           - Title: 非主要的
             Anchor: Tertiary
-            Description: 更沈重的語氣讓使用者知道這不是內容主體，但可以作為概要矚目看板。
+            Description: 較為沈重的內容區塊，通常不會作為主要內容。
             HTML: |
                 <div class="ts-content [[is-tertiary]] is-vertically-very-padded">
-                    <div class="{{ts-header}} is-large is-center-aligned">這個故事結束了</div>
-                    <div class="{{ts-text}} is-secondary is-center-aligned">所有人不是死亡就是離開了，也許有一天會有人替這個遺跡找到新的用處。</div>
+                    <div class="{{ts-header}} is-large is-center-aligned">
+                        這個故事結束了
+                    </div>
+                    <div class="{{ts-text}} is-secondary is-center-aligned">
+                        所有人不是死亡就是離開了，也許有一天會有人替這個遺跡找到新的用處。
+                    </div>
                 </div>
 
           - Title: 文字對齊
@@ -92,7 +97,7 @@ Definitions:
                         置起始位置
                     </div>
                     <div class="ts-content [[is-center-aligned]]">
-                        我置中
+                        置中間位置
                     </div>
                     <div class="ts-content [[is-end-aligned]]">
                         置結束位置
@@ -205,11 +210,11 @@ Definitions:
                     </div>
                 </div>
 
-          - Title: 概要看板
-            Anchor: Composition Slate
-            Description: 在某些頁面的開頭上方可以擺放概要看板用來指示使用者目前頁面的用途。
-            HTML: |
-                <div class="[[ts-content]] is-tertiary is-vertically-very-padded">
-                    <div class="{{ts-header}} is-large">建立使用者</div>
-                    <div class="{{ts-text}} is-secondary">初始化一個使用者資料並授予登入權限。</div>
-                </div>
+        #  - Title: 概要看板
+        #    Anchor: Composition Slate
+        #    Description: 在某些頁面的開頭上方可以擺放概要看板用來指示使用者目前頁面的用途。
+        #    HTML: |
+        #        <div class="[[ts-content]] is-tertiary is-vertically-very-padded">
+        #            <div class="{{ts-header}} is-large">建立使用者</div>
+        #            <div class="{{ts-text}} is-secondary">初始化一個使用者資料並授予登入權限。</div>
+        #        </div>

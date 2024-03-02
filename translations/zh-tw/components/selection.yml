@@ -49,7 +49,7 @@ Definitions:
       Sections:
           - Title: 停用的
             Anchor: Disabled
-            Description: 有 `[disabled]` 屬性的項目切換會無法互動；若要停用整個項目切換，必須停用裡面的所有項目。
+            Description: 使項目選擇呈現無法互動、點擊的模樣。
             HTML: |
                 <div class="ts-selection">
                     <label class="item">
@@ -90,7 +90,7 @@ Definitions:
 
           - Title: 流動的
             Anchor: Fluid
-            Description: 項目切換的寬度可以是最大的直至與父容器相等。
+            Description: 項目切換的寬度可以填滿父容器。
             HTML: |
                 <div class="ts-selection [[is-fluid]]">
                     <label class="item">

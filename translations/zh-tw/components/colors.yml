@@ -448,177 +448,177 @@ Definitions:
                     </div>
                 </div>
 
-    - Title: 進階功能
-      Sections:
-          - Title: 領銜主色
-            Anchor: Accent Color
-            Remove:
-                - <div class="ts-space"></div>
-            Description: |
-                領銜主色能讓在頁面中突顯個人化的主色調，同個頁面裡可以有多個領銜主色，取決於容器繼承的設定為何。
-
-                <div class="ts-space is-large"></div>
-
-                <div class="ts-grid is-middle-aligned">
-                    <div class="column">
-                        <div class="ts-text is-label">選擇顏色</div>
-                        <div class="ts-space"></div>
-                        <div class="ts-wrap is-compact">
-                            <button style="width: 32px; height: 32px; background: #ff4141; border-radius: 100em" onclick="(function() { document.querySelector('html').style.setProperty('--ts-accent-color', '#ff4141')})()"></button>
-                            <button style="width: 32px; height: 32px; background: #ff3edc; border-radius: 100em" onclick="(function() { document.querySelector('html').style.setProperty('--ts-accent-color', '#ff3edc')})()"></button>
-                            <button style="width: 32px; height: 32px; background: #5c79ff; border-radius: 100em" onclick="(function() { document.querySelector('html').style.setProperty('--ts-accent-color', '#5c79ff')})()"></button>
-                            <button style="width: 32px; height: 32px; background: #1BA187; border-radius: 100em" onclick="(function() { document.querySelector('html').style.setProperty('--ts-accent-color', '#1BA187')})()"></button>
-                            <button style="width: 32px; height: 32px; background: #4eac47; border-radius: 100em" onclick="(function() { document.querySelector('html').style.setProperty('--ts-accent-color', '#4eac47')})()"></button>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="ts-text is-label">自訂顏色</div>
-                        <div class="ts-space"></div>
-                        <div class="ts-input">
-                            <input type="color" oninput="(function(event) { document.querySelector('html').style.setProperty('--ts-accent-color', event.target.value)})(event)">
-                        </div>
-                    </div>
-                </div>
-                <div class="ts-space is-large"></div>
-
-                <div class="ts-card @container">
-                    <div class="ts-content is-padded">
-                        <div class="ts-grid is-relaxed @[629px]-:is-1-columns @[630px]+:is-2-columns">
-                            <!-- 左側 -->
-                            <div class="column">
-                                <!-- 圖片卡片 -->
-                                <div class="ts-header">卡片與標題</div>
-                                <div class="ts-space"></div>
-                                <div class="ts-card is-top-indicated is-accent">
-                                    <div class="ts-content">
-                                        <div class="ts-header is-heavy is-accent">好吃的千層蛋糕！</div>
-                                    </div>
-                                </div>
-                                <!-- / 圖片卡片 -->
-                                <div class="ts-space is-large"></div>
-                                <!-- 按鈕 -->
-                                <div class="ts-header">按鈕</div>
-                                <div class="ts-space is-small"></div>
-                                <div class="ts-grid is-3-columns">
-                                    <div class="column">
-                                        <button class="ts-button is-fluid is-accent">送出</button>
-                                    </div>
-                                    <div class="column">
-                                        <button class="ts-button is-fluid is-secondary is-accent">取消</button>
-                                    </div>
-                                    <div class="column">
-                                        <button class="ts-button is-fluid is-outlined is-accent">刪除</button>
-                                    </div>
-                                </div>
-                                <!-- / 按鈕 -->
-                                <div class="ts-space is-large"></div>
-                                <!-- 標籤 -->
-                                <div class="ts-header">標籤</div>
-                                <div class="ts-space is-small"></div>
-                                <div class="ts-wrap is-compact">
-                                    <span class="ts-chip is-accent">
-                                        <div class="ts-image">
-                                            <img src="./assets/images/user.png">
-                                        </div>
-                                        飛鳥湊
-                                    </span>
-                                    <span class="ts-chip is-accent">
-                                        <div class="ts-image">
-                                            <img src="./assets/images/user3.png">
-                                        </div>
-                                        西園寺風莉
-                                    </span>
-                                </div>
-                                <div class="ts-space"></div>
-                                <div class="ts-wrap is-compact">
-                                    <span class="ts-badge is-accent">8,964</span>
-                                    <span class="ts-badge is-secondary is-accent">16,226</span>
-                                    <span class="ts-badge is-outlined is-accent">320</span>
-                                </div>
-                                <!-- / 標籤 -->
-                            </div>
-                            <!-- / 左側 -->
-
-                            <!-- 中間 -->
-                            <div class="column">
-                                <!-- 統計數據 -->
-                                <div class="ts-header">統計數據</div>
-                                <div class="ts-space"></div>
-                                <div class="ts-grid is-2-columns">
-                                    <div class="column">
-                                        <div class="ts-statistic is-accent">
-                                            <div class="value">42,689</div>
-                                            <div class="comparison is-increased">32</div>
-                                        </div>
-                                    </div>
-                                    <div class="column">
-                                        <div class="ts-statistic is-accent">
-                                            <div class="value">8,652</div>
-                                            <div class="comparison is-increased">351</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- / 統計數據 -->
-                                <div class="ts-space is-large"></div>
-                                <!-- 導航列 -->
-                                <div class="ts-header">核取方塊</div>
-                                <div class="ts-space"></div>
-                                <div class="ts-wrap">
-                                    <label class="ts-checkbox is-accent">
-                                        <input type="checkbox" checked/>
-                                        已售出
-                                    </label>
-                                    <label class="ts-checkbox is-accent">
-                                        <input type="checkbox"checked/>
-                                        未販售
-                                    </label>
-                                    <label class="ts-checkbox is-accent">
-                                        <input type="checkbox" checked/>
-                                        空投限定
-                                    </label>
-                                </div>
-                                <!-- / 導航列 -->
-                                <div class="ts-space is-large"></div>
-                                <!-- 項目切換 -->
-                                <div class="ts-header">項目切換</div>
-                                <div class="ts-space is-small"></div>
-                                <div class="ts-selection is-fluid is-circular is-accent">
-                                    <label class="item">
-                                        <input type="radio" name="performance" checked="">
-                                        <div class="text">省電</div>
-                                    </label>
-                                    <label class="item">
-                                        <input type="radio" name="performance">
-                                        <div class="text">平衡</div>
-                                    </label>
-                                    <label class="item">
-                                        <input type="radio" name="performance">
-                                        <div class="text">高效能</div>
-                                    </label>
-                                </div>
-                                <!-- / 項目切換 -->
-                            </div>
-                            <!-- / 中間 -->
-                        </div>
-                    </div>
-                </div>
-
-                <style>
-                html {
-                    --ts-accent-color: #1BA187;
-                }
-                </style>
-
-                <div class="ts-space is-large"></div>
-
-
-            AttachedHTML: |
-                <style type="text/css">
-                html {
-                    /** 設定領銜主色 */
-                    --ts-accent-color: #00ADEA;
-                }
-                </style>
-
-                <!-- 在元件上啟用領銜主色 -->
-                <div class="{{ts-button}} [[is-accent]]"></div>
+    #- Title: 進階功能
+    #  Sections:
+    #      - Title: 領銜主色
+    #        Anchor: Accent Color
+    #        Remove:
+    #            - <div class="ts-space"></div>
+    #        Description: |
+    #            領銜主色能讓在頁面中突顯個人化的主色調。同個頁面裡可以有多個領銜主色，取決於容器繼承的設定為何。
+#
+    #            <div class="ts-space is-large"></div>
+#
+    #            <div class="ts-grid is-middle-aligned">
+    #                <div class="column">
+    #                    <div class="ts-text is-label">選擇顏色</div>
+    #                    <div class="ts-space"></div>
+    #                    <div class="ts-wrap is-compact">
+    #                        <button style="width: 32px; height: 32px; background: #ff4141; border-radius: 100em" onclick="(function() { document.querySelector('html').style.setProperty('--ts-accent-color', '#ff4141')})()"></button>
+    #                        <button style="width: 32px; height: 32px; background: #ff3edc; border-radius: 100em" onclick="(function() { document.querySelector('html').style.setProperty('--ts-accent-color', '#ff3edc')})()"></button>
+    #                        <button style="width: 32px; height: 32px; background: #5c79ff; border-radius: 100em" onclick="(function() { document.querySelector('html').style.setProperty('--ts-accent-color', '#5c79ff')})()"></button>
+    #                        <button style="width: 32px; height: 32px; background: #1BA187; border-radius: 100em" onclick="(function() { document.querySelector('html').style.setProperty('--ts-accent-color', '#1BA187')})()"></button>
+    #                        <button style="width: 32px; height: 32px; background: #4eac47; border-radius: 100em" onclick="(function() { document.querySelector('html').style.setProperty('--ts-accent-color', '#4eac47')})()"></button>
+    #                    </div>
+    #                </div>
+    #                <div class="column">
+    #                    <div class="ts-text is-label">自訂顏色</div>
+    #                    <div class="ts-space"></div>
+    #                    <div class="ts-input">
+    #                        <input type="color" oninput="(function(event) { document.querySelector('html').style.setProperty('--ts-accent-color', event.target.value)})(event)">
+    #                    </div>
+    #                </div>
+    #            </div>
+    #            <div class="ts-space is-large"></div>
+#
+    #            <div class="ts-card @container">
+    #                <div class="ts-content is-padded">
+    #                    <div class="ts-grid is-relaxed @[629px]-:is-1-columns @[630px]+:is-2-columns">
+    #                        <!-- 左側 -->
+    #                        <div class="column">
+    #                            <!-- 圖片卡片 -->
+    #                            <div class="ts-header">卡片與標題</div>
+    #                            <div class="ts-space"></div>
+    #                            <div class="ts-card is-top-indicated is-accent">
+    #                                <div class="ts-content">
+    #                                    <div class="ts-header is-heavy is-accent">好吃的千層蛋糕！</div>
+    #                                </div>
+    #                            </div>
+    #                            <!-- / 圖片卡片 -->
+    #                            <div class="ts-space is-large"></div>
+    #                            <!-- 按鈕 -->
+    #                            <div class="ts-header">按鈕</div>
+    #                            <div class="ts-space is-small"></div>
+    #                            <div class="ts-grid is-3-columns">
+    #                                <div class="column">
+    #                                    <button class="ts-button is-fluid is-accent">送出</button>
+    #                                </div>
+    #                                <div class="column">
+    #                                    <button class="ts-button is-fluid is-secondary is-accent">取消</button>
+    #                                </div>
+    #                                <div class="column">
+    #                                    <button class="ts-button is-fluid is-outlined is-accent">刪除</button>
+    #                                </div>
+    #                            </div>
+    #                            <!-- / 按鈕 -->
+    #                            <div class="ts-space is-large"></div>
+    #                            <!-- 標籤 -->
+    #                            <div class="ts-header">標籤</div>
+    #                            <div class="ts-space is-small"></div>
+    #                            <div class="ts-wrap is-compact">
+    #                                <span class="ts-chip is-accent">
+    #                                    <div class="ts-image">
+    #                                        <img src="./assets/images/user.png">
+    #                                    </div>
+    #                                    飛鳥湊
+    #                                </span>
+    #                                <span class="ts-chip is-accent">
+    #                                    <div class="ts-image">
+    #                                        <img src="./assets/images/user3.png">
+    #                                    </div>
+    #                                    西園寺風莉
+    #                                </span>
+    #                            </div>
+    #                            <div class="ts-space"></div>
+    #                            <div class="ts-wrap is-compact">
+    #                                <span class="ts-badge is-accent">8,964</span>
+    #                                <span class="ts-badge is-secondary is-accent">16,226</span>
+    #                                <span class="ts-badge is-outlined is-accent">320</span>
+    #                            </div>
+    #                            <!-- / 標籤 -->
+    #                        </div>
+    #                        <!-- / 左側 -->
+#
+    #                        <!-- 中間 -->
+    #                        <div class="column">
+    #                            <!-- 統計數據 -->
+    #                            <div class="ts-header">統計數據</div>
+    #                            <div class="ts-space"></div>
+    #                            <div class="ts-grid is-2-columns">
+    #                                <div class="column">
+    #                                    <div class="ts-statistic is-accent">
+    #                                        <div class="value">42,689</div>
+    #                                        <div class="comparison is-increased">32</div>
+    #                                    </div>
+    #                                </div>
+    #                                <div class="column">
+    #                                    <div class="ts-statistic is-accent">
+    #                                        <div class="value">8,652</div>
+    #                                        <div class="comparison is-increased">351</div>
+    #                                    </div>
+    #                                </div>
+    #                            </div>
+    #                            <!-- / 統計數據 -->
+    #                            <div class="ts-space is-large"></div>
+    #                            <!-- 導航列 -->
+    #                            <div class="ts-header">核取方塊</div>
+    #                            <div class="ts-space"></div>
+    #                            <div class="ts-wrap">
+    #                                <label class="ts-checkbox is-accent">
+    #                                    <input type="checkbox" checked/>
+    #                                    已售出
+    #                                </label>
+    #                                <label class="ts-checkbox is-accent">
+    #                                    <input type="checkbox"checked/>
+    #                                    未販售
+    #                                </label>
+    #                                <label class="ts-checkbox is-accent">
+    #                                    <input type="checkbox" checked/>
+    #                                    空投限定
+    #                                </label>
+    #                            </div>
+    #                            <!-- / 導航列 -->
+    #                            <div class="ts-space is-large"></div>
+    #                            <!-- 項目切換 -->
+    #                            <div class="ts-header">項目切換</div>
+    #                            <div class="ts-space is-small"></div>
+    #                            <div class="ts-selection is-fluid is-circular is-accent">
+    #                                <label class="item">
+    #                                    <input type="radio" name="performance" checked="">
+    #                                    <div class="text">省電</div>
+    #                                </label>
+    #                                <label class="item">
+    #                                    <input type="radio" name="performance">
+    #                                    <div class="text">平衡</div>
+    #                                </label>
+    #                                <label class="item">
+    #                                    <input type="radio" name="performance">
+    #                                    <div class="text">高效能</div>
+    #                                </label>
+    #                            </div>
+    #                            <!-- / 項目切換 -->
+    #                        </div>
+    #                        <!-- / 中間 -->
+    #                    </div>
+    #                </div>
+    #            </div>
+#
+    #            <style>
+    #            html {
+    #                --ts-accent-color: #1BA187;
+    #            }
+    #            </style>
+#
+    #            <div class="ts-space is-large"></div>
+#
+#
+    #        AttachedHTML: |
+    #            <style type="text/css">
+    #            html {
+    #                /** 設定領銜主色 */
+    #                --ts-accent-color: #00ADEA;
+    #            }
+    #            </style>
+#
+    #            <!-- 在元件上啟用領銜主色 -->
+    #            <div class="{{ts-button}} [[is-accent]]"></div>

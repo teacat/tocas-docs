@@ -5,8 +5,6 @@
 
 Title: 選單
 Description: 可供使用者點擊的功能項目清單。
-Intro: |
-    選單會上下垂直排列項目，如果希望建立左右水平的導覽選單則可以考慮使用[分頁籤](./tab.html)。
 
 #=======================================================
 # 設定
@@ -60,7 +58,7 @@ Definitions:
 
           - Title: 停用的
             Anchor: Disabled
-            Description: 有 `[disabled]` 屬性的項目會無法互動，若項目是一個 `<a>` 超連結，則需套用 `.is-disabled` 樣式。
+            Description: 使項目呈現無法互動、點擊的模樣。若項目是一個超連結，則需套用 `.is-disabled` 樣式。
             HTML: |
                 <div class="ts-menu">
                     <a class="item">無線通訊</a>
@@ -70,7 +68,7 @@ Definitions:
 
           - Title: 已選擇
             Anchor: Selected
-            Description: 可用於下拉式選單用來表示某個項目被選中，可能是某個欄位目前的內容值。
+            Description: 表示某個項目被選中。
             HTML: |
                 <div class="ts-menu">
                     <a class="item">蘋果</a>
@@ -117,7 +115,7 @@ Definitions:
                         <a class="item is-active">
                             <span class="{{ts-icon}} is-inbox-icon"></span>
                             收件匣
-                            <div class="[[{{ts-badge}}]] {{has-inverted}}is-small is-dense">3</div>
+                            <div class="[[{{ts-badge}}]] {{has-inverted}} is-small is-dense">3</div>
                         </a>
                         <a class="item">
                             <span class="{{ts-icon}} is-bookmark-icon"></span>
@@ -336,17 +334,17 @@ Definitions:
                     <div class="{{ts-divider}}"></div>
                     <div class="ts-menu is-start-icon">
                         <a class="item">
-                            <span class="ts-icon is-house-icon"></span> 首頁
+                            <span class="{{ts-icon}} is-house-icon"></span> 首頁
                         </a>
                         <a class="item is-active">
-                            <span class="ts-icon is-gauge-high-icon"></span> 儀表板
+                            <span class="{{ts-icon}} is-gauge-high-icon"></span> 儀表板
                         </a>
                         <a class="item">
-                            <span class="ts-icon is-table-icon"></span> 訂單
+                            <span class="{{ts-icon}} is-table-icon"></span> 訂單
                         </a>
                         <div class="{{ts-divider}}"></div>
                         <a class="item">
-                            <span class="ts-icon is-gears-icon"></span> 設定
+                            <span class="{{ts-icon}} is-gears-icon"></span> 設定
                         </a>
                     </div>
                 </div>

@@ -93,21 +93,21 @@ Definitions:
                     </div>
                 </div>
 
-          - Title: 區塊圓角的
-            Anchor: Block Rounded
-            Description: 以圓角修飾組合區塊的角落，但圖片之間的角落仍保持直角。
-            HTML: |
-                <div class="ts-imageset is-3-images [[is-block-rounded]]">
-                    <div class="item">
-                        <img src="!-16:9-!">
-                    </div>
-                    <div class="item">
-                        <img src="!-16:9-!">
-                    </div>
-                    <div class="item">
-                        <img src="!-16:9-!">
-                    </div>
-                </div>
+          #- Title: 區塊圓角的
+          #  Anchor: Block Rounded
+          #  Description: 以圓角修飾組合區塊的角落，但圖片之間的角落仍保持直角。
+          #  HTML: |
+          #      <div class="ts-imageset is-3-images [[is-block-rounded]]">
+          #          <div class="item">
+          #              <img src="!-16:9-!">
+          #          </div>
+          #          <div class="item">
+          #              <img src="!-16:9-!">
+          #          </div>
+          #          <div class="item">
+          #              <img src="!-16:9-!">
+          #          </div>
+          #      </div>
 
           - Title: 密度
             Anchor: Density

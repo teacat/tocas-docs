@@ -62,7 +62,7 @@ Definitions:
 
           - Title: 內距增高的
             Anchor: Padded
-            Description: 如果在內容欄位裡擺放純文字或是某些較矮的元素則需要特別增高內距以避免其高度無法與標籤對齊。
+            Description: 若內容欄位有文字或是較矮的元素，則需要增高內距才能與一旁的標籤對齊。
             HTML: |
                 <div class="ts-control">
                     <div class="label">電子信箱地址</div>
@@ -82,7 +82,7 @@ Definitions:
 
           - Title: 流動的
             Anchor: Fluid
-            Description: 內容欄位預設的寬度不是全寬，如果希望填滿父容器寬度則可以使用此樣式。
+            Description: 讓內容欄位的寬度填滿父容器。
             HTML: |
                 <div class="ts-control">
                     <div class="label">暱稱</div>
@@ -119,7 +119,7 @@ Definitions:
 
           - Title: 層疊的
             Anchor: Stacked
-            Description: 這會讓原本左右欄位的設計變成上下層疊，適合搭配「[響應式設計](./responsive.html)」功能在行動裝置上讓所有欄位層疊起來。
+            Description: 讓標籤與內容改為上下層疊，適合搭配[響應式設計](./responsive.html)在行動裝置上層疊所有欄位。
             HTML: |
                 <div class="ts-control [[is-stacked]]">
                     <div class="label">使用者名稱</div>

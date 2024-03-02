@@ -102,7 +102,7 @@ Definitions:
 
           - Title: 長寬比的
             Anchor: Aspect Ratios
-            Description: 將圖片以 `1:1`、`4:3`、`16:9` 的方式呈現，通常建議與「裁切的」樣式一同使用以避免圖片拉伸。
+            Description: 將圖片以 `1:1`、`4:3`、`16:9` 的方式呈現，超出的部份會被裁切。
             Remove:
                 - <div class="ts-space"></div>
             HTML: |

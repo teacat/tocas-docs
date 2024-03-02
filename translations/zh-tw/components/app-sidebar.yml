@@ -6,7 +6,7 @@
 Title: 側邊欄
 Description: 提供應用程式一個側邊的功能導覽或資訊呈現區塊。
 Intro: |
-    側邊欄預設是流動寬度，會填滿父容器的寬度。建議將其擺放至一個有固定寬度的區塊。
+    側邊欄預設填滿父容器的寬度，建議將其擺放至有固定寬度的區塊。
 
 #=======================================================
 # 設定
@@ -90,7 +90,7 @@ Definitions:
 
           - Title: 停用的
             Anchor: Disabled
-            Description: 有 `[disabled]` 屬性的項目會無法互動，若項目是一個 `<a>` 超連結，則需套用 `.is-disabled` 樣式。
+            Description: 使項目呈現無法互動、點擊的模樣。若項目是一個超連結，則需套用 `.is-disabled` 樣式。
             HTML: |
                 <div class="ts-app-sidebar">
                     <div class="header">

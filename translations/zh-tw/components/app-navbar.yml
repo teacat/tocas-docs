@@ -88,7 +88,7 @@ Definitions:
 
           - Title: 停用的
             Anchor: Disabled
-            Description: 有 `[disabled]` 屬性的項目會無法互動，若項目是一個 `<a>` 超連結，則需套用 `.is-disabled` 樣式。
+            Description: 有 `[disabled]` 屬性的項目會無法互動，若項目是一個超連結，則需套用 `.is-disabled` 樣式。
             HTML: |
                 <div class="ts-app-navbar is-indicated">
                     <a class="item">

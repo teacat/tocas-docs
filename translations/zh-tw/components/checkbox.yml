@@ -35,7 +35,7 @@ Definitions:
       Sections:
           - Title: 停用的
             Anchor: Disabled
-            Description: 有 `[disabled]` 屬性的核取方塊會無法互動。
+            Description: 使核取方塊呈現無法互動、點擊的模樣。
             HTML: |
                 <label class="ts-checkbox">
                     <input type="checkbox" [[disabled]]/>
@@ -44,7 +44,7 @@ Definitions:
 
           - Title: 不定的
             Anchor: Indeterminate
-            Description: 不定狀態會令其勾選狀態表現地模稜兩可，例如：核取方塊群組裡有沒被勾選的子項目。
+            Description: 讓勾選狀態呈現模稜兩可，表示群組裡同時有已勾選、未被勾選的項目。
             HTML: |
                 <label class="ts-checkbox [[is-indeterminate]]">
                     <input type="checkbox" checked/>

@@ -31,7 +31,7 @@ Definitions:
       Sections:
           - Title: 停用的
             Anchor: Disabled
-            Description: 有 `[disabled]` 屬性的檔案欄位會無法互動。
+            Description: 使檔案欄位呈現無法互動、點擊的模樣。
             HTML: |
                 <div class="ts-file">
                     <input type="file" [[disabled]]/>

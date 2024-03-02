@@ -42,7 +42,7 @@ Definitions:
       Sections:
           - Title: 停用的
             Anchor: Disabled
-            Description: 有 `[disabled]` 屬性的輸入欄位會無法互動。
+            Description: 使輸入欄位呈現無法互動、點擊的模樣。
             HTML: |
                 <div class="ts-input">
                     <input type="text" placeholder="使用者帳號" [[disabled]]>
@@ -86,7 +86,7 @@ Definitions:
 
           - Title: 可調整尺寸的
             Anchor: Resizable
-            Description: 用於多行輸入欄位可以讓使用者拖曳角落邊緣重新調整輸入欄位的高度。
+            Description: 使用者可以拖曳角落邊緣，調整多行輸入欄位的高度。
             HTML: |
                 <div class="ts-input [[is-resizable]]">
                     <textarea placeholder="回覆此訊息…"></textarea>
@@ -116,7 +116,7 @@ Definitions:
 
           - Title: 負面的
             Anchor: Negative
-            Description: 表示輸入欄位出錯可能不符合表單驗證規則。
+            Description: 表示輸入欄位出錯，不符合表單驗證規則。
             HTML: |
                 <div class="ts-input [[is-negative]]">
                     <input type="text" placeholder="電子信箱地址">
@@ -124,7 +124,7 @@ Definitions:
 
           - Title: 側邊圖示
             Anchor: Side Icon
-            Description: 欄位的左右兩側可以擺放輔助圖示令使用者更加一目瞭然其用途。
+            Description: 欄位的左右兩側可以擺放輔助圖示。
             Remove:
                 - <div class="ts-space"></div>
             HTML: |

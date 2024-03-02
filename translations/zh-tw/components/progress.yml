@@ -5,8 +5,6 @@
 
 Title: 進度條
 Description: 呈現物件的讀取以及就緒狀態指示。
-Intro: |
-    此元件使用 CSS 變數 `--value` 來控制進度列的百分比進度。
 
 #=======================================================
 # 設定
@@ -168,7 +166,9 @@ Definitions:
                                 <div class="text">70%</div>
                             </div>
                         </div>
-                        <div class="{{ts-text}} is-description {{has-top-spaced-small}}">共 4 張照片，3 張正在處理中。</div>
+                        <div class="{{ts-text}} is-description {{has-top-spaced-small}}">
+                            共 4 張照片，3 張正在處理中。
+                        </div>
                     </div>
                     <div class="{{ts-divider}}"></div>
                     <div class="{{ts-content}}">
@@ -189,8 +189,7 @@ Definitions:
                                         </button>
                                     </div>
                                 </div>
-                                <div class="ts-space"></div>
-                                <div class="{{ts-input}}">
+                                <div class="{{ts-input}} {{has-top-spaced}}">
                                     <textarea placeholder="描述一下這張照片…"></textarea>
                                 </div>
                             </div>

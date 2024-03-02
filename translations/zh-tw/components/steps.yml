@@ -165,7 +165,7 @@ Definitions:
 
           - Title: 處理中
             Anchor: Processing
-            Description: 表示這個資源正在指定的步驟處理中。與「啟用中」不同的是這更像表明現在的背景進度已經執行到哪一步。
+            Description: 表示目前背景正在處理的步驟。
             HTML: |
                 <div class="ts-steps">
                     <a class="item is-completed">

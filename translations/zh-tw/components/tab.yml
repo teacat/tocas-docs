@@ -65,7 +65,7 @@ Definitions:
 
           - Title: 停用的
             Anchor: Disabled
-            Description: 有 `[disabled]` 屬性的項目會無法互動，若項目是一個 `<a>` 超連結，則需套用 `.is-disabled` 樣式。
+            Description: 使項目呈現無法互動、點擊的模樣。若項目是一個超連結，則需套用 `.is-disabled` 樣式。
             HTML: |
                 <div class="ts-tab">
                     <a class="item">
@@ -217,7 +217,7 @@ Definitions:
 
           - Title: 寬鬆的
             Anchor: Relaxed
-            Description: 使項目之間看起來更寬鬆不擁擠。
+            Description: 使項目之間看起來更寬鬆。
             Remove:
                 - <div class="ts-space"></div>
             HTML: |
@@ -334,17 +334,17 @@ Definitions:
     - Title: JavaScript 功能
       Description:
       Sections:
-          - Title: 以按鈕控制分頁
+          - Title: 透過屬性標籤控制
             Anchor: Module Tab
             Description: |
-                點擊帶有 `[data-tab]` 屬性的按鈕可以顯示、隱藏對應 `[id]` 的元素。
+                點擊帶有 `[data-tab]` 屬性的按鈕可以切換對應 `[id]` 的元素。
             HTML: |
                 <div class="{{ts-card}}">
                     <div class="ts-tab">
-                        <button class="item" [[data-tab]]="tab-transfer">
+                        <button class="item" [[data-tab]]="((tab-transfer))">
                             轉帳
                         </button>
-                        <button class="item is-active" [[data-tab]]="tab-activities">
+                        <button class="item is-active" [[data-tab]]="((tab-activities))">
                             紀錄
                         </button>
                         <button class="item" disabled>
@@ -352,10 +352,10 @@ Definitions:
                         </button>
                     </div>
                     <div class="{{ts-divider}}"></div>
-                    <div class="{{ts-content}}" id="tab-transfer">
+                    <div class="{{ts-content}}" id="((tab-transfer))">
                         這是「轉帳」頁面。
                     </div>
-                    <div class="{{ts-content}}" id="tab-activities">
+                    <div class="{{ts-content}}" id="((tab-activities))">
                         這是「紀錄」頁面。
                     </div>
                 </div>

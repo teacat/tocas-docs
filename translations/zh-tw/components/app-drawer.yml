@@ -5,8 +5,6 @@
 
 Title: 邊緣抽屜
 Description: 從側邊或底部彈出的延伸內容空間。
-Intro: |
-    邊緣抽屜使用 [`<dialog>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog) HTML 標籤。
 
 #=======================================================
 # 設定
@@ -303,36 +301,32 @@ Definitions:
                 </dialog>
 
     - Title: JavaScript 功能
-      Description: |
-          邊緣抽屜被關閉時，會觸發 [`close`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/close_event) 事件。若使用者透過 `Esc` 鍵或是點擊抽屜外的區域關閉邊緣抽屜，則會觸發額外的 [`cancel`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/cancel_event) 事件。
       Sections:
-          - Title: 以按鈕控制抽屜
+          - Title: 透過屬性標籤控制
             Anchor: Dialog Trigger
             Description: |
                 點擊帶有 `[data-dialog]` 屬性的按鈕可以開、關對應 `[id]` 的邊緣抽屜。
             HTML: |
-                <button class="{{ts-button}}" [[data-dialog]]="drawer">
+                <button class="{{ts-button}}" [[data-dialog]]="((drawer))">
                     打開範例抽屜 ✨
                 </button>
-                <dialog class="ts-app-drawer is-end is-small" id="drawer">
+                <dialog class="ts-app-drawer is-end" id="((drawer))">
                     <div class="content">
                         <div class="{{ts-content}}">
                             <div class="{{ts-header}}">抽屜標題</div>
                             <p>點擊關閉按鈕或是灰色區域來關閉抽屜。</p>
-                        </div>
-                        <div class="{{ts-content}}">
-                            <button class="{{ts-button}}" [[data-dialog]]="drawer">關閉</button>
+                            <button class="{{ts-button}}" [[data-dialog]]="((drawer))">關閉</button>
                         </div>
                     </div>
                 </dialog>
 
-          - Title: 以 JavaScript 控制抽屜
+          - Title: 透過程式控制
             Anchor: Js Trigger
             Description: |
-                透過瀏覽器原生的 [`.showModal()`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/showModal) 函式打開抽屜，若抽屜本身已有 `[open]` 屬性，這個函式將不會有任何效果。開啟之後可以呼叫 [`.close()`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/close) 函式關閉抽屜。
+                透過瀏覽器原生的 [`.showModal()`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/showModal) 函式打開抽屜，若抽屜本身已有 `[open]` 屬性，這個函式將不會有任何效果。抽屜被關閉時，會觸發 [`close`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/close_event) 或 [`cancel`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/cancel_event) 事件。
             AttachedHTML: |
                 // 打開 #drawer 邊緣抽屜。
-                document.getElementById('drawer').showModal();
+                document.querySelector('#drawer').showModal();
 
                 // 關閉 #drawer 邊緣抽屜。
-                document.getElementById('drawer').close();
+                document.querySelector('#drawer').close();

@@ -33,7 +33,7 @@ Definitions:
       Sections:
           - Title: 文字的
             Anchor: Text
-            Description: 大頭貼在沒有圖片的時候也能夠用使用者的名稱縮寫替代。
+            Description: 在沒有圖片的時候以使用者名稱縮寫替代。
             HTML: |
                 <span class="ts-avatar [[is-text]]">
                     YO

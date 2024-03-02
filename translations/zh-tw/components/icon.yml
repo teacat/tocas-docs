@@ -5,7 +5,7 @@
 
 Title: 圖示
 Description: 輔助文字與動作的視覺圖示。
-Intro: Tocas UI 的圖示來自 [Font Awesome 6.x](https://fontawesome.com/)，其名稱可以直接沿用至元件中（用法為：`is-名稱-icon`）。
+Intro: Tocas UI 的圖示來自 [Font Awesome](https://fontawesome.com/)，使用方式為 `is-名稱-icon`。
 
 #=======================================================
 # 設定
@@ -84,6 +84,20 @@ Definitions:
                 <span class="ts-icon [[is-large]] is-house-icon"></span>
                 <span class="ts-icon [[is-big]] is-house-icon"></span>
                 <span class="ts-icon [[is-huge]] is-house-icon"></span>
+
+          - Title: 垂直翻轉的
+            Anchor: Flipped
+            Description: 圖示可以上下垂直翻轉。
+            HTML: |
+                <span class="ts-icon [[is-horizontally-flipped]] is-plane-departure-icon"></span>
+                <span class="ts-icon [[is-vertically-flipped]] is-plane-departure-icon"></span>
+
+          - Title: 水平旋轉的
+            Anchor: Rotated
+            Description: 圖示可以左右水平旋轉。
+            HTML: |
+                <span class="ts-icon [[is-clockwise-rotated]] is-cloud-icon"></span>
+                <span class="ts-icon [[is-counterclockwise-rotated]] is-cloud-icon"></span>
 
           - Title: 圓形的
             Anchor: Circular

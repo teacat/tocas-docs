@@ -31,14 +31,14 @@ Definitions:
       Sections:
           - Title: 停用的
             Anchor: Disabled
-            Description: 有 `[disabled]` 屬性的按鈕會無法互動，若按鈕是一個 `<a>` 超連結，則需套用 `.is-disabled` 樣式。
+            Description: 使按鈕呈現無法互動、點擊的模樣。若按鈕是一個超連結，則需套用 `.is-disabled` 樣式。
             HTML: |
                 <button class="ts-button" [[disabled]]>停用按鈕</button>
                 <a class="ts-button [[is-disabled]]">停用連結</a>
 
           - Title: 讀取中
             Anchor: Loading
-            Description: 顯示旋轉的讀取圖案表示資料正在送出，使用需加上 `[disabled]` 屬性以停用按鈕互動功能。
+            Description: 顯示旋轉的讀取圖案，使用需加上 `[disabled]` 屬性以停用按鈕互動功能。
             HTML: |
                 <button class="ts-button [[is-loading]]" disabled>載入中</button>
 
@@ -47,7 +47,7 @@ Definitions:
       Sections:
           - Title: 次要的
             Anchor: Secondary
-            Description: 較不重要的次級動作按鈕，通常可作為是備用方案。
+            Description: 較不重要的次級動作按鈕。
             HTML: |
                 <button class="ts-button [[is-secondary]]">取消</button>
 
@@ -72,7 +72,7 @@ Definitions:
 
           - Title: 圓角的
             Anchor: Circular
-            Description: 圓融的圓角能夠呈現出一個行動號召按鈕。
+            Description: 以圓角呈現出一個行動號召按鈕。
             HTML: |
                 <button class="ts-button [[is-circular]]">購買</button>
                 <button class="ts-button [[is-circular]] is-outlined">下載最新版本</button>
@@ -90,7 +90,7 @@ Definitions:
 
           - Title: 側邊圖示的
             Anchor: Side Icon
-            Description: 按鈕的文字旁邊可以帶有輔助圖示，圖示會與文字一同置中對齊。
+            Description: 按鈕的文字旁邊可以帶有輔助圖示。
             HTML: |
                 <button class="ts-button [[is-start-icon]]">
                     <span class="{{ts-icon}} is-cart-plus-icon"></span>
@@ -103,7 +103,7 @@ Definitions:
 
           - Title: 圖示標籤的
             Anchor: Labeled Icon
-            Description: 以標籤方式展現的圖示一定會呈現在按鈕的最起始或是尾端位置，對於會上下垂直排列圖示按鈕而言，這更能令視覺上有平衡感。
+            Description: 以標籤方式展現的圖示會呈現在按鈕的起始或尾端位置。
             Remove:
                 - <div class="ts-space"></div>
             HTML: |
@@ -130,7 +130,7 @@ Definitions:
 
           - Title: 寬度
             Anchor: Width
-            Description: 變更按鈕的內距寬度。如果按鈕內的文字過短，可以試著令其變寬。反之亦然，也能讓按鈕變短。
+            Description: 變更按鈕的內距寬度。
             HTML: |
                 <button class="ts-button [[is-short]] is-outlined">短的</button>
                 <button class="ts-button is-outlined">預設</button>
@@ -202,7 +202,7 @@ Definitions:
 
           - Title: 功能按鈕
             Anchor: Composition Split Button
-            Description: 使用按鈕群組能讓主要按鈕旁邊擺放一個輔助功能按鈕，這通常被稱作為 Split Button（分割按鈕）。輔助按鈕可以使用[彈出式選單](./dropdown.html)。
+            Description: 在主要按鈕旁邊擺放會開啟[彈出式選單](./dropdown.html)的輔助按鈕。
             HTML: |
                 <div class="[[ts-buttons]]">
                     <button class="ts-button">開始遊戲</button>

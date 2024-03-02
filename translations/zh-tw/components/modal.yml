@@ -5,8 +5,6 @@
 
 Title: 快顯視窗
 Description: 跳出強制性互動的視窗提供附屬資訊或是詢問。
-Intro: |
-    快顯視窗使用 [`<dialog>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog) HTML 標籤。
 
 #=======================================================
 # 設定
@@ -271,36 +269,39 @@ Definitions:
                 </dialog>
 
     - Title: JavaScript 功能
-      Description: |
-          快顯視窗被關閉時，會觸發 [`close`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/close_event) 事件。若使用者透過 `Esc` 鍵或是點擊視窗外的區域關閉快顯視窗，則會觸發額外的 [`cancel`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/cancel_event) 事件。
       Sections:
-          - Title: 以按鈕控制視窗
+          - Title: 透過屬性標籤控制
             Anchor: Dialog Trigger
             Description: |
                 點擊帶有 `[data-dialog]` 屬性的按鈕可以開、關對應 `[id]` 的快顯視窗。
             HTML: |
-                <button class="{{ts-button}}" [[data-dialog]]="modal">
+                <button class="{{ts-button}}" [[data-dialog]]="((modal))">
                     打開範例視窗 ✨
                 </button>
-                <dialog class="ts-modal" id="modal">
+                <dialog class="ts-modal" id="((modal))">
                     <div class="content">
                         <div class="{{ts-content}}">
                             <div class="{{ts-header}}">視窗標題</div>
+                        </div>
+                        <div class="{{ts-divider}}"></div>
+                        <div class="{{ts-content}}">
                             <p>點擊關閉按鈕或是灰色區域來關閉視窗。</p>
                         </div>
-                        <div class="{{ts-content}}">
-                            <button class="{{ts-button}}" [[data-dialog]]="modal">關閉</button>
+                        <div class="{{ts-divider}}"></div>
+                        <div class="{{ts-content}} is-tertiary is-end-aligned">
+                            <button class="{{ts-button}}" [[data-dialog]]="((modal))">關閉</button>
                         </div>
                     </div>
                 </dialog>
 
-          - Title: 以 JavaScript 控制視窗
+          - Title: 透過程式控制
             Anchor: Js Trigger
             Description: |
-                透過瀏覽器原生的 [`.showModal()`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/showModal) 函式打開視窗，若視窗本身已有 `[open]` 屬性，這個函式將不會有任何效果。開啟之後可以呼叫 [`.close()`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/close) 函式關閉視窗。
+                透過瀏覽器原生的 [`.showModal()`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/showModal) 函式打開視窗，若視窗本身已有 `[open]` 屬性，這個函式將不會有任何效果。快顯視窗被關閉時，會觸發 [`close`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/close_event) 或 [`cancel`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/cancel_event) 事件。
             AttachedHTML: |
                 // 打開 #modal 快顯視窗。
-                document.getElementById('modal').showModal();
+                document.querySelector("#modal").showModal();
 
                 // 關閉 #modal 快顯視窗。
-                document.getElementById('modal').close();
+                document.querySelector("#modal").close();
+

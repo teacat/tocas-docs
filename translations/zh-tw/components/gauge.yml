@@ -5,8 +5,6 @@
 
 Title: 圓形量測計
 Description: 以圓形的方式呈現進度與使用程度。
-Intro: |
-    此元件使用 CSS 變數 `--value` 來控制進度列的百分比進度。
 
 #=======================================================
 # 設定
@@ -26,7 +24,6 @@ Relatives:
 Variables:
     - Name: --value
       Default: 0
-      Example: 50
       Target: .bar
       Description: 進度列的百分比值。
 

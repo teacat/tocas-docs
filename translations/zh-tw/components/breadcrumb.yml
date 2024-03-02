@@ -52,28 +52,18 @@ Definitions:
       Sections:
           - Title: 自訂圖示的
             Anchor: Customized
-            Description: 預設的導覽標記會以斜線分隔，透過自訂圖示可以透過 `divider` 元素客製化分隔圖示。
+            Description: 自訂導覽標記的分隔圖示。
             HTML: |
                 <div class="ts-breadcrumb [[is-customized]]">
                     <a class="item">網站</a>
-                    <div class="divider">
+                    <div class="[[divider]]">
                         <span class="{{ts-icon}} is-caret-right-icon"></span>
                     </div>
                     <a class="item">註冊程序</a>
-                    <div class="divider">
+                    <div class="[[divider]]">
                         <span class="{{ts-icon}} is-caret-right-icon"></span>
                     </div>
                     <a class="item">個人資料</a>
-                </div>
-
-          - Title: 階段的
-            Anchor: Stepped
-            Description: 讓導覽標記有階段性的感覺，這會讓非啟用的項目全部淡化呈現。
-            HTML: |
-                <div class="ts-breadcrumb [[is-stepped]] is-chevroned">
-                    <a class="item">聯絡我們</a>
-                    <a class="item">技術問題</a>
-                    <a class="item is-active">表單</a>
                 </div>
 
           - Title: 箭頭的
@@ -94,6 +84,16 @@ Definitions:
                     <a class="item">無線滑鼠</a>
                     <a class="item">快速響應</a>
                     <a class="item">特價下殺</a>
+                </div>
+
+          - Title: 階段的
+            Anchor: Stepped
+            Description: 讓導覽標記有階段性的感覺，這會讓非啟用的項目全部淡化呈現。
+            HTML: |
+                <div class="ts-breadcrumb is-chevroned [[is-stepped]]">
+                    <a class="item">聯絡我們</a>
+                    <a class="item">技術問題</a>
+                    <a class="item is-active">表單</a>
                 </div>
 
           - Title: 尺寸

@@ -24,8 +24,8 @@ Example:
             <legend>額外附註</legend>
             <div class="{{ts-list}} is-unordered">
                 <div class="item">這個世界只是一個假象，所有肉眼可見的東西都不是真的。</div>
-                <div class="item">在時間的盡頭那端，有道不可逆的防火牆。</div>
-                <div class="item">你從來沒有到過這個地方。如果你覺得這一切都很眼熟，請務必聯繫離你最近的服務人員。</div>
+                <div class="item">你從來沒有到過這個地方。</div>
+                <div class="item">如果你覺得這一切都很眼熟，請務必聯繫服務人員。</div>
             </div>
         </fieldset>
 
@@ -35,7 +35,7 @@ Definitions:
       Sections:
           - Title: 停用的
             Anchor: Disabled
-            Description: 欄位分組有 `[disabled]` 屬性時，裡面的表單欄位都會被停用且無法互動。
+            Description: 使欄位分組呈現無法互動、點擊的模樣，裡面的表單欄位都會被停用且無法互動。
             HTML: |
                 <fieldset class="ts-fieldset" [[disabled]]>
                     <legend>被停用的表單</legend>

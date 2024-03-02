@@ -123,8 +123,8 @@ UI:
         Index_LetsGo_Description: 複製下列 HTML 標籤至你的網頁，然後盡情地大鬧一番✨
         Index_LetsGo_Code: >
             <!-- 核心：Tocas UI -->
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocas/4.2.5/tocas.min.css">
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/tocas/4.2.5/tocas.min.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocas/5.0.0/tocas.min.css">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/tocas/5.0.0/tocas.min.js"></script>
 
 
             <!-- 字體：Noto Sans TC -->
@@ -252,18 +252,14 @@ UI:
         AppSidebar: 側邊欄
         Comment: 留言
         Dropdown: 彈出式選單
-        Email: 電子郵件
         AppTopbar: 頂部列
         AppDrawer: 邊緣抽屜
         Tooltip: 工具提示
-        ModuleTab: 分頁模組
-        ModuleToggle: 樣式切換
         Utilities: 輔助樣式
         Timeline: 時間軸
         Blankslate: 空白看板
-        ModuleFileplace: 檔案區域
-        ModuleAutosize: 自動伸縮欄位
         Popover: 彈出內容
+        Collapse: 顯示切換
 
 Components:
     - Name: Introduction
@@ -271,7 +267,6 @@ Components:
           - GettingStarted
           - Colors
           - Responsive
-          #- Email
           - Utilities
     - Name: Layout
       Items:
@@ -302,6 +297,7 @@ Components:
     - Name: Feedback
       Items:
           - Blankslate
+          #- Collapse
           - Gauge
           - Loading
           - Modal
@@ -349,9 +345,3 @@ Components:
           - AppNavbar
           - AppSidebar
           - AppTopbar
-    - Name: Module
-      Items:
-          #- ModuleAutosize
-          #- ModuleFileplace
-          #- ModuleTab
-          - ModuleToggle

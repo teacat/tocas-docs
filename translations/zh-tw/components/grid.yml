@@ -6,7 +6,7 @@
 Title: 網格系統
 Description: 針對內容格局、元件所設計的排版系統。
 Intro: |
-    Tocas UI 的網格系統將每行劃分為 16 格寬度。為了方便展示網格系統，我們將背景加上了灰色與輔助數字，在實際應用中這些都並不會出現。
+    Tocas UI 的網格系統將每行劃分為 16 格。為了方便展示網格系統，欄位的背景加上了灰色與輔助數字，在實際應用中這些都不會出現。
 
 #=======================================================
 # 設定
@@ -156,7 +156,7 @@ Definitions:
 
           - Title: 指定順序
             Anchor: Orders
-            Description: 透過 `is-order-1` 到 `is-order-10` 重新排序欄位，使用此功能時所有的欄位都必須指定順序。適合搭配「[響應式設計](./responsive.html)」功能來在行動裝置上重新排序欄位。
+            Description: 透過 `is-order-1` 到 `is-order-10` 重新排序欄位，使用此功能時所有的欄位都必須指定順序。適合搭配[響應式設計](./responsive.html)來在行動裝置上重新排序欄位。
             Remove:
                 - <div class="ts-space"></div>
             HTML: |
@@ -282,7 +282,7 @@ Definitions:
 
           - Title: 顛倒順序
             Anchor: Reversed
-            Description: 顛倒網格系統裡所有欄位順序，你可以透過搭配「[響應式設計](./responsive.html)」功能來在行動裝置上切換這個樣式（如：將側邊欄改成優先順位）。
+            Description: 顛倒網格系統裡所有欄位順序，你可以透過搭配[響應式設計](./responsive.html)來在行動裝置上使用這個樣式（如：將側邊欄改成優先順位）。
             HTML: |
                 <div class="ts-grid [[is-reversed]]">
                     <div class="column is-2-wide"></div>
@@ -292,7 +292,7 @@ Definitions:
 
           - Title: 層疊的
             Anchor: Stacked
-            Description: 這會不論原訂的欄位寬度，直接將所有欄位各自獨立成為一行（便是將所有欄位設置為 16 格寬）。適合搭配「[響應式設計](./responsive.html)」功能在行動裝置上讓所有欄位層疊起來。
+            Description: 所有欄位會被迫獨立成為一行（便是將所有欄位設置為 16 格寬），適合搭配[響應式設計](./responsive.html)在行動裝置上讓所有欄位層疊起來。
             HTML: |
                 <div class="ts-grid [[is-stacked]]">
                     <div class="column is-2-wide"></div>
@@ -325,11 +325,11 @@ Definitions:
                 </div>
 
     - Title: 響應式設計
-      Description: 在 Tocas UI 裡，所有東西都可以套用響應式設計系統，所以我們建議你閱讀[響應式設計](./responsive.html)頁面。下列範例僅作為基本的指導教學。
+      Description: 在 Tocas UI 裡，所有東西都可以套用[響應式設計](./responsive.html)，下列範例僅作為基本的指導教學。
       Sections:
           - Title: 指定寬度
             Anchor: Responsive Wides
-            Description: 欄位所佔的格數寬度可以依據裝置而有所不同，相關介面尺寸請參閱[響應式設計](./responsive.html)頁面。舉例來說：`tablet+:is-8-wide` 會在平板或更大的裝置上以 8 格寬的方式呈現。
+            Description: 欄位所佔的格數寬度可以依據裝置而有所不同，舉例來說：`tablet+:is-8-wide` 會在平板或更大的裝置上以 8 格寬的方式呈現。
             HTML: |
                 <div class="ts-grid">
                     <div class="column [[mobile:is-16-wide]] [[tablet+:is-8-wide]]"></div>
@@ -340,7 +340,7 @@ Definitions:
 
           - Title: 自動層疊
             Anchor: Responsive Stacked
-            Description: 這會不論原訂的欄位寬度，在手機裝置時套用 `is-stacked` 層疊樣式並令所有欄位各自獨立成為一行（便是將所有欄位設置為 16 格寬）。
+            Description: 在手機裝置時套用 `is-stacked` 層疊樣式就能讓所有欄位被迫獨立成為一行（便是將所有欄位設置為 16 格寬）。
             HTML: |
                 <div class="ts-grid [[mobile:is-stacked]]">
                     <div class="column is-4-wide"></div>
@@ -351,7 +351,7 @@ Definitions:
 
           - Title: 指定數量
             Anchor: Responsive Amounts
-            Description: 你可以在指定裝置上變更一個網格系統的欄位數量，這個範例的 `mobile:is-2-columns` 表示行動裝置會有 2 欄，而 `tablet+:is-3-columns` 是指平板或是更大的裝置會有 3 欄。
+            Description: 在指定裝置上變更一個網格系統的欄位數量，這個範例的 `mobile:is-2-columns` 表示行動裝置會有 2 欄，而 `tablet+:is-3-columns` 是指平板或是更大的裝置會有 3 欄。
             HTML: |
                 <div class="ts-grid [[mobile:is-2-columns]] [[tablet+:is-3-columns]]">
                     <div class="column"></div>
@@ -364,7 +364,7 @@ Definitions:
 
           - Title: 可見度
             Anchor: Responsive Visibility
-            Description: 某些欄位可以只在指定介面尺寸上呈現、隱藏，相關使用方式請參閱[響應式設計](./responsive.html)頁面。
+            Description: 某些欄位可以只在指定介面尺寸上出現、隱藏，相關使用方式請參閱[響應式設計](./responsive.html)頁面。
             HTML: |
                 <div class="ts-grid">
                     <div class="column [[mobile:has-hidden]] is-4-wide"></div>
@@ -376,9 +376,9 @@ Definitions:
     - Title: 組合應用
       Description:
       Sections:
-          - Title: 搜尋欄位
+          - Title: 搜尋列
             Anchor: Composition Search
-            Description: 通常搜尋欄位會有流動欄位與一個固定欄位，沒有指定寬度的欄位會以其內容寬度為主。
+            Description: 通常搜尋列會有流動欄位與固定欄位，沒有指定寬度的欄位會以其內容寬度為主。
             Remove:
                 - <span class="no-grid-indicator"></span>
             HTML: |

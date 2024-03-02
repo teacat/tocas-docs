@@ -50,7 +50,7 @@ Definitions:
 
           - Title: 沈重的
             Anchor: Heavy
-            Description: 以最粗的方式標註某段文字，如果字體不支援這個粗度，那麼這會與原有的外觀相同。
+            Description: 以最粗的方式標註某段文字。
             HTML: |
                 <div class="ts-header [[is-heavy]]">今天是芥末日！</div>
 

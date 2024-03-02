@@ -6,7 +6,7 @@
 Title: 彈出式選單
 Description: 附著於某個元素且浮動可隱藏的功能選單。
 Intro: |
-    點擊帶有 `[data-dropdown]` 屬性的按鈕可以開、關對應 `[id]` 的彈出式選單，目前不支援巢狀子選單。
+    點擊帶有 `[data-dropdown]` 屬性的按鈕可以開、關對應 `[id]` 的彈出式選單。
 
 #=======================================================
 # 設定
@@ -48,6 +48,18 @@ Properties:
           - `bottom-start`
           - `bottom-end`
 
+    - Name: "[data-active]"
+      Target: 觸發按鈕
+      Description: |
+          選單顯示時，套用至觸發按鈕的樣式。<br>
+          使用空白分隔多個樣式名稱，如：`foo bar`。
+
+    - Name: "[data-inactive]"
+      Target: 觸發按鈕
+      Description: |
+          選單隱藏時，套用至觸發按鈕的樣式。<br>
+          使用空白分隔多個樣式名稱，如：`foo bar`。
+
 #=======================================================
 # 基本樣式
 # Definitions
@@ -56,11 +68,11 @@ Properties:
 Example:
     Centered: true
     HTML: |
-        <button class="{{ts-button}} is-start-icon" ((data-dropdown))="dropdown">
+        <button class="{{ts-button}} is-start-icon" data-dropdown="((dropdown))">
             <span class="{{ts-icon}} is-chevron-down-icon"></span>
             打開選單
         </button>
-        <div class="[[ts-dropdown]]" id="dropdown">
+        <div class="[[ts-dropdown]]" id="((dropdown))">
             <button class="item">新增檔案</button>
             <button class="item">移至回收桶</button>
             <button class="item">檢視資訊</button>
@@ -95,7 +107,7 @@ Definitions:
 
           - Title: 停用的
             Anchor: Disabled
-            Description: 有 `[disabled]` 屬性的項目會無法互動，若項目是一個 `<a>` 超連結，則需套用 `.is-disabled` 樣式。
+            Description: 使項目呈現無法互動、點擊的模樣。若項目是一個超連結，則需套用 `.is-disabled` 樣式。
             Remove:
                 - <div class="ts-space is-huge"></div>
                 - <div class="ts-space is-big"></div>
@@ -125,7 +137,7 @@ Definitions:
 
           - Title: 已選擇
             Anchor: Selected
-            Description: 可用於下拉式選單用來表示某個項目被選中，可能是某個欄位目前的內容值。
+            Description: 表示某個項目被選中。
             Remove:
                 - <div class="ts-space is-huge"></div>
                 - <div class="ts-space is-big"></div>
@@ -561,12 +573,12 @@ Definitions:
                         <div class="item is-text">應用程式</div>
                     </div>
                     <div class="end">
-                        <button class="item" ((data-dropdown))="dropdown-menu">
+                        <button class="item" data-dropdown="((dropdown-menu))">
                             <span class="{{ts-icon}} is-ellipsis-vertical-icon"></span>
                         </button>
                     </div>
                 </div>
-                <div class="[[ts-dropdown]]" id="dropdown-menu" data-position="bottom-end">
+                <div class="[[ts-dropdown]]" id="((dropdown-menu))" data-position="bottom-end">
                     <button class="item">關於</button>
                     <button class="item">檢查更新</button>
                 </div>
@@ -578,12 +590,12 @@ Definitions:
                 <div class="{{ts-tab}} is-pilled">
                     <button class="item">主打內容</button>
                     <button class="item">最新</button>
-                    <button class="item" ((data-dropdown))="dropdown-links">
+                    <button class="item" data-dropdown="((dropdown-links))">
                         <span class="{{ts-icon}} is-ellipsis-icon"></span>
                         更多
                     </button>
                 </div>
-                <div class="[[ts-dropdown]]" id="dropdown-links">
+                <div class="[[ts-dropdown]]" id="((dropdown-links))">
                     <button class="item">遊戲</button>
                     <button class="item">音樂</button>
                     <button class="item">影片</button>
