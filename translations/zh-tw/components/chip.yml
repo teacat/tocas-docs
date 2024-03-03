@@ -70,7 +70,7 @@ Definitions:
       Sections:
           - Title: 停用的
             Anchor: Disabled
-            Description: 使關聯標籤呈現無法互動、點擊的模樣。若關聯標籤是一個超連結，則需套用 `.is-disabled` 樣式。
+            Description: 使關聯標籤呈現無法互動、點擊的模樣。若關聯標籤是超連結，則需套用 `.is-disabled` 樣式。
             HTML: |
                 <label class="ts-chip is-input">
                     <input type="checkbox" [[disabled]]/>

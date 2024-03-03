@@ -31,7 +31,7 @@ Definitions:
       Sections:
           - Title: 停用的
             Anchor: Disabled
-            Description: 使按鈕呈現無法互動、點擊的模樣。若按鈕是一個超連結，則需套用 `.is-disabled` 樣式。
+            Description: 使按鈕呈現無法互動、點擊的模樣。若按鈕是超連結，則需套用 `.is-disabled` 樣式。
             HTML: |
                 <button class="ts-button" [[disabled]]>停用按鈕</button>
                 <a class="ts-button [[is-disabled]]">停用連結</a>
@@ -138,17 +138,19 @@ Definitions:
 
           - Title: 尺寸
             Anchor: Sizes
-            Description: 更改按鈕的大小。
+            Description: 更改按鈕的尺寸與文字大小。
             HTML: |
                 <button class="ts-button [[is-small]]">小型按鈕</button>
                 <button class="ts-button">預設按鈕</button>
                 <button class="ts-button [[is-large]]">大型按鈕</button>
 
-          - Title: 較密的
-            Anchor: Dense
-            Description: 變更元件的內距，令元素之間看起來更密集。
+          - Title: 密度
+            Anchor: Density
+            Description: 變更按鈕的高度，看起來更緊密或是令人感到寬鬆。
             HTML: |
-                <button class="ts-button [[is-dense]]">跟隨</button>
+                <button class="ts-button [[is-dense]]">緊密按鈕</button>
+                <button class="ts-button">預設按鈕</button>
+                <button class="ts-button [[is-relaxed]]">寬鬆按鈕</button>
 
     - Title: 群組
       Description:

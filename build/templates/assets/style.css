@@ -12,6 +12,10 @@ body {
     background: var(--ts-gray-50);
 }
 
+body:has(dialog[open]) {
+    overflow-y: auto !important;
+}
+
 /**
  * Space
  */

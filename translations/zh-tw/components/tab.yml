@@ -65,7 +65,7 @@ Definitions:
 
           - Title: 停用的
             Anchor: Disabled
-            Description: 使項目呈現無法互動、點擊的模樣。若項目是一個超連結，則需套用 `.is-disabled` 樣式。
+            Description: 使項目呈現無法互動、點擊的模樣。若項目是超連結，則需套用 `.is-disabled` 樣式。
             HTML: |
                 <div class="ts-tab">
                     <a class="item">

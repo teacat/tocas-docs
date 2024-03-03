@@ -66,7 +66,7 @@ Definitions:
 
           - Title: 尺寸
             Anchor: Sizes
-            Description: 更改檔案上傳的大小。
+            Description: 更改檔案上傳的尺寸與文字大小。
             Remove:
                 - <div class="ts-space"></div>
             HTML: |
@@ -82,11 +82,21 @@ Definitions:
                     <input type="file" />
                 </div>
 
-          - Title: 較密的
-            Anchor: Dense
-            Description: 變更元件的內距，令元素之間看起來更密集。
+          - Title: 密度
+            Anchor: Density
+            Description: 變更檔案上傳的高度，看起來更緊密或是令人感到寬鬆。
+            Remove:
+                - <div class="ts-space"></div>
             HTML: |
                 <div class="ts-file [[is-dense]]">
+                    <input type="file" />
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-file">
+                    <input type="file" />
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-file [[is-relaxed]]">
                     <input type="file" />
                 </div>
 
