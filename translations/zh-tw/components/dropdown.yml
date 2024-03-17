@@ -212,35 +212,6 @@ Definitions:
                 <div class="ts-space is-huge"></div>
                 <div class="ts-space is-huge"></div>
 
-          - Title: 大頭貼
-            Anchor: Avatar
-            Description: 項目前面可以放置大頭貼作為輔助人名使用。
-            Remove:
-                - <div class="ts-space is-huge"></div>
-            HTML: |
-                <div class="ts-dropdown is-visible">
-                    <button class="item">
-                        <div class="[[{{ts-avatar}}]] is-circular">
-                            <img src="!-user-!">
-                        </div>
-                        Yami Odymel
-                    </button>
-                    <button class="item">
-                        <div class="[[{{ts-avatar}}]] is-circular">
-                            <img src="!-user2-!">
-                        </div>
-                        Xiaoan
-                    </button>
-                    <button class="item">
-                        <div class="[[{{ts-avatar}}]] is-circular">
-                            <img src="!-user3-!">
-                        </div>
-                        Kitsune
-                    </button>
-                </div>
-                <div class="ts-space is-huge"></div>
-                <div class="ts-space is-huge"></div>
-
     - Title: 外觀
       Description:
       Sections:

@@ -240,7 +240,6 @@ UI:
         Steps: 步驟指示器
         Progress: 進度條
         Snackbar: 簡短通知
-        Avatar: 大頭貼
         Flag: 國家旗幟
         Icon: 圖示
         Iconset: 圖示項目
@@ -337,7 +336,6 @@ Components:
           - Tooltip
     - Name: Media
       Items:
-          - Avatar
           - Flag
           - Icon
           - Iconset

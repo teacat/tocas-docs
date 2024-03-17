@@ -278,7 +278,7 @@ Definitions:
       Sections:
           - Title: 變更歷史
             Anchor: Composition Commits
-            Description: 透過[大頭貼](./avatar.html)模擬 GitHub 或是一些 Git 網站對於檔案變更歷史的呈現。
+            Description: 透過大頭貼模擬 GitHub 或是一些 Git 網站對於檔案變更歷史的呈現。
             HTML: |
                 <div class="ts-timeline">
                     <div class="item">
@@ -294,8 +294,8 @@ Definitions:
                         <div class="content">
                             <div class="{{ts-grid}} is-middle-aligned is-compact">
                                 <div class="column">
-                                    <span class="[[{{ts-avatar}}]] is-circular">
-                                        <img src="!-user-!">
+                                    <span class="[[{{ts-image}}]] is-circular">
+                                        <img src="!-user-!" width="32">
                                     </span>
                                 </div>
                                 <div class="column is-fluid">
@@ -312,8 +312,8 @@ Definitions:
                         <div class="content">
                             <div class="{{ts-grid}} is-middle-aligned is-compact">
                                 <div class="column">
-                                    <span class="[[{{ts-avatar}}]] is-circular">
-                                        <img src="!-user2-!">
+                                    <span class="[[{{ts-image}}]] is-circular">
+                                        <img src="!-user2-!" width="32">
                                     </span>
                                 </div>
                                 <div class="column is-fluid">

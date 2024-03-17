@@ -79,33 +79,6 @@ Definitions:
     - Title: 結構
       Description:
       Sections:
-          - Title: 大頭貼
-            Anchor: Avatar
-            Description: 項目前面可以放置大頭貼作為輔助人名使用。
-            HTML: |
-                <div class="{{ts-card}} is-collapsed">
-                    <div class="ts-menu is-collapsed">
-                        <a class="item">
-                            <span class="[[{{ts-avatar}}]] is-circular">
-                                <img src="!-user-!">
-                            </span>
-                            Yami Odymel
-                        </a>
-                        <a class="item">
-                            <span class="[[{{ts-avatar}}]] is-circular">
-                                <img src="!-user2-!">
-                            </span>
-                            Xiaoan
-                        </a>
-                        <a class="item">
-                            <span class="[[{{ts-avatar}}]] is-circular">
-                                <img src="!-user3-!">
-                            </span>
-                            Kitsune
-                        </a>
-                    </div>
-                </div>
-
           - Title: 計數徽章
             Anchor: Badge
             Description: 在項目裡擺放[計數徽章](./badge.html)會自動移至最尾端。

@@ -109,15 +109,15 @@ Definitions:
             Description: 增加視覺效果令使用者能夠透過滑鼠、觸控得知這個區塊可以被點擊或是互動。
             HTML: |
                 <div class="{{ts-card}}">
-                    <div class="ts-content [[is-interactive]] is-dense">
+                    <a href="#!" class="ts-content [[is-interactive]] is-dense">
                         <span class="{{ts-icon}} is-end-spaced is-download-icon"></span> 下載
-                    </div>
-                    <div class="ts-content [[is-interactive]] is-active is-dense">
+                    </a>
+                    <a href="#!" class="ts-content [[is-interactive]] is-active is-dense">
                         <span class="{{ts-icon}} is-end-spaced is-heart-icon"></span> 最愛
-                    </div>
-                    <div class="ts-content [[is-interactive]] is-dense">
+                    </a>
+                    <a href="#!" class="ts-content [[is-interactive]] is-dense">
                         <span class="{{ts-icon}} is-end-spaced is-box-archive-icon"></span> 彙整
-                    </div>
+                    </a>
                 </div>
 
           - Title: 增加內距

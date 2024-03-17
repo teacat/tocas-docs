@@ -122,10 +122,10 @@ Definitions:
           - Title: 使用者詳情
             Anchor: Composition Profile
             Description: |
-                點選某個[大頭貼](./avatar.html)之後彈出使用者詳情與[多媒體圖片](./image.html)。
+                點選某個大頭貼之後彈出使用者詳情。
             HTML: |
-                <button class="{{ts-avatar}}" popovertarget="((profile))">
-                    <img src="!-user-!">
+                <button class="{{ts-image}}" popovertarget="((profile))">
+                    <img src="!-user-!" width="32">
                 </button>
                 <div class="[[ts-popover]]" id="((profile))" popover>
                     <div class="{{ts-image}}">
