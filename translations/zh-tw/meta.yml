@@ -262,7 +262,6 @@ UI:
         Tab: 分頁籤
         AppLayout: 格局劃分
         AppNavbar: 導航列
-        AppSidebar: 側邊欄
         Comment: 留言
         Dropdown: 彈出式選單
         AppTopbar: 頂部列
@@ -276,7 +275,7 @@ UI:
         Navbar: 導航列
         Topbar: 頂部列
         Center: 中央區塊
-        Sidebar: 側邊欄
+        Sidenav: 側邊導覽
         Layout: 格局劃分
         Drawer: 邊緣抽屜
 
@@ -293,16 +292,7 @@ Components:
           - Container
           - Control
           - Grid
-          - Layout
           - Wrap
-    - Name: Paragraphy
-      Items:
-          - Card
-          - Content
-          - Divider
-          - Header
-          - Quote
-          - Text
     - Name: Form
       Items:
           - Button
@@ -314,6 +304,14 @@ Components:
           - Select
           - Selection
           - Switch
+    - Name: Paragraphy
+      Items:
+          - Card
+          - Content
+          - Divider
+          - Header
+          - Quote
+          - Text
     - Name: Feedback
       Items:
           - Blankslate
@@ -362,6 +360,7 @@ Components:
           - Tab
     - Name: Application
       Items:
+          - Layout
           - Navbar
-          - Sidebar
+          - Sidenav
           - Topbar
