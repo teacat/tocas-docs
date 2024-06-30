@@ -97,21 +97,19 @@
                     </div>
                 </div>
                 <div class="穹頂-導航列 穹頂-導航列_手機的">
-                        <div class="穹頂-導航列-右側">
-                            <div class="穹頂-導航列-項目 穹頂-導航列-項目_語系的">
-                                <span class="ts-flag is-{{ .Meta.Information.Flag }}-flag"></span> {{ .Meta.Information.Language }}
-                                <div class="穹頂-導航列-項目-語系下拉式選單">
-                                    {{ range .Meta.GlobalInformations }}
-                                    <a
-                                        class="穹頂-導航列-項目-語系下拉式選單-項目 {{ if eq $.Meta.Information.Path .Path }}穹頂-導航列-項目-語系下拉式選單-項目_啟用的{{end}}"
-                                        href="./../{{ .Path }}/index.html"
-                                        ><span class="ts-flag is-{{ .Flag }}-flag"></span> {{ .Language }}</a
-                                    >
-                                    {{ end }}
-                                </div>
-                            </div>
+                    <div class="穹頂-導航列-右側">
+                        <button class="穹頂-導航列-項目" data-dropdown="dropdown-language-mobile">
+                            <span class="ts-flag is-{{ .Meta.Information.Flag }}-flag"></span> {{ .Meta.Information.Language }}
+                        </button>
+                        <div class="ts-dropdown" id="dropdown-language-mobile" data-position="bottom">
+                            {{ range .Meta.GlobalInformations }}
+                            <a class="item {{ if eq $.Meta.Information.Path .Path }}is-selected{{end}}" href="./../{{ .Path }}/{{ kebablize $.This }}.html">
+                                <span class="ts-flag is-{{ .Flag }}-flag"></span> {{ .Language }}
+                            </a>
+                            {{ end }}
                         </div>
                     </div>
+                </div>
 
                 <div class="穹頂-行動號召">
                     <div class="穹頂-行動號召-容器">
@@ -380,27 +378,13 @@
                                     <div class="ts-card">
                                         <div class="ts-content is-secondary">
                                             <div class="ts-breadcrumb is-chevroned">
-                                                <a class="item">{{ "Index_Showcase_Breadcrumb_A" | i18n }}</a>
-                                                <a class="item">{{ "Index_Showcase_Breadcrumb_B" | i18n }}</a>
-                                                <a class="item">{{ "Index_Showcase_Breadcrumb_C" | i18n }}</a>
+                                                <a href="#!" class="item">{{ "Index_Showcase_Breadcrumb_A" | i18n }}</a>
+                                                <a href="#!" class="item">{{ "Index_Showcase_Breadcrumb_B" | i18n }}</a>
+                                                <a href="#!" class="item">{{ "Index_Showcase_Breadcrumb_C" | i18n }}</a>
                                             </div>
                                         </div>
                                     </div>
                                     <!-- / 導覽標記 -->
-                                    <div class="ts-space is-large"></div>
-                                    <!-- 預置內容 -->
-                                    <div class="ts-header">{{ "Index_Showcase_Placeholder_Section" | i18n }}</div>
-                                    <div class="ts-space"></div>
-                                    <div class="ts-card">
-                                        <div class="ts-content">
-                                            <div class="ts-placeholder">
-                                                <div class="image is-header"></div>
-                                                <div class="text"></div>
-                                                <div class="text"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- / 預置內容 -->
                                     <div class="ts-space is-large"></div>
                                     <!-- 國旗 -->
                                     <div class="ts-header">{{ "Index_Showcase_Flag_Section" | i18n }}</div>
