@@ -318,7 +318,7 @@ Components:
           - Loading
           - Mask
           - Notice
-          - Steps
+          - Procedure
           - Progress
           - Snackbar
     - Name: Interaction
