@@ -127,13 +127,12 @@
                 <div class='主體-格局 {{if eq .Type "Container" }}主體-格局_容器範例的{{ end }}'>
                     <!-- 側邊導覽 -->
                     <div class="主體-格局-導覽">
-                        {{ range .Meta.Components }}
-                        <div class="主體-格局-導覽-標題">{{ index $.Meta.UI.ComponentsCategories .Name }}</div>
+                        {{ range .Meta.ComponentNavs }}
+                        <div class="主體-格局-導覽-標題">{{ .Name }}</div>
                         {{ range .Items }}
-                        <a href="./{{ . | kebablize }}.html" class="主體-格局-導覽-項目{{ if eq $.This (kebablize .) }} 主體-格局-導覽-項目_啟用的{{ end }}">
-                            {{ index $.Meta.UI.Components . }} {{ if ne (index $.Meta.UI.Components .) (capitalize .) }}<span class="主體-格局-導覽-項目-英文"
-                                >{{ capitalize . }}</span
-                            >{{ end }}
+                        <a href="./{{ .Description | kebablize }}.html" class="主體-格局-導覽-項目{{ if eq $.This (kebablize .Description) }} 主體-格局-導覽-項目_啟用的{{ end }}">
+                            <span class="ts-icon is-{{ .Icon}}-icon 主體-格局-導覽-項目-圖示"></span>
+                            {{ .Description }} {{ if ne .Name .Description }}<span class="主體-格局-導覽-項目-英文">{{ .Name }}</span>{{ end }}
                         </a>
                         {{ end }} {{ end }}
                         <div class="主體-格局-導覽-關閉按鈕">

@@ -279,88 +279,208 @@ UI:
         Layout: 格局劃分
         Drawer: 邊緣抽屜
 
-Components:
-    - Name: Introduction
+ComponentNavs:
+    - Name: 從此開始
       Items:
-          - GettingStarted
-          - Colors
-          - Responsive
-          - Utilities
-    - Name: Layout
+          - Name: 開始使用
+            Description: GettingStarted
+          - Name: 主題色系
+            Description: Colors
+          - Name: 響應式設計
+            Description: Responsive
+          - Name: 輔助樣式
+            Description: Utilities
+    - Name: 格局設計
       Items:
-          - Center
-          - Container
-          - Control
-          - Grid
-          - Wrap
-    - Name: Form
+          - Name: 中央區塊
+            Description: Center
+            Icon: arrows-to-circle
+          - Name: 界限容器
+            Description: Container
+            Icon: arrows-left-right-to-line
+          - Name: 表單控制項
+            Description: Control
+            Icon: table-list
+          - Name: 網格系統
+            Description: Grid
+            Icon: border-none
+          - Name: 間隔容器
+            Description: Wrap
+            Icon: layer-group
+    - Name: 表單
       Items:
-          - Button
-          - Checkbox
-          - Fieldset
-          - File
-          - Input
-          - Radio
-          - Select
-          - Selection
-          - Switch
-    - Name: Paragraphy
+          - Name: 按鈕
+            Description: Button
+            Icon: hockey-puck
+          - Name: 核取方塊
+            Description: Checkbox
+            Icon: square-check
+          - Name: 欄位分組
+            Description: Fieldset
+            Icon: object-group
+          - Name: 檔案上傳
+            Description: File
+            Icon: file-arrow-up
+          - Name: 輸入欄位
+            Description: Input
+            Icon: i-cursor
+          - Name: 單選方塊
+            Description: Radio
+            Icon: circle-dot
+          - Name: 下拉式選擇
+            Description: Select
+            Icon: caret-down
+          - Name: 項目切換
+            Description: Selection
+            Icon: diagram-next
+          - Name: 指撥開關
+            Description: Switch
+            Icon: toggle-on
+    - Name: 內容與段落
       Items:
-          - Card
-          - Content
-          - Divider
-          - Header
-          - Quote
-          - Text
-    - Name: Feedback
+          - Name: 卡片容器
+            Description: Card
+            Icon: box
+          - Name: 內容區塊
+            Description: Content
+            Icon: vector-square
+          - Name: 分隔線
+            Description: Divider
+            Icon: xmarks-lines
+          - Name: 標題
+            Description: Header
+            Icon: heading
+          - Name: 文字
+            Description: Text
+            Icon: font
+    - Name: 視覺回饋
       Items:
-          - Blankslate
-          - Gauge
-          - Loading
-          - Mask
-          - Notice
-          - Placeholder
-          - Steps
-          - Progress
-          - Snackbar
-    - Name: Interaction
+          - Name: 空白看板
+            Description: Blankslate
+            Icon: chess-board
+          - Name: 圓形量測計
+            Description: Gauge
+            Icon: gauge
+          - Name: 讀取狀態
+            Description: Loading
+            Icon: spinner
+          - Name: 內容遮罩
+            Description: Mask
+            Icon: mask
+          - Name: 常駐訊息
+            Description: Notice
+            Icon: message
+          - Name: 預置內容
+            Description: Placeholder
+          - Name: 步驟指示器
+            Description: Steps
+            Icon: arrows-turn-to-dots
+          - Name: 進度條
+            Description: Progress
+            Icon: bars-progress
+          - Name: 簡短通知
+            Description: Snackbar
+            Icon: comment-dots
+    - Name: 互動元素
       Items:
-          - Accordion
-          - Collapse
-          - Dropdown
-          - Drawer
-          - Modal
-          - Popover
-          - Tooltip
-    - Name: Media
+          - Name: 可折疊內容
+            Description: Accordion
+            Icon: chevron-down
+          - Name: 顯示切換
+            Description: Collapse
+            Icon: eye
+          - Name: 彈出式選單
+            Description: Dropdown
+            Icon: caret-down
+          - Name: 邊緣抽屜
+            Description: Drawer
+            Icon: indent
+          - Name: 快顯視窗
+            Description: Modal
+            Icon: window-restore
+          - Name: 彈出內容
+            Description: Popover
+            Icon: comment-dots
+          - Name: 工具提示
+            Description: Tooltip
+            Icon: circle-question
+    - Name: 多媒體與圖示
       Items:
-          - Flag
-          - Icon
-          - Iconset
-          - Image
-          - Imageset
-    - Name: Data
+          - Name: 國家旗幟
+            Description: Flag
+            Icon: flag
+          - Name: 圖示
+            Description: Icon
+            Icon: icons
+          - Name: 圖示項目
+            Description: Iconset
+            Icon: icons
+          - Name: 多媒體圖片
+            Description: Image
+            Icon: image
+          - Name: 圖片組合
+            Description: Imageset
+            Icon: images
+    - Name: 資料顯示
       Items:
-          - Badge
-          - Checklist
-          - Chip
-          - Close
-          - Conversation
-          - List
-          - Meta
-          - Rating
-          - Statistic
-          - Table
-          - Timeline
-    - Name: Navigation
+          - Name: 計數徽章
+            Description: Badge
+            Icon: certificate
+          - Name: 檢查清單
+            Description: Checklist
+            Icon: list-check
+          - Name: 關聯標籤
+            Description: Chip
+            Icon: tag
+          - Name: 關閉按鈕
+            Description: Close
+            Icon: circle-xmark
+          - Name: 交談會話
+            Description: Conversation
+            Icon: comments
+          - Name: 清單
+            Description: List
+            Icon: list-ul
+          - Name: 中繼資料
+            Description: Meta
+            Icon: list-ul
+          - Name: 評分
+            Description: Rating
+            Icon: star-half-stroke
+          - Name: 統計數據
+            Description: Statistic
+            Icon: chart-simple
+          - Name: 表格
+            Description: Table
+            Icon: table
+          - Name: 時間軸
+            Description: Timeline
+            Icon: timeline
+    - Name: 導覽
       Items:
-          - Breadcrumb
-          - Menu
-          - Pagination
-          - Tab
-    - Name: Application
+          - Name: 導覽標記
+            Description: Breadcrumb
+            Icon: shoe-prints
+          - Name: 選單
+            Description: Menu
+            Icon: bars
+          - Name: 頁數導覽列
+            Description: Pagination
+            Icon: list-ol
+          - Name: 分頁籤
+            Description: Tab
+            Icon: border-top-left
+    - Name: 應用程式
       Items:
-          - Layout
-          - Navbar
-          - Sidenav
-          - Topbar
+          - Name: 格局劃分
+            Description: Layout
+            Icon: table-cells-large
+          - Name: 導航列
+            Description: Navbar
+            Icon: compass
+          - Name: 側邊導覽
+            Description: Sidenav
+            Icon: indent
+          - Name: 頂部列
+            Description: Topbar
+            Icon: border-top-left
