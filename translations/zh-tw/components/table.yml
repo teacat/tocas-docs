@@ -34,23 +34,18 @@ Example:
                 <tbody>
                     <tr>
                         <td>1</td>
-                        <td>半音商業銀行</td>
-                        <td>Flat Bank</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
                         <td>對空音商事有限公司</td>
                         <td>Sorae & Co., Ltd.</td>
                     </tr>
                     <tr>
-                        <td>3</td>
+                        <td>2</td>
                         <td>卡莉絲伊繁星</td>
                         <td>Caris Events</td>
                     </tr>
                 </tbody>
                 <tfoot>
                     <tr>
-                        <th colspan="3">統計筆數：3</th>
+                        <th colspan="3">統計筆數：2</th>
                     </tr>
                 </tfoot>
             </table>
@@ -81,8 +76,8 @@ Definitions:
                             </tr>
                             <tr>
                                 <td>footer()</td>
-                                <td>path[<em>string</em>], name[<em>string</em>[<em>optional</em>]]</td>
-                                <td>於網頁最底部輸出內容，可同時儲存內容至一個檔案。</td>
+                                <td>path[<em>string</em>]</td>
+                                <td>於網頁最底部輸出內容。</td>
                             </tr>
                         </tbody>
                     </table>
@@ -111,14 +106,6 @@ Definitions:
                             <tr>
                                 <td>
                                     <span class="{{ts-icon}} is-folder-icon is-end-spaced"></span>
-                                    test
-                                </td>
-                                <td>第一次 Commit！</td>
-                                <td class="is-collapsed">10 小時前</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <span class="{{ts-icon}} is-folder-icon is-end-spaced"></span>
                                     build
                                 </td>
                                 <td>第一次 Commit！</td>
@@ -128,14 +115,6 @@ Definitions:
                                 <td>
                                     <span class="{{ts-icon}} is-file-icon is-regular is-end-spaced"></span>
                                     package.json
-                                </td>
-                                <td>第一次 Commit！</td>
-                                <td class="is-collapsed">10 小時前</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <span class="{{ts-icon}} is-file-icon is-regular is-end-spaced"></span>
-                                    Gruntfile.js
                                 </td>
                                 <td>第一次 Commit！</td>
                                 <td class="is-collapsed">10 小時前</td>
@@ -170,11 +149,6 @@ Definitions:
                                 <td>Controller</td>
                                 <td>處理星號程式。</td>
                             </tr>
-                            <tr>
-                                <td>favorite.php</td>
-                                <td>Model</td>
-                                <td>處理最愛的項目。</td>
-                            </tr>
                         </tbody>
                     </table>
                 </div>
@@ -198,11 +172,6 @@ Definitions:
                                 <td>star.php</td>
                                 <td>Controller</td>
                                 <td>處理星號程式。</td>
-                            </tr>
-                            <tr>
-                                <td>favorite.php</td>
-                                <td>Model</td>
-                                <td>處理最愛的項目。</td>
                             </tr>
                         </tbody>
                     </table>
@@ -303,11 +272,6 @@ Definitions:
                         <tr>
                             <td>Bibendum</td>
                             <td>Et venenatis orci placerat vitae. Sed posuere auctor.</td>
-                            <td>核准</td>
-                        </tr>
-                        <tr>
-                            <td>Pretium</td>
-                            <td>Donec rutrum accumsan augue vitae pretium.</td>
                             <td>核准</td>
                         </tr>
                         <tr>
@@ -796,7 +760,7 @@ Definitions:
                         </thead>
                         <tbody>
                             <tr>
-                                <td>WorldEnd: What do you do at the end of the world? Are you busy? Will you save us?</td>
+                                <td>WorldEnd: What do you do at the end of the world?</td>
                                 <td>Apr 11, 2017</td>
                             </tr>
                             <tr class="[[is-indicated]]">
@@ -809,7 +773,7 @@ Definitions:
                             </tr>
                             <tr>
                                 <td>Grimoire of Zero</td>
-                                <td class="is-positive is-indicated">Apr 10, 2017</td>
+                                <td class="is-positive [[is-indicated]]">Apr 10, 2017</td>
                             </tr>
                             <tr>
                                 <td>Attack on Titan Season 2</td>
