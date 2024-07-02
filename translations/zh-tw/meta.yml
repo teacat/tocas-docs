@@ -273,7 +273,7 @@ UI:
         Navbar: 導航列
         Topbar: 頂部列
         Center: 中央區塊
-        Sidenav: 側邊導覽
+        AppSidebar: 側邊導覽
         Layout: 格局劃分
         Drawer: 邊緣抽屜
 
@@ -287,7 +287,6 @@ Components:
           - Utilities
     - Name: Layout
       Items:
-          - Center
           - Container
           - Control
           - Grid
@@ -326,7 +325,6 @@ Components:
           - Accordion
           - Collapse
           - Dropdown
-          - Drawer
           - Modal
           - Popover
           - Tooltip
@@ -358,7 +356,9 @@ Components:
           - Tab
     - Name: Application
       Items:
-          - Layout
-          - Navbar
-          - Sidenav
-          - Topbar
+          - AppCenter
+          - AppDrawer
+          - AppLayout
+          - AppNavbar
+          - AppSidebar
+          - AppTopbar
