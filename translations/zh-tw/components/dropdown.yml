@@ -539,7 +539,7 @@ Definitions:
             Description: |
                 [頂部列](./topbar.html)的尾側可以擺放一個帶有進階功能的選單。
             HTML: |
-                <div class="{{ts-topbar}}">
+                <div class="{{ts-app-topbar}}">
                     <div class="start">
                         <div class="item is-text">應用程式</div>
                     </div>

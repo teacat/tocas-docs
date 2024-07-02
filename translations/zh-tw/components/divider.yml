@@ -79,7 +79,7 @@ Definitions:
             Anchor: Composition Form
             Description: 在登入表單下方以分隔線告訴使用者有額外方式能登入。
             HTML: |
-                <div class="{{ts-center}}">
+                <div class="{{ts-app-center}}">
                     <div class="content">
                         <div class="{{ts-card}}" style="width: 280px">
                             <div class="{{ts-content}}">
