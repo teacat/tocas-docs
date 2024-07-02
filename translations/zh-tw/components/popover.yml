@@ -6,7 +6,7 @@
 Title: 彈出內容
 Description: 附著於某個元素的額外內容。
 Intro: |
-    彈出內容使用瀏覽器原生 [Popover API](https://developer.mozilla.org/en-US/docs/Web/API/Popover_API)。彈出內容顯示時，會自動附著在對應的元素上。Firefox 目前尚未支援此功能。
+    彈出內容使用瀏覽器原生 [Popover API](https://developer.mozilla.org/en-US/docs/Web/API/Popover_API)。彈出內容顯示時，會自動附著在對應的元素上。
 
 #=======================================================
 # 設定
