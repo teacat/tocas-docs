@@ -59,7 +59,7 @@ Definitions:
             Description: |
                 在[頂部列](./topbar.html)擺放選單按鈕以顯示、隱藏進階選單。
             HTML: |
-                <div class="{{ts-topbar}}">
+                <div class="{{ts-app-topbar}}">
                     <div class="start">
                         <button class="item" [[data-collapse]]="((menu))">
                             <span class="{{ts-icon}} is-bars-icon"></span>
@@ -108,8 +108,8 @@ Definitions:
                                 <td>TWD $15</td>
                                 <td>28</td>
                             </tr>
-                            <tr>
-                                <td class="is-secondary {{has-hidden}}" id="((detail))" colspan="4">
+                            <tr class="{{has-hidden}}" id="((detail))">
+                                <td class="is-secondary" colspan="4">
                                     這裡擺放展開後的內容。
                                 </td>
                             </tr>
