@@ -116,8 +116,9 @@ type MetaVersionItem struct {
 }
 
 type MetaComponent struct {
-	Name  string   `yaml:"Name"`
-	Items []string `yaml:"Items"`
+	Name       string   `yaml:"Name"`
+	Items      []string `yaml:"Items"`
+	OmitHelper bool     `yaml:"OmitHelper"`
 }
 
 // MetaInformation
