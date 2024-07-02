@@ -146,21 +146,41 @@ Definitions:
                     </label>
                 </div>
 
-          - Title: 較密的
-            Anchor: Dense
-            Description: 變更元件的內距，令元素之間看起來更密集。
+          - Title: 密度
+            Anchor: Density
+            Description: 在不改變文字大小的情況下變更項目切換的高度，看起來更緊密或是令人感到寬鬆。
+            Remove:
+                - <div class="ts-space"></div>
             HTML: |
                 <div class="ts-selection [[is-dense]]">
                     <label class="item">
-                        <input type="radio" name="performance" checked/>
-                        <div class="text">靜音</div>
+                        <input type="radio" name="density-1" checked/>
+                        <div class="text">緊密項目</div>
                     </label>
                     <label class="item">
-                        <input type="radio" name="performance" />
-                        <div class="text">普通</div>
+                        <input type="radio" name="density-1" />
+                        <div class="text">緊密項目</div>
+                    </label>
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-selection">
+                    <label class="item">
+                        <input type="radio" name="density-2" checked/>
+                        <div class="text">預設項目</div>
                     </label>
                     <label class="item">
-                        <input type="radio" name="performance" />
-                        <div class="text">效能</div>
+                        <input type="radio" name="density-2" />
+                        <div class="text">預設項目</div>
+                    </label>
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-selection [[is-relaxed]]">
+                    <label class="item">
+                        <input type="radio" name="density-3" checked/>
+                        <div class="text">寬鬆項目</div>
+                    </label>
+                    <label class="item">
+                        <input type="radio" name="density-3" />
+                        <div class="text">寬鬆項目</div>
                     </label>
                 </div>
