@@ -93,7 +93,7 @@ Definitions:
             Anchor: Sizes
             Description: |
                 更改視窗的寬度大小。
-                <div class="ts-card">
+                <div class="ts-box">
                     <table class="ts-table is-definition is-celled">
                         <thead>
                             <tr>

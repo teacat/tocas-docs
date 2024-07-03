@@ -3,10 +3,10 @@
 # Header
 #=======================================================
 
-Title: 卡片容器
+Title: 箱型容器
 Description: 帶有邊框的基礎架構容器。
 Intro: |
-    卡片容器會與[內容區塊](./content.html)、[表格](./table.html)、[圖片](./image.html)這種貼邊元件一起使用。
+    箱型容器會與[內容區塊](./content.html)、[表格](./table.html)、[圖片](./image.html)這種貼邊元件一起使用。
 
 #=======================================================
 # 設定
@@ -24,7 +24,7 @@ Relatives:
 
 Example:
     HTML: |
-        <div class="[[ts-card]]">
+        <div class="[[ts-box]]">
             <div class="{{ts-image}}">
                 <img src="!-16:9-!">
             </div>
@@ -42,7 +42,7 @@ Definitions:
             Anchor: Symbol
             Description: 在角落擺放一個圖示作為其象徵。
             HTML: |
-                <div class="ts-card">
+                <div class="ts-box">
                     <div class="{{ts-content}}">
                         任何已發布或是計畫中之產品及服務，<br>
                         皆不得用來刻意偏頗大眾想法、喜好、甚至混淆視聽，<br>
@@ -60,7 +60,7 @@ Definitions:
             Anchor: Horizontal
             Description: 容器裡的元素排列預設為上下垂直，但若排版需要則可以將其改為左右水平排列。
             HTML: |
-                <div class="ts-card [[is-horizontal]]">
+                <div class="ts-box [[is-horizontal]]">
                     <div class="{{ts-image}} is-covered">
                         <img src="!-1:1-!" width="90" height="100%" >
                     </div>
@@ -74,9 +74,9 @@ Definitions:
 
           - Title: 最小寬度的
             Anchor: Collapsed
-            Description: 卡片容器預設是流動寬度，但也能以內容寬度為主。
+            Description: 箱型容器預設是流動寬度，但也能以內容寬度為主。
             HTML: |
-                <div class="ts-card [[is-collapsed]]">
+                <div class="ts-box [[is-collapsed]]">
                     <div class="{{ts-content}}">
                         <p>這是一個來自台灣的社群網站，在這裡我們並沒有「讚」或是「已讀」。</p>
                     </div>
@@ -88,19 +88,19 @@ Definitions:
             Remove:
                 - <div class="ts-space"></div>
             HTML: |
-                <div class="ts-card [[is-top-indicated]]">
+                <div class="ts-box [[is-top-indicated]]">
                     <div class="{{ts-content}}">上部標記</div>
                 </div>
                 <div class="ts-space"></div>
-                <div class="ts-card [[is-bottom-indicated]]">
+                <div class="ts-box [[is-bottom-indicated]]">
                     <div class="{{ts-content}}">下部標記</div>
                 </div>
                 <div class="ts-space"></div>
-                <div class="ts-card [[is-start-indicated]]">
+                <div class="ts-box [[is-start-indicated]]">
                     <div class="{{ts-content}}">左邊標記</div>
                 </div>
                 <div class="ts-space"></div>
-                <div class="ts-card [[is-end-indicated]]">
+                <div class="ts-box [[is-end-indicated]]">
                     <div class="{{ts-content}}">右部標記</div>
                 </div>
 
@@ -110,15 +110,15 @@ Definitions:
             Remove:
                 - <div class="ts-space"></div>
             HTML: |
-                <div class="ts-card [[is-negative]] is-top-indicated">
+                <div class="ts-box [[is-negative]] is-top-indicated">
                     <div class="{{ts-content}}">負面的</div>
                 </div>
                 <div class="ts-space"></div>
-                <div class="ts-card [[is-positive]] is-top-indicated">
+                <div class="ts-box [[is-positive]] is-top-indicated">
                     <div class="{{ts-content}}">正面的</div>
                 </div>
                 <div class="ts-space"></div>
-                <div class="ts-card [[is-warning]] is-top-indicated">
+                <div class="ts-box [[is-warning]] is-top-indicated">
                     <div class="{{ts-content}}">警告的</div>
                 </div>
 
@@ -126,7 +126,7 @@ Definitions:
             Anchor: Raised
             Description: 透過陰影讓容器看起來有浮起的感覺。
             HTML: |
-                <div class="ts-card [[is-raised]]">
+                <div class="ts-box [[is-raised]]">
                     <div class="{{ts-content}}">抬升的</div>
                 </div>
 
@@ -134,15 +134,15 @@ Definitions:
             Anchor: Sharp
             Description: 讓邊角以直角呈現而不再圓潤。
             HTML: |
-                <div class="ts-card [[is-sharp]]">
-                    <div class="{{ts-content}}">直角卡片容器</div>
+                <div class="ts-box [[is-sharp]]">
+                    <div class="{{ts-content}}">直角箱型容器</div>
                 </div>
 
           - Title: 空虛的
             Anchor: Dashed
             Description: 透過加粗虛線描繪外框，通常用以呈現空的區塊。
             HTML: |
-                <div class="ts-card [[is-hollowed]]">
+                <div class="ts-box [[is-hollowed]]">
                     <div class="{{ts-blankslate}} is-interactive">
                         <div class="header">上傳圖片或影音</div>
                         <div class="description">將圖片拖拉至此處進行上傳</div>
@@ -158,7 +158,7 @@ Definitions:
             HTML: |
                 <div class="{{ts-grid}} is-2-columns">
                     <div class="column">
-                        <div class="[[ts-card]]">
+                        <div class="[[ts-box]]">
                             <div class="{{ts-content}}">
                                 <div class="{{ts-statistic}}">
                                     <div class="value">42,689</div>
@@ -172,7 +172,7 @@ Definitions:
                         </div>
                     </div>
                     <div class="column">
-                        <div class="[[ts-card]]">
+                        <div class="[[ts-box]]">
                             <div class="{{ts-content}}">
                                 <div class="{{ts-statistic}}">
                                     <div class="value">8,652</div>
@@ -191,7 +191,7 @@ Definitions:
             Anchor: Composition Alert
             Description: 帶有負面語意的標記卡片可以用來警示使用者。
             HTML: |
-                <div class="ts-card is-negative [[is-start-indicated]]">
+                <div class="ts-box is-negative [[is-start-indicated]]">
                     <div class="{{ts-content}}">
                         <div class="{{ts-header}} is-negative">可用餘額不足</div>
                         <p>你的錢包餘額已經不夠支付本次的伺服器租賃費用。若超過付款期限仍未儲值，資料將會暫時無法存取。</p>
@@ -200,9 +200,9 @@ Definitions:
 
           - Title: 連結預覽卡片
             Anchor: Composition Link Preview
-            Description: 在卡片容器裡擺放貼邊圖片和文字與標題就可以達成像 Facebook、Twitter 那樣的連結預覽卡片。
+            Description: 在箱型容器裡擺放貼邊圖片和文字與標題就可以達成像 Facebook、Twitter 那樣的連結預覽卡片。
             HTML: |
-                <div class="[[ts-card]]" style="max-width: 360px">
+                <div class="[[ts-box]]" style="max-width: 360px">
                     <div class="{{ts-image}}">
                         <img src="!-16:9-!">
                     </div>

@@ -44,7 +44,7 @@ Definitions:
             Description: |
                 Tocas UI 預設會依照使用者的系統設定自動變更亮暗主題，你可以覆寫這個設定。
 
-                <div class="ts-card">
+                <div class="ts-box">
                     <table class="ts-table is-definition is-celled">
                         <thead>
                             <tr>
@@ -73,7 +73,7 @@ Definitions:
             Description: |
                 變更元件的圓角程度，令其看起來更尖銳或是圓潤。
 
-                <div class="ts-card">
+                <div class="ts-box">
                     <table class="ts-table is-definition is-celled">
                         <thead>
                             <tr>
@@ -110,7 +110,7 @@ Definitions:
             Description: |
                 更改所有元件與頁面的字體大小。
 
-                <div class="ts-card">
+                <div class="ts-box">
                     <table class="ts-table is-definition is-celled">
                         <thead>
                             <tr>

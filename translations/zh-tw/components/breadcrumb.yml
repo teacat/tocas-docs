@@ -125,9 +125,9 @@ Definitions:
       Sections:
           - Title: 區塊導覽標記
             Anchor: Composition Block
-            Description: 搭配[卡片容器](./card.html)呈現出一個區塊導覽標記。
+            Description: 搭配[箱型容器](./box.html)呈現出一個區塊導覽標記。
             HTML: |
-                <div class="[[{{ts-card}}]]">
+                <div class="[[{{ts-box}}]]">
                     <div class="{{ts-content}} is-secondary">
                         <div class="ts-breadcrumb is-chevroned">
                             <a class="item">電影</a>

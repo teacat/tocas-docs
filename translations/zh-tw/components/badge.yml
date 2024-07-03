@@ -81,7 +81,7 @@ Definitions:
             Anchor: Composition Table
             Description: 有時候表格裡可以加上計數徽章用以襯托相關標籤資訊。
             HTML: |
-                <div class="{{ts-card}}">
+                <div class="{{ts-box}}">
                     <table class="{{ts-table}}">
                         <thead>
                             <tr>
@@ -122,7 +122,7 @@ Definitions:
             Anchor: Composition Header
             Description: 想要強調某些最新消息就可以在標題裡使用計數徽章。
             HTML: |
-                <div class="{{ts-card}}">
+                <div class="{{ts-box}}">
                     <div class="{{ts-content}}">
                         <div class="{{ts-header}}">
                             星際效應

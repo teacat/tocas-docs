@@ -23,7 +23,7 @@ Definitions:
             Description: |
                 Tocas UI 使用動態色調，會依據使用者系統的亮暗主題設定而有所變化。善用這些 CSS 變數可以協助你應付兩種不同主題的介面。
 
-                <div class="ts-card">
+                <div class="ts-box">
                     <table class="ts-table is-definition is-celled">
                         <thead>
                             <tr>
@@ -239,7 +239,7 @@ Definitions:
             Description: |
                 靜態顏色不會在亮暗主題變更時而有所變化。
 
-                <div class="ts-card">
+                <div class="ts-box">
                     <table class="ts-table is-definition is-celled">
                         <thead>
                             <tr>
@@ -423,7 +423,7 @@ Definitions:
             Description: |
                 使該元素的色調與目前全域色系相反。亮色主題中的反色是暗色，反之亦然。
             HTML: |
-                <div class="{{ts-card}} [[has-inverted]]" style="color: var(--ts-gray-800)">
+                <div class="{{ts-box}} [[has-inverted]]" style="color: var(--ts-gray-800)">
                     <div class="{{ts-content}}">
                         在亮色主題中，這個元素會是黑色的；在暗色主題中，這個元素會是白色的。
                     </div>
@@ -436,13 +436,13 @@ Definitions:
             Remove:
                 - <div class="ts-space"></div>
             HTML: |
-                <div class="{{ts-card}} [[has-dark]]" style="color: var(--ts-gray-800)">
+                <div class="{{ts-box}} [[has-dark]]" style="color: var(--ts-gray-800)">
                     <div class="{{ts-content}}">
                         這個元素不論是在什麼環境，都一定是暗色的。
                     </div>
                 </div>
                 <div class="ts-space"></div>
-                <div class="{{ts-card}} [[has-light]]" style="color: var(--ts-gray-800)">
+                <div class="{{ts-box}} [[has-light]]" style="color: var(--ts-gray-800)">
                     <div class="{{ts-content}}">
                         這個元素不論是在什麼環境，都一定是亮色的。
                     </div>
@@ -481,7 +481,7 @@ Definitions:
     #            </div>
     #            <div class="ts-space is-large"></div>
 #
-    #            <div class="ts-card @container">
+    #            <div class="ts-box @container">
     #                <div class="ts-content is-padded">
     #                    <div class="ts-grid is-relaxed @[629px]-:is-1-columns @[630px]+:is-2-columns">
     #                        <!-- 左側 -->
@@ -489,7 +489,7 @@ Definitions:
     #                            <!-- 圖片卡片 -->
     #                            <div class="ts-header">卡片與標題</div>
     #                            <div class="ts-space"></div>
-    #                            <div class="ts-card is-top-indicated is-accent">
+    #                            <div class="ts-box is-top-indicated is-accent">
     #                                <div class="ts-content">
     #                                    <div class="ts-header is-heavy is-accent">好吃的千層蛋糕！</div>
     #                                </div>

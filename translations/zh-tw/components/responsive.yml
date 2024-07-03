@@ -24,7 +24,7 @@ Definitions:
             Description: |
                 Tocas UI 預設提供四個裝置中斷點。
 
-                <div class="ts-card">
+                <div class="ts-box">
                     <table class="ts-table is-definition is-celled">
                         <thead>
                             <tr>
@@ -98,7 +98,7 @@ Definitions:
             Description: |
                將 `中斷點:樣式` 套用到元素上，就能使用響應式功能。
 
-                <div class="ts-card">
+                <div class="ts-box">
                     <table class="ts-table is-definition is-celled">
                         <thead>
                             <tr>
@@ -151,7 +151,7 @@ Definitions:
             Description: |
                 透過方括號 `[尺寸]` 取代原本的中斷點名稱，就能使用像 `100px` 或 `450px` 這種臨時尺寸。
 
-                <div class="ts-card">
+                <div class="ts-box">
                     <table class="ts-table is-definition is-celled">
                         <thead>
                             <tr>

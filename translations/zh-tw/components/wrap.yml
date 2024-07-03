@@ -81,37 +81,37 @@ Definitions:
                 - <div class="ts-space"></div>
             HTML: |
                 <div class="ts-wrap [[is-top-aligned]]">
-                    <div class="{{ts-card}} {{has-padded}}" style="width: 30%">
+                    <div class="{{ts-box}} {{has-padded}}" style="width: 30%">
                         Consectetur adipiscing elit. In fermentum metus dolor.
                     </div>
-                    <div class="{{ts-card}} {{has-padded}}" style="width: 30%">
+                    <div class="{{ts-box}} {{has-padded}}" style="width: 30%">
                         置上對齊
                     </div>
-                    <div class="{{ts-card}} {{has-padded}}" style="width: 30%">
+                    <div class="{{ts-box}} {{has-padded}}" style="width: 30%">
                         Consectetur adipiscing elit. In fermentum metus dolor.
                     </div>
                 </div>
                 <div class="ts-space"></div>
                 <div class="ts-wrap [[is-middle-aligned]]">
-                    <div class="{{ts-card}} {{has-padded}}" style="width: 30%">
+                    <div class="{{ts-box}} {{has-padded}}" style="width: 30%">
                         Consectetur adipiscing elit. In fermentum metus dolor.
                     </div>
-                    <div class="{{ts-card}} {{has-padded}}" style="width: 30%">
+                    <div class="{{ts-box}} {{has-padded}}" style="width: 30%">
                         置中對齊
                     </div>
-                    <div class="{{ts-card}} {{has-padded}}" style="width: 30%">
+                    <div class="{{ts-box}} {{has-padded}}" style="width: 30%">
                         Consectetur adipiscing elit. In fermentum metus dolor.
                     </div>
                 </div>
                 <div class="ts-space"></div>
                 <div class="ts-wrap [[is-bottom-aligned]]">
-                    <div class="{{ts-card}} {{has-padded}}" style="width: 30%">
+                    <div class="{{ts-box}} {{has-padded}}" style="width: 30%">
                         Consectetur adipiscing elit. In fermentum metus dolor.
                     </div>
-                    <div class="{{ts-card}} {{has-padded}}" style="width: 30%">
+                    <div class="{{ts-box}} {{has-padded}}" style="width: 30%">
                         置下對齊
                     </div>
-                    <div class="{{ts-card}} {{has-padded}}" style="width: 30%">
+                    <div class="{{ts-box}} {{has-padded}}" style="width: 30%">
                         Consectetur adipiscing elit. In fermentum metus dolor.
                     </div>
                 </div>

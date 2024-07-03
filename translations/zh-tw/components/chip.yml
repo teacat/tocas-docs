@@ -241,7 +241,7 @@ Definitions:
             Anchor: Composition Reactions
             Description: 在某些內容底下能夠擺放關聯標籤作為對該訊息的反應。
             HTML: |
-                <div class="{{ts-card}}">
+                <div class="{{ts-box}}">
                     <div class="{{ts-content}}">
                         <p>如果你有去釣魚大賽，你可能會被禁止進入：「我們不歡迎職業選手」</p>
                         <div class="{{ts-wrap}} is-compact">
@@ -285,7 +285,7 @@ Definitions:
             Anchor: Composition Actions
             Description: 有卡片裡擺放關聯標籤作為附屬功能選項。
             HTML: |
-                <div class="{{ts-card}}" style="max-width: 360px">
+                <div class="{{ts-box}}" style="max-width: 360px">
                     <img class="{{ts-image}}" src="!-16:9-!">
                     <div class="{{ts-content}}">
                         <div class="{{ts-header}}">爭鮮 PLUS</div>

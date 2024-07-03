@@ -218,21 +218,21 @@ Definitions:
 
           - Title: 高度拉伸的
             Anchor: Stretched
-            Description: 使欄位裡的[卡片容器](./card.html)或第一層的元素高度拉伸至與其他欄位相同。
+            Description: 使欄位裡的[箱型容器](./box.html)或第一層的元素高度拉伸至與其他欄位相同。
             Remove:
                 - <span class="no-grid-indicator"></span>
             HTML: |
                 <span class="no-grid-indicator"></span>
                 <div class="ts-grid [[is-stretched]] is-3-columns">
                     <div class="column">
-                        <div class="{{ts-card}}">
+                        <div class="{{ts-box}}">
                             <div class="{{ts-content}}">
                                 <p>這個片段有一行文字。</p>
                             </div>
                         </div>
                     </div>
                     <div class="column">
-                        <div class="{{ts-card}}">
+                        <div class="{{ts-box}}">
                             <div class="{{ts-content}}">
                                 <p>這個片段有兩行文字。</p>
                                 <p>這個片段有兩行文字。</p>
@@ -240,7 +240,7 @@ Definitions:
                         </div>
                     </div>
                     <div class="column">
-                        <div class="{{ts-card}}">
+                        <div class="{{ts-box}}">
                             <div class="{{ts-content}}">
                                 <p>這個片段有三行文字。</p>
                                 <p>這個片段有三行文字。</p>

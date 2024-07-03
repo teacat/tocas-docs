@@ -24,7 +24,7 @@ Example:
     HTML: |
         <div class="[[ts-app-center]]">
             <div class="content">
-                <div class="{{ts-card}}">
+                <div class="{{ts-box}}">
                     <div class="{{ts-content}} is-padded">
                         這個區塊會置中出現在畫面正中央。
                     </div>
@@ -57,7 +57,7 @@ Definitions:
             HTML: |
                 <div class="[[ts-app-center]]">
                     <div class="content">
-                        <div class="{{ts-card}}" style="width: 270px">
+                        <div class="{{ts-box}}" style="width: 270px">
                             <div class="ts-content">
                                 <div class="{{ts-wrap}} is-vertical">
                                     <div class="{{ts-text}} is-label">使用者帳號</div>

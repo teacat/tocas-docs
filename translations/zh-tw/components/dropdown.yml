@@ -274,7 +274,7 @@ Definitions:
           #  Description: |
           #      若選單項目過多，可以試著將其指定為可捲動的，選單便不會過長。在不同螢幕大小上可供捲動的長度也不同。
           #
-          #      <div class="ts-card">
+          #      <div class="ts-box">
           #          <table class="ts-table is-celled">
           #              <thead>
           #                  <tr>
@@ -525,7 +525,7 @@ Definitions:
           - Title: 頂部列選單
             Anchor: Composition Topbar
             Description: |
-                [頂部列](./topbar.html)的尾側可以擺放一個帶有進階功能的選單。
+                [頂部列](./app-topbar.html)的尾側可以擺放一個帶有進階功能的選單。
             HTML: |
                 <div class="{{ts-app-topbar}}">
                     <div class="start">

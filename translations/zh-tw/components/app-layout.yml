@@ -8,7 +8,7 @@ Description: 切分應用程式畫面的格局外框。
 Intro: |
     通常用於規劃單頁應用程式的主要格局，預設會以 `100%` 的寬高填滿父容器。
 
-    格局劃分經常與[側邊導覽](./sidenav.html)和[導航列](./navbar.html)元件一同使用。
+    格局劃分經常與[側邊導覽](./app-sidebar.html)和[導航列](./app-navbar.html)元件一同使用。
 
 #=======================================================
 # 設定
@@ -188,7 +188,7 @@ Definitions:
                     </div>
                     <div class="cell [[is-tertiary]] is-fluid">
                         <div class="{{ts-content}}">
-                            <div class="{{ts-card}}">
+                            <div class="{{ts-box}}">
                                 <div class="{{ts-content}}">
                                     早安，我的朋友！
                                 </div>
@@ -202,7 +202,7 @@ Definitions:
       Sections:
           - Title: 單頁應用程式
             Anchor: Composition App
-            Description: 透過搭配[側邊導覽](./sidenav.html)和[導航列](./navbar.html)就能夠很輕鬆地做出一個單頁應用程式的框架。
+            Description: 透過搭配[側邊導覽](./app-sidebar.html)和[導航列](./app-navbar.html)就能夠很輕鬆地做出一個單頁應用程式的框架。
             HTML: |
                 <div class="{{ts-app-layout}} is-horizontal">
                     <div class="cell" style="width: 245px">

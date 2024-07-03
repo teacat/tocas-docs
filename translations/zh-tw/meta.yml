@@ -210,7 +210,7 @@ UI:
         Colors: 主題色系
         Responsive: 響應式設計
         About: 關於
-        Card: 卡片容器
+        Box: 箱型容器
         AppCenter: 中央區塊
         Container: 界限容器
         Content: 內容區塊
@@ -303,7 +303,7 @@ Components:
           - Switch
     - Name: Paragraphy
       Items:
-          - Card
+          - Box
           - Content
           - Divider
           - Header
