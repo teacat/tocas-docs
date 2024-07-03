@@ -269,7 +269,6 @@ UI:
         Timeline: 時間軸
         Blankslate: 空白看板
         Popover: 彈出內容
-        Collapse: 顯示切換
         Navbar: 導航列
         Topbar: 頂部列
         Center: 中央區塊
@@ -323,7 +322,6 @@ Components:
     - Name: Interaction
       Items:
           - Accordion
-          - Collapse
           - Dropdown
           - Modal
           - Popover

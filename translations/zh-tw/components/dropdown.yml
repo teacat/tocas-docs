@@ -48,18 +48,6 @@ Properties:
           - `bottom-start`
           - `bottom-end`
 
-    - Name: "[data-active]"
-      Target: 觸發按鈕
-      Description: |
-          選單顯示時，套用至觸發按鈕的樣式。<br>
-          使用空白分隔多個樣式名稱，如：`foo bar`。
-
-    - Name: "[data-inactive]"
-      Target: 觸發按鈕
-      Description: |
-          選單隱藏時，套用至觸發按鈕的樣式。<br>
-          使用空白分隔多個樣式名稱，如：`foo bar`。
-
 #=======================================================
 # 基本樣式
 # Definitions

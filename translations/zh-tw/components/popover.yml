@@ -43,18 +43,6 @@ Properties:
           彈出內容附著的目標元素 `[id]`。<br>
           不指定時，會吸附於觸發元素。
 
-    - Name: "[data-active]"
-      Target: 觸發按鈕
-      Description: |
-          目標顯示時，套用至觸發按鈕的樣式。<br>
-          使用空白分隔多個樣式名稱，如：`foo bar`。
-
-    - Name: "[data-inactive]"
-      Target: 觸發按鈕
-      Description: |
-          目標隱藏時，套用至觸發按鈕的樣式。<br>
-          使用空白分隔多個樣式名稱，如：`foo bar`。
-
 #=======================================================
 # 基本樣式
 # Definitions
