@@ -1,1 +1,2 @@
-Disallow: /4.2/*
+User-agent: *
+Disallow: /4.2/
