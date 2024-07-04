@@ -101,21 +101,16 @@
                         <a class="穹頂-導航列-項目 穹頂-導航列-項目_主要" href="./index.html">Tocas UI</a>
                     </div>
                     <div class="穹頂-導航列-右側">
-                        <div class="穹頂-導航列-項目 穹頂-導航列-項目_語系的">
+                        <button class="穹頂-導航列-項目" data-dropdown="dropdown-language-mobile">
                             <span class="ts-flag is-{{ .Meta.Information.Flag }}-flag"></span> {{ .Meta.Information.Language }}
-                            <div class="穹頂-導航列-項目-語系下拉式選單">
-                                {{ range .Meta.GlobalInformations }}
-                                <a
-                                    class="穹頂-導航列-項目-語系下拉式選單-項目 {{ if eq $.Meta.Information.Path .Path }}穹頂-導航列-項目-語系下拉式選單-項目_啟用的{{end}}"
-                                    href="./../{{ .Path }}/examples.html"
-                                    ><span class="ts-flag is-{{ .Flag }}-flag"></span> {{ .Language }}</a
-                                >
-                                {{ end }}
-                            </div>
+                        </button>
+                        <div class="ts-dropdown" id="dropdown-language-mobile" data-position="bottom">
+                            {{ range .Meta.GlobalInformations }}
+                            <a class="item {{ if eq $.Meta.Information.Path .Path }}is-selected{{end}}" href="./../{{ .Path }}/{{ kebablize $.This }}.html">
+                                <span class="ts-flag is-{{ .Flag }}-flag"></span> {{ .Language }}
+                            </a>
+                            {{ end }}
                         </div>
-                        <!--<a class="穹頂-導航列-項目 穹頂-導航列-項目_選單按鈕" href="#!">
-                            <span class="ts-icon is-bars-icon"></span>
-                        </a>-->
                     </div>
                 </div>
                 <div class="穹頂-標題">
