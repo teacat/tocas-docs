@@ -7,7 +7,7 @@ Information:
     LanguageCode: zh-tw
     Path: zh-tw
     Flag: taiwan
-    Version: 5.0.0
+    Version: 5.0.1
     ShortVersion: 5.0
 
 #=======================================================
@@ -29,7 +29,7 @@ Contributors:
 Versions:
     - Name: 最新版本
       Items:
-          - Name: 5.0.0
+          - Name: 5.0.1
             Website:
     - Name: 過往版本
       Items:

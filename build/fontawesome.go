@@ -103,7 +103,7 @@ func fontawesome(c *cli.Context) error {
 				return err
 			}
 
-			err = os.WriteFile(Path("{src}/icons/"+filepath.Base(v)), dat, 0777)
+			err = os.WriteFile(Path("{src}/fonts/icons/"+filepath.Base(v)), dat, 0777)
 			if err != nil {
 				return err
 			}
@@ -204,7 +204,7 @@ func fontawesome(c *cli.Context) error {
 		}
 
 		// 將機器自動修改後的結果存入 Tocas UI 的圖示原始碼內，完成本次的自動升級。
-		err = os.WriteFile(Path("{src}/icons.css"), []byte(newContent), 0777)
+		err = os.WriteFile(Path("{src}/fonts/icons.css"), []byte(newContent), 0777)
 		if err != nil {
 			return err
 		}

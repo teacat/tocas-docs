@@ -95,12 +95,12 @@ func compile(c *cli.Context) error {
 		log.Fatal(err)
 	}
 
-	// remove old `/dist/icons` and copy from `/src/icons`
-	if err := os.RemoveAll(Path("{dist}/icons")); err != nil {
+	// remove old `/dist/fonts/icons` and copy from `/src/fonts/icons`
+	if err := os.RemoveAll(Path("{dist}/fonts/icons")); err != nil {
 		log.Fatal(err)
 	}
 
-	if output, err := exec.Command("cp", "-rf", Path("{src}/icons"), Path("{dist}/icons")).CombinedOutput(); err != nil {
+	if output, err := exec.Command("cp", "-rf", Path("{src}/fonts/icons"), Path("{dist}/fonts/icons")).CombinedOutput(); err != nil {
 		log.Fatal(err.Error() + string(output))
 	}
 	// remove old `/dist/flags` and copy from `/src/flags`
