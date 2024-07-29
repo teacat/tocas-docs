@@ -1,0 +1,220 @@
+#=======================================================
+# 標頭
+# Header
+#=======================================================
+
+Title: Button
+Description: A button indicates a possible user action.
+
+#=======================================================
+# 設定
+# Settings
+#=======================================================
+
+Type: Article
+Relatives:
+    - Close
+
+#=======================================================
+# 基本樣式
+# Definitions
+#=======================================================
+
+Example:
+    Centered: true
+    HTML: |
+        <button class="[[ts-button]]">Submit</button>
+
+Definitions:
+    - Title: States
+      Description:
+      Sections:
+          - Title: Disabled
+            Anchor: Disabled
+            Description: A button can show it's disabled. For link buttons, use the `.is-disabled` class.
+            HTML: |
+                <button class="ts-button" [[disabled]]>Disabled Button</button>
+                <a class="ts-button [[is-disabled]]">Disabled Link</a>
+
+          - Title: Loading
+            Anchor: Loading
+            Description: A button can show a loading indicator. `[disabled]` attribute is required to disable interaction.
+            HTML: |
+                <button class="ts-button [[is-loading]]" disabled>Loading</button>
+
+    - Title: Variations
+      Description:
+      Sections:
+          - Title: Secondary
+            Anchor: Secondary
+            Description: A button with less emphasis.
+            HTML: |
+                <button class="ts-button [[is-secondary]]">Cancel</button>
+
+          - Title: Outlined
+            Anchor: Outlined
+            Description: A outlined button is less pronounced.
+            HTML: |
+                <button class="ts-button [[is-outlined]]">See Detail</button>
+
+          - Title: Negative
+            Anchor: Negative
+            Description: A button can hint towards a negative consequence.
+            HTML: |
+                <button class="ts-button [[is-negative]]">Destory</button>
+                <button class="ts-button [[is-negative]] is-outlined">Discard</button>
+
+          - Title: Ghost
+            Anchor: Ghost
+            Description: A button that is infrequently to be used.
+            HTML: |
+                <button class="ts-button [[is-ghost]]">Forgot Password?</button>
+
+          - Title: Circular
+            Anchor: Circular
+            Description: A button can be circular.
+            HTML: |
+                <button class="ts-button [[is-circular]]">Buy</button>
+                <button class="ts-button [[is-circular]] is-outlined">Download Latest</button>
+
+          - Title: Icon
+            Anchor: Icon
+            Description: A button can have only an icon.
+            HTML: |
+                <button class="ts-button [[is-icon]]">
+                    <span class="{{ts-icon}} is-magnifying-glass-icon"></span>
+                </button>
+                <button class="ts-button [[is-icon]] is-negative is-outlined">
+                    <span class="{{ts-icon}} is-trash-icon"></span>
+                </button>
+
+          - Title: Side Icon
+            Anchor: Side Icon
+            Description: A button with icon next to the text.
+            HTML: |
+                <button class="ts-button [[is-start-icon]]">
+                    <span class="{{ts-icon}} is-cart-plus-icon"></span>
+                    Add to Cart
+                </button>
+                <button class="ts-button [[is-end-icon]] is-secondary">
+                    Done
+                    <span class="{{ts-icon}} is-check-icon"></span>
+                </button>
+
+          - Title: Labeled Icon
+            Anchor: Labeled Icon
+            Description: A button can use an icon as a label.
+            Remove:
+                - <div class="ts-space"></div>
+            HTML: |
+                <button class="ts-button [[is-start-labeled-icon]]">
+                    <span class="{{ts-icon}} is-heart-icon"></span>
+                    Favorite
+                </button>
+                <div class="ts-space"></div>
+                <button class="ts-button [[is-start-labeled-icon]] is-outlined">
+                    <span class="{{ts-icon}} is-paper-plane-icon"></span>
+                    Send
+                </button>
+                <div class="ts-space"></div>
+                <button class="ts-button [[is-end-labeled-icon]] is-secondary">
+                    Mark
+                    <span class="{{ts-icon}} is-star-icon"></span>
+                </button>
+
+          - Title: Fluid
+            Anchor: Fluid
+            Description: A button can take the width of its container.
+            HTML: |
+                <button class="ts-button [[is-fluid]]">Login</button>
+
+          - Title: Width
+            Anchor: Width
+            Description: A button can adjust its padding to fit spaces.
+            HTML: |
+                <button class="ts-button [[is-short]] is-outlined">Short</button>
+                <button class="ts-button is-outlined">Default</button>
+                <button class="ts-button [[is-wide]] is-outlined">Wide</button>
+
+          - Title: Sizes
+            Anchor: Sizes
+            Description: A button can have different sizes.
+            HTML: |
+                <button class="ts-button [[is-small]]">Small</button>
+                <button class="ts-button">Default</button>
+                <button class="ts-button [[is-large]]">Large</button>
+
+          - Title: Density
+            Anchor: Density
+            Description: A button can adjust its height for a tighter or more relaxed look.
+            HTML: |
+                <button class="ts-button [[is-dense]]">Dense</button>
+                <button class="ts-button">Default</button>
+                <button class="ts-button [[is-relaxed]]">Relaxed</button>
+
+    - Title: Group
+      Description:
+      Sections:
+          - Title: Buttons
+            Anchor: Buttons
+            Description: Buttons can exist together as a group, with dividers in the between.
+            Remove:
+                - <div class="ts-space"></div>
+            HTML: |
+                <div class="[[ts-buttons]]">
+                    <button class="ts-button">Submit</button>
+                    <button class="ts-button is-icon">
+                        <span class="{{ts-icon}} is-chevron-down-icon"></span>
+                    </button>
+                </div>
+                <div class="ts-space"></div>
+                <div class="[[ts-buttons]]">
+                    <button class="ts-button is-outlined">Submit</button>
+                    <button class="ts-button is-outlined is-icon">
+                        <span class="{{ts-icon}} is-chevron-down-icon"></span>
+                    </button>
+                </div>
+
+    - Title: Compositions
+      Description:
+      Sections:
+          - Title: Buttons
+            Anchor: Composition Buttons
+            Description: Use a [Wrap](./wrap.html) to keep a consistent gap between buttons.
+            HTML: |
+                <div class="[[{{ts-wrap}}]]">
+                    <button class="ts-button">Publish</button>
+                    <button class="ts-button is-negative is-outlined">Discard Draft</button>
+                </div>
+
+          - Title: Like and Dislike
+            Anchor: Composition Likes
+            Description: Show a like/dislike button group.
+            HTML: |
+                <div class="[[ts-buttons]]">
+                    <button class="ts-button is-secondary is-circular is-start-icon">
+                        <span class="{{ts-icon}} is-thumbs-up-icon"></span>
+                        324
+                    </button>
+                    <button class="ts-button is-secondary is-circular is-start-icon">
+                        <span class="{{ts-icon}} is-regular is-thumbs-down-icon"></span>
+                        7
+                    </button>
+                </div>
+
+          - Title: Split Button
+            Anchor: Composition Split Button
+            Description: Place a secondary button next to the primary button that opens a [Dropdown](./dropdown.html).
+            HTML: |
+                <div class="[[ts-buttons]]">
+                    <button class="ts-button">Start Game</button>
+                    <button class="ts-button is-icon" data-dropdown="dropdown">
+                        <span class="{{ts-icon}} is-gear-icon"></span>
+                    </button>
+                </div>
+                <div class="[[{{ts-dropdown}}]]" id="dropdown">
+                    <button class="item">Preferences</button>
+                    <button class="item">Scan and Fix</button>
+                    <div class="divider"></div>
+                    <button class="item">Delete Game</button>
+                </div>

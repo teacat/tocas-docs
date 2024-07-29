@@ -1,0 +1,387 @@
+#=======================================================
+# 標頭
+# Header
+#=======================================================
+
+Title: Menu
+Description: A menu displays grouped navigation actions.
+
+#=======================================================
+# 設定
+# Settings
+#=======================================================
+
+Type: Article
+Relatives:
+    - Dropdown
+    - Tab
+
+#=======================================================
+# 基本樣式
+# Definitions
+#=======================================================
+
+Example:
+    Centered: true
+    HTML: |
+        <div class="{{ts-box}}" style="width: 250px">
+            <div class="[[ts-menu]] is-start-icon">
+                <a class="item">
+                    <span class="{{ts-icon}} is-house-icon"></span> Home
+                </a>
+                <a class="item is-active">
+                    <span class="{{ts-icon}} is-gauge-high-icon"></span> Dashboard
+                </a>
+                <a class="item">
+                    <span class="{{ts-icon}} is-table-icon"></span> Orders
+                </a>
+                <div class="{{ts-divider}}"></div>
+                <a class="item">
+                    <span class="{{ts-icon}} is-gears-icon"></span> Settings
+                </a>
+            </div>
+        </div>
+
+Definitions:
+    - Title: States
+      Description:
+      Sections:
+          - Title: Active
+            Anchor: Active
+            Description: A menu item can be active.
+            HTML: |
+                <div class="ts-menu">
+                    <a class="item">Profile</a>
+                    <a class="item [[is-active]]">Locations</a>
+                    <a class="item">Settings</a>
+                </div>
+
+          - Title: Disabled
+            Anchor: Disabled
+            Description: A menu item can be disabled. If the item is a hyperlink, apply the `.is-disabled` class.
+            HTML: |
+                <div class="ts-menu">
+                    <a class="item">Communication</a>
+                    <button class="item" [[disabled]]>History</button>
+                    <a class="item [[is-disabled]]">Navigation</a>
+                </div>
+
+          - Title: Selected
+            Anchor: Selected
+            Description: A menu item can be selected.
+            HTML: |
+                <div class="ts-menu">
+                    <a class="item">Apple</a>
+                    <a class="item [[is-selected]]">Pineapple</a>
+                    <a class="item">Watermelon</a>
+                </div>
+
+    - Title: Structure
+      Description:
+      Sections:
+          - Title: Badge
+            Anchor: Badge
+            Description: A [Badge](./badge.html) can be placed inside a menu item.
+            HTML: |
+                <div class="{{ts-box}} is-collapsed">
+                    <div class="ts-menu is-collapsed is-start-icon">
+                        <a class="item is-active">
+                            <span class="{{ts-icon}} is-inbox-icon"></span>
+                            Inbox
+                            <div class="[[{{ts-badge}}]] {{has-inverted}} is-small is-dense">3</div>
+                        </a>
+                        <a class="item">
+                            <span class="{{ts-icon}} is-bookmark-icon"></span>
+                            Important
+                            </a>
+                        <a class="item">
+                            <span class="{{ts-icon}} is-circle-exclamation-icon"></span>
+                            Spam
+                            <div class="[[{{ts-badge}}]] is-small is-dense">64</div>
+                        </a>
+                    </div>
+                </div>
+
+    - Title: Variations
+      Description:
+      Sections:
+          - Title: Separated
+            Anchor: Separated
+            Description: A menu can have items separated by gaps.
+            HTML: |
+                <div class="ts-menu [[is-separated]] is-start-icon">
+                    <a class="item">
+                        <span class="{{ts-icon}} is-user-icon"></span> Users
+                    </a>
+                    <a class="item is-active">
+                        <span class="{{ts-icon}} is-house-icon"></span> Home
+                    </a>
+                    <a class="item">
+                        <span class="{{ts-icon}} is-newspaper-icon"></span> News
+                    </a>
+                </div>
+
+          - Title: Collapsed
+            Anchor: Collapsed
+            Description: A menu can have its width to fit its content.
+            HTML: |
+                <div class="ts-menu [[is-collapsed]] is-separated is-start-icon">
+                    <a class="item">
+                        <span class="{{ts-icon}} is-envelope-icon"></span> Mail
+                    </a>
+                    <a class="item is-active">
+                        <span class="{{ts-icon}} is-comment-icon"></span> Chat
+                    </a>
+                    <a class="item">
+                        <span class="{{ts-icon}} is-users-icon"></span> Community
+                    </a>
+                </div>
+
+          - Title: Icon
+            Anchor: Icon
+            Description: A menu item can have an icon at the start or end.
+            Remove:
+                - <div class="ts-space"></div>
+            HTML: |
+                <div class="{{ts-box}}">
+                    <div class="ts-menu [[is-start-icon]]">
+                        <a class="item">
+                            <span class="{{ts-icon}} is-magnifying-glass-icon"></span> Search
+                        </a>
+                        <a class="item">
+                            <span class="{{ts-icon}} is-vials-icon"></span> Labs
+                        </a>
+                        <a class="item">
+                            <span class="{{ts-icon}} is-atom-icon"></span> Atoms
+                        </a>
+                    </div>
+                </div>
+                <div class="ts-space"></div>
+                <div class="{{ts-box}}">
+                    <div class="ts-menu [[is-end-icon]]">
+                        <a class="item">
+                            Favorites <span class="{{ts-icon}} is-heart-icon"></span>
+                        </a>
+                        <a class="item">
+                            Likes <span class="{{ts-icon}} is-thumbs-up-icon"></span>
+                        </a>
+                        <a class="item">
+                            Archives <span class="{{ts-icon}} is-box-archive-icon"></span>
+                        </a>
+                    </div>
+                </div>
+
+          - Title: Horizontally Padded
+            Anchor: Horizontally Padded
+            Description: A menu item can be padded horizontally, usually for aligning with [Content](./content.html).
+            Remove:
+                - <div class="ts-space"></div>
+            HTML: |
+                <div class="{{ts-box}}">
+                    <div class="ts-menu">
+                        <a class="item">
+                            Default
+                        </a>
+                        <a class="item">
+                            Default
+                        </a>
+                    </div>
+                </div>
+                <div class="ts-space"></div>
+                <div class="{{ts-box}}">
+                    <div class="ts-menu [[is-horizontally-padded]]">
+                        <a class="item">
+                            Padded
+                        </a>
+                        <a class="item">
+                            Padded
+                        </a>
+                    </div>
+                </div>
+                <div class="ts-space"></div>
+                <div class="{{ts-box}}">
+                    <div class="ts-menu [[is-horizontally-very-padded]]">
+                        <a class="item">
+                            Very Padded
+                        </a>
+                        <a class="item">
+                            Very Padded
+                        </a>
+                    </div>
+                </div>
+
+          - Title: Sizes
+            Anchor: Sizes
+            Description: A menu item can have different sizes.
+            Remove:
+                - <div class="ts-space"></div>
+            HTML: |
+                <div class="{{ts-box}}">
+                    <div class="ts-menu [[is-large]] is-start-icon">
+                        <a class="item">
+                            <span class="{{ts-icon}} is-star-icon"></span> Favorites
+                        </a>
+                        <a class="item">
+                            <span class="{{ts-icon}} is-users-icon"></span> Contacts
+                        </a>
+                    </div>
+                </div>
+                <div class="ts-space"></div>
+                <div class="{{ts-box}}">
+                    <div class="ts-menu is-start-icon">
+                        <a class="item">
+                            <span class="{{ts-icon}} is-star-icon"></span> Favorites
+                        </a>
+                        <a class="item">
+                            <span class="{{ts-icon}} is-users-icon"></span> Contacts
+                        </a>
+                    </div>
+                </div>
+                <div class="ts-space"></div>
+                <div class="{{ts-box}}">
+                    <div class="ts-menu [[is-small]] is-start-icon">
+                        <a class="item">
+                            <span class="{{ts-icon}} is-star-icon"></span> Favorites
+                        </a>
+                        <a class="item">
+                            <span class="{{ts-icon}} is-users-icon"></span> Contacts
+                        </a>
+                    </div>
+                </div>
+
+          - Title: Density
+            Anchor: Density
+            Description: A menu can have items with dense or relaxed spacing.
+            Remove:
+                - <div class="ts-space"></div>
+            HTML: |
+                <div class="ts-menu [[is-relaxed]] is-start-icon is-separated">
+                    <a class="item">
+                        <span class="{{ts-icon}} is-house-icon"></span> Home
+                    </a>
+                    <a class="item is-active">
+                        <span class="{{ts-icon}} is-gauge-high-icon"></span> Dashboard
+                    </a>
+                    <a class="item">
+                        <span class="{{ts-icon}} is-table-icon"></span> Orders
+                    </a>
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-menu is-start-icon is-separated">
+                    <a class="item">
+                        <span class="{{ts-icon}} is-house-icon"></span> Home
+                    </a>
+                    <a class="item is-active">
+                        <span class="{{ts-icon}} is-gauge-high-icon"></span> Dashboard
+                    </a>
+                    <a class="item">
+                        <span class="{{ts-icon}} is-table-icon"></span> Orders
+                    </a>
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-menu [[is-dense]] is-start-icon is-separated">
+                    <a class="item">
+                        <span class="{{ts-icon}} is-house-icon"></span> Home
+                    </a>
+                    <a class="item is-active">
+                        <span class="{{ts-icon}} is-gauge-high-icon"></span> Dashboard
+                    </a>
+                    <a class="item">
+                        <span class="{{ts-icon}} is-table-icon"></span> Orders
+                    </a>
+                </div>
+
+    - Title: Compositions
+      Description:
+      Sections:
+          - Title: Side Menu
+            Anchor: Composition Sidebar
+            Description: Create a side menu by combining an [Input](./input.html) and [Content](./content.html).
+            HTML: |
+                <div class="{{ts-box}}" style="width: 250px">
+                    <div class="[[{{ts-content}}]]">
+                        <div class="{{ts-input}}">
+                            <input type="text" placeholder="Search...">
+                        </div>
+                    </div>
+                    <div class="{{ts-divider}}"></div>
+                    <div class="ts-menu is-start-icon">
+                        <a class="item">
+                            <span class="{{ts-icon}} is-house-icon"></span> Home
+                        </a>
+                        <a class="item is-active">
+                            <span class="{{ts-icon}} is-gauge-high-icon"></span> Dashboard
+                        </a>
+                        <a class="item">
+                            <span class="{{ts-icon}} is-table-icon"></span> Orders
+                        </a>
+                        <div class="{{ts-divider}}"></div>
+                        <a class="item">
+                            <span class="{{ts-icon}} is-gears-icon"></span> Settings
+                        </a>
+                    </div>
+                </div>
+
+          - Title: Padded Menu
+            Anchor: Composition Padded
+            Description: Padded menu can be placed inside a [Content](./content.html) to have a gap with the border of a [Box](./box.html).
+            HTML: |
+                <div class="{{ts-box}}" style="width: 250px">
+                    <div class="[[{{ts-content}}]]">
+                        <div class="ts-menu is-start-icon is-separated">
+                            <a class="item">
+                                <span class="{{ts-icon}} is-globe-icon"></span> Domains
+                            </a>
+                            <a class="item is-active">
+                                <span class="{{ts-icon}} is-id-card-icon"></span> SSL Certificates
+                            </a>
+                            <a class="item">
+                                <span class="{{ts-icon}} is-credit-card-icon"></span> Billing
+                            </a>
+                            <div class="{{ts-divider}}"></div>
+                            <a class="item">
+                                <span class="{{ts-icon}} is-circle-user-icon"></span> Profile
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+          - Title: Feature List
+            Anchor: Composition Function Navigation
+            Description: "[Header](./header.html), [Grid](./grid.html), [Icon](./icon.html) can be placed inside a menu item."
+            HTML: |
+                <div class="{{ts-box}} is-collapsed">
+                    <div class="ts-menu is-collapsed">
+                        <a class="item">
+                            <div class="[[{{ts-iconset}}]] is-outlined">
+                                <span class="{{ts-icon}} is-bullhorn-icon"></span>
+                                <div class="content">
+                                    <div class="title">Promotion</div>
+                                    <div class="text">Check out our latest promotions!</div>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="{{ts-divider}}"></div>
+                        <a class="item">
+                            <div class="[[{{ts-iconset}}]] is-outlined">
+                                <span class="{{ts-icon}} is-ticket-simple-icon"></span>
+                                <div class="content">
+                                    <div class="title">Coupons</div>
+                                    <div class="text">Browse the coupons we offer.</div>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="{{ts-divider}}"></div>
+                        <a class="item">
+                            <div class="[[{{ts-iconset}}]] is-outlined">
+                                <span class="{{ts-icon}} is-truck-icon"></span>
+                                <div class="content">
+                                    <div class="title">Refund</div>
+                                    <div class="text">
+                                        See our unconditional return policy.
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>

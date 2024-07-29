@@ -1,0 +1,152 @@
+#=======================================================
+# 標頭
+# Header
+#=======================================================
+
+Title: Imageset
+Description: An imageset is used to group related pictures.
+
+#=======================================================
+# 設定
+# Settings
+#=======================================================
+
+Type: Article
+Relatives:
+    - Image
+
+#=======================================================
+# 基本樣式
+# Definitions
+#=======================================================
+
+Example:
+    Centered: true
+    HTML: |
+        <div class="[[ts-imageset]] is-3-images">
+            <div class="item">
+                <img src="!-16:9-!">
+            </div>
+            <div class="item">
+                <img src="!-16:9-!">
+            </div>
+            <div class="item">
+                <img src="!-16:9-!">
+            </div>
+        </div>
+
+Definitions:
+    - Title: Variations
+      Description:
+      Sections:
+          - Title: Images
+            Anchor: Images
+            Description: Specifying the number of images in a set, from `is-1-images` to `is-4-images`.
+            HTML: |
+                <div class="ts-imageset [[is-4-images]]">
+                    <div class="item">
+                        <img src="!-16:9-!">
+                    </div>
+                    <div class="item">
+                        <img src="!-16:9-!">
+                    </div>
+                    <div class="item">
+                        <img src="!-16:9-!">
+                    </div>
+                    <div class="item">
+                        <img src="!-16:9-!">
+                    </div>
+                </div>
+
+          - Title: Portrait
+            Anchor: Portrait
+            Description: Images can be arranged in a portrait layout.
+            HTML: |
+                <div class="ts-imageset is-4-images [[is-portrait]]">
+                    <div class="item">
+                        <img src="!-16:9-!">
+                    </div>
+                    <div class="item">
+                        <img src="!-16:9-!">
+                    </div>
+                    <div class="item">
+                        <img src="!-16:9-!">
+                    </div>
+                    <div class="item">
+                        <img src="!-16:9-!">
+                    </div>
+                </div>
+
+          - Title: Rounded
+            Anchor: Rounded
+            Description: An imageset can have its images with rounded corners.
+            HTML: |
+                <div class="ts-imageset is-3-images [[is-rounded]]">
+                    <div class="item">
+                        <img src="!-16:9-!">
+                    </div>
+                    <div class="item">
+                        <img src="!-16:9-!">
+                    </div>
+                    <div class="item">
+                        <img src="!-16:9-!">
+                    </div>
+                </div>
+
+          #- Title: 區塊圓角的
+          #  Anchor: Block Rounded
+          #  Description: 以圓角修飾組合區塊的角落，但圖片之間的角落仍保持直角。
+          #  HTML: |
+          #      <div class="ts-imageset is-3-images [[is-block-rounded]]">
+          #          <div class="item">
+          #              <img src="!-16:9-!">
+          #          </div>
+          #          <div class="item">
+          #              <img src="!-16:9-!">
+          #          </div>
+          #          <div class="item">
+          #              <img src="!-16:9-!">
+          #          </div>
+          #      </div>
+
+          - Title: Density
+            Anchor: Density
+            Description: An imageset can adjust the gap between images.
+            Remove:
+                - <div class="ts-space"></div>
+            HTML: |
+                <div class="ts-imageset is-portrait is-3-images [[is-relaxed]]" style="max-width: 300px">
+                    <div class="item">
+                        <img src="!-16:9-!">
+                    </div>
+                    <div class="item">
+                        <img src="!-16:9-!">
+                    </div>
+                    <div class="item">
+                        <img src="!-16:9-!">
+                    </div>
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-imageset is-portrait is-3-images" style="max-width: 300px">
+                    <div class="item">
+                        <img src="!-16:9-!">
+                    </div>
+                    <div class="item">
+                        <img src="!-16:9-!">
+                    </div>
+                    <div class="item">
+                        <img src="!-16:9-!">
+                    </div>
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-imageset is-portrait is-3-images [[is-compact]]" style="max-width: 300px">
+                    <div class="item">
+                        <img src="!-16:9-!">
+                    </div>
+                    <div class="item">
+                        <img src="!-16:9-!">
+                    </div>
+                    <div class="item">
+                        <img src="!-16:9-!">
+                    </div>
+                </div>

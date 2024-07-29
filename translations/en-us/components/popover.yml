@@ -1,0 +1,159 @@
+#=======================================================
+# 標頭
+# Header
+#=======================================================
+
+Title: Popover
+Description: A popover displays additional information on top of a page.
+Intro: |
+    Popover uses the native [Popover API](https://developer.mozilla.org/en-US/docs/Web/API/Popover_API). It will automatically attach to the corresponding element when displayed.
+
+#=======================================================
+# 設定
+# Settings
+#=======================================================
+
+Type: Article
+Relatives:
+    - Dropdown
+    - Modal
+
+#=======================================================
+# 屬性
+# Properties
+#=======================================================
+
+Properties:
+    - Name: "[data-position]"
+      Default: bottom
+      Target: .ts-popover
+      Description: |
+          The preferred position of the popover.
+
+          - `top`
+          - `top-start`
+          - `top-end`
+          - `bottom`
+          - `bottom-start`
+          - `bottom-end`
+
+    - Name: "[data-anchor]"
+      Target: .ts-popover
+      Description: |
+          The target element `[id]` that the popover will attach to. It will attach to the trigger element if not specified.
+
+#=======================================================
+# 基本樣式
+# Definitions
+#=======================================================
+
+Example:
+    Centered: true
+    HTML: |
+        <button class="{{ts-button}}" popovertarget="((popup))">
+            Open Popover ✨
+        </button>
+        <div class="[[ts-popover]]" id="((popup))" popover>
+            <div class="{{ts-content}}">
+                Everyone deserves creative freedom;<br>
+                it's our main goal.
+            </div>
+        </div>
+
+Definitions:
+    - Title: Structure
+      Description:
+      Sections:
+          - Title: Content
+            Anchor: Content
+            Description: |
+                Content should be placed inside the popover block, see the [Compositions](#composition-inline-edit) below.
+            AttachedHTML: |
+                <div class="[[ts-popover]]" popover>
+                    <!-- ... -->
+                </div>
+
+
+    - Title: Compositions
+      Description:
+      Sections:
+          - Title: Inline Edit
+            Anchor: Composition Inline Edit
+            Description: |
+                A form will pop up when certain text is clicked for editing.
+            HTML: |
+                <button class="{{ts-text}} is-editable" popovertarget="((edit))">
+                    Product Price: $3,600
+                </button>
+                <div class="[[ts-popover]]" id="((edit))" popover>
+                    <div class="{{ts-content}} is-secondary is-dense">
+                        <div class="{{ts-text}} is-bold">Edit Price</div>
+                    </div>
+                    <div class="{{ts-divider}}"></div>
+                    <div class="{{ts-content}}">
+                        <div class="ts-grid">
+                            <div class="column is-fluid">
+                                <div class="{{ts-input}}">
+                                    <input type="number" value="3600">
+                                </div>
+                            </div>
+                            <div class="column">
+                                <button class="{{ts-button}} is-icon" popovertarget="((edit))">
+                                    <span class="{{ts-icon}} is-check-icon"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+          - Title: Profile Card
+            Anchor: Composition Profile
+            Description: |
+                Clicking on a profile picture will pop up the user's details.
+            HTML: |
+                <button class="{{ts-image}}" popovertarget="((profile))">
+                    <img src="!-user-!" width="32">
+                </button>
+                <div class="[[ts-popover]]" id="((profile))" popover>
+                    <div class="{{ts-image}}">
+                        <img src="!-16:9-!" width="300">
+                    </div>
+                    <div class="{{ts-content}}">
+                        <div class="{{ts-header}} is-heavy">Yami Odymel</div>
+                        <div class="{{ts-meta}} is-secondary">
+                            <a class="item">Joined 3 days ago</a>
+                            <a class="item">5 Friends</a>
+                        </div>
+                    </div>
+                </div>
+
+    - Title: JavaScript Features
+      Sections:
+          - Title: Trigger by Attribute
+            Anchor: Popover Trigger
+            Description: |
+                Clicking on a button with the [`[popovertarget]`](https://developer.mozilla.org/en-US/docs/Web/API/Popover_API/Using) attribute will open or close the popover with the corresponding `[id]`.
+            HTML: |
+                <button class="{{ts-button}}" [[popovertarget]]="((example))">
+                    Open Popover ✨
+                </button>
+                <div class="ts-popover" id="((example))" popover>
+                    <div class="{{ts-content}}">
+                        Click outside the content<br>
+                        to close this popup.
+                    </div>
+                </div>
+
+          - Title: Trigger by JavaScript
+            Anchor: Js Trigger
+            Description: |
+                Open the popover with the native [`.showPopover()`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/showPopover) function. When opened, the [`toggle`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/toggle_event) event will be triggered.
+            AttachedHTML: |
+                // Open the `#popover` popover.
+                document.querySelector('#popover').showPopover();
+
+                // Close the `#popover` popover.
+                document.querySelector('#popover').hidePopover();
+
+
+

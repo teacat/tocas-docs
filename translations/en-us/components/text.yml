@@ -1,0 +1,214 @@
+#=======================================================
+# 標頭
+# Header
+#=======================================================
+
+Title: Text
+Description: A text is used to style some inline text with an emphasis.
+
+#=======================================================
+# 設定
+# Settings
+#=======================================================
+
+Type: Article
+Relatives:
+    - Header
+
+#=======================================================
+# 基本樣式
+# Definitions
+#=======================================================
+
+Example:
+    Centered: true
+    HTML: |
+        <span class="[[ts-text]]">Hello, world!</span>
+
+Definitions:
+    - Title: Types
+      Description:
+      Sections:
+          - Title: Link
+            Anchor: Link
+            Description: A text can be a hyperlink.
+            HTML: |
+                <a class="ts-text [[is-link]]">Hello, world!</a>
+
+          - Title: External Link
+            Anchor: External Link
+            Description: A text can be a hyperlink with an icon indicating it opens in a new tab.
+            HTML: |
+                For more info, see the <a class="ts-text [[is-external-link]]">white paper</a>.
+
+          - Title: Icon Link
+            Anchor: Icon Link
+            Description: A text can have an icon on the side.
+            HTML: |
+                <a class="ts-text [[is-icon-link]]">
+                    <span class="ts-icon is-arrow-left-icon"></span>
+                    Go Back
+                </a>
+
+          - Title: Undecorated
+            Anchor: Undecorated
+            Description: A hyperlink text that only shows the underline when hovered.
+            HTML: |
+                <a class="ts-text [[is-undecorated]]">The link</a> only shows an underline when hovered over.
+
+          - Title: Code
+            Anchor: Code
+            Description: A text can present as a code.
+            HTML: |
+                Use <span class="ts-text [[is-code]]">ts-button</span> to define a button.
+
+          - Title: Label
+            Anchor: Label
+            Description: A text can be a field label that looks a bit bolder.
+            HTML: |
+                <span class="ts-text [[is-label]]">Username</span>
+                <div class="{{ts-input}} {{has-top-spaced-small}}">
+                    <input type="text">
+                </div>
+
+          - Title: Description
+            Anchor: Description
+            Description: A text can be a description, it's usually smaller and dimmer.
+            HTML: |
+                <button class="{{ts-button}}">Save Changes</button>
+                <div class="ts-text [[is-description]] {{has-top-spaced-small}}">
+                    The changes you make will take effect after 24 hours.
+                </div>
+
+          - Title: Sup and Sub
+            Anchor: Sup And Sub
+            Description: A text can be a superscript or subscript.
+            HTML: |
+                <p>A friend bought a piece of fabric. When she showed it to us<span class="ts-text [[is-sup]]">[8]</span>:</p>
+                <p>"Why should I care?" I said.</p>
+                <p>We couldn't help but burst into laughter.<span class="ts-text [[is-sub]]">[9]</span>—why should it matter to anyone else?</p>
+
+          - Title: Key
+            Anchor: Key
+            Description: A text can indicates a keyboard key.
+            HTML: |
+                Press <span class="ts-text [[is-key]]">shift</span> + <span class="ts-text [[is-key]]">H</span> to begin.
+
+          - Title: Mark
+            Anchor: Mark
+            Description: A text can be highlighted.
+            HTML: |
+                I <span class="ts-text [[is-mark]]">can't see</span> when I close my eyes.
+
+    - Title: States
+      Description:
+      Sections:
+          - Title: Disabled
+            Anchor: Disabled
+            Description: A disabled text cannot be selected or interacted with.
+            HTML: |
+                <span class="ts-text [[is-disabled]]">We don't doubt we're killers without a kill.</span>
+
+          - Title: Required
+            Anchor: Required
+            Description: A text with an asterisk indicates something is required.
+            HTML: |
+                <label class="{{ts-checkbox}}">
+                    <input type="checkbox" checked/>
+                    <span class="ts-text [[is-required]]">I am over 18 years old.</span>
+                </label>
+
+    - Title: Variations
+      Description:
+      Sections:
+          - Title: Editable
+            Anchor: Editable
+            Description: A text with dashsed underline to hint it's editable.
+            HTML: |
+                Total amount: <span class="ts-text [[is-editable]]">$ 3,600</span>
+
+          - Title: Secondary
+            Anchor: Secondary
+            Description: A text with less emphasis.
+            HTML: |
+                <span class="ts-text [[is-secondary]]">Program is running...</span>
+
+          - Title: Bold
+            Anchor: Bold
+            Description: A text can be bold.
+            HTML: |
+                Press the <span class="ts-text [[is-bold]]">button</span> to reveal everything.
+
+          - Title: Heavy
+            Anchor: Heavy
+            Description: A text with heavier weight.
+            HTML: |
+                <span class="ts-text [[is-heavy]]">OH NO</span>! It's wasabi day!
+
+          - Title: Italic
+            Anchor: Italic
+            Description: A text can be italic.
+            HTML: |
+                There's a <span class="ts-text [[is-italic]]">world</span> he created himself.
+
+          - Title: Deleted
+            Anchor: Deleted
+            Description: A text can be lined through to indicate it's no longer valid.
+            HTML: |
+                <span class="ts-text [[is-deleted]]">This text is no longer relevant.</span>
+
+          - Title: Underlined
+            Anchor: Underlined
+            Description: A text can be underlined.
+            HTML: |
+                A giant crystal is in <span class="ts-text [[is-underlined]]">Carlydia</span>.
+
+          - Title: Truncated
+            Anchor: Truncated
+            Description: Text can be truncated if too long, requires a fixed-width container.
+            HTML: |
+                <div class="ts-text [[is-truncated]]" style="max-width: 300px">
+                    Under the blazing sun, the road ahead is completely obscured.
+                </div>
+
+          - Title: Negative
+            Anchor: Negative
+            Description: A text presents something dangerous.
+            HTML: |
+                <span class="ts-text [[is-negative]]">Server is damaged!</span>
+
+          - Title: Uppercased and Lowercased
+            Anchor: Uppercased And Lowercased
+            Description: A text can be uppercased or lowercased.
+            HTML: |
+                <div class="ts-text [[is-uppercased]]">Here comes another world.</div>
+                <div class="ts-text [[is-lowercased]]">Here comes another world.</div>
+
+          - Title: Text Aligns
+            Anchor: Aligns
+            Description: A text can be aligned to the start, center, or end.
+            HTML: |
+                <div class="ts-text [[is-start-aligned]]">Start aligned</div>
+                <div class="ts-text [[is-center-aligned]]">Center aligned</div>
+                <div class="ts-text [[is-end-aligned]]">End aligned</div>
+
+          - Title: Justify Aligned
+            Anchor: Justify Aligned
+            Description: |
+                A text can be justified to equalize the gaps between characters for a balanced visual appearance.
+            HTML: |
+                <div class="ts-text [[is-justify-aligned]]">
+                    This paragraph uses "Justify" to automatically equalize the gaps between characters for a more balanced and comfortable visual appearance. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vestibulum metus ac consequat mollis.
+                </div>
+
+          - Title: Sizes
+            Anchor: Sizes
+            Description: A text can have different sizes.
+            HTML: |
+                <div class="ts-text [[is-tiny]]">(Tiny) Tocas UI from Taiwan.</div>
+                <div class="ts-text [[is-small]]">(Small) Tocas UI from Taiwan.</div>
+                <div class="ts-text [[is-medium]]">(Medium) Tocas UI from Taiwan.</div>
+                <div class="ts-text [[is-large]]">(Large) Tocas UI from Taiwan.</div>
+                <div class="ts-text [[is-big]]">(Big) Tocas UI from Taiwan.</div>
+                <div class="ts-text [[is-huge]]">(Huge) Tocas UI from Taiwan.</div>
+                <div class="ts-text [[is-massive]]">(Massive) Tocas UI from Taiwan.</div>

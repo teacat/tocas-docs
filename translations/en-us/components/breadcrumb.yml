@@ -1,0 +1,138 @@
+#=======================================================
+# 標頭
+# Header
+#=======================================================
+
+Title: Breadcrumb
+Description: A breadcrumb is used to show hierarchy between content.
+
+#=======================================================
+# 設定
+# Settings
+#=======================================================
+
+Type: Article
+
+#=======================================================
+# 基本樣式
+# Definitions
+#=======================================================
+
+Example:
+    Centered: true
+    HTML: |
+        <div class="[[ts-breadcrumb]]">
+            <a class="item">Movie</a>
+            <a class="item">Awards</a>
+            <a class="item is-active">Koe no Katachi</a>
+        </div>
+
+Definitions:
+    - Title: States
+      Description:
+      Sections:
+          - Title: Active
+            Anchor: Active
+            Description: A breadcrumb item can be active.
+            HTML: |
+                <div class="ts-breadcrumb">
+                    <a class="item">
+                        <span class="{{ts-icon}} is-house-icon"></span>
+                    </a>
+                    <a class="item">
+                        <span class="{{ts-icon}} is-users-icon is-end-spaced"></span>Users
+                    </a>
+                    <a class="item [[is-active]]">
+                        Management
+                    </a>
+                </div>
+
+    - Title: Variations
+      Description:
+      Sections:
+          - Title: Customized
+            Anchor: Customized
+            Description: An item divider can be formatted as a custom icon.
+            HTML: |
+                <div class="ts-breadcrumb [[is-customized]]">
+                    <a class="item">Website</a>
+                    <div class="[[divider]]">
+                        <span class="{{ts-icon}} is-caret-right-icon"></span>
+                    </div>
+                    <a class="item">Registration</a>
+                    <div class="[[divider]]">
+                        <span class="{{ts-icon}} is-caret-right-icon"></span>
+                    </div>
+                    <a class="item">Profile</a>
+                </div>
+
+          - Title: Chevroned
+            Anchor: Chevroned
+            Description: A breadcrumb can have chevron separators.
+            HTML: |
+                <div class="ts-breadcrumb [[is-chevroned]]">
+                    <a class="item">Online Shopping</a>
+                    <a class="item">24H Delivery</a>
+                    <a class="item">Smartphones</a>
+                </div>
+
+          - Title: Hyphenated
+            Anchor: Hyphenated
+            Description: A breadcrumb can have hyphen separators.
+            HTML: |
+                <div class="ts-breadcrumb [[is-hyphenated]]">
+                    <a class="item">Wireless Mouse</a>
+                    <a class="item">High Polling Rate</a>
+                    <a class="item">On-Sale</a>
+                </div>
+
+          - Title: Stepped
+            Anchor: Stepped
+            Description: A breadcrumb can be stepped, any item that wasn't active will be dimmed.
+            HTML: |
+                <div class="ts-breadcrumb is-chevroned [[is-stepped]]">
+                    <a class="item">Contact Us</a>
+                    <a class="item">Issues</a>
+                    <a class="item is-active">Form</a>
+                </div>
+
+          - Title: Sizes
+            Anchor: Sizes
+            Description: A breadcrumb can vary in size.
+            Remove:
+                - <div class="ts-space"></div>
+            HTML: |
+                <div class="ts-breadcrumb [[is-small]]">
+                    <a class="item">Docs</a>
+                    <a class="item">Programming</a>
+                    <a class="item">Golang</a>
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-breadcrumb">
+                    <a class="item">Docs</a>
+                    <a class="item">Programming</a>
+                    <a class="item">Golang</a>
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-breadcrumb [[is-large]]">
+                    <a class="item">Docs</a>
+                    <a class="item">Programming</a>
+                    <a class="item">Golang</a>
+                </div>
+
+    - Title: Compositions
+      Description:
+      Sections:
+          - Title: Block Section
+            Anchor: Composition Block
+            Description: Combine with [Box](./box.html) to create a block section for breadcrumb.
+            HTML: |
+                <div class="[[{{ts-box}}]]">
+                    <div class="{{ts-content}} is-secondary">
+                        <div class="ts-breadcrumb is-chevroned">
+                            <a class="item">Movie</a>
+                            <a class="item">Sci-Fi</a>
+                            <a class="item">Interstellar</a>
+                        </div>
+                    </div>
+                </div>

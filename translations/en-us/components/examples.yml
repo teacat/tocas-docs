@@ -1,0 +1,212 @@
+#=======================================================
+# 標頭
+# Header
+#=======================================================
+
+Title: Examples
+Description: Pages built with Tocas UI, where you can view and download the source code.
+
+#=======================================================
+# 設定
+# Settings
+#=======================================================
+
+Type: Article
+
+#=======================================================
+# 項目
+# Items
+#=======================================================
+
+Examples:
+    - Title: Applications
+      Description: Similar to single-page, progressive web applications.
+      Items:
+          - Title: Chatroom
+            Image: chatroom
+            Link: ./examples/chatroom.html
+            Description: A chatroom with speech bubbles and layout.
+            Symbol: comments
+
+          - Title: Dashboard
+            Image: dashboard
+            Link: ./examples/dashboard.html
+            Description: A business dashboard with a sidebar.
+            Symbol: gauge-high
+
+          - Title: News Feed
+            Image: feed
+            Link: ./examples/feed.html
+            Description: A social website with timeline.
+            Symbol: rss
+
+          - Title: Inbox
+            Image: inbox
+            Link: ./examples/inbox.html
+            Description: A web-based email client with file attachments.
+            Symbol: inbox
+
+          - Title: Cloud Drive
+            Image: network-disk
+            Link: ./examples/network-disk.html
+            Description: A cloud drive that lists files in card format.
+            Symbol: hard-drive
+
+          - Title: Blog Editor
+            Image: blog-editor
+            Link: ./examples/blog-editor.html
+            Description: A blog editor made with Simple Markdown Editor for a personal blog.
+            Symbol: pen-to-square
+
+    - Title: Websites
+      Description: Regular websites that can be used for personal or business purposes.
+      Items:
+          - Title: Blog
+            Image: blog
+            Link: ./examples/blog.html
+            Description: A personal blog website made with text elements and some feature cards.
+            Symbol: blog
+
+          - Title: CMS
+            Image: cms
+            Link: ./examples/cms.html
+            Description: A small business CMS content management website front-end page.
+            Symbol: list-check
+
+          - Title: Crowdfunding
+            Image: crowdfunding
+            Link: ./examples/crowdfunding.html
+            Description: A crowdfunding platform implemented through a grid system and images.
+            Symbol: users
+
+          - Title: Gallery
+            Image: gallery
+            Link: ./examples/gallery.html
+            Description: A static website that displays landscape travel photos.
+            Symbol: images
+
+          - Title: News
+            Image: news
+            Link: ./examples/news.html
+            Description: A news website with featured content and multiple sections.
+            Symbol: newspaper
+
+          - Title: Shopping
+            Image: shopping
+            Link: ./examples/shopping.html
+            Description: A shopping website with rich product information and rating.
+            Symbol: cart-shopping
+
+    - Title: Accessories
+      Description: Basic tools and information pages.
+      Items:
+          - Title: Checkout Form
+            Image: checkout
+            Link: ./examples/checkout.html
+            Description: A form page that displays shopping cart items and checkout details.
+            Symbol: basket-shopping
+
+          - Title: Stock Management
+            Image: stock-management
+            Link: ./examples/stock-management.html
+            Description: A table with expandable details for quick editing of information.
+            Symbol: table-cells
+
+          - Title: Files
+            Image: files
+            Link: ./examples/files.html
+            Description: A simple file directory and file information example similar to FTP.
+            Symbol: folder-tree
+
+          - Title: Invoice
+            Image: invoice
+            Link: ./examples/invoice.html
+            Description: A digital invoice or shipping note issued between companies.
+            Symbol: file-invoice
+
+          - Title: Login
+            Image: login
+            Link: ./examples/login.html
+            Description: A basic login page with username and password fields.
+            Symbol: right-to-bracket
+
+          - Title: Preferences
+            Image: settings
+            Link: ./examples/settings.html
+            Description: A system-related settings form for a website or service.
+            Symbol: gears
+
+          - Title: Mail
+            Image: mail
+            Link: ./examples/mail.html
+            Description: A mail template for sending to website members.
+            Symbol: envelope
+
+          - Title: Payment
+            Image: payment
+            Link: ./examples/payment.html
+            Description: A form for entering credit card information and payment details.
+            Symbol: credit-card
+
+          - Title: Pricing Plans
+            Image: plans
+            Link: ./examples/plans.html
+            Description: A pricing plan page that offers customers several different options.
+            Symbol: money-check-dollar
+
+          - Title: Registration
+            Image: registration
+            Link: ./examples/registration.html
+            Description: A basic user registration page.
+            Symbol: user-plus
+
+    #- Title: 電子信件
+    #  Description: 透過 Tocas Email 樣式建立的電子郵件樣板。
+    #  Items:
+    #      - Title: 表單通知
+    #        Image: checkout
+    #        Link: ./examples/email/form.html
+    #        Description: 以表格呈現某位使用者填寫的表單回饋內容。
+    #        Symbol: table-columns
+#
+    #      - Title: 裝置登入通知
+    #        Image: checkout
+    #        Link: ./examples/email/login.html
+    #        Description: 新裝置正在登入的相關資訊。
+    #        Symbol: right-to-bracket
+#
+    #      - Title: 新跟隨者
+    #        Image: checkout
+    #        Link: ./examples/email/new-follower.html
+    #        Description: 帶有大頭貼的新追隨者通知。
+    #        Symbol: user-plus
+#
+    #      - Title: 歡迎使用
+    #        Image: checkout
+    #        Link: ./examples/email/welcome.html
+    #        Description: 簡單介紹並附帶幾則教學通知連結。
+    #        Symbol: face-smile
+#
+    #      - Title: 帳號停用警告
+    #        Image: checkout
+    #        Link: ./examples/email/alert.html
+    #        Description: 含有警示意味並帶有引言的重要性信件。
+    #        Symbol: circle-exclamation
+#
+    #      - Title: 電子報
+    #        Image: checkout
+    #        Link: ./examples/email/news.html
+    #        Description: 適用於新聞電子報的彙整信件。
+    #        Symbol: newspaper
+#
+    #      - Title: 登入認證碼
+    #        Image: checkout
+    #        Link: ./examples/email/login-code.html
+    #        Description: 以明顯的方式呈現登入認證碼的通知信件。
+    #        Symbol: key
+#
+    #      - Title: 發票
+    #        Image: checkout
+    #        Link: ./examples/email/receipt.html
+    #        Description: 透過表格呈現購物後的消費明細。
+    #        Symbol: receipt

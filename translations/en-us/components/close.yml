@@ -1,0 +1,130 @@
+#=======================================================
+# 標頭
+# Header
+#=======================================================
+
+Title: Close
+Description: A close button for dismissing or deleting contents.
+
+#=======================================================
+# 設定
+# Settings
+#=======================================================
+
+Type: Article
+Relatives:
+    - Button
+
+#=======================================================
+# 基本樣式
+# Definitions
+#=======================================================
+
+Example:
+    Centered: true
+    HTML: |
+        <button class="[[ts-close]]"></button>
+
+Definitions:
+    - Title: States
+      Description:
+      Sections:
+          - Title: Disabled
+            Anchor: Disabled
+            Description: A disabled close button is non-interactive. For hyperlinks, use the `.is-disabled` style.
+            HTML: |
+                <button class="ts-close" [[disabled]]></button>
+                <a class="ts-close [[is-disabled]]"></a>
+
+    - Title: Variations
+      Description:
+      Sections:
+          - Title: Secondary
+            Anchor: Secondary
+            Description: A less prominent style.
+            HTML: |
+                <button class="ts-close [[is-secondary]]"></button>
+
+          - Title: Tertiary
+            Anchor: Tertiary
+            Description: A style that can be omitted.
+            HTML: |
+                <button class="ts-close [[is-tertiary]]"></button>
+
+          - Title: Rounded
+            Anchor: Rounded
+            Description: A close button with slightly rounded corners.
+            HTML: |
+                <button class="ts-close [[is-rounded]]"></button>
+
+          - Title: Sizes
+            Anchor: Sizes
+            Description: A close button can have different sizes.
+            HTML: |
+                <button class="ts-close [[is-small]]"></button>
+                <button class="ts-close"></button>
+                <button class="ts-close [[is-large]]"></button>
+                <button class="ts-close [[is-big]]"></button>
+
+          - Title: Spaced
+            Anchor: Spaced
+            Description: A close button can have spaces before or after.
+            Remove:
+                - <div class="ts-space"></div>
+            HTML: |
+                Solve the error of Docker <button class="ts-close [[is-start-spaced]]"></button>
+                <div class="ts-space"></div>
+                <button class="ts-close [[is-end-spaced]]"></button> NextCloud with video preview
+                <div class="ts-space"></div>
+                Logitech <button class="ts-close [[is-spaced]]"></button> Gaming Mouse
+
+    - Title: Compositions
+      Description:
+      Sections:
+          - Title: Delete Button
+            Anchor: Composition Chip
+            Description: Place a close button in [Chip](./chip.html) to make it look like a removable option.
+            HTML: |
+                <div class="{{ts-chip}} is-circular">
+                    Caris Events
+                    <button class="[[ts-close]]"></button>
+                </div>
+                <div class="{{ts-chip}} is-circular is-outlined">
+                    Leria
+                    <button class="[[ts-close]] is-secondary"></button>
+                </div>
+
+          - Title: Table
+            Anchor: Composition Table
+            Description: Close buttons can be used in a [Table](./table.html) to delete rows.
+            HTML: |
+                <div class="{{ts-box}}">
+                    <table class="{{ts-table}}">
+                        <thead>
+                            <tr>
+                                <th class="is-collapsed"></th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <button class="[[ts-close]] is-secondary"></button>
+                                </td>
+                                <td>Localization feature.</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button class="[[ts-close]] is-secondary"></button>
+                                </td>
+                                <td>Image processing library, Imagick is required.</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button class="[[ts-close]] is-secondary"></button>
+                                </td>
+                                <td>A HTML5 game engine.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>

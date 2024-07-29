@@ -1,0 +1,134 @@
+#=======================================================
+# 標頭
+# Header
+#=======================================================
+
+Title: Badge
+Description: A badge displays basic content classification in minimum.
+Intro: A badge displays text or numbers. Use [Chip](./chip.html) for content with close buttons, icons, or avatars.
+
+#=======================================================
+# 設定
+# Settings
+#=======================================================
+
+Type: Article
+Relatives:
+    - Chip
+
+#=======================================================
+# 基本樣式
+# Definitions
+#=======================================================
+
+Example:
+    Centered: true
+    HTML: |
+        <span class="[[ts-badge]]">689</span>
+
+Definitions:
+    - Title: Variations
+      Description:
+      Sections:
+          - Title: Secondary
+            Anchor: Secondary
+            Description: A badge that is less important.
+            HTML: |
+                <span class="ts-badge [[is-secondary]]">16,226</span>
+
+          - Title: Outlined
+            Anchor: Outlined
+            Description: A badge with only an outline.
+            HTML: |
+                <span class="ts-badge [[is-outlined]]">1,386</span>
+
+          - Title: Negative
+            Anchor: Negative
+            Description: A badge that expresses danger or negative.
+            HTML: |
+                <span class="ts-badge [[is-negative]]">320</span>
+
+          - Title: Sizes
+            Anchor: Sizes
+            Description: A badge can vary in size.
+            HTML: |
+                <span class="ts-badge [[is-small]]">Small</span>
+                <span class="ts-badge">Default</span>
+                <span class="ts-badge [[is-large]]">Large</span>
+
+          - Title: Dense
+            Anchor: Dense
+            Description: A badge can be dense.
+            HTML: |
+                <span class="ts-badge [[is-dense]]">Newest</span>
+
+          - Title: Spaced
+            Anchor: Spaced
+            Description: A badge can have spaces before or after.
+            Remove:
+                - <div class="ts-space"></div>
+            HTML: |
+                Yami Odymel <span class="ts-badge [[is-start-spaced]]">Admin</span>
+                <div class="ts-space"></div>
+                <span class="ts-badge [[is-end-spaced]]">New Release</span> Sweet Candy
+                <div class="ts-space"></div>
+                The chair <span class="ts-badge [[is-spaced]]">On-Sale</span> is now available.
+
+    - Title: Compositions
+      Description:
+      Sections:
+          - Title: Table
+            Anchor: Composition Table
+            Description: A badge can be used in a table to highlight related information.
+            HTML: |
+                <div class="{{ts-box}}">
+                    <table class="{{ts-table}}">
+                        <thead>
+                            <tr>
+                                <th>Machine</th>
+                                <th>Status</th>
+                                <th>Label</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Frontend</td>
+                                <td>Running</td>
+                                <td>
+                                    <span class="[[ts-badge]]">Taiwan</span>
+                                    <span class="[[ts-badge]] is-secondary">Backup Enabled</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Database</td>
+                                <td>Running</td>
+                                <td>
+                                    <span class="[[ts-badge]]">United States</span>
+                                    <span class="[[ts-badge]] is-secondary">Backup Enabled</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>File Storage</td>
+                                <td>Running</td>
+                                <td>
+                                    <span class="[[ts-badge]]">United States</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+          - Title: Header
+            Anchor: Composition Header
+            Description: A badge can be used in a header to emphasize the latest news.
+            HTML: |
+                <div class="{{ts-box}}">
+                    <div class="{{ts-content}}">
+                        <div class="{{ts-header}}">
+                            Interstellar
+                            <span class="[[ts-badge]] is-start-spaced">On-Air</span>
+                        </div>
+                        <p>"Interstellar" is a 2014 sci-fi film directed and produced by Christopher Nolan. The movie follows a group of astronauts who travel through a wormhole in search of a new home for humanity.</p>
+                        <div class="{{ts-text}} is-secondary">— Wikipedia</div>
+                    </div>
+                </div>

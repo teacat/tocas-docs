@@ -1,0 +1,124 @@
+#=======================================================
+# 標頭
+# Header
+#=======================================================
+
+Title: Radio
+Description: A radio input is an exclusive selection from a small set of options.
+
+#=======================================================
+# 設定
+# Settings
+#=======================================================
+
+Type: Article
+Relatives:
+    - Checkbox
+    - Selection
+
+#=======================================================
+# 基本樣式
+# Definitions
+#=======================================================
+
+Example:
+    Centered: true
+    HTML: |
+        <label class="[[ts-radio]]">
+            <input name="eat" type="radio" checked/>
+            Breakfast
+        </label>
+
+Definitions:
+    - Title: States
+      Description:
+      Sections:
+          - Title: Disabled
+            Anchor: Disabled
+            Description: A radio button can show it's currently disabled.
+            HTML: |
+                <label class="ts-radio">
+                    <input name="linux" type="radio" [[disabled]]/>
+                    Arch Linux
+                </label>
+
+    - Title: Variations
+      Description:
+      Sections:
+          - Title: Negative
+            Anchor: Negative
+            Description: A radio button can show it's in an invalid state.
+            HTML: |
+                <label class="ts-radio [[is-negative]]">
+                    <input name="love" type="radio" />
+                    Ferris Wheel of Love
+                </label>
+
+          - Title: Solo
+            Anchor: Solo
+            Description: Use a solo radio button to remove extra spacing without label text.
+            HTML: |
+                <label class="ts-radio [[is-solo]]">
+                    <input name="solo" type="radio" />
+                </label>
+
+          - Title: Sizes
+            Anchor: Sizes
+            Description: A radio button can have different sizes.
+            Remove:
+                - <div class="ts-space is-small"></div>
+            HTML: |
+                <label class="ts-radio [[is-small]]">
+                    <input name="size" type="radio" checked/>
+                    Small radio button
+                </label>
+                <div class="ts-space is-small"></div>
+                <label class="ts-radio">
+                    <input name="size" type="radio"/>
+                    Default radio button
+                </label>
+                <div class="ts-space is-small"></div>
+                <label class="ts-radio [[is-large]]">
+                    <input name="size" type="radio"/>
+                    Large radio button
+                </label>
+
+    - Title: Compositions
+      Description:
+      Sections:
+          - Title: Radios
+            Anchor: Composition Radios
+            Description: "[Wrap](./wrap.html) can arrange radio buttons horizontally or vertically."
+            HTML: |
+                <div class="{{ts-wrap}} is-vertical">
+                    <div class="{{ts-text}} is-label">Gender</div>
+                    <div class="[[{{ts-wrap}}]]">
+                        <label class="ts-radio">
+                            <input name="gender" type="radio" checked/>
+                            Male
+                        </label>
+                        <label class="ts-radio">
+                            <input name="gender" type="radio" />
+                            Female
+                        </label>
+                        <label class="ts-radio">
+                            <input name="gender" type="radio" />
+                            Other
+                        </label>
+                    </div>
+                    <div class="{{ts-text}} is-label">Sound Mode</div>
+                    <div class="[[{{ts-wrap}}]] is-vertical is-compact">
+                        <label class="ts-radio">
+                            <input name="ring" type="radio" checked/>
+                            Sound
+                        </label>
+                        <label class="ts-radio">
+                            <input name="ring" type="radio" />
+                            Vibrate
+                        </label>
+                        <label class="ts-radio">
+                            <input name="ring" type="radio" />
+                            Mute
+                        </label>
+                    </div>
+                </div>

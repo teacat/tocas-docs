@@ -1,0 +1,184 @@
+#=======================================================
+# 標頭
+# Header
+#=======================================================
+
+Title: Select
+Description: A select input is used to select an item from a list of options.
+
+#=======================================================
+# 設定
+# Settings
+#=======================================================
+
+Type: Article
+Relatives:
+    - Dropdown
+
+#=======================================================
+# 基本樣式
+# Definitions
+#=======================================================
+
+Example:
+    Centered: true
+    HTML: |
+        <div class="[[ts-select]]">
+            <select>
+                <option>Apple</option>
+                <option>Watermelon</option>
+                <option>Banana</option>
+            </select>
+        </div>
+
+Definitions:
+    - Title: Types
+      Description:
+      Sections:
+          - Title: Multiple
+            Anchor: Multiple
+            Description: |
+                A select input can allow multiple selections with the `[multiple]` attribute.
+            HTML: |
+                <div class="ts-select">
+                    <select size="3" [[multiple]]>
+                        <option>Item A</option>
+                        <option>Item B</option>
+                        <option>Item C</option>
+                    </select>
+                </div>
+
+    - Title: States
+      Description:
+      Sections:
+          - Title: Disabled
+            Anchor: Disabled
+            Description: A disabled select input does not allow user interaction.
+            HTML: |
+                <div class="ts-select">
+                    <select [[disabled]]>
+                        <option>MySpace</option>
+                        <option>Facebook</option>
+                        <option>Twitter</option>
+                    </select>
+                </div>
+
+          - Title: Active
+            Anchor: Active
+            Description: An active select input shows what the user is interacting with.
+            HTML: |
+                <div class="ts-select [[is-active]]">
+                    <select>
+                        <option>TeaMeow</option>
+                        <option>Tunalog</option>
+                        <option>EnekoCore</option>
+                    </select>
+                </div>
+
+    - Title: Variations
+      Description:
+      Sections:
+          - Title: Solid
+            Anchor: Solid
+            Description: A select input can have a solid background.
+            HTML: |
+                <div class="ts-select [[is-solid]]">
+                    <select>
+                        <option>Golang</option>
+                        <option>PHP</option>
+                        <option>Node.js</option>
+                    </select>
+                </div>
+
+          - Title: Underlined
+            Anchor: Underlined
+            Description: A select input can have a solid background and an underline.
+            HTML: |
+                <div class="ts-select [[is-underlined]]">
+                    <select>
+                        <option>Taitung</option>
+                        <option>Kaohsiung</option>
+                        <option>Tainan</option>
+                    </select>
+                </div>
+
+          - Title: Basic
+            Anchor: Basic
+            Description: A basic select input has no padding or borders, except for the caret icon.
+            HTML: |
+                <div class="ts-select [[is-basic]]">
+                    <select>
+                        <option>AMD</option>
+                        <option>Intel</option>
+                    </select>
+                </div>
+
+          - Title: Negative
+            Anchor: Negative
+            Description: A select input can show the data contains errors.
+            HTML: |
+                <div class="ts-select [[is-negative]]">
+                    <select>
+                        <option>Yami Odymel</option>
+                        <option>Mac Taylor</option>
+                        <option>Val Pyen</option>
+                    </select>
+                </div>
+
+          - Title: Fluid
+            Anchor: Fluid
+            Description: A select input can take the width of its container.
+            HTML: |
+                <div class="ts-select [[is-fluid]]">
+                    <select>
+                        <option>Kaede Sendoin</option>
+                        <option>Anko Tsubuzaki</option>
+                        <option>Wakaba Subaru</option>
+                    </select>
+                </div>
+
+          - Title: Sizes
+            Anchor: Sizes
+            Description: A select input can have different sizes.
+            Remove:
+                - <div class="ts-space"></div>
+            HTML: |
+                <div class="ts-select [[is-small]]">
+                    <select>
+                        <option>Small</option>
+                    </select>
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-select">
+                    <select>
+                        <option>Default</option>
+                    </select>
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-select [[is-large]]">
+                    <select>
+                        <option>Large</option>
+                    </select>
+                </div>
+
+          - Title: Density
+            Anchor: Density
+            Description: A select input can adjust its height for a tighter or more relaxed look.
+            HTML: |
+                <div class="ts-select [[is-dense]]">
+                    <select>
+                        <option>Dense</option>
+                    </select>
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-select">
+                    <select>
+                        <option>Default</option>
+                    </select>
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-select [[is-relaxed]]">
+                    <select>
+                        <option>Relaxed</option>
+                    </select>
+                </div>

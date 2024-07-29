@@ -1,0 +1,110 @@
+#=======================================================
+# 標頭
+# Header
+#=======================================================
+
+Title: Divider
+Description: A divider visually segments content into groups.
+Intro: |
+    A divider can be used as a line for decoration.
+
+#=======================================================
+# 設定
+# Settings
+#=======================================================
+
+Type: Article
+
+#=======================================================
+# 基本樣式
+# Definitions
+#=======================================================
+
+Example:
+    HTML: |
+        <div class="[[ts-divider]]"></div>
+
+Definitions:
+    - Title: Variations
+      Description:
+      Sections:
+          - Title: Section
+            Anchor: Section
+            Description: A section divider has vertical margin.
+            HTML: |
+                <p>I'm Smily Anon, welcome to Anon's website.</p>
+                <div class="ts-divider [[is-section]]"></div>
+                <p>You'll become a magician like me if you stay single for thirty years.</p>
+
+          - Title: Vertical
+            Anchor: Vertical
+            Description: A divider can segment content vertically in a [Box](./box.html).
+            HTML: |
+                <div class="{{ts-box}} is-horizontal">
+                    <div class="{{ts-content}}">Beep, beep.</div>
+                    <div class="ts-divider [[is-vertical]]"></div>
+                    <div class="{{ts-content}}">It's the International Date Line!</div>
+                </div>
+
+          - Title: Text
+            Anchor: Text
+            Description: A divider can have text on it.
+            Remove:
+                - <div class="ts-space"></div>
+            HTML: |
+                <div class="ts-divider [[is-start-text]]">01 April 2022</div>
+                <div class="ts-space"></div>
+                <div class="ts-divider [[is-center-text]]">Products you may like</div>
+                <div class="ts-space"></div>
+                <div class="ts-divider [[is-end-text]]">Description</div>
+
+    - Title: Compositions
+      Description:
+      Sections:
+          - Title: Section Contents
+            Anchor: Composition Content
+            Description: Dividing [Contents](./content.html) in a [Box](./box.html) with divider.
+            HTML: |
+                <div class="{{ts-box}}">
+                    <div class="{{ts-content}}">
+                        Event Store is a concept derived from CQRS and Event Sourcing principles, written in C#.
+                    </div>
+                    <div class="[[ts-divider]]"></div>
+                    <div class="{{ts-content}} is-secondary">
+                        6,439,852 Views
+                    </div>
+                </div>
+
+          - Title: Third-Party Login
+            Anchor: Composition Form
+            Description: Inform users of alternative login methods below the login form.
+            HTML: |
+                <div class="{{ts-app-center}}">
+                    <div class="content">
+                        <div class="{{ts-box}}" style="width: 280px">
+                            <div class="{{ts-content}}">
+                                <div class="{{ts-wrap}} is-vertical">
+                                    <div class="{{ts-text}} is-label">Email Address</div>
+                                    <div class="{{ts-input}} is-start-icon">
+                                        <span class="{{ts-icon}} is-envelope-icon"></span>
+                                        <input type="text" />
+                                    </div>
+                                    <div class="{{ts-text}} is-label">Password</div>
+                                    <div class="{{ts-input}} is-start-icon">
+                                        <span class="{{ts-icon}} is-lock-icon"></span>
+                                        <input type="password" />
+                                    </div>
+                                    <button class="{{ts-button}} is-fluid">Create Account</button>
+                                    <div class="[[ts-divider]] is-center-text">
+                                        <div class="{{ts-text}} is-description">
+                                            Or login with
+                                        </div>
+                                    </div>
+                                    <button class="{{ts-button}} is-fluid is-start-icon is-outlined">
+                                        <span class="{{ts-icon}} is-google-icon"></span> Google
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>

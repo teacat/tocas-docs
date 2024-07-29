@@ -1,0 +1,133 @@
+#=======================================================
+# 標頭
+# Header
+#=======================================================
+
+Title: App Sidebar
+Description: An app sidebar is a navigation bar placed at the side of the application.
+Intro: |
+    The sidebar takes up the full container width. Place it in a container with a fixed width.
+
+#=======================================================
+# 設定
+# Settings
+#=======================================================
+
+Type: Article
+
+#=======================================================
+# 基本樣式
+# Definitions
+#=======================================================
+
+Example:
+    HTML: |
+        <div class="[[ts-app-sidebar]]">
+            <div class="header">
+                STARTUP
+            </div>
+            <a class="item">
+                <span class="{{ts-icon}} is-house-icon"></span> Home
+            </a>
+            <div class="header">
+                MANAGEMENT
+            </div>
+            <a class="item is-active">
+                <span class="{{ts-icon}} is-user-icon"></span> Users
+            </a>
+            <a class="item">
+                <span class="{{ts-icon}} is-download-icon"></span> Downloads
+            </a>
+        </div>
+
+Definitions:
+    - Title: Structure
+      Description:
+      Sections:
+          - Title: Header
+            Anchor: Header
+            Description: A header is used to categorize items.
+            HTML: |
+                <div class="ts-app-sidebar">
+                    <div class="[[header]]">
+                        COMMON
+                    </div>
+                    <a class="item">
+                        <span class="{{ts-icon}} is-compass-icon"></span> Explore
+                    </a>
+                    <a class="item">
+                        <span class="{{ts-icon}} is-film-icon"></span> Films
+                    </a>
+                    <div class="[[header]]">
+                        MANAGEMENT
+                    </div>
+                    <a class="item">
+                        <span class="{{ts-icon}} is-user-icon"></span> Profile
+                    </a>
+                </div>
+
+    - Title: States
+      Description:
+      Sections:
+          - Title: Active
+            Anchor: Active
+            Description: A sidebar item can be marked as active to indicate the current page.
+            HTML: |
+                <div class="ts-app-sidebar">
+                    <div class="header">
+                        MANAGEMENT
+                    </div>
+                    <a class="item">
+                        <span class="ts-icon is-scissors-icon"></span> Feature Clips
+                    </a>
+                    <a class="item">
+                        <span class="ts-icon is-star-icon"></span> Favorites
+                    </a>
+                    <a class="item [[is-active]]">
+                        <span class="ts-icon is-thumbs-up-icon"></span> Likes
+                    </a>
+                </div>
+
+          - Title: Disabled
+            Anchor: Disabled
+            Description: A disabled sidebar item prevents interaction. For hyperlinks, use the `.is-disabled` class.
+            HTML: |
+                <div class="ts-app-sidebar">
+                    <div class="header">
+                        TIMELINE
+                    </div>
+                    <a class="item">
+                        <span class="ts-icon is-shoe-prints-icon"></span> Footprints
+                    </a>
+                    <button class="item" [[disabled]]>
+                        <span class="ts-icon is-stopwatch-icon"></span> Limited Events
+                    </button>
+                    <a class="item [[is-disabled]]">
+                        <span class="ts-icon is-heart-icon"></span> Favorites
+                    </a>
+                </div>
+
+    - Title: Variations
+      Description:
+      Sections:
+          - Title: Dense
+            Anchor: Dense
+            Description: A sidebar can be made denser to reduce the padding.
+            HTML: |
+                <div class="ts-app-sidebar [[is-dense]]">
+                    <div class="header">
+                        SYSTEM
+                    </div>
+                    <a class="item">
+                        <span class="{{ts-icon}} is-users-icon"></span> Users
+                    </a>
+                    <div class="header">
+                        MANAGEMENT
+                    </div>
+                    <a class="item">
+                        <span class="{{ts-icon}} is-file-icon"></span> Files
+                    </a>
+                    <a class="item is-active">
+                        <span class="{{ts-icon}} is-upload-icon"></span> Upload
+                    </a>
+                </div>

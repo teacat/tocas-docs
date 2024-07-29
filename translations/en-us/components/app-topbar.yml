@@ -1,0 +1,158 @@
+#=======================================================
+# 標頭
+# Header
+#=======================================================
+
+Title: App Topbar
+Description: A topbar is a functional bar placed at the top of the application.
+Intro: |
+    The topbar can be used with [App Layout](./app-layout.html).
+
+#=======================================================
+# 設定
+# Settings
+#=======================================================
+
+Type: Article
+
+#=======================================================
+# 基本樣式
+# Definitions
+#=======================================================
+
+Example:
+    HTML: |
+        <div class="[[ts-app-topbar]]">
+            <div class="start">
+                <div class="item is-text">Application</div>
+            </div>
+            <div class="end">
+                <button class="item">
+                    <span class="{{ts-icon}} is-magnifying-glass-icon"></span>
+                </button>
+                <button class="item">
+                    <span class="{{ts-icon}} is-ellipsis-vertical-icon"></span>
+                </button>
+            </div>
+        </div>
+
+Definitions:
+    - Title: Structure
+      Description:
+      Sections:
+          - Title: Positions
+            Anchor: Positions
+            Description: "A topbar is divided into three sections: `start`, `center`, and `end`."
+            Remove:
+                - <div class="ts-space"></div>
+            HTML: |
+                <div class="ts-app-topbar">
+                    <div class="[[start]]">
+                        <button class="item">
+                            <span class="{{ts-icon}} is-chevron-left-icon"></span>
+                        </button>
+                    </div>
+                    <div class="[[center]]">
+                        <div class="item is-text">My Album</div>
+                    </div>
+                    <div class="[[end]]">
+                        <button class="item">
+                            <span class="{{ts-icon}} is-magnifying-glass-icon"></span>
+                        </button>
+                        <button class="item">
+                            <span class="{{ts-icon}} is-ellipsis-vertical-icon"></span>
+                        </button>
+                    </div>
+                </div>
+
+          - Title: Text Item
+            Anchor: Text Item
+            Description: A topbar can have text items to display the application's title.
+            Remove:
+                - <div class="ts-space"></div>
+            HTML: |
+                <div class="ts-app-topbar">
+                    <div class="start">
+                        <div class="item [[is-text]]">PDF Viewer</div>
+                    </div>
+                    <div class="end">
+                        <button class="item">
+                            <span class="{{ts-icon}} is-circle-question-icon"></span>
+                        </button>
+                    </div>
+                </div>
+
+          - Title: Content
+            Anchor: Content
+            Description: A topbar can have additional content or menus.
+            HTML: |
+                <div class="ts-app-topbar">
+                    <div class="start">
+                        <button class="item">
+                            <span class="{{ts-icon}} is-arrow-left-icon"></span>
+                        </button>
+                    </div>
+                    <div class="end">
+                        <button class="item">
+                            <span class="{{ts-icon}} is-magnifying-glass-icon"></span>
+                        </button>
+                        <button class="item">
+                            <span class="{{ts-icon}} is-ellipsis-vertical-icon"></span>
+                        </button>
+                    </div>
+                    <div class="[[content]]">
+                        <div class="{{ts-header}} is-large">My Files</div>
+                    </div>
+                </div>
+
+    - Title: Compositions
+      Description:
+      Sections:
+        #  - Title: 展開選單
+        #    Anchor: Composition Hamburger Menu
+        #    Description: 透過[顯示切換](./collapse.html)來開、關進階選單。
+        #    HTML: |
+        #        <div class="ts-app-topbar">
+        #            <div class="start">
+        #                <button class="item" [[data-collapse]]="((menu))">
+        #                    <span class="{{ts-icon}} is-bars-icon"></span>
+        #                </button>
+        #                <div class="item is-text">電子信箱</div>
+        #            </div>
+        #            <div class="content" id="((menu))">
+        #                <div class="{{ts-menu}} is-start-icon {{has-dark}}">
+        #                    <button class="item">
+        #                        <span class="{{ts-icon}} is-inbox-icon"></span>
+        #                        收件匣
+        #                    </button>
+        #                    <button class="item">
+        #                        <span class="{{ts-icon}} is-bookmark-icon"></span>
+        #                        重要郵件
+        #                    </button>
+        #                    <button class="item">
+        #                        <span class="{{ts-icon}} is-circle-exclamation-icon"></span>
+        #                        垃圾郵件
+        #                    </button>
+        #                </div>
+        #            </div>
+        #        </div>
+
+          - Title: Dropdown
+            Anchor: Composition Dropdown
+            Description: A [Dropdown](./dropdown.html) can show extra functions at the end of the topbar.
+            HTML: |
+                <div class="ts-app-topbar">
+                    <div class="start">
+                        <div class="item is-text">Cheat Engine</div>
+                    </div>
+                    <div class="end">
+                        <button class="item" [[data-dropdown]]="((dropdown))">
+                            <span class="{{ts-icon}} is-ellipsis-vertical-icon"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="{{ts-dropdown}}" id="((dropdown))" data-position="bottom-end">
+                    <button class="item">Check Updates</button>
+                    <button class="item">Help</button>
+                    <button class="item">About</button>
+                </div>

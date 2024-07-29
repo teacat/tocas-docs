@@ -1,0 +1,133 @@
+#=======================================================
+# 標頭
+# Header
+#=======================================================
+
+Title: Container
+Description: A container limits content to a maximum width.
+
+#=======================================================
+# 設定
+# Settings
+#=======================================================
+
+Type: Container
+
+#=======================================================
+# 變數
+# Variables
+#=======================================================
+
+Variables:
+    - Name: --width
+      Default: 1180px
+      Target: .ts-container
+      Description: The width of the container.
+    - Name: --gap
+      Default: 1rem
+      Target: .ts-container
+      Description: The distance to edge of the screen.
+
+#=======================================================
+# 基本樣式
+# Definitions
+#=======================================================
+
+Definitions:
+    - Title: Description
+      Description: |
+          A container limits the content width and center it on the screen. It can also contain a [Grid](./grid.html).
+
+          <div class="ts-box">
+              <table class="ts-table is-definition is-celled">
+                  <thead>
+                      <tr>
+                          <th class="is-collapsed"></th>
+                          <th>1180px</th>
+                          <th>910px</th>
+                          <th>720px</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td class="is-collapsed">Class</td>
+                          <td class="is-empty"></td>
+                          <td>
+                              <span class="ts-text is-code">is-narrow</span>
+                          </td>
+                          <td>
+                              <span class="ts-text is-code">is-very-narrow</span>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td class="is-collapsed">Name</td>
+                          <td>
+                              Default
+                          </td>
+                          <td>
+                              Narrow
+                          </td>
+                          <td>
+                              Very Narrow
+                          </td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+
+    - Title: Structure
+      Description:
+      Sections:
+          - Title: Container
+            Anchor: Container
+            Description: A standard container is `1180px` wide by default.
+            HTML: |
+                <div class="[[ts-container]]">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa strong. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede link mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+                </div>
+
+    - Title: Variations
+      Description:
+      Sections:
+          - Title: Narrow
+            Anchor: Narrow
+            Description: A container can reduce its maximum width.
+            Remove:
+                - <div class="ts-space"></div>
+            HTML: |
+                <div class="ts-container [[is-narrow]]">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa strong. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede link mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-space"></div>
+                <div class="ts-container [[is-very-narrow]]">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa strong. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede link mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+                </div>
+
+          - Title: Padded
+            Anchor: Padded
+            Description: A container keeps a distance from the screen edge that can be adjusted. Use smaller padding on mobile devices to maximize space with [Responsive](./responsive.html).
+            Remove:
+                - <div class="ts-space"></div>
+            HTML: |
+                <div class="{{ts-box}}" style="background: var(--ts-gray-300)">
+                    <div class="ts-container [[is-padded]]">
+                        <div class="{{ts-box}} {{has-padded}}">
+                            Padded edge
+                        </div>
+                    </div>
+                    <div class="ts-space"></div>
+                    <div class="ts-container">
+                        <div class="{{ts-box}} {{has-padded}}">
+                            Default edge
+                        </div>
+                    </div>
+                    <div class="ts-space"></div>
+                    <div class="ts-container [[is-fitted]]">
+                        <div class="{{ts-box}} {{has-padded}}">
+                            No edge
+                        </div>
+                    </div>
+                </div>
+
+

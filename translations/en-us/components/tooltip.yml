@@ -1,0 +1,88 @@
+#=======================================================
+# 標頭
+# Header
+#=======================================================
+
+Title: Tooltip
+Description: A tooltip is a small message that appears when a user interacts with an element.
+Intro: |
+    Tooltip displays when the cursor hovers over or focuses on an element with `[data-tooltip]` attribute.
+
+#=======================================================
+# 設定
+# Settings
+#=======================================================
+
+Type: Article
+
+#=======================================================
+# 屬性
+# Properties
+#=======================================================
+
+Properties:
+    - Name: "[data-position]"
+      Default: bottom
+      Description: |
+          Position that the popup should appear:
+
+          - `top`
+          - `top-start`
+          - `top-end`
+          - `bottom`
+          - `bottom-start`
+          - `bottom-end`
+
+    - Name: "[data-trigger]"
+      Default: hover
+      Description: |
+          Events that trigger the tooltip, separated by space (e.g., `hover focus`):
+
+          - `hover` when the cursor hovers over the element (no effect on touch devices).
+          - `focus` when the element receives focus, used for inputs.
+
+    - Name: "[data-delay]"
+      Default: 200
+      Description: |
+          Delay time in milliseconds from trigger to display. Set to `0` for immediate, `1000` for 1 second.
+
+    - Name: "[data-html]"
+      Default: "false"
+      Description: |
+          Whether the tooltip's content can contain HTML. Set to `true` to enable.
+
+#=======================================================
+# 基本樣式
+# Definitions
+#=======================================================
+
+Example:
+    Centered: true
+    HTML: |
+        <button class="{{ts-button}} is-icon" [[data-tooltip]]="Favorite">
+            <span class="{{ts-icon}} is-heart-icon"></span>
+        </button>
+
+Definitions:
+    - Title: Compositions
+      Description:
+      Sections:
+          - Title: Input Tooltip
+            Anchor: Composition Input
+            Description: |
+                Specify the focus trigger on [Input](./input.html) to show the tooltip when the user types.
+            HTML: |
+                <div class="{{ts-input}} is-start-icon" data-tooltip="Usernames must be between 6 and 24 characters." [[data-trigger]]="focus" data-position="bottom-start">
+                    <span class="{{ts-icon}} is-user-icon"></span>
+                    <input type="text" placeholder="Username">
+                </div>
+
+          - Title: Helper Icon
+            Anchor: Composition Info
+            Description: |
+                The text element with `[tabindex]` attribute can be focused, so users with touch screens can click the icon to open the tooltip.
+            HTML: |
+                The building lacks funding <span class="{{ts-icon}} is-circle-question-icon" data-tooltip="You must allocate a budget." data-trigger="focus" [[tabindex]]="0"><span>
+
+
+

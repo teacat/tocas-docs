@@ -1,0 +1,53 @@
+#=======================================================
+# Header
+#=======================================================
+
+Title: Accordion
+Description: An accordion allows users to toggle the display of sections of content.
+Intro: Accordion uses the `<details>` HTML tag, supporting the native [`toggle`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLDetailsElement/toggle_event) event to track open/close state.
+
+#=======================================================
+# Settings
+#=======================================================
+
+Type: Article
+Relatives:
+    #- Collapse
+
+#=======================================================
+# Definitions
+#=======================================================
+
+Example:
+    HTML: |
+        <details class="[[ts-accordion]]" open>
+            <summary>What are the business hours?</summary>
+            Every day from 9 AM to 8 PM.
+        </details>
+
+Definitions:
+    - Title: States
+      Description:
+      Sections:
+          - Title: Open
+            Anchor: Open
+            Description: An accordion displays the content when `[open]` attribute is present.
+            HTML: |
+                <details class="ts-accordion" [[open]]>
+                    <summary>Does the API provide SSL encryption?</summary>
+                    No, the bank uses the unencrypted traditional HTTP standard.
+                </details>
+
+          - Title: Group
+            Anchor: Name
+            Description: Accordions with the same `[name]` attribute will be grouped, with only one expanded at a time. This feature isn't supported in Firefox.
+            HTML: |
+                <details class="ts-accordion" [[name]]="help">
+                    <summary>On which operating systems can this game be played?</summary>
+                    Linux, Windows, macOS, and Steam OS.
+                </details>
+                <div class="{{ts-divider}} is-section"></div>
+                <details class="ts-accordion" [[name]]="help">
+                    <summary>What's the required disk space for the game?</summary>
+                    At least 20 GB of available space.
+                </details>

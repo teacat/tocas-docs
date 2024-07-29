@@ -1,0 +1,264 @@
+#=======================================================
+# 標頭
+# Header
+#=======================================================
+
+Title: Pagination
+Description: A pagination menu is specially formatted to present links to pages of content.
+
+#=======================================================
+# 設定
+# Settings
+#=======================================================
+
+Type: Article
+
+#=======================================================
+# 基本樣式
+# Definitions
+#=======================================================
+
+Example:
+    Centered: true
+    HTML: |
+        <div class="[[ts-pagination]]">
+            <a class="item is-back"></a>
+            <a class="item">1</a>
+            <a class="item is-active">2</a>
+            <a class="item">3</a>
+            <a class="item">4</a>
+            <a class="item is-next"></a>
+        </div>
+
+Definitions:
+    - Title: States
+      Description:
+      Sections:
+          - Title: Active
+            Anchor: Active
+            Description: A pagination item can be active to indicate the current page.
+            HTML: |
+                <div class="ts-pagination">
+                    <a class="item">1</a>
+                    <a class="item [[is-active]]">2</a>
+                    <a class="item">3</a>
+                </div>
+
+          - Title: Disabled
+            Anchor: Disabled
+            Description: A pagination item can be disabled. For hyperlinks, use the `.is-disabled` class.
+            HTML: |
+                <div class="ts-pagination">
+                    <button class="item is-back" [[disabled]]>Previous</button>
+                    <a class="item is-active">1</a>
+                    <a class="item">2</a>
+                    <a class="item">3</a>
+                    <a class="item is-next [[is-disabled]]">Next</a>
+                </div>
+
+    - Title: Item Variations
+      Description:
+      Sections:
+          - Title: Previous and Next
+            Anchor: Previous And Next
+            Description: A pagination item can have a previous or next icon with text.
+            HTML: |
+                <div class="ts-pagination">
+                    <a class="item [[is-back]]">Previous</a>
+                    <a class="item">1</a>
+                    <a class="item">2</a>
+                    <a class="item">3</a>
+                    <a class="item [[is-next]]">Next</a>
+                </div>
+
+          - Title: First and Last
+            Anchor: First And Last
+            Description: A pagination item can have a first or last icon with text.
+            HTML: |
+                <div class="ts-pagination">
+                    <a class="item [[is-first]]">Newest</a>
+                    <a class="item">1</a>
+                    <a class="item">2</a>
+                    <a class="item">3</a>
+                    <a class="item [[is-last]]">Oldest</a>
+                </div>
+
+          - Title: Skipped
+            Anchor: Skipped
+            Description: A pagination item can be skipped.
+            HTML: |
+                <div class="ts-pagination">
+                    <a class="item">1</a>
+                    <span class="item [[is-skipped]]"></span>
+                    <a class="item">4</a>
+                    <a class="item is-active">5</a>
+                    <a class="item">6</a>
+                    <span class="item [[is-skipped]]"></span>
+                    <a class="item">10</a>
+                </div>
+
+    - Title: Variations
+      Description:
+      Sections:
+          - Title: Secondary
+            Anchor: Secondary
+            Description: A pagination can be secondary to reduce its prominence.
+            HTML: |
+                <div class="ts-pagination [[is-secondary]]">
+                    <a class="item is-back"></a>
+                    <a class="item">1</a>
+                    <a class="item is-skipped"></a>
+                    <a class="item">4</a>
+                    <a class="item is-active">5</a>
+                    <a class="item">6</a>
+                    <a class="item is-skipped"></a>
+                    <a class="item">10</a>
+                    <a class="item is-next"></a>
+                </div>
+
+          - Title: Outlined
+            Anchor: Outlined
+            Description: A pagination can be outlined.
+            HTML: |
+                <div class="ts-pagination [[is-outlined]]">
+                    <a class="item is-back"></a>
+                    <a class="item">1</a>
+                    <a class="item is-active">2</a>
+                    <a class="item">3</a>
+                    <a class="item is-next"></a>
+                </div>
+
+          - Title: Fluid
+            Anchor: Fluid
+            Description: A pagination can be fluid to take up the full width of its container.
+            HTML: |
+                <div class="ts-pagination [[is-fluid]]">
+                    <a class="item is-back"></a>
+                    <a class="item">1</a>
+                    <a class="item">2</a>
+                    <a class="item">3</a>
+                    <a class="item is-next"></a>
+                </div>
+
+          - Title: Sizes
+            Anchor: Sizes
+            Description: A pagination can vary in size.
+            Remove:
+                - <div class="ts-space"></div>
+            HTML: |
+                <div class="ts-pagination [[is-small]]">
+                    <a class="item is-back"></a>
+                    <a class="item">1</a>
+                    <a class="item is-active">2</a>
+                    <a class="item">3</a>
+                    <a class="item is-next"></a>
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-pagination">
+                    <a class="item is-back"></a>
+                    <a class="item">1</a>
+                    <a class="item is-active">2</a>
+                    <a class="item">3</a>
+                    <a class="item is-next"></a>
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-pagination [[is-large]]">
+                    <a class="item is-back"></a>
+                    <a class="item">1</a>
+                    <a class="item is-active">2</a>
+                    <a class="item">3</a>
+                    <a class="item is-next"></a>
+                </div>
+
+          - Title: Relaxed
+            Anchor: Relaxed
+            Description: A pagination can be relaxed to increase the space between items.
+            Remove:
+                - <div class="ts-space"></div>
+            HTML: |
+                <div class="ts-pagination is-outlined">
+                    <a class="item is-back"></a>
+                    <a class="item">1</a>
+                    <a class="item is-active">2</a>
+                    <a class="item">3</a>
+                    <a class="item is-next"></a>
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-pagination is-outlined [[is-relaxed]]">
+                    <a class="item is-back"></a>
+                    <a class="item">1</a>
+                    <a class="item is-active">2</a>
+                    <a class="item">3</a>
+                    <a class="item is-next"></a>
+                </div>
+
+          - Title: Dense
+            Anchor: Dense
+            Description: A pagination can be dense to reduce the height of each item.
+            HTML: |
+                <div class="ts-pagination [[is-dense]]">
+                    <a class="item is-back"></a>
+                    <a class="item">1</a>
+                    <a class="item is-active">2</a>
+                    <a class="item">3</a>
+                    <a class="item is-next"></a>
+                </div>
+
+    - Title: Compositions
+      Description:
+      Sections:
+          - Title: Footer Pagination
+            Anchor: Composition Detail
+            Description: A pagination menu can be used to navigate through a list of items.
+            HTML: |
+                <div class="{{ts-box}}">
+                    <table class="{{ts-table}} is-basic">
+                        <thead>
+                            <tr>
+                                <th>Hospital</th>
+                                <th>Particulars</th>
+                                <th class="is-collapsed">Created At</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="is-collapsed">Tokyo AH Hospital</td>
+                                <td>Medical Supplies</td>
+                                <td>2021/08/01</td>
+                            </tr>
+                            <tr>
+                                <td class="is-collapsed">Tokyo AH Hospital</td>
+                                <td>Standard ECG</td>
+                                <td>2021/08/01</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="{{ts-divider}}"></div>
+                    <div class="{{ts-content}} is-dense is-secondary">
+                        <div class="{{ts-grid}} is-compact is-middle-aligned">
+                            <div class="column is-fluid">
+                                Rows per Page:
+                                <div class="{{ts-select}} is-basic">
+                                    <select>
+                                        <option>10</option>
+                                        <option>20</option>
+                                        <option selected>30</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="[[ts-pagination]] is-secondary">
+                                    <a class="item is-back"></a>
+                                    <a class="item">1</a>
+                                    <a class="item is-skipped"></a>
+                                    <a class="item">4</a>
+                                    <a class="item is-active">5</a>
+                                    <a class="item">6</a>
+                                    <a class="item is-skipped"></a>
+                                    <a class="item">10</a>
+                                    <a class="item is-next"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>

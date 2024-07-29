@@ -1,0 +1,88 @@
+#=======================================================
+# 標頭
+# Header
+#=======================================================
+
+Title: Checklist
+Description: A checklist is used to summarize differences.
+
+#=======================================================
+# 設定
+# Settings
+#=======================================================
+
+Type: Article
+Relatives:
+    - List
+
+#=======================================================
+# 基本樣式
+# Definitions
+#=======================================================
+
+Example:
+    HTML: |
+        <div class="[[ts-checklist]]">
+            <div class="item is-positive">This PC can run Windows 2077.</div>
+            <div class="item is-positive">Get a free cat with a system upgrade.</div>
+            <div class="item is-negative">Upgrade is not available.</div>
+        </div>
+
+Definitions:
+    - Title: Item Variations
+      Description:
+      Sections:
+          - Title: Positive
+            Anchor: Positive
+            Description: A checklist item can be marked as positive.
+            HTML: |
+                <div class="ts-checklist">
+                    <div class="item [[is-positive]]">Update is compatible.</div>
+                    <div class="item [[is-positive]]">The processor is compatible.</div>
+                </div>
+
+          - Title: Negative
+            Anchor: Negative
+            Description: A checklist item can be marked as negative.
+            HTML: |
+                <div class="ts-checklist">
+                    <div class="item [[is-negative]]">The graphics card is outdated.</div>
+                    <div class="item [[is-negative]]">This version is deprecated.</div>
+                </div>
+
+          - Title: Warning
+            Anchor: Warning
+            Description: A checklist item can be marked as a warning.
+            HTML: |
+                <div class="ts-checklist">
+                    <div class="item [[is-warning]]">This application is not verified.</div>
+                    <div class="item [[is-warning]]">Think twice before speaking.</div>
+                </div>
+
+          - Title: Added
+            Anchor: Added
+            Description: A checklist item can be marked as added.
+            HTML: |
+                <div class="ts-checklist">
+                    <div class="item [[is-added]]">We've improved system stability.</div>
+                    <div class="item [[is-added]]">Increased character movement speed.</div>
+                </div>
+
+          - Title: Removed
+            Anchor: Removed
+            Description: A checklist item can be marked as removed.
+            HTML: |
+                <div class="ts-checklist">
+                    <div class="item [[is-removed]]">The feature has been removed.</div>
+                    <div class="item [[is-removed]]">The level has been reduced to 2.</div>
+                </div>
+
+          - Title: Info
+            Anchor: Info
+            Description: A checklist item can be marked as information.
+            HTML: |
+                <div class="ts-checklist">
+                    <div class="item [[is-info]]">A new version is available for download.</div>
+                    <div class="item [[is-info]]">This person is trying to remain neutral.</div>
+                </div>
+

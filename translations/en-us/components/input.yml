@@ -1,0 +1,232 @@
+#=======================================================
+# 標頭
+# Header
+#=======================================================
+
+Title: Input
+Description: An input is a field used to elicit a response from a user.
+
+#=======================================================
+# 設定
+# Settings
+#=======================================================
+
+Type: Article
+
+#=======================================================
+# 屬性
+# Properties
+#=======================================================
+
+#Properties:
+#    - Name: "[data-max-rows]"
+#      Default: 0
+#      Target: .ts-input
+#      Description: 限制自動延展高度的最大行數，`0` 表示不限。
+
+#=======================================================
+# 基本樣式
+# Definitions
+#=======================================================
+
+Example:
+    Centered: true
+    HTML: |
+        <div class="[[ts-input]]">
+            <input type="text" placeholder="Search keywords...">
+        </div>
+
+Definitions:
+    - Title: States
+      Description:
+      Sections:
+          - Title: Disabled
+            Anchor: Disabled
+            Description: An input field can show that it is disabled.
+            HTML: |
+                <div class="ts-input">
+                    <input type="text" placeholder="Username" [[disabled]]>
+                </div>
+
+    - Title: Variations
+      Description:
+      Sections:
+          - Title: Solid
+            Anchor: Solid
+            Description: An input can have a solid background.
+            HTML: |
+                <div class="ts-input [[is-solid]]">
+                    <input type="text" placeholder="Send message...">
+                </div>
+
+          - Title: Underlined
+            Anchor: Underlined
+            Description: An input can have a solid background and an underline.
+            HTML: |
+                <div class="ts-input [[is-underlined]]">
+                    <input type="text" placeholder="Search">
+                </div>
+
+          - Title: Basic
+            Anchor: Basic
+            Description: A basic input has no padding and borders.
+            HTML: |
+                <div class="ts-input [[is-basic]] is-start-icon">
+                    <span class="{{ts-icon}} is-magnifying-glass-icon"></span>
+                    <input type="text" placeholder="Enter keywords...">
+                </div>
+
+          - Title: Circular
+            Anchor: Circular
+            Description: An input can be circular.
+            HTML: |
+                <div class="ts-input [[is-circular]]">
+                    <input type="text" placeholder="Search from 1,382 users…">
+                </div>
+
+          - Title: Resizable
+            Anchor: Resizable
+            Description: A textarea can be resized vertically.
+            HTML: |
+                <div class="ts-input [[is-resizable]]">
+                    <textarea placeholder="Reply the mail..."></textarea>
+                </div>
+
+          - Title: Labeled
+            Anchor: Labeled
+            Description: An input can be formatted with a label.
+            Remove:
+                - <div class="ts-space"></div>
+            HTML: |
+                <div class="ts-input [[is-start-labeled]]">
+                    <span class="label">$</span>
+                    <input type="text">
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-input [[is-labeled]]">
+                    <span class="label">https://</span>
+                    <input type="text">
+                    <span class="label">.co</span>
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-input [[is-end-labeled]]">
+                    <input type="text">
+                    <span class="label">.00</span>
+                </div>
+
+          - Title: Negative
+            Anchor: Negative
+            Description: An input can show the data contains errors.
+            HTML: |
+                <div class="ts-input [[is-negative]]">
+                    <input type="text" placeholder="Email address">
+                </div>
+
+          - Title: Side Icon
+            Anchor: Side Icon
+            Description: An input can be formatted with icons.
+            Remove:
+                - <div class="ts-space"></div>
+            HTML: |
+                <div class="ts-input [[is-start-icon]]">
+                    <span class="{{ts-icon}} is-phone-icon"></span>
+                    <input type="text" placeholder="Cellphone">
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-input [[is-icon]]">
+                    <span class="{{ts-icon}} is-phone-icon"></span>
+                    <input type="text" placeholder="Cellphone">
+                    <span class="{{ts-icon}} is-triangle-exclamation-icon"></span>
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-input [[is-end-icon]]">
+                    <input type="text" placeholder="Password">
+                    <span class="{{ts-icon}} is-lock-icon"></span>
+                </div>
+
+          - Title: Sizes
+            Anchor: Sizes
+            Description: An input can vary in size.
+            Remove:
+                - <div class="ts-space"></div>
+            HTML: |
+                <div class="ts-input [[is-small]]">
+                    <input type="text" placeholder="Small input">
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-input">
+                    <input type="text" placeholder="Default input">
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-input [[is-large]]">
+                    <input type="text" placeholder="Large input">
+                </div>
+
+          - Title: Density
+            Anchor: Density
+            Description: An input can adjust its height for a tighter or more relaxed look.
+            Remove:
+                - <div class="ts-space"></div>
+            HTML: |
+                <div class="ts-input [[is-dense]]">
+                    <input type="text" placeholder="Dense input">
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-input">
+                    <input type="text" placeholder="Default input">
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-input [[is-relaxed]]">
+                    <input type="text" placeholder="Relaxed input">
+                </div>
+
+    - Title: Types
+      Description:
+      Sections:
+          - Title: Color Picker
+            Anchor: Type Color
+            Description: Native HTML input fields for color.
+            HTML: |
+                <div class="ts-input">
+                    <input type="[[color]]">
+                </div>
+
+          - Title: Date and Time
+            Anchor: Date And Time
+            Description: Native HTML input fields for time, date.
+            Remove:
+                - <div class="ts-space"></div>
+            HTML: |
+                <div class="ts-input">
+                    <input type="[[datetime-local]]">
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-input">
+                    <input type="[[date]]">
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-input">
+                    <input type="[[time]]">
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-input">
+                    <input type="[[month]]">
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-input">
+                    <input type="[[week]]">
+                </div>
+
+    #- Title: JavaScript 模組
+    #  Description:
+    #  Sections:
+    #      - Title: 自動延伸
+    #        Anchor: Module Autosize
+    #        Description: |
+    #            帶有 `[data-autosize]` 的輸入欄位會自動依據內容的多寡延展高度。
+    #        Remove:
+    #            - <div class="ts-space"></div>
+    #        HTML: |
+    #            <div class="ts-input">
+    #                <textarea rows="3" placeholder="試試換行文字…" [[data-autosize]]></textarea>
+    #            </div>

@@ -1,0 +1,190 @@
+#=======================================================
+# 標頭
+# Header
+#=======================================================
+
+Title: Blankslate
+Description: A blankslate provides a default action and message when there is no data to show.
+
+#=======================================================
+# 設定
+# Settings
+#=======================================================
+
+Type: Article
+Relatives:
+    - Content
+
+#=======================================================
+# 基本樣式
+# Definitions
+#=======================================================
+
+Example:
+    Centered: true
+    HTML: |
+        <div class="[[ts-blankslate]]">
+            <span class="{{ts-icon}} is-cart-shopping-icon"></span>
+            <div class="header">Your Cart is Empty</div>
+            <div class="description">Purchase some items and come back later.</div>
+            <div class="action">
+                <button class="{{ts-button}}">Browse Products</button>
+            </div>
+        </div>
+
+Definitions:
+    - Title: Structure
+      Description:
+      Sections:
+          - Title: Header
+            Anchor: Header
+            Description: A blankslate can have a primary title.
+            HTML: |
+                <div class="ts-blankslate">
+                    <div class="[[header]]">Main Title</div>
+                    <div class="description">A description for what happened.</div>
+                </div>
+
+          - Title: Description
+            Anchor: Description
+            Description: A blankslate can include a description for more context.
+            HTML: |
+                <div class="ts-blankslate">
+                    <div class="[[description]]">There are no posts to show.</div>
+                </div>
+
+          - Title: Icon
+            Anchor: Icon
+            Description: A blankslate can have an main icon.
+            HTML: |
+                <div class="ts-blankslate">
+                    <span class="[[{{ts-icon}}]] is-face-smile-wink-icon"></span>
+                    <div class="header">Registered Successfully</div>
+                    <div class="description">You've successfully registered your account.</div>
+                </div>
+
+          - Title: Action
+            Anchor: Action
+            Description: A blankslate can contain suggested actions.
+            HTML: |
+                <div class="ts-blankslate">
+                    <span class="{{ts-icon}} is-code-pull-request-icon"></span>
+                    <div class="header">There are no Pull Requests</div>
+                    <div class="description">
+                        A pull request allows you to review code changes.
+                    </div>
+                    <div class="[[action]]">
+                        <button class="{{ts-button}}">Create Pull Request</button>
+                    </div>
+                    <div class="[[action]]">
+                        <a class="{{ts-text}} is-link is-small">Read more</a>
+                    </div>
+                </div>
+
+    - Title: Variations
+      Description:
+      Sections:
+          - Title: Secondary
+            Anchor: Secondary
+            Description: A blankslate with less emphasis.
+            HTML: |
+                <div class="ts-blankslate [[is-secondary]]">
+                    <span class="{{ts-icon}} is-dolly-icon"></span>
+                    <div class="header">Waiting for Deliver</div>
+                    <div class="description">You'll be notified when the product arrives.</div>
+                </div>
+
+          - Title: Narrow
+            Anchor: Narrow
+            Description: A blankslate with a narrower description allows text to wrap sooner.
+            HTML: |
+                <div class="ts-blankslate [[is-narrow]]">
+                    <span class="{{ts-icon}} is-person-circle-question-icon"></span>
+                    <div class="header">Verification Required</div>
+                    <div class="description">
+                        You haven't verified your identity yet.
+                        The verification is required before using our services.
+                    </div>
+                </div>
+
+          - Title: Interactive
+            Anchor: Interactive
+            Description: An interactive blankslate can have a hover effect, often used for a drop zone.
+            HTML: |
+                <div class="{{ts-box}} is-hollowed">
+                    <div class="ts-blankslate [[is-interactive]]">
+                        <span class="{{ts-icon}} is-arrow-pointer-icon"></span>
+                        <div class="header">Move the Cursor Here</div>
+                    </div>
+                </div>
+
+          - Title: Sizes
+            Anchor: Sizes
+            Description: A blankslate can have different sizes.
+            HTML: |
+                <div class="ts-blankslate [[is-small]]">
+                    <span class="{{ts-icon}} is-receipt-icon"></span>
+                    <div class="header">No Receipts</div>
+                    <div class="description">It may take a few minutes to update.</div>
+                </div>
+                <div class="ts-blankslate">
+                    <span class="{{ts-icon}} is-receipt-icon"></span>
+                    <div class="header">No Receipts</div>
+                    <div class="description">It may take a few minutes to update.</div>
+                </div>
+                <div class="ts-blankslate [[is-large]]">
+                    <span class="{{ts-icon}} is-receipt-icon"></span>
+                    <div class="header">No Receipts</div>
+                    <div class="description">It may take a few minutes to update.</div>
+                </div>
+
+    - Title: Compositions
+      Description:
+      Sections:
+          - Title: Dropzone
+            Anchor: Composition Uploadzone
+            Description: Present a hollow, dashed upload zone with [Box](./box.html).
+            HTML: |
+                <div class="[[{{ts-box}}]] is-hollowed">
+                    <div class="ts-blankslate is-interactive">
+                        <span class="{{ts-icon}} is-upload-icon"></span>
+                        <div class="header">Upload Photos</div>
+                        <div class="description">Drag and drop the file here to upload.</div>
+                    </div>
+                </div>
+
+          - Title: Content
+            Anchor: Composition Content
+            Description: Emphasize the blankslate with [Content](./content.html).
+            HTML: |
+                <div class="[[{{ts-content}}]] is-secondary is-fitted">
+                    <div class="ts-blankslate">
+                        <span class="{{ts-icon}} is-envelope-icon"></span>
+                        <div class="header">Email Has Been Sent</div>
+                        <div class="description">Check your inbox for the login link.</div>
+                    </div>
+                </div>
+
+          - Title: Search Bar
+            Anchor: Composition Grid
+            Description: The action section in the blankslate can contain a [Grid](./grid.html).
+            HTML: |
+                <div class="{{ts-box}}">
+                    <div class="ts-blankslate is-narrow">
+                        <span class="{{ts-icon}} is-user-astronaut-icon"></span>
+                        <div class="header">No Followings</div>
+                        <div class="description">Let's find something to follow now!</div>
+                        <div class="action">
+                            <div class="[[{{ts-grid}}]]">
+                                <div class="column is-fluid">
+                                    <div class="{{ts-input}}">
+                                        <input type="text" placeholder="Search...">
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <button class="{{ts-button}}">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>

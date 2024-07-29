@@ -1,0 +1,332 @@
+#=======================================================
+# 標頭
+# Header
+#=======================================================
+
+Title: App Drawer
+Description: An app drawer is a panel that slides in from the edge of the screen.
+
+#=======================================================
+# 設定
+# Settings
+#=======================================================
+
+Type: Article
+
+#=======================================================
+# 屬性
+# Properties
+#=======================================================
+
+Properties:
+    - Name: "[data-dismissible]"
+      Default: true
+      Target: .ts-app-drawer
+      Description: If the user can close the drawer by pressing the `Esc` key or clicking outside the drawer.
+
+#=======================================================
+# 變數
+# Variables
+#=======================================================
+
+Variables:
+    - Name: --width
+      Default: 380px
+      Target: .ts-app-drawer
+      Description: The width of the drawer.
+
+#=======================================================
+# 基本樣式
+# Definitions
+#=======================================================
+
+Example:
+    HTML: |
+        <dialog class="[[ts-app-drawer]] is-end is-small" open>
+            <div class="content">
+                <div class="{{ts-content}}">
+                    <div class="{{ts-header}}">Note #52</div>
+                    <p>I don't want to lose this feeling;
+                    I want to try everything.</p>
+                    <p>But you sighed and said, "it's time for you to grow up,
+                    don't you think?"</p>
+                    <button class="{{ts-button}} is-fluid is-outlined">Close</button>
+                </div>
+            </div>
+        </dialog>
+
+Definitions:
+    - Title: Structure
+      Description:
+      Sections:
+          - Title: Content
+            Anchor: Content
+            Description: |
+                Main content goes in the content block. For title and action bar, see [Compositions](#composition-close).
+            AttachedHTML: |
+                <dialog class="ts-app-drawer" open>
+                    <div class="[[content]]">
+                        <!-- ... -->
+                    </div>
+                </dialog>
+
+    - Title: States
+      Description:
+      Sections:
+          - Title: Open
+            Anchor: Open
+            Description: |
+                A drawer with the `[open]` attribute will appear on the screen.
+            HTML: |
+                <dialog class="ts-app-drawer is-start" [[open]]>
+                    <div class="content">
+                        <div class="{{ts-content}}">
+                            The key element wasn't used properly,<br>
+                            no one noticed as they were stuck in the past,<br>
+                            and the prologue was at the end.
+                        </div>
+                    </div>
+                </dialog>
+
+    - Title: Variations
+      Description:
+      Sections:
+          - Title: Positions
+            Anchor: Positions
+            Description: A drawer must be positioned with `is-start`t (lef), `is-end` (right), or `is-bottom`.
+            HTML: |
+                <dialog class="ts-app-drawer [[is-bottom]]" open>
+                    <div class="content">
+                        <div class="ts-content">
+                            <div class="{{ts-header}}">News</div>
+                            <div class="{{ts-iconset}} {{has-top-spaced}}">
+                                <span class="{{ts-icon}} is-newspaper-icon"></span>
+                                <div class="content">
+                                    <div class="title">New Magic Available</div>
+                                    <div class="text">Head to the lounge for info.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </dialog>
+
+          - Title: Sizes
+            Anchor: Sizes
+            Description: |
+                A drawer can be resized by changing the width. It only works with `is-start` and `is-end`.
+                <div class="ts-box">
+                    <table class="ts-table is-definition is-celled">
+                        <thead>
+                            <tr>
+                                <th class="is-collapsed"></th>
+                                <th class="is-collapsed">280px</th>
+                                <th class="is-collapsed">380px</th>
+                                <th class="is-collapsed">580px</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="is-collapsed">Class</td>
+                                <td class="is-collapsed">
+                                    <span class="ts-text is-code">is-small</span>
+                                </td>
+                                <td class="is-collapsed">
+                                    Default
+                                </td>
+                                <td class="is-collapsed">
+                                    <span class="ts-text is-code">is-large</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            Remove:
+                - <div class="ts-space"></div>
+            HTML: |
+                <dialog class="ts-app-drawer [[is-small]] is-end" open>
+                    <div class="content">
+                        <div class="{{ts-content}} is-center-aligned">
+                            Small Drawer
+                        </div>
+                    </div>
+                </dialog>
+                <div class="ts-space"></div>
+                <dialog class="ts-app-drawer is-end" open>
+                    <div class="content">
+                        <div class="{{ts-content}} is-center-aligned">
+                            Default Drawer
+                        </div>
+                    </div>
+                </dialog>
+                <div class="ts-space"></div>
+                <dialog class="ts-app-drawer [[is-large]] is-end" open>
+                    <div class="content">
+                        <div class="{{ts-content}} is-center-aligned">
+                            Large Drawer
+                        </div>
+                    </div>
+                </dialog>
+
+          - Title: Modal
+            Anchor: Modal
+            Description: A modal drawer will look like a popup window and have a margin from the screen edge.
+            Remove:
+                - <div class="ts-space"></div>
+            HTML: |
+                <dialog class="ts-app-drawer is-end [[is-modal]]" open>
+                    <div class="content">
+                        <div class="ts-content">
+                            <div class="{{ts-header}}">Drawer Title</div>
+                            <p>A catastrophic event wiped out most of humanity's civilization, leaving a few to survive in toxic dust and volcanic ash. After the Earth was destroyed, "humanity" became the darkest term.</p>
+                        </div>
+                    </div>
+                </dialog>
+
+          - Title: Fullscreen
+            Anchor: Fullscreen
+            Description: |
+                A drawer can be fullscreen to fill the entire screen. It is suitable for mobile devices with [Responsive](./responsive.html).
+            HTML: |
+                <dialog class="ts-app-drawer [[is-fullscreen]]" open>
+                    <div class="content">
+                        <div class="{{ts-content}}">
+                            <div class="{{ts-header}}">Bringing anime culture to real life.</div>
+                            <p>Real life should be filled with fresh challenges and beauty like the anime world, and making this vision a reality is one of our goals.</p>
+                        </div>
+                    </div>
+                </dialog>
+
+    - Title: Compositions
+      Description:
+      Sections:
+          - Title: Close Button
+            Anchor: Composition Close
+            Description:  A drawer can have a [Close](./close.html) button to let users close the drawer.
+            Remove:
+                - <div class="ts-space is-huge"></div>
+            HTML: |
+                <dialog class="ts-app-drawer is-end is-small" open>
+                    <div class="content">
+                        <div class="{{ts-content}}">
+                            <div class="{{ts-grid}}">
+                                <div class="column is-fluid">
+                                    <div class="{{ts-header}}">Notes</div>
+                                </div>
+                                <div class="column">
+                                    <button class="[[{{ts-close}}]] is-secondary is-large"></button>
+                                </div>
+                            </div>
+                            <div class="{{ts-list}} is-unordered {{has-top-spaced}}">
+                                <div class="item">Ashimori Shion</div>
+                                <div class="item">Amano Satomi</div>
+                                <div class="item">Sato Aya</div>
+                            </div>
+                        </div>
+                    </div>
+                </dialog>
+
+          - Title: Filter
+            Anchor: Composition Filter
+            Description: Form inputs such as [Input](./input.html) can be placed inside a drawer.
+            HTML: |
+                <dialog class="ts-app-drawer is-start is-small" open>
+                    <div class="content">
+                        <div class="{{ts-content}}">
+                            <div class="{{ts-header}} is-large">Filter</div>
+                            <div class="{{ts-text}} is-secondary {{has-top-spaced}}">Title</div>
+                            <div class="[[{{ts-input}}]] is-underlined {{has-top-spaced}}">
+                                <input type="text" placeholder="Includes...">
+                            </div>
+                            <div class="{{ts-text}} is-secondary {{has-top-spaced}}">Published At</div>
+                            <div class="[[{{ts-input}}]] is-underlined is-start-icon {{has-top-spaced}}">
+                                <span class="{{ts-icon}} is-calendar-icon"></span>
+                                <input type="date" value="2018-01-29">
+                            </div>
+                            <div class="[[{{ts-input}}]] is-underlined is-start-icon {{has-top-spaced}}">
+                                <span class="{{ts-icon}} is-clock-icon"></span>
+                                <input type="time" value="12:00">
+                            </div>
+                            <button class="{{ts-button}} is-fluid {{has-top-spaced-big}}">Apply</button>
+                        </div>
+                    </div>
+                </dialog>
+
+          - Title: Actions
+            Anchor: Composition Action
+            Description: Place a title and buttons in the drawer header using [Grid](./grid.html).
+            HTML: |
+                <dialog class="ts-app-drawer is-end is-modal" open>
+                    <div class="content">
+                        <div class="ts-content">
+                            <div class="[[{{ts-grid}}]] is-middle-aligned">
+                                <div class="column">
+                                    <button class="{{ts-button}} is-icon is-ghost">
+                                        <span class="{{ts-icon}} is-arrow-left-icon"></span>
+                                    </button>
+                                </div>
+                                <div class="column is-fluid">
+                                    <div class="{{ts-header}}">Drawer Title</div>
+                                </div>
+                                <div class="column">
+                                    <button class="{{ts-button}} is-icon is-ghost">
+                                        <span class="{{ts-icon}} is-xmark-icon"></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <p>Here is the place for the content.</p>
+                        </div>
+                    </div>
+                </dialog>
+
+          - Title: Bottom Sheet
+            Anchor: Composition Bottom Sheet
+            Description: A bottom sheet can be created by placing a [Menu](./menu.html) in a bottom positioned drawer.
+            HTML: |
+                <dialog class="ts-app-drawer is-bottom" open>
+                    <div class="content">
+                        <div class="[[{{ts-menu}}]] is-start-icon {{has-top-spaced}}">
+                            <a class="item">
+                                <span class="{{ts-icon}} is-copy-icon"></span>
+                                Copy Files
+                            </a>
+                            <a class="item">
+                                <span class="{{ts-icon}} is-trash-can-icon"></span>
+                                Move to Trash
+                            </a>
+                        </div>
+                        <div class="{{ts-content}}">
+                            <button class="{{ts-button}} is-fluid is-outlined">Close</button>
+                        </div>
+                    </div>
+                </dialog>
+
+    - Title: JavaScript Features
+      Sections:
+          - Title: Trigger by Attribute
+            Anchor: Dialog Trigger
+            Description: |
+                Clicking on a button with the `[data-dialog]` attribute will open or close the corresponding drawer with the `[id]` attribute.
+            HTML: |
+                <button class="{{ts-button}}" [[data-dialog]]="((drawer))">
+                    Open Drawer ✨
+                </button>
+                <dialog class="ts-app-drawer is-end" id="((drawer))">
+                    <div class="content">
+                        <div class="{{ts-content}}">
+                            <div class="{{ts-header}}">Drawer Title</div>
+                            <p>Click the close button or the gray area to close the drawer.</p>
+                            <button class="{{ts-button}}" [[data-dialog]]="((drawer))">Close</button>
+                        </div>
+                    </div>
+                </dialog>
+
+          - Title: Trigger by JavaScript
+            Anchor: Js Trigger
+            Description: |
+                Open the drawer with the native [`.showModal()`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/showModal) function. It has no effect if the drawer already has the `[open]` attribute. Closing the drawer triggers the [`close`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/close_event) or [`cancel`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/cancel_event) event.
+            AttachedHTML: |
+                // Open the `#drawer` drawer.
+                document.querySelector('#drawer').showModal();
+
+                // Close the `#drawer` drawer.
+                document.querySelector('#drawer').close();

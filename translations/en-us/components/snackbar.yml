@@ -1,0 +1,72 @@
+#=======================================================
+# 標頭
+# Header
+#=======================================================
+
+Title: Snackbar
+Description: A snackbar is an important message that persists until dismissed by a user.
+Intro: |
+    Snackbar usually was placed in a corner, similar to [Notice](./notice.html) but capable of holding action button.
+
+#=======================================================
+# 設定
+# Settings
+#=======================================================
+
+Type: Article
+Relatives:
+    - Notice
+
+#=======================================================
+# 基本樣式
+# Definitions
+#=======================================================
+
+Example:
+    HTML: |
+        <div class="[[ts-snackbar]]">
+            <div class="content">The file has been successfully restored.</div>
+            <button class="action">Undo</button>
+        </div>
+
+Definitions:
+    - Title: Structure
+      Description:
+      Sections:
+          - Title: Content
+            Anchor: Content
+            Description: Content is the main message of the snackbar.
+            HTML: |
+                <div class="ts-snackbar">
+                    <div class="[[content]]">First online casino is live!</div>
+                </div>
+
+          - Title: Action
+            Anchor: Action
+            Description: A snackbar can have an action button.
+            HTML: |
+                <div class="ts-snackbar">
+                    <div class="content">This file is corrupted.</div>
+                    <button class="[[action]]">Move to trash</button>
+                </div>
+
+          - Title: Close
+            Anchor: Close
+            Description: A snackbar can have a close button to dismiss the message.
+            HTML: |
+                <div class="ts-snackbar">
+                    <div class="content">You will receive an email notification.</div>
+                    <button class="[[close]]"></button>
+                </div>
+
+    - Title: Variations
+      Description:
+      Sections:
+          - Title: Negative
+            Anchor: Negative
+            Description: A snackbar action can hint towards a negative consequence.
+            HTML: |
+                <div class="ts-snackbar">
+                    <div class="content">You have five unread messages.</div>
+                    <button class="action [[is-negative]]">Delete all</button>
+                </div>

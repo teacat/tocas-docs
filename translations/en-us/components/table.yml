@@ -1,0 +1,967 @@
+#=======================================================
+# 標頭
+# Header
+#=======================================================
+
+Title: Table
+Description: A table displays a collections of data grouped into rows.
+Intro: |
+    A table with no border takes up the full width. Wrap it in a [Box](./box.html) to add borders.
+
+#=======================================================
+# 設定
+# Settings
+#=======================================================
+
+Type: Article
+
+#=======================================================
+# 基本樣式
+# Definitions
+#=======================================================
+
+Example:
+    HTML: |
+        <div class="{{ts-box}}">
+            <table class="[[ts-table]]">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Common</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Sorae & Co., Ltd.</td>
+                        <td>對空音商事株式会社</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Caris Events</td>
+                        <td>カリス・イベント</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="3">Total Count: 2</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+
+Definitions:
+    - Title: Types
+      Description:
+      Sections:
+          - Title: Definition
+            Anchor: Definition
+            Description: A table may be formatted to emphasize a first column that defines a rows content.
+            HTML: |
+                <div class="{{ts-box}}">
+                    <table class="ts-table [[is-definition]]">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Arguments</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>header()</td>
+                                <td>title[<em>string</em>]</td>
+                                <td>Output the page header.</td>
+                            </tr>
+                            <tr>
+                                <td>footer()</td>
+                                <td>path[<em>string</em>]</td>
+                                <td>Echo the footer content.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+          - Title: Celled
+            Anchor: Celled
+            Description: A table may be divided each row into separate cells.
+            HTML: |
+                <div class="{{ts-box}}">
+                    <table class="ts-table [[is-celled]] is-striped">
+                        <thead>
+                            <tr>
+                                <th colspan="3">Git Repository</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="is-collapsed">
+                                    <span class="{{ts-icon}} is-folder-icon is-end-spaced"></span>
+                                    node_modules
+                                </td>
+                                <td>First commit!</td>
+                                <td class="is-collapsed">10 hours ago</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="{{ts-icon}} is-folder-icon is-end-spaced"></span>
+                                    build
+                                </td>
+                                <td>First commit!</td>
+                                <td class="is-collapsed">10 hours ago</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="{{ts-icon}} is-file-icon is-regular is-end-spaced"></span>
+                                    package.json
+                                </td>
+                                <td>First commit!</td>
+                                <td class="is-collapsed">10 hours ago</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+          - Title: Basic
+            Anchor: Basic
+            Description: A table can reduce its complexity to increase readability.
+            Remove:
+                - <div class="ts-space"></div>
+            HTML: |
+                <div class="{{ts-box}}">
+                    <table class="ts-table [[is-basic]]">
+                        <thead>
+                            <tr>
+                                <th>Filename</th>
+                                <th>Category</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>file.php</td>
+                                <td>Controller</td>
+                                <td>File handlers.</td>
+                            </tr>
+                            <tr>
+                                <td>star.php</td>
+                                <td>Controller</td>
+                                <td>For handling user favorites.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="ts-space"></div>
+                <div class="{{ts-box}}">
+                    <table class="ts-table [[is-very-basic]]">
+                        <thead>
+                            <tr>
+                                <th>Filename</th>
+                                <th>Category</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>file.php</td>
+                                <td>Controller</td>
+                                <td>File handlers.</td>
+                            </tr>
+                            <tr>
+                                <td>star.php</td>
+                                <td>Controller</td>
+                                <td>For handling user favorites.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+          - Title: Striped
+            Anchor: Striped
+            Description: A table can stripe alternate rows of content with a darker color to increase contrast.
+            HTML: |
+                <div class="{{ts-box}}">
+                    <table class="ts-table [[is-striped]]">
+                        <thead>
+                            <tr>
+                                <th>IP Address</th>
+                                <th>Protocol</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>164.17.183.5</td>
+                                <td>HTTP</td>
+                                <td>Yami's virtual machine.</td>
+                            </tr>
+                            <tr>
+                                <td>186.173.16.34</td>
+                                <td>HTTP</td>
+                                <td>Blogs hosted in Taipei.</td>
+                            </tr>
+                            <tr>
+                                <td>204.57.189.23</td>
+                                <td>HTTP</td>
+                                <td>Test servers.</td>
+                            </tr>
+                            <tr>
+                                <td>183.46.31.8</td>
+                                <td>HTTP</td>
+                                <td>For hospitals in Hong Kong.</td>
+                            </tr>
+                            <tr>
+                                <td>89.42.6.1</td>
+                                <td>HTTP</td>
+                                <td>Backup servers for Japan companies.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+    - Title: Variations
+      Description:
+      Sections:
+          - Title: Collapsed
+            Anchor: Collapsed Table
+            Description: A table can be collapsed, taking up only as much space as its rows.
+            HTML: |
+                <div class="{{ts-box}} is-collapsed">
+                    <table class="ts-table [[is-collapsed]]">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Name</th>
+                                <th>Common</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Caris</td>
+                                <td>カリス</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Orenji</td>
+                                <td>トウキ</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Shirone</td>
+                                <td>シロネ</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+          - Title: Single Line
+            Anchor: Single Line
+            Description: A table can specify that its cell contents should remain on a single line, and not wrap.
+            HTML: |
+                <table class="ts-table [[is-single-line]]">
+                    <thead>
+                        <tr>
+                            <th>Post Title</th>
+                            <th>Description</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Bibendum</td>
+                            <td>Et venenatis orci placerat vitae. Sed posuere auctor.</td>
+                            <td>Approved</td>
+                        </tr>
+                        <tr>
+                            <td>Feugiat</td>
+                            <td>Aliquam varius, mi ut convallis rhoncus, nunc dolor feugiat mi.</td>
+                            <td>Rejected</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+          - Title: Truncated
+            Anchor: Truncated
+            Description: A table can truncate its cell contents to prevent text from wrapping.
+            HTML: |
+                <table class="ts-table [[is-truncated]] is-basic">
+                    <thead>
+                        <tr>
+                            <th>Post Title</th>
+                            <th>Description</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lorem Ipsum</td>
+                            <td>Approved</td>
+                            <td>Etiam aliquet pulvinar sapien, et venenatis orci placerat vitae. Sed posuere bibendum ante et porttitor. Fusce auctor.</td>
+                        </tr>
+                        <tr>
+                            <td>Etiam aliquet</td>
+                            <td>Approved</td>
+                            <td>Nulla sed ex eget ligula gravida condimentum non id dui. Donec rutrum accumsan augue vitae pretium.</td>
+                        </tr>
+                        <tr>
+                            <td>Aliquam</td>
+                            <td>Rejected</td>
+                            <td>Curabitur volutpat tristique erat ut pulvinar. Aliquam varius, mi ut convallis rhoncus, nunc dolor feugiat mi.</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+          - Title: Sticked
+            Anchor: Sticked
+            Description: A table can stick its cell contents to the edge of the table.
+            HTML: |
+                <table class="ts-table [[is-sticked]] is-basic">
+                    <tbody>
+                        <tr>
+                            <td><strong>Total:</strong></td>
+                            <td>340,953</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Taxes (9.3%):</strong></td>
+                            <td>31,708</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Shipping Fees:</strong></td>
+                            <td>4,102</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Grand Total:</strong></td>
+                            <td>376,763</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+          - Title: Sizes
+            Anchor: Sizes
+            Description: A table can also be small or large.
+            Remove:
+                - <div class="ts-space"></div>
+            HTML: |
+                <div class="{{ts-box}}">
+                    <table class="ts-table [[is-small]]">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Name</th>
+                                <th>Common</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Sorae & Co., Ltd.</td>
+                                <td>對空音商事株式会社</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="ts-space"></div>
+                <div class="{{ts-box}}">
+                    <table class="ts-table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Name</th>
+                                <th>Common</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Sorae & Co., Ltd.</td>
+                                <td>對空音商事株式会社</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="ts-space"></div>
+                <div class="{{ts-box}}">
+                    <table class="ts-table [[is-large]]">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Name</th>
+                                <th>Common</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Sorae & Co., Ltd.</td>
+                                <td>對空音商事株式会社</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+          - Title: Padded
+            Anchor: Padded
+            Description: A table may sometimes need to be more padded for legibility.
+            Remove:
+                - <div class="ts-space"></div>
+            HTML: |
+                <div class="{{ts-box}}">
+                    <table class="ts-table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Name</th>
+                                <th>Common</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Caris Events</td>
+                                <td>カリス・イベント</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="ts-space"></div>
+                <div class="{{ts-box}}">
+                    <table class="ts-table [[is-padded]]">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Name</th>
+                                <th>Common</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Caris Events</td>
+                                <td>カリス・イベント</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="ts-space"></div>
+                <div class="{{ts-box}}">
+                    <table class="ts-table [[is-horizontally-padded]]">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Name</th>
+                                <th>Common</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Caris Events</td>
+                                <td>カリス・イベント</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+          - Title: Fitted
+            Anchor: Fitted
+            Description: A table can be fitted to the width of its container.
+            HTML: |
+                <table class="ts-table [[is-fitted]]">
+                    <tbody>
+                        <tr>
+                            <td><strong>Order No.:</strong></td>
+                            <td>123718975123</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Issued Date:</strong></td>
+                            <td>2022-12-05 16:26:01 UTC</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Paid Date:</strong></td>
+                            <td>Unpaid</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Username:</strong></td>
+                            <td>yamiodymel</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+          - Title: Density
+            Anchor: Density
+            Description: A table can have a relaxed or dense appearance.
+            Remove:
+                - <div class="ts-space"></div>
+            HTML: |
+                <div class="{{ts-box}}">
+                    <table class="ts-table [[is-relaxed]]">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Name</th>
+                                <th>Common Name</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Flat Bank</td>
+                                <td>半音金庫</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Sorae & Co., Ltd.</td>
+                                <td>對空音商事株式会社</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="ts-space"></div>
+                <div class="{{ts-box}}">
+                    <table class="ts-table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Name</th>
+                                <th>Common Name</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Flat Bank</td>
+                                <td>半音金庫</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Sorae & Co., Ltd.</td>
+                                <td>對空音商事株式会社</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="ts-space"></div>
+                <div class="{{ts-box}}">
+                    <table class="ts-table [[is-dense]]">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Name</th>
+                                <th>Common Name</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Flat Bank</td>
+                                <td>半音金庫</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Sorae & Co., Ltd.</td>
+                                <td>對空音商事株式会社</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+          - Title: Compact
+            Anchor: Horizontal Density
+            Description: A table can have its rows appear more compact.
+            Remove:
+                - <div class="ts-space"></div>
+            HTML: |
+                <div class="{{ts-box}}">
+                    <table class="ts-table is-celled">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>URL</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="{{ts-input}}">
+                                        <input type="text">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="{{ts-input}}">
+                                        <input type="text">
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="ts-space"></div>
+                <div class="{{ts-box}}">
+                    <table class="ts-table [[is-compact]] is-celled">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>URL</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="{{ts-input}}">
+                                        <input type="text">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="{{ts-input}}">
+                                        <input type="text">
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+    - Title: Column States
+      Description:
+      Sections:
+          - Title: Active
+            Anchor: Active
+            Description: A cell or row can be active or selected by a user.
+            HTML: |
+                <div class="{{ts-box}}">
+                    <table class="ts-table">
+                        <thead>
+                            <tr>
+                                <th class="is-collapsed"></th>
+                                <th>Username</th>
+                                <th>Status</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <label class="ts-checkbox">
+                                        <input type="checkbox"/>
+                                    </label>
+                                </td>
+                                <td>Yan-K</td>
+                                <td>Checking</td>
+                                <td>Requires age check.</td>
+                            </tr>
+                            <tr class="[[is-active]]">
+                                <td>
+                                    <label class="ts-checkbox">
+                                        <input type="checkbox" checked/>
+                                    </label>
+                                </td>
+                                <td>Tsundere Chen</td>
+                                <td>Checking</td>
+                                <td>Level 32.</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label class="ts-checkbox">
+                                        <input type="checkbox"/>
+                                    </label>
+                                </td>
+                                <td>Hiram Huang</td>
+                                <td>Passed</td>
+                                <td>None</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+          - Title: Secondary
+            Anchor: Secondary
+            Description: A cell or row can be faded or less important.
+            HTML: |
+                <div class="{{ts-box}}">
+                    <table class="ts-table is-celled">
+                        <thead>
+                            <tr>
+                                <th>Username</th>
+                                <th>Status</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Yan-K</td>
+                                <td class="[[is-secondary]]">Checking</td>
+                                <td>Requires age check.</td>
+                            </tr>
+                            <tr>
+                                <td>Fan Kangtai</td>
+                                <td>Passed</td>
+                                <td>None</td>
+                            </tr>
+                            <tr class="[[is-secondary]]">
+                                <td>Tsundere Chen</td>
+                                <td>Checking</td>
+                                <td>Level 32.</td>
+                            </tr>
+                            <tr>
+                                <td>Hiram Huang</td>
+                                <td>Passed</td>
+                                <td>None</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+          - Title: Tertiary
+            Anchor: Tertiary
+            Description: A cell or row can be more darkened or unimportant.
+            HTML: |
+                <div class="{{ts-box}}">
+                    <table class="ts-table">
+                        <thead>
+                            <tr>
+                                <th>Started Date</th>
+                                <th>App Name</th>
+                                <th>Transaction Fee</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2021/01/03</td>
+                                <td class="[[is-tertiary]]">Flat Bank</td>
+                                <td>TWD $80</td>
+                            </tr>
+                            <tr class="[[is-tertiary]]">
+                                <td>2021/02/15</td>
+                                <td>Google Play</td>
+                                <td>TWD $4,500</td>
+                            </tr>
+                            <tr>
+                                <td>2021/03/19</td>
+                                <td>App Store</td>
+                                <td>TWD $1,200</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+          - Title: Indicated
+            Anchor: Indicated
+            Description: A table can highlight rows or columns in a special way.
+            HTML: |
+                <div class="{{ts-box}}">
+                    <table class="ts-table is-celled is-single-line">
+                        <thead>
+                            <tr>
+                                <th>Anime Name</th>
+                                <th>Show Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>WorldEnd: What do you do at the end of the world?</td>
+                                <td>Apr 11, 2017</td>
+                            </tr>
+                            <tr class="[[is-indicated]]">
+                                <td>Eromanga Sensei</td>
+                                <td>Apr 09, 2017</td>
+                            </tr>
+                            <tr class="is-negative [[is-indicated]]">
+                                <td>Armed Girl's Machiavellism</td>
+                                <td>Apr 05, 2017</td>
+                            </tr>
+                            <tr>
+                                <td>Grimoire of Zero</td>
+                                <td class="is-positive [[is-indicated]]">Apr 10, 2017</td>
+                            </tr>
+                            <tr>
+                                <td>Attack on Titan Season 2</td>
+                                <td>Apr 01, 2017</td>
+                            </tr>
+                            <tr class="is-warning [[is-indicated]]">
+                                <td>Akashic Records of Bastard Magic Instructor;</td>
+                                <td>Apr 04, 2017</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+          - Title: Disabled
+            Anchor: Disabled
+            Description: A cell or row can be disabled so that a user cannot interact with it.
+            HTML: |
+                <div class="{{ts-box}}">
+                    <table class="ts-table">
+                        <thead>
+                            <tr>
+                                <th>Username</th>
+                                <th>Email Address</th>
+                                <th>Activated At</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="[[is-disabled]]">
+                                <td>yamiodymel</td>
+                                <td>yamiodymel@example.com</td>
+                                <td>2013/09/14</td>
+                            </tr>
+                            <tr>
+                                <td>karisu</td>
+                                <td>superkari007@example.com</td>
+                                <td>2020/11/03</td>
+                            </tr>
+                            <tr>
+                                <td class="[[is-disabled]]">shiroteacat</td>
+                                <td>shiroteacat@example.com</td>
+                                <td>2009/07/15</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+    - Title: Column Variations
+      Description:
+      Sections:
+          - Title: Collapsed
+            Anchor: Collapsed
+            Description: A table can have its columns collapsed, taking up only as much space as its content.
+            HTML: |
+                <div class="{{ts-box}}">
+                    <table class="ts-table">
+                        <thead>
+                            <tr>
+                                <th>Hospital</th>
+                                <th>Particulars</th>
+                                <th class="[[is-collapsed]]">Created At</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="[[is-collapsed]]">Tokyo AH Hospital</td>
+                                <td>Medical Supplies</td>
+                                <td>2021/08/01</td>
+                            </tr>
+                            <tr>
+                                <td class="[[is-collapsed]]">Tokyo AH Hospital</td>
+                                <td>Standard ECG</td>
+                                <td>2021/08/01</td>
+                            </tr>
+                            <tr>
+                                <td class="[[is-collapsed]]">Jiritsu Institute</td>
+                                <td>Radiation Therapy</td>
+                                <td>2021/06/13</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+          - Title: Insetted
+            Anchor: Insetted
+            Description: A column can appear inset to expand on a row's content.
+            HTML: |
+                <div class="{{ts-box}}">
+                    <table class="ts-table">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Shop Name</th>
+                                <th>Amount</th>
+                                <th class="is-collapsed"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2021/02/03</td>
+                                <td>Mego Trade</td>
+                                <td>TWD $80</td>
+                                <td>
+                                    <button class="{{ts-button}} is-outlined">View</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="is-secondary is-padded [[is-insetted]]" colspan="4">
+                                    The next payment date: 2022/01/02 (monthly)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2021/05/18</td>
+                                <td>Taiwan Advancement Committee</td>
+                                <td>TWD $40</td>
+                                <td>
+                                    <button class="{{ts-button}} is-outlined">View</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+          - Title: Empty
+            Anchor: Empty
+            Description: A column can be marked as empty to indicate that it has no content.
+            HTML: |
+                <div class="{{ts-box}}">
+                    <table class="ts-table">
+                        <thead>
+                            <tr>
+                                <th>Username</th>
+                                <th>Last Active At</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>yamiodymel</td>
+                                <td>2022/01/30</td>
+                            </tr>
+                            <tr>
+                                <td>haneda_shirone</td>
+                                <td class="[[is-empty]]"></td>
+                            </tr>
+                            <tr>
+                                <td>karisu-events</td>
+                                <td class="[[is-empty]]"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+          - Title: Text Aligns
+            Anchor: Aligns
+            Description: A table header, row, or cell can adjust its text alignment.
+            HTML: |
+                <div class="{{ts-box}}">
+                    <table class="ts-table is-celled">
+                        <thead>
+                            <tr>
+                                <th>Column #1</th>
+                                <th>Column #2</th>
+                                <th>Column #3</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="[[is-top-aligned]]">
+                                    <p>Top Aligned</p>
+                                    <p>&nbsp;</p>
+                                </td>
+                                <td class="[[is-middle-aligned]]">
+                                    <p>Middle Aligned</p>
+                                </td>
+                                <td class="[[is-bottom-aligned]]">
+                                    <p>Bottom Aligned</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="[[is-start-aligned]]">
+                                    <p>Start Aligned</p>
+                                </td>
+                                <td class="[[is-center-aligned]]">
+                                    <p>Center Aligned</p>
+                                </td>
+                                <td class="[[is-end-aligned]]">
+                                    <p>End Aligned</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>

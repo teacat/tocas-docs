@@ -1,0 +1,270 @@
+#=======================================================
+# Header
+#=======================================================
+
+Title: Responsive
+Description: Make your website display optimally on different devices.
+
+#=======================================================
+# Settings
+#=======================================================
+
+Type: Paragraphy
+Grid: true
+
+#=======================================================
+# Definitions
+#=======================================================
+
+Definitions:
+    - Title: Device Definitions
+      Sections:
+          - Title: Breakpoints
+            Anchor: Default Breakpoints
+            Description: |
+                Tocas UI provides four default breakpoints.
+
+                <div class="ts-box">
+                    <table class="ts-table is-definition is-celled">
+                        <thead>
+                            <tr>
+                                <th class="is-collapsed"></th>
+                                <th class="is-collapsed">Indicator</th>
+                                <th class="is-collapsed">When screen size...</th>
+                                <th>Occurrence</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="is-collapsed">mobile</td>
+                                <td class="is-collapsed is-center-aligned">
+                                    <div class="ts-badge tablet+:has-hidden">Current</div>
+                                </td>
+                                <td class="is-collapsed">&ge; 0px and &le; 767px</td>
+                                <td>
+                                    <div class="ts-list is-unordered">
+                                        <div class="item">⮃ Portrait on mobile.</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="is-collapsed">tablet</td>
+                                <td class="is-collapsed is-center-aligned">
+                                    <div class="ts-badge mobile:has-hidden desktop+:has-hidden">Current</div>
+                                </td>
+                                <td class="is-collapsed">&ge; 768px and &le; 1023px</td>
+                                <td>
+                                    <div class="ts-list is-unordered">
+                                        <div class="item">⮂ Landscape for most mobile phones.</div>
+                                        <div class="item">⮃ Portrait on tablets.</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="is-collapsed">desktop</td>
+                                <td class="is-collapsed is-center-aligned">
+                                    <div class="ts-badge tablet-:has-hidden widescreen:has-hidden">Current</div>
+                                </td>
+                                <td class="is-collapsed">&ge; 1024px and &le; 1279px</td>
+                                <td>
+                                    <div class="ts-list is-unordered">
+                                        <div class="item">⮂ Landscape on tablets.</div>
+                                        <div class="item">Narrowed browser window.</div>
+                                        <div class="item">Starting point for computer devices.</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="is-collapsed">widescreen</td>
+                                <td class="is-collapsed is-center-aligned">
+                                    <div class="ts-badge desktop-:has-hidden">Current</div>
+                                </td>
+                                <td class="is-collapsed">&ge; 1280px</td>
+                                <td>
+                                    <div class="ts-list is-unordered">
+                                        <div class="item">⮂ Landscape for large tablets (e.g., iPad Pro or Surface Pro).</div>
+                                        <div class="item">Laptops, desktop computers.</div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+    - Title: Usages
+      Sections:
+          - Title: Basic Usage
+            Anchor: Responsive Usage
+            Description: |
+               Apply `breakpoint:class` to an element for responsive features.
+
+                <div class="ts-box">
+                    <table class="ts-table is-definition is-celled">
+                        <thead>
+                            <tr>
+                                <th class="is-collapsed"></th>
+                                <th class="is-collapsed">Example</th>
+                                <th>Activated when...</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="is-collapsed">breakpoint</td>
+                                <td class="is-collapsed">
+                                    <code>mobile</code>
+                                </td>
+                                <td>At "a certain breakpoint".</td>
+                            </tr>
+                            <tr>
+                                <td class="is-collapsed">breakpoint+</td>
+                                <td class="is-collapsed">
+                                    <code>mobile+</code>
+                                </td>
+                                <td>At "a certain breakpoint" and "above".</td>
+                            </tr>
+                            <tr>
+                                <td class="is-collapsed">breakpoint-</td>
+                                <td class="is-collapsed">
+                                    <code>tablet-</code>
+                                </td>
+                                <td>At "a certain breakpoint" and "below".</td>
+                            </tr>
+                            <tr>
+                                <td class="is-collapsed">breakpoint-breakpoint</td>
+                                <td class="is-collapsed">
+                                    <code>tablet-widescreen</code>
+                                </td>
+                                <td>Between "a certain breakpoint" and "another certain breakpoint".</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            AttachedHTML: |
+                <!-- Apply `is-small` only on mobile -->
+                <div class="{{ts-button}} [[mobile:is-small]]"></div>
+
+                <!-- Apply `is-small` on tablet, desktop, widescreen -->
+                <div class="{{ts-button}} [[tablet+:is-small]]"></div>
+
+          - Title: Arbitrary Sizes
+            Anchor: Responsive Arbitrary
+            Description: |
+                Use `[size]` for arbitrary breakpoints like `100px` or `450px`.
+
+                <div class="ts-box">
+                    <table class="ts-table is-definition is-celled">
+                        <thead>
+                            <tr>
+                                <th class="is-collapsed"></th>
+                                <th class="is-collapsed">Example</th>
+                                <th>Activated when...</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="is-collapsed">[size+]</td>
+                                <td class="is-collapsed">
+                                    <code>[450px]+</code>
+                                </td>
+                                <td>At "a certain size" and "above".</td>
+                            </tr>
+                            <tr>
+                                <td class="is-collapsed">[size-]</td>
+                                <td class="is-collapsed">
+                                    <code>[800px]-</code>
+                                </td>
+                                <td>At "a certain size" and "below".</td>
+                            </tr>
+                            <tr>
+                                <td class="is-collapsed">[size-size]</td>
+                                <td class="is-collapsed">
+                                    <code>[300px-400px]</code>
+                                </td>
+                                <td>Between "a certain size" and "another certain size".</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            AttachedHTML: |
+                <!-- Apply `is-small` for screen width of 300px or below -->
+                <div class="{{ts-button}} [[[300px]-:is-small]]"></div>
+
+                <!-- Apply `is-small` for screen width between 300px and 400px -->
+                <div class="{{ts-button}} [[[300px-400px]:is-small]]"></div>
+
+    - Title: Scenarios
+      Sections:
+          - Title: Hide/Show Elements at ...
+            Anchor: Responsive Visibility
+            Description: |
+                Applying [`.has-hidden`](./utilities.html) at specific breakpoint hides the element; this also allows elements to be displayed only on certain devices.
+            HTML: |
+                <!-- Hide on tablet, desktop, widescreen -->
+                <!-- Equivalent to: display only on mobile -->
+                <div class="{{ts-badge}} [[tablet+:has-hidden]]">Mobile 📱</div>
+
+                <!-- Hide on mobile, desktop, widescreen -->
+                <!-- Equivalent to: display only on tablet -->
+                <div class="{{ts-badge}} [[mobile:has-hidden]] [[desktop+:has-hidden]]">Tablet 💻</div>
+
+                <!-- Hide on mobile, tablet, widescreen -->
+                <!-- Equivalent to: display only on desktop -->
+                <div class="{{ts-badge}} [[tablet-:has-hidden]] [[widescreen:has-hidden]]">Desktop 🖥️</div>
+
+                <!-- Hide on mobile, tablet, desktop -->
+                <!-- Equivalent to: display only on widescreen -->
+                <div class="{{ts-badge}} [[desktop-:has-hidden]]">Widescreen 📺</div>
+
+          - Title: Responsive Grid
+            Anchor: Responsive Grid
+            Description: |
+                Adjust column wides with screen size, class set at the `mobile` breakpoint **do not** cascade upwards, you need to specify classes for each stage.
+            HTML: |
+                <div class="{{ts-grid}}">
+                    <div class="column [[mobile:is-16-wide]] [[tablet+:is-8-wide]]"></div>
+                    <div class="column [[mobile:is-16-wide]] [[tablet+:is-8-wide]]"></div>
+                    <div class="column [[mobile:is-16-wide]] [[tablet+:is-8-wide]]"></div>
+                    <div class="column [[mobile:is-16-wide]] [[tablet+:is-8-wide]]"></div>
+                </div>
+
+    - Title: Advanced Features
+      Sections:
+          - Title: Custom Breakpoints
+            Anchor: Responsive Customize
+            Description: |
+                At least two CSS variables must be specified when overriding or adding a breakpoint:
+
+                <div class="ts-list is-unordered">
+                    <div class="item">
+                        <code>--ts-breakpoint-NAME-min</code>: The minimum, starting size.
+                    </div>
+                    <div class="item">
+                        <code>--ts-breakpoint-NAME-min</code>: The maximum, ending size.
+                    </div>
+                </div>
+
+                The closest breakpoint definition to this element will be used for responsive decisions.
+            AttachedHTML: |
+                <style type="text/css">
+                html {
+                    /** Create a "computer" breakpoint */
+                    --ts-breakpoint-computer-min: 768px;
+                    --ts-breakpoint-computer-max: 1280px;
+                }
+                </style>
+
+                <!-- Apply `is-small` class for screen width between 768px and 1280px -->
+                <div class="{{ts-button}} [[computer:is-small]]"></div>
+
+          - Title: Container Query
+            Anchor: Responsive Container Query
+            Description: |
+                Breakpoints can be based on container width, not screen size.
+
+                The nearest `@container` width will be the basis for responsive conditions if breakpoints are prefixed with `@` (e.g., `@mobile`, `@[400px]+`).
+            AttachedHTML: |
+                <div class="{{ts-content}} [[@container]]">
+                    <!-- Apply `is-small` if the width of `.ts-content` is 300px or above -->
+                    <div class="{{ts-button}} [[@[300px+]:is-small]]"></div>
+                </div>
+

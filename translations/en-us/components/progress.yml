@@ -1,0 +1,198 @@
+#=======================================================
+# 標頭
+# Header
+#=======================================================
+
+Title: Progress
+Description: A progress bar shows the progression of a task.
+
+#=======================================================
+# 設定
+# Settings
+#=======================================================
+
+Type: Article
+Relatives:
+    - Gauge
+    - Loading
+
+#=======================================================
+# 變數
+# Variables
+#=======================================================
+
+Variables:
+    - Name: --value
+      Default: 0
+      Example: 50
+      Target: .bar
+      Description: The percentage of the progress.
+
+#=======================================================
+# 基本樣式
+# Definitions
+#=======================================================
+
+Example:
+    HTML: |
+        <div class="[[ts-progress]]">
+            <div class="bar" style="--value: 50">
+                <div class="text">50%</div>
+            </div>
+        </div>
+
+# Links:
+#     - Icon: palette
+#       Title: 領銜主色
+#       Description: 使用不同主色彩繪這個元件。
+#       Link: ./colors.html
+
+Definitions:
+    - Title: Structure
+      Description:
+      Sections:
+          - Title: Text
+            Anchor: Text
+            Description: A progress bar can have a text to show the percentage.
+            HTML: |
+                <div class="ts-progress">
+                    <div class="bar" style="--value: 80">
+                        <div class="[[text]]">80%</div>
+                    </div>
+                </div>
+
+    - Title: States
+      Description:
+      Sections:
+          - Title: Active
+            Anchor: Active
+            Description: A progress bar can show activity.
+            HTML: |
+                <div class="ts-progress [[is-active]]">
+                    <div class="bar" style="--value: 70"></div>
+                </div>
+
+          - Title: Processing
+            Anchor: Processing
+            Description: A progress bar can indicate that the task is being processed.
+            HTML: |
+                <div class="ts-progress [[is-processing]]">
+                    <div class="bar" style="--value: 40"></div>
+                </div>
+
+          - Title: Indeterminate
+            Anchor: Indeterminate
+            Description: A progress bar can be shown in indeterminate state.
+            HTML: |
+                <div class="ts-progress [[is-indeterminate]]">
+                    <div class="bar" style="--value: 50"></div>
+                </div>
+
+          - Title: Queried
+            Anchor: Queried
+            Description: A progress bar can show the task is being queried.
+            HTML: |
+                <div class="ts-progress [[is-queried]]">
+                    <div class="bar" style="--value: 30"></div>
+                </div>
+
+    - Title: Variations
+      Description:
+      Sections:
+          - Title: Empty
+            Anchor: Empty
+            Description: An empty progress bar shows no progress.
+            HTML: |
+                <div class="ts-progress [[is-empty]]">
+                    <div class="bar" style="--value: 0">
+                        <div class="[[text]]">0%</div>
+                    </div>
+                </div>
+
+          - Title: Secondary
+            Anchor: Secondary
+            Description: A secondary progress bar can act like a buffer or a secondary task.
+            HTML: |
+                <div class="ts-progress">
+                    <div class="bar" style="--value: 40">
+                        <div class="text">40%</div>
+                    </div>
+                    <div class="bar [[is-secondary]]" style="--value: 60">
+                        <div class="text">60%</div>
+                    </div>
+                </div>
+
+          - Title: Sizes
+            Anchor: Sizes
+            Description: A progress bar can have different sizes.
+            Remove:
+                - <div class="ts-space"></div>
+            HTML: |
+                <div class="ts-progress [[is-tiny]]">
+                    <div class="bar" style="--value: 50">
+                        <div class="text">50%</div>
+                    </div>
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-progress [[is-small]]">
+                    <div class="bar" style="--value: 50">
+                        <div class="text">50%</div>
+                    </div>
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-progress">
+                    <div class="bar" style="--value: 50">
+                        <div class="text">50%</div>
+                    </div>
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-progress [[is-large]]">
+                    <div class="bar" style="--value: 50">
+                        <div class="text">50%</div>
+                    </div>
+                </div>
+
+    - Title: Compositions
+      Description:
+      Sections:
+          - Title: Upload Queue
+            Anchor: Composition Upload
+            Description: Upload photos with a progress bar.
+            HTML: |
+                <div class="{{ts-box}}">
+                    <div class="{{ts-content}} is-secondary">
+                        <div class="[[ts-progress]] is-processing">
+                            <div class="bar" style="--value: 70">
+                                <div class="text">70%</div>
+                            </div>
+                        </div>
+                        <div class="{{ts-text}} is-description {{has-top-spaced-small}}">
+                            3 of 4 photos are processing.
+                        </div>
+                    </div>
+                    <div class="{{ts-divider}}"></div>
+                    <div class="{{ts-content}}">
+                        <div class="{{ts-grid}}">
+                            <div class="column">
+                                <img src="!-4:3-!" width="145">
+                            </div>
+                            <div class="column is-fluid">
+                                <div class="{{ts-grid}}">
+                                    <div class="column is-fluid">
+                                        <div class="{{ts-input}}">
+                                            <input type="text" placeholder="Title">
+                                        </div>
+                                    </div>
+                                    <div class="column">
+                                        <button class="{{ts-button}} is-icon is-outlined">
+                                            <span class="{{ts-icon}} is-trash-icon"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="{{ts-input}} {{has-top-spaced}}">
+                                    <textarea placeholder="Description..."></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>

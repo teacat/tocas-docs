@@ -1,0 +1,214 @@
+#=======================================================
+# 標頭
+# Header
+#=======================================================
+
+Title: Box
+Description: A box displays content surrounded by a border.
+Intro: |
+    [Content](./content.html), [Table](./table.html), [Image](./image.html) are usually used with a box.
+
+#=======================================================
+# 設定
+# Settings
+#=======================================================
+
+Type: Article
+Relatives:
+    - Content
+
+#=======================================================
+# 基本樣式
+# Definitions
+#=======================================================
+
+Example:
+    HTML: |
+        <div class="[[ts-box]]">
+            <div class="{{ts-image}}">
+                <img src="!-16:9-!">
+            </div>
+            <div class="{{ts-content}}">
+                <div class="{{ts-header}} is-heavy">A delicious cake!</div>
+                <p>Order online and get an eco-friendly bag as a bonus.</p>
+            </div>
+        </div>
+
+Definitions:
+    - Title: Structure
+      Description:
+      Sections:
+          - Title: Symbol
+            Anchor: Symbol
+            Description: A box can have a symbol to represent its content.
+            HTML: |
+                <div class="ts-box">
+                    <div class="{{ts-content}}">
+                        All published or planned products<br>
+                        must not intentionally bias public opinion,<br>
+                        They must remain neutral.
+                    </div>
+                    <div class="[[symbol]]">
+                        <span class="{{ts-icon}} is-circle-exclamation-icon"></span>
+                    </div>
+                </div>
+
+    - Title: Variations
+      Description:
+      Sections:
+          - Title: Horizontal
+            Anchor: Horizontal
+            Description: A box can arrange its content horizontally.
+            HTML: |
+                <div class="ts-box [[is-horizontal]]">
+                    <div class="{{ts-image}} is-covered">
+                        <img src="!-1:1-!" width="90" height="100%" >
+                    </div>
+                    <div class="{{ts-content}}">
+                        <div class="{{ts-header}}">
+                            Zedd - Papercut (Audio) ft. Troye Sivan
+                        </div>
+                        <p>Get "True Colors" on iTunes: http://smarturl.it/ZeddTrueColors</p>
+                    </div>
+                </div>
+
+          - Title: Collapsed
+            Anchor: Collapsed
+            Description: A box can have its width to fit its content.
+            HTML: |
+                <div class="ts-box [[is-collapsed]]">
+                    <div class="{{ts-content}}">
+                        <p>A Taiwanese social network without "seen" indicators.</p>
+                    </div>
+                </div>
+
+          - Title: Indicated
+            Anchor: Indicated
+            Description: A box can be indicated with a border color.
+            Remove:
+                - <div class="ts-space"></div>
+            HTML: |
+                <div class="ts-box [[is-top-indicated]]">
+                    <div class="{{ts-content}}">Top indicated</div>
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-box [[is-bottom-indicated]]">
+                    <div class="{{ts-content}}">Bottom indicated</div>
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-box [[is-start-indicated]]">
+                    <div class="{{ts-content}}">Start indicated</div>
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-box [[is-end-indicated]]">
+                    <div class="{{ts-content}}">End indicated</div>
+                </div>
+
+          - Title: Emphasises
+            Anchor: Emphasises
+            Description: A box can be emphasized by changing its indicator color.
+            Remove:
+                - <div class="ts-space"></div>
+            HTML: |
+                <div class="ts-box [[is-negative]] is-top-indicated">
+                    <div class="{{ts-content}}">Negative</div>
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-box [[is-positive]] is-top-indicated">
+                    <div class="{{ts-content}}">Positive</div>
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-box [[is-warning]] is-top-indicated">
+                    <div class="{{ts-content}}">Warning</div>
+                </div>
+
+          - Title: Raised
+            Anchor: Raised
+            Description: A box may be formatted to raise above the page.
+            HTML: |
+                <div class="ts-box [[is-raised]]">
+                    <div class="{{ts-content}}">Raised</div>
+                </div>
+
+          - Title: Sharp
+            Anchor: Sharp
+            Description: A box can have a sharp corner without border radius.
+            HTML: |
+                <div class="ts-box [[is-sharp]]">
+                    <div class="{{ts-content}}">Sharp box</div>
+                </div>
+
+          - Title: Dashed
+            Anchor: Dashed
+            Description: A box can have a dashed border, typically for a placeholder or dropzone.
+            HTML: |
+                <div class="ts-box [[is-hollowed]]">
+                    <div class="{{ts-blankslate}} is-interactive">
+                        <div class="header">Upload Photos</div>
+                        <div class="description">Drag and drop files here to upload.</div>
+                    </div>
+                </div>
+
+    - Title: Compositions
+      Description:
+      Sections:
+          - Title: Statistics
+            Anchor: Composition Information
+            Description: Create a system dashboard using [Grid](./grid.html) and boxes with symbols.
+            HTML: |
+                <div class="{{ts-grid}} is-2-columns">
+                    <div class="column">
+                        <div class="[[ts-box]]">
+                            <div class="{{ts-content}}">
+                                <div class="{{ts-statistic}}">
+                                    <div class="value">42,689</div>
+                                    <div class="comparison is-increased">32</div>
+                                </div>
+                                Monthly Visitors
+                            </div>
+                            <div class="symbol">
+                                <span class="{{ts-icon}} is-eye-icon"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="[[ts-box]]">
+                            <div class="{{ts-content}}">
+                                <div class="{{ts-statistic}}">
+                                    <div class="value">8,652</div>
+                                    <div class="comparison is-increased">351</div>
+                                </div>
+                                Total Users
+                            </div>
+                            <div class="symbol">
+                                <span class="{{ts-icon}} is-users-icon"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+          - Title: Alert
+            Anchor: Composition Alert
+            Description: Warn a user with a negative indicated box.
+            HTML: |
+                <div class="ts-box is-negative [[is-start-indicated]]">
+                    <div class="{{ts-content}}">
+                        <div class="{{ts-header}} is-negative">Insufficient Balance</div>
+                        <p>Your wallet balance is insufficient to cover the server rental fee, the data will be temporarily inaccessible.</p>
+                    </div>
+                </div>
+
+          - Title: Link Preview
+            Anchor: Composition Link Preview
+            Description: Place an image, text, and header in a box to create a link preview like on Facebook and Twitter.
+            HTML: |
+                <div class="[[ts-box]]" style="max-width: 360px">
+                    <div class="{{ts-image}}">
+                        <img src="!-16:9-!">
+                    </div>
+                    <div class="{{ts-content}} is-secondary">
+                        <div class="{{ts-text}} is-description">yami.io/rog-and-hololive/</div>
+                        <div class="{{ts-header}} is-truncated is-heavy">Asus calls itself a "Chinese company," and block the Japan Asus-Hololive partnership.</div>
+                        <div class="{{ts-text}} is-2-lines is-description">The ROG Weibo account posted that they would do everything possible to stop the collaboration.</div>
+                    </div>
+                </div>

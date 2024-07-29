@@ -1,0 +1,434 @@
+#=======================================================
+# 標頭
+# Header
+#=======================================================
+
+Title: Procedure
+Description: A procedure shows the completion status of an activity in a series of activities.
+
+#=======================================================
+# 設定
+# Settings
+#=======================================================
+
+Type: Article
+
+#=======================================================
+# 基本樣式
+# Definitions
+#=======================================================
+
+Example:
+    HTML: |
+        <div class="[[ts-procedure]]">
+            <div class="item">
+                <div class="content">
+                    <div class="indicator"></div>
+                    <div class="label">Shipping</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="content">
+                    <div class="indicator"></div>
+                    <div class="label">Checkout</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="content">
+                    <div class="indicator"></div>
+                    <div class="label">Payment</div>
+                </div>
+            </div>
+        </div>
+
+Definitions:
+    - Title: Structure
+      Description:
+      Sections:
+          - Title: Icon
+            Anchor: Icon
+            Description: An item can contain an icon.
+            HTML: |
+                <div class="ts-procedure">
+                    <a class="item is-completed">
+                        <div class="content">
+                            <div class="indicator">
+                                <span class="[[{{ts-icon}}]] is-user-icon"></span>
+                            </div>
+                            <div class="label">Create</div>
+                        </div>
+                    </a>
+                    <a class="item is-active">
+                        <div class="content">
+                            <div class="indicator">
+                                <span class="[[{{ts-icon}}]] is-id-card-icon"></span>
+                            </div>
+                            <div class="label">Identify</div>
+                        </div>
+                    </a>
+                    <a class="item">
+                        <div class="content">
+                            <div class="indicator">
+                                <span class="[[{{ts-icon}}]] is-eye-icon"></span>
+                            </div>
+                            <div class="label">Review</div>
+                        </div>
+                    </a>
+                </div>
+
+          - Title: Description
+            Anchor: Description
+            Description: An item can contain a description.
+            HTML: |
+                <div class="ts-procedure">
+                    <a class="item">
+                        <div class="content">
+                            <div class="indicator"></div>
+                            <div class="label">
+                                Bid
+                                <div class="[[description]]">Determine the price.</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="item">
+                        <div class="content">
+                            <div class="indicator"></div>
+                            <div class="label">
+                                Pay
+                                <div class="[[description]]">Pay the fees.</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="item">
+                        <div class="content">
+                            <div class="indicator"></div>
+                            <div class="label">
+                                Deliver
+                                <div class="[[description]]">Receive the item.</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+    - Title: States
+      Description:
+      Sections:
+          - Title: Completed
+            Anchor: Completed
+            Description: An item can show that a user has completed it.
+            HTML: |
+                <div class="ts-procedure">
+                    <a class="item [[is-completed]]">
+                        <div class="content">
+                            <div class="indicator"></div>
+                            <div class="label">Verify</div>
+                        </div>
+                    </a>
+                    <a class="item">
+                        <div class="content">
+                            <div class="indicator"></div>
+                            <div class="label">Enable WiFi</div>
+                        </div>
+                    </a>
+                    <a class="item">
+                        <div class="content">
+                            <div class="indicator"></div>
+                            <div class="label">Scan QR Code</div>
+                        </div>
+                    </a>
+                </div>
+
+          - Title: Active
+            Anchor: Active
+            Description: An item can be highlighted as active.
+            HTML: |
+                <div class="ts-procedure">
+                    <a class="item is-completed">
+                        <div class="content">
+                            <div class="indicator"></div>
+                            <div class="label">Create Order</div>
+                        </div>
+                    </a>
+                    <a class="item [[is-active]]">
+                        <div class="content">
+                            <div class="indicator"></div>
+                            <div class="label">Deliver</div>
+                        </div>
+                    </a>
+                    <a class="item">
+                        <div class="content">
+                            <div class="indicator"></div>
+                            <div class="label">Complete</div>
+                        </div>
+                    </a>
+                </div>
+
+          - Title: Processing
+            Anchor: Processing
+            Description: An item can show that is currently being processed.
+            HTML: |
+                <div class="ts-procedure">
+                    <a class="item is-completed">
+                        <div class="content">
+                            <div class="indicator"></div>
+                            <div class="label">Submit Request</div>
+                        </div>
+                    </a>
+                    <a class="item [[is-processing]]">
+                        <div class="content">
+                            <div class="indicator"></div>
+                            <div class="label">Waiting</div>
+                        </div>
+                    </a>
+                    <a class="item">
+                        <div class="content">
+                            <div class="indicator"></div>
+                            <div class="label">Receive Reward</div>
+                        </div>
+                    </a>
+                </div>
+
+          - Title: Disabled
+            Anchor: Disabled
+            Description: An item can show that it cannot be selected or not yet achieved.
+            HTML: |
+                <div class="ts-procedure">
+                    <a class="item is-completed">
+                        <div class="content">
+                            <div class="indicator"></div>
+                            <div class="label">Register PINs</div>
+                        </div>
+                    </a>
+                    <a class="item is-processing">
+                        <div class="content">
+                            <div class="indicator"></div>
+                            <div class="label">Initialization</div>
+                        </div>
+                    </a>
+                    <a class="item [[is-disabled]]">
+                        <div class="content">
+                            <div class="indicator"></div>
+                            <div class="label">Reset Password</div>
+                        </div>
+                    </a>
+                </div>
+
+    - Title: Variations
+      Description:
+      Sections:
+          - Title: Compact
+            Anchor: Compact
+            Description: A procedure can be styled to take up less space.
+            HTML: |
+                <div class="ts-procedure [[is-compact]]">
+                    <a class="item is-completed">
+                        <div class="content">
+                            <div class="indicator"></div>
+                            <div class="label">Upload</div>
+                        </div>
+                    </a>
+                    <a class="item is-processing">
+                        <div class="content">
+                            <div class="indicator"></div>
+                            <div class="label">Set Password</div>
+                        </div>
+                    </a>
+                    <a class="item">
+                        <div class="content">
+                            <div class="indicator"></div>
+                            <div class="label">Sharing</div>
+                        </div>
+                    </a>
+                </div>
+
+          - Title: Stacked
+            Anchor: Stacked
+            Description: A procedure can have its item label text to be stacked vertically.
+            HTML: |
+                <div class="ts-procedure [[is-stacked]]">
+                    <a class="item is-completed">
+                        <div class="content">
+                            <div class="indicator"></div>
+                            <div class="label">Set-up Server</div>
+                        </div>
+                    </a>
+                    <a class="item is-processing">
+                        <div class="content">
+                            <div class="indicator"></div>
+                            <div class="label">Configure Firewall</div>
+                        </div>
+                    </a>
+                    <a class="item">
+                        <div class="content">
+                            <div class="indicator"></div>
+                            <div class="label">Blocklist</div>
+                        </div>
+                    </a>
+                </div>
+
+          - Title: Negative
+            Anchor: Negative
+            Description: An item can indicates something dangerous.
+            HTML: |
+                <div class="ts-procedure">
+                    <a class="item [[is-negative]]">
+                        <div class="content">
+                            <div class="indicator"></div>
+                            <div class="label">Create Account</div>
+                        </div>
+                    </a>
+                    <a class="item">
+                        <div class="content">
+                            <div class="indicator"></div>
+                            <div class="label">Verify Email</div>
+                        </div>
+                    </a>
+                    <a class="item">
+                        <div class="content">
+                            <div class="indicator"></div>
+                            <div class="label">Welcome</div>
+                        </div>
+                    </a>
+                </div>
+
+          - Title: Unordered
+            Anchor: Unordered
+            Description: A procedure can have unordered items, and the progress line indicator will be hidden.
+            Remove:
+                - <div class="ts-space"></div>
+            HTML: |
+                <div class="ts-procedure [[is-unordered]]">
+                    <a class="item is-completed">
+                        <div class="content">
+                            <div class="indicator"></div>
+                            <div class="label">Information</div>
+                        </div>
+                    </a>
+                    <a class="item is-active">
+                        <div class="content">
+                            <div class="indicator"></div>
+                            <div class="label">Advertisement</div>
+                        </div>
+                    </a>
+                    <a class="item">
+                        <div class="content">
+                            <div class="indicator"></div>
+                            <div class="label">Privacy</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-procedure [[is-unordered]] is-compact">
+                    <a class="item is-completed">
+                        <div class="content">
+                            <div class="indicator"></div>
+                            <div class="label">Information</div>
+                        </div>
+                    </a>
+                    <a class="item is-active">
+                        <div class="content">
+                            <div class="indicator"></div>
+                            <div class="label">Advertisement</div>
+                        </div>
+                    </a>
+                    <a class="item">
+                        <div class="content">
+                            <div class="indicator"></div>
+                            <div class="label">Privacy</div>
+                        </div>
+                    </a>
+                </div>
+
+          - Title: Vertical
+            Anchor: Vertical
+            Description: A procedure can stack vertically.
+            HTML: |
+                <div class="ts-procedure [[is-vertical]]">
+                    <a class="item is-completed">
+                        <div class="content">
+                            <div class="indicator"></div>
+                            <div class="label">Partitions</div>
+                        </div>
+                    </a>
+                    <a class="item is-active">
+                        <div class="content">
+                            <div class="indicator"></div>
+                            <div class="label">Installation</div>
+                        </div>
+                    </a>
+                    <a class="item">
+                        <div class="content">
+                            <div class="indicator"></div>
+                            <div class="label">Set-up</div>
+                        </div>
+                    </a>
+                </div>
+
+          - Title: Sizes
+            Anchor: Sizes
+            Description: A procedure can have different sizes.
+            Remove:
+                - <div class="ts-space"></div>
+            HTML: |
+                <div class="ts-procedure [[is-small]]">
+                    <div class="item">
+                        <div class="content">
+                            <div class="indicator"></div>
+                            <div class="label">Confirmation</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="content">
+                            <div class="indicator"></div>
+                            <div class="label">Pick-up Location</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="content">
+                            <div class="indicator"></div>
+                            <div class="label">Payment</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-procedure">
+                    <div class="item">
+                        <div class="content">
+                            <div class="indicator"></div>
+                            <div class="label">Confirmation</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="content">
+                            <div class="indicator"></div>
+                            <div class="label">Pick-up Location</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="content">
+                            <div class="indicator"></div>
+                            <div class="label">Payment</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-procedure [[is-large]]">
+                    <div class="item">
+                        <div class="content">
+                            <div class="indicator"></div>
+                            <div class="label">Confirmation</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="content">
+                            <div class="indicator"></div>
+                            <div class="label">Pick-up Location</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="content">
+                            <div class="indicator"></div>
+                            <div class="label">Payment</div>
+                        </div>
+                    </div>
+                </div>

@@ -1,0 +1,370 @@
+#=======================================================
+# Information
+#=======================================================
+
+Information:
+    Language: English (US)
+    LanguageCode: en-us
+    Path: en-us
+    Flag: america
+    Version: 5.0.1
+    ShortVersion: 5.0
+
+#=======================================================
+# Contributors
+#=======================================================
+
+Contributors:
+    - Name: Yami Odymel
+      Website: https://twitter.com/YamiOdymel
+
+#=======================================================
+# Versions
+#=======================================================
+
+Versions:
+    - Name: Latest
+      Items:
+          - Name: 5.0.1
+            Website:
+    - Name: Older releases
+      Items:
+          - Name: 4.2.5
+            Website: https://tocas-ui.com/4.2/zh-tw/index.html
+          - Name: 2.3.3
+            Website: https://v2.tocas-ui.com/
+
+#=======================================================
+#
+#
+#=======================================================
+
+UI:
+    Paragraph:
+        #=======================================================
+        # Navbar
+        #=======================================================
+
+        Navbar_GettingStarted: Getting Started
+        Navbar_Components: Components
+        Navbar_Examples: Examples
+
+        #=======================================================
+        # Examples
+        #=======================================================
+
+        Example_DesignedForDesktop: HEADS UP!
+        Example_DesignedForDesktop_Description: Designed primarily for desktop, these examples may appear distorted or cropped when viewed on mobile devices.
+
+        #=======================================================
+        # Index
+        #=======================================================
+
+        Index_Title: Tocas UI
+        Index_Description: Build diverse websites and progressive web app interfaces quickly and intuitively.
+        Index_GettingStarted: Get Started
+        Index_Examples: See Examples
+
+        Index_ComingSoon: Coming Soon
+        Index_ComingSoon_Description: Utilize Tocas Templates component library to quickly assemble interfaces.
+
+        Index_Donators: This project is sponsored by the following contributors.
+
+        # Spotlight A
+        Index_Spotlight_A_Title: No jQuery dependency.
+        Index_Spotlight_A_Description: No unnecessary network bandwidth consumption; Tocas UI aims to reduce webpage load.
+        Index_Spotlight_B_Title: No npm or Webpack.
+        Index_Spotlight_B_Description: No complicated setup required—simply copy our HTML style tags into your webpage, just like in the good old days.
+        Index_Spotlight_C_Title: Easy-to-understand.
+        Index_Spotlight_C_Description: Easily accessible and understandable documentation, even if you haven't used Bootstrap, Bulma, or Semantic UI before.
+        Index_Spotlight_D_Title: Simple and intuitive design.
+        Index_Spotlight_D_Description: Minimal distractions. A moment of calm amidst the chaos of the Internet.
+
+        # Showcases
+        Index_Showcase_ImageCard_Section: Image Card
+        Index_Showcase_ImageCard_Title: A delicious cake!
+        Index_Showcase_ImageCard_Content: Order online and receive a limited edition eco-friendly bag as a special bonus.
+        Index_Showcase_Button_Section: Buttons
+        Index_Showcase_Button_A: Submit
+        Index_Showcase_Button_B: Cancel
+        Index_Showcase_Button_C: Delete
+        Index_Showcase_Label_Section: Labels
+        Index_Showcase_Label_A: Minato
+        Index_Showcase_Label_B: Kazari
+        Index_Showcase_Statistic_Section: Statistics
+        Index_Showcase_Statistic_A_Label: Monthly Visitors
+        Index_Showcase_Statistic_B_Label: Total Users
+        Index_Showcase_Navbar_Section: Navbar
+        Index_Showcase_Navbar_A: User
+        Index_Showcase_Navbar_B: Home
+        Index_Showcase_Navbar_C: News
+        Index_Showcase_Table_Section: Table
+        Index_Showcase_Table_Header_A: Name
+        Index_Showcase_Table_Header_B: Common
+        Index_Showcase_Table_A_Cell_A: Flat Bank
+        Index_Showcase_Table_A_Cell_B: 半音金庫
+        Index_Showcase_Table_B_Cell_A: Sorae & Co., Ltd.
+        Index_Showcase_Table_B_Cell_B: 對空音商事株式会社
+        Index_Showcase_Table_C_Cell_A: Caris Events
+        Index_Showcase_Table_C_Cell_B: カリス・イベント
+        Index_Showcase_Table_Footer: "Total Count: 3"
+        Index_Showcase_Breadcrumb_Section: Breadcrumb
+        Index_Showcase_Breadcrumb_A: Movie
+        Index_Showcase_Breadcrumb_B: Sci-Fi
+        Index_Showcase_Breadcrumb_C: Interstellar
+        Index_Showcase_Flag_Section: Flags
+        Index_Showcase_Rating_Section: Rating
+        Index_Showcase_Selection_Section: Selection
+        Index_Showcase_Selection_A: Low
+        Index_Showcase_Selection_B: Medium
+        Index_Showcase_Selection_C: High
+
+        # Features
+        Index_Feature_A_Title: Color Scheme and Responsive
+        Index_Feature_A_Description: Supports dark mode and compact styles on mobile devices to maximize screen space usage.
+        Index_Feature_A_Action: See Details
+        Index_Feature_B_Title: Loose Coupling
+        Index_Feature_B_Description: Components are designed atomically, allowing them to be combined together.
+        Index_Feature_B_Action: Browse Components
+        Index_Feature_C_Title: Adaptability
+        Index_Feature_C_Description: Build an e-commerce platform, management interface, or social networking site.
+        Index_Feature_C_Action: See Examples
+
+        # Let's Go
+        Index_LetsGo_Title: Let's get ready to rumble!
+        Index_LetsGo_Description: Copy the following HTML tags to your webpage and unleash the magic ✨
+        Index_LetsGo_Code: >
+            <!-- Core: Tocas UI -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocas/{version}/tocas.min.css">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/tocas/{version}/tocas.min.js"></script>
+
+
+            <!-- Fonts: Noto Sans TC -->
+            <link rel="preconnect" href="https://fonts.googleapis.com" />
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+            <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet" />
+
+
+            <!-- Enable: Responsive -->
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        Index_LetsGo_Action: Get Started
+
+        #=======================================================
+        # Footer
+        #=======================================================
+
+        Footer_ToTop: Back to Top
+        Footer_GettingStarted: Getting Started
+        Footer_Components: Components
+        Footer_Examples: Examples
+        Footer_Paragraph: Designed by Yami Odymel from <span class="ts-flag is-taiwan-flag is-small"></span> Taiwan, along with the ❤️ from <a href="https://github.com/teacat/tocas/graphs/contributors" target="_blank">contributors</a>. The source code is licensed under <a href="https://github.com/teacat/tocas/blob/master/LICENSE" target="_blank">MIT</a>, and the documentation is under <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.zh_TW" target="_blank">CC 0</a> public domain. Feel free to use, share, or contribute. Tocas UI is a design system for <a href="https://caris.events" target="_blank">Caris Events</a>, part of <a href="https://sorae.co" target="_blank">Sorae & Co., Ltd.</a>
+        Footer_Translators: "Translators: %s"
+        Footer_Logo_Alt: Trademark of the owner of Tocas UI
+
+        #=======================================================
+        # Article
+        #=======================================================
+
+        Article_Hamburger_Aria: Hamburger Menu
+        Article_Image_Placeholder_Alt: A placeholder image
+        Article_Example_Title: Example
+        Article_Schemes_Title: Theme
+        Article_Schemes_User: Auto
+        Article_Schemes_Light: Light
+        Article_Schemes_Dark: Dark
+        Article_Scaling_Title: Scale
+        Article_Scaling_Standard: Medium
+        Article_Scaling_Large: Large
+        Article_Scaling_Small: Small
+        Article_Introduction: Introduction
+        Article_Flag_Alias: Alias
+        Article_SourceCode: Code
+        Article_LookingFor_Title: Looking for similar components?
+        Article_ToTop: Back To Top
+
+        #=======================================================
+        # Other
+        #=======================================================
+
+        Variables: CSS Variables
+        VariablesExample: Example
+        VariablesDataType: Data Type
+        VariablesDescription: Description
+        VariablesDefaultValue: Default Value
+        VariablesTarget: Target
+        Properties: Properties
+        PropertiesExample: Example
+        PropertiesDataType: Data Type
+        PropertiesDescription: Description
+        PropertiesDefaultValue: Default Value
+        PropertiesTarget: Target
+        TranslatorSeperator: ", "
+
+    ComponentsCategories:
+        Introduction: Introduction
+        Layout: Layout
+        Form: Form
+        Paragraphy: Paragraphy
+        Feedback: Feedback
+        Media: Media
+        Data: Data
+        Navigation: Navigation
+        Application: Application
+        Interaction: Interaction
+
+    Components:
+        GettingStarted: Getting Started
+        Colors: Colors
+        Responsive: Responsive
+        About: About
+        Box: Box
+        AppCenter: App Center
+        Container: Container
+        Content: Content
+        Control: Control
+        Grid: Grid
+        Wrap: Wrap
+        Button: Button
+        Checkbox: Checkbox
+        Fieldset: Fieldset
+        File: File
+        Input: Input
+        Radio: Radio
+        Select: Select
+        Selection: Selection
+        Switch: Switch
+        Divider: Divider
+        Header: Header
+        Mask: Mask
+        Quote: Quote
+        Text: Text
+        Gauge: Gauge
+        Loading: Loading
+        Modal: Modal
+        Notice: Notice
+        Procedure: Procedure
+        Progress: Progress
+        Snackbar: Snackbar
+        Flag: Flag
+        Icon: Icon
+        Iconset: Iconset
+        Image: Image
+        Imageset: Imageset
+        Accordion: Accordion
+        Badge: Badge
+        Checklist: Checklist
+        Chip: Chip
+        Close: Close
+        Conversation: Conversation
+        List: List
+        Meta: Meta
+        Rating: Rating
+        Statistic: Statistic
+        Table: Table
+        Breadcrumb: Breadcrumb
+        Menu: Menu
+        Pagination: Pagination
+        Tab: Tab
+        AppLayout: App Layout
+        AppNavbar: App Navbar
+        Comment: Comment
+        Dropdown: Dropdown
+        AppTopbar: App Topbar
+        AppDrawer: App Drawer
+        Tooltip: Tooltip
+        Utilities: Utilities
+        Timeline: Timeline
+        Blankslate: Blankslate
+        Popover: Popover
+        Navbar: Navbar
+        Topbar: Topbar
+        Center: Center
+        AppSidebar: App Sidebar
+        Layout: Layout
+        Drawer: Drawer
+
+Components:
+    - Name: Introduction
+      OmitHelper: true
+      Items:
+          - GettingStarted
+          - Colors
+          - Responsive
+          - Utilities
+    - Name: Layout
+      Items:
+          - Container
+          - Control
+          - Grid
+          - Wrap
+    - Name: Form
+      Items:
+          - Button
+          - Checkbox
+          - Fieldset
+          - File
+          - Input
+          - Radio
+          - Select
+          - Selection
+          - Switch
+    - Name: Paragraphy
+      Items:
+          - Box
+          - Content
+          - Divider
+          - Header
+          - Quote
+          - Text
+    - Name: Feedback
+      Items:
+          - Blankslate
+          - Gauge
+          - Loading
+          - Mask
+          - Notice
+          - Procedure
+          - Progress
+          - Snackbar
+    - Name: Interaction
+      Items:
+          - Accordion
+          - Dropdown
+          - Modal
+          - Popover
+          - Tooltip
+    - Name: Media
+      Items:
+          - Flag
+          - Icon
+          - Iconset
+          - Image
+          - Imageset
+    - Name: Data
+      Items:
+          - Badge
+          - Checklist
+          - Chip
+          - Close
+          - Conversation
+          - List
+          - Meta
+          - Rating
+          - Statistic
+          - Table
+          - Timeline
+    - Name: Navigation
+      Items:
+          - Breadcrumb
+          - Menu
+          - Pagination
+          - Tab
+    - Name: Application
+      Items:
+          - AppCenter
+          - AppDrawer
+          - AppLayout
+          - AppNavbar
+          - AppSidebar
+          - AppTopbar

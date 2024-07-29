@@ -1,0 +1,195 @@
+#=======================================================
+# 標頭
+# Header
+#=======================================================
+
+Title: Control
+Description: A control displays input field in a structured way along with a label.
+
+#=======================================================
+# 設定
+# Settings
+#=======================================================
+
+Type: Article
+Relatives:
+    - Grid
+
+#=======================================================
+# 變數
+# Variables
+#=======================================================
+
+Variables:
+    - Name: --label-width
+      Default: 220px
+      Target: .ts-control
+      Description: The width of the text label.
+
+#=======================================================
+# 基本樣式
+# Definitions
+#=======================================================
+
+Example:
+    HTML: |
+        <div class="[[ts-control]]">
+            <div class="label">Username</div>
+            <div class="content">
+                <div class="{{ts-input}}">
+                    <input type="text">
+                </div>
+            </div>
+        </div>
+
+Definitions:
+    - Title: Variations
+      Description:
+      Sections:
+          - Title: Label Aligns
+            Anchor: Label Aligns
+            Description: A control can have its label text aligned to a side.
+            HTML: |
+                <div class="ts-control">
+                    <div class="label [[is-start-aligned]]">Age</div>
+                    <div class="content">
+                        <div class="{{ts-input}}">
+                            <input type="number">
+                        </div>
+                    </div>
+                </div>
+
+          - Title: Padded
+            Anchor: Padded
+            Description: A control can pad its content to be aligned with the label text, required for text or shorter elements.
+            HTML: |
+                <div class="ts-control">
+                    <div class="label">Email Address</div>
+                    <div class="content [[is-padded]]">
+                        yamiodymel@example.com
+                    </div>
+                </div>
+                <div class="ts-control">
+                    <div class="label">Block Ads</div>
+                    <div class="content [[is-padded]]">
+                        <label class="ts-switch">
+                            <input type="checkbox" checked />
+                            Enable
+                        </label>
+                    </div>
+                </div>
+
+          - Title: Fluid
+            Anchor: Fluid
+            Description: A control can have its content to take the width of its container.
+            HTML: |
+                <div class="ts-control">
+                    <div class="label">Nickname</div>
+                    <div class="content [[is-fluid]]">
+                        <div class="{{ts-input}}">
+                            <input type="text">
+                        </div>
+                    </div>
+                </div>
+
+          - Title: Wide
+            Anchor: Wide
+            Description: A control can use more space for its content.
+            Remove:
+                - <div class="ts-space"></div>
+            HTML: |
+                <div class="ts-control">
+                    <div class="label">Label Text</div>
+                    <div class="content">
+                        <div class="{{ts-input}}">
+                            <input type="text">
+                        </div>
+                    </div>
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-control [[is-wide]]">
+                    <div class="label">Label Text</div>
+                    <div class="content">
+                        <div class="{{ts-input}}">
+                            <input type="text">
+                        </div>
+                    </div>
+                </div>
+
+          - Title: Stacked
+            Anchor: Stacked
+            Description: A control can stack its label and content vertically, ideal for using with [Responsive](./responsive.html) on mobile devices.
+            HTML: |
+                <div class="ts-control [[is-stacked]]">
+                    <div class="label">Username</div>
+                    <div class="content">
+                        <div class="{{ts-input}}">
+                            <input type="text">
+                        </div>
+                    </div>
+                </div>
+
+    - Title: Compositions
+      Description:
+      Sections:
+          - Title: Section Divider
+            Anchor: Composition Divider
+            Description: Separate two unrelated controls with a section divider.
+            HTML: |
+                <div class="{{ts-wrap}} is-vertical">
+                    <div class="ts-control">
+                        <div class="label">Username</div>
+                        <div class="content">
+                            <div class="{{ts-input}}">
+                                <input type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ts-control">
+                        <div class="label">Password</div>
+                        <div class="content">
+                            <div class="{{ts-input}}">
+                                <input type="password">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="[[{{ts-divider}}]]"></div>
+                    <div class="ts-control">
+                        <div class="label">Promotions</div>
+                        <div class="content is-padded">
+                            <label class="{{ts-switch}}">
+                                <input type="checkbox" checked />
+                                I want to receive email notifications.
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+          - Title: Block Content
+            Anchor: Composition Block
+            Description: Separate out another logical section with [Content](./content.html).
+            HTML: |
+                <div class="{{ts-wrap}} is-vertical">
+                    <div class="ts-control">
+                        <div class="label">Real Name</div>
+                        <div class="content">
+                            <div class="{{ts-input}}">
+                                <input type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="{{ts-divider}}"></div>
+                    <div class="ts-control">
+                        <div class="label">Danger Zone</div>
+                        <div class="content">
+                            <div class="[[{{ts-content}}]] is-rounded is-secondary is-padded">
+                                <button class="{{ts-button}} is-outlined is-negative">
+                                    Delete User
+                                </button>
+                                <div class="{{ts-text}} is-description {{has-top-spaced-small}}">
+                                    Caution, you will not be able to undo this action.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>

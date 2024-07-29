@@ -1,0 +1,371 @@
+#=======================================================
+# 標頭
+# Header
+#=======================================================
+
+Title: Tab
+Description: A tab is a hidden section of content activated by a menu.
+
+#=======================================================
+# 設定
+# Settings
+#=======================================================
+
+Type: Article
+Relatives:
+    - Selection
+
+#=======================================================
+# 基本樣式
+# Definitions
+#=======================================================
+
+Example:
+    Centered: true
+    HTML: |
+        <div class="[[ts-tab]]">
+            <a class="item">
+                <span class="{{ts-icon}} is-list-icon"></span>
+                Items
+            </a>
+            <a class="item is-active">
+                <span class="{{ts-icon}} is-chart-line-icon"></span>
+                Activity
+            </a>
+            <a class="item">
+                <span class="{{ts-icon}} is-scroll-icon"></span>
+                Contracts
+            </a>
+        </div>
+
+#Links:
+#    - Icon: palette
+#      Title: 領銜主色
+#      Description: 使用不同主色彩繪這個元件。
+#      Link: ./module-nav.html
+#    - Icon: wand-magic-sparkles
+#      Title: JavaScript
+#      Description: 這個元件有對應的 JavaScript 模組可以使用。
+#      Link: ./module-nav.html
+
+Definitions:
+    - Title: States
+      Description:
+      Sections:
+          - Title: Active
+            Anchor: Active
+            Description: A tab item can be active.
+            HTML: |
+                <div class="ts-tab">
+                    <a class="item">History</a>
+                    <a class="item [[is-active]]">Messages</a>
+                    <a class="item">Safety</a>
+                    <a class="item">Contacts</a>
+                </div>
+
+          - Title: Disabled
+            Anchor: Disabled
+            Description: A tab item can be disabled. For hyperlinks, use the `.is-disabled` class.
+            HTML: |
+                <div class="ts-tab">
+                    <a class="item">
+                        <span class="{{ts-icon}} is-compass-icon"></span>
+                        Explore
+                    </a>
+                    <button class="item" [[disabled]]>
+                        <span class="{{ts-icon}} is-car-icon"></span>
+                        Destination
+                    </button>
+                    <a class="item [[is-disabled]]">
+                        <span class="{{ts-icon}} is-bell-icon"></span>
+                        Notifications
+                    </a>
+                </div>
+
+    - Title: Variations
+      Description:
+      Sections:
+          - Title: Pilled
+            Anchor: Pilled
+            Description: A tab can have its items appear as pills.
+            HTML: |
+                <div class="ts-tab [[is-pilled]]">
+                    <a class="item">Details</a>
+                    <a class="item is-active">Owner</a>
+                    <a class="item">Blocks</a>
+                    <a class="item">Attributes</a>
+                </div>
+
+          - Title: Secondary
+            Anchor: Secondary
+            Description: A secondary tab item can be less prominent.
+            HTML: |
+                <div class="ts-tab [[is-secondary]] is-pilled">
+                    <a class="item">
+                        <span class="{{ts-icon}} is-list-icon"></span>
+                        Transactions
+                    </a>
+                    <a class="item">
+                        <span class="{{ts-icon}} is-money-check-dollar-icon"></span>
+                        Transfers
+                    </a>
+                    <a class="item is-active">
+                        <span class="{{ts-icon}} is-calendar-day-icon"></span>
+                        Events
+                    </a>
+                    <a class="item">
+                        <span class="{{ts-icon}} is-chart-bar-icon"></span>
+                        Analysis
+                    </a>
+                </div>
+
+          - Title: Short Indicated
+            Anchor: Short Indicated
+            Description: A tab can have a short indicator that fits within the tab item's length.
+            HTML: |
+                <div class="ts-tab [[is-short-indicated]]">
+                    <a class="item">Favorites</a>
+                    <a class="item is-active">Music</a>
+                    <a class="item">Video</a>
+                </div>
+                <div class="ts-tab [[is-very-short-indicated]]">
+                    <a class="item">Favorites</a>
+                    <a class="item is-active">Music</a>
+                    <a class="item">Video</a>
+                </div>
+
+          - Title: Segmented
+            Anchor: Segmented
+            Description: A tab can be segmented.
+            HTML: |
+                <div class="ts-tab [[is-segmented]]">
+                    <a class="item">Items</a>
+                    <a class="item is-active">Groups</a>
+                    <a class="item">Info</a>
+                </div>
+
+          - Title: Highlighted
+            Anchor: Highlighted
+            Description: A tab can highlight the active item and fade out the inactive items.
+            HTML: |
+                <div class="ts-tab [[is-highlighted]]">
+                    <a class="item">Home</a>
+                    <a class="item is-active">Notification</a>
+                    <a class="item">Groups</a>
+                </div>
+
+          - Title: Fluid
+            Anchor: Fluid
+            Description: A tab can take up the full width of its container.
+            HTML: |
+                <div class="ts-tab [[is-fluid]]">
+                    <a class="item">Profile</a>
+                    <a class="item is-active">Armor</a>
+                    <a class="item">Equipments</a>
+                    <a class="item">Skills</a>
+                </div>
+
+          # - Title: 均分的
+          #   Anchor: Evenly Divided
+          #   Description: 讓項目以平均寬度呈現，適合用以填滿整個容器。
+          #   Since: 4.0.0
+          #   HTML: |
+          #       <div class="ts-tab [[is-evenly-divided]] is-fluid">
+          #           <a class="item is-active">首頁</a>
+          #           <a class="item">政治</a>
+          #           <a class="item">財經</a>
+          #           <a class="item">娛樂</a>
+          #           <a class="item">運動</a>
+          #           <a class="item">社會</a>
+          #           <a class="item">地方</a>
+          #           <a class="item">國際</a>
+          #       </div>
+
+          - Title: Item Aligns
+            Anchor: Aligns
+            Description: A tab can have its items aligned to the start, center, or end.
+            HTML: |
+                <div class="ts-tab [[is-start-aligned]]">
+                    <a class="item">Photo</a>
+                    <a class="item is-active">Search</a>
+                    <a class="item">Sharing</a>
+                </div>
+                <div class="ts-tab [[is-center-aligned]]">
+                    <a class="item">Photo</a>
+                    <a class="item is-active">Search</a>
+                    <a class="item">Sharing</a>
+                </div>
+                <div class="ts-tab [[is-end-aligned]]">
+                    <a class="item">Photo</a>
+                    <a class="item is-active">Search</a>
+                    <a class="item">Sharing</a>
+                </div>
+
+          - Title: Sizes
+            Anchor: Sizes
+            Description: A tab can vary in size.
+            Remove:
+                - <div class="ts-space"></div>
+            HTML: |
+                <div class="ts-tab [[is-small]] is-pilled">
+                    <a class="item">Details</a>
+                    <a class="item is-active">Owner</a>
+                    <a class="item">Blocks</a>
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-tab is-pilled">
+                    <a class="item">Details</a>
+                    <a class="item is-active">Owner</a>
+                    <a class="item">Blocks</a>
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-tab [[is-large]] is-pilled">
+                    <a class="item">Details</a>
+                    <a class="item is-active">Owner</a>
+                    <a class="item">Blocks</a>
+                </div>
+
+          - Title: Relaxed
+            Anchor: Relaxed
+            Description: A tab can have relaxed items.
+            Remove:
+                - <div class="ts-space"></div>
+            HTML: |
+                <div class="ts-tab">
+                    <a class="item is-active">Unread</a>
+                    <a class="item">All</a>
+                    <a class="item">Archived</a>
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-tab [[is-relaxed]]">
+                    <a class="item is-active">Unread</a>
+                    <a class="item">All</a>
+                    <a class="item">Archived</a>
+                </div>
+
+          - Title: Dense
+            Anchor: Dense
+            Description: A tab can have dense items.
+            HTML: |
+                <div class="ts-tab [[is-dense]] is-segmented">
+                    <a class="item">Preview</a>
+                    <a class="item is-active">Code</a>
+                </div>
+
+          - Title: Tall
+            Anchor: Tall
+            Description: A tab can have tall items, making the text farther from the indicator in some styles.
+            Remove:
+                - <div class="ts-space"></div>
+            HTML: |
+                <div class="ts-tab">
+                    <a class="item is-active">Discussion</a>
+                    <a class="item">Comics</a>
+                    <a class="item">News</a>
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-tab [[is-tall]]">
+                    <a class="item is-active">Discussion</a>
+                    <a class="item">Comics</a>
+                    <a class="item">News</a>
+                </div>
+
+    - Title: Compositions
+      Description:
+      Sections:
+          - Title: Panel Tab
+            Anchor: Composition Tab
+            Description: A tab can be placed on top of a panel to switch between different sections.
+            HTML: |
+                <div class="{{ts-box}}">
+                    <div class="{{ts-content}} is-fitted is-secondary">
+                        <div class="[[ts-tab]]">
+                            <a class="item">Music</a>
+                            <a class="item is-active">Post</a>
+                            <a class="item">Video</a>
+                        </div>
+                    </div>
+                    <div class="{{ts-divider}}"></div>
+                    <div class="{{ts-content}}">
+                        Hello, world!
+                    </div>
+                </div>
+
+          - Title: Content Switch
+            Anchor: Composition Switch
+            Description: A tab can be placed on top of a table to switch between different views of the items.
+            HTML: |
+                <div class="{{ts-box}}">
+                    <div class="{{ts-content}} is-dense">
+                        <div class="{{ts-grid}}">
+                            <div class="column is-fluid">
+                                <div class="[[ts-tab]] is-segmented">
+                                    <a class="item">Items</a>
+                                    <a class="item is-active">Categories</a>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <button class="{{ts-button}} is-outlined is-short is-end-icon">
+                                    Edit
+                                    <span class="{{ts-icon}} is-pen-to-square-icon"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="{{ts-divider}}"></div>
+                    <table class="{{ts-table}}">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th class="is-end-aligned">Qty</th>
+                                <th class="is-end-aligned">Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>MRI</td>
+                                <td class="is-end-aligned">1</td>
+                                <td class="is-end-aligned">$ 40,222</td>
+                            </tr>
+                            <tr>
+                                <td>Computed Scan</td>
+                                <td class="is-end-aligned">1</td>
+                                <td class="is-end-aligned">$ 20,000</td>
+                            </tr>
+                            <tr>
+                                <td>Emission Tomography</td>
+                                <td class="is-end-aligned">1</td>
+                                <td class="is-end-aligned">$ 31,000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+    - Title: JavaScript Features
+      Description:
+      Sections:
+          - Title: Trigget by Attribute
+            Anchor: Module Tab
+            Description: |
+                Click the button with the `[data-tab]` attribute to switch the element with the `[id]` attribute.
+            HTML: |
+                <div class="{{ts-box}}">
+                    <div class="ts-tab">
+                        <button class="item" [[data-tab]]="((tab-transfer))">
+                            Transfer
+                        </button>
+                        <button class="item is-active" [[data-tab]]="((tab-activities))">
+                            Activities
+                        </button>
+                        <button class="item" disabled>
+                            Disabled
+                        </button>
+                    </div>
+                    <div class="{{ts-divider}}"></div>
+                    <div class="{{ts-content}}" id="((tab-transfer))">
+                        This is the "Transfer" page.
+                    </div>
+                    <div class="{{ts-content}}" id="((tab-activities))">
+                        This is the "Activities" page.
+                    </div>
+                </div>

@@ -1,0 +1,83 @@
+#=======================================================
+# 標頭
+# Header
+#=======================================================
+
+Title: Notice
+Description: A notice message displays information that explains nearby content.
+Intro: A notice usually appears after an action, like a successful form submission.
+
+#=======================================================
+# 設定
+# Settings
+#=======================================================
+
+Type: Article
+Relatives:
+    - Snackbar
+
+#=======================================================
+# 基本樣式
+# Definitions
+#=======================================================
+
+Example:
+    HTML: |
+        <div class="[[ts-notice]]">
+            <div class="title">HEADS UP</div>
+            <div class="content">Retract the side stand to restart the engine.</div>
+        </div>
+
+Definitions:
+    - Title: Variations
+      Description:
+      Sections:
+          - Title: Outlined
+            Anchor: Outlined
+            Description: A basic notice is is less pronounced.
+            HTML: |
+                <div class="ts-notice [[is-outlined]]">
+                    <div class="title">Test Ongoing</div>
+                    <div class="content">
+                        Please wait a few minutes and it will return to normal.
+                    </div>
+                </div>
+
+          - Title: Negative
+            Anchor: Negative
+            Description: A notice displays a dangerous message.
+            HTML: |
+                <div class="ts-notice [[is-negative]]">
+                    <div class="title">Task Failed</div>
+                    <div class="content">Please empty all files before deleting.</div>
+                </div>
+
+          - Title: Sizes
+            Anchor: Sizes
+            Description: A notice can have different sizes.
+            Remove:
+                - <div class="ts-space"></div>
+            HTML: |
+                <div class="ts-notice [[is-small]]">
+                    <div class="title">Small</div>
+                    <div class="content">Here is the message.</div>
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-notice">
+                    <div class="title">Default</div>
+                    <div class="content">Here is the message.</div>
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-notice [[is-large]]">
+                    <div class="title">Large</div>
+                    <div class="content">Here is the message.</div>
+                </div>
+
+          - Title: Dense
+            Anchor: Dense
+            Description: A notice can reduce its height to look tighter.
+            HTML: |
+                <div class="ts-notice [[is-dense]]">
+                    <div class="title">Request Accepted</div>
+                    <div class="content">You'll be able to see thier online status.</div>
+                </div>

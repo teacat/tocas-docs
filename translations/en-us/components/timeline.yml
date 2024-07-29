@@ -1,0 +1,373 @@
+#=======================================================
+# 標頭
+# Header
+#=======================================================
+
+Title: Timeline
+Description: A timeline presents activity chronologically.
+Intro: |
+    A timeline presents activity chronologically. If you want to indicate future events or steps, use [Procedure](./procedure.html).
+
+#=======================================================
+# 設定
+# Settings
+#=======================================================
+
+Type: Article
+Relatives:
+    - Procedure
+
+#=======================================================
+# 基本樣式
+# Definitions
+#=======================================================
+
+Example:
+    HTML: |
+        <div class="[[ts-timeline]]">
+            <div class="item is-active">
+                <div class="indicator">
+                    <span class="{{ts-icon}} is-user-icon"></span>
+                </div>
+                <div class="content">Natsuno Hiyori has been assigned to this task.</div>
+            </div>
+            <div class="item">
+                <div class="indicator">
+                    <span class="{{ts-icon}} is-signs-post-icon"></span>
+                </div>
+                <div class="content">This task is in the next update milestone.</div>
+            </div>
+            <div class="item">
+                <div class="indicator">
+                    <span class="{{ts-icon}} is-quote-left-icon"></span>
+                </div>
+                <div class="content">Fuyushima Enishi mentioned this task.</div>
+            </div>
+        </div>
+
+Definitions:
+    - Title: Structure
+      Description:
+      Sections:
+          - Title: Icon
+            Anchor: Icon
+            Description: Every item must have an icon to represent its content.
+            HTML: |
+                <div class="ts-timeline">
+                    <div class="item">
+                        <div class="indicator">
+                            <span class="[[{{ts-icon}}]] is-bread-slice-icon"></span>
+                        </div>
+                        <div class="content">
+                            <div class="{{ts-text}} is-description">AM 07:01</div>
+                            Ate toast in the morning.
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="indicator">
+                            <span class="[[{{ts-icon}}]] is-glass-water-icon"></span>
+                        </div>
+                        <div class="content">
+                            <div class="{{ts-text}} is-description">PM 02:46</div>
+                            Drank a glass of water.
+                        </div>
+                    </div>
+                </div>
+
+          - Title: Aside
+            Anchor: Aside
+            Description: The aside can be used to display additional information or images.
+            HTML: |
+                <div class="ts-timeline">
+                    <div class="item">
+                        <div class="[[aside]]">
+                            <div class="{{ts-text}} is-description">25/12<br>07:16</div>
+                        </div>
+                        <div class="indicator">
+                            <span class="{{ts-icon}} is-door-open-icon"></span>
+                        </div>
+                        <div class="content">Door opened.</div>
+                    </div>
+                    <div class="item">
+                        <div class="[[aside]]">
+                            <div class="{{ts-text}} is-description">25/12<br>11:23</div>
+                        </div>
+                        <div class="indicator">
+                            <span class="{{ts-icon}} is-door-closed-icon"></span>
+                        </div>
+                        <div class="content">Door closed.</div>
+                    </div>
+                </div>
+
+          - Title: Secondary
+            Anchor: Secondary
+            Description: An item can be marked as secondary if it is less important or too verbose.
+            HTML: |
+                <div class="ts-timeline">
+                    <div class="item">
+                        <div class="indicator">
+                            <span class="{{ts-icon}} is-bug-icon"></span>
+                        </div>
+                        <div class="content">Harumachi Hashira reported the bug.</div>
+                    </div>
+                    <div class="item [[is-secondary]]">
+                        <div class="indicator">
+                            <span class="{{ts-icon}} is-code-commit-icon"></span>
+                        </div>
+                        <div class="content">The bug has been fixed.</div>
+                    </div>
+                    <div class="item [[is-secondary]]">
+                        <div class="indicator">
+                            <span class="{{ts-icon}} is-code-commit-icon"></span>
+                        </div>
+                        <div class="content">Reverted the last commit.</div>
+                    </div>
+                    <div class="item">
+                        <div class="indicator">
+                            <span class="{{ts-icon}} is-check-icon"></span>
+                        </div>
+                        <div class="content">The bug has been resolved.</div>
+                    </div>
+                </div>
+
+          - Title: Break
+            Anchor: Break
+            Description: A break indicates a pause or discontinuity in the timeline.
+            HTML: |
+                <div class="ts-timeline">
+                    <div class="item">
+                        <div class="indicator">
+                            <span class="{{ts-icon}} is-screwdriver-wrench-icon"></span>
+                        </div>
+                        <div class="content">Fixing an unexpected error.</div>
+                    </div>
+                    <div class="item">
+                        <div class="indicator">
+                            <span class="{{ts-icon}} is-pause-icon"></span>
+                        </div>
+                        <div class="content">Issue has been deferred.</div>
+                    </div>
+                    <div class="item [[is-break]]"></div>
+                    <div class="item">
+                        <div class="indicator">
+                            <span class="{{ts-icon}} is-eye-icon"></span>
+                        </div>
+                        <div class="content">Security system monitoring for recurrence.</div>
+                    </div>
+                </div>
+
+    - Title: States
+      Description:
+      Sections:
+          - Title: Active
+            Anchor: Active
+            Description: An item can be marked as active.
+            HTML: |
+                <div class="ts-timeline">
+                    <div class="item [[is-active]]">
+                        <div class="aside">
+                            <div class="{{ts-text}} is-description">13/02</div>
+                        </div>
+                        <div class="indicator">
+                            <span class="{{ts-icon}} is-check-icon"></span>
+                        </div>
+                        <div class="content">Buyer picked up the package.</div>
+                    </div>
+                    <div class="item">
+                        <div class="aside">
+                            <div class="{{ts-text}} is-description">13/02</div>
+                        </div>
+                        <div class="indicator">
+                            <span class="{{ts-icon}} is-store-icon"></span>
+                        </div>
+                        <div class="content">The package has arrived.</div>
+                    </div>
+                    <div class="item">
+                        <div class="aside">
+                            <div class="{{ts-text}} is-description">12/02</div>
+                        </div>
+                        <div class="indicator">
+                            <span class="{{ts-icon}} is-truck-icon"></span>
+                        </div>
+                        <div class="content">The package has been shipped.</div>
+                    </div>
+                </div>
+
+          - Title: Disabled
+            Anchor: Disabled
+            Description: An item can be marked as disabled.
+            HTML: |
+                <div class="ts-timeline">
+                    <div class="item">
+                        <div class="indicator">
+                            <span class="{{ts-icon}} is-rotate-left-icon"></span>
+                        </div>
+                        <div class="content">Refund requested; amount returned to the card.</div>
+                    </div>
+                    <div class="item [[is-disabled]]">
+                        <div class="indicator">
+                            <span class="{{ts-icon}} is-credit-card-icon"></span>
+                        </div>
+                        <div class="content">Purchased via VISA credit card for 320 TWD.</div>
+                    </div>
+                    <div class="item [[is-disabled]]">
+                        <div class="indicator">
+                            <span class="{{ts-icon}} is-receipt-icon"></span>
+                        </div>
+                        <div class="content">Order has been placed.</div>
+                    </div>
+                </div>
+
+    - Title: Variations
+      Description:
+      Sections:
+          - Title: Compact
+            Anchor: Compact
+            Description: A timeline can be compacted to reduce the space between items.
+            HTML: |
+                <div class="ts-timeline [[is-compact]]">
+                    <div class="item is-secondary">
+                        <div class="indicator">
+                            <span class="{{ts-icon}} is-person-icon"></span>
+                        </div>
+                        <div class="content">Player logged in.</div>
+                    </div>
+                    <div class="item is-secondary">
+                        <div class="indicator">
+                            <span class="{{ts-icon}} is-crown-icon"></span>
+                        </div>
+                        <div class="content">Player picked up the Crown of Experience.</div>
+                    </div>
+                    <div class="item is-secondary">
+                        <div class="indicator">
+                            <span class="{{ts-icon}} is-dragon-icon"></span>
+                        </div>
+                        <div class="content">Player defeated the Magic Dragon.</div>
+                    </div>
+                </div>
+
+          - Title: Negative
+            Anchor: Negative
+            Description: A timeline item can be marked as negative to indicate an error.
+            HTML: |
+                <div class="ts-timeline">
+                    <div class="item">
+                        <div class="indicator">
+                            <span class="{{ts-icon}} is-cloud-arrow-down-icon"></span>
+                        </div>
+                        <div class="content">Download the latest system image file.</div>
+                    </div>
+                    <div class="item">
+                        <div class="indicator">
+                            <span class="{{ts-icon}} is-copy-icon"></span>
+                        </div>
+                        <div class="content">Copy files to the target system.</div>
+                    </div>
+                    <div class="item [[is-negative]]">
+                        <div class="indicator">
+                            <span class="{{ts-icon}} is-xmark-icon"></span>
+                        </div>
+                        <div class="content">Building Linux version failed.</div>
+                    </div>
+                </div>
+
+    - Title: Compositions
+      Description:
+      Sections:
+          - Title: Git Commits
+            Anchor: Composition Commits
+            Description: A timeline that simulates the history of file changes on GitHub or other Git websites.
+            HTML: |
+                <div class="ts-timeline">
+                    <div class="item">
+                        <div class="indicator">
+                            <span class="{{ts-icon}} is-code-fork-icon"></span>
+                        </div>
+                        <div class="content">New code branch created.</div>
+                    </div>
+                    <div class="item is-secondary">
+                        <div class="indicator">
+                            <span class="{{ts-icon}} is-code-commit-icon"></span>
+                        </div>
+                        <div class="content">
+                            <div class="{{ts-grid}} is-middle-aligned is-compact">
+                                <div class="column">
+                                    <span class="[[{{ts-image}}]] is-circular">
+                                        <img src="!-user-!" width="32">
+                                    </span>
+                                </div>
+                                <div class="column is-fluid">
+                                    Fixed user login issue.
+                                </div>
+                                <div class="column">2 days ago</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item is-secondary">
+                        <div class="indicator">
+                            <span class="{{ts-icon}} is-code-commit-icon"></span>
+                        </div>
+                        <div class="content">
+                            <div class="{{ts-grid}} is-middle-aligned is-compact">
+                                <div class="column">
+                                    <span class="[[{{ts-image}}]] is-circular">
+                                        <img src="!-user2-!" width="32">
+                                    </span>
+                                </div>
+                                <div class="column is-fluid">
+                                    Reverted the last change.
+                                </div>
+                                <div class="column">3 days ago</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+          - Title: Test Logs
+            Anchor: Composition Tests
+            Description:  Other components can be placed inside the content block to present detailed event information.
+            HTML: |
+                <div class="ts-timeline">
+                    <div class="item is-negative">
+                        <div class="aside">
+                            <div class="{{ts-text}} is-description">63 s</div>
+                        </div>
+                        <div class="indicator">
+                            <span class="{{ts-icon}} is-xmark-icon"></span>
+                        </div>
+                        <div class="content">
+                            Run main tests.
+                            <div class="[[{{ts-content}}]] is-rounded is-secondary {{has-top-spaced}}">
+                                <div class="[[{{ts-checklist}}]]">
+                                    <div class="item is-positive">
+                                        System environment normal.
+                                    </div>
+                                    <div class="item is-negative">
+                                        Did not pass security tests.
+                                    </div>
+                                    <div class="item is-negative">
+                                        Username cannot be empty.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="aside">
+                            <div class="{{ts-text}} is-description">18 s</div>
+                        </div>
+                        <div class="indicator">
+                            <span class="{{ts-icon}} is-check-icon"></span>
+                        </div>
+                        <div class="content">Check license key.</div>
+                    </div>
+                    <div class="item">
+                        <div class="aside">
+                            <div class="{{ts-text}} is-description">1 m 32 s</div>
+                        </div>
+                        <div class="indicator">
+                            <span class="{{ts-icon}} is-check-icon"></span>
+                        </div>
+                        <div class="content">Initialize test environment.</div>
+                    </div>
+                </div>

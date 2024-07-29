@@ -1,0 +1,147 @@
+#=======================================================
+# 標頭
+# Header
+#=======================================================
+
+Title: Rating
+Description: A rating indicates user interest in content.
+
+#=======================================================
+# 設定
+# Settings
+#=======================================================
+
+Type: Article
+
+#=======================================================
+# 基本樣式
+# Definitions
+#=======================================================
+
+Example:
+    Centered: true
+    HTML: |
+        <div class="[[ts-rating]] is-yellow">
+            <div class="star is-active"></div>
+            <div class="star is-active"></div>
+            <div class="star"></div>
+        </div>
+
+Definitions:
+    - Title: Types
+      Description:
+      Sections:
+          - Title: Input
+            Anchor: Input
+            Description: A rating can be used as an input, which can be interacted with.
+            HTML: |
+                <div class="ts-rating is-yellow [[is-input]]">
+                    <input class="star" type="radio" name="rating" value="1" />
+                    <input class="star" type="radio" name="rating" value="2" checked/>
+                    <input class="star" type="radio" name="rating" value="3" />
+                    <input class="star" type="radio" name="rating" value="4" />
+                    <input class="star" type="radio" name="rating" value="5" />
+                </div>
+
+    - Title: States
+      Description:
+      Sections:
+          - Title: Disabled
+            Anchor: Disabled
+            Description: A rating can be started in non-interactive mode by adding `[disabled]` attribute.
+            HTML: |
+                <div class="ts-rating is-input is-red">
+                    <input class="heart" type="radio" name="love" value="1" [[disabled]]/>
+                    <input class="heart" type="radio" name="love" value="2" checked [[disabled]]/>
+                    <input class="heart" type="radio" name="love" value="3" [[disabled]]/>
+                    <input class="heart" type="radio" name="love" value="4" [[disabled]]/>
+                    <input class="heart" type="radio" name="love" value="5" [[disabled]]/>
+                </div>
+
+          - Title: Active
+            Anchor: Active
+            Description: A rating with active items shows the current rating.
+            HTML: |
+                <div class="ts-rating">
+                    <div class="star [[is-active]]"></div>
+                    <div class="star [[is-active]]"></div>
+                    <div class="star"></div>
+                </div>
+
+          - Title: Half
+            Anchor: Half
+            Description: Show partially filled ratings.
+            HTML: |
+                <div class="ts-rating">
+                    <div class="star is-active"></div>
+                    <div class="star is-active [[is-half]]"></div>
+                    <div class="star"></div>
+                </div>
+
+    - Title: Structure
+      Description:
+      Sections:
+          - Title: Star
+            Anchor: Star
+            Description: A rating can use stars as its items.
+            HTML: |
+                <div class="ts-rating">
+                    <div class="[[star]] is-active"></div>
+                    <div class="[[star]]"></div>
+                    <div class="[[star]]"></div>
+                </div>
+
+          - Title: Heart
+            Anchor: Heart
+            Description: A rating can be represented with hearts.
+            HTML: |
+                <div class="ts-rating">
+                    <div class="[[heart]] is-active"></div>
+                    <div class="[[heart]]"></div>
+                    <div class="[[heart]]"></div>
+                </div>
+
+    - Title: Variations
+      Description:
+      Sections:
+          - Title: Colors
+            Anchor: Colors
+            Description: You can specify colors with `is-yellow` and `is-red` classes.
+            Remove:
+                - <div class="ts-space"></div>
+            HTML: |
+                <div class="ts-rating [[is-yellow]]">
+                    <div class="star is-active"></div>
+                    <div class="star is-active"></div>
+                    <div class="star"></div>
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-rating [[is-red]]">
+                    <div class="heart is-active"></div>
+                    <div class="heart"></div>
+                    <div class="heart"></div>
+                </div>
+
+          - Title: Sizes
+            Anchor: Sizes
+            Description: A rating can vary in size.
+            Remove:
+                - <div class="ts-space"></div>
+            HTML: |
+                <div class="ts-rating is-yellow [[is-small]]">
+                    <div class="star is-active"></div>
+                    <div class="star is-active"></div>
+                    <div class="star"></div>
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-rating is-yellow">
+                    <div class="star is-active"></div>
+                    <div class="star is-active"></div>
+                    <div class="star"></div>
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-rating is-yellow [[is-large]]">
+                    <div class="star is-active"></div>
+                    <div class="star is-active"></div>
+                    <div class="star"></div>
+                </div>

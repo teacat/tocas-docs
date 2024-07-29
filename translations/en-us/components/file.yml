@@ -1,0 +1,122 @@
+#=======================================================
+# 標頭
+# Header
+#=======================================================
+
+Title: File
+Description: A file input allows users to upload files from their device.
+
+#=======================================================
+# 設定
+# Settings
+#=======================================================
+
+Type: Article
+
+#=======================================================
+# 基本樣式
+# Definitions
+#=======================================================
+
+Example:
+    Centered: true
+    HTML: |
+        <div class="[[ts-file]]">
+            <input type="file" />
+        </div>
+
+Definitions:
+    - Title: States
+      Description:
+      Sections:
+          - Title: Disabled
+            Anchor: Disabled
+            Description: A file input can show it's currently disabled.
+            HTML: |
+                <div class="ts-file">
+                    <input type="file" [[disabled]]/>
+                </div>
+
+    - Title: Variations
+      Description:
+      Sections:
+          - Title: Solid
+            Anchor: Solid
+            Description: A file input can have a solid background.
+            HTML: |
+                <div class="ts-file [[is-solid]]">
+                    <input type="file" />
+                </div>
+
+          - Title: Underlined
+            Anchor: Underlined
+            Description: A file input can have a solid background and an underline.
+            HTML: |
+                <div class="ts-file [[is-underlined]]">
+                    <input type="file" />
+                </div>
+
+          - Title: Negative
+            Anchor: Negative
+            Description: A file input can show it's in an invalid state.
+            HTML: |
+                <div class="ts-file [[is-negative]]">
+                    <input type="file" />
+                </div>
+
+          - Title: Sizes
+            Anchor: Sizes
+            Description: A file input can have different sizes.
+            Remove:
+                - <div class="ts-space"></div>
+            HTML: |
+                <div class="ts-file [[is-small]]">
+                    <input type="file" />
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-file">
+                    <input type="file" />
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-file [[is-large]]">
+                    <input type="file" />
+                </div>
+
+          - Title: Density
+            Anchor: Density
+            Description: A file input can adjust its height for a tighter or more relaxed look.
+            Remove:
+                - <div class="ts-space"></div>
+            HTML: |
+                <div class="ts-file [[is-dense]]">
+                    <input type="file" />
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-file">
+                    <input type="file" />
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-file [[is-relaxed]]">
+                    <input type="file" />
+                </div>
+
+    #- Title: JavaScript 模組
+    #  Description:
+    #  Sections:
+    #      - Title: 檔案功能
+    #        Anchor: Module Invoke
+    #        Description: |
+    #            點擊或拖曳檔案至帶有 `[data-invoke="名稱"]` 的元素就會觸發對應 `[id="名稱"]` 的檔案上傳欄位。
+    #        Remove:
+    #            - <div class="ts-space"></div>
+    #        HTML: |
+    #            <div class="{{ts-box}} is-hollowed">
+    #                <div class="{{ts-blankslate}} is-interactive" [[data-invoke]]="upload">
+    #                    <span class="{{ts-icon}} is-upload-icon"></span>
+    #                    <div class="header">上傳圖片或影音</div>
+    #                    <div class="description">將圖片拖拉至此處進行上傳</div>
+    #                </div>
+    #            </div>
+    #            <div class="{{ts-file}} {{has-top-spaced}}">
+    #                <input type="file" id="upload" multiple />
+    #            </div>

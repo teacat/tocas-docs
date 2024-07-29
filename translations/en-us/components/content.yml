@@ -1,0 +1,220 @@
+#=======================================================
+# 標頭
+# Header
+#=======================================================
+
+Title: Content
+Description: A content is used to create a grouping of related content.
+Intro: |
+    Content is a block section with padding, typically used with [Box](./box.html).
+
+#=======================================================
+# 設定
+# Settings
+#=======================================================
+
+Type: Article
+Relatives:
+    - Box
+
+#=======================================================
+# 基本樣式
+# Definitions
+#=======================================================
+
+Example:
+    HTML: |
+        <div class="{{ts-box}}">
+            <div class="[[ts-content]] is-dense {{has-dark}}">
+                Replace Sass with CSS Variables and design a color theme system.
+            </div>
+            <div class="{{ts-divider}}"></div>
+            <div class="[[ts-content]]">
+                Color theme systems are often a major challenge in front-end development. The advent of preprocessors like Sass and Less has solved many issues by allowing you to handle colors with just a few lines of code.
+            </div>
+        </div>
+
+Definitions:
+    - Title: States
+      Description:
+      Sections:
+          - Title: Active
+            Anchor: Active
+            Description: An active content presents it's been selected.
+            HTML: |
+                <div class="{{ts-box}}">
+                    <div class="ts-content is-dense">Apple</div>
+                    <div class="ts-content [[is-active]] is-dense">Pineapple</div>
+                    <div class="ts-content is-dense">Bread</div>
+                </div>
+
+          - Title: Disabled
+            Anchor: Disabled
+            Description: A content can show it's no longer available.
+            HTML: |
+                <div class="{{ts-box}}">
+                    <div class="ts-content is-dense">Caris</div>
+                    <div class="ts-content [[is-disabled]] is-dense">Leria</div>
+                    <div class="ts-content is-dense">Iknore</div>
+                </div>
+
+    - Title: Variations
+      Description:
+      Sections:
+          - Title: Secondary
+            Anchor: Secondary
+            Description: A content with less emphasis.
+            HTML: |
+                <div class="{{ts-box}}">
+                    <div class="ts-content">
+                        Event Store is a concept derived from CQRS and Event Sourcing principles, and it's written in C#, it's also a microservices event storage system.
+                    </div>
+                    <div class="{{ts-divider}}"></div>
+                    <div class="ts-content [[is-secondary]] is-dense">
+                        <span class="{{ts-icon}} is-end-spaced is-eye-icon"></span> 6,439,852 Views
+                    </div>
+                </div>
+
+          - Title: Tertiary
+            Anchor: Tertiary
+            Description: A content can look less important.
+            HTML: |
+                <div class="ts-content [[is-tertiary]] is-vertically-very-padded">
+                    <div class="{{ts-header}} is-large is-center-aligned">
+                        This story is over.
+                    </div>
+                    <div class="{{ts-text}} is-secondary is-center-aligned">
+                        Perhaps someone else will find a use for the ruins of this place.
+                    </div>
+                </div>
+
+          - Title: Text Aligns
+            Anchor: Aligns
+            Description: A content can have its text alignment specified.
+            HTML: |
+                <div class="{{ts-box}}">
+                    <div class="ts-content [[is-start-aligned]]">
+                        Start aligned
+                    </div>
+                    <div class="ts-content [[is-center-aligned]]">
+                        Center aligned
+                    </div>
+                    <div class="ts-content [[is-end-aligned]]">
+                        End aligned
+                    </div>
+                </div>
+
+          - Title: Interactive
+            Anchor: Interactive
+            Description: A card can have visual feedback when user hovered or clicked on it.
+            HTML: |
+                <div class="{{ts-box}}">
+                    <a href="#!" class="ts-content [[is-interactive]] is-dense">
+                        <span class="{{ts-icon}} is-end-spaced is-download-icon"></span> Download
+                    </a>
+                    <a href="#!" class="ts-content [[is-interactive]] is-active is-dense">
+                        <span class="{{ts-icon}} is-end-spaced is-heart-icon"></span> Favorite
+                    </a>
+                    <a href="#!" class="ts-content [[is-interactive]] is-dense">
+                        <span class="{{ts-icon}} is-end-spaced is-box-archive-icon"></span> Archive
+                    </a>
+                </div>
+
+          - Title: Padded
+            Anchor: Padded
+            Description: A content can increase its padding.
+            Remove:
+                - <div class="ts-space"></div>
+            HTML: |
+                <div class="{{ts-box}}">
+                    <div class="ts-content [[is-very-padded]]">
+                        3 times the original padding
+                    </div>
+                </div>
+                <div class="ts-space"></div>
+                <div class="{{ts-box}}">
+                    <div class="ts-content [[is-padded]]">
+                        1.5 times the original padding
+                    </div>
+                </div>
+                <div class="ts-space"></div>
+                <div class="{{ts-box}}">
+                    <div class="ts-content [[is-horizontally-padded]]">
+                        Only increase left and right padding
+                    </div>
+                </div>
+                <div class="ts-space"></div>
+                <div class="{{ts-box}}">
+                    <div class="ts-content [[is-vertically-padded]]">
+                        Only increase top and bottom padding
+                    </div>
+                </div>
+
+          - Title: Rounded
+            Anchor: Rounded
+            Description: A content can have rounded corners.
+            HTML: |
+                <div class="ts-content [[is-rounded]] is-tertiary">
+                    Changing real-life events through the internet, not just innovating.
+                </div>
+
+          - Title: Fitted
+            Anchor: Fitted
+            Description: A content can remove its padding.
+            Remove:
+                - <div class="ts-space"></div>
+            HTML: |
+                <div class="{{ts-box}}">
+                    <div class="ts-content [[is-fitted]]">
+                        Remove all padding
+                    </div>
+                </div>
+                <div class="ts-space"></div>
+                <div class="{{ts-box}}">
+                    <div class="ts-content [[is-horizontally-fitted]]">
+                        Remove left and right padding
+                    </div>
+                </div>
+                <div class="ts-space"></div>
+                <div class="{{ts-box}}">
+                    <div class="ts-content [[is-vertically-fitted]]">
+                        Remove top and bottom padding
+                    </div>
+                </div>
+
+          - Title: Dense
+            Anchor: Dense
+            Description: A content can reduce its height to look tighter.
+            HTML: |
+                <div class="{{ts-box}}">
+                    <div class="ts-content [[is-dense]]">
+                        <div class="{{ts-header}}">Image inversion, mirroring: Compress a game to under 40 KB</div>
+                        Micro Mages developers designed a special "offset index" system. The game's design elements are worth careful observation.
+                    </div>
+                </div>
+
+    - Title: Compositions
+      Description:
+      Sections:
+          - Title: Dark Section
+            Anchor: Composition Dark
+            Description: Present a content block with a dark theme. See [Color](./colors.html) page for more information.
+            HTML: |
+                <div class="{{ts-box}}">
+                    <div class="ts-content is-dense [[{{has-dark}}]]">
+                        けものフレンズ
+                    </div>
+                    <div class="ts-content">
+                        Welcome to ようこそジャパリパーク！<br>
+                        今日もドッタンバッタン大騒ぎ
+                    </div>
+                </div>
+
+        #  - Title: 概要看板
+        #    Anchor: Composition Slate
+        #    Description: 在某些頁面的開頭上方可以擺放概要看板用來指示使用者目前頁面的用途。
+        #    HTML: |
+        #        <div class="[[ts-content]] is-tertiary is-vertically-very-padded">
+        #            <div class="{{ts-header}} is-large">建立使用者</div>
+        #            <div class="{{ts-text}} is-secondary">初始化一個使用者資料並授予登入權限。</div>
+        #        </div>

@@ -1,0 +1,183 @@
+#=======================================================
+# 標頭
+# Header
+#=======================================================
+
+Title: Wrap
+Description: A wrap separates the items with gaps.
+Intro: |
+    Items in a Wrap have gaps and will wrap when they overflow. Use [Grid](./grid.html) for items to fill remaining space.
+
+#=======================================================
+# 設定
+# Settings
+#=======================================================
+
+Type: Article
+Relatives:
+    - Grid
+
+#=======================================================
+# 變數
+# Variables
+#=======================================================
+
+Variables:
+    - Name: --gap
+      Default: 1rem
+      Target: .ts-wrap
+      Description: The width of the gap between items.
+
+#=======================================================
+# 基本樣式
+# Definitions
+#=======================================================
+
+Example:
+    Centered: true
+    HTML: |
+        <div class="[[ts-wrap]]">
+            <button class="{{ts-button}}">Button</button>
+            <button class="{{ts-button}}">Button</button>
+            <button class="{{ts-button}}">Button</button>
+        </div>
+
+Definitions:
+    - Title: Variations
+      Description:
+      Sections:
+          - Title: Vertical
+            Anchor: Vertical
+            Description: A wrap can arrange its items vertically.
+            HTML: |
+                <div class="ts-wrap [[is-vertical]]">
+                    <button class="{{ts-button}}">Button</button>
+                    <button class="{{ts-button}}">Button</button>
+                    <button class="{{ts-button}}">Button</button>
+                </div>
+
+          - Title: Horizontal Aligns
+            Anchor: Horizontal Aligns
+            Description: A wrap can have its items aligned to the start, center, or end.
+            Remove:
+                - <div class="ts-space"></div>
+            HTML: |
+                <div class="ts-wrap [[is-start-aligned]]">
+                    <button class="{{ts-button}}">Start aligned</button>
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-wrap [[is-center-aligned]]">
+                    <button class="{{ts-button}}">Center aligned</button>
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-wrap [[is-end-aligned]]">
+                    <button class="{{ts-button}}">End aligned</button>
+                </div>
+
+          - Title: Vertical Aligns
+            Anchor: Vertical Aligns
+            Description: A wrap can have its items aligned at the top, middle, or bottom.
+            Remove:
+                - <div class="ts-space"></div>
+            HTML: |
+                <div class="ts-wrap [[is-top-aligned]]">
+                    <div class="{{ts-box}} {{has-padded}}" style="width: 30%">
+                        Consectetur adipiscing elit. In fermentum metus dolor.
+                    </div>
+                    <div class="{{ts-box}} {{has-padded}}" style="width: 30%">
+                        Top aligned
+                    </div>
+                    <div class="{{ts-box}} {{has-padded}}" style="width: 30%">
+                        Consectetur adipiscing elit. In fermentum metus dolor.
+                    </div>
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-wrap [[is-middle-aligned]]">
+                    <div class="{{ts-box}} {{has-padded}}" style="width: 30%">
+                        Consectetur adipiscing elit. In fermentum metus dolor.
+                    </div>
+                    <div class="{{ts-box}} {{has-padded}}" style="width: 30%">
+                        Middle aligned
+                    </div>
+                    <div class="{{ts-box}} {{has-padded}}" style="width: 30%">
+                        Consectetur adipiscing elit. In fermentum metus dolor.
+                    </div>
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-wrap [[is-bottom-aligned]]">
+                    <div class="{{ts-box}} {{has-padded}}" style="width: 30%">
+                        Consectetur adipiscing elit. In fermentum metus dolor.
+                    </div>
+                    <div class="{{ts-box}} {{has-padded}}" style="width: 30%">
+                        Bottom aligned
+                    </div>
+                    <div class="{{ts-box}} {{has-padded}}" style="width: 30%">
+                        Consectetur adipiscing elit. In fermentum metus dolor.
+                    </div>
+                </div>
+
+          - Title: Density
+            Anchor: Density
+            Description: A wrap can adjust the gap between items.
+            Remove:
+                - <div class="ts-space"></div>
+            HTML: |
+                <div class="ts-wrap [[is-relaxed]]">
+                    <button class="{{ts-button}}">Item</button>
+                    <button class="{{ts-button}}">Item</button>
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-wrap">
+                    <button class="{{ts-button}}">Item</button>
+                    <button class="{{ts-button}}">Item</button>
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-wrap [[is-compact]]">
+                    <button class="{{ts-button}}">Item</button>
+                    <button class="{{ts-button}}">Item</button>
+                </div>
+
+    - Title: Compositions
+      Description:
+      Sections:
+          - Title: Chips
+            Anchor: Composition Chip
+            Description: Separate the chips automatically.
+            HTML: |
+                <div class="ts-wrap is-compact">
+                    <div class="[[{{ts-chip}}]]">
+                        <img src="!-user-!" /> Yami Odymel
+                    </div>
+                    <div class="[[{{ts-chip}}]]">
+                        <img src="!-user2-!" /> Henry Wu
+                    </div>
+                    <div class="[[{{ts-chip}}]]">
+                        <img src="!-user-!" /> Sean
+                    </div>
+                    <div class="[[{{ts-chip}}]]">
+                        <img src="!-user3-!" /> Ming Tsay
+                    </div>
+                    <div class="[[{{ts-chip}}]]">
+                        <img src="!-user-!" /> Mac Taylor
+                    </div>
+                    <div class="[[{{ts-chip}}]]">
+                        <img src="!-user2-!" /> Tsundere Chen
+                    </div>
+                </div>
+
+          - Title: Form Fields
+            Anchor: Composition Form
+            Description: Keep a consistent gap between form fields.
+            HTML: |
+                <div class="[[{{ts-wrap}}]] is-vertical">
+                    <div class="{{ts-text}} is-label">Username</div>
+                    <div class="{{ts-input}} is-start-icon">
+                        <span class="{{ts-icon}} is-user-icon"></span>
+                        <input type="text" />
+                    </div>
+                    <div class="{{ts-text}} is-label">Password</div>
+                    <div class="{{ts-input}} is-start-icon">
+                        <span class="{{ts-icon}} is-lock-icon"></span>
+                        <input type="password" />
+                    </div>
+                </div>

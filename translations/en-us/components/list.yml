@@ -1,0 +1,106 @@
+#=======================================================
+# 標頭
+# Header
+#=======================================================
+
+Title: List
+Description: A list is used to group related content.
+
+#=======================================================
+# 設定
+# Settings
+#=======================================================
+
+Type: Article
+Relatives:
+    - Meta
+
+#=======================================================
+# 變數
+# Variables
+#=======================================================
+
+Variables:
+    - Name: --gap
+      Default: 0rem
+      Target: .ts-list
+      Description: The size of the gap between items.
+
+#=======================================================
+# 基本樣式
+# Definitions
+#=======================================================
+
+Example:
+    HTML: |
+        <div class="[[ts-list]] is-unordered">
+            <div class="item">Orenji</div>
+            <div class="item">Caris</div>
+            <div class="item">Haneda Shirone</div>
+        </div>
+
+Definitions:
+    - Title: Structure
+      Description:
+      Sections:
+          - Title: Nested List
+            Anchor: Sublist
+            Description: Lists can be placed inside of other lists.
+            HTML: |
+                <div class="ts-list is-unordered">
+                    <div class="item">
+                        Alternative Girls
+                        <div class="[[ts-list]] is-unordered">
+                            <div class="item">Miyaka Yuki</div>
+                            <div class="item">Hiiragi Tsumugi</div>
+                            <div class="item">Asahina Nono</div>
+                        </div>
+                    </div>
+                </div>
+
+    - Title: Variations
+      Description:
+      Sections:
+          - Title: Unordered
+            Anchor: Unordered
+            Description: A list can be unordered and mark items with a bullet.
+            HTML: |
+                <div class="ts-list [[is-unordered]]">
+                    <div class="item">Nanami Shirone</div>
+                    <div class="item">Miyakaze Yuri</div>
+                    <div class="item">Tsumugi Sara</div>
+                </div>
+
+          - Title: Ordered
+            Anchor: Ordered
+            Description: A list can be ordered numerically.
+            HTML: |
+                <div class="ts-list [[is-ordered]]">
+                    <div class="item">Inami Saki</div>
+                    <div class="item">Kurimiya Nozomi</div>
+                    <div class="item">Utaha</div>
+                </div>
+
+          - Title: Sizes
+            Anchor: Sizes
+            Description: A list can vary in size.
+            Remove:
+                - <div class="ts-space"></div>
+            HTML: |
+                <div class="ts-list [[is-small]] is-unordered">
+                    <div class="item">Houkigi Hinako</div>
+                    <div class="item">Odate Ruka</div>
+                    <div class="item">Kaizo Momo</div>
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-list is-unordered">
+                    <div class="item">Houkigi Hinako</div>
+                    <div class="item">Odate Ruka</div>
+                    <div class="item">Kaizo Momo</div>
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-list [[is-large]] is-unordered">
+                    <div class="item">Houkigi Hinako</div>
+                    <div class="item">Odate Ruka</div>
+                    <div class="item">Kaizo Momo</div>
+                </div>

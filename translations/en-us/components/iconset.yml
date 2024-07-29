@@ -1,0 +1,70 @@
+#=======================================================
+# 標頭
+# Header
+#=======================================================
+
+Title: Iconset
+Description: An iconset displays an icon with title and text.
+
+#=======================================================
+# 設定
+# Settings
+#=======================================================
+
+Type: Article
+Relatives:
+    - Icon
+
+#=======================================================
+# 基本樣式
+# Definitions
+#=======================================================
+
+Example:
+    Centered: true
+    HTML: |
+        <div class="[[ts-iconset]]">
+            <span class="{{ts-icon}} is-heart-icon"></span>
+            <div class="content">
+                <div class="title">My Favorites</div>
+                <div class="text">View items you've saved for later.</div>
+            </div>
+        </div>
+
+Definitions:
+    - Title: Variations
+      Description:
+      Sections:
+          - Title: Circular
+            Anchor: Circular
+            Description: A iconset can show its icon in a circular shape.
+            HTML: |
+                <div class="ts-iconset [[is-circular]]">
+                    <span class="{{ts-icon}} is-bullhorn-icon"></span>
+                    <div class="content">
+                        <div class="title">Promotion</div>
+                        <div class="text">Check out our latest promotions!</div>
+                    </div>
+                </div>
+
+          - Title: Outlined
+            Anchor: Outlined
+            Description: A iconset can have its icon displayed in an outlined style.
+            Remove:
+                - <div class="ts-space"></div>
+            HTML: |
+                <div class="ts-iconset [[is-outlined]]">
+                    <span class="{{ts-icon}} is-ticket-simple-icon"></span>
+                    <div class="content">
+                        <div class="title">Coupons</div>
+                        <div class="text">Browse the coupons we offer.</div>
+                    </div>
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-iconset [[is-outlined]] is-circular">
+                    <span class="{{ts-icon}} is-truck-icon"></span>
+                    <div class="content">
+                        <div class="title">Refund</div>
+                        <div class="text">See our unconditional return policy.</div>
+                    </div>
+                </div>

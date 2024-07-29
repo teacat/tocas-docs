@@ -1,0 +1,89 @@
+#=======================================================
+# 標頭
+# Header
+#=======================================================
+
+Title: Quote
+Description: A quote is a reference to a statement made by someone else.
+
+#=======================================================
+# 設定
+# Settings
+#=======================================================
+
+Type: Article
+Relatives:
+    - Text
+    - Content
+
+#=======================================================
+# 基本樣式
+# Definitions
+#=======================================================
+
+Example:
+    HTML: |
+        <div class="[[ts-quote]]">
+            <p>Taiwan is an island located in the eastern part of Asia, on the northwest side of the Pacific Ocean. It lies between the Ryukyu Islands and the Philippine Islands, with the Taiwan Strait separating it from the Eurasian continent to the west.</p>
+            <div class="cite">Wikipedia</div>
+        </div>
+
+Definitions:
+    - Title: Structure
+      Description:
+      Sections:
+          - Title: Cite
+            Anchor: Cite
+            Description: A quote with a citation.
+            HTML: |
+                <div class="ts-quote">
+                    <p>Choosing Nijisanji because Hololive feels more like an idol company where you work for them, while Nijisanji works with you.</p>
+                    <div class="[[cite]]">from Nui Sociere</div>
+                </div>
+
+    - Title: Variations
+      Description:
+      Sections:
+          - Title: Heading
+            Anchor: Heading
+            Description: A heading quote is a quote that stands out.
+            HTML: |
+                <div class="ts-quote [[is-heading]]">
+                    "Support while you can, and don't leave any regrets behind."
+                    <div class="cite">
+                        Said someone because their favorite virtual YouTuber graduated.
+                    </div>
+                </div>
+
+          - Title: Secondary
+            Anchor: Secondary
+            Description: A quote that is less prominent.
+            HTML: |
+                <div class="ts-quote [[is-secondary]]">
+                    <p>Recently, I've been feeling a bit of burnout towards virtual YouTubers. I used to tell others, "Vtubers are different from animated characters; they interact with fans."</p>
+                    <p>But thinking about it, once they become popular, they end up being just like everyone else—distant and unattainable. It's a bit disheartening. At least now, while I still care, I'll continue to support them...</p>
+                    <div class="cite">
+                        Posted on /virtuelles/ by an anonymous user.
+                    </div>
+                </div>
+
+          - Title: Sizes
+            Anchor: Sizes
+            Description: A quote can have different sizes.
+            Remove:
+                - <div class="ts-space"></div>
+            HTML: |
+                <div class="ts-quote [[is-small]]">
+                    <p>You have no idea how difficult it has been. Her creation is aimed at fans of anime and internet culture.</p>
+                    <div class="cite">DigitrevX stated this in a tweet.</div>
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-quote">
+                    <p>You have no idea how difficult it has been. Her creation is aimed at fans of anime and internet culture.</p>
+                    <div class="cite">DigitrevX stated this in a tweet.</div>
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-quote [[is-large]]">
+                    <p>You have no idea how difficult it has been. Her creation is aimed at fans of anime and internet culture.</p>
+                    <div class="cite">DigitrevX stated this in a tweet.</div>
+                </div>

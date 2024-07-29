@@ -1,0 +1,582 @@
+#=======================================================
+# 標頭
+# Header
+#=======================================================
+
+Title: Dropdown
+Description: A dropdown allows a user to select a value from a series of options.
+Intro: |
+    Buttons with the `[data-dropdown]` attribute can open and close a dropdown with the corresponding `[id]`.
+
+#=======================================================
+# 設定
+# Settings
+#=======================================================
+
+Type: Article
+Relatives:
+    - Menu
+    - Select
+
+#=======================================================
+# 變數
+# Variables
+#=======================================================
+
+Variables:
+    - Name: --min-width
+      Default: 10rem
+      Target: .ts-dropdown
+      Description: The minimum width of a dropdown.
+
+#=======================================================
+# 屬性
+# Properties
+#=======================================================
+
+Properties:
+    - Name: "[data-position]"
+      Default: bottom-start
+      Target: .ts-dropdown
+      Description: |
+          The preferred position of the dropdown.
+
+          - `top`
+          - `top-start`
+          - `top-end`
+          - `bottom`
+          - `bottom-start`
+          - `bottom-end`
+
+#=======================================================
+# 基本樣式
+# Definitions
+#=======================================================
+
+Example:
+    Centered: true
+    HTML: |
+        <button class="{{ts-button}} is-start-icon" data-dropdown="((dropdown))">
+            <span class="{{ts-icon}} is-chevron-down-icon"></span>
+            Files
+        </button>
+        <div class="[[ts-dropdown]]" id="((dropdown))">
+            <button class="item">New</button>
+            <button class="item">Download As...</button>
+            <button class="item">Rename</button>
+        </div>
+
+Definitions:
+    - Title: States
+      Description:
+      Sections:
+          # - Title: 可見的
+          #   Anchor: Visible
+          #   Description: 下拉式選單型態預設是隱藏的，必須指定為「可見的」才會顯示在頁面上。這個設計是為了讓 JavaScript 能夠切換其可見度。
+          #   Remove:
+          #       - <div class="ts-space is-huge"></div>
+          #   HTML: |
+          #       <div>
+          #           <button class="{{ts-button}} is-secondary">選擇表情</button>
+          #           <div class="ts-dropdown [[is-visible]] is-start-icon is-bottom-left">
+          #               <button class="item">
+          #                   <span class="{{ts-icon}} is-face-laugh-icon"></span> 非常滿意
+          #               </button>
+          #               <button class="item">
+          #                   <span class="{{ts-icon}} is-face-meh-icon"></span> 一般
+          #               </button>
+          #               <button class="item">
+          #                   <span class="{{ts-icon}} is-face-angry-icon"></span> 糟透了
+          #               </button>
+          #           </div>
+          #       </div>
+          #       <div class="ts-space is-huge"></div>
+          #       <div class="ts-space is-huge"></div>
+
+          - Title: Disabled
+            Anchor: Disabled
+            Description: A disabled dropdown item prevents user interaction. For link items, use the `.is-disabled` class.
+            Remove:
+                - <div class="ts-space is-huge"></div>
+                - <div class="ts-space is-big"></div>
+            HTML: |
+                <div class="ts-dropdown is-visible">
+                    <button class="item">Communication</button>
+                    <button class="item" [[disabled]]>Travel History</button>
+                    <a class="item [[is-disabled]]">Navigation</a>
+                </div>
+                <div class="ts-space is-huge"></div>
+                <div class="ts-space is-big"></div>
+
+          - Title: Active
+            Anchor: Active
+            Description: An active dropdown item indicates the current active option.
+            Remove:
+                - <div class="ts-space is-huge"></div>
+                - <div class="ts-space is-big"></div>
+            HTML: |
+                <div class="ts-dropdown is-visible">
+                    <a class="item">Profile</a>
+                    <a class="item [[is-active]]">Location</a>
+                    <a class="item">Settings</a>
+                </div>
+                <div class="ts-space is-huge"></div>
+                <div class="ts-space is-big"></div>
+
+          - Title: Selected
+            Anchor: Selected
+            Description: A dropdown menu value can be selected as the input value.
+            Remove:
+                - <div class="ts-space is-huge"></div>
+                - <div class="ts-space is-big"></div>
+            HTML: |
+                <div class="ts-dropdown is-visible">
+                    <button class="item">Delay for 5 minutes</button>
+                    <button class="item [[is-selected]]">Delay for 1 hour</button>
+                    <button class="item">Delay forever</button>
+                </div>
+                <div class="ts-space is-huge"></div>
+                <div class="ts-space is-big"></div>
+
+    - Title: Structure
+      Description:
+      Sections:
+          - Title: Description
+            Anchor: Description
+            Description: A dropdown menu can contain a description.
+            Remove:
+                - <div class="ts-space is-huge"></div>
+                - <div class="ts-space is-big"></div>
+            HTML: |
+                <div class="ts-dropdown is-visible">
+                    <button class="item">
+                        Download
+                        <span class="[[description]]">Ctrl + D</span>
+                    </button>
+                    <button class="item">
+                        Save Image
+                        <span class="[[description]]">Ctrl + S</span>
+                    </button>
+                    <button class="item">
+                        Select All
+                        <span class="[[description]]">Ctrl + A</span>
+                    </button>
+                </div>
+                <div class="ts-space is-huge"></div>
+                <div class="ts-space is-big"></div>
+
+          - Title: Header
+            Anchor: Header
+            Description: A dropdown menu can contain a header.
+            Remove:
+                - <div class="ts-space is-huge"></div>
+                - <div class="ts-space is-big"></div>
+            HTML: |
+                <div class="ts-dropdown is-visible">
+                    <div class="[[header]]">Taiwan</div>
+                    <button class="item">Kaohsiung</button>
+                    <button class="item">Taipei</button>
+                    <div class="[[header]]">Hong Kong</div>
+                    <button class="item">Kowloon Tong</button>
+                    <button class="item">Yuen Long</button>
+                </div>
+                <div class="ts-space is-huge"></div>
+                <div class="ts-space is-big"></div>
+                <div class="ts-space is-huge"></div>
+                <div class="ts-space is-big"></div>
+
+          - Title: Divider
+            Anchor: Divider
+            Description: A dropdown menu can contain dividers to separate related content.
+            Remove:
+                - <div class="ts-space is-huge"></div>
+            HTML: |
+                <div class="ts-dropdown is-visible">
+                    <button class="item">Game Settings</button>
+                    <button class="item">Scan and Fix</button>
+                    <div class="[[divider]]"></div>
+                    <button class="item">Delete Game</button>
+                </div>
+                <div class="ts-space is-huge"></div>
+                <div class="ts-space is-huge"></div>
+
+    - Title: Variations
+      Description:
+      Sections:
+          - Title: Separated
+            Anchor: Separated
+            Description: The dropdown item can be separated by gaps.
+            Remove:
+                - <div class="ts-space is-huge"></div>
+            HTML: |
+                <div class="ts-dropdown [[is-separated]] is-visible">
+                    <button class="item">
+                        <span class="{{ts-icon}} is-user-icon"></span> Users
+                    </button>
+                    <button class="item is-active">
+                        <span class="{{ts-icon}} is-house-icon"></span> Home
+                    </button>
+                    <button class="item">
+                        <span class="{{ts-icon}} is-newspaper-icon"></span> News
+                    </button>
+                </div>
+                <div class="ts-space is-huge"></div>
+                <div class="ts-space is-huge"></div>
+
+          - Title: Indented
+            Anchor: Indented
+            Description: A dropdown item can be indented to show a hierarchy.
+            Remove:
+                - <div class="ts-space is-huge"></div>
+                - <div class="ts-space is-big"></div>
+            HTML: |
+                <div class="ts-dropdown is-visible">
+                    <div class="header">Attack Magic</div>
+                    <button class="item [[is-indented]]">Fireball</button>
+                    <button class="item [[is-indented]]">Meteor Shower</button>
+                </div>
+                <div class="ts-space is-huge"></div>
+                <div class="ts-space is-big"></div>
+
+          - Title: Icon
+            Anchor: Icon
+            Description: A dropdown menu can contain an icon.
+            Remove:
+                - <div class="ts-space is-huge"></div>
+            HTML: |
+                <div class="ts-dropdown [[is-start-icon]] is-visible">
+                    <button class="item">
+                        <span class="{{ts-icon}} is-magnifying-glass-icon"></span> Search
+                    </button>
+                    <button class="item">
+                        <span class="{{ts-icon}} is-vials-icon"></span> Laboratory
+                    </button>
+                    <button class="item">
+                        <span class="{{ts-icon}} is-atom-icon"></span> Atoms
+                    </button>
+                </div>
+                <div class="ts-dropdown [[is-end-icon]] is-visible" style="margin-left: 11rem">
+                    <button class="item">
+                        Favorites <span class="{{ts-icon}} is-heart-icon"></span>
+                    </button>
+                    <button class="item">
+                        Likes <span class="{{ts-icon}} is-thumbs-up-icon"></span>
+                    </button>
+                    <button class="item">
+                        Archives <span class="{{ts-icon}} is-box-archive-icon"></span>
+                    </button>
+                </div>
+                <div class="ts-space is-huge"></div>
+                <div class="ts-space is-huge"></div>
+
+          #- Title: 可捲動的
+          #  Anchor: Scrollable
+          #  Description: |
+          #      若選單項目過多，可以試著將其指定為可捲動的，選單便不會過長。在不同螢幕大小上可供捲動的長度也不同。
+          #
+          #      <div class="ts-box">
+          #          <table class="ts-table is-celled">
+          #              <thead>
+          #                  <tr>
+          #                      <th class="is-collapsed">裝置尺寸</th>
+          #                      <th class="is-collapsed">狀態指示</th>
+          #                      <th class="is-collapsed">當螢幕尺寸 .. 時出現</th>
+          #                      <th>高度</th>
+          #                  </tr>
+          #              </thead>
+          #              <tbody>
+          #                  <tr>
+          #                      <td class="is-collapsed">最小化</td>
+          #                      <td class="is-collapsed is-center-aligned">
+          #                          <div class="ts-badge [766px]+:has-hidden">目前</div>
+          #                      </td>
+          #                      <td class="is-collapsed">&lt; 766px</td>
+          #                      <td>10rem（≈190px）</td>
+          #                  </tr>
+          #                  <tr>
+          #                      <td class="is-collapsed">預設</td>
+          #                      <td class="is-collapsed is-center-aligned">
+          #                          <div class="ts-badge [765px]-:has-hidden [993px]+:has-hidden">目前</div>
+          #                      </td>
+          #                      <td class="is-collapsed">&ge; 766px 和 &lt; 993px</td>
+          #                      <td>15rem（≈285px）</td>
+          #                  </tr>
+          #                  <tr>
+          #                      <td class="is-collapsed">最大化</td>
+          #                      <td class="is-collapsed is-center-aligned">
+          #                          <div class="ts-badge [993px]-:has-hidden">目前</div>
+          #                      </td>
+          #                      <td class="is-collapsed">&ge; 993px</td>
+          #                      <td>19rem（≈361px）</td>
+          #                  </tr>
+          #              </tbody>
+          #          </table>
+          #      </div>
+          #  Remove:
+          #      - <div class="ts-space is-huge"></div>
+          #      - <div class="ts-space is-large"></div>
+          #      - <div class="ts-space is-huge is-not-minimal"></div>
+          #      - <div class="ts-space is-huge is-maximal-only"></div>
+          #  HTML: |
+          #      <div class="{{ts-select}} is-active">
+          #          <div class="content">
+          #              <span class="ts-flag is-tw-flag"></span> Taiwan
+          #          </div>
+          #          <div class="ts-dropdown [[is-scrollable]] is-visible is-bottom">
+          #              <button class="item">
+          #                  <span class="{{ts-flag}} is-us-flag"></span> United States
+          #              </button>
+          #              <button class="item is-selected">
+          #                  <span class="{{ts-flag}} is-tw-flag"></span> Taiwan
+          #              </button>
+          #              <button class="item">
+          #                  <span class="{{ts-flag}} is-my-flag"></span> Malaysia
+          #              </button>
+          #              <button class="item">
+          #                  <span class="{{ts-flag}} is-cn-flag"></span> China
+          #              </button>
+          #              <button class="item">
+          #                  <span class="{{ts-flag}} is-hk-flag"></span> Hong Kong
+          #              </button>
+          #              <button class="item">
+          #                  <span class="{{ts-flag}} is-jp-flag"></span> Japan
+          #              </button>
+          #              <button class="item">
+          #                  <span class="{{ts-flag}} is-gb-flag"></span> United Kingdom
+          #              </button>
+          #              <button class="item">
+          #                  <span class="{{ts-flag}} is-br-flag"></span> Brazil
+          #              </button>
+          #              <button class="item">
+          #                  <span class="{{ts-flag}} is-vn-flag"></span> Vietnam
+          #              </button>
+          #              <button class="item">
+          #                  <span class="{{ts-flag}} is-gr-flag"></span> Greece
+          #              </button>
+          #          </div>
+          #      </div>
+          #      <div class="ts-space is-huge"></div>
+          #      <div class="ts-space is-huge"></div>
+          #      <div class="ts-space is-large"></div>
+          #      <div class="ts-space is-huge is-not-minimal"></div>
+          #      <div class="ts-space is-huge is-maximal-only"></div>
+
+          # - Title: 貼齊上下邊
+          #   Anchor: Align Directions
+          #   Description: |
+          #       下拉式選單可以透過 `is-top`（上面）和 `is-bottom`（下面）選擇要貼齊父容器的哪邊，這同時會讓選單以流動的方式填滿左右寬度。如果容器的寬度小於選單裡的項目，則會以項目寬度為主。
+          #
+          #       由於 CSS 的先天限制，如果項目會超出容器的寬度，請考慮使用 `is-top-center`（上面置中）與 `is-bottom-center`（下面置中）。
+          #   Remove:
+          #       - <div class="ts-space is-huge"></div>
+          #       - <div class="ts-space is-big"></div>
+          #   HTML: |
+          #       <div style="display: inline-block">
+          #           <button class="{{ts-button}} is-start-labeled-icon is-secondary">
+          #               <span class="ts-icon is-ellipsis-icon"></span>
+          #               更多功能
+          #           </button>
+          #           <div class="ts-dropdown [[is-bottom]] is-visible">
+          #               <button class="item">新增檔案</button>
+          #               <button class="item">資訊</button>
+          #               <div class="{{ts-divider}}"></div>
+          #               <button class="item">刪除檔案</button>
+          #           </div>
+          #       </div>
+          #       <div class="ts-space is-huge"></div>
+          #       <div class="ts-space is-big"></div>
+
+          # - Title: 貼齊角落
+          #   Anchor: Align Corners
+          #   Description: 下拉式選單可以選擇要貼齊父容器的哪個角落，透過 `is-top-left`（左上）、`is-top-right`（右上）和 `is-bottom-left`（左下）、`is-bottom-right`（右下）指定。
+          #   Remove:
+          #       - <div class="ts-space is-huge"></div>
+          #       - <div class="ts-space is-big"></div>
+          #   HTML: |
+          #       <div class="ts-space is-huge"></div>
+          #       <div class="ts-space is-big"></div>
+          #       <div>
+          #           <button class="{{ts-button}} is-secondary is-start-icon">
+          #               <span class="ts-icon is-wand-magic-sparkles-icon"></span>
+          #               施展神秘魔法
+          #           </button>
+          #           <div class="ts-dropdown [[is-top-left]] is-visible">
+          #               <button class="item">隕石術</button>
+          #               <button class="item">火焰術</button>
+          #               <div class="{{ts-divider}}"></div>
+          #               <button class="item">回復術</button>
+          #           </div>
+          #       </div>
+
+          # - Title: 尺寸
+          #   Anchor: Sizes
+          #   Description: 更改下拉式選單項目的大小。
+          #   Remove:
+          #       - <div class="ts-space is-huge"></div>
+          #       - <div class="ts-space is-large"></div>
+          #   HTML: |
+          #       <div class="ts-dropdown [[is-large]] is-visible">
+          #           <a class="item">大型項目</a>
+          #           <a class="item">大型項目</a>
+          #       </div>
+          #       <div class="ts-dropdown is-visible" style="margin-left: 7rem">
+          #           <a class="item">預設項目</a>
+          #           <a class="item">預設項目</a>
+          #       </div>
+          #       <div class="ts-dropdown [[is-small]] is-visible" style="margin-left: 14rem">
+          #          <a class="item">小型項目</a>
+          #           <a class="item">小型項目</a>
+          #       </div>
+          #       <div class="ts-space is-huge"></div>
+          #       <div class="ts-space is-large"></div>
+
+          - Title: Density
+            Anchor: Density
+            Description: A dropdown menu can adjust item height for a tighter or more relaxed look.
+            Remove:
+                - <div class="ts-space is-huge"></div>
+                - <div class="ts-space"></div>
+            HTML: |
+                <div class="ts-dropdown [[is-relaxed]] is-visible">
+                    <button class="item">Relaxed Item</button>
+                    <button class="item is-active">Relaxed Item</button>
+                    <button class="item">Relaxed Item</button>
+                </div>
+                <div class="ts-dropdown is-visible" style="margin-left: 11rem">
+                    <button class="item">Default Item</button>
+                    <button class="item is-active">Default Item</button>
+                    <button class="item">Default Item</button>
+                </div>
+                <div class="ts-dropdown [[is-dense]] is-visible" style="margin-left: 22rem">
+                    <button class="item">Dense Item</button>
+                    <button class="item is-active">Dense Item</button>
+                    <button class="item">Dense Item</button>
+                </div>
+                <div class="ts-space is-huge"></div>
+                <div class="ts-space is-huge"></div>
+                <div class="ts-space"></div>
+
+    #- Title: Compositions
+    #  Description:
+    #  Sections:
+    #      - Title: 搜尋輸入欄位
+    #        Anchor: Composition Search
+    #        Description: 透過結合[輸入欄位](./input.html)可以打造出一個能讓使用者搜尋且選擇項目的下拉欄位。
+    #        Remove:
+    #            - <div class="ts-space is-huge"></div>
+    #        HTML: |
+    #            <div>
+    #                <div class="[[{{ts-input}}]]">
+    #                    <input type="text" placeholder="輸入使用者名稱…"/>
+    #                </div>
+    #                <div class="ts-dropdown is-bottom is-visible">
+    #                    <button class="item">Yami Odymel</button>
+    #                    <button class="item is-active">Caris Events</button>
+    #                    <button class="item">Tunalog</button>
+    #                </div>
+    #            </div>
+    #            <div class="ts-space is-huge"></div>
+    #            <div class="ts-space is-huge"></div>
+    #
+    #      - Title: 標註使用者
+    #        Anchor: Composition Mentions
+    #        Description: 透過與[下拉式選擇](./select.html)搭配使用，打造一個用於在電子信箱或標註人名時，可供新增更多使用者的下拉式選擇欄位。
+    #        Remove:
+    #            - <div class="ts-space is-huge"></div>
+    #        HTML: |
+    #            <div class="[[{{ts-select}}]] is-fluid is-active">
+    #                <div class="content">
+    #                    <div class="{{ts-chip}}">
+    #                        <div class="{{ts-image}}">
+    #                            <img src="!-user-!" />
+    #                        </div>
+    #                        蓋歐露易絲
+    #                        <button class="{{ts-close}} is-small"></button>
+    #                    </div>
+    #                    <div class="{{ts-chip}}">
+    #                        <div class="{{ts-image}}">
+    #                            <img src="!-user-!" />
+    #                        </div>
+    #                        古伊奈
+    #                        <button class="{{ts-close}} is-small"></button>
+    #                    </div>
+    #                </div>
+    #                <div class="ts-dropdown is-bottom">
+    #                    <a class="item">
+    #                        <span class="[[{{ts-avatar}}]] is-circular">
+    #                            <img src="!-user-!">
+    #                        </span>
+    #                        斯提亞拉
+    #                    </a>
+    #                    <a class="item">
+    #                        <span class="[[{{ts-avatar}}]] is-circular">
+    #                            <img src="!-user2-!">
+    #                        </span>
+    #                        五月雨
+    #                    </a>
+    #                </div>
+    #            </div>
+    #            <div class="ts-space is-huge"></div>
+    #            <div class="ts-space is-huge"></div>
+
+    - Title: Compositions
+      Description:
+      Sections:
+          - Title: App Topbar
+            Anchor: Composition Topbar
+            Description: |
+                A dropdown menu can be placed at the end of [Topbar](./app-topbar.html).
+            HTML: |
+                <div class="{{ts-app-topbar}}">
+                    <div class="start">
+                        <div class="item is-text">Application</div>
+                    </div>
+                    <div class="end">
+                        <button class="item" data-dropdown="((dropdown-menu))">
+                            <span class="{{ts-icon}} is-ellipsis-vertical-icon"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="[[ts-dropdown]]" id="((dropdown-menu))" data-position="bottom-end">
+                    <button class="item">About</button>
+                    <button class="item">Check Updates</button>
+                </div>
+
+          - Title: Tab
+            Anchor: Composition Tab
+            Description: Consider placing items in a dropdown menu if there are too many in [Tab](./tab.html).
+            HTML: |
+                <div class="{{ts-tab}} is-pilled">
+                    <button class="item">Featured</button>
+                    <button class="item">Latest</button>
+                    <button class="item" data-dropdown="((dropdown-links))">
+                        <span class="{{ts-icon}} is-ellipsis-icon"></span>
+                        More
+                    </button>
+                </div>
+                <div class="[[ts-dropdown]]" id="((dropdown-links))">
+                    <button class="item">Games</button>
+                    <button class="item">Music</button>
+                    <button class="item">Videos</button>
+                </div>
+
+          # - Title: 下拉式選擇
+          #   Anchor: Composition Select
+          #   Description: 豐富化[下拉式選擇](./select.html)欄位能夠選擇的內容，不過你仍需要額外撰寫 JavaScript 來變更其值。
+          #   HTML: |
+          #       <div class="{{ts-select}}" [[data-dropdown]]="select">
+          #           <div class="content">
+          #               <span class="{{ts-flag}} is-tw-flag"></span> Taiwan
+          #           </div>
+          #       </div>
+          #       <div class="{{ts-dropdown}}" id="select">
+          #           <button class="item">
+          #               <span class="{{ts-flag}} is-gb-flag"></span> United Kingdom
+          #           </button>
+          #           <button class="item is-selected">
+          #               <span class="{{ts-flag}} is-tw-flag"></span> Taiwan
+          #           </button>
+          #           <button class="item">
+          #               <span class="{{ts-flag}} is-hk-flag"></span> Hong Kong
+          #           </button>
+          #       </div>

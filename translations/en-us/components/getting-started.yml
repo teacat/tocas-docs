@@ -1,0 +1,143 @@
+#=======================================================
+# Header
+#=======================================================
+
+Title: Getting Started
+Description: Life may already be boring; don't let your website follow suit.
+
+#=======================================================
+# Settings
+#=======================================================
+
+Type: Paragraphy
+
+#=======================================================
+# Definitions
+#=======================================================
+
+Definitions:
+    - Title: Installation
+      Description:
+      Sections:
+          - Title: Import the Files
+            Anchor: Style Installation
+            Description: |
+                Add these tags in the `<head>` section to use Tocas UI, or download it from [GitHub](https://github.com/teacat/tocas) for offline use.
+            AttachedHTML: |
+                <!-- Core: Tocas UI -->
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocas/5.0.1/tocas.min.css" />
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/tocas/5.0.1/tocas.min.js"></script>
+
+                <!-- Fonts: Noto Sans TC -->
+                <link rel="preconnect" href="https://fonts.googleapis.com" />
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+                <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet" />
+
+                <!-- Enable: Responsive -->
+                <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    - Title: Configuration
+      Description:
+      Sections:
+          - Title: Color Scheme
+            Anchor: Color Scheme
+            Description: |
+                Tocas UI uses light and dark themes based on the user's system settings, but you can override this setting.
+
+                <div class="ts-box">
+                    <table class="ts-table is-definition is-celled">
+                        <thead>
+                            <tr>
+                                <th class="is-collapsed"></th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="is-collapsed">is-light</td>
+                                <td>Force using the light theme.</td>
+                            </tr>
+                            <tr>
+                                <td class="is-collapsed">is-dark</td>
+                                <td>Force using the dark theme.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            AttachedHTML: |
+                <!-- Add `is-dark` to apply the dark theme to the page -->
+                <html class="[[is-dark]]">
+
+          - Title: Border Radius
+            Anchor: Roundness
+            Description: |
+                Adjust the border radius of the components.
+
+                <div class="ts-box">
+                    <table class="ts-table is-definition is-celled">
+                        <thead>
+                            <tr>
+                                <th class="is-collapsed"></th>
+                                <th class="is-collapsed">Size</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="is-collapsed">is-sharp</td>
+                                <td class="is-collapsed">0rem</td>
+                                <td>No rounded corners.</td>
+                            </tr>
+                            <tr>
+                                <td class="is-collapsed is-empty"></td>
+                                <td class="is-collapsed">0.4rem</td>
+                                <td>The default setting in Tocas UI.</td>
+                            </tr>
+                            <tr>
+                                <td class="is-collapsed">is-rounded</td>
+                                <td class="is-collapsed">1rem</td>
+                                <td>A more modern, rounded corner look.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            AttachedHTML: |
+                <!-- Add `is-sharp` to remove border radius from all components -->
+                <html class="[[is-sharp]]">
+
+          - Title: Font Size
+            Anchor: Scales
+            Description: |
+                Change font size for all components.
+
+                <div class="ts-box">
+                    <table class="ts-table is-definition is-celled">
+                        <thead>
+                            <tr>
+                                <th class="is-collapsed"></th>
+                                <th class="is-collapsed">Size</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="is-collapsed">is-small</td>
+                                <td class="is-collapsed">14px</td>
+                                <td>For mobile or handheld device apps.</td>
+                            </tr>
+                            <tr>
+                                <td class="is-collapsed is-empty"></td>
+                                <td class="is-collapsed">15px</td>
+                                <td>Default size, suitable for general web pages.</td>
+                            </tr>
+                            <tr>
+                                <td class="is-collapsed">is-large</td>
+                                <td class="is-collapsed">16px</td>
+                                <td>For text-focused websites.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            AttachedHTML: |
+                <!-- Add `is-large` for 16px font base -->
+                <html class="[[is-large]]">

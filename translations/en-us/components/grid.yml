@@ -1,0 +1,393 @@
+#=======================================================
+# 標頭
+# Header
+#=======================================================
+
+Title: Grid
+Description: A grid is used to harmonize negative space in a layout.
+
+#=======================================================
+# 設定
+# Settings
+#=======================================================
+
+Type: Article
+Grid: true
+Relatives:
+    - Wrap
+
+#=======================================================
+# 變數
+# Variables
+#=======================================================
+
+Variables:
+    - Name: --gap
+      Default: 1rem
+      Target: .ts-grid
+      Description: The width of the gap between columns.
+
+#=======================================================
+# 基本樣式
+# Definitions
+#=======================================================
+
+Example:
+    HTML: |
+        <div class="[[ts-grid]]">
+            <div class="column is-4-wide"></div>
+            <div class="column is-4-wide"></div>
+            <div class="column is-4-wide"></div>
+            <div class="column is-4-wide"></div>
+        </div>
+
+Definitions:
+    - Title: Concepts
+      Description:
+      Sections:
+          - Title: Column Widths
+            Anchor: Wides
+            Description: |
+                A grid has 16 columns per row. Columns without a set width adjust to content.
+
+                This example uses columns of 2, 8, and 6 widths, `2 + 8 + 6 = 16`; and that fills a row.
+            HTML: |
+                <div class="ts-grid">
+                    <div class="column [[is-2-wide]]"></div>
+                    <div class="column [[is-8-wide]]"></div>
+                    <div class="column [[is-6-wide]]"></div>
+                </div>
+
+          - Title: Wrapping
+            Anchor: Wrapping
+            Description: |
+                Columns wrap to the next row if their total width exceeds 16 columns.
+
+                This example uses columns of 5, 6, and 8 widths, and `5 + 6 + 8 = 19`; so the extra column wraps to the next row.
+            HTML: |
+                <div class="ts-grid">
+                    <div class="column [[is-5-wide]]"></div>
+                    <div class="column [[is-6-wide]]"></div>
+                    <div class="column [[is-8-wide]]"></div>
+                </div>
+
+          - Title: Column Count
+            Anchor: Amounts
+            Description: |
+                A grid can have different columns per row with `is-1-columns` to `is-10-columns`.
+            Remove:
+                - <div class="ts-space"></div>
+            HTML: |
+                <div class="ts-grid [[is-3-columns]]">
+                    <div class="column"></div>
+                    <div class="column"></div>
+                    <div class="column"></div>
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-grid [[is-6-columns]]">
+                    <div class="column"></div>
+                    <div class="column"></div>
+                    <div class="column"></div>
+                    <div class="column"></div>
+                    <div class="column"></div>
+                    <div class="column"></div>
+                </div>
+
+          - Title: Evenly Divided
+            Anchor: Evenly Divided
+            Description: |
+                A grid can auto-resize columns to split width evenly: 2 columns at 50%, 3 columns at 33%, etc.
+            HTML: |
+                <div class="ts-grid [[is-evenly-divided]]">
+                    <div class="column"></div>
+                    <div class="column"></div>
+                    <div class="column"></div>
+                </div>
+
+          - Title: Nesting Grids
+            Anchor: Sub Grid
+            Description: |
+                Grids can be placed inside of other grids, letting you sub-divide columns.
+            HTML: |
+                <div class="ts-grid is-2-columns">
+                    <div class="column">
+                        <div class="[[ts-grid]] is-4-columns">
+                            <div class="column"></div>
+                            <div class="column"></div>
+                            <div class="column"></div>
+                            <div class="column"></div>
+                        </div>
+                    </div>
+                    <div class="column"></div>
+                </div>
+
+    - Title: Column
+      Description:
+      Sections:
+          - Title: Fluid
+            Anchor: Fluid
+            Description: A column can take the width of the remaining space.
+            HTML: |
+                <div class="ts-grid">
+                    <div class="column is-4-wide"></div>
+                    <div class="column [[is-fluid]]"></div>
+                    <div class="column is-4-wide"></div>
+                </div>
+
+          - Title: First and Last
+            Anchor: First And Last
+            Description: A column can be moved to the first or last.
+            Remove:
+                - <div class="ts-space"></div>
+            HTML: |
+                <div class="ts-grid">
+                    <div class="column is-4-wide"></div>
+                    <div class="column is-4-wide"></div>
+                    <div class="column is-8-wide [[is-first]]"></div>
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-grid">
+                    <div class="column is-8-wide [[is-last]]"></div>
+                    <div class="column is-4-wide"></div>
+                    <div class="column is-4-wide"></div>
+                </div>
+
+          - Title: Ordering
+            Anchor: Orders
+            Description: A column can be reordered with `is-order-1` to `is-order-10`. All columns must have a set order. Ideal for reordering on mobile with [Responsive](./responsive.html).
+            Remove:
+                - <div class="ts-space"></div>
+            HTML: |
+                <div class="ts-grid">
+                    <div class="column is-2-wide [[is-order-4]]"></div>
+                    <div class="column is-3-wide [[is-order-3]]"></div>
+                    <div class="column is-4-wide [[is-order-2]]"></div>
+                    <div class="column is-7-wide [[is-order-1]]"></div>
+                </div>
+
+    - Title: Variations
+      Description:
+      Sections:
+          - Title: Horizontal Aligns
+            Anchor: Horizontal Aligns
+            Description: A grid can have its columns aligned at the start, center, or end.
+            Remove:
+                - <div class="ts-space"></div>
+            HTML: |
+                <div class="ts-grid [[is-start-aligned]]">
+                    <div class="column is-3-wide"></div>
+                    <div class="column is-3-wide"></div>
+                    <div class="column is-3-wide"></div>
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-grid [[is-center-aligned]]">
+                    <div class="column is-3-wide"></div>
+                    <div class="column is-3-wide"></div>
+                    <div class="column is-3-wide"></div>
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-grid [[is-end-aligned]]">
+                    <div class="column is-3-wide"></div>
+                    <div class="column is-3-wide"></div>
+                    <div class="column is-3-wide"></div>
+                </div>
+
+          - Title: Vertical Aligns
+            Anchor: Vertical Aligns
+            Description: A grid can have its columns aligned at the top, middle, or bottom.
+            Remove:
+                - <div class="ts-space"></div>
+            HTML: |
+                <div class="ts-grid [[is-top-aligned]] is-3-columns">
+                    <div class="column"></div>
+                    <div class="column"></div>
+                    <div class="column"></div>
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-grid [[is-middle-aligned]] is-3-columns">
+                    <div class="column"></div>
+                    <div class="column"></div>
+                    <div class="column"></div>
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-grid [[is-bottom-aligned]] is-3-columns">
+                    <div class="column"></div>
+                    <div class="column"></div>
+                    <div class="column"></div>
+                </div>
+
+          - Title: Stretched
+            Anchor: Stretched
+            Description: A grid can stretch its first-level elements or a [Box](./box.html) to match the height of other columns.
+            Remove:
+                - <span class="no-grid-indicator"></span>
+            HTML: |
+                <span class="no-grid-indicator"></span>
+                <div class="ts-grid [[is-stretched]] is-3-columns">
+                    <div class="column">
+                        <div class="{{ts-box}}">
+                            <div class="{{ts-content}}">
+                                <p>This card contains a line of text.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="{{ts-box}}">
+                            <div class="{{ts-content}}">
+                                <p>This card contains two lines of text.</p>
+                                <p>This card contains two lines of text.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="{{ts-box}}">
+                            <div class="{{ts-content}}">
+                                <p>This card contains three lines of text.</p>
+                                <p>This card contains three lines of text.</p>
+                                <p>All cards have the same height.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+          - Title: Divided
+            Anchor: Divided
+            Description: A grid can have dividers between columns, but only in a single-row grid.
+            HTML: |
+                <div class="ts-grid [[is-divided]] is-3-columns">
+                    <div class="column"></div>
+                    <div class="column"></div>
+                    <div class="column"></div>
+                </div>
+
+          - Title: Space Between and Around
+            Anchor: Space Between And Around
+            Description: A grid can have spaces between or around its columns.
+            Remove:
+                - <div class="ts-space"></div>
+            HTML: |
+                <div class="ts-grid [[is-spaced-between]]">
+                    <div class="column is-3-wide"></div>
+                    <div class="column is-3-wide"></div>
+                    <div class="column is-3-wide"></div>
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-grid [[is-spaced-around]]">
+                    <div class="column is-3-wide"></div>
+                    <div class="column is-3-wide"></div>
+                    <div class="column is-3-wide"></div>
+                </div>
+
+          - Title: Reversed
+            Anchor: Reversed
+            Description: A grid can specify that its columns should reverse order, works well with [Responsive](./responsive.html).
+            HTML: |
+                <div class="ts-grid [[is-reversed]]">
+                    <div class="column is-2-wide"></div>
+                    <div class="column is-4-wide"></div>
+                    <div class="column is-10-wide"></div>
+                </div>
+
+          - Title: Stacked
+            Anchor: Stacked
+            Description: A stacked grid will automatically stack rows into a single column, ideal for mobile devices with [Responsive](./responsive.html).
+            HTML: |
+                <div class="ts-grid [[is-stacked]]">
+                    <div class="column is-2-wide"></div>
+                    <div class="column is-3-wide"></div>
+                    <div class="column is-4-wide"></div>
+                </div>
+
+          - Title: Density
+            Anchor: Density
+            Description: A grid can adjust the gap between columns.
+            Remove:
+                - <div class="ts-space"></div>
+            HTML: |
+                <div class="ts-grid [[is-relaxed]] is-3-columns">
+                    <div class="column"></div>
+                    <div class="column"></div>
+                    <div class="column"></div>
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-grid is-3-columns">
+                    <div class="column"></div>
+                    <div class="column"></div>
+                    <div class="column"></div>
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-grid [[is-compact]] is-3-columns">
+                    <div class="column"></div>
+                    <div class="column"></div>
+                    <div class="column"></div>
+                </div>
+
+    - Title: Responsive Design
+      Description: Everything works well with [Responsive](./responsive.html) in Tocas UI. The following example is a basic guide.
+      Sections:
+          - Title: Column Widths
+            Anchor: Responsive Wides
+            Description: Column width can vary by device; e.g., `tablet+:is-8-wide` displays as 8 columns wide on tablets or larger.
+            HTML: |
+                <div class="ts-grid">
+                    <div class="column [[mobile:is-16-wide]] [[tablet+:is-8-wide]]"></div>
+                    <div class="column [[mobile:is-16-wide]] [[tablet+:is-8-wide]]"></div>
+                    <div class="column [[mobile:is-16-wide]] [[tablet+:is-8-wide]]"></div>
+                    <div class="column [[mobile:is-16-wide]] [[tablet+:is-8-wide]]"></div>
+                </div>
+
+          - Title: Stacked
+            Anchor: Responsive Stacked
+            Description: Applying `is-stacked` on mobile devices stacks rows into a single column (sets all columns to 16 columns wide).
+            HTML: |
+                <div class="ts-grid [[mobile:is-stacked]]">
+                    <div class="column is-4-wide"></div>
+                    <div class="column is-4-wide"></div>
+                    <div class="column is-4-wide"></div>
+                    <div class="column is-4-wide"></div>
+                </div>
+
+          - Title: Column Count
+            Anchor: Responsive Amounts
+            Description: Change column number by device; e.g., `mobile:is-2-columns` for 2 columns on mobile, and `tablet+:is-3-columns` for 3 columns on tablets or larger.
+            HTML: |
+                <div class="ts-grid [[mobile:is-2-columns]] [[tablet+:is-3-columns]]">
+                    <div class="column"></div>
+                    <div class="column"></div>
+                    <div class="column"></div>
+                    <div class="column"></div>
+                    <div class="column"></div>
+                    <div class="column"></div>
+                </div>
+
+          - Title: Visibility
+            Anchor: Responsive Visibility
+            Description: Columns can appear or be hidden on specific devices or screen sizes. See [Responsive](./responsive.html) for details.
+            HTML: |
+                <div class="ts-grid">
+                    <div class="column [[mobile:has-hidden]] is-4-wide"></div>
+                    <div class="column [[tablet+:has-hidden]] is-4-wide"></div>
+                    <div class="column [[desktop-:has-hidden]] is-4-wide"></div>
+                    <div class="column [[widescreen:has-hidden]] is-4-wide"></div>
+                </div>
+
+    - Title: Compositions
+      Description:
+      Sections:
+          - Title: Search Bar
+            Anchor: Composition Search
+            Description: Search bars usually have flexible and fixed columns. Columns without a set width adjust to their content.
+            Remove:
+                - <span class="no-grid-indicator"></span>
+            HTML: |
+                <span class="no-grid-indicator"></span>
+                <div class="ts-grid">
+                    <div class="column [[is-fluid]]">
+                        <div class="{{ts-input}}">
+                            <input type="text" class="input" placeholder="Search articles..."/>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <button class="{{ts-button}}">Submit</button>
+                    </div>
+                </div>

@@ -1,0 +1,108 @@
+#=======================================================
+# 標頭
+# Header
+#=======================================================
+
+Title: Meta
+Description: A metadata is used to provide additional information about the content.
+
+#=======================================================
+# 設定
+# Settings
+#=======================================================
+
+Type: Article
+Relatives:
+    - List
+
+#=======================================================
+# 基本樣式
+# Definitions
+#=======================================================
+
+Example:
+    Centered: true
+    HTML: |
+        <div class="[[ts-meta]]">
+            <a class="item">Terms</a>
+            <a class="item">Privacy</a>
+            <a class="item">Contact Us</a>
+        </div>
+
+Definitions:
+    - Title: Variations
+      Description:
+      Sections:
+          - Title: Secondary
+            Anchor: Secondary
+            Description: A metadata with less emphasis.
+            HTML: |
+                <div class="ts-meta [[is-secondary]]">
+                    <a class="item">Nozomi</a>
+                    <a class="item">Yuri</a>
+                    <a class="item">Haruka</a>
+                </div>
+
+          - Title: Text Aligns
+            Anchor: Aligns
+            Description: The metadata items can be aligned to the start, center, or end.
+            Remove:
+                - <div class="ts-space"></div>
+            HTML: |
+                <div class="ts-meta [[is-start-aligned]]">
+                    <a class="item">Start aligned</a>
+                    <a class="item">Start aligned</a>
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-meta [[is-center-aligned]]">
+                    <a class="item">Center aligned</a>
+                    <a class="item">Center aligned</a>
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-meta [[is-end-aligned]]">
+                    <a class="item">End aligned</a>
+                    <a class="item">End aligned</a>
+                </div>
+
+          - Title: Sizes
+            Anchor: Sizes
+            Description: A metadata can have different sizes.
+            Remove:
+                - <div class="ts-space"></div>
+            HTML: |
+                <div class="ts-meta [[is-small]]">
+                    <a class="item">Yoshino</a>
+                    <a class="item">Mako</a>
+                    <a class="item">Murasame</a>
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-meta">
+                    <a class="item">Yoshino</a>
+                    <a class="item">Mako</a>
+                    <a class="item">Murasame</a>
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-meta [[is-large]]">
+                    <a class="item">Yoshino</a>
+                    <a class="item">Mako</a>
+                    <a class="item">Murasame</a>
+                </div>
+
+    - Title: Compositions
+      Description:
+      Sections:
+          - Title: Post Metadata
+            Anchor: Composition Header
+            Description: Metadata under the post titles.
+            HTML: |
+                <div class="{{ts-header}}">Ambitious virtual YouTuber groups are moving towards idolization</div>
+                <div class="[[ts-meta]] is-secondary">
+                    <a class="item">Yami Odymel</a>
+                    <a class="item">14 Feb 2020</a>
+                </div>
+                <div class="{{ts-divider}} is-section"></div>
+                <div class="{{ts-header}}">Image inversion, mirroring: Compress a game to under 40 KB</div>
+                <div class="[[ts-meta]] is-secondary">
+                    <a class="item">Yami Odymel</a>
+                    <a class="item">18 Jan 2020</a>
+                </div>

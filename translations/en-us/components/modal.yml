@@ -1,0 +1,308 @@
+#=======================================================
+# 標頭
+# Header
+#=======================================================
+
+Title: Modal
+Description: A modal displays content that temporarily blocks interactions with the main view of a site.
+
+#=======================================================
+# 設定
+# Settings
+#=======================================================
+
+Type: Article
+
+#=======================================================
+# 屬性
+# Properties
+#=======================================================
+
+Properties:
+    - Name: "[data-dismissible]"
+      Default: true
+      Target: .ts-modal
+      Description: If the modal can be closed by pressing the `Esc` key or clicking the gray area.
+
+#=======================================================
+# 變數
+# Variables
+#=======================================================
+
+Variables:
+    - Name: --width
+      Default: 380px
+      Target: .ts-modal
+      Description: The width of the modal.
+
+#=======================================================
+# 基本樣式
+# Definitions
+#=======================================================
+
+Example:
+    HTML: |
+        <dialog class="[[ts-modal]]" open>
+            <div class="content">
+                <div class="{{ts-content}}">
+                    <div class="{{ts-header}}">Modal Title</div>
+                </div>
+                <div class="{{ts-divider}}"></div>
+                <div class="{{ts-content}}">
+                    On the construction site,
+                    crackling sounds like a symphony of building.
+                </div>
+            </div>
+        </dialog>
+
+Definitions:
+    - Title: Structure
+      Description:
+      Sections:
+          - Title: Content
+            Anchor: Content
+            Description: |
+                Main content is placed inside the content block. For a title and action bar, see the [Compositions](#composition-close) section below.
+            AttachedHTML: |
+                <dialog class="ts-modal" open>
+                    <div class="[[content]]">
+                        <!-- ... -->
+                    </div>
+                </dialog>
+
+    - Title: States
+      Description:
+      Sections:
+          - Title: Open
+            Anchor: Open
+            Description: |
+                A modal with the `[open]` attribute will appear on the screen.
+            HTML: |
+                <dialog class="ts-modal" [[open]]>
+                    <div class="content">
+                        <div class="{{ts-content}}">
+                            You are banned from the fishing competition
+                            for being "too pro at baiting on the internet."
+                        </div>
+                    </div>
+                </dialog>
+
+    - Title: Variations
+      Description:
+      Sections:
+          - Title: Sizes
+            Anchor: Sizes
+            Description: |
+                A modal can vary in size.
+                <div class="ts-box">
+                    <table class="ts-table is-definition is-celled">
+                        <thead>
+                            <tr>
+                                <th class="is-collapsed"></th>
+                                <th class="is-collapsed">280px</th>
+                                <th class="is-collapsed">380px</th>
+                                <th class="is-collapsed">580px</th>
+                                <th class="is-collapsed">780px</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="is-collapsed">Class</td>
+                                <td class="is-collapsed">
+                                    <span class="ts-text is-code">is-small</span>
+                                </td>
+                                <td class="is-collapsed">
+                                    Default
+                                </td>
+                                <td class="is-collapsed">
+                                    <span class="ts-text is-code">is-large</span>
+                                </td>
+                                <td class="is-collapsed">
+                                    <span class="ts-text is-code">is-big</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            Remove:
+                - <div class="ts-space"></div>
+            HTML: |
+                <dialog class="ts-modal [[is-small]]" open>
+                    <div class="content">
+                        <div class="{{ts-content}} is-center-aligned">
+                            Small Modal
+                        </div>
+                    </div>
+                </dialog>
+                <dialog class="ts-modal" open>
+                    <div class="content">
+                        <div class="{{ts-content}} is-center-aligned">
+                            Default Modal
+                        </div>
+                    </div>
+                </dialog>
+                <dialog class="ts-modal [[is-large]]" open>
+                    <div class="content">
+                        <div class="{{ts-content}} is-center-aligned">
+                            Large Modal
+                        </div>
+                    </div>
+                </dialog>
+
+          - Title: Fullscreen
+            Anchor: Fullscreen
+            Description: |
+                A modal can fill the entire screen; this is useful for mobile device with [Responsive](./responsive.html).
+            HTML: |
+                <dialog class="ts-modal [[is-fullscreen]]" open>
+                    <div class="content">
+                        <div class="{{ts-content}}">
+                            <div class="{{ts-header}}">Build connections for community.</div>
+                        </div>
+                        <div class="{{ts-divider}}"></div>
+                        <div class="{{ts-content}}">
+                            Our primary goal is to build connections between people and provide a supportive environment for content creation. Everyone should have the freedom to create without restrictions.
+                        </div>
+                        <div class="{{ts-divider}}"></div>
+                        <div class="{{ts-content}} is-tertiary">
+                            <button class="{{ts-button}}">Close</button>
+                        </div>
+                    </div>
+                </dialog>
+
+    - Title: Compositions
+      Description:
+      Sections:
+          - Title: Header and Close Button
+            Anchor: Composition Close
+            Description: Use [Grid](./grid.html) to add a [Header](./header.html) and [Close](./close.html) to the modal.
+            HTML: |
+                <dialog class="ts-modal" open>
+                    <div class="content">
+                        <div class="{{ts-content}}">
+                            <div class="[[{{ts-grid}}]]">
+                                <div class="column is-fluid">
+                                    <div class="{{ts-header}}">Supreme Agreement</div>
+                                </div>
+                                <div class="column">
+                                    <button class="{{ts-close}} is-large is-secondary"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="{{ts-divider}}"></div>
+                        <div class="{{ts-content}}">
+                            We hope this agreement will prevent future deviations from our original ideals. As the name suggests, all definitions in the supreme agreement are core conditions that our services must follow.
+                        </div>
+                    </div>
+                </dialog>
+
+          - Title: Actions
+            Anchor: Composition Action
+            Description: Create an action bar with secondary [Content](./content.html), [Buttons](./button.html), and an end-aligned [Wrap](./wrap.html).
+            HTML: |
+                <dialog class="ts-modal" open>
+                    <div class="content">
+                        <div class="{{ts-content}}">
+                            <div class="{{ts-header}}">Enter the Username</div>
+                        </div>
+                        <div class="{{ts-divider}}"></div>
+                        <div class="{{ts-content}}">
+                            <div class="{{ts-input}}">
+                                <input type="text" value="Yami Odymel"/>
+                            </div>
+                        </div>
+                        <div class="{{ts-divider}}"></div>
+                        <div class="[[{{ts-content}}]] is-tertiary">
+                            <div class="{{ts-wrap}} is-end-aligned">
+                                <button class="{{ts-button}}">Confirm</button>
+                                <button class="{{ts-button}} is-outlined">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </dialog>
+
+          - Title: Warning
+            Anchor: Composition Warning
+            Description: Create a warning modal with an icon [Header](./header.html).
+            HTML: |
+                <dialog class="ts-modal" open>
+                    <div class="content">
+                        <div class="{{ts-content}} is-center-aligned is-padded">
+                            <div class="[[{{ts-header}}]] is-icon">
+                                <span class="{{ts-icon}} is-bomb-icon"></span>
+                                Rebooting System
+                            </div>
+                            <p>This procedure will take at least half an hour.</p>
+                        </div>
+                        <div class="{{ts-divider}}"></div>
+                        <div class="{{ts-content}} is-tertiary">
+                            <button class="{{ts-button}} is-fluid">OK</button>
+                        </div>
+                    </div>
+                </dialog>
+
+          - Title: Scrollable Content
+            Anchor: Composition Scrollable
+            Description: |
+                A [Content](./content.html) block with `overflow-y: auto` allows the text to scroll when it exceeds the height of the block.
+            HTML: |
+                <dialog class="ts-modal" open>
+                    <div class="content">
+                        <div class="{{ts-content}}">
+                            <div class="{{ts-header}}">Terms of Use</div>
+                        </div>
+                        <div class="{{ts-divider}}"></div>
+                        <div class="[[{{ts-content}}]]" style="max-height: 170px; overflow-y: auto">
+                            <p>The comprehensive planning to consider during the "design" phase, the self-expectations and "attitude" towards things, and the crucial "execution" methods. Regardless, the design should be aimed at the public and operated with their input; the attitude towards dreams should never waver; and while executing, one should not forget the original intention.</p>
+                        </div>
+                        <div class="{{ts-divider}}"></div>
+                        <div class="{{ts-content}}">
+                            <label class="{{ts-checkbox}}">
+                                <input type="checkbox" checked />
+                                I have read and agree to all of the above.
+                            </label>
+                        </div>
+                        <div class="{{ts-divider}}"></div>
+                        <div class="{{ts-content}} is-tertiary">
+                            <button class="{{ts-button}} is-fluid">OK</button>
+                        </div>
+                    </div>
+                </dialog>
+
+    - Title: JavaScript Features
+      Sections:
+          - Title: Trigger by Attribute
+            Anchor: Dialog Trigger
+            Description: |
+                Clicking a button with the `[data-dialog]` attribute opens or closes the modal with the corresponding `[id]`.
+            HTML: |
+                <button class="{{ts-button}}" [[data-dialog]]="((modal))">
+                    Open Modal ✨
+                </button>
+                <dialog class="ts-modal" id="((modal))">
+                    <div class="content">
+                        <div class="{{ts-content}}">
+                            <div class="{{ts-header}}">Modal Title</div>
+                        </div>
+                        <div class="{{ts-divider}}"></div>
+                        <div class="{{ts-content}}">
+                            <p>Click the close button or the gray area to close the modal.</p>
+                        </div>
+                        <div class="{{ts-divider}}"></div>
+                        <div class="{{ts-content}} is-tertiary is-end-aligned">
+                            <button class="{{ts-button}}" [[data-dialog]]="((modal))">Close</button>
+                        </div>
+                    </div>
+                </dialog>
+
+          - Title: Trigger by JavaScript
+            Anchor: Js Trigger
+            Description: |
+                Open the modal with the native [`.showModal()`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/showModal) function. It has no effect if the modal already has the `[open]` attribute. When closed, it triggers the [`close`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/close_event) or [`cancel`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/cancel_event) event.
+            AttachedHTML: |
+                // Open the `#modal` modal.
+                document.querySelector("#modal").showModal();
+
+                // Close the `#modal` modal.
+                document.querySelector("#modal").close();
+

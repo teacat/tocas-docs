@@ -1,0 +1,118 @@
+#=======================================================
+# 標頭
+# Header
+#=======================================================
+
+Title: App Center
+Description: An app center is used to center forms or blocks in the middle of the screen.
+Intro: |
+    App center is for centering forms or blocks, not text.
+
+#=======================================================
+# 設定
+# Settings
+#=======================================================
+
+Type: Article
+
+#=======================================================
+# 基本樣式
+# Definitions
+#=======================================================
+
+Example:
+    HTML: |
+        <div class="[[ts-app-center]]">
+            <div class="content">
+                <div class="{{ts-box}}">
+                    <div class="{{ts-content}} is-padded">
+                        This block will be centered.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+Definitions:
+    - Title: Structure
+      Description:
+      Sections:
+          - Title: Content
+            Anchor: Content
+            Description: |
+                The content is placed inside the content block.
+            AttachedHTML: |
+                <div class="ts-app-center">
+                    <div class="[[content]]">
+                        <!-- ... -->
+                    </div>
+                </div>
+
+    - Title: Compositions
+      Description:
+      Sections:
+          - Title: Login Form
+            Anchor: Composition Form
+            Description: A login page with a centered form and input fields.
+            Since: 4.0.0
+            HTML: |
+                <div class="[[ts-app-center]]">
+                    <div class="content">
+                        <div class="{{ts-box}}" style="width: 270px">
+                            <div class="ts-content">
+                                <div class="{{ts-wrap}} is-vertical">
+                                    <div class="{{ts-text}} is-label">Username</div>
+                                    <div class="{{ts-input}} is-start-icon">
+                                        <span class="{{ts-icon}} is-user-icon"></span>
+                                        <input type="text" />
+                                    </div>
+                                    <div class="{{ts-text}} is-label">Password</div>
+                                    <div class="{{ts-input}} is-start-icon">
+                                        <span class="{{ts-icon}} is-lock-icon"></span>
+                                        <input type="password" />
+                                    </div>
+                                    <button class="{{ts-button}} is-fluid">Login </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+          - Title: Startup
+            Anchor: Composition Startup
+            Description: A startup page with a centered suggestion or the last opened file path.
+            Since: 4.0.0
+            HTML: |
+                <div class="{{ts-app-layout}} is-vertical">
+                    <div class="cell is-secondary" style="height: 300px">
+                        <div class="[[ts-app-center]]">
+                            <div class="content">
+                                <div class="{{ts-content}} is-rounded is-padded is-tertiary">
+                                    <div class="{{ts-header}}">Select the project…</div>
+                                    <div class="{{ts-list}} is-unordered {{has-top-spaced}}">
+                                        <a class="item">C:\Users\Yami\Spring-2016</a>
+                                        <a class="item">C:\Users\Yami\Caris-Events</a>
+                                        <a class="item">D:\Casino-Dev</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="{{ts-content}}">
+                            <div class="{{ts-app-navbar}} is-fluid">
+                                <a class="item">
+                                    <span class="{{ts-icon}} is-diagram-project-icon"></span>
+                                    <div class="label">Projects</div>
+                                </a>
+                                <a class="item">
+                                    <span class="{{ts-icon}} is-bug-icon"></span>
+                                    <div class="label">Debug</div>
+                                </a>
+                                <a class="item">
+                                    <span class="{{ts-icon}} is-gear-icon"></span>
+                                    <div class="label">Settings</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>

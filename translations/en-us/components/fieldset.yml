@@ -1,0 +1,113 @@
+#=======================================================
+# 標頭
+# Header
+#=======================================================
+
+Title: Fieldset
+Description: A fieldset is used to create a grouping of related form fields.
+
+#=======================================================
+# 設定
+# Settings
+#=======================================================
+
+Type: Article
+
+#=======================================================
+# 基本樣式
+# Definitions
+#=======================================================
+
+Example:
+    HTML: |
+        <fieldset class="[[ts-fieldset]]">
+            <legend>Additional Notes</legend>
+            <div class="{{ts-list}} is-unordered">
+                <div class="item">This world is an illusion; nothing is real.</div>
+                <div class="item">You have never been here.</div>
+                <div class="item">Just run if everything seems familiar.</div>
+            </div>
+        </fieldset>
+
+Definitions:
+    - Title: States
+      Description:
+      Sections:
+          - Title: Disabled
+            Anchor: Disabled
+            Description: A fieldset can show it's disabled; all inputs inside will also be disabled.
+            HTML: |
+                <fieldset class="ts-fieldset" [[disabled]]>
+                    <legend>Disabled Form</legend>
+                    <div class="{{ts-grid}} is-2-columns">
+                        <div class="column">
+                            <div class="{{ts-text}} is-label">Recipient</div>
+                            <div class="{{ts-input}} {{has-top-spaced}}">
+                                <input type="text" value="Yami Odymel">
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="{{ts-text}} is-label">Cell Phone</div>
+                            <div class="{{ts-input}} {{has-top-spaced}}">
+                                <input type="text" value="0987123456">
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+
+    - Title: Variations
+      Description:
+      Sections:
+          - Title: Dense
+            Anchor: Dense
+            Description: A fieldset can reduce its height.
+            HTML: |
+                <fieldset class="ts-fieldset [[is-dense]]">
+                    <legend>Supreme Law</legend>
+                    Rules that all developers under the Caris Events must follow.
+                </fieldset>
+
+    - Title: Compositions
+      Description:
+      Sections:
+          - Title: Form Fieldsets
+            Anchor: Composition Fieldset
+            Description: Fieldsets can group certain input fields together in a form.
+            HTML: |
+                <div class="{{ts-grid}} is-2-columns">
+                    <div class="column">
+                        <div class="{{ts-text}} is-label">Applicant's Name</div>
+                        <div class="{{ts-input}} {{has-top-spaced}}">
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="{{ts-text}} is-label">Guardian's Name</div>
+                        <div class="{{ts-input}} {{has-top-spaced}}">
+                            <input type="text">
+                        </div>
+                    </div>
+                </div>
+                <fieldset class="[[ts-fieldset]] {{has-top-spaced}}">
+                    <legend>Confidential information</legend>
+                    <div class="{{ts-grid}} is-3-columns">
+                        <div class="column">
+                            <div class="{{ts-text}} is-label">Card Number</div>
+                            <div class="{{ts-input}} {{has-top-spaced}}">
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="{{ts-text}} is-label">Expiry Date</div>
+                            <div class="{{ts-input}} {{has-top-spaced}}">
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="{{ts-text}} is-label">CVV</div>
+                            <div class="{{ts-input}} {{has-top-spaced}}">
+                                <input type="text">
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>

@@ -1,0 +1,149 @@
+#=======================================================
+# 標頭
+# Header
+#=======================================================
+
+Title: Checkbox
+Description: A checkbox allows a user to select a value from a small set of options, often binary.
+
+#=======================================================
+# 設定
+# Settings
+#=======================================================
+
+Type: Article
+Relatives:
+    - Radio
+    - Selection
+
+#=======================================================
+# 基本樣式
+# Definitions
+#=======================================================
+
+Example:
+    Centered: true
+    HTML: |
+        <label class="[[ts-checkbox]]">
+            <input type="checkbox" checked/>
+            Apple
+        </label>
+
+Definitions:
+    - Title: States
+      Description:
+      Sections:
+          - Title: Disabled
+            Anchor: Disabled
+            Description: A checkbox can show it's currently disabled.
+            HTML: |
+                <label class="ts-checkbox">
+                    <input type="checkbox" [[disabled]]/>
+                    Remember my password
+                </label>
+
+          - Title: Indeterminate
+            Anchor: Indeterminate
+            Description: A checkbox can be indeterminate.
+            HTML: |
+                <label class="ts-checkbox [[is-indeterminate]]">
+                    <input type="checkbox" checked/>
+                    All Files
+                </label>
+                <div class="{{ts-content}} is-dense">
+                    <div class="{{ts-wrap}} is-vertical is-compact">
+                        <label class="ts-checkbox">
+                            <input type="checkbox" checked/>
+                            Video
+                        </label>
+                        <label class="ts-checkbox">
+                            <input type="checkbox"/>
+                            Document
+                        </label>
+                        <label class="ts-checkbox">
+                            <input type="checkbox" checked/>
+                            Music
+                        </label>
+                    </div>
+                </div>
+
+    - Title: Variations
+      Description:
+      Sections:
+          - Title: Negative
+            Anchor: Negative
+            Description: A checkbox can show it's in an invalid state.
+            HTML: |
+                <label class="ts-checkbox [[is-negative]]">
+                    <input type="checkbox" />
+                    I agree to the terms of use.
+                </label>
+
+          - Title: Solo
+            Anchor: Solo
+            Description: A checkbox can have no extra spacing without label text.
+            HTML: |
+                <label class="ts-checkbox [[is-solo]]">
+                    <input type="checkbox" />
+                </label>
+
+          - Title: Sizes
+            Anchor: Sizes
+            Description: A checkbox can have different sizes.
+            Remove:
+                - <div class="ts-space is-small"></div>
+            HTML: |
+                <label class="ts-checkbox [[is-small]]">
+                    <input type="checkbox" checked/>
+                    Small Checkbox
+                </label>
+                <div class="ts-space is-small"></div>
+                <label class="ts-checkbox">
+                    <input type="checkbox"/>
+                    Default Checkbox
+                </label>
+                <div class="ts-space is-small"></div>
+                <label class="ts-checkbox [[is-large]]">
+                    <input type="checkbox"/>
+                    Large Checkbox
+                </label>
+
+    - Title: Compositions
+      Description:
+      Sections:
+          - Title: Checkboxes
+            Anchor: Composition Checkboxes
+            Description: "[Wrap](./wrap.html) can arrange checkboxes horizontally or vertically."
+            HTML: |
+                <div class="{{ts-wrap}} is-vertical">
+                    <div class="{{ts-text}} is-label">Status</div>
+                    <div class="[[{{ts-wrap}}]]">
+                        <label class="ts-checkbox">
+                            <input type="checkbox" checked/>
+                            Sold
+                        </label>
+                        <label class="ts-checkbox">
+                            <input type="checkbox"/>
+                            For Sale
+                        </label>
+                        <label class="ts-checkbox">
+                            <input type="checkbox"/>
+                            Air-drop
+                        </label>
+                    </div>
+                    <div class="{{ts-text}} is-label">Elements</div>
+                    <div class="[[{{ts-wrap}}]] is-vertical is-compact">
+                        <label class="ts-checkbox">
+                            <input type="checkbox" checked/>
+                            Fire
+                        </label>
+                        <label class="ts-checkbox">
+                            <input type="checkbox"/>
+                            Water
+                        </label>
+                        <label class="ts-checkbox">
+                            <input type="checkbox"/>
+                            Earth
+                        </label>
+                    </div>
+                </div>

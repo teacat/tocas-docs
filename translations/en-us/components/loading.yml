@@ -1,0 +1,54 @@
+#=======================================================
+# 標頭
+# Header
+#=======================================================
+
+Title: Loading
+Description: A loading indicator alerts a user to wait for an activity to complete.
+
+#=======================================================
+# 設定
+# Settings
+#=======================================================
+
+Type: Article
+Relatives:
+    - Progress
+
+#=======================================================
+# 基本樣式
+# Definitions
+#=======================================================
+
+Example:
+    Centered: true
+    HTML: |
+        <div class="[[ts-loading]]"></div>
+
+Definitions:
+    - Title: Variations
+      Description:
+      Sections:
+          - Title: Notched
+            Anchor: Notched
+            Description: A loading indicator can be styled as a notched circle.
+            HTML: |
+                <div class="ts-loading [[is-notched]]"></div>
+
+          - Title: Centered
+            Anchor: Centered
+            Description: A loading indicator can be centered.
+            HTML: |
+                <div class="ts-loading [[is-centered]]"></div>
+
+          - Title: Sizes
+            Anchor: Sizes
+            Description: A loading indicator can have different sizes.
+            Remove:
+                - <div class="ts-space"></div>
+            HTML: |
+                <div class="ts-loading [[is-small]]"></div>
+                <div class="ts-space"></div>
+                <div class="ts-loading"></div>
+                <div class="ts-space"></div>
+                <div class="ts-loading [[is-large]]"></div>

@@ -1,0 +1,98 @@
+#=======================================================
+# 標頭
+# Header
+#=======================================================
+
+Title: Header
+Description: A header provides a short summary of content.
+Intro: |
+    A header is similar to [Text](./text.html), but it is displayed in a larger font size by default and allows for icons.
+
+#=======================================================
+# 設定
+# Settings
+#=======================================================
+
+Type: Article
+Relatives:
+    - Text
+
+#=======================================================
+# 基本樣式
+# Definitions
+#=======================================================
+
+Example:
+    HTML: |
+        <div class="[[ts-header]]">"You can only die once; make sure it's worth it."</div>
+
+Definitions:
+    - Title: Variations
+      Description:
+      Sections:
+          - Title: Icon
+            Anchor: Icon
+            Description: A header can be formatted to emphasize an icon.
+            HTML: |
+                <div class="ts-header [[is-icon]]">
+                    <span class="{{ts-icon}} is-users-icon"></span>
+                    Friends
+                </div>
+
+          - Title: Side Icon
+            Anchor: Side Icon
+            Description: A header may contain an icon.
+            HTML: |
+                <div class="ts-header [[is-start-icon]]">
+                    <span class="{{ts-icon}} is-plug-icon"></span>
+                    99.9% Uptime Guarantee
+                </div>
+
+          - Title: Heavy
+            Anchor: Heavy
+            Description: A header can have its text bolder.
+            HTML: |
+                <div class="ts-header [[is-heavy]]">It's wasabi day!</div>
+
+          - Title: Negative
+            Anchor: Negative
+            Description: A header can tell the content is dangerous.
+            HTML: |
+                <div class="ts-header [[is-negative]]">Deleting Files</div>
+
+          - Title: Secondary
+            Anchor: Secondary
+            Description: A header can be formatted to appear less important.
+            HTML: |
+                <div class="ts-header [[is-secondary]]">Create a user from the database.</div>
+
+          - Title: Truncated
+            Anchor: Truncated
+            Description: A header can truncate text when it overflows, requiring a container with a fixed width.
+            HTML: |
+                <div class="ts-header [[is-truncated]]">Under the blazing sun, the road ahead is completely obscured; but a sense that you're stepping into a new world.</div>
+
+          - Title: Uppercased and Lowercased
+            Anchor: Uppercased And Lowercased
+            Description: A header can have its text to be uppercased or lowercased.
+            HTML: |
+                <div class="ts-header [[is-uppercased]]">Update Avatar</div>
+                <div class="ts-header [[is-lowercased]]">Update Avatar</div>
+
+          - Title: Text Aligns
+            Anchor: Aligns
+            Description: A header can have its text aligned to a side.
+            HTML: |
+                <div class="ts-header [[is-start-aligned]]">Start Aligned</div>
+                <div class="ts-header [[is-center-aligned]]">Center Aligned</div>
+                <div class="ts-header [[is-end-aligned]]">End Aligned</div>
+
+          - Title: Sizes
+            Anchor: Sizes
+            Description: A header can have different sizes.
+            HTML: |
+                <div class="ts-header">(Default) Tocas UI from Taiwan.</div>
+                <div class="ts-header [[is-large]]">(Large) Tocas UI from Taiwan.</div>
+                <div class="ts-header [[is-big]]">(Big) Tocas UI from Taiwan.</div>
+                <div class="ts-header [[is-huge]]">(Huge) Tocas UI from Taiwan.</div>
+                <div class="ts-header [[is-massive]]">(Massive) Tocas UI from Taiwan.</div>

@@ -1,0 +1,208 @@
+#=======================================================
+# 標頭
+# Header
+#=======================================================
+
+Title: App Navbar
+Description: An app navbar is a navigation placed at the bottom of the application.
+Intro: |
+    The app navbar is usually at the bottom. Use [App Sidebar](./app-sidebar.html) for many items.
+
+    An active item is required; inactive items appear faded.
+
+#=======================================================
+# 設定
+# Settings
+#=======================================================
+
+Type: Article
+Relatives:
+    - Tab
+
+#=======================================================
+# 基本樣式
+# Definitions
+#=======================================================
+
+Example:
+    HTML: |
+        <div class="[[ts-app-navbar]] is-fluid">
+            <a class="item">
+                <span class="{{ts-icon}} is-user-icon"></span>
+                <div class="label">User</div>
+            </a>
+            <a class="item">
+                <span class="{{ts-icon}} is-house-icon"></span>
+                <div class="label">Home</div>
+            </a>
+            <a class="item is-active">
+                <span class="{{ts-icon}} is-newspaper-icon"></span>
+                <div class="label">News</div>
+            </a>
+        </div>
+
+Definitions:
+    - Title: Structure
+      Description:
+      Sections:
+          - Title: Label
+            Anchor: Label
+            Description: A single line label can be placed below the icon.
+            HTML: |
+                <div class="ts-app-navbar">
+                    <a class="item">
+                        <span class="{{ts-icon}} is-magnifying-glass-icon"></span>
+                        <div class="[[label]]">Search</div>
+                    </a>
+                    <a class="item is-active">
+                        <span class="{{ts-icon}} is-vials-icon"></span>
+                        <div class="[[label]]">Laboratory</div>
+                    </a>
+                    <a class="item">
+                        <span class="{{ts-icon}} is-atom-icon"></span>
+                        <div class="[[label]]">Atoms</div>
+                    </a>
+                </div>
+
+    - Title: States
+      Description:
+      Sections:
+          - Title: Active
+            Anchor: Active
+            Description: An active item shows the current page.
+            HTML: |
+                <div class="ts-app-navbar">
+                    <a class="item">
+                        <span class="{{ts-icon}} is-star-icon"></span>
+                        <div class="label">Favorites</div>
+                    </a>
+                    <a class="item [[is-active]]">
+                        <span class="{{ts-icon}} is-clock-icon"></span>
+                        <div class="label">Recent</div>
+                    </a>
+                    <a class="item">
+                        <span class="{{ts-icon}} is-users-icon"></span>
+                        <div class="label">Contacts</div>
+                    </a>
+                </div>
+
+          - Title: Disabled
+            Anchor: Disabled
+            Description: A disabled item can't be interacted with or clicked. For hyperlinks, use the `.is-disabled` class.
+            HTML: |
+                <div class="ts-app-navbar is-indicated">
+                    <a class="item">
+                        <span class="{{ts-icon}} is-newspaper-icon"></span>
+                        <div class="label">News</div>
+                    </a>
+                    <button class="item" [[disabled]]>
+                        <span class="{{ts-icon}} is-list-check-icon"></span>
+                        <div class="label">Checklist</div>
+                    </button>
+                    <a class="item [[is-disabled]]">
+                        <span class="{{ts-icon}} is-handshake-angle-icon"></span>
+                        <div class="label">Help</div>
+                    </a>
+                </div>
+
+    - Title: Variations
+      Description:
+      Sections:
+          - Title: Indicated
+            Anchor: Indicated
+            Description: An indicated navbar highlights the active item, while inactive items are displayed normally.
+            HTML: |
+                <div class="ts-app-navbar [[is-indicated]]">
+                    <a class="item">
+                        <span class="{{ts-icon}} is-shoe-prints-icon"></span>
+                        <div class="label">Steps</div>
+                    </a>
+                    <a class="item is-active">
+                        <span class="{{ts-icon}} is-stopwatch-icon"></span>
+                        <div class="label">Activities</div>
+                    </a>
+                    <a class="item">
+                        <span class="{{ts-icon}} is-heart-icon"></span>
+                        <div class="label">Heart Rate</div>
+                    </a>
+                </div>
+
+          - Title: Unlabeled
+            Anchor: Unlabeled
+            Description: An unlabeled navbar hides labels for inactive items, reducing its width.
+            HTML: |
+                <div class="ts-app-navbar [[is-unlabeled]]">
+                    <a class="item">
+                        <span class="{{ts-icon}} is-image-icon"></span>
+                        <div class="label">Photos</div>
+                    </a>
+                    <a class="item is-active">
+                        <span class="{{ts-icon}} is-magnifying-glass-icon"></span>
+                        <div class="label">Search</div>
+                    </a>
+                    <a class="item">
+                        <span class="{{ts-icon}} is-users-icon"></span>
+                        <div class="label">Share</div>
+                    </a>
+                    <a class="item">
+                        <span class="{{ts-icon}} is-box-archive-icon"></span>
+                        <div class="label">Archive</div>
+                    </a>
+                </div>
+
+          - Title: Vertical
+            Anchor: Vertical
+            Description: A navbar can be displayed vertically.
+            HTML: |
+                <div class="ts-app-navbar [[is-vertical]] is-indicated">
+                    <a class="item">
+                        <span class="{{ts-icon}} is-boxes-stacked-icon"></span>
+                        <div class="label">Structure</div>
+                    </a>
+                    <a class="item is-active">
+                        <span class="{{ts-icon}} is-database-icon"></span>
+                        <div class="label">SQL Query</div>
+                    </a>
+                    <a class="item">
+                        <span class="{{ts-icon}} is-scroll-icon"></span>
+                        <div class="label">Snippets</div>
+                    </a>
+                </div>
+
+          - Title: Fluid
+            Anchor: Fluid
+            Description: A navbar can take the full width of its container.
+            HTML: |
+                <div class="ts-app-navbar [[is-fluid]]">
+                    <a class="item">
+                        <span class="{{ts-icon}} is-house-icon"></span>
+                        <div class="label">Home</div>
+                    </a>
+                    <a class="item is-active">
+                        <span class="{{ts-icon}} is-flag-icon"></span>
+                        <div class="label">Fan Pages</div>
+                    </a>
+                    <a class="item">
+                        <span class="{{ts-icon}} is-bell-icon"></span>
+                        <div class="label">Notification</div>
+                    </a>
+                </div>
+
+          - Title: Dense
+            Anchor: Dense
+            Description: A dense navbar reduces the padding.
+            HTML: |
+                <div class="ts-app-navbar [[is-dense]] is-indicated">
+                    <a class="item">
+                        <span class="{{ts-icon}} is-envelope-icon"></span>
+                        <div class="label">Inbox</div>
+                    </a>
+                    <a class="item is-active">
+                        <span class="{{ts-icon}} is-comment-icon"></span>
+                        <div class="label">Chat</div>
+                    </a>
+                    <a class="item">
+                        <span class="{{ts-icon}} is-users-icon"></span>
+                        <div class="label">Community</div>
+                    </a>
+                </div>

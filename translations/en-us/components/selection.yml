@@ -1,0 +1,186 @@
+#=======================================================
+# 標頭
+# Header
+#=======================================================
+
+Title: Selection
+Description: A selection input is a set of options that can be switched between.
+Intro: |
+    This component switches between options. For content switching, use [Tab](./tab.html).
+
+#=======================================================
+# 設定
+# Settings
+#=======================================================
+
+Type: Article
+Relatives:
+    - Checkbox
+    - Chip
+    - Radio
+    - Tab
+
+#=======================================================
+# 基本樣式
+# Definitions
+#=======================================================
+
+Example:
+    Centered: true
+    HTML: |
+        <div class="[[ts-selection]]">
+            <label class="item">
+                <input type="radio" name="aircon" checked/>
+                <div class="text">Cold</div>
+            </label>
+            <label class="item">
+                <input type="radio" name="aircon" />
+                <div class="text">Warm</div>
+            </label>
+            <label class="item">
+                <input type="radio" name="aircon" />
+                <div class="text">Wind</div>
+            </label>
+        </div>
+
+Definitions:
+    - Title: States
+      Description:
+      Sections:
+          - Title: Disabled
+            Anchor: Disabled
+            Description: A disabled selection item does not allow user interaction.
+            HTML: |
+                <div class="ts-selection">
+                    <label class="item">
+                        <input type="radio" name="version" [[disabled]]/>
+                        <div class="text">Stable</div>
+                    </label>
+                    <label class="item">
+                        <input type="radio" name="version" checked/>
+                        <div class="text">Development</div>
+                    </label>
+                    <label class="item">
+                        <input type="radio" name="version" />
+                        <div class="text">Testing</div>
+                    </label>
+                </div>
+
+    - Title: Variations
+      Description:
+      Sections:
+          - Title: Circular
+            Anchor: Circular
+            Description: A selection can be circular.
+            HTML: |
+                <div class="ts-selection [[is-circular]]">
+                    <label class="item">
+                        <input type="radio" name="audio" checked/>
+                        <div class="text">Low</div>
+                    </label>
+                    <label class="item">
+                        <input type="radio" name="audio" />
+                        <div class="text">Mid</div>
+                    </label>
+                    <label class="item">
+                        <input type="radio" name="audio" />
+                        <div class="text">High</div>
+                    </label>
+                </div>
+
+          - Title: Fluid
+            Anchor: Fluid
+            Description: A selection can take the width of its container.
+            HTML: |
+                <div class="ts-selection [[is-fluid]]">
+                    <label class="item">
+                        <input type="radio" name="language" />
+                        <div class="text">Taiwanese</div>
+                    </label>
+                    <label class="item">
+                        <input type="radio" name="language" checked/>
+                        <div class="text">English</div>
+                    </label>
+                    <label class="item">
+                        <input type="radio" name="language" />
+                        <div class="text">Japanese</div>
+                    </label>
+                </div>
+
+          - Title: Sizes
+            Anchor: Sizes
+            Description: A selection can have different sizes.
+            Remove:
+                - <div class="ts-space"></div>
+            HTML: |
+                <div class="ts-selection [[is-small]]">
+                    <label class="item">
+                        <input type="radio" name="size-1" checked/>
+                        <div class="text">Small</div>
+                    </label>
+                    <label class="item">
+                        <input type="radio" name="size-1" />
+                        <div class="text">Small</div>
+                    </label>
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-selection">
+                    <label class="item">
+                        <input type="radio" name="size-2" checked/>
+                        <div class="text">Default</div>
+                    </label>
+                    <label class="item">
+                        <input type="radio" name="size-2" />
+                        <div class="text">Default</div>
+                    </label>
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-selection [[is-large]]">
+                    <label class="item">
+                        <input type="radio" name="size-3" checked/>
+                        <div class="text">Large</div>
+                    </label>
+                    <label class="item">
+                        <input type="radio" name="size-3" />
+                        <div class="text">Large</div>
+                    </label>
+                </div>
+
+          - Title: Density
+            Anchor: Density
+            Description: A selection can adjust its height for a tighter or more relaxed look.
+            Remove:
+                - <div class="ts-space"></div>
+            HTML: |
+                <div class="ts-selection [[is-dense]]">
+                    <label class="item">
+                        <input type="radio" name="density-1" checked/>
+                        <div class="text">Dense</div>
+                    </label>
+                    <label class="item">
+                        <input type="radio" name="density-1" />
+                        <div class="text">Dense</div>
+                    </label>
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-selection">
+                    <label class="item">
+                        <input type="radio" name="density-2" checked/>
+                        <div class="text">Default</div>
+                    </label>
+                    <label class="item">
+                        <input type="radio" name="density-2" />
+                        <div class="text">Default</div>
+                    </label>
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-selection [[is-relaxed]]">
+                    <label class="item">
+                        <input type="radio" name="density-3" checked/>
+                        <div class="text">Relaxed</div>
+                    </label>
+                    <label class="item">
+                        <input type="radio" name="density-3" />
+                        <div class="text">Relaxed</div>
+                    </label>
+                </div>
