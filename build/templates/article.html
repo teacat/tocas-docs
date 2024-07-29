@@ -137,9 +137,9 @@
                         <div class="主體-格局-導覽-標題">{{ index $.Meta.UI.ComponentsCategories .Name }}</div>
                         {{ range .Items }}
                         <a href="./{{ . | kebablize }}.html" class="主體-格局-導覽-項目{{ if eq $.This (kebablize .) }} 主體-格局-導覽-項目_啟用的{{ end }}">
-                            {{ if $c.OmitHelper }} {{ index $.Meta.UI.Components . }} {{ else }} {{ capitalize . }}
+                            {{ if $c.OmitHelper }} {{ index $.Meta.UI.Components . }} {{ else }} {{ capitalize . }} {{ if ne (index $.Meta.UI.Components .) (capitalize .) }}
                             <span class="主體-格局-導覽-項目-英文">{{ index $.Meta.UI.Components . }}</span>
-                            {{ end }}
+                            {{ end }} {{ end }}
                         </a>
                         {{ end }} {{ end }}
                         <div class="主體-格局-導覽-關閉按鈕">
@@ -317,7 +317,7 @@
 
                         <!-- HTML 屬性 -->
                         {{ if .Properties }}
-                        <div class="主體-格局-內容-標題 主體-格局-內容-標題_章節">屬性設定</div>
+                        <div class="主體-格局-內容-標題 主體-格局-內容-標題_章節">{{ "Properties" | i18n }}</div>
                         <div class="主體-格局-內容-變數屬性">
                             <div class="ts-box">
                                 <table class="ts-table is-definition is-celled">
@@ -325,15 +325,15 @@
                                         <tr>
                                             <th class="is-collapsed"></th>
                                             {{ if ne (index .Properties 0).Example "" }}
-                                            <th class="is-collapsed">範例</th>
+                                            <th class="is-collapsed">{{ "PropertiesExample" | i18n }}</th>
                                             {{ end }} {{ if ne (index .Properties 0).Type "" }}
-                                            <th class="is-collapsed">型態</th>
+                                            <th class="is-collapsed">{{ "PropertiesDataType" | i18n }}</th>
                                             {{ end }}
-                                            <th>說明</th>
+                                            <th>{{ "PropertiesDescription" | i18n }}</th>
                                             {{ if ne (index .Properties 0).Default "" }}
-                                            <th class="is-collapsed">預設值</th>
+                                            <th class="is-collapsed">{{ "PropertiesDefaultValue" | i18n }}</th>
                                             {{ end }} {{ if ne (index .Properties 0).Target "" }}
-                                            <th class="is-collapsed">對象</th>
+                                            <th class="is-collapsed">{{ "PropertiesTarget" | i18n }}</th>
                                             {{ end }}
                                         </tr>
                                     </thead>
@@ -367,7 +367,7 @@
 
                         <!-- 變數屬性 -->
                         {{ if .Variables }}
-                        <div class="主體-格局-內容-標題 主體-格局-內容-標題_章節">樣式變數</div>
+                        <div class="主體-格局-內容-標題 主體-格局-內容-標題_章節">{{ "Variables" | i18n }}</div>
                         <div class="主體-格局-內容-變數屬性">
                             <div class="ts-box">
                                 <table class="ts-table is-definition is-celled">
@@ -375,15 +375,15 @@
                                         <tr>
                                             <th class="is-collapsed"></th>
                                             {{ if ne (index .Variables 0).Example "" }}
-                                            <th class="is-collapsed">範例</th>
+                                            <th class="is-collapsed">{{ "VariablesExample" | i18n }}</th>
                                             {{ end }} {{ if ne (index .Variables 0).Type "" }}
-                                            <th class="is-collapsed">型態</th>
+                                            <th class="is-collapsed">{{ "VariablesDataType" | i18n }}</th>
                                             {{ end }}
-                                            <th>說明</th>
+                                            <th>{{ "VariablesDescription" | i18n }}</th>
                                             {{ if ne (index .Variables 0).Default "" }}
-                                            <th class="is-collapsed">預設值</th>
+                                            <th class="is-collapsed">{{ "VariablesDefaultValue" | i18n }}</th>
                                             {{ end }} {{ if ne (index .Variables 0).Target "" }}
-                                            <th class="is-collapsed">對象</th>
+                                            <th class="is-collapsed">{{ "VariablesTarget" | i18n }}</th>
                                             {{ end }}
                                         </tr>
                                     </thead>
