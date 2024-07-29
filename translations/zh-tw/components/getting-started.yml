@@ -40,7 +40,7 @@ Definitions:
       Description:
       Sections:
           - Title: 亮暗主題
-            Anchor: Color Schemes
+            Anchor: Color Scheme
             Description: |
                 Tocas UI 預設會依照使用者的系統設定自動變更亮暗主題，你可以覆寫這個設定。
 

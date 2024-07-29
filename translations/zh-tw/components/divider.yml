@@ -33,7 +33,7 @@ Definitions:
             Description: 區段的分隔線上下會有空白間隔。
             HTML: |
                 <p>我是微笑小安安，歡迎來到小安網站。</p>
-                <div class="[[ts-divider]] [[is-section]]"></div>
+                <div class="ts-divider [[is-section]]"></div>
                 <p>你將會在這裡看見一個魔法師的日常生活。沒錯，只要你能夠單身三十年，你也可以跟我一樣成為魔法師。</p>
 
           - Title: 垂直的

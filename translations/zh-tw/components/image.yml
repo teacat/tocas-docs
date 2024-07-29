@@ -105,15 +105,15 @@ Definitions:
             Remove:
                 - <div class="ts-space"></div>
             HTML: |
-                <div class="ts-image [[is-1-by-1]] is-covered">
+                <div class="ts-image [[is-1-by-1]]">
                     <img src="!-16:9-!" width="200">
                 </div>
                 <div class="ts-space"></div>
-                <div class="ts-image [[is-4-by-3]] is-covered">
+                <div class="ts-image [[is-4-by-3]]">
                     <img src="!-16:9-!" width="200">
                 </div>
                 <div class="ts-space"></div>
-                <div class="ts-image [[is-16-by-9]] is-covered">
+                <div class="ts-image [[is-16-by-9]]">
                     <img src="!-16:9-!" width="200">
                 </div>
 

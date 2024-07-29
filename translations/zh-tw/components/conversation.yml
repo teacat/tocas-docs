@@ -311,15 +311,15 @@ Definitions:
                             </div>
                         </div>
                         <div class="{{ts-wrap}} is-compact {{has-top-spaced-small}}">
-                            <label class="[[{{ts-chip}}]] is-toggle is-small is-dense is-secondary is-circular is-outlined">
+                            <label class="[[{{ts-chip}}]] is-toggle is-secondary is-circular is-outlined">
                                 <input type="checkbox" checked="">
                                 <div class="content">👌 21</div>
                             </label>
-                            <label class="[[{{ts-chip}}]] is-toggle is-small is-dense is-secondary is-circular is-outlined">
+                            <label class="[[{{ts-chip}}]] is-toggle is-secondary is-circular is-outlined">
                                 <input type="checkbox">
                                 <div class="content">👀 8</div>
                             </label>
-                            <div class="[[{{ts-chip}}]] is-outlined is-small is-dense is-circular" style="padding: 0.1rem 0.5rem">
+                            <div class="[[{{ts-chip}}]] is-outlined is-circular" style="padding: 0.1rem 0.5rem">
                                 <span class="{{ts-icon}} is-regular is-face-smile-icon"></span>
                             </div>
                         </div>

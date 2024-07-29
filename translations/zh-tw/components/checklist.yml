@@ -42,7 +42,7 @@ Definitions:
                 </div>
 
           - Title: 負面的
-            Anchor: Positive
+            Anchor: Negative
             Description: 表示不相符的條件或是負面的敘述。
             HTML: |
                 <div class="ts-checklist">

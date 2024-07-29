@@ -37,25 +37,25 @@ Definitions:
                             <tr>
                                 <td class="is-collapsed">has-invisible</td>
                                 <td>
-                                    visibility: hidden;
+                                    <code>visibility: hidden;</code>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="is-collapsed">has-hidden</td>
                                 <td>
-                                    display: none;
+                                    <code>display: none;</code>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="is-collapsed">has-hidden-light</td>
                                 <td>
-                                    在亮色主題下會套用 display: none;
+                                    在亮色主題下會套用 <code>display: none;</code>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="is-collapsed">has-hidden-dark</td>
                                 <td>
-                                    在暗色主題下會套用 display: none;
+                                    在暗色主題下會套用 <code>display: none;</code>
                                 </td>
                             </tr>
                         </tbody>
@@ -300,15 +300,15 @@ Definitions:
                         <tbody>
                             <tr>
                                 <td class="is-collapsed">has-leading-none</td>
-                                <td>line-height: 1;</td>
+                                <td><code>line-height: 1;</code></td>
                             </tr>
                             <tr>
                                 <td class="is-collapsed">has-leading-small</td>
-                                <td>line-height: 1.4;</td>
+                                <td><code>line-height: 1.4;</code></td>
                             </tr>
                             <tr>
                                 <td class="is-collapsed">has-leading-large</td>
-                                <td>line-height: 1.9;</td>
+                                <td><code>line-height: 1.9;</code></td>
                             </tr>
                         </tbody>
                     </table>

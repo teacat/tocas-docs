@@ -68,7 +68,7 @@ Definitions:
           - Title: 主要內容
             Anchor: Content
             Description: |
-                彈出內容是一個雛型框架，內容可參考底部的《[組合應用](#composition-close)》章節。
+                彈出內容是一個雛型框架，內容可參考底部的《[組合應用](#composition-inline-edit)》章節。
             AttachedHTML: |
                 <div class="[[ts-popover]]" popover>
                     <!-- ... -->

@@ -76,13 +76,13 @@ UI:
 
         # Spotlight A
         Index_Spotlight_A_Title: 沒有 jQuery 相依性。
-        Index_Spotlight_A_Description: 除了耗費多餘的網路頻寬之外；對於現代網站而言，使用 jQuery 已經不再是所謂的絕佳首選。Tocas UI 能與所有前端框架友善地搭配。
+        Index_Spotlight_A_Description: 除了耗費多餘的網路頻寬之外；對於現代網站而言，使用 jQuery 已經不再是所謂的絕佳首選。Tocas UI 試圖降低對網頁的負荷。
         Index_Spotlight_B_Title: 不需要 npm 或 Webpack。
         Index_Spotlight_B_Description: 沒有任何繁雜的手續：像是透過 npm 安裝一堆套件、在 Webpack 裡設置一堆載入器。你只需要將我們提供的 HTML 樣式標籤複製到你的網頁，然後…搭啦！就這麼容易。
         Index_Spotlight_C_Title: 完善的文件說明。
         Index_Spotlight_C_Description: 就算沒有撰寫過 Bootstrap 或是 Bulma、Semantic UI、Material Design…你也能夠透過完整的說明理解整個介面系統、響應式設計如何運作。
-        Index_Spotlight_D_Title: 設計恍如隔世。
-        Index_Spotlight_D_Description: 現有的元件與樣式一應俱全，已經為你做好萬全的準備。
+        Index_Spotlight_D_Title: 簡潔又直覺的設計。
+        Index_Spotlight_D_Description: 沒有多餘的干擾，彷彿在喧囂的網路世界中找到一絲寧靜。
 
         # Showcases
         Index_Showcase_ImageCard_Section: 圖片卡片
@@ -191,6 +191,18 @@ UI:
         # Other
         #=======================================================
 
+        Variables: 樣式變數
+        VariablesExample: 範例
+        VariablesDataType: 型態
+        VariablesDescription: 說明
+        VariablesDefaultValue: 預設值
+        VariablesTarget: 目標
+        Properties: 屬性設定
+        PropertiesExample: 範例
+        PropertiesDataType: 型態
+        PropertiesDescription: 說明
+        PropertiesDefaultValue: 預設值
+        PropertiesTarget: 目標
         TranslatorSeperator: 、
 
     ComponentsCategories:
