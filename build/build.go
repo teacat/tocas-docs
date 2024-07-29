@@ -101,6 +101,7 @@ func build(c *cli.Context) error {
 	 */
 
 	article := Article{
+		This: "index",
 		Meta: meta,
 	}
 	file, err := os.Create(Path("{docs}/docs-dev/{lang}/index.html"))
@@ -121,6 +122,7 @@ func build(c *cli.Context) error {
 	 */
 
 	article = Article{
+		This: "examples",
 		Meta: meta,
 	}
 	b, err = os.ReadFile(Path("{docs}/translations/{lang}/components/examples.yml"))
@@ -408,7 +410,7 @@ func placeholder(s string) string {
 
 // markdown 會將傳入的字串從 Markdown 轉為 HTML。
 func markdown(s string) string {
-	content := string(blackfriday.Run([]byte(s)))
+	content := string(blackfriday.Run([]byte(s), blackfriday.WithNoExtensions()))
 	content = strings.ReplaceAll(content, `<a href="h`, `<a target="_blank" href="h`) // https:// 這樣就不會影響到 # anchor
 
 	return content
