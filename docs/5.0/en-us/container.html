@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./assets/style.css" />
+        <link rel="stylesheet" href="./assets/highlight.css" />
+        <link rel="stylesheet" href="./assets/tocas/tocas.min.css" />
+        <script src="./assets/tocas/tocas.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet" />
+        <link rel="canonical" href="https://tocas-ui.com/5.0/en-us/container.html" />
+        <script src="./assets/script.js"></script>
+        <title>Container - Tocas UI</title>
+        <!--
+
+
+
+        ▄▄▄        ▄▄████▄
+      ▄█████▄    ▄██▀    ██
+      ▀█▄   ██▄ ██▀      ██
+       ▀██▄▄▄████   ▄▄▄██▀
+          ▀▀▀████▀▀▀▀▀
+             ██
+            ██          ▄█████▄       █████████████          ▄█             █▄
+           ██         ▄█▀     ▀█▄     ██         ██         ██▀█▄         ▄█▀
+           ██        ██         ██    ██         ██        ██  ▀██       ██▀
+           ██        ██         ██    ██         ██      ▄█▀     ██     ▀▀▀▀▀▀▀███
+           ██        ▀█▄       ▄█▀    ██         ██     ██▀       ▀█▄         ██▀
+            ██         ▀███████▀      █████████████    ███▄▄▄▄▄▄▄▄▄███       █▀
+
+
+
+            「你只能死一次，一定要死的轟轟烈烈。」
+
+            沒有人可以做一件事情直到永遠，
+            而一個人的生命也不是永生。
+
+            死亡給予了我們試著活下去的動力，
+            在那之前都應該竭盡所能的向著自己的夢邁進。
+
+            將自己的生命活得淋漓盡致才是最重要的；
+            不要將剛開始的序章放在頁尾。
+
+
+
+        -->
+        <meta name="description" content="A container limits content to a maximum width." />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Container - Tocas UI" />
+        <meta name="twitter:description" content="A container limits content to a maximum width." />
+        <meta name="twitter:image" content="https://tocas-ui.com/5.0/en-us/assets/images/og.png" />
+        <meta property="og:title" content="Container - Tocas UI" />
+        <meta property="og:type" content="article" />
+        <meta property="og:image" content="https://tocas-ui.com/5.0/en-us/assets/images/og.png" />
+        <meta property="og:url" content="https://tocas-ui.com/5.0/en-us/container.html" />
+        <meta property="og:image:width" content="1280" />
+        <meta property="og:image:height" content="720" />
+        <meta property="og:description" content="A container limits content to a maximum width." />
+        <link rel="icon" type="image/png" href="https://tocas-ui.com/5.0/en-us/assets/images/favicons/favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="https://tocas-ui.com/5.0/en-us/assets/images/favicons/favicon-194x194.png" sizes="194x194" />
+        <link rel="icon" type="image/png" href="https://tocas-ui.com/5.0/en-us/assets/images/favicons/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/png" href="https://tocas-ui.com/5.0/en-us/assets/images/favicons/android-chrome-192x192.png" sizes="192x192" />
+        <link rel="icon" type="image/png" href="https://tocas-ui.com/5.0/en-us/assets/images/favicons/favicon-16x16.png" sizes="16x16" />
+    </head>
+    <body>
+        <div class="穹頂">
+            <div class="界限容器">
+                <div class="穹頂-導航列">
+                    <div class="穹頂-導航列-左側">
+                        <a class="穹頂-導航列-項目 穹頂-導航列-項目_主要" href="./index.html">Tocas UI</a>
+                        <a class="穹頂-導航列-項目" href="./getting-started.html">Getting Started</a>
+                        <a class="穹頂-導航列-項目" href="./button.html">Components</a>
+                        <a class="穹頂-導航列-項目" href="./examples.html">Examples</a>
+                    </div>
+                    <div class="穹頂-導航列-右側">
+                        <button class="穹頂-導航列-項目" data-dropdown="dropdown-language">
+                            <span class="ts-flag is-america-flag"></span> English (US)
+                        </button>
+                        <div class="ts-dropdown" id="dropdown-language" data-position="bottom">
+                            
+                            <a class="item is-selected" href="./../en-us/container.html">
+                                <span class="ts-flag is-america-flag"></span> English (US)
+                            </a>
+                            
+                            <a class="item " href="./../zh-tw/container.html">
+                                <span class="ts-flag is-taiwan-flag"></span> 台灣正體
+                            </a>
+                            
+                        </div>
+                        <button class="穹頂-導航列-項目" data-dropdown="dropdown-version">
+                            <span class="ts-icon is-code-branch-icon"></span> v5.0
+                        </button>
+                        <div class="ts-dropdown" id="dropdown-version" data-position="bottom">
+                            
+                            <div class="header">Latest</div>
+                            
+                            <a class="item is-selected" >v5.0.1</a>
+                            
+                            <div class="divider"></div>
+                            
+                            <div class="header">Older releases</div>
+                            
+                            <a class="item " href="https://tocas-ui.com/4.2/zh-tw/index.html" >v4.2.5</a>
+                            
+                            <a class="item " href="https://v2.tocas-ui.com/" >v2.3.3</a>
+                            
+                            <div class="divider"></div>
+                            
+                        </div>
+                        <a class="穹頂-導航列-項目" href="https://github.com/teacat/tocas" target="_blank"><span class="ts-icon is-github-icon"></span> GitHub</a>
+                    </div>
+                </div>
+                <div class="穹頂-導航列 穹頂-導航列_手機的">
+                    <div class="穹頂-導航列-左側">
+                        <a class="穹頂-導航列-項目 穹頂-導航列-項目_主要" href="./index.html">Tocas UI</a>
+                    </div>
+                    <div class="穹頂-導航列-右側">
+                        <button class="穹頂-導航列-項目" data-dropdown="dropdown-language-mobile">
+                            <span class="ts-flag is-america-flag"></span> English (US)
+                        </button>
+                        <div class="ts-dropdown" id="dropdown-language-mobile" data-position="bottom">
+                            
+                            <a class="item is-selected" href="./../en-us/container.html">
+                                <span class="ts-flag is-america-flag"></span> English (US)
+                            </a>
+                            
+                            <a class="item " href="./../zh-tw/container.html">
+                                <span class="ts-flag is-taiwan-flag"></span> 台灣正體
+                            </a>
+                            
+                        </div>
+                        <button class="穹頂-導航列-項目 穹頂-導航列-項目_選單按鈕" aria-label='Hamburger Menu'>
+                            <span class="ts-icon is-bars-icon"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="穹頂-標題">
+                    <h1 class="穹頂-標題-主要">Container</h1>
+                    <div class="穹頂-標題-說明">A container limits content to a maximum width.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="主體">
+            <div class="界限容器">
+                <div class='主體-格局 主體-格局_容器範例的'>
+                    <!-- 側邊導覽 -->
+                    <div class="主體-格局-導覽">
+                        
+                        <div class="主體-格局-導覽-標題">Introduction</div>
+                        
+                        <a href="./getting-started.html" class="主體-格局-導覽-項目">
+                             Getting Started 
+                        </a>
+                        
+                        <a href="./colors.html" class="主體-格局-導覽-項目">
+                             Colors 
+                        </a>
+                        
+                        <a href="./responsive.html" class="主體-格局-導覽-項目">
+                             Responsive 
+                        </a>
+                        
+                        <a href="./utilities.html" class="主體-格局-導覽-項目">
+                             Utilities 
+                        </a>
+                         
+                        <div class="主體-格局-導覽-標題">Layout</div>
+                        
+                        <a href="./container.html" class="主體-格局-導覽-項目 主體-格局-導覽-項目_啟用的">
+                             Container  
+                        </a>
+                        
+                        <a href="./control.html" class="主體-格局-導覽-項目">
+                             Control  
+                        </a>
+                        
+                        <a href="./grid.html" class="主體-格局-導覽-項目">
+                             Grid  
+                        </a>
+                        
+                        <a href="./wrap.html" class="主體-格局-導覽-項目">
+                             Wrap  
+                        </a>
+                         
+                        <div class="主體-格局-導覽-標題">Form</div>
+                        
+                        <a href="./button.html" class="主體-格局-導覽-項目">
+                             Button  
+                        </a>
+                        
+                        <a href="./checkbox.html" class="主體-格局-導覽-項目">
+                             Checkbox  
+                        </a>
+                        
+                        <a href="./fieldset.html" class="主體-格局-導覽-項目">
+                             Fieldset  
+                        </a>
+                        
+                        <a href="./file.html" class="主體-格局-導覽-項目">
+                             File  
+                        </a>
+                        
+                        <a href="./input.html" class="主體-格局-導覽-項目">
+                             Input  
+                        </a>
+                        
+                        <a href="./radio.html" class="主體-格局-導覽-項目">
+                             Radio  
+                        </a>
+                        
+                        <a href="./select.html" class="主體-格局-導覽-項目">
+                             Select  
+                        </a>
+                        
+                        <a href="./selection.html" class="主體-格局-導覽-項目">
+                             Selection  
+                        </a>
+                        
+                        <a href="./switch.html" class="主體-格局-導覽-項目">
+                             Switch  
+                        </a>
+                         
+                        <div class="主體-格局-導覽-標題">Paragraphy</div>
+                        
+                        <a href="./box.html" class="主體-格局-導覽-項目">
+                             Box  
+                        </a>
+                        
+                        <a href="./content.html" class="主體-格局-導覽-項目">
+                             Content  
+                        </a>
+                        
+                        <a href="./divider.html" class="主體-格局-導覽-項目">
+                             Divider  
+                        </a>
+                        
+                        <a href="./header.html" class="主體-格局-導覽-項目">
+                             Header  
+                        </a>
+                        
+                        <a href="./quote.html" class="主體-格局-導覽-項目">
+                             Quote  
+                        </a>
+                        
+                        <a href="./text.html" class="主體-格局-導覽-項目">
+                             Text  
+                        </a>
+                         
+                        <div class="主體-格局-導覽-標題">Feedback</div>
+                        
+                        <a href="./blankslate.html" class="主體-格局-導覽-項目">
+                             Blankslate  
+                        </a>
+                        
+                        <a href="./gauge.html" class="主體-格局-導覽-項目">
+                             Gauge  
+                        </a>
+                        
+                        <a href="./loading.html" class="主體-格局-導覽-項目">
+                             Loading  
+                        </a>
+                        
+                        <a href="./mask.html" class="主體-格局-導覽-項目">
+                             Mask  
+                        </a>
+                        
+                        <a href="./notice.html" class="主體-格局-導覽-項目">
+                             Notice  
+                        </a>
+                        
+                        <a href="./procedure.html" class="主體-格局-導覽-項目">
+                             Procedure  
+                        </a>
+                        
+                        <a href="./progress.html" class="主體-格局-導覽-項目">
+                             Progress  
+                        </a>
+                        
+                        <a href="./snackbar.html" class="主體-格局-導覽-項目">
+                             Snackbar  
+                        </a>
+                         
+                        <div class="主體-格局-導覽-標題">Interaction</div>
+                        
+                        <a href="./accordion.html" class="主體-格局-導覽-項目">
+                             Accordion  
+                        </a>
+                        
+                        <a href="./dropdown.html" class="主體-格局-導覽-項目">
+                             Dropdown  
+                        </a>
+                        
+                        <a href="./modal.html" class="主體-格局-導覽-項目">
+                             Modal  
+                        </a>
+                        
+                        <a href="./popover.html" class="主體-格局-導覽-項目">
+                             Popover  
+                        </a>
+                        
+                        <a href="./tooltip.html" class="主體-格局-導覽-項目">
+                             Tooltip  
+                        </a>
+                         
+                        <div class="主體-格局-導覽-標題">Media</div>
+                        
+                        <a href="./flag.html" class="主體-格局-導覽-項目">
+                             Flag  
+                        </a>
+                        
+                        <a href="./icon.html" class="主體-格局-導覽-項目">
+                             Icon  
+                        </a>
+                        
+                        <a href="./iconset.html" class="主體-格局-導覽-項目">
+                             Iconset  
+                        </a>
+                        
+                        <a href="./image.html" class="主體-格局-導覽-項目">
+                             Image  
+                        </a>
+                        
+                        <a href="./imageset.html" class="主體-格局-導覽-項目">
+                             Imageset  
+                        </a>
+                         
+                        <div class="主體-格局-導覽-標題">Data</div>
+                        
+                        <a href="./badge.html" class="主體-格局-導覽-項目">
+                             Badge  
+                        </a>
+                        
+                        <a href="./checklist.html" class="主體-格局-導覽-項目">
+                             Checklist  
+                        </a>
+                        
+                        <a href="./chip.html" class="主體-格局-導覽-項目">
+                             Chip  
+                        </a>
+                        
+                        <a href="./close.html" class="主體-格局-導覽-項目">
+                             Close  
+                        </a>
+                        
+                        <a href="./conversation.html" class="主體-格局-導覽-項目">
+                             Conversation  
+                        </a>
+                        
+                        <a href="./list.html" class="主體-格局-導覽-項目">
+                             List  
+                        </a>
+                        
+                        <a href="./meta.html" class="主體-格局-導覽-項目">
+                             Meta  
+                        </a>
+                        
+                        <a href="./rating.html" class="主體-格局-導覽-項目">
+                             Rating  
+                        </a>
+                        
+                        <a href="./statistic.html" class="主體-格局-導覽-項目">
+                             Statistic  
+                        </a>
+                        
+                        <a href="./table.html" class="主體-格局-導覽-項目">
+                             Table  
+                        </a>
+                        
+                        <a href="./timeline.html" class="主體-格局-導覽-項目">
+                             Timeline  
+                        </a>
+                         
+                        <div class="主體-格局-導覽-標題">Navigation</div>
+                        
+                        <a href="./breadcrumb.html" class="主體-格局-導覽-項目">
+                             Breadcrumb  
+                        </a>
+                        
+                        <a href="./menu.html" class="主體-格局-導覽-項目">
+                             Menu  
+                        </a>
+                        
+                        <a href="./pagination.html" class="主體-格局-導覽-項目">
+                             Pagination  
+                        </a>
+                        
+                        <a href="./tab.html" class="主體-格局-導覽-項目">
+                             Tab  
+                        </a>
+                         
+                        <div class="主體-格局-導覽-標題">Application</div>
+                        
+                        <a href="./app-center.html" class="主體-格局-導覽-項目">
+                             App Center  
+                        </a>
+                        
+                        <a href="./app-drawer.html" class="主體-格局-導覽-項目">
+                             App Drawer  
+                        </a>
+                        
+                        <a href="./app-layout.html" class="主體-格局-導覽-項目">
+                             App Layout  
+                        </a>
+                        
+                        <a href="./app-navbar.html" class="主體-格局-導覽-項目">
+                             App Navbar  
+                        </a>
+                        
+                        <a href="./app-sidebar.html" class="主體-格局-導覽-項目">
+                             App Sidebar  
+                        </a>
+                        
+                        <a href="./app-topbar.html" class="主體-格局-導覽-項目">
+                             App Topbar  
+                        </a>
+                         
+                        <div class="主體-格局-導覽-關閉按鈕">
+                            <span class="ts-icon is-circle-xmark-icon"></span>
+                        </div>
+                    </div>
+                    <!-- / 側邊導覽 -->
+
+                    <!-- 遮罩 -->
+                    <div class="主體-格局-遮罩"></div>
+                    <!-- / 遮罩 -->
+
+                    <main class="主體-格局-內容">
+                        <!-- 文章工具列 -->
+                        
+                        <!-- / 文章工具列 -->
+
+                        <!-- 概要 -->
+                        
+                        <!-- / 概要 -->
+
+                        <!-- 章節 -->
+                        
+                        <div class="主體-格局-內容-標題 主體-格局-內容-標題_章節">Description</div>
+
+                        
+                        <div class="主體-格局-內容-文字"><p>A container limits the content width and center it on the screen. It can also contain a <a href="./grid.html">Grid</a>.</p>
+
+<div class="ts-box">
+    <table class="ts-table is-definition is-celled">
+        <thead>
+            <tr>
+                <th class="is-collapsed"></th>
+                <th>1180px</th>
+                <th>910px</th>
+                <th>720px</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="is-collapsed">Class</td>
+                <td class="is-empty"></td>
+                <td>
+                    <span class="ts-text is-code">is-narrow</span>
+                </td>
+                <td>
+                    <span class="ts-text is-code">is-very-narrow</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="is-collapsed">Name</td>
+                <td>
+                    Default
+                </td>
+                <td>
+                    Narrow
+                </td>
+                <td>
+                    Very Narrow
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+                        
+
+                        <!-- 國家旗幟 -->
+                        
+                        <!-- / 國家旗幟 -->
+
+                        <!-- 段落 -->
+                        
+                        <!-- / 段落 -->
+                        
+                        <div class="主體-格局-內容-標題 主體-格局-內容-標題_章節">Structure</div>
+
+                        
+
+                        <!-- 國家旗幟 -->
+                        
+                        <!-- / 國家旗幟 -->
+
+                        <!-- 段落 -->
+                        
+                        <div class="主體-格局-內容-單個範例">
+                            <a class="主體-格局-內容-單個範例-錨點" id="container"></a>
+                            <div class="主體-格局-內容-單個範例-文字-標題 主體-格局-內容-單個範例-文字-標題_段落">
+                                <a href="#container" class="主體-格局-內容-單個範例-文字-標題-連結">Container</a>
+                                
+                                <button class="主體-格局-內容-單個範例-文字-標題-切換原始碼"><span class="ts-icon is-code-icon"></span> Code</button>
+                                
+                            </div>
+                            <div class="主體-格局-內容-單個範例-文字"><p>A standard container is <code>1180px</code> wide by default.</p>
+</div>
+
+                            <!-- 範例與程式碼 -->
+                            
+                            <div class="主體-格局-內容-單個範例-範例">
+                                <div class="主體-格局-內容-單個範例-範例-實際效果"><div class="ts-container">
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa strong. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede link mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+</div>
+</div>
+                                <div class="主體-格局-內容-單個範例-範例-程式碼"><pre><code class="hljs">&lt;<span class="hljs-selector-tag">div</span> class=<span class="hljs-string">"<mark>ts-container</mark>"</span>&gt;
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa <span class="hljs-selector-tag">strong</span>. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet <span class="hljs-selector-tag">a</span>, venenatis vitae, justo. Nullam dictum felis eu pede link mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+&lt;/div&gt;</code></pre>
+</div>
+                            </div>
+                            
+                            <!-- / 範例與程式碼 -->
+
+                            <!-- 附帶程式片段 -->
+                            
+                            <!-- / 附帶程式片段 -->
+
+                            <!-- 圖示組 -->
+                            
+                            <!-- / 圖示組 -->
+                        </div>
+                        
+                        <!-- / 段落 -->
+                        
+                        <div class="主體-格局-內容-標題 主體-格局-內容-標題_章節">Variations</div>
+
+                        
+
+                        <!-- 國家旗幟 -->
+                        
+                        <!-- / 國家旗幟 -->
+
+                        <!-- 段落 -->
+                        
+                        <div class="主體-格局-內容-單個範例">
+                            <a class="主體-格局-內容-單個範例-錨點" id="narrow"></a>
+                            <div class="主體-格局-內容-單個範例-文字-標題 主體-格局-內容-單個範例-文字-標題_段落">
+                                <a href="#narrow" class="主體-格局-內容-單個範例-文字-標題-連結">Narrow</a>
+                                
+                                <button class="主體-格局-內容-單個範例-文字-標題-切換原始碼"><span class="ts-icon is-code-icon"></span> Code</button>
+                                
+                            </div>
+                            <div class="主體-格局-內容-單個範例-文字"><p>A container can reduce its maximum width.</p>
+</div>
+
+                            <!-- 範例與程式碼 -->
+                            
+                            <div class="主體-格局-內容-單個範例-範例">
+                                <div class="主體-格局-內容-單個範例-範例-實際效果"><div class="ts-container is-narrow">
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa strong. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede link mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+</div>
+<div class="ts-space"></div>
+<div class="ts-space"></div>
+<div class="ts-container is-very-narrow">
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa strong. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede link mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+</div>
+</div>
+                                <div class="主體-格局-內容-單個範例-範例-程式碼"><pre><code class="hljs">&lt;<span class="hljs-selector-tag">div</span> class=<span class="hljs-string">"ts-container <mark>is-narrow</mark>"</span>&gt;
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa <span class="hljs-selector-tag">strong</span>. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet <span class="hljs-selector-tag">a</span>, venenatis vitae, justo. Nullam dictum felis eu pede link mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+&lt;/div&gt;
+&lt;<span class="hljs-selector-tag">div</span> class=<span class="hljs-string">"ts-container <mark>is-very-narrow</mark>"</span>&gt;
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa <span class="hljs-selector-tag">strong</span>. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet <span class="hljs-selector-tag">a</span>, venenatis vitae, justo. Nullam dictum felis eu pede link mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+&lt;/div&gt;</code></pre>
+</div>
+                            </div>
+                            
+                            <!-- / 範例與程式碼 -->
+
+                            <!-- 附帶程式片段 -->
+                            
+                            <!-- / 附帶程式片段 -->
+
+                            <!-- 圖示組 -->
+                            
+                            <!-- / 圖示組 -->
+                        </div>
+                        
+                        <div class="主體-格局-內容-單個範例">
+                            <a class="主體-格局-內容-單個範例-錨點" id="padded"></a>
+                            <div class="主體-格局-內容-單個範例-文字-標題 主體-格局-內容-單個範例-文字-標題_段落">
+                                <a href="#padded" class="主體-格局-內容-單個範例-文字-標題-連結">Padded</a>
+                                
+                                <button class="主體-格局-內容-單個範例-文字-標題-切換原始碼"><span class="ts-icon is-code-icon"></span> Code</button>
+                                
+                            </div>
+                            <div class="主體-格局-內容-單個範例-文字"><p>A container keeps a distance from the screen edge that can be adjusted. Use smaller padding on mobile devices to maximize space with <a href="./responsive.html">Responsive</a>.</p>
+</div>
+
+                            <!-- 範例與程式碼 -->
+                            
+                            <div class="主體-格局-內容-單個範例-範例">
+                                <div class="主體-格局-內容-單個範例-範例-實際效果"><div class="ts-box" style="background: var(--ts-gray-300)">
+    <div class="ts-container is-padded">
+        <div class="ts-box has-padded">
+            Padded edge
+        </div>
+    </div>
+    <div class="ts-space"></div>
+    <div class="ts-container">
+        <div class="ts-box has-padded">
+            Default edge
+        </div>
+    </div>
+    <div class="ts-space"></div>
+    <div class="ts-container is-fitted">
+        <div class="ts-box has-padded">
+            No edge
+        </div>
+    </div>
+</div>
+</div>
+                                <div class="主體-格局-內容-單個範例-範例-程式碼"><pre><code class="hljs">&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"<a href="./box.html">ts-box</a>"</span> style=<span class="hljs-string">"background: var(--ts-gray-300)"</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"ts-container <mark>is-padded</mark>"</span>&gt;
+        &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"<a href="./box.html">ts-box</a> <a href="./utilities.html">has-padded</a>"</span>&gt;
+            Padded edge
+        &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"ts-container"</span>&gt;
+        &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"<a href="./box.html">ts-box</a> <a href="./utilities.html">has-padded</a>"</span>&gt;
+            Default edge
+        &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"ts-container <mark>is-fitted</mark>"</span>&gt;
+        &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"<a href="./box.html">ts-box</a> <a href="./utilities.html">has-padded</a>"</span>&gt;
+            No edge
+        &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;</code></pre>
+</div>
+                            </div>
+                            
+                            <!-- / 範例與程式碼 -->
+
+                            <!-- 附帶程式片段 -->
+                            
+                            <!-- / 附帶程式片段 -->
+
+                            <!-- 圖示組 -->
+                            
+                            <!-- / 圖示組 -->
+                        </div>
+                        
+                        <!-- / 段落 -->
+                        
+                        <!-- / 章節 -->
+
+                        <!-- HTML 屬性 -->
+                        
+                        <!-- / HTML 屬性 -->
+
+                        <!-- 變數屬性 -->
+                        
+                        <div class="主體-格局-內容-標題 主體-格局-內容-標題_章節">CSS Variables</div>
+                        <div class="主體-格局-內容-變數屬性">
+                            <div class="ts-box">
+                                <table class="ts-table is-definition is-celled">
+                                    <thead>
+                                        <tr>
+                                            <th class="is-collapsed"></th>
+                                             
+                                            <th>Description</th>
+                                            
+                                            <th class="is-collapsed">Default Value</th>
+                                             
+                                            <th class="is-collapsed">Target</th>
+                                            
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        
+                                        <tr>
+                                            <td class="is-collapsed">--width</td>
+                                             
+                                            <td>
+                                                <p>The width of the container.</p>
+ 
+                                            </td>
+                                            
+                                            <td class="is-collapsed"><code>1180px</code></td>
+                                             
+                                            <td class="is-collapsed"><code>.ts-container</code></td>
+                                            
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td class="is-collapsed">--gap</td>
+                                             
+                                            <td>
+                                                <p>The distance to edge of the screen.</p>
+ 
+                                            </td>
+                                            
+                                            <td class="is-collapsed"><code>1rem</code></td>
+                                             
+                                            <td class="is-collapsed"><code>.ts-container</code></td>
+                                            
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        
+                        <!-- / 變數屬性 -->
+
+                        <!-- 額外連結 -->
+                        
+                        <!-- / 額外連結 -->
+
+                        
+                    </main>
+
+                    <!-- 側邊索引 -->
+                    <div class="主體-格局-索引">
+                        
+                        <div class="主體-格局-索引-標題">Description</div>
+                        <div class="主體-格局-索引-清單">
+                            
+                        </div>
+                        
+                        <div class="主體-格局-索引-標題">Structure</div>
+                        <div class="主體-格局-索引-清單">
+                            
+                            <a class="主體-格局-索引-清單-項目" href="#container">
+                                Container <span class="主體-格局-索引-清單-項目-英文">ts-container</span>
+                            </a>
+                            
+                        </div>
+                        
+                        <div class="主體-格局-索引-標題">Variations</div>
+                        <div class="主體-格局-索引-清單">
+                            
+                            <a class="主體-格局-索引-清單-項目" href="#narrow">
+                                Narrow <span class="主體-格局-索引-清單-項目-英文">is-narrow</span>
+                            </a>
+                            
+                            <a class="主體-格局-索引-清單-項目" href="#padded">
+                                Padded <span class="主體-格局-索引-清單-項目-英文">is-padded</span>
+                            </a>
+                            
+                        </div>
+                        
+                        <button class="主體-格局-索引-回到頂部"><span class="ts-icon is-arrow-up-icon"></span> Back To Top</button>
+                    </div>
+                    <!-- / 側邊索引 -->
+                </div>
+            </div>
+        </div>
+
+        <div class="頁腳">
+            <div class="界限容器">
+                <div class="頁腳-導航列">
+                    <button class="頁腳-導航列-項目 頁腳-導航列-項目_回到頂部"><span class="ts-icon is-arrow-up-icon"></span> Back to Top</button>
+                    <a class="頁腳-導航列-項目" href="https://github.com/teacat/tocas" target="_blank">GitHub</a>
+                    <a class="頁腳-導航列-項目" href="./getting-started.html">Getting Started</a>
+                    <a class="頁腳-導航列-項目" href="./button.html">Components</a>
+                    <a class="頁腳-導航列-項目" href="./examples.html">Examples</a>
+                </div>
+                <div class="頁腳-格局">
+                    <div class="頁腳-格局-資訊">
+                        <div class="頁腳-格局-資訊-文字">Designed by Yami Odymel from <span class="ts-flag is-taiwan-flag is-small"></span> Taiwan, along with the ❤️ from <a href="https://github.com/teacat/tocas/graphs/contributors" target="_blank">contributors</a>. The source code is licensed under <a href="https://github.com/teacat/tocas/blob/master/LICENSE" target="_blank">MIT</a>, and the documentation is under <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.zh_TW" target="_blank">CC 0</a> public domain. Feel free to use, share, or contribute. Tocas UI is a design system for <a href="https://caris.events" target="_blank">Caris Events</a>, part of <a href="https://sorae.co" target="_blank">Sorae & Co., Ltd.</a></div>
+                        <div class="頁腳-格局-資訊-翻譯者">Translators: <a href="https://twitter.com/YamiOdymel" target="_blank">Yami Odymel</a></div>
+                    </div>
+                    <div class="頁腳-格局-商標">
+                        <img class="頁腳-格局-商標-圖片" src="./assets/images/caris-events.svg" alt='Trademark of the owner of Tocas UI' />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

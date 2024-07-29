@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./assets/style.css" />
+        <link rel="stylesheet" href="./assets/index.css" />
+        <link rel="stylesheet" href="./assets/highlight.css" />
+        <link rel="stylesheet" href="./assets/tocas/tocas.min.css" />
+        <script src="./assets/tocas/tocas.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet" />
+        <link rel="canonical" href="https://tocas-ui.com/5.0/en-us/index.html" />
+        <script src="./assets/script.js"></script>
+        <title>Tocas UI</title>
+        <!--
+
+
+
+        ▄▄▄        ▄▄████▄
+      ▄█████▄    ▄██▀    ██
+      ▀█▄   ██▄ ██▀      ██
+       ▀██▄▄▄████   ▄▄▄██▀
+          ▀▀▀████▀▀▀▀▀
+             ██
+            ██          ▄█████▄       █████████████          ▄█             █▄
+           ██         ▄█▀     ▀█▄     ██         ██         ██▀█▄         ▄█▀
+           ██        ██         ██    ██         ██        ██  ▀██       ██▀
+           ██        ██         ██    ██         ██      ▄█▀     ██     ▀▀▀▀▀▀▀███
+           ██        ▀█▄       ▄█▀    ██         ██     ██▀       ▀█▄         ██▀
+            ██         ▀███████▀      █████████████    ███▄▄▄▄▄▄▄▄▄███       █▀
+
+
+
+            「你只能死一次，一定要死的轟轟烈烈。」
+
+            沒有人可以做一件事情直到永遠，
+            而一個人的生命也不是永生。
+
+            死亡給予了我們試著活下去的動力，
+            在那之前都應該竭盡所能的向著自己的夢邁進。
+
+            將自己的生命活得淋漓盡致才是最重要的；
+            不要將剛開始的序章放在頁尾。
+
+
+
+        -->
+        <meta name="description" content="以最快最直覺的方式，建構多樣的網站與漸進式網路應用程式介面。" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Tocas UI" />
+        <meta name="twitter:description" content="以最快最直覺的方式，建構多樣的網站與漸進式網路應用程式介面。" />
+        <meta name="twitter:image" content="https://tocas-ui.com/5.0/en-us/assets/images/og.png" />
+        <meta property="og:title" content="Tocas UI" />
+        <meta property="og:type" content="article" />
+        <meta property="og:image" content="https://tocas-ui.com/5.0/en-us/assets/images/og.png" />
+        <meta property="og:url" content="https://tocas-ui.com/5.0/en-us/index.html" />
+        <meta property="og:image:width" content="1280" />
+        <meta property="og:image:height" content="720" />
+        <meta property="og:description" content="以最快最直覺的方式，建構多樣的網站與漸進式網路應用程式介面。" />
+        <link rel="icon" type="image/png" href="https://tocas-ui.com/5.0/en-us/assets/images/favicons/favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="https://tocas-ui.com/5.0/en-us/assets/images/favicons/favicon-194x194.png" sizes="194x194" />
+        <link rel="icon" type="image/png" href="https://tocas-ui.com/5.0/en-us/assets/images/favicons/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/png" href="https://tocas-ui.com/5.0/en-us/assets/images/favicons/android-chrome-192x192.png" sizes="192x192" />
+        <link rel="icon" type="image/png" href="https://tocas-ui.com/5.0/en-us/assets/images/favicons/favicon-16x16.png" sizes="16x16" />
+    </head>
+    <body>
+        <div class="穹頂">
+            <div class="界限容器">
+                <div class="穹頂-導航列">
+                    <div class="穹頂-導航列-左側">
+                        <a class="穹頂-導航列-項目 穹頂-導航列-項目_主要" href="./index.html">Tocas UI</a>
+                        <a class="穹頂-導航列-項目" href="./getting-started.html">Getting Started</a>
+                        <a class="穹頂-導航列-項目" href="./button.html">Components</a>
+                        <a class="穹頂-導航列-項目" href="./examples.html">Examples</a>
+                    </div>
+                    <div class="穹頂-導航列-右側">
+                        <button class="穹頂-導航列-項目" data-dropdown="dropdown-language">
+                            <span class="ts-flag is-america-flag"></span> English (US)
+                        </button>
+                        <div class="ts-dropdown" id="dropdown-language" data-position="bottom">
+                            
+                            <a class="item is-selected" href="./../en-us/index.html">
+                                <span class="ts-flag is-america-flag"></span> English (US)
+                            </a>
+                            
+                            <a class="item " href="./../zh-tw/index.html">
+                                <span class="ts-flag is-taiwan-flag"></span> 台灣正體
+                            </a>
+                            
+                        </div>
+                        <button class="穹頂-導航列-項目" data-dropdown="dropdown-version">
+                            <span class="ts-icon is-code-branch-icon"></span> v5.0
+                        </button>
+                        <div class="ts-dropdown" id="dropdown-version" data-position="bottom">
+                            
+                            <div class="header">Latest</div>
+                            
+                            <a class="item is-selected" href="">v5.0.1</a>
+                            
+                            <div class="divider"></div>
+                            
+                            <div class="header">Older releases</div>
+                            
+                            <a class="item " href="https://tocas-ui.com/4.2/zh-tw/index.html">v4.2.5</a>
+                            
+                            <a class="item " href="https://v2.tocas-ui.com/">v2.3.3</a>
+                            
+                            <div class="divider"></div>
+                            
+                        </div>
+                        <a class="穹頂-導航列-項目" href="https://github.com/teacat/tocas" target="_blank"><span class="ts-icon is-github-icon"></span> GitHub</a>
+                    </div>
+                </div>
+                <div class="穹頂-導航列 穹頂-導航列_手機的">
+                    <div class="穹頂-導航列-右側">
+                        <button class="穹頂-導航列-項目" data-dropdown="dropdown-language-mobile">
+                            <span class="ts-flag is-america-flag"></span> English (US)
+                        </button>
+                        <div class="ts-dropdown" id="dropdown-language-mobile" data-position="bottom">
+                            
+                            <a class="item is-selected" href="./../en-us/index.html">
+                                <span class="ts-flag is-america-flag"></span> English (US)
+                            </a>
+                            
+                            <a class="item " href="./../zh-tw/index.html">
+                                <span class="ts-flag is-taiwan-flag"></span> 台灣正體
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="穹頂-行動號召">
+                    <div class="穹頂-行動號召-容器">
+                        <div class="穹頂-行動號召-容器-標題">Tocas UI</div>
+                        <div class="穹頂-行動號召-容器-副標題">Build diverse websites and progressive web app interfaces quickly and intuitively.</div>
+                        <a href="./getting-started.html" class="穹頂-行動號召-容器-動作">Get Started</a>
+                        <a href="./examples.html" class="穹頂-行動號召-容器-動作 穹頂-行動號召-容器-動作_次要的">See Examples</a>
+                    </div>
+                </div>
+
+                <div class="進階宣傳-彈性格局">
+                    <div class="進階宣傳-彈性格局-標題">Coming Soon</div>
+                    <div class="進階宣傳-彈性格局-內容">Utilize Tocas Templates component library to quickly assemble interfaces.</div>
+                    <!--<a href="#!" class="進階宣傳-彈性格局-連結" target="_blank">
+                        <span class="ts-icon is-chevron-right-icon"></span>
+                    </a>-->
+                </div>
+            </div>
+        </div>
+
+        <div class="主要內容">
+            <div class="界限容器">
+                <div class="主要內容-贊助者 主要內容-內容區塊">
+                    <div class="主要內容-贊助者-標題 主要內容-內容區塊-標題">This project is sponsored by the following contributors.</div>
+                    <div class="主要內容-贊助者-清單">
+                        <div class="主要內容-贊助者-清單-項目">
+                            <img src="./assets/images/donators/Mac Taylor.jpg" class="主要內容-贊助者-清單-項目-頭像" />
+                            <div class="主要內容-贊助者-清單-項目-名稱">Mac Taylor</div>
+                        </div>
+                        <div class="主要內容-贊助者-清單-項目">
+                            <img src="./assets/images/donators/Sciuridae Li.jpg" class="主要內容-贊助者-清單-項目-頭像" />
+                            <div class="主要內容-贊助者-清單-項目-名稱">Sciuridae Li</div>
+                        </div>
+                        <div class="主要內容-贊助者-清單-項目">
+                            <img src="./assets/images/donators/Yan-K.jpg" class="主要內容-贊助者-清單-項目-頭像" />
+                            <div class="主要內容-贊助者-清單-項目-名稱">Yan-K</div>
+                        </div>
+                        <div class="主要內容-贊助者-清單-項目">
+                            <img src="./assets/images/donators/李政皇.jpg" class="主要內容-贊助者-清單-項目-頭像" />
+                            <div class="主要內容-贊助者-清單-項目-名稱">李政皇</div>
+                        </div>
+                        <div class="主要內容-贊助者-清單-項目">
+                            <img src="./assets/images/donators/Fan Kangtai.jpg" class="主要內容-贊助者-清單-項目-頭像" />
+                            <div class="主要內容-贊助者-清單-項目-名稱">乾太₍₍ ◝(･◡･)◟ ⁾⁾</div>
+                        </div>
+                        <div class="主要內容-贊助者-清單-項目">
+                            <img src="./assets/images/donators/Rex Tseng.jpg" class="主要內容-贊助者-清單-項目-頭像" />
+                            <div class="主要內容-贊助者-清單-項目-名稱">Leko</div>
+                        </div>
+                        <div class="主要內容-贊助者-清單-項目">
+                            <img src="./assets/images/donators/Bobby Ho.jpg" class="主要內容-贊助者-清單-項目-頭像" />
+                            <div class="主要內容-贊助者-清單-項目-名稱">Bobby Ho</div>
+                        </div>
+                        <div class="主要內容-贊助者-清單-項目">
+                            <img src="./assets/images/donators/Coin.jpg" class="主要內容-贊助者-清單-項目-頭像" />
+                            <div class="主要內容-贊助者-清單-項目-名稱">Coin</div>
+                        </div>
+                        <div class="主要內容-贊助者-清單-項目">
+                            <img src="./assets/images/donators/SpaceTimeHalf.jpg" class="主要內容-贊助者-清單-項目-頭像" />
+                            <div class="主要內容-贊助者-清單-項目-名稱">SpaceTimeHalf</div>
+                        </div>
+                        <div class="主要內容-贊助者-清單-項目">
+                            <img src="./assets/images/donators/methratton.jpg" class="主要內容-贊助者-清單-項目-頭像" />
+                            <div class="主要內容-贊助者-清單-項目-名稱">methratton</div>
+                        </div>
+                        <div class="主要內容-贊助者-清單-項目">
+                            <img src="./assets/images/donators/Sean Wei.jpg" class="主要內容-贊助者-清單-項目-頭像" />
+                            <div class="主要內容-贊助者-清單-項目-名稱">Sean Wei</div>
+                        </div>
+                        <div class="主要內容-贊助者-清單-項目">
+                            <img src="./assets/images/donators/Jonathan Goh.jpg" class="主要內容-贊助者-清單-項目-頭像" />
+                            <div class="主要內容-贊助者-清單-項目-名稱">Jonathan Goh</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="主要內容-特色說明 主要內容-內容區塊">
+                    <div class="主要內容-特色說明-項目">
+                        <div class="主要內容-特色說明-項目-標題">No jQuery dependency.</div>
+                        <div class="主要內容-特色說明-項目-說明">
+                            No unnecessary network bandwidth consumption; Tocas UI aims to reduce webpage load.
+                        </div>
+                    </div>
+                    <div class="主要內容-特色說明-項目">
+                        <div class="主要內容-特色說明-項目-標題">No npm or Webpack.</div>
+                        <div class="主要內容-特色說明-項目-說明">
+                            No complicated setup required—simply copy our HTML style tags into your webpage, just like in the good old days.
+                        </div>
+                    </div>
+                    <div class="主要內容-特色說明-項目">
+                        <div class="主要內容-特色說明-項目-標題">Easy-to-understand.</div>
+                        <div class="主要內容-特色說明-項目-說明">
+                            Easily accessible and understandable documentation, even if you haven't used Bootstrap, Bulma, or Semantic UI before.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="主要內容-內容區塊">
+                    <div class="主要內容-內容區塊-標題">Simple and intuitive design.</div>
+                    <div class="主要內容-內容區塊-說明">Minimal distractions. A moment of calm amidst the chaos of the Internet.</div>
+                    <div class="主要內容-內容區塊-藝廊格局">
+                        <div class="主要內容-內容區塊-藝廊格局-主要">
+                            <div class="ts-grid is-relaxed">
+                                <!-- 左側 -->
+                                <div class="column is-4-wide">
+                                    <!-- 圖片卡片 -->
+                                    <div class="ts-header">Image Card</div>
+                                    <div class="ts-space"></div>
+                                    <div class="ts-box">
+                                        <img class="ts-image" src="./assets/images/16-9.png" />
+                                        <div class="ts-content">
+                                            <div class="ts-header is-heavy">A delicious cake!</div>
+                                            <p>Order online and receive a limited edition eco-friendly bag as a special bonus.</p>
+                                        </div>
+                                    </div>
+                                    <!-- / 圖片卡片 -->
+                                    <div class="ts-space is-large"></div>
+                                    <!-- 按鈕 -->
+                                    <div class="ts-header">Buttons</div>
+                                    <div class="ts-space is-small"></div>
+                                    <div class="ts-grid is-3-columns">
+                                        <div class="column">
+                                            <button class="ts-button is-fluid">Submit</button>
+                                        </div>
+                                        <div class="column">
+                                            <button class="ts-button is-fluid is-secondary">Cancel</button>
+                                        </div>
+                                        <div class="column">
+                                            <button class="ts-button is-fluid is-outlined is-negative">Delete</button>
+                                        </div>
+                                    </div>
+                                    <!-- / 按鈕 -->
+                                    <div class="ts-space is-large"></div>
+
+                                </div>
+                                <!-- / 左側 -->
+
+                                <!-- 中間 -->
+                                <div class="column is-8-wide">
+                                    <!-- 統計數據 -->
+                                    <div class="ts-header">Statistics</div>
+                                    <div class="ts-space"></div>
+                                    <div class="ts-grid is-2-columns">
+                                        <div class="column">
+                                            <div class="ts-box">
+                                                <div class="ts-content">
+                                                    <div class="ts-statistic">
+                                                        <div class="value">42,689</div>
+                                                        <div class="comparison is-increased">32</div>
+                                                    </div>
+                                                    Monthly Visitors
+                                                </div>
+                                                <div class="symbol">
+                                                    <span class="ts-icon is-eye-icon"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <div class="ts-box">
+                                                <div class="ts-content">
+                                                    <div class="ts-statistic">
+                                                        <div class="value">8,652</div>
+                                                        <div class="comparison is-increased">351</div>
+                                                    </div>
+                                                    Total Users
+                                                </div>
+                                                <div class="symbol">
+                                                    <span class="ts-icon is-users-icon"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- / 統計數據 -->
+                                    <div class="ts-space is-large"></div>
+                                    <!-- 導航列 -->
+                                    <div class="ts-header">Navbar</div>
+                                    <div class="ts-space"></div>
+                                    <div class="ts-box">
+                                        <div class="ts-content is-dense">
+                                            <div class="ts-app-navbar is-indicated is-dense is-fluid">
+                                                <a href="#!" class="item">
+                                                    <div class="ts-icon is-user-icon"></div>
+                                                    <div class="label">User</div>
+                                                </a>
+                                                <a href="#!" class="item">
+                                                    <div class="ts-icon is-house-icon"></div>
+                                                    <div class="label">Home</div>
+                                                </a>
+                                                <a href="#!" class="item is-active">
+                                                    <div class="ts-icon is-newspaper-icon"></div>
+                                                    <div class="label">News</div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- / 導航列 -->
+                                    <div class="ts-space is-large"></div>
+                                    <!-- 表格 -->
+                                    <div class="ts-header">Table</div>
+                                    <div class="ts-space"></div>
+                                    <div class="ts-box">
+                                        <table class="ts-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>#</th>
+                                                    <th>Name</th>
+                                                    <th>Common</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Flat Bank</td>
+                                                    <td>半音金庫</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>Sorae & Co., Ltd.</td>
+                                                    <td>對空音商事株式会社</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>Caris Events</td>
+                                                    <td>カリス・イベント</td>
+                                                </tr>
+                                            </tbody>
+                                            <tfoot>
+                                                <tr>
+                                                    <th colspan="3">Total Count: 3</th>
+                                                </tr>
+                                            </tfoot>
+                                        </table>
+                                    </div>
+                                    <!-- / 表格 -->
+                                </div>
+                                <!-- / 中間 -->
+
+                                <!-- 右側 -->
+                                <div class="column is-4-wide">
+                                    <!-- 導覽標記 -->
+                                    <div class="ts-header">Breadcrumb</div>
+                                    <div class="ts-space"></div>
+                                    <div class="ts-box">
+                                        <div class="ts-content is-secondary">
+                                            <div class="ts-breadcrumb is-chevroned">
+                                                <a href="#!" class="item">Movie</a>
+                                                <a href="#!" class="item">Sci-Fi</a>
+                                                <a href="#!" class="item">Interstellar</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- / 導覽標記 -->
+                                    <div class="ts-space is-large"></div>
+                                    <!-- 國旗 -->
+                                    <div class="ts-header">Flags</div>
+                                    <div class="ts-space is-small"></div>
+                                    <span class="ts-flag is-rounded is-taiwan-flag"></span>
+                                    <span class="ts-flag is-rounded is-america-flag"></span>
+                                    <span class="ts-flag is-rounded is-hong-kong-flag"></span>
+                                    <span class="ts-flag is-rounded is-south-korea-flag"></span>
+                                    <span class="ts-flag is-rounded is-sweden-flag"></span>
+                                    <span class="ts-flag is-rounded is-poland-flag"></span>
+                                    <span class="ts-flag is-rounded is-bordered is-japan-flag"></span>
+                                    <span class="ts-flag is-rounded is-india-flag"></span>
+                                    <span class="ts-flag is-rounded is-nigeria-flag"></span>
+                                    <!-- / 國旗 -->
+                                    <div class="ts-space is-large"></div>
+                                    <!-- 評分 -->
+                                    <div class="ts-header">Rating</div>
+                                    <div class="ts-space is-small"></div>
+                                    <div class="ts-rating is-yellow">
+                                        <div class="star is-active"></div>
+                                        <div class="star is-active"></div>
+                                        <div class="star"></div>
+                                    </div>
+                                    <div class="ts-rating is-red">
+                                        <div class="heart is-active"></div>
+                                        <div class="heart"></div>
+                                        <div class="heart"></div>
+                                    </div>
+                                    <!-- / 評分 -->
+                                    <div class="ts-space is-large"></div>
+                                    <!-- 項目切換 -->
+                                    <div class="ts-header">Selection</div>
+                                    <div class="ts-space is-small"></div>
+                                    <div class="ts-selection is-fluid is-circular">
+                                        <label class="item">
+                                            <input type="radio" name="performance" checked />
+                                            <div class="text">Low</div>
+                                        </label>
+                                        <label class="item">
+                                            <input type="radio" name="performance" />
+                                            <div class="text">Medium</div>
+                                        </label>
+                                        <label class="item">
+                                            <input type="radio" name="performance" />
+                                            <div class="text">High</div>
+                                        </label>
+                                    </div>
+                                    <!-- / 項目切換 -->
+                                    <div class="ts-space is-large"></div>
+                                    <!-- 標籤 -->
+                                    <div class="ts-header">Labels</div>
+                                    <div class="ts-space is-small"></div>
+                                    <div class="ts-wrap is-compact">
+                                        <span class="ts-chip">
+                                            <div class="ts-image">
+                                                <img src="./assets/images/user.png" />
+                                            </div>
+                                            Minato
+                                        </span>
+                                        <span class="ts-chip">
+                                            <div class="ts-image">
+                                                <img src="./assets/images/user3.png" />
+                                            </div>
+                                            Kazari
+                                        </span>
+                                    </div>
+                                    <div class="ts-space"></div>
+                                    <div class="ts-wrap is-compact">
+                                        <span class="ts-badge">8,964</span>
+                                        <span class="ts-badge is-secondary">16,226</span>
+                                        <span class="ts-badge is-negative">320</span>
+                                    </div>
+                                    <!-- / 標籤 -->
+                                </div>
+                                <!-- / 右側 -->
+                            </div>
+                        </div>
+                        <div class="主要內容-內容區塊-藝廊格局-次要">
+                            <div class="主要內容-內容區塊-藝廊格局-標題">Color Scheme and Responsive</div>
+                            <div class="主要內容-內容區塊-藝廊格局-說明">Supports dark mode and compact styles on mobile devices to maximize screen space usage.</div>
+                            <a href="./responsive.html" class="主要內容-內容區塊-藝廊格局-按鈕">See Details</a>
+                        </div>
+                        <div class="主要內容-內容區塊-藝廊格局-次要">
+                            <div class="主要內容-內容區塊-藝廊格局-標題">Loose Coupling</div>
+                            <div class="主要內容-內容區塊-藝廊格局-說明">Components are designed atomically, allowing them to be combined together.</div>
+                            <a href="./button.html" class="主要內容-內容區塊-藝廊格局-按鈕">Browse Components</a>
+                        </div>
+                        <div class="主要內容-內容區塊-藝廊格局-次要">
+                            <div class="主要內容-內容區塊-藝廊格局-標題">Adaptability</div>
+                            <div class="主要內容-內容區塊-藝廊格局-說明">Build an e-commerce platform, management interface, or social networking site.</div>
+                            <a href="./examples.html" class="主要內容-內容區塊-藝廊格局-按鈕">See Examples</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="主要內容-準備區塊 主要內容-內容區塊 has-light">
+                <div class="主要內容-準備區塊-標題">Let's get ready to rumble!</div>
+                <div class="主要內容-準備區塊-說明">Copy the following HTML tags to your webpage and unleash the magic ✨</div>
+                <div class="主要內容-準備區塊-程式碼"><pre><code class="hljs"><span class="hljs-comment">&lt;!-- Core: Tocas UI --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://cdnjs.cloudflare.com/ajax/libs/tocas/5.0.1/tocas.min.css"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://cdnjs.cloudflare.com/ajax/libs/tocas/5.0.1/tocas.min.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- Fonts: Noto Sans TC --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"preconnect"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://fonts.googleapis.com"</span> /&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"preconnect"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://fonts.gstatic.com"</span> <span class="hljs-attr">crossorigin</span> /&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&amp;display=swap"</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> /&gt;</span>
+
+<span class="hljs-comment">&lt;!-- Enable: Responsive --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1, shrink-to-fit=no"</span>&gt;</span></code></pre>
+</div>
+                <div class="主要內容-準備區塊-行動號召">
+                    <a href="./getting-started.html" class="主要內容-準備區塊-行動號召-動作">Get Started</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="頁腳">
+            <div class="界限容器">
+                <div class="頁腳-導航列">
+                    <button class="頁腳-導航列-項目 頁腳-導航列-項目_回到頂部"><span class="ts-icon is-arrow-up-icon"></span> Back to Top</button>
+                    <a class="頁腳-導航列-項目" href="https://github.com/teacat/tocas" target="_blank">GitHub</a>
+                    <a class="頁腳-導航列-項目" href="./getting-started.html">Getting Started</a>
+                    <a class="頁腳-導航列-項目" href="./button.html">Components</a>
+                    <a class="頁腳-導航列-項目" href="./examples.html">Examples</a>
+                </div>
+                <div class="頁腳-格局">
+                    <div class="頁腳-格局-資訊">
+                        <div class="頁腳-格局-資訊-文字">Designed by Yami Odymel from <span class="ts-flag is-taiwan-flag is-small"></span> Taiwan, along with the ❤️ from <a href="https://github.com/teacat/tocas/graphs/contributors" target="_blank">contributors</a>. The source code is licensed under <a href="https://github.com/teacat/tocas/blob/master/LICENSE" target="_blank">MIT</a>, and the documentation is under <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.zh_TW" target="_blank">CC 0</a> public domain. Feel free to use, share, or contribute. Tocas UI is a design system for <a href="https://caris.events" target="_blank">Caris Events</a>, part of <a href="https://sorae.co" target="_blank">Sorae & Co., Ltd.</a></div>
+                        <div class="頁腳-格局-資訊-翻譯者">Translators: <a href="https://twitter.com/YamiOdymel" target="_blank">Yami Odymel</a></div>
+                    </div>
+                    <div class="頁腳-格局-商標">
+                        <img class="頁腳-格局-商標-圖片" src="./assets/images/caris-events.svg" alt='Trademark of the owner of Tocas UI'/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,1611 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./assets/style.css" />
+        <link rel="stylesheet" href="./assets/highlight.css" />
+        <link rel="stylesheet" href="./assets/tocas/tocas.min.css" />
+        <script src="./assets/tocas/tocas.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet" />
+        <link rel="canonical" href="https://tocas-ui.com/5.0/en-us/menu.html" />
+        <script src="./assets/script.js"></script>
+        <title>Menu - Tocas UI</title>
+        <!--
+
+
+
+        ▄▄▄        ▄▄████▄
+      ▄█████▄    ▄██▀    ██
+      ▀█▄   ██▄ ██▀      ██
+       ▀██▄▄▄████   ▄▄▄██▀
+          ▀▀▀████▀▀▀▀▀
+             ██
+            ██          ▄█████▄       █████████████          ▄█             █▄
+           ██         ▄█▀     ▀█▄     ██         ██         ██▀█▄         ▄█▀
+           ██        ██         ██    ██         ██        ██  ▀██       ██▀
+           ██        ██         ██    ██         ██      ▄█▀     ██     ▀▀▀▀▀▀▀███
+           ██        ▀█▄       ▄█▀    ██         ██     ██▀       ▀█▄         ██▀
+            ██         ▀███████▀      █████████████    ███▄▄▄▄▄▄▄▄▄███       █▀
+
+
+
+            「你只能死一次，一定要死的轟轟烈烈。」
+
+            沒有人可以做一件事情直到永遠，
+            而一個人的生命也不是永生。
+
+            死亡給予了我們試著活下去的動力，
+            在那之前都應該竭盡所能的向著自己的夢邁進。
+
+            將自己的生命活得淋漓盡致才是最重要的；
+            不要將剛開始的序章放在頁尾。
+
+
+
+        -->
+        <meta name="description" content="A menu displays grouped navigation actions." />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Menu - Tocas UI" />
+        <meta name="twitter:description" content="A menu displays grouped navigation actions." />
+        <meta name="twitter:image" content="https://tocas-ui.com/5.0/en-us/assets/images/og.png" />
+        <meta property="og:title" content="Menu - Tocas UI" />
+        <meta property="og:type" content="article" />
+        <meta property="og:image" content="https://tocas-ui.com/5.0/en-us/assets/images/og.png" />
+        <meta property="og:url" content="https://tocas-ui.com/5.0/en-us/menu.html" />
+        <meta property="og:image:width" content="1280" />
+        <meta property="og:image:height" content="720" />
+        <meta property="og:description" content="A menu displays grouped navigation actions." />
+        <link rel="icon" type="image/png" href="https://tocas-ui.com/5.0/en-us/assets/images/favicons/favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="https://tocas-ui.com/5.0/en-us/assets/images/favicons/favicon-194x194.png" sizes="194x194" />
+        <link rel="icon" type="image/png" href="https://tocas-ui.com/5.0/en-us/assets/images/favicons/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/png" href="https://tocas-ui.com/5.0/en-us/assets/images/favicons/android-chrome-192x192.png" sizes="192x192" />
+        <link rel="icon" type="image/png" href="https://tocas-ui.com/5.0/en-us/assets/images/favicons/favicon-16x16.png" sizes="16x16" />
+    </head>
+    <body>
+        <div class="穹頂">
+            <div class="界限容器">
+                <div class="穹頂-導航列">
+                    <div class="穹頂-導航列-左側">
+                        <a class="穹頂-導航列-項目 穹頂-導航列-項目_主要" href="./index.html">Tocas UI</a>
+                        <a class="穹頂-導航列-項目" href="./getting-started.html">Getting Started</a>
+                        <a class="穹頂-導航列-項目" href="./button.html">Components</a>
+                        <a class="穹頂-導航列-項目" href="./examples.html">Examples</a>
+                    </div>
+                    <div class="穹頂-導航列-右側">
+                        <button class="穹頂-導航列-項目" data-dropdown="dropdown-language">
+                            <span class="ts-flag is-america-flag"></span> English (US)
+                        </button>
+                        <div class="ts-dropdown" id="dropdown-language" data-position="bottom">
+                            
+                            <a class="item is-selected" href="./../en-us/menu.html">
+                                <span class="ts-flag is-america-flag"></span> English (US)
+                            </a>
+                            
+                            <a class="item " href="./../zh-tw/menu.html">
+                                <span class="ts-flag is-taiwan-flag"></span> 台灣正體
+                            </a>
+                            
+                        </div>
+                        <button class="穹頂-導航列-項目" data-dropdown="dropdown-version">
+                            <span class="ts-icon is-code-branch-icon"></span> v5.0
+                        </button>
+                        <div class="ts-dropdown" id="dropdown-version" data-position="bottom">
+                            
+                            <div class="header">Latest</div>
+                            
+                            <a class="item is-selected" >v5.0.1</a>
+                            
+                            <div class="divider"></div>
+                            
+                            <div class="header">Older releases</div>
+                            
+                            <a class="item " href="https://tocas-ui.com/4.2/zh-tw/index.html" >v4.2.5</a>
+                            
+                            <a class="item " href="https://v2.tocas-ui.com/" >v2.3.3</a>
+                            
+                            <div class="divider"></div>
+                            
+                        </div>
+                        <a class="穹頂-導航列-項目" href="https://github.com/teacat/tocas" target="_blank"><span class="ts-icon is-github-icon"></span> GitHub</a>
+                    </div>
+                </div>
+                <div class="穹頂-導航列 穹頂-導航列_手機的">
+                    <div class="穹頂-導航列-左側">
+                        <a class="穹頂-導航列-項目 穹頂-導航列-項目_主要" href="./index.html">Tocas UI</a>
+                    </div>
+                    <div class="穹頂-導航列-右側">
+                        <button class="穹頂-導航列-項目" data-dropdown="dropdown-language-mobile">
+                            <span class="ts-flag is-america-flag"></span> English (US)
+                        </button>
+                        <div class="ts-dropdown" id="dropdown-language-mobile" data-position="bottom">
+                            
+                            <a class="item is-selected" href="./../en-us/menu.html">
+                                <span class="ts-flag is-america-flag"></span> English (US)
+                            </a>
+                            
+                            <a class="item " href="./../zh-tw/menu.html">
+                                <span class="ts-flag is-taiwan-flag"></span> 台灣正體
+                            </a>
+                            
+                        </div>
+                        <button class="穹頂-導航列-項目 穹頂-導航列-項目_選單按鈕" aria-label='Hamburger Menu'>
+                            <span class="ts-icon is-bars-icon"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="穹頂-標題">
+                    <h1 class="穹頂-標題-主要">Menu</h1>
+                    <div class="穹頂-標題-說明">A menu displays grouped navigation actions.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="主體">
+            <div class="界限容器">
+                <div class='主體-格局 '>
+                    <!-- 側邊導覽 -->
+                    <div class="主體-格局-導覽">
+                        
+                        <div class="主體-格局-導覽-標題">Introduction</div>
+                        
+                        <a href="./getting-started.html" class="主體-格局-導覽-項目">
+                             Getting Started 
+                        </a>
+                        
+                        <a href="./colors.html" class="主體-格局-導覽-項目">
+                             Colors 
+                        </a>
+                        
+                        <a href="./responsive.html" class="主體-格局-導覽-項目">
+                             Responsive 
+                        </a>
+                        
+                        <a href="./utilities.html" class="主體-格局-導覽-項目">
+                             Utilities 
+                        </a>
+                         
+                        <div class="主體-格局-導覽-標題">Layout</div>
+                        
+                        <a href="./container.html" class="主體-格局-導覽-項目">
+                             Container  
+                        </a>
+                        
+                        <a href="./control.html" class="主體-格局-導覽-項目">
+                             Control  
+                        </a>
+                        
+                        <a href="./grid.html" class="主體-格局-導覽-項目">
+                             Grid  
+                        </a>
+                        
+                        <a href="./wrap.html" class="主體-格局-導覽-項目">
+                             Wrap  
+                        </a>
+                         
+                        <div class="主體-格局-導覽-標題">Form</div>
+                        
+                        <a href="./button.html" class="主體-格局-導覽-項目">
+                             Button  
+                        </a>
+                        
+                        <a href="./checkbox.html" class="主體-格局-導覽-項目">
+                             Checkbox  
+                        </a>
+                        
+                        <a href="./fieldset.html" class="主體-格局-導覽-項目">
+                             Fieldset  
+                        </a>
+                        
+                        <a href="./file.html" class="主體-格局-導覽-項目">
+                             File  
+                        </a>
+                        
+                        <a href="./input.html" class="主體-格局-導覽-項目">
+                             Input  
+                        </a>
+                        
+                        <a href="./radio.html" class="主體-格局-導覽-項目">
+                             Radio  
+                        </a>
+                        
+                        <a href="./select.html" class="主體-格局-導覽-項目">
+                             Select  
+                        </a>
+                        
+                        <a href="./selection.html" class="主體-格局-導覽-項目">
+                             Selection  
+                        </a>
+                        
+                        <a href="./switch.html" class="主體-格局-導覽-項目">
+                             Switch  
+                        </a>
+                         
+                        <div class="主體-格局-導覽-標題">Paragraphy</div>
+                        
+                        <a href="./box.html" class="主體-格局-導覽-項目">
+                             Box  
+                        </a>
+                        
+                        <a href="./content.html" class="主體-格局-導覽-項目">
+                             Content  
+                        </a>
+                        
+                        <a href="./divider.html" class="主體-格局-導覽-項目">
+                             Divider  
+                        </a>
+                        
+                        <a href="./header.html" class="主體-格局-導覽-項目">
+                             Header  
+                        </a>
+                        
+                        <a href="./quote.html" class="主體-格局-導覽-項目">
+                             Quote  
+                        </a>
+                        
+                        <a href="./text.html" class="主體-格局-導覽-項目">
+                             Text  
+                        </a>
+                         
+                        <div class="主體-格局-導覽-標題">Feedback</div>
+                        
+                        <a href="./blankslate.html" class="主體-格局-導覽-項目">
+                             Blankslate  
+                        </a>
+                        
+                        <a href="./gauge.html" class="主體-格局-導覽-項目">
+                             Gauge  
+                        </a>
+                        
+                        <a href="./loading.html" class="主體-格局-導覽-項目">
+                             Loading  
+                        </a>
+                        
+                        <a href="./mask.html" class="主體-格局-導覽-項目">
+                             Mask  
+                        </a>
+                        
+                        <a href="./notice.html" class="主體-格局-導覽-項目">
+                             Notice  
+                        </a>
+                        
+                        <a href="./procedure.html" class="主體-格局-導覽-項目">
+                             Procedure  
+                        </a>
+                        
+                        <a href="./progress.html" class="主體-格局-導覽-項目">
+                             Progress  
+                        </a>
+                        
+                        <a href="./snackbar.html" class="主體-格局-導覽-項目">
+                             Snackbar  
+                        </a>
+                         
+                        <div class="主體-格局-導覽-標題">Interaction</div>
+                        
+                        <a href="./accordion.html" class="主體-格局-導覽-項目">
+                             Accordion  
+                        </a>
+                        
+                        <a href="./dropdown.html" class="主體-格局-導覽-項目">
+                             Dropdown  
+                        </a>
+                        
+                        <a href="./modal.html" class="主體-格局-導覽-項目">
+                             Modal  
+                        </a>
+                        
+                        <a href="./popover.html" class="主體-格局-導覽-項目">
+                             Popover  
+                        </a>
+                        
+                        <a href="./tooltip.html" class="主體-格局-導覽-項目">
+                             Tooltip  
+                        </a>
+                         
+                        <div class="主體-格局-導覽-標題">Media</div>
+                        
+                        <a href="./flag.html" class="主體-格局-導覽-項目">
+                             Flag  
+                        </a>
+                        
+                        <a href="./icon.html" class="主體-格局-導覽-項目">
+                             Icon  
+                        </a>
+                        
+                        <a href="./iconset.html" class="主體-格局-導覽-項目">
+                             Iconset  
+                        </a>
+                        
+                        <a href="./image.html" class="主體-格局-導覽-項目">
+                             Image  
+                        </a>
+                        
+                        <a href="./imageset.html" class="主體-格局-導覽-項目">
+                             Imageset  
+                        </a>
+                         
+                        <div class="主體-格局-導覽-標題">Data</div>
+                        
+                        <a href="./badge.html" class="主體-格局-導覽-項目">
+                             Badge  
+                        </a>
+                        
+                        <a href="./checklist.html" class="主體-格局-導覽-項目">
+                             Checklist  
+                        </a>
+                        
+                        <a href="./chip.html" class="主體-格局-導覽-項目">
+                             Chip  
+                        </a>
+                        
+                        <a href="./close.html" class="主體-格局-導覽-項目">
+                             Close  
+                        </a>
+                        
+                        <a href="./conversation.html" class="主體-格局-導覽-項目">
+                             Conversation  
+                        </a>
+                        
+                        <a href="./list.html" class="主體-格局-導覽-項目">
+                             List  
+                        </a>
+                        
+                        <a href="./meta.html" class="主體-格局-導覽-項目">
+                             Meta  
+                        </a>
+                        
+                        <a href="./rating.html" class="主體-格局-導覽-項目">
+                             Rating  
+                        </a>
+                        
+                        <a href="./statistic.html" class="主體-格局-導覽-項目">
+                             Statistic  
+                        </a>
+                        
+                        <a href="./table.html" class="主體-格局-導覽-項目">
+                             Table  
+                        </a>
+                        
+                        <a href="./timeline.html" class="主體-格局-導覽-項目">
+                             Timeline  
+                        </a>
+                         
+                        <div class="主體-格局-導覽-標題">Navigation</div>
+                        
+                        <a href="./breadcrumb.html" class="主體-格局-導覽-項目">
+                             Breadcrumb  
+                        </a>
+                        
+                        <a href="./menu.html" class="主體-格局-導覽-項目 主體-格局-導覽-項目_啟用的">
+                             Menu  
+                        </a>
+                        
+                        <a href="./pagination.html" class="主體-格局-導覽-項目">
+                             Pagination  
+                        </a>
+                        
+                        <a href="./tab.html" class="主體-格局-導覽-項目">
+                             Tab  
+                        </a>
+                         
+                        <div class="主體-格局-導覽-標題">Application</div>
+                        
+                        <a href="./app-center.html" class="主體-格局-導覽-項目">
+                             App Center  
+                        </a>
+                        
+                        <a href="./app-drawer.html" class="主體-格局-導覽-項目">
+                             App Drawer  
+                        </a>
+                        
+                        <a href="./app-layout.html" class="主體-格局-導覽-項目">
+                             App Layout  
+                        </a>
+                        
+                        <a href="./app-navbar.html" class="主體-格局-導覽-項目">
+                             App Navbar  
+                        </a>
+                        
+                        <a href="./app-sidebar.html" class="主體-格局-導覽-項目">
+                             App Sidebar  
+                        </a>
+                        
+                        <a href="./app-topbar.html" class="主體-格局-導覽-項目">
+                             App Topbar  
+                        </a>
+                         
+                        <div class="主體-格局-導覽-關閉按鈕">
+                            <span class="ts-icon is-circle-xmark-icon"></span>
+                        </div>
+                    </div>
+                    <!-- / 側邊導覽 -->
+
+                    <!-- 遮罩 -->
+                    <div class="主體-格局-遮罩"></div>
+                    <!-- / 遮罩 -->
+
+                    <main class="主體-格局-內容">
+                        <!-- 文章工具列 -->
+                        
+                        <div class="主體-格局-內容-工具列">
+                            <div class="主體-格局-內容-工具列-項目 主體-格局-內容-工具列-項目_標題">
+                                Example
+                                <!-- 標籤連結
+                                
+                                 / 標籤連結 -->
+                            </div>
+
+                            <!-- 明暗色系 -->
+                            <div class="主體-格局-內容-工具列-項目">
+                                <div class="主體-格局-內容-工具列-項目-標籤">Theme</div>
+                                <div class="主體-格局-內容-工具列-項目-下拉式選單">
+                                    <div class="主體-格局-內容-工具列-項目-下拉式選單-文字">
+                                        <span class="主體-格局-內容-工具列-項目-下拉式選單-文字-標籤">Auto</span>
+                                        <span class="主體-格局-內容-工具列-項目-下拉式選單-文字-圖示 ts-icon is-chevron-down-icon"></span>
+                                    </div>
+                                    <div class="主體-格局-內容-工具列-項目-下拉式選單-群組">
+                                        <div
+                                            data-value="is-light,is-dark"
+                                            class="主體-格局-內容-工具列-項目-下拉式選單-群組-項目 主體-格局-內容-工具列-項目-下拉式選單-群組-項目_啟用的"
+                                        >
+                                            Auto
+                                        </div>
+                                        <div data-value="is-dark;is-light" class="主體-格局-內容-工具列-項目-下拉式選單-群組-項目">Light</div>
+                                        <div data-value="is-light;is-dark" class="主體-格局-內容-工具列-項目-下拉式選單-群組-項目">Dark</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- / 明暗色系 -->
+
+                            <!-- 縮放項目 -->
+                            <div class="主體-格局-內容-工具列-項目">
+                                <div class="主體-格局-內容-工具列-項目-標籤">Scale</div>
+                                <div class="主體-格局-內容-工具列-項目-下拉式選單">
+                                    <div class="主體-格局-內容-工具列-項目-下拉式選單-文字">
+                                        <span class="主體-格局-內容-工具列-項目-下拉式選單-文字-標籤">Medium</span>
+                                        <span class="主體-格局-內容-工具列-項目-下拉式選單-文字-圖示 ts-icon is-chevron-down-icon"></span>
+                                    </div>
+                                    <div class="主體-格局-內容-工具列-項目-下拉式選單-群組">
+                                        <div data-value="is-small,is-medium;is-large" class="主體-格局-內容-工具列-項目-下拉式選單-群組-項目">
+                                            Large
+                                        </div>
+                                        <div
+                                            data-value="is-large,is-small;is-medium"
+                                            class="主體-格局-內容-工具列-項目-下拉式選單-群組-項目 主體-格局-內容-工具列-項目-下拉式選單-群組-項目_啟用的"
+                                        >
+                                            Medium
+                                        </div>
+                                        <div data-value="is-large,is-medium;is-small" class="主體-格局-內容-工具列-項目-下拉式選單-群組-項目">
+                                            Small
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- / 縮放項目 -->
+                        </div>
+
+                        <!-- 主要範例 -->
+                        <div class="主體-格局-內容-主要範例">
+                            <div class="主體-格局-內容-主要範例-實際效果  主體-格局-內容-主要範例-實際效果_置中的 ">
+                                <div class="主體-格局-內容-主要範例-實際效果-置中容器"><div class="ts-box" style="width: 250px">
+    <div class="ts-menu is-start-icon">
+        <a class="item" href="#!">
+            <span class="ts-icon is-house-icon"></span> Home
+        </a>
+        <a class="item is-active" href="#!">
+            <span class="ts-icon is-gauge-high-icon"></span> Dashboard
+        </a>
+        <a class="item" href="#!">
+            <span class="ts-icon is-table-icon"></span> Orders
+        </a>
+        <div class="ts-divider"></div>
+        <a class="item" href="#!">
+            <span class="ts-icon is-gears-icon"></span> Settings
+        </a>
+    </div>
+</div>
+</div>
+                            </div>
+                            <div class="主體-格局-內容-主要範例-程式碼"><pre><code class="hljs">&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"<a href="./box.html">ts-box</a>"</span> style=<span class="hljs-string">"width: 250px"</span>&gt;
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<mark>ts-menu</mark> is-start-icon"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./icon.html">ts-icon</a> is-house-icon"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> Home
+        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item is-active"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./icon.html">ts-icon</a> is-gauge-high-icon"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> Dashboard
+        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./icon.html">ts-icon</a> is-table-icon"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> Orders
+        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./divider.html">ts-divider</a>"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./icon.html">ts-icon</a> is-gears-icon"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> Settings
+        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+&lt;<span class="hljs-regexp">/div&gt;</span></code></pre>
+</div>
+                        </div>
+                        <!-- / 主要範例 -->
+                        
+                        <!-- / 文章工具列 -->
+
+                        <!-- 概要 -->
+                        
+                        <!-- / 概要 -->
+
+                        <!-- 章節 -->
+                        
+                        <div class="主體-格局-內容-標題 主體-格局-內容-標題_章節">States</div>
+
+                        
+
+                        <!-- 國家旗幟 -->
+                        
+                        <!-- / 國家旗幟 -->
+
+                        <!-- 段落 -->
+                        
+                        <div class="主體-格局-內容-單個範例">
+                            <a class="主體-格局-內容-單個範例-錨點" id="active"></a>
+                            <div class="主體-格局-內容-單個範例-文字-標題 主體-格局-內容-單個範例-文字-標題_段落">
+                                <a href="#active" class="主體-格局-內容-單個範例-文字-標題-連結">Active</a>
+                                
+                                <button class="主體-格局-內容-單個範例-文字-標題-切換原始碼"><span class="ts-icon is-code-icon"></span> Code</button>
+                                
+                            </div>
+                            <div class="主體-格局-內容-單個範例-文字"><p>A menu item can be active.</p>
+</div>
+
+                            <!-- 範例與程式碼 -->
+                            
+                            <div class="主體-格局-內容-單個範例-範例">
+                                <div class="主體-格局-內容-單個範例-範例-實際效果"><div class="ts-menu">
+    <a class="item" href="#!">Profile</a>
+    <a class="item is-active" href="#!">Locations</a>
+    <a class="item" href="#!">Settings</a>
+</div>
+</div>
+                                <div class="主體-格局-內容-單個範例-範例-程式碼"><pre><code class="hljs"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ts-menu"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item"</span>&gt;</span>Profile<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item <mark>is-active</mark>"</span>&gt;</span>Locations<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item"</span>&gt;</span>Settings<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+</div>
+                            </div>
+                            
+                            <!-- / 範例與程式碼 -->
+
+                            <!-- 附帶程式片段 -->
+                            
+                            <!-- / 附帶程式片段 -->
+
+                            <!-- 圖示組 -->
+                            
+                            <!-- / 圖示組 -->
+                        </div>
+                        
+                        <div class="主體-格局-內容-單個範例">
+                            <a class="主體-格局-內容-單個範例-錨點" id="disabled"></a>
+                            <div class="主體-格局-內容-單個範例-文字-標題 主體-格局-內容-單個範例-文字-標題_段落">
+                                <a href="#disabled" class="主體-格局-內容-單個範例-文字-標題-連結">Disabled</a>
+                                
+                                <button class="主體-格局-內容-單個範例-文字-標題-切換原始碼"><span class="ts-icon is-code-icon"></span> Code</button>
+                                
+                            </div>
+                            <div class="主體-格局-內容-單個範例-文字"><p>A menu item can be disabled. If the item is a hyperlink, apply the <code>.is-disabled</code> class.</p>
+</div>
+
+                            <!-- 範例與程式碼 -->
+                            
+                            <div class="主體-格局-內容-單個範例-範例">
+                                <div class="主體-格局-內容-單個範例-範例-實際效果"><div class="ts-menu">
+    <a class="item" href="#!">Communication</a>
+    <button class="item" disabled>History</button>
+    <a class="item is-disabled" href="#!">Navigation</a>
+</div>
+</div>
+                                <div class="主體-格局-內容-單個範例-範例-程式碼"><pre><code class="hljs"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ts-menu"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item"</span>&gt;</span>Communication<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item"</span> <span class="hljs-attr"><mark>disabled</mark></span>&gt;</span>History<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item <mark>is-disabled</mark>"</span>&gt;</span>Navigation<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+</div>
+                            </div>
+                            
+                            <!-- / 範例與程式碼 -->
+
+                            <!-- 附帶程式片段 -->
+                            
+                            <!-- / 附帶程式片段 -->
+
+                            <!-- 圖示組 -->
+                            
+                            <!-- / 圖示組 -->
+                        </div>
+                        
+                        <div class="主體-格局-內容-單個範例">
+                            <a class="主體-格局-內容-單個範例-錨點" id="selected"></a>
+                            <div class="主體-格局-內容-單個範例-文字-標題 主體-格局-內容-單個範例-文字-標題_段落">
+                                <a href="#selected" class="主體-格局-內容-單個範例-文字-標題-連結">Selected</a>
+                                
+                                <button class="主體-格局-內容-單個範例-文字-標題-切換原始碼"><span class="ts-icon is-code-icon"></span> Code</button>
+                                
+                            </div>
+                            <div class="主體-格局-內容-單個範例-文字"><p>A menu item can be selected.</p>
+</div>
+
+                            <!-- 範例與程式碼 -->
+                            
+                            <div class="主體-格局-內容-單個範例-範例">
+                                <div class="主體-格局-內容-單個範例-範例-實際效果"><div class="ts-menu">
+    <a class="item" href="#!">Apple</a>
+    <a class="item is-selected" href="#!">Pineapple</a>
+    <a class="item" href="#!">Watermelon</a>
+</div>
+</div>
+                                <div class="主體-格局-內容-單個範例-範例-程式碼"><pre><code class="hljs"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ts-menu"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item"</span>&gt;</span>Apple<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item <mark>is-selected</mark>"</span>&gt;</span>Pineapple<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item"</span>&gt;</span>Watermelon<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+</div>
+                            </div>
+                            
+                            <!-- / 範例與程式碼 -->
+
+                            <!-- 附帶程式片段 -->
+                            
+                            <!-- / 附帶程式片段 -->
+
+                            <!-- 圖示組 -->
+                            
+                            <!-- / 圖示組 -->
+                        </div>
+                        
+                        <!-- / 段落 -->
+                        
+                        <div class="主體-格局-內容-標題 主體-格局-內容-標題_章節">Structure</div>
+
+                        
+
+                        <!-- 國家旗幟 -->
+                        
+                        <!-- / 國家旗幟 -->
+
+                        <!-- 段落 -->
+                        
+                        <div class="主體-格局-內容-單個範例">
+                            <a class="主體-格局-內容-單個範例-錨點" id="badge"></a>
+                            <div class="主體-格局-內容-單個範例-文字-標題 主體-格局-內容-單個範例-文字-標題_段落">
+                                <a href="#badge" class="主體-格局-內容-單個範例-文字-標題-連結">Badge</a>
+                                
+                                <button class="主體-格局-內容-單個範例-文字-標題-切換原始碼"><span class="ts-icon is-code-icon"></span> Code</button>
+                                
+                            </div>
+                            <div class="主體-格局-內容-單個範例-文字"><p>A <a href="./badge.html">Badge</a> can be placed inside a menu item.</p>
+</div>
+
+                            <!-- 範例與程式碼 -->
+                            
+                            <div class="主體-格局-內容-單個範例-範例">
+                                <div class="主體-格局-內容-單個範例-範例-實際效果"><div class="ts-box is-collapsed">
+    <div class="ts-menu is-collapsed is-start-icon">
+        <a class="item is-active" href="#!">
+            <span class="ts-icon is-inbox-icon"></span>
+            Inbox
+            <div class="ts-badge has-inverted is-small is-dense">3</div>
+        </a>
+        <a class="item" href="#!">
+            <span class="ts-icon is-bookmark-icon"></span>
+            Important
+            </a>
+        <a class="item" href="#!">
+            <span class="ts-icon is-circle-exclamation-icon"></span>
+            Spam
+            <div class="ts-badge is-small is-dense">64</div>
+        </a>
+    </div>
+</div>
+</div>
+                                <div class="主體-格局-內容-單個範例-範例-程式碼"><pre><code class="hljs">&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"<a href="./box.html">ts-box</a> is-collapsed"</span>&gt;
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ts-menu is-collapsed is-start-icon"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item is-active"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./icon.html">ts-icon</a> is-inbox-icon"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+            Inbox
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<mark><a href="./badge.html">ts-badge</a></mark> <a href="./utilities.html">has-inverted</a> is-small is-dense"</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./icon.html">ts-icon</a> is-bookmark-icon"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+            Important
+        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./icon.html">ts-icon</a> is-circle-exclamation-icon"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+            Spam
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<mark><a href="./badge.html">ts-badge</a></mark> is-small is-dense"</span>&gt;</span>64<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+&lt;<span class="hljs-regexp">/div&gt;</span></code></pre>
+</div>
+                            </div>
+                            
+                            <!-- / 範例與程式碼 -->
+
+                            <!-- 附帶程式片段 -->
+                            
+                            <!-- / 附帶程式片段 -->
+
+                            <!-- 圖示組 -->
+                            
+                            <!-- / 圖示組 -->
+                        </div>
+                        
+                        <!-- / 段落 -->
+                        
+                        <div class="主體-格局-內容-標題 主體-格局-內容-標題_章節">Variations</div>
+
+                        
+
+                        <!-- 國家旗幟 -->
+                        
+                        <!-- / 國家旗幟 -->
+
+                        <!-- 段落 -->
+                        
+                        <div class="主體-格局-內容-單個範例">
+                            <a class="主體-格局-內容-單個範例-錨點" id="separated"></a>
+                            <div class="主體-格局-內容-單個範例-文字-標題 主體-格局-內容-單個範例-文字-標題_段落">
+                                <a href="#separated" class="主體-格局-內容-單個範例-文字-標題-連結">Separated</a>
+                                
+                                <button class="主體-格局-內容-單個範例-文字-標題-切換原始碼"><span class="ts-icon is-code-icon"></span> Code</button>
+                                
+                            </div>
+                            <div class="主體-格局-內容-單個範例-文字"><p>A menu can have items separated by gaps.</p>
+</div>
+
+                            <!-- 範例與程式碼 -->
+                            
+                            <div class="主體-格局-內容-單個範例-範例">
+                                <div class="主體-格局-內容-單個範例-範例-實際效果"><div class="ts-menu is-separated is-start-icon">
+    <a class="item" href="#!">
+        <span class="ts-icon is-user-icon"></span> Users
+    </a>
+    <a class="item is-active" href="#!">
+        <span class="ts-icon is-house-icon"></span> Home
+    </a>
+    <a class="item" href="#!">
+        <span class="ts-icon is-newspaper-icon"></span> News
+    </a>
+</div>
+</div>
+                                <div class="主體-格局-內容-單個範例-範例-程式碼"><pre><code class="hljs"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ts-menu <mark>is-separated</mark> is-start-icon"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./icon.html">ts-icon</a> is-user-icon"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> Users
+    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item is-active"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./icon.html">ts-icon</a> is-house-icon"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> Home
+    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./icon.html">ts-icon</a> is-newspaper-icon"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> News
+    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+</div>
+                            </div>
+                            
+                            <!-- / 範例與程式碼 -->
+
+                            <!-- 附帶程式片段 -->
+                            
+                            <!-- / 附帶程式片段 -->
+
+                            <!-- 圖示組 -->
+                            
+                            <!-- / 圖示組 -->
+                        </div>
+                        
+                        <div class="主體-格局-內容-單個範例">
+                            <a class="主體-格局-內容-單個範例-錨點" id="collapsed"></a>
+                            <div class="主體-格局-內容-單個範例-文字-標題 主體-格局-內容-單個範例-文字-標題_段落">
+                                <a href="#collapsed" class="主體-格局-內容-單個範例-文字-標題-連結">Collapsed</a>
+                                
+                                <button class="主體-格局-內容-單個範例-文字-標題-切換原始碼"><span class="ts-icon is-code-icon"></span> Code</button>
+                                
+                            </div>
+                            <div class="主體-格局-內容-單個範例-文字"><p>A menu can have its width to fit its content.</p>
+</div>
+
+                            <!-- 範例與程式碼 -->
+                            
+                            <div class="主體-格局-內容-單個範例-範例">
+                                <div class="主體-格局-內容-單個範例-範例-實際效果"><div class="ts-menu is-collapsed is-separated is-start-icon">
+    <a class="item" href="#!">
+        <span class="ts-icon is-envelope-icon"></span> Mail
+    </a>
+    <a class="item is-active" href="#!">
+        <span class="ts-icon is-comment-icon"></span> Chat
+    </a>
+    <a class="item" href="#!">
+        <span class="ts-icon is-users-icon"></span> Community
+    </a>
+</div>
+</div>
+                                <div class="主體-格局-內容-單個範例-範例-程式碼"><pre><code class="hljs"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ts-menu <mark>is-collapsed</mark> is-separated is-start-icon"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./icon.html">ts-icon</a> is-envelope-icon"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> Mail
+    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item is-active"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./icon.html">ts-icon</a> is-comment-icon"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> Chat
+    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./icon.html">ts-icon</a> is-users-icon"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> Community
+    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+</div>
+                            </div>
+                            
+                            <!-- / 範例與程式碼 -->
+
+                            <!-- 附帶程式片段 -->
+                            
+                            <!-- / 附帶程式片段 -->
+
+                            <!-- 圖示組 -->
+                            
+                            <!-- / 圖示組 -->
+                        </div>
+                        
+                        <div class="主體-格局-內容-單個範例">
+                            <a class="主體-格局-內容-單個範例-錨點" id="icon"></a>
+                            <div class="主體-格局-內容-單個範例-文字-標題 主體-格局-內容-單個範例-文字-標題_段落">
+                                <a href="#icon" class="主體-格局-內容-單個範例-文字-標題-連結">Icon</a>
+                                
+                                <button class="主體-格局-內容-單個範例-文字-標題-切換原始碼"><span class="ts-icon is-code-icon"></span> Code</button>
+                                
+                            </div>
+                            <div class="主體-格局-內容-單個範例-文字"><p>A menu item can have an icon at the start or end.</p>
+</div>
+
+                            <!-- 範例與程式碼 -->
+                            
+                            <div class="主體-格局-內容-單個範例-範例">
+                                <div class="主體-格局-內容-單個範例-範例-實際效果"><div class="ts-box">
+    <div class="ts-menu is-start-icon">
+        <a class="item" href="#!">
+            <span class="ts-icon is-magnifying-glass-icon"></span> Search
+        </a>
+        <a class="item" href="#!">
+            <span class="ts-icon is-vials-icon"></span> Labs
+        </a>
+        <a class="item" href="#!">
+            <span class="ts-icon is-atom-icon"></span> Atoms
+        </a>
+    </div>
+</div>
+<div class="ts-space"></div>
+<div class="ts-box">
+    <div class="ts-menu is-end-icon">
+        <a class="item" href="#!">
+            Favorites <span class="ts-icon is-heart-icon"></span>
+        </a>
+        <a class="item" href="#!">
+            Likes <span class="ts-icon is-thumbs-up-icon"></span>
+        </a>
+        <a class="item" href="#!">
+            Archives <span class="ts-icon is-box-archive-icon"></span>
+        </a>
+    </div>
+</div>
+</div>
+                                <div class="主體-格局-內容-單個範例-範例-程式碼"><pre><code class="hljs"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./box.html">ts-box</a>"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ts-menu <mark>is-start-icon</mark>"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./icon.html">ts-icon</a> is-magnifying-glass-icon"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> Search
+        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./icon.html">ts-icon</a> is-vials-icon"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> Labs
+        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./icon.html">ts-icon</a> is-atom-icon"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> Atoms
+        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./box.html">ts-box</a>"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ts-menu <mark>is-end-icon</mark>"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item"</span>&gt;</span>
+            Favorites <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./icon.html">ts-icon</a> is-heart-icon"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item"</span>&gt;</span>
+            Likes <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./icon.html">ts-icon</a> is-thumbs-up-icon"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item"</span>&gt;</span>
+            Archives <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./icon.html">ts-icon</a> is-box-archive-icon"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+</div>
+                            </div>
+                            
+                            <!-- / 範例與程式碼 -->
+
+                            <!-- 附帶程式片段 -->
+                            
+                            <!-- / 附帶程式片段 -->
+
+                            <!-- 圖示組 -->
+                            
+                            <!-- / 圖示組 -->
+                        </div>
+                        
+                        <div class="主體-格局-內容-單個範例">
+                            <a class="主體-格局-內容-單個範例-錨點" id="horizontally-padded"></a>
+                            <div class="主體-格局-內容-單個範例-文字-標題 主體-格局-內容-單個範例-文字-標題_段落">
+                                <a href="#horizontally-padded" class="主體-格局-內容-單個範例-文字-標題-連結">Horizontally Padded</a>
+                                
+                                <button class="主體-格局-內容-單個範例-文字-標題-切換原始碼"><span class="ts-icon is-code-icon"></span> Code</button>
+                                
+                            </div>
+                            <div class="主體-格局-內容-單個範例-文字"><p>A menu item can be padded horizontally, usually for aligning with <a href="./content.html">Content</a>.</p>
+</div>
+
+                            <!-- 範例與程式碼 -->
+                            
+                            <div class="主體-格局-內容-單個範例-範例">
+                                <div class="主體-格局-內容-單個範例-範例-實際效果"><div class="ts-box">
+    <div class="ts-menu">
+        <a class="item" href="#!">
+            Default
+        </a>
+        <a class="item" href="#!">
+            Default
+        </a>
+    </div>
+</div>
+<div class="ts-space"></div>
+<div class="ts-box">
+    <div class="ts-menu is-horizontally-padded">
+        <a class="item" href="#!">
+            Padded
+        </a>
+        <a class="item" href="#!">
+            Padded
+        </a>
+    </div>
+</div>
+<div class="ts-space"></div>
+<div class="ts-box">
+    <div class="ts-menu is-horizontally-very-padded">
+        <a class="item" href="#!">
+            Very Padded
+        </a>
+        <a class="item" href="#!">
+            Very Padded
+        </a>
+    </div>
+</div>
+</div>
+                                <div class="主體-格局-內容-單個範例-範例-程式碼"><pre><code class="hljs">&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"<a href="./box.html">ts-box</a>"</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"ts-menu"</span>&gt;
+        &lt;a <span class="hljs-built_in">class</span>=<span class="hljs-string">"item"</span>&gt;
+            Default
+        &lt;/a&gt;
+        &lt;a <span class="hljs-built_in">class</span>=<span class="hljs-string">"item"</span>&gt;
+            Default
+        &lt;/a&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"<a href="./box.html">ts-box</a>"</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"ts-menu <mark>is-horizontally-padded</mark>"</span>&gt;
+        &lt;a <span class="hljs-built_in">class</span>=<span class="hljs-string">"item"</span>&gt;
+            Padded
+        &lt;/a&gt;
+        &lt;a <span class="hljs-built_in">class</span>=<span class="hljs-string">"item"</span>&gt;
+            Padded
+        &lt;/a&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"<a href="./box.html">ts-box</a>"</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"ts-menu <mark>is-horizontally-very-padded</mark>"</span>&gt;
+        &lt;a <span class="hljs-built_in">class</span>=<span class="hljs-string">"item"</span>&gt;
+            Very Padded
+        &lt;/a&gt;
+        &lt;a <span class="hljs-built_in">class</span>=<span class="hljs-string">"item"</span>&gt;
+            Very Padded
+        &lt;/a&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;</code></pre>
+</div>
+                            </div>
+                            
+                            <!-- / 範例與程式碼 -->
+
+                            <!-- 附帶程式片段 -->
+                            
+                            <!-- / 附帶程式片段 -->
+
+                            <!-- 圖示組 -->
+                            
+                            <!-- / 圖示組 -->
+                        </div>
+                        
+                        <div class="主體-格局-內容-單個範例">
+                            <a class="主體-格局-內容-單個範例-錨點" id="sizes"></a>
+                            <div class="主體-格局-內容-單個範例-文字-標題 主體-格局-內容-單個範例-文字-標題_段落">
+                                <a href="#sizes" class="主體-格局-內容-單個範例-文字-標題-連結">Sizes</a>
+                                
+                                <button class="主體-格局-內容-單個範例-文字-標題-切換原始碼"><span class="ts-icon is-code-icon"></span> Code</button>
+                                
+                            </div>
+                            <div class="主體-格局-內容-單個範例-文字"><p>A menu item can have different sizes.</p>
+</div>
+
+                            <!-- 範例與程式碼 -->
+                            
+                            <div class="主體-格局-內容-單個範例-範例">
+                                <div class="主體-格局-內容-單個範例-範例-實際效果"><div class="ts-box">
+    <div class="ts-menu is-large is-start-icon">
+        <a class="item" href="#!">
+            <span class="ts-icon is-star-icon"></span> Favorites
+        </a>
+        <a class="item" href="#!">
+            <span class="ts-icon is-users-icon"></span> Contacts
+        </a>
+    </div>
+</div>
+<div class="ts-space"></div>
+<div class="ts-box">
+    <div class="ts-menu is-start-icon">
+        <a class="item" href="#!">
+            <span class="ts-icon is-star-icon"></span> Favorites
+        </a>
+        <a class="item" href="#!">
+            <span class="ts-icon is-users-icon"></span> Contacts
+        </a>
+    </div>
+</div>
+<div class="ts-space"></div>
+<div class="ts-box">
+    <div class="ts-menu is-small is-start-icon">
+        <a class="item" href="#!">
+            <span class="ts-icon is-star-icon"></span> Favorites
+        </a>
+        <a class="item" href="#!">
+            <span class="ts-icon is-users-icon"></span> Contacts
+        </a>
+    </div>
+</div>
+</div>
+                                <div class="主體-格局-內容-單個範例-範例-程式碼"><pre><code class="hljs"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./box.html">ts-box</a>"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ts-menu <mark>is-large</mark> is-start-icon"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./icon.html">ts-icon</a> is-star-icon"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> Favorites
+        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./icon.html">ts-icon</a> is-users-icon"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> Contacts
+        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./box.html">ts-box</a>"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ts-menu is-start-icon"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./icon.html">ts-icon</a> is-star-icon"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> Favorites
+        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./icon.html">ts-icon</a> is-users-icon"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> Contacts
+        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./box.html">ts-box</a>"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ts-menu <mark>is-small</mark> is-start-icon"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./icon.html">ts-icon</a> is-star-icon"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> Favorites
+        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./icon.html">ts-icon</a> is-users-icon"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> Contacts
+        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+</div>
+                            </div>
+                            
+                            <!-- / 範例與程式碼 -->
+
+                            <!-- 附帶程式片段 -->
+                            
+                            <!-- / 附帶程式片段 -->
+
+                            <!-- 圖示組 -->
+                            
+                            <!-- / 圖示組 -->
+                        </div>
+                        
+                        <div class="主體-格局-內容-單個範例">
+                            <a class="主體-格局-內容-單個範例-錨點" id="density"></a>
+                            <div class="主體-格局-內容-單個範例-文字-標題 主體-格局-內容-單個範例-文字-標題_段落">
+                                <a href="#density" class="主體-格局-內容-單個範例-文字-標題-連結">Density</a>
+                                
+                                <button class="主體-格局-內容-單個範例-文字-標題-切換原始碼"><span class="ts-icon is-code-icon"></span> Code</button>
+                                
+                            </div>
+                            <div class="主體-格局-內容-單個範例-文字"><p>A menu can have items with dense or relaxed spacing.</p>
+</div>
+
+                            <!-- 範例與程式碼 -->
+                            
+                            <div class="主體-格局-內容-單個範例-範例">
+                                <div class="主體-格局-內容-單個範例-範例-實際效果"><div class="ts-menu is-relaxed is-start-icon is-separated">
+    <a class="item" href="#!">
+        <span class="ts-icon is-house-icon"></span> Home
+    </a>
+    <a class="item is-active" href="#!">
+        <span class="ts-icon is-gauge-high-icon"></span> Dashboard
+    </a>
+    <a class="item" href="#!">
+        <span class="ts-icon is-table-icon"></span> Orders
+    </a>
+</div>
+<div class="ts-space"></div>
+<div class="ts-menu is-start-icon is-separated">
+    <a class="item" href="#!">
+        <span class="ts-icon is-house-icon"></span> Home
+    </a>
+    <a class="item is-active" href="#!">
+        <span class="ts-icon is-gauge-high-icon"></span> Dashboard
+    </a>
+    <a class="item" href="#!">
+        <span class="ts-icon is-table-icon"></span> Orders
+    </a>
+</div>
+<div class="ts-space"></div>
+<div class="ts-menu is-dense is-start-icon is-separated">
+    <a class="item" href="#!">
+        <span class="ts-icon is-house-icon"></span> Home
+    </a>
+    <a class="item is-active" href="#!">
+        <span class="ts-icon is-gauge-high-icon"></span> Dashboard
+    </a>
+    <a class="item" href="#!">
+        <span class="ts-icon is-table-icon"></span> Orders
+    </a>
+</div>
+</div>
+                                <div class="主體-格局-內容-單個範例-範例-程式碼"><pre><code class="hljs"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ts-menu <mark>is-relaxed</mark> is-start-icon is-separated"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./icon.html">ts-icon</a> is-house-icon"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> Home
+    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item is-active"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./icon.html">ts-icon</a> is-gauge-high-icon"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> Dashboard
+    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./icon.html">ts-icon</a> is-table-icon"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> Orders
+    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ts-menu is-start-icon is-separated"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./icon.html">ts-icon</a> is-house-icon"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> Home
+    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item is-active"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./icon.html">ts-icon</a> is-gauge-high-icon"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> Dashboard
+    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./icon.html">ts-icon</a> is-table-icon"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> Orders
+    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ts-menu <mark>is-dense</mark> is-start-icon is-separated"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./icon.html">ts-icon</a> is-house-icon"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> Home
+    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item is-active"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./icon.html">ts-icon</a> is-gauge-high-icon"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> Dashboard
+    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./icon.html">ts-icon</a> is-table-icon"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> Orders
+    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+</div>
+                            </div>
+                            
+                            <!-- / 範例與程式碼 -->
+
+                            <!-- 附帶程式片段 -->
+                            
+                            <!-- / 附帶程式片段 -->
+
+                            <!-- 圖示組 -->
+                            
+                            <!-- / 圖示組 -->
+                        </div>
+                        
+                        <!-- / 段落 -->
+                        
+                        <div class="主體-格局-內容-標題 主體-格局-內容-標題_章節">Compositions</div>
+
+                        
+
+                        <!-- 國家旗幟 -->
+                        
+                        <!-- / 國家旗幟 -->
+
+                        <!-- 段落 -->
+                        
+                        <div class="主體-格局-內容-單個範例">
+                            <a class="主體-格局-內容-單個範例-錨點" id="composition-sidebar"></a>
+                            <div class="主體-格局-內容-單個範例-文字-標題 主體-格局-內容-單個範例-文字-標題_段落">
+                                <a href="#composition-sidebar" class="主體-格局-內容-單個範例-文字-標題-連結">Side Menu</a>
+                                
+                                <button class="主體-格局-內容-單個範例-文字-標題-切換原始碼"><span class="ts-icon is-code-icon"></span> Code</button>
+                                
+                            </div>
+                            <div class="主體-格局-內容-單個範例-文字"><p>Create a side menu by combining an <a href="./input.html">Input</a> and <a href="./content.html">Content</a>.</p>
+</div>
+
+                            <!-- 範例與程式碼 -->
+                            
+                            <div class="主體-格局-內容-單個範例-範例">
+                                <div class="主體-格局-內容-單個範例-範例-實際效果"><div class="ts-box" style="width: 250px">
+    <div class="ts-content">
+        <div class="ts-input">
+            <input type="text" placeholder="Search...">
+        </div>
+    </div>
+    <div class="ts-divider"></div>
+    <div class="ts-menu is-start-icon">
+        <a class="item" href="#!">
+            <span class="ts-icon is-house-icon"></span> Home
+        </a>
+        <a class="item is-active" href="#!">
+            <span class="ts-icon is-gauge-high-icon"></span> Dashboard
+        </a>
+        <a class="item" href="#!">
+            <span class="ts-icon is-table-icon"></span> Orders
+        </a>
+        <div class="ts-divider"></div>
+        <a class="item" href="#!">
+            <span class="ts-icon is-gears-icon"></span> Settings
+        </a>
+    </div>
+</div>
+</div>
+                                <div class="主體-格局-內容-單個範例-範例-程式碼"><pre><code class="hljs">&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"<a href="./box.html">ts-box</a>"</span> style=<span class="hljs-string">"width: 250px"</span>&gt;
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<mark><a href="./content.html">ts-content</a></mark>"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./input.html">ts-input</a>"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Search..."</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./divider.html">ts-divider</a>"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ts-menu is-start-icon"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./icon.html">ts-icon</a> is-house-icon"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> Home
+        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item is-active"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./icon.html">ts-icon</a> is-gauge-high-icon"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> Dashboard
+        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./icon.html">ts-icon</a> is-table-icon"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> Orders
+        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./divider.html">ts-divider</a>"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./icon.html">ts-icon</a> is-gears-icon"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> Settings
+        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></code></pre>
+</div>
+                            </div>
+                            
+                            <!-- / 範例與程式碼 -->
+
+                            <!-- 附帶程式片段 -->
+                            
+                            <!-- / 附帶程式片段 -->
+
+                            <!-- 圖示組 -->
+                            
+                            <!-- / 圖示組 -->
+                        </div>
+                        
+                        <div class="主體-格局-內容-單個範例">
+                            <a class="主體-格局-內容-單個範例-錨點" id="composition-padded"></a>
+                            <div class="主體-格局-內容-單個範例-文字-標題 主體-格局-內容-單個範例-文字-標題_段落">
+                                <a href="#composition-padded" class="主體-格局-內容-單個範例-文字-標題-連結">Padded Menu</a>
+                                
+                                <button class="主體-格局-內容-單個範例-文字-標題-切換原始碼"><span class="ts-icon is-code-icon"></span> Code</button>
+                                
+                            </div>
+                            <div class="主體-格局-內容-單個範例-文字"><p>Padded menu can be placed inside a <a href="./content.html">Content</a> to have a gap with the border of a <a href="./box.html">Box</a>.</p>
+</div>
+
+                            <!-- 範例與程式碼 -->
+                            
+                            <div class="主體-格局-內容-單個範例-範例">
+                                <div class="主體-格局-內容-單個範例-範例-實際效果"><div class="ts-box" style="width: 250px">
+    <div class="ts-content">
+        <div class="ts-menu is-start-icon is-separated">
+            <a class="item" href="#!">
+                <span class="ts-icon is-globe-icon"></span> Domains
+            </a>
+            <a class="item is-active" href="#!">
+                <span class="ts-icon is-id-card-icon"></span> SSL Certificates
+            </a>
+            <a class="item" href="#!">
+                <span class="ts-icon is-credit-card-icon"></span> Billing
+            </a>
+            <div class="ts-divider"></div>
+            <a class="item" href="#!">
+                <span class="ts-icon is-circle-user-icon"></span> Profile
+            </a>
+        </div>
+    </div>
+</div>
+</div>
+                                <div class="主體-格局-內容-單個範例-範例-程式碼"><pre><code class="hljs">&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"<a href="./box.html">ts-box</a>"</span> style=<span class="hljs-string">"width: 250px"</span>&gt;
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<mark><a href="./content.html">ts-content</a></mark>"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ts-menu is-start-icon is-separated"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./icon.html">ts-icon</a> is-globe-icon"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> Domains
+            <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item is-active"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./icon.html">ts-icon</a> is-id-card-icon"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> SSL Certificates
+            <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./icon.html">ts-icon</a> is-credit-card-icon"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> Billing
+            <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./divider.html">ts-divider</a>"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./icon.html">ts-icon</a> is-circle-user-icon"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> Profile
+            <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+&lt;<span class="hljs-regexp">/div&gt;</span></code></pre>
+</div>
+                            </div>
+                            
+                            <!-- / 範例與程式碼 -->
+
+                            <!-- 附帶程式片段 -->
+                            
+                            <!-- / 附帶程式片段 -->
+
+                            <!-- 圖示組 -->
+                            
+                            <!-- / 圖示組 -->
+                        </div>
+                        
+                        <div class="主體-格局-內容-單個範例">
+                            <a class="主體-格局-內容-單個範例-錨點" id="composition-function-navigation"></a>
+                            <div class="主體-格局-內容-單個範例-文字-標題 主體-格局-內容-單個範例-文字-標題_段落">
+                                <a href="#composition-function-navigation" class="主體-格局-內容-單個範例-文字-標題-連結">Feature List</a>
+                                
+                                <button class="主體-格局-內容-單個範例-文字-標題-切換原始碼"><span class="ts-icon is-code-icon"></span> Code</button>
+                                
+                            </div>
+                            <div class="主體-格局-內容-單個範例-文字"><p><a href="./header.html">Header</a>, <a href="./grid.html">Grid</a>, <a href="./icon.html">Icon</a> can be placed inside a menu item.</p>
+</div>
+
+                            <!-- 範例與程式碼 -->
+                            
+                            <div class="主體-格局-內容-單個範例-範例">
+                                <div class="主體-格局-內容-單個範例-範例-實際效果"><div class="ts-box is-collapsed">
+    <div class="ts-menu is-collapsed">
+        <a class="item" href="#!">
+            <div class="ts-iconset is-outlined">
+                <span class="ts-icon is-bullhorn-icon"></span>
+                <div class="content">
+                    <div class="title">Promotion</div>
+                    <div class="text">Check out our latest promotions!</div>
+                </div>
+            </div>
+        </a>
+        <div class="ts-divider"></div>
+        <a class="item" href="#!">
+            <div class="ts-iconset is-outlined">
+                <span class="ts-icon is-ticket-simple-icon"></span>
+                <div class="content">
+                    <div class="title">Coupons</div>
+                    <div class="text">Browse the coupons we offer.</div>
+                </div>
+            </div>
+        </a>
+        <div class="ts-divider"></div>
+        <a class="item" href="#!">
+            <div class="ts-iconset is-outlined">
+                <span class="ts-icon is-truck-icon"></span>
+                <div class="content">
+                    <div class="title">Refund</div>
+                    <div class="text">
+                        See our unconditional return policy.
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+</div>
+                                <div class="主體-格局-內容-單個範例-範例-程式碼"><pre><code class="hljs">&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"<a href="./box.html">ts-box</a> is-collapsed"</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"ts-menu is-collapsed"</span>&gt;
+        &lt;a <span class="hljs-built_in">class</span>=<span class="hljs-string">"item"</span>&gt;
+            &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"<mark><a href="./iconset.html">ts-iconset</a></mark> is-outlined"</span>&gt;
+                &lt;span <span class="hljs-built_in">class</span>=<span class="hljs-string">"<a href="./icon.html">ts-icon</a> is-bullhorn-icon"</span>&gt;&lt;/span&gt;
+                &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"content"</span>&gt;
+                    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"title"</span>&gt;Promotion&lt;/<span class="hljs-keyword">div</span>&gt;
+                    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"text"</span>&gt;Check out our latest promotions!&lt;/<span class="hljs-keyword">div</span>&gt;
+                &lt;/<span class="hljs-keyword">div</span>&gt;
+            &lt;/<span class="hljs-keyword">div</span>&gt;
+        &lt;/a&gt;
+        &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"<a href="./divider.html">ts-divider</a>"</span>&gt;&lt;/<span class="hljs-keyword">div</span>&gt;
+        &lt;a <span class="hljs-built_in">class</span>=<span class="hljs-string">"item"</span>&gt;
+            &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"<mark><a href="./iconset.html">ts-iconset</a></mark> is-outlined"</span>&gt;
+                &lt;span <span class="hljs-built_in">class</span>=<span class="hljs-string">"<a href="./icon.html">ts-icon</a> is-ticket-simple-icon"</span>&gt;&lt;/span&gt;
+                &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"content"</span>&gt;
+                    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"title"</span>&gt;Coupons&lt;/<span class="hljs-keyword">div</span>&gt;
+                    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"text"</span>&gt;Browse <span class="hljs-keyword">the</span> coupons we offer.&lt;/<span class="hljs-keyword">div</span>&gt;
+                &lt;/<span class="hljs-keyword">div</span>&gt;
+            &lt;/<span class="hljs-keyword">div</span>&gt;
+        &lt;/a&gt;
+        &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"<a href="./divider.html">ts-divider</a>"</span>&gt;&lt;/<span class="hljs-keyword">div</span>&gt;
+        &lt;a <span class="hljs-built_in">class</span>=<span class="hljs-string">"item"</span>&gt;
+            &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"<mark><a href="./iconset.html">ts-iconset</a></mark> is-outlined"</span>&gt;
+                &lt;span <span class="hljs-built_in">class</span>=<span class="hljs-string">"<a href="./icon.html">ts-icon</a> is-truck-icon"</span>&gt;&lt;/span&gt;
+                &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"content"</span>&gt;
+                    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"title"</span>&gt;Refund&lt;/<span class="hljs-keyword">div</span>&gt;
+                    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"text"</span>&gt;
+                        See our unconditional <span class="hljs-literal">return</span> policy.
+                    &lt;/<span class="hljs-keyword">div</span>&gt;
+                &lt;/<span class="hljs-keyword">div</span>&gt;
+            &lt;/<span class="hljs-keyword">div</span>&gt;
+        &lt;/a&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;</code></pre>
+</div>
+                            </div>
+                            
+                            <!-- / 範例與程式碼 -->
+
+                            <!-- 附帶程式片段 -->
+                            
+                            <!-- / 附帶程式片段 -->
+
+                            <!-- 圖示組 -->
+                            
+                            <!-- / 圖示組 -->
+                        </div>
+                        
+                        <!-- / 段落 -->
+                        
+                        <!-- / 章節 -->
+
+                        <!-- HTML 屬性 -->
+                        
+                        <!-- / HTML 屬性 -->
+
+                        <!-- 變數屬性 -->
+                        
+                        <!-- / 變數屬性 -->
+
+                        <!-- 額外連結 -->
+                        
+                        <!-- / 額外連結 -->
+
+                        
+                        <div class="主體-格局-內容-相關元件">
+                            <div class="主體-格局-內容-相關元件-標題">Looking for similar components?</div>
+                            <ul class="主體-格局-內容-相關元件-清單">
+                                
+                                <li class="主體-格局-內容-相關元件-清單-單個項目">
+                                    <a class="主體-格局-內容-相關元件-清單-單個項目-連結" href="dropdown.html">Dropdown</a>
+                                </li>
+                                
+                                <li class="主體-格局-內容-相關元件-清單-單個項目">
+                                    <a class="主體-格局-內容-相關元件-清單-單個項目-連結" href="tab.html">Tab</a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        
+                    </main>
+
+                    <!-- 側邊索引 -->
+                    <div class="主體-格局-索引">
+                        
+                        <div class="主體-格局-索引-標題">States</div>
+                        <div class="主體-格局-索引-清單">
+                            
+                            <a class="主體-格局-索引-清單-項目" href="#active">
+                                Active <span class="主體-格局-索引-清單-項目-英文">is-active</span>
+                            </a>
+                            
+                            <a class="主體-格局-索引-清單-項目" href="#disabled">
+                                Disabled <span class="主體-格局-索引-清單-項目-英文">disabled</span>
+                            </a>
+                            
+                            <a class="主體-格局-索引-清單-項目" href="#selected">
+                                Selected <span class="主體-格局-索引-清單-項目-英文">is-selected</span>
+                            </a>
+                            
+                        </div>
+                        
+                        <div class="主體-格局-索引-標題">Structure</div>
+                        <div class="主體-格局-索引-清單">
+                            
+                            <a class="主體-格局-索引-清單-項目" href="#badge">
+                                Badge <span class="主體-格局-索引-清單-項目-英文">{{ts-badge}}</span>
+                            </a>
+                            
+                        </div>
+                        
+                        <div class="主體-格局-索引-標題">Variations</div>
+                        <div class="主體-格局-索引-清單">
+                            
+                            <a class="主體-格局-索引-清單-項目" href="#separated">
+                                Separated <span class="主體-格局-索引-清單-項目-英文">is-separated</span>
+                            </a>
+                            
+                            <a class="主體-格局-索引-清單-項目" href="#collapsed">
+                                Collapsed <span class="主體-格局-索引-清單-項目-英文">is-collapsed</span>
+                            </a>
+                            
+                            <a class="主體-格局-索引-清單-項目" href="#icon">
+                                Icon <span class="主體-格局-索引-清單-項目-英文">is-start-icon</span>
+                            </a>
+                            
+                            <a class="主體-格局-索引-清單-項目" href="#horizontally-padded">
+                                Horizontally Padded <span class="主體-格局-索引-清單-項目-英文">is-horizontally-padded</span>
+                            </a>
+                            
+                            <a class="主體-格局-索引-清單-項目" href="#sizes">
+                                Sizes <span class="主體-格局-索引-清單-項目-英文">is-large</span>
+                            </a>
+                            
+                            <a class="主體-格局-索引-清單-項目" href="#density">
+                                Density <span class="主體-格局-索引-清單-項目-英文">is-relaxed</span>
+                            </a>
+                            
+                        </div>
+                        
+                        <div class="主體-格局-索引-標題">Compositions</div>
+                        <div class="主體-格局-索引-清單">
+                            
+                            <a class="主體-格局-索引-清單-項目" href="#composition-sidebar">
+                                Side Menu <span class="主體-格局-索引-清單-項目-英文">{{ts-content}}</span>
+                            </a>
+                            
+                            <a class="主體-格局-索引-清單-項目" href="#composition-padded">
+                                Padded Menu <span class="主體-格局-索引-清單-項目-英文">{{ts-content}}</span>
+                            </a>
+                            
+                            <a class="主體-格局-索引-清單-項目" href="#composition-function-navigation">
+                                Feature List <span class="主體-格局-索引-清單-項目-英文">{{ts-iconset}}</span>
+                            </a>
+                            
+                        </div>
+                        
+                        <button class="主體-格局-索引-回到頂部"><span class="ts-icon is-arrow-up-icon"></span> Back To Top</button>
+                    </div>
+                    <!-- / 側邊索引 -->
+                </div>
+            </div>
+        </div>
+
+        <div class="頁腳">
+            <div class="界限容器">
+                <div class="頁腳-導航列">
+                    <button class="頁腳-導航列-項目 頁腳-導航列-項目_回到頂部"><span class="ts-icon is-arrow-up-icon"></span> Back to Top</button>
+                    <a class="頁腳-導航列-項目" href="https://github.com/teacat/tocas" target="_blank">GitHub</a>
+                    <a class="頁腳-導航列-項目" href="./getting-started.html">Getting Started</a>
+                    <a class="頁腳-導航列-項目" href="./button.html">Components</a>
+                    <a class="頁腳-導航列-項目" href="./examples.html">Examples</a>
+                </div>
+                <div class="頁腳-格局">
+                    <div class="頁腳-格局-資訊">
+                        <div class="頁腳-格局-資訊-文字">Designed by Yami Odymel from <span class="ts-flag is-taiwan-flag is-small"></span> Taiwan, along with the ❤️ from <a href="https://github.com/teacat/tocas/graphs/contributors" target="_blank">contributors</a>. The source code is licensed under <a href="https://github.com/teacat/tocas/blob/master/LICENSE" target="_blank">MIT</a>, and the documentation is under <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.zh_TW" target="_blank">CC 0</a> public domain. Feel free to use, share, or contribute. Tocas UI is a design system for <a href="https://caris.events" target="_blank">Caris Events</a>, part of <a href="https://sorae.co" target="_blank">Sorae & Co., Ltd.</a></div>
+                        <div class="頁腳-格局-資訊-翻譯者">Translators: <a href="https://twitter.com/YamiOdymel" target="_blank">Yami Odymel</a></div>
+                    </div>
+                    <div class="頁腳-格局-商標">
+                        <img class="頁腳-格局-商標-圖片" src="./assets/images/caris-events.svg" alt='Trademark of the owner of Tocas UI' />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

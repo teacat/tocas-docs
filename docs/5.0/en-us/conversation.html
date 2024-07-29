@@ -1,0 +1,1605 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./assets/style.css" />
+        <link rel="stylesheet" href="./assets/highlight.css" />
+        <link rel="stylesheet" href="./assets/tocas/tocas.min.css" />
+        <script src="./assets/tocas/tocas.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet" />
+        <link rel="canonical" href="https://tocas-ui.com/5.0/en-us/conversation.html" />
+        <script src="./assets/script.js"></script>
+        <title>Conversation - Tocas UI</title>
+        <!--
+
+
+
+        ▄▄▄        ▄▄████▄
+      ▄█████▄    ▄██▀    ██
+      ▀█▄   ██▄ ██▀      ██
+       ▀██▄▄▄████   ▄▄▄██▀
+          ▀▀▀████▀▀▀▀▀
+             ██
+            ██          ▄█████▄       █████████████          ▄█             █▄
+           ██         ▄█▀     ▀█▄     ██         ██         ██▀█▄         ▄█▀
+           ██        ██         ██    ██         ██        ██  ▀██       ██▀
+           ██        ██         ██    ██         ██      ▄█▀     ██     ▀▀▀▀▀▀▀███
+           ██        ▀█▄       ▄█▀    ██         ██     ██▀       ▀█▄         ██▀
+            ██         ▀███████▀      █████████████    ███▄▄▄▄▄▄▄▄▄███       █▀
+
+
+
+            「你只能死一次，一定要死的轟轟烈烈。」
+
+            沒有人可以做一件事情直到永遠，
+            而一個人的生命也不是永生。
+
+            死亡給予了我們試著活下去的動力，
+            在那之前都應該竭盡所能的向著自己的夢邁進。
+
+            將自己的生命活得淋漓盡致才是最重要的；
+            不要將剛開始的序章放在頁尾。
+
+
+
+        -->
+        <meta name="description" content="A conversation presents messages between two or more people." />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Conversation - Tocas UI" />
+        <meta name="twitter:description" content="A conversation presents messages between two or more people." />
+        <meta name="twitter:image" content="https://tocas-ui.com/5.0/en-us/assets/images/og.png" />
+        <meta property="og:title" content="Conversation - Tocas UI" />
+        <meta property="og:type" content="article" />
+        <meta property="og:image" content="https://tocas-ui.com/5.0/en-us/assets/images/og.png" />
+        <meta property="og:url" content="https://tocas-ui.com/5.0/en-us/conversation.html" />
+        <meta property="og:image:width" content="1280" />
+        <meta property="og:image:height" content="720" />
+        <meta property="og:description" content="A conversation presents messages between two or more people." />
+        <link rel="icon" type="image/png" href="https://tocas-ui.com/5.0/en-us/assets/images/favicons/favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="https://tocas-ui.com/5.0/en-us/assets/images/favicons/favicon-194x194.png" sizes="194x194" />
+        <link rel="icon" type="image/png" href="https://tocas-ui.com/5.0/en-us/assets/images/favicons/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/png" href="https://tocas-ui.com/5.0/en-us/assets/images/favicons/android-chrome-192x192.png" sizes="192x192" />
+        <link rel="icon" type="image/png" href="https://tocas-ui.com/5.0/en-us/assets/images/favicons/favicon-16x16.png" sizes="16x16" />
+    </head>
+    <body>
+        <div class="穹頂">
+            <div class="界限容器">
+                <div class="穹頂-導航列">
+                    <div class="穹頂-導航列-左側">
+                        <a class="穹頂-導航列-項目 穹頂-導航列-項目_主要" href="./index.html">Tocas UI</a>
+                        <a class="穹頂-導航列-項目" href="./getting-started.html">Getting Started</a>
+                        <a class="穹頂-導航列-項目" href="./button.html">Components</a>
+                        <a class="穹頂-導航列-項目" href="./examples.html">Examples</a>
+                    </div>
+                    <div class="穹頂-導航列-右側">
+                        <button class="穹頂-導航列-項目" data-dropdown="dropdown-language">
+                            <span class="ts-flag is-america-flag"></span> English (US)
+                        </button>
+                        <div class="ts-dropdown" id="dropdown-language" data-position="bottom">
+                            
+                            <a class="item is-selected" href="./../en-us/conversation.html">
+                                <span class="ts-flag is-america-flag"></span> English (US)
+                            </a>
+                            
+                            <a class="item " href="./../zh-tw/conversation.html">
+                                <span class="ts-flag is-taiwan-flag"></span> 台灣正體
+                            </a>
+                            
+                        </div>
+                        <button class="穹頂-導航列-項目" data-dropdown="dropdown-version">
+                            <span class="ts-icon is-code-branch-icon"></span> v5.0
+                        </button>
+                        <div class="ts-dropdown" id="dropdown-version" data-position="bottom">
+                            
+                            <div class="header">Latest</div>
+                            
+                            <a class="item is-selected" >v5.0.1</a>
+                            
+                            <div class="divider"></div>
+                            
+                            <div class="header">Older releases</div>
+                            
+                            <a class="item " href="https://tocas-ui.com/4.2/zh-tw/index.html" >v4.2.5</a>
+                            
+                            <a class="item " href="https://v2.tocas-ui.com/" >v2.3.3</a>
+                            
+                            <div class="divider"></div>
+                            
+                        </div>
+                        <a class="穹頂-導航列-項目" href="https://github.com/teacat/tocas" target="_blank"><span class="ts-icon is-github-icon"></span> GitHub</a>
+                    </div>
+                </div>
+                <div class="穹頂-導航列 穹頂-導航列_手機的">
+                    <div class="穹頂-導航列-左側">
+                        <a class="穹頂-導航列-項目 穹頂-導航列-項目_主要" href="./index.html">Tocas UI</a>
+                    </div>
+                    <div class="穹頂-導航列-右側">
+                        <button class="穹頂-導航列-項目" data-dropdown="dropdown-language-mobile">
+                            <span class="ts-flag is-america-flag"></span> English (US)
+                        </button>
+                        <div class="ts-dropdown" id="dropdown-language-mobile" data-position="bottom">
+                            
+                            <a class="item is-selected" href="./../en-us/conversation.html">
+                                <span class="ts-flag is-america-flag"></span> English (US)
+                            </a>
+                            
+                            <a class="item " href="./../zh-tw/conversation.html">
+                                <span class="ts-flag is-taiwan-flag"></span> 台灣正體
+                            </a>
+                            
+                        </div>
+                        <button class="穹頂-導航列-項目 穹頂-導航列-項目_選單按鈕" aria-label='Hamburger Menu'>
+                            <span class="ts-icon is-bars-icon"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="穹頂-標題">
+                    <h1 class="穹頂-標題-主要">Conversation</h1>
+                    <div class="穹頂-標題-說明">A conversation presents messages between two or more people.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="主體">
+            <div class="界限容器">
+                <div class='主體-格局 '>
+                    <!-- 側邊導覽 -->
+                    <div class="主體-格局-導覽">
+                        
+                        <div class="主體-格局-導覽-標題">Introduction</div>
+                        
+                        <a href="./getting-started.html" class="主體-格局-導覽-項目">
+                             Getting Started 
+                        </a>
+                        
+                        <a href="./colors.html" class="主體-格局-導覽-項目">
+                             Colors 
+                        </a>
+                        
+                        <a href="./responsive.html" class="主體-格局-導覽-項目">
+                             Responsive 
+                        </a>
+                        
+                        <a href="./utilities.html" class="主體-格局-導覽-項目">
+                             Utilities 
+                        </a>
+                         
+                        <div class="主體-格局-導覽-標題">Layout</div>
+                        
+                        <a href="./container.html" class="主體-格局-導覽-項目">
+                             Container  
+                        </a>
+                        
+                        <a href="./control.html" class="主體-格局-導覽-項目">
+                             Control  
+                        </a>
+                        
+                        <a href="./grid.html" class="主體-格局-導覽-項目">
+                             Grid  
+                        </a>
+                        
+                        <a href="./wrap.html" class="主體-格局-導覽-項目">
+                             Wrap  
+                        </a>
+                         
+                        <div class="主體-格局-導覽-標題">Form</div>
+                        
+                        <a href="./button.html" class="主體-格局-導覽-項目">
+                             Button  
+                        </a>
+                        
+                        <a href="./checkbox.html" class="主體-格局-導覽-項目">
+                             Checkbox  
+                        </a>
+                        
+                        <a href="./fieldset.html" class="主體-格局-導覽-項目">
+                             Fieldset  
+                        </a>
+                        
+                        <a href="./file.html" class="主體-格局-導覽-項目">
+                             File  
+                        </a>
+                        
+                        <a href="./input.html" class="主體-格局-導覽-項目">
+                             Input  
+                        </a>
+                        
+                        <a href="./radio.html" class="主體-格局-導覽-項目">
+                             Radio  
+                        </a>
+                        
+                        <a href="./select.html" class="主體-格局-導覽-項目">
+                             Select  
+                        </a>
+                        
+                        <a href="./selection.html" class="主體-格局-導覽-項目">
+                             Selection  
+                        </a>
+                        
+                        <a href="./switch.html" class="主體-格局-導覽-項目">
+                             Switch  
+                        </a>
+                         
+                        <div class="主體-格局-導覽-標題">Paragraphy</div>
+                        
+                        <a href="./box.html" class="主體-格局-導覽-項目">
+                             Box  
+                        </a>
+                        
+                        <a href="./content.html" class="主體-格局-導覽-項目">
+                             Content  
+                        </a>
+                        
+                        <a href="./divider.html" class="主體-格局-導覽-項目">
+                             Divider  
+                        </a>
+                        
+                        <a href="./header.html" class="主體-格局-導覽-項目">
+                             Header  
+                        </a>
+                        
+                        <a href="./quote.html" class="主體-格局-導覽-項目">
+                             Quote  
+                        </a>
+                        
+                        <a href="./text.html" class="主體-格局-導覽-項目">
+                             Text  
+                        </a>
+                         
+                        <div class="主體-格局-導覽-標題">Feedback</div>
+                        
+                        <a href="./blankslate.html" class="主體-格局-導覽-項目">
+                             Blankslate  
+                        </a>
+                        
+                        <a href="./gauge.html" class="主體-格局-導覽-項目">
+                             Gauge  
+                        </a>
+                        
+                        <a href="./loading.html" class="主體-格局-導覽-項目">
+                             Loading  
+                        </a>
+                        
+                        <a href="./mask.html" class="主體-格局-導覽-項目">
+                             Mask  
+                        </a>
+                        
+                        <a href="./notice.html" class="主體-格局-導覽-項目">
+                             Notice  
+                        </a>
+                        
+                        <a href="./procedure.html" class="主體-格局-導覽-項目">
+                             Procedure  
+                        </a>
+                        
+                        <a href="./progress.html" class="主體-格局-導覽-項目">
+                             Progress  
+                        </a>
+                        
+                        <a href="./snackbar.html" class="主體-格局-導覽-項目">
+                             Snackbar  
+                        </a>
+                         
+                        <div class="主體-格局-導覽-標題">Interaction</div>
+                        
+                        <a href="./accordion.html" class="主體-格局-導覽-項目">
+                             Accordion  
+                        </a>
+                        
+                        <a href="./dropdown.html" class="主體-格局-導覽-項目">
+                             Dropdown  
+                        </a>
+                        
+                        <a href="./modal.html" class="主體-格局-導覽-項目">
+                             Modal  
+                        </a>
+                        
+                        <a href="./popover.html" class="主體-格局-導覽-項目">
+                             Popover  
+                        </a>
+                        
+                        <a href="./tooltip.html" class="主體-格局-導覽-項目">
+                             Tooltip  
+                        </a>
+                         
+                        <div class="主體-格局-導覽-標題">Media</div>
+                        
+                        <a href="./flag.html" class="主體-格局-導覽-項目">
+                             Flag  
+                        </a>
+                        
+                        <a href="./icon.html" class="主體-格局-導覽-項目">
+                             Icon  
+                        </a>
+                        
+                        <a href="./iconset.html" class="主體-格局-導覽-項目">
+                             Iconset  
+                        </a>
+                        
+                        <a href="./image.html" class="主體-格局-導覽-項目">
+                             Image  
+                        </a>
+                        
+                        <a href="./imageset.html" class="主體-格局-導覽-項目">
+                             Imageset  
+                        </a>
+                         
+                        <div class="主體-格局-導覽-標題">Data</div>
+                        
+                        <a href="./badge.html" class="主體-格局-導覽-項目">
+                             Badge  
+                        </a>
+                        
+                        <a href="./checklist.html" class="主體-格局-導覽-項目">
+                             Checklist  
+                        </a>
+                        
+                        <a href="./chip.html" class="主體-格局-導覽-項目">
+                             Chip  
+                        </a>
+                        
+                        <a href="./close.html" class="主體-格局-導覽-項目">
+                             Close  
+                        </a>
+                        
+                        <a href="./conversation.html" class="主體-格局-導覽-項目 主體-格局-導覽-項目_啟用的">
+                             Conversation  
+                        </a>
+                        
+                        <a href="./list.html" class="主體-格局-導覽-項目">
+                             List  
+                        </a>
+                        
+                        <a href="./meta.html" class="主體-格局-導覽-項目">
+                             Meta  
+                        </a>
+                        
+                        <a href="./rating.html" class="主體-格局-導覽-項目">
+                             Rating  
+                        </a>
+                        
+                        <a href="./statistic.html" class="主體-格局-導覽-項目">
+                             Statistic  
+                        </a>
+                        
+                        <a href="./table.html" class="主體-格局-導覽-項目">
+                             Table  
+                        </a>
+                        
+                        <a href="./timeline.html" class="主體-格局-導覽-項目">
+                             Timeline  
+                        </a>
+                         
+                        <div class="主體-格局-導覽-標題">Navigation</div>
+                        
+                        <a href="./breadcrumb.html" class="主體-格局-導覽-項目">
+                             Breadcrumb  
+                        </a>
+                        
+                        <a href="./menu.html" class="主體-格局-導覽-項目">
+                             Menu  
+                        </a>
+                        
+                        <a href="./pagination.html" class="主體-格局-導覽-項目">
+                             Pagination  
+                        </a>
+                        
+                        <a href="./tab.html" class="主體-格局-導覽-項目">
+                             Tab  
+                        </a>
+                         
+                        <div class="主體-格局-導覽-標題">Application</div>
+                        
+                        <a href="./app-center.html" class="主體-格局-導覽-項目">
+                             App Center  
+                        </a>
+                        
+                        <a href="./app-drawer.html" class="主體-格局-導覽-項目">
+                             App Drawer  
+                        </a>
+                        
+                        <a href="./app-layout.html" class="主體-格局-導覽-項目">
+                             App Layout  
+                        </a>
+                        
+                        <a href="./app-navbar.html" class="主體-格局-導覽-項目">
+                             App Navbar  
+                        </a>
+                        
+                        <a href="./app-sidebar.html" class="主體-格局-導覽-項目">
+                             App Sidebar  
+                        </a>
+                        
+                        <a href="./app-topbar.html" class="主體-格局-導覽-項目">
+                             App Topbar  
+                        </a>
+                         
+                        <div class="主體-格局-導覽-關閉按鈕">
+                            <span class="ts-icon is-circle-xmark-icon"></span>
+                        </div>
+                    </div>
+                    <!-- / 側邊導覽 -->
+
+                    <!-- 遮罩 -->
+                    <div class="主體-格局-遮罩"></div>
+                    <!-- / 遮罩 -->
+
+                    <main class="主體-格局-內容">
+                        <!-- 文章工具列 -->
+                        
+                        <div class="主體-格局-內容-工具列">
+                            <div class="主體-格局-內容-工具列-項目 主體-格局-內容-工具列-項目_標題">
+                                Example
+                                <!-- 標籤連結
+                                
+                                 / 標籤連結 -->
+                            </div>
+
+                            <!-- 明暗色系 -->
+                            <div class="主體-格局-內容-工具列-項目">
+                                <div class="主體-格局-內容-工具列-項目-標籤">Theme</div>
+                                <div class="主體-格局-內容-工具列-項目-下拉式選單">
+                                    <div class="主體-格局-內容-工具列-項目-下拉式選單-文字">
+                                        <span class="主體-格局-內容-工具列-項目-下拉式選單-文字-標籤">Auto</span>
+                                        <span class="主體-格局-內容-工具列-項目-下拉式選單-文字-圖示 ts-icon is-chevron-down-icon"></span>
+                                    </div>
+                                    <div class="主體-格局-內容-工具列-項目-下拉式選單-群組">
+                                        <div
+                                            data-value="is-light,is-dark"
+                                            class="主體-格局-內容-工具列-項目-下拉式選單-群組-項目 主體-格局-內容-工具列-項目-下拉式選單-群組-項目_啟用的"
+                                        >
+                                            Auto
+                                        </div>
+                                        <div data-value="is-dark;is-light" class="主體-格局-內容-工具列-項目-下拉式選單-群組-項目">Light</div>
+                                        <div data-value="is-light;is-dark" class="主體-格局-內容-工具列-項目-下拉式選單-群組-項目">Dark</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- / 明暗色系 -->
+
+                            <!-- 縮放項目 -->
+                            <div class="主體-格局-內容-工具列-項目">
+                                <div class="主體-格局-內容-工具列-項目-標籤">Scale</div>
+                                <div class="主體-格局-內容-工具列-項目-下拉式選單">
+                                    <div class="主體-格局-內容-工具列-項目-下拉式選單-文字">
+                                        <span class="主體-格局-內容-工具列-項目-下拉式選單-文字-標籤">Medium</span>
+                                        <span class="主體-格局-內容-工具列-項目-下拉式選單-文字-圖示 ts-icon is-chevron-down-icon"></span>
+                                    </div>
+                                    <div class="主體-格局-內容-工具列-項目-下拉式選單-群組">
+                                        <div data-value="is-small,is-medium;is-large" class="主體-格局-內容-工具列-項目-下拉式選單-群組-項目">
+                                            Large
+                                        </div>
+                                        <div
+                                            data-value="is-large,is-small;is-medium"
+                                            class="主體-格局-內容-工具列-項目-下拉式選單-群組-項目 主體-格局-內容-工具列-項目-下拉式選單-群組-項目_啟用的"
+                                        >
+                                            Medium
+                                        </div>
+                                        <div data-value="is-large,is-medium;is-small" class="主體-格局-內容-工具列-項目-下拉式選單-群組-項目">
+                                            Small
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- / 縮放項目 -->
+                        </div>
+
+                        <!-- 主要範例 -->
+                        <div class="主體-格局-內容-主要範例">
+                            <div class="主體-格局-內容-主要範例-實際效果  主體-格局-內容-主要範例-實際效果_置中的 ">
+                                <div class="主體-格局-內容-主要範例-實際效果-置中容器"><div class="ts-conversation is-sent">
+    <div class="avatar">
+        <img alt='A placeholder image' src="./assets/images/user.png">
+    </div>
+    <div class="content">
+        <div class="bubble">
+            <div class="author">Ayame Hoshino</div>
+            <div class="text">
+                You look at him, amused;<br>
+                he seems like a different person.
+            </div>
+            <div class="meta">
+                <div class="item">PM 11:58</div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+                            </div>
+                            <div class="主體-格局-內容-主要範例-程式碼"><pre><code class="hljs">&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"<mark>ts-conversation</mark> is-sent"</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"avatar"</span>&gt;
+        &lt;img src=<span class="hljs-string">"user.png"</span>&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"content"</span>&gt;
+        &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"bubble"</span>&gt;
+            &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"author"</span>&gt;Ayame Hoshino&lt;/<span class="hljs-keyword">div</span>&gt;
+            &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"text"</span>&gt;
+                You look <span class="hljs-keyword">at</span> him, amused;&lt;br&gt;
+                he seems like a different person.
+            &lt;/<span class="hljs-keyword">div</span>&gt;
+            &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"meta"</span>&gt;
+                &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"item"</span>&gt;PM <span class="hljs-number">11</span>:<span class="hljs-number">58</span>&lt;/<span class="hljs-keyword">div</span>&gt;
+            &lt;/<span class="hljs-keyword">div</span>&gt;
+        &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;</code></pre>
+</div>
+                        </div>
+                        <!-- / 主要範例 -->
+                        
+                        <!-- / 文章工具列 -->
+
+                        <!-- 概要 -->
+                        
+                        <!-- / 概要 -->
+
+                        <!-- 章節 -->
+                        
+                        <div class="主體-格局-內容-標題 主體-格局-內容-標題_章節">Message States</div>
+
+                        
+
+                        <!-- 國家旗幟 -->
+                        
+                        <!-- / 國家旗幟 -->
+
+                        <!-- 段落 -->
+                        
+                        <div class="主體-格局-內容-單個範例">
+                            <a class="主體-格局-內容-單個範例-錨點" id="sent"></a>
+                            <div class="主體-格局-內容-單個範例-文字-標題 主體-格局-內容-單個範例-文字-標題_段落">
+                                <a href="#sent" class="主體-格局-內容-單個範例-文字-標題-連結">Sent</a>
+                                
+                                <button class="主體-格局-內容-單個範例-文字-標題-切換原始碼"><span class="ts-icon is-code-icon"></span> Code</button>
+                                
+                            </div>
+                            <div class="主體-格局-內容-單個範例-文字"><p>A message has been sent to the server but not yet read by the recipient.</p>
+</div>
+
+                            <!-- 範例與程式碼 -->
+                            
+                            <div class="主體-格局-內容-單個範例-範例">
+                                <div class="主體-格局-內容-單個範例-範例-實際效果"><div class="ts-conversation is-sent">
+    <div class="avatar">
+        <img alt='A placeholder image' src="./assets/images/user.png">
+    </div>
+    <div class="content">
+        <div class="bubble">
+            <div class="author">Kakeru Kimishima</div>
+            <div class="text">
+                You thought you'd gotten used to it,<br>
+                but you still can't say the words.
+            </div>
+            <div class="meta">
+                <div class="item">PM 10:04</div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+                                <div class="主體-格局-內容-單個範例-範例-程式碼"><pre><code class="hljs">&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"ts-conversation <mark>is-sent</mark>"</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"avatar"</span>&gt;
+        &lt;img src=<span class="hljs-string">"user.png"</span>&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"content"</span>&gt;
+        &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"bubble"</span>&gt;
+            &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"author"</span>&gt;Kakeru Kimishima&lt;/<span class="hljs-keyword">div</span>&gt;
+            &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"text"</span>&gt;
+                You thought you'd gotten used <span class="hljs-keyword">to</span> <span class="hljs-keyword">it</span>,&lt;br&gt;
+                <span class="hljs-keyword">but</span> you still can't <span class="hljs-built_in">say</span> <span class="hljs-keyword">the</span> <span class="hljs-built_in">words</span>.
+            &lt;/<span class="hljs-keyword">div</span>&gt;
+            &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"meta"</span>&gt;
+                &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"item"</span>&gt;PM <span class="hljs-number">10</span>:<span class="hljs-number">04</span>&lt;/<span class="hljs-keyword">div</span>&gt;
+            &lt;/<span class="hljs-keyword">div</span>&gt;
+        &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;</code></pre>
+</div>
+                            </div>
+                            
+                            <!-- / 範例與程式碼 -->
+
+                            <!-- 附帶程式片段 -->
+                            
+                            <!-- / 附帶程式片段 -->
+
+                            <!-- 圖示組 -->
+                            
+                            <!-- / 圖示組 -->
+                        </div>
+                        
+                        <div class="主體-格局-內容-單個範例">
+                            <a class="主體-格局-內容-單個範例-錨點" id="sending"></a>
+                            <div class="主體-格局-內容-單個範例-文字-標題 主體-格局-內容-單個範例-文字-標題_段落">
+                                <a href="#sending" class="主體-格局-內容-單個範例-文字-標題-連結">Sending</a>
+                                
+                                <button class="主體-格局-內容-單個範例-文字-標題-切換原始碼"><span class="ts-icon is-code-icon"></span> Code</button>
+                                
+                            </div>
+                            <div class="主體-格局-內容-單個範例-文字"><p>A message is still being sent to the server, possibly due to slow internet speed.</p>
+</div>
+
+                            <!-- 範例與程式碼 -->
+                            
+                            <div class="主體-格局-內容-單個範例-範例">
+                                <div class="主體-格局-內容-單個範例-範例-實際效果"><div class="ts-conversation is-sending">
+    <div class="avatar">
+        <img alt='A placeholder image' src="./assets/images/user.png">
+    </div>
+    <div class="content">
+        <div class="bubble">
+            <div class="author">Fumi Natsuki</div>
+            <div class="text">
+                You still argue,<br>
+                but sometimes you think it's not so bad.
+            </div>
+            <div class="meta">
+                <div class="item">AM 12:04</div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+                                <div class="主體-格局-內容-單個範例-範例-程式碼"><pre><code class="hljs">&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"ts-conversation <mark>is-sending</mark>"</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"avatar"</span>&gt;
+        &lt;img src=<span class="hljs-string">"user.png"</span>&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"content"</span>&gt;
+        &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"bubble"</span>&gt;
+            &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"author"</span>&gt;Fumi Natsuki&lt;/<span class="hljs-keyword">div</span>&gt;
+            &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"text"</span>&gt;
+                You still argue,&lt;br&gt;
+                <span class="hljs-keyword">but</span> sometimes you think <span class="hljs-keyword">it</span>'s <span class="hljs-keyword">not</span> so bad.
+            &lt;/<span class="hljs-keyword">div</span>&gt;
+            &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"meta"</span>&gt;
+                &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"item"</span>&gt;AM <span class="hljs-number">12</span>:<span class="hljs-number">04</span>&lt;/<span class="hljs-keyword">div</span>&gt;
+            &lt;/<span class="hljs-keyword">div</span>&gt;
+        &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;</code></pre>
+</div>
+                            </div>
+                            
+                            <!-- / 範例與程式碼 -->
+
+                            <!-- 附帶程式片段 -->
+                            
+                            <!-- / 附帶程式片段 -->
+
+                            <!-- 圖示組 -->
+                            
+                            <!-- / 圖示組 -->
+                        </div>
+                        
+                        <div class="主體-格局-內容-單個範例">
+                            <a class="主體-格局-內容-單個範例-錨點" id="read"></a>
+                            <div class="主體-格局-內容-單個範例-文字-標題 主體-格局-內容-單個範例-文字-標題_段落">
+                                <a href="#read" class="主體-格局-內容-單個範例-文字-標題-連結">Read</a>
+                                
+                                <button class="主體-格局-內容-單個範例-文字-標題-切換原始碼"><span class="ts-icon is-code-icon"></span> Code</button>
+                                
+                            </div>
+                            <div class="主體-格局-內容-單個範例-文字"><p>A message has been received and read by the recipient.</p>
+</div>
+
+                            <!-- 範例與程式碼 -->
+                            
+                            <div class="主體-格局-內容-單個範例-範例">
+                                <div class="主體-格局-內容-單個範例-範例-實際效果"><div class="ts-conversation is-read">
+    <div class="avatar">
+        <img alt='A placeholder image' src="./assets/images/user.png">
+    </div>
+    <div class="content">
+        <div class="bubble">
+            <div class="author">Oritsuru Kawai</div>
+            <div class="text">
+                You say what you once hated, and it turns into an argument.
+            </div>
+            <div class="meta">
+                <div class="item">PM 05:26</div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+                                <div class="主體-格局-內容-單個範例-範例-程式碼"><pre><code class="hljs">&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"ts-conversation <mark>is-read</mark>"</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"avatar"</span>&gt;
+        &lt;img src=<span class="hljs-string">"user.png"</span>&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"content"</span>&gt;
+        &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"bubble"</span>&gt;
+            &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"author"</span>&gt;Oritsuru Kawai&lt;/<span class="hljs-keyword">div</span>&gt;
+            &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"text"</span>&gt;
+                You <span class="hljs-built_in">say</span> what you once hated, <span class="hljs-keyword">and</span> <span class="hljs-keyword">it</span> turns <span class="hljs-keyword">into</span> an argument.
+            &lt;/<span class="hljs-keyword">div</span>&gt;
+            &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"meta"</span>&gt;
+                &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"item"</span>&gt;PM <span class="hljs-number">05</span>:<span class="hljs-number">26</span>&lt;/<span class="hljs-keyword">div</span>&gt;
+            &lt;/<span class="hljs-keyword">div</span>&gt;
+        &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;</code></pre>
+</div>
+                            </div>
+                            
+                            <!-- / 範例與程式碼 -->
+
+                            <!-- 附帶程式片段 -->
+                            
+                            <!-- / 附帶程式片段 -->
+
+                            <!-- 圖示組 -->
+                            
+                            <!-- / 圖示組 -->
+                        </div>
+                        
+                        <div class="主體-格局-內容-單個範例">
+                            <a class="主體-格局-內容-單個範例-錨點" id="error"></a>
+                            <div class="主體-格局-內容-單個範例-文字-標題 主體-格局-內容-單個範例-文字-標題_段落">
+                                <a href="#error" class="主體-格局-內容-單個範例-文字-標題-連結">Error</a>
+                                
+                                <button class="主體-格局-內容-單個範例-文字-標題-切換原始碼"><span class="ts-icon is-code-icon"></span> Code</button>
+                                
+                            </div>
+                            <div class="主體-格局-內容-單個範例-文字"><p>A message error occurred during sending.</p>
+</div>
+
+                            <!-- 範例與程式碼 -->
+                            
+                            <div class="主體-格局-內容-單個範例-範例">
+                                <div class="主體-格局-內容-單個範例-範例-實際效果"><div class="ts-conversation is-error">
+    <div class="avatar">
+        <img alt='A placeholder image' src="./assets/images/user.png">
+    </div>
+    <div class="content">
+        <div class="bubble">
+            <div class="author">Masaaki Kiba</div>
+            <div class="text">
+                Years later, you've changed; you tell them not to compromise.
+            </div>
+            <div class="meta">
+                <div class="item">PM 08:14</div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+                                <div class="主體-格局-內容-單個範例-範例-程式碼"><pre><code class="hljs">&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"ts-conversation <mark>is-error</mark>"</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"avatar"</span>&gt;
+        &lt;img src=<span class="hljs-string">"user.png"</span>&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"content"</span>&gt;
+        &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"bubble"</span>&gt;
+            &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"author"</span>&gt;Masaaki Kiba&lt;/<span class="hljs-keyword">div</span>&gt;
+            &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"text"</span>&gt;
+                Years later, you've changed; you <span class="hljs-keyword">tell</span> them <span class="hljs-keyword">not</span> <span class="hljs-keyword">to</span> compromise.
+            &lt;/<span class="hljs-keyword">div</span>&gt;
+            &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"meta"</span>&gt;
+                &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"item"</span>&gt;PM <span class="hljs-number">08</span>:<span class="hljs-number">14</span>&lt;/<span class="hljs-keyword">div</span>&gt;
+            &lt;/<span class="hljs-keyword">div</span>&gt;
+        &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;</code></pre>
+</div>
+                            </div>
+                            
+                            <!-- / 範例與程式碼 -->
+
+                            <!-- 附帶程式片段 -->
+                            
+                            <!-- / 附帶程式片段 -->
+
+                            <!-- 圖示組 -->
+                            
+                            <!-- / 圖示組 -->
+                        </div>
+                        
+                        <!-- / 段落 -->
+                        
+                        <div class="主體-格局-內容-標題 主體-格局-內容-標題_章節">Structure</div>
+
+                        
+
+                        <!-- 國家旗幟 -->
+                        
+                        <!-- / 國家旗幟 -->
+
+                        <!-- 段落 -->
+                        
+                        <div class="主體-格局-內容-單個範例">
+                            <a class="主體-格局-內容-單個範例-錨點" id="quote"></a>
+                            <div class="主體-格局-內容-單個範例-文字-標題 主體-格局-內容-單個範例-文字-標題_段落">
+                                <a href="#quote" class="主體-格局-內容-單個範例-文字-標題-連結">Quote</a>
+                                
+                                <button class="主體-格局-內容-單個範例-文字-標題-切換原始碼"><span class="ts-icon is-code-icon"></span> Code</button>
+                                
+                            </div>
+                            <div class="主體-格局-內容-單個範例-文字"><p>A quote is a reference to another message.</p>
+</div>
+
+                            <!-- 範例與程式碼 -->
+                            
+                            <div class="主體-格局-內容-單個範例-範例">
+                                <div class="主體-格局-內容-單個範例-範例-實際效果"><div class="ts-conversation">
+    <div class="avatar">
+        <img alt='A placeholder image' src="./assets/images/user.png">
+    </div>
+    <div class="content">
+        <div class="bubble">
+            <div class="author">Kanade Hachima</div>
+            <div class="quote">
+                <div class="author">Tsukino Amakusa</div>
+                <div class="text">
+                    Have big dreams,<br>
+                    I always say that, right?
+                </div>
+            </div>
+            <div class="text">
+                I had the chance,<br>
+                but lacked the courage to choose right.
+            </div>
+            <div class="meta">
+                <div class="item">PM 04:58</div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+                                <div class="主體-格局-內容-單個範例-範例-程式碼"><pre><code class="hljs">&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"ts-conversation"</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"avatar"</span>&gt;
+        &lt;img src=<span class="hljs-string">"user.png"</span>&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"content"</span>&gt;
+        &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"bubble"</span>&gt;
+            &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"author"</span>&gt;Kanade Hachima&lt;/<span class="hljs-keyword">div</span>&gt;
+            &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"<mark>quote</mark>"</span>&gt;
+                &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"author"</span>&gt;Tsukino Amakusa&lt;/<span class="hljs-keyword">div</span>&gt;
+                &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"text"</span>&gt;
+                    Have big dreams,&lt;br&gt;
+                    I always <span class="hljs-built_in">say</span> <span class="hljs-keyword">that</span>, right?
+                &lt;/<span class="hljs-keyword">div</span>&gt;
+            &lt;/<span class="hljs-keyword">div</span>&gt;
+            &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"text"</span>&gt;
+                I had <span class="hljs-keyword">the</span> chance,&lt;br&gt;
+                <span class="hljs-keyword">but</span> lacked <span class="hljs-keyword">the</span> courage <span class="hljs-keyword">to</span> choose right.
+            &lt;/<span class="hljs-keyword">div</span>&gt;
+            &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"meta"</span>&gt;
+                &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"item"</span>&gt;PM <span class="hljs-number">04</span>:<span class="hljs-number">58</span>&lt;/<span class="hljs-keyword">div</span>&gt;
+            &lt;/<span class="hljs-keyword">div</span>&gt;
+        &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;</code></pre>
+</div>
+                            </div>
+                            
+                            <!-- / 範例與程式碼 -->
+
+                            <!-- 附帶程式片段 -->
+                            
+                            <!-- / 附帶程式片段 -->
+
+                            <!-- 圖示組 -->
+                            
+                            <!-- / 圖示組 -->
+                        </div>
+                        
+                        <div class="主體-格局-內容-單個範例">
+                            <a class="主體-格局-內容-單個範例-錨點" id="link-preview"></a>
+                            <div class="主體-格局-內容-單個範例-文字-標題 主體-格局-內容-單個範例-文字-標題_段落">
+                                <a href="#link-preview" class="主體-格局-內容-單個範例-文字-標題-連結">Link Preview</a>
+                                
+                                <button class="主體-格局-內容-單個範例-文字-標題-切換原始碼"><span class="ts-icon is-code-icon"></span> Code</button>
+                                
+                            </div>
+                            <div class="主體-格局-內容-單個範例-文字"><p>A message with a link can have a preview of the link.</p>
+</div>
+
+                            <!-- 範例與程式碼 -->
+                            
+                            <div class="主體-格局-內容-單個範例-範例">
+                                <div class="主體-格局-內容-單個範例-範例-實際效果"><div class="ts-conversation" style="max-width: 400px">
+    <div class="avatar">
+        <img alt='A placeholder image' src="./assets/images/user.png">
+    </div>
+    <div class="content">
+        <div class="bubble">
+            <div class="author">Seiichi Kageyama</div>
+            <div class="text">
+                In May in Beijing, it's light at 4 a.m.,<br>
+                and I've been away from home for days, like a nomad.
+            </div>
+            <div class="preview">
+                <div class="site">Yami's Blog</div>
+                <div class="title">Asus calls itself a "Chinese company," and block the Japan Asus-Hololive partnership.</div>
+                <div class="content">The ROG Weibo account posted that they would do everything possible to stop the collaboration.</div>
+                <div class="embed">
+                    <img alt='A placeholder image' src="./assets/images/16-9.png">
+                </div>
+            </div>
+            <div class="meta">
+                <div class="item">PM 03:04</div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+                                <div class="主體-格局-內容-單個範例-範例-程式碼"><pre><code class="hljs">&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"ts-conversation"</span> style=<span class="hljs-string">"max-width: 400px"</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"avatar"</span>&gt;
+        &lt;img src=<span class="hljs-string">"user.png"</span>&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"content"</span>&gt;
+        &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"bubble"</span>&gt;
+            &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"author"</span>&gt;Seiichi Kageyama&lt;/<span class="hljs-keyword">div</span>&gt;
+            &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"text"</span>&gt;
+                In May <span class="hljs-keyword">in</span> Beijing, <span class="hljs-keyword">it</span>'s light <span class="hljs-keyword">at</span> <span class="hljs-number">4</span> a.m.,&lt;br&gt;
+                <span class="hljs-keyword">and</span> I've been away <span class="hljs-keyword">from</span> home <span class="hljs-keyword">for</span> days, like a nomad.
+            &lt;/<span class="hljs-keyword">div</span>&gt;
+            &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"<mark>preview</mark>"</span>&gt;
+                &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"site"</span>&gt;Yami's Blog&lt;/<span class="hljs-keyword">div</span>&gt;
+                &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"title"</span>&gt;Asus calls itself a <span class="hljs-string">"Chinese company,"</span> <span class="hljs-keyword">and</span> block <span class="hljs-keyword">the</span> Japan Asus-Hololive partnership.&lt;/<span class="hljs-keyword">div</span>&gt;
+                &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"content"</span>&gt;The ROG Weibo account posted <span class="hljs-keyword">that</span> they would do everything possible <span class="hljs-keyword">to</span> stop <span class="hljs-keyword">the</span> collaboration.&lt;/<span class="hljs-keyword">div</span>&gt;
+                &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"embed"</span>&gt;
+                    &lt;img src=<span class="hljs-string">"image.png"</span>&gt;
+                &lt;/<span class="hljs-keyword">div</span>&gt;
+            &lt;/<span class="hljs-keyword">div</span>&gt;
+            &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"meta"</span>&gt;
+                &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"item"</span>&gt;PM <span class="hljs-number">03</span>:<span class="hljs-number">04</span>&lt;/<span class="hljs-keyword">div</span>&gt;
+            &lt;/<span class="hljs-keyword">div</span>&gt;
+        &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;</code></pre>
+</div>
+                            </div>
+                            
+                            <!-- / 範例與程式碼 -->
+
+                            <!-- 附帶程式片段 -->
+                            
+                            <!-- / 附帶程式片段 -->
+
+                            <!-- 圖示組 -->
+                            
+                            <!-- / 圖示組 -->
+                        </div>
+                        
+                        <div class="主體-格局-內容-單個範例">
+                            <a class="主體-格局-內容-單個範例-錨點" id="object"></a>
+                            <div class="主體-格局-內容-單個範例-文字-標題 主體-格局-內容-單個範例-文字-標題_段落">
+                                <a href="#object" class="主體-格局-內容-單個範例-文字-標題-連結">Object</a>
+                                
+                                <button class="主體-格局-內容-單個範例-文字-標題-切換原始碼"><span class="ts-icon is-code-icon"></span> Code</button>
+                                
+                            </div>
+                            <div class="主體-格局-內容-單個範例-文字"><p>A message can contain an <a href="./image.html">Image</a> and an <a href="./imageset.html">Imageset</a>.</p>
+</div>
+
+                            <!-- 範例與程式碼 -->
+                            
+                            <div class="主體-格局-內容-單個範例-範例">
+                                <div class="主體-格局-內容-單個範例-範例-實際效果"><div class="ts-conversation" style="max-width: 400px">
+    <div class="avatar">
+        <img alt='A placeholder image' src="./assets/images/user.png">
+    </div>
+    <div class="content">
+        <div class="bubble">
+            <div class="author">Suzune Shinonome</div>
+            <div class="object">
+                <div class="ts-image">
+                    <img alt='A placeholder image' src="./assets/images/16-9.png">
+                </div>
+            </div>
+            <div class="text">
+                I can't tell them; today's negative reviews increased.
+            </div>
+        </div>
+    </div>
+</div>
+<div class="ts-space"></div>
+<div class="ts-conversation" style="max-width: 400px">
+    <div class="avatar">
+        <img alt='A placeholder image' src="./assets/images/user.png">
+    </div>
+    <div class="content">
+        <div class="bubble">
+            <div class="author">Sota Yamazaki</div>
+            <div class="object">
+                <div class="ts-imageset is-compact is-3-images">
+                    <div class="item">
+                        <img alt='A placeholder image' src="./assets/images/16-9.png">
+                    </div>
+                    <div class="item">
+                        <img alt='A placeholder image' src="./assets/images/16-9.png">
+                    </div>
+                    <div class="item">
+                        <img alt='A placeholder image' src="./assets/images/16-9.png">
+                    </div>
+                </div>
+            </div>
+            <div class="text">
+                It's 2:55 a.m.,<br>
+                and today is only half over.
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+                                <div class="主體-格局-內容-單個範例-範例-程式碼"><pre><code class="hljs">&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"ts-conversation"</span> style=<span class="hljs-string">"max-width: 400px"</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"avatar"</span>&gt;
+        &lt;img src=<span class="hljs-string">"user.png"</span>&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"content"</span>&gt;
+        &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"bubble"</span>&gt;
+            &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"author"</span>&gt;Suzune Shinonome&lt;/<span class="hljs-keyword">div</span>&gt;
+            &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"<mark>object</mark>"</span>&gt;
+                &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"ts-image"</span>&gt;
+                    &lt;img src=<span class="hljs-string">"image.png"</span>&gt;
+                &lt;/<span class="hljs-keyword">div</span>&gt;
+            &lt;/<span class="hljs-keyword">div</span>&gt;
+            &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"text"</span>&gt;
+                I can't <span class="hljs-keyword">tell</span> them; today's negative reviews increased.
+            &lt;/<span class="hljs-keyword">div</span>&gt;
+        &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"ts-conversation"</span> style=<span class="hljs-string">"max-width: 400px"</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"avatar"</span>&gt;
+        &lt;img src=<span class="hljs-string">"user.png"</span>&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"content"</span>&gt;
+        &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"bubble"</span>&gt;
+            &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"author"</span>&gt;Sota Yamazaki&lt;/<span class="hljs-keyword">div</span>&gt;
+            &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"<mark>object</mark>"</span>&gt;
+                &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"<a href="./imageset.html">ts-imageset</a> is-compact is-3-images"</span>&gt;
+                    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"item"</span>&gt;
+                        &lt;img src=<span class="hljs-string">"image.png"</span>&gt;
+                    &lt;/<span class="hljs-keyword">div</span>&gt;
+                    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"item"</span>&gt;
+                        &lt;img src=<span class="hljs-string">"image.png"</span>&gt;
+                    &lt;/<span class="hljs-keyword">div</span>&gt;
+                    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"item"</span>&gt;
+                        &lt;img src=<span class="hljs-string">"image.png"</span>&gt;
+                    &lt;/<span class="hljs-keyword">div</span>&gt;
+                &lt;/<span class="hljs-keyword">div</span>&gt;
+            &lt;/<span class="hljs-keyword">div</span>&gt;
+            &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"text"</span>&gt;
+                It's <span class="hljs-number">2</span>:<span class="hljs-number">55</span> a.m.,&lt;br&gt;
+                <span class="hljs-keyword">and</span> today <span class="hljs-keyword">is</span> only half <span class="hljs-keyword">over</span>.
+            &lt;/<span class="hljs-keyword">div</span>&gt;
+        &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;</code></pre>
+</div>
+                            </div>
+                            
+                            <!-- / 範例與程式碼 -->
+
+                            <!-- 附帶程式片段 -->
+                            
+                            <!-- / 附帶程式片段 -->
+
+                            <!-- 圖示組 -->
+                            
+                            <!-- / 圖示組 -->
+                        </div>
+                        
+                        <!-- / 段落 -->
+                        
+                        <div class="主體-格局-內容-標題 主體-格局-內容-標題_章節">Variations</div>
+
+                        
+
+                        <!-- 國家旗幟 -->
+                        
+                        <!-- / 國家旗幟 -->
+
+                        <!-- 段落 -->
+                        
+                        <div class="主體-格局-內容-單個範例">
+                            <a class="主體-格局-內容-單個範例-錨點" id="self"></a>
+                            <div class="主體-格局-內容-單個範例-文字-標題 主體-格局-內容-單個範例-文字-標題_段落">
+                                <a href="#self" class="主體-格局-內容-單個範例-文字-標題-連結">Self</a>
+                                
+                                <button class="主體-格局-內容-單個範例-文字-標題-切換原始碼"><span class="ts-icon is-code-icon"></span> Code</button>
+                                
+                            </div>
+                            <div class="主體-格局-內容-單個範例-文字"><p>A message can be aligned to the right to indicate that it was sent by the user.</p>
+</div>
+
+                            <!-- 範例與程式碼 -->
+                            
+                            <div class="主體-格局-內容-單個範例-範例">
+                                <div class="主體-格局-內容-單個範例-範例-實際效果"><div class="ts-conversation is-self">
+    <div class="avatar">
+        <img alt='A placeholder image' src="./assets/images/user.png">
+    </div>
+    <div class="content">
+        <div class="bubble">
+            <div class="author">Tsukasa Nitta</div>
+            <div class="text">
+                Reasons come before results,<br>
+                but it depends on your view of time.
+            </div>
+            <div class="meta">
+                <div class="item">PM 05:18</div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+                                <div class="主體-格局-內容-單個範例-範例-程式碼"><pre><code class="hljs">&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"ts-conversation <mark>is-self</mark>"</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"avatar"</span>&gt;
+        &lt;img src=<span class="hljs-string">"user.png"</span>&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"content"</span>&gt;
+        &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"bubble"</span>&gt;
+            &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"author"</span>&gt;Tsukasa Nitta&lt;/<span class="hljs-keyword">div</span>&gt;
+            &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"text"</span>&gt;
+                Reasons come <span class="hljs-keyword">before</span> results,&lt;br&gt;
+                <span class="hljs-keyword">but</span> <span class="hljs-keyword">it</span> depends <span class="hljs-keyword">on</span> your view <span class="hljs-keyword">of</span> <span class="hljs-built_in">time</span>.
+            &lt;/<span class="hljs-keyword">div</span>&gt;
+            &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"meta"</span>&gt;
+                &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"item"</span>&gt;PM <span class="hljs-number">05</span>:<span class="hljs-number">18</span>&lt;/<span class="hljs-keyword">div</span>&gt;
+            &lt;/<span class="hljs-keyword">div</span>&gt;
+        &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;</code></pre>
+</div>
+                            </div>
+                            
+                            <!-- / 範例與程式碼 -->
+
+                            <!-- 附帶程式片段 -->
+                            
+                            <!-- / 附帶程式片段 -->
+
+                            <!-- 圖示組 -->
+                            
+                            <!-- / 圖示組 -->
+                        </div>
+                        
+                        <div class="主體-格局-內容-單個範例">
+                            <a class="主體-格局-內容-單個範例-錨點" id="object-only"></a>
+                            <div class="主體-格局-內容-單個範例-文字-標題 主體-格局-內容-單個範例-文字-標題_段落">
+                                <a href="#object-only" class="主體-格局-內容-單個範例-文字-標題-連結">Object Only</a>
+                                
+                                <button class="主體-格局-內容-單個範例-文字-標題-切換原始碼"><span class="ts-icon is-code-icon"></span> Code</button>
+                                
+                            </div>
+                            <div class="主體-格局-內容-單個範例-文字"><p>A message can look more compact and remove unnecessary paddings if it only contains an object.</p>
+</div>
+
+                            <!-- 範例與程式碼 -->
+                            
+                            <div class="主體-格局-內容-單個範例-範例">
+                                <div class="主體-格局-內容-單個範例-範例-實際效果"><div class="ts-conversation is-object-only is-sent">
+    <div class="avatar">
+        <img alt='A placeholder image' src="./assets/images/user.png">
+    </div>
+    <div class="content">
+        <div class="bubble">
+            <div class="object">
+                <div class="ts-image">
+                    <img alt='A placeholder image' src="./assets/images/16-9.png">
+                </div>
+            </div>
+            <div class="meta">
+                <div class="item">AM 06:37</div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+                                <div class="主體-格局-內容-單個範例-範例-程式碼"><pre><code class="hljs">&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"ts-conversation <mark>is-object-only</mark> is-sent"</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"avatar"</span>&gt;
+        &lt;img src=<span class="hljs-string">"user.png"</span>&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"content"</span>&gt;
+        &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"bubble"</span>&gt;
+            &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"object"</span>&gt;
+                &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"ts-image"</span>&gt;
+                    &lt;img src=<span class="hljs-string">"image.png"</span>&gt;
+                &lt;/<span class="hljs-keyword">div</span>&gt;
+            &lt;/<span class="hljs-keyword">div</span>&gt;
+            &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"meta"</span>&gt;
+                &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"item"</span>&gt;AM <span class="hljs-number">06</span>:<span class="hljs-number">37</span>&lt;/<span class="hljs-keyword">div</span>&gt;
+            &lt;/<span class="hljs-keyword">div</span>&gt;
+        &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;</code></pre>
+</div>
+                            </div>
+                            
+                            <!-- / 範例與程式碼 -->
+
+                            <!-- 附帶程式片段 -->
+                            
+                            <!-- / 附帶程式片段 -->
+
+                            <!-- 圖示組 -->
+                            
+                            <!-- / 圖示組 -->
+                        </div>
+                        
+                        <!-- / 段落 -->
+                        
+                        <div class="主體-格局-內容-標題 主體-格局-內容-標題_章節">Compositions</div>
+
+                        
+
+                        <!-- 國家旗幟 -->
+                        
+                        <!-- / 國家旗幟 -->
+
+                        <!-- 段落 -->
+                        
+                        <div class="主體-格局-內容-單個範例">
+                            <a class="主體-格局-內容-單個範例-錨點" id="composition-reactions"></a>
+                            <div class="主體-格局-內容-單個範例-文字-標題 主體-格局-內容-單個範例-文字-標題_段落">
+                                <a href="#composition-reactions" class="主體-格局-內容-單個範例-文字-標題-連結">Reactions</a>
+                                
+                                <button class="主體-格局-內容-單個範例-文字-標題-切換原始碼"><span class="ts-icon is-code-icon"></span> Code</button>
+                                
+                            </div>
+                            <div class="主體-格局-內容-單個範例-文字"><p>A message can have <a href="./chip.html">Chip</a> reactions placed under it.</p>
+</div>
+
+                            <!-- 範例與程式碼 -->
+                            
+                            <div class="主體-格局-內容-單個範例-範例">
+                                <div class="主體-格局-內容-單個範例-範例-實際效果"><div class="ts-conversation">
+    <div class="avatar">
+        <img alt='A placeholder image' src="./assets/images/user.png">
+    </div>
+    <div class="content">
+        <div class="bubble">
+            <div class="author">Rihito Sato</div>
+            <div class="text">
+                Everyone needs to live;<br>
+                not everyone has the courage to risk it all.
+            </div>
+        </div>
+        <div class="ts-wrap is-compact has-top-spaced-small">
+            <label class="ts-chip is-toggle is-secondary is-circular is-outlined">
+                <input type="checkbox" checked="">
+                <div class="content">👌 21</div>
+            </label>
+            <label class="ts-chip is-toggle is-secondary is-circular is-outlined">
+                <input type="checkbox">
+                <div class="content">👀 8</div>
+            </label>
+            <div class="ts-chip is-outlined is-circular" style="padding: 0.1rem 0.5rem">
+                <span class="ts-icon is-regular is-face-smile-icon"></span>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+                                <div class="主體-格局-內容-單個範例-範例-程式碼"><pre><code class="hljs">&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"ts-conversation"</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"avatar"</span>&gt;
+        &lt;img src=<span class="hljs-string">"user.png"</span>&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"content"</span>&gt;
+        &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"bubble"</span>&gt;
+            &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"author"</span>&gt;Rihito Sato&lt;/<span class="hljs-keyword">div</span>&gt;
+            &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"text"</span>&gt;
+                Everyone needs <span class="hljs-keyword">to</span> live;&lt;br&gt;
+                <span class="hljs-keyword">not</span> everyone has <span class="hljs-keyword">the</span> courage <span class="hljs-keyword">to</span> risk <span class="hljs-keyword">it</span> all.
+            &lt;/<span class="hljs-keyword">div</span>&gt;
+        &lt;/<span class="hljs-keyword">div</span>&gt;
+        &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"<a href="./wrap.html">ts-wrap</a> is-compact <a href="./utilities.html">has-top-spaced-small</a>"</span>&gt;
+            &lt;label <span class="hljs-built_in">class</span>=<span class="hljs-string">"<mark><a href="./chip.html">ts-chip</a></mark> is-toggle is-secondary is-circular is-outlined"</span>&gt;
+                &lt;input type=<span class="hljs-string">"checkbox"</span> checked=<span class="hljs-string">""</span>&gt;
+                &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"content"</span>&gt;👌 <span class="hljs-number">21</span>&lt;/<span class="hljs-keyword">div</span>&gt;
+            &lt;/label&gt;
+            &lt;label <span class="hljs-built_in">class</span>=<span class="hljs-string">"<mark><a href="./chip.html">ts-chip</a></mark> is-toggle is-secondary is-circular is-outlined"</span>&gt;
+                &lt;input type=<span class="hljs-string">"checkbox"</span>&gt;
+                &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"content"</span>&gt;👀 <span class="hljs-number">8</span>&lt;/<span class="hljs-keyword">div</span>&gt;
+            &lt;/label&gt;
+            &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"<mark><a href="./chip.html">ts-chip</a></mark> is-outlined is-circular"</span> style=<span class="hljs-string">"padding: 0.1rem 0.5rem"</span>&gt;
+                &lt;span <span class="hljs-built_in">class</span>=<span class="hljs-string">"<a href="./icon.html">ts-icon</a> is-regular is-face-smile-icon"</span>&gt;&lt;/span&gt;
+            &lt;/<span class="hljs-keyword">div</span>&gt;
+        &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;</code></pre>
+</div>
+                            </div>
+                            
+                            <!-- / 範例與程式碼 -->
+
+                            <!-- 附帶程式片段 -->
+                            
+                            <!-- / 附帶程式片段 -->
+
+                            <!-- 圖示組 -->
+                            
+                            <!-- / 圖示組 -->
+                        </div>
+                        
+                        <div class="主體-格局-內容-單個範例">
+                            <a class="主體-格局-內容-單個範例-錨點" id="composition-meta"></a>
+                            <div class="主體-格局-內容-單個範例-文字-標題 主體-格局-內容-單個範例-文字-標題_段落">
+                                <a href="#composition-meta" class="主體-格局-內容-單個範例-文字-標題-連結">Meta</a>
+                                
+                                <button class="主體-格局-內容-單個範例-文字-標題-切換原始碼"><span class="ts-icon is-code-icon"></span> Code</button>
+                                
+                            </div>
+                            <div class="主體-格局-內容-單個範例-文字"><p>A message can have <a href="./meta.html">Meta</a> displayed under it.</p>
+</div>
+
+                            <!-- 範例與程式碼 -->
+                            
+                            <div class="主體-格局-內容-單個範例-範例">
+                                <div class="主體-格局-內容-單個範例-範例-實際效果"><div class="ts-conversation">
+    <div class="avatar">
+        <img alt='A placeholder image' src="./assets/images/user.png">
+    </div>
+    <div class="content">
+        <div class="bubble">
+            <div class="author">Mhlia</div>
+            <div class="text">
+                You wonder when you died.<br>
+                In the end, you recall a scene.
+            </div>
+        </div>
+        <div class="ts-meta is-small is-secondary">
+            <a class="item" href="#!">Like</a>
+            <a class="item" href="#!">Reply</a>
+            <a class="item" href="#!">3 mins</a>
+        </div>
+    </div>
+</div>
+</div>
+                                <div class="主體-格局-內容-單個範例-範例-程式碼"><pre><code class="hljs">&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"ts-conversation"</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"avatar"</span>&gt;
+        &lt;img src=<span class="hljs-string">"user.png"</span>&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"content"</span>&gt;
+        &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"bubble"</span>&gt;
+            &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"author"</span>&gt;Mhlia&lt;/<span class="hljs-keyword">div</span>&gt;
+            &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"text"</span>&gt;
+                You wonder when you died.&lt;br&gt;
+                In <span class="hljs-keyword">the</span> <span class="hljs-keyword">end</span>, you recall a scene.
+            &lt;/<span class="hljs-keyword">div</span>&gt;
+        &lt;/<span class="hljs-keyword">div</span>&gt;
+        &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"<mark><a href="./meta.html">ts-meta</a></mark> is-small is-secondary"</span>&gt;
+            &lt;a <span class="hljs-built_in">class</span>=<span class="hljs-string">"item"</span>&gt;Like&lt;/a&gt;
+            &lt;a <span class="hljs-built_in">class</span>=<span class="hljs-string">"item"</span>&gt;Reply&lt;/a&gt;
+            &lt;a <span class="hljs-built_in">class</span>=<span class="hljs-string">"item"</span>&gt;<span class="hljs-number">3</span> mins&lt;/a&gt;
+        &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;</code></pre>
+</div>
+                            </div>
+                            
+                            <!-- / 範例與程式碼 -->
+
+                            <!-- 附帶程式片段 -->
+                            
+                            <!-- / 附帶程式片段 -->
+
+                            <!-- 圖示組 -->
+                            
+                            <!-- / 圖示組 -->
+                        </div>
+                        
+                        <div class="主體-格局-內容-單個範例">
+                            <a class="主體-格局-內容-單個範例-錨點" id="composition-callbacks"></a>
+                            <div class="主體-格局-內容-單個範例-文字-標題 主體-格局-內容-單個範例-文字-標題_段落">
+                                <a href="#composition-callbacks" class="主體-格局-內容-單個範例-文字-標題-連結">Callbacks</a>
+                                
+                                <button class="主體-格局-內容-單個範例-文字-標題-切換原始碼"><span class="ts-icon is-code-icon"></span> Code</button>
+                                
+                            </div>
+                            <div class="主體-格局-內容-單個範例-文字"><p><a href="./button.html">Buttons</a> and <a href="./grid.html">Grid</a> as action buttons for the message. Suitable for chatbot scenarios.</p>
+</div>
+
+                            <!-- 範例與程式碼 -->
+                            
+                            <div class="主體-格局-內容-單個範例-範例">
+                                <div class="主體-格局-內容-單個範例-範例-實際效果"><div class="ts-conversation">
+    <div class="avatar">
+        <img alt='A placeholder image' src="./assets/images/user.png">
+    </div>
+    <div class="content">
+        <div class="bubble">
+            <div class="author">Text-based RPG Game Bot</div>
+            <div class="text">
+                You're in: <b>Teyran, Tis City</b><br>
+                11 players here.<br>
+                The town exit is nearby.
+            </div>
+            <div class="meta">
+                <div class="item">PM 01:02</div>
+            </div>
+        </div>
+        <div class="ts-grid is-compact is-evenly-divided has-top-spaced-small">
+            <div class="column">
+                <button class="ts-button is-small is-secondary is-fluid">
+                    ⬆️ Forward
+                </button>
+            </div>
+            <div class="column">
+                <button class="ts-button is-small is-secondary is-fluid">
+                    ↩️ Return
+                </button>
+            </div>
+            <div class="column">
+                <button class="ts-button is-small is-secondary is-fluid">
+                    👁️‍🗨️ Investigate
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+                                <div class="主體-格局-內容-單個範例-範例-程式碼"><pre><code class="hljs">&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"ts-conversation"</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"avatar"</span>&gt;
+        &lt;img src=<span class="hljs-string">"user.png"</span>&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"content"</span>&gt;
+        &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"bubble"</span>&gt;
+            &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"author"</span>&gt;Text-based RPG Game Bot&lt;/<span class="hljs-keyword">div</span>&gt;
+            &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"text"</span>&gt;
+                You're <span class="hljs-keyword">in</span>: &lt;b&gt;Teyran, Tis City&lt;/b&gt;&lt;br&gt;
+                <span class="hljs-number">11</span> players here.&lt;br&gt;
+                The town <span class="hljs-keyword">exit</span> <span class="hljs-keyword">is</span> nearby.
+            &lt;/<span class="hljs-keyword">div</span>&gt;
+            &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"meta"</span>&gt;
+                &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"item"</span>&gt;PM <span class="hljs-number">01</span>:<span class="hljs-number">02</span>&lt;/<span class="hljs-keyword">div</span>&gt;
+            &lt;/<span class="hljs-keyword">div</span>&gt;
+        &lt;/<span class="hljs-keyword">div</span>&gt;
+        &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"<a href="./grid.html">ts-grid</a> is-compact is-evenly-divided <a href="./utilities.html">has-top-spaced-small</a>"</span>&gt;
+            &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"column"</span>&gt;
+                &lt;button <span class="hljs-built_in">class</span>=<span class="hljs-string">"<mark><a href="./button.html">ts-button</a></mark> is-small is-secondary is-fluid"</span>&gt;
+                    ⬆️ Forward
+                &lt;/button&gt;
+            &lt;/<span class="hljs-keyword">div</span>&gt;
+            &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"column"</span>&gt;
+                &lt;button <span class="hljs-built_in">class</span>=<span class="hljs-string">"<mark><a href="./button.html">ts-button</a></mark> is-small is-secondary is-fluid"</span>&gt;
+                    ↩️ Return
+                &lt;/button&gt;
+            &lt;/<span class="hljs-keyword">div</span>&gt;
+            &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"column"</span>&gt;
+                &lt;button <span class="hljs-built_in">class</span>=<span class="hljs-string">"<mark><a href="./button.html">ts-button</a></mark> is-small is-secondary is-fluid"</span>&gt;
+                    👁️‍🗨️ Investigate
+                &lt;/button&gt;
+            &lt;/<span class="hljs-keyword">div</span>&gt;
+        &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;</code></pre>
+</div>
+                            </div>
+                            
+                            <!-- / 範例與程式碼 -->
+
+                            <!-- 附帶程式片段 -->
+                            
+                            <!-- / 附帶程式片段 -->
+
+                            <!-- 圖示組 -->
+                            
+                            <!-- / 圖示組 -->
+                        </div>
+                        
+                        <!-- / 段落 -->
+                        
+                        <!-- / 章節 -->
+
+                        <!-- HTML 屬性 -->
+                        
+                        <!-- / HTML 屬性 -->
+
+                        <!-- 變數屬性 -->
+                        
+                        <!-- / 變數屬性 -->
+
+                        <!-- 額外連結 -->
+                        
+                        <!-- / 額外連結 -->
+
+                        
+                    </main>
+
+                    <!-- 側邊索引 -->
+                    <div class="主體-格局-索引">
+                        
+                        <div class="主體-格局-索引-標題">Message States</div>
+                        <div class="主體-格局-索引-清單">
+                            
+                            <a class="主體-格局-索引-清單-項目" href="#sent">
+                                Sent <span class="主體-格局-索引-清單-項目-英文">is-sent</span>
+                            </a>
+                            
+                            <a class="主體-格局-索引-清單-項目" href="#sending">
+                                Sending <span class="主體-格局-索引-清單-項目-英文">is-sending</span>
+                            </a>
+                            
+                            <a class="主體-格局-索引-清單-項目" href="#read">
+                                Read <span class="主體-格局-索引-清單-項目-英文">is-read</span>
+                            </a>
+                            
+                            <a class="主體-格局-索引-清單-項目" href="#error">
+                                Error <span class="主體-格局-索引-清單-項目-英文">is-error</span>
+                            </a>
+                            
+                        </div>
+                        
+                        <div class="主體-格局-索引-標題">Structure</div>
+                        <div class="主體-格局-索引-清單">
+                            
+                            <a class="主體-格局-索引-清單-項目" href="#quote">
+                                Quote <span class="主體-格局-索引-清單-項目-英文">quote</span>
+                            </a>
+                            
+                            <a class="主體-格局-索引-清單-項目" href="#link-preview">
+                                Link Preview <span class="主體-格局-索引-清單-項目-英文">preview</span>
+                            </a>
+                            
+                            <a class="主體-格局-索引-清單-項目" href="#object">
+                                Object <span class="主體-格局-索引-清單-項目-英文">object</span>
+                            </a>
+                            
+                        </div>
+                        
+                        <div class="主體-格局-索引-標題">Variations</div>
+                        <div class="主體-格局-索引-清單">
+                            
+                            <a class="主體-格局-索引-清單-項目" href="#self">
+                                Self <span class="主體-格局-索引-清單-項目-英文">is-self</span>
+                            </a>
+                            
+                            <a class="主體-格局-索引-清單-項目" href="#object-only">
+                                Object Only <span class="主體-格局-索引-清單-項目-英文">is-object-only</span>
+                            </a>
+                            
+                        </div>
+                        
+                        <div class="主體-格局-索引-標題">Compositions</div>
+                        <div class="主體-格局-索引-清單">
+                            
+                            <a class="主體-格局-索引-清單-項目" href="#composition-reactions">
+                                Reactions <span class="主體-格局-索引-清單-項目-英文">{{ts-chip}}</span>
+                            </a>
+                            
+                            <a class="主體-格局-索引-清單-項目" href="#composition-meta">
+                                Meta <span class="主體-格局-索引-清單-項目-英文">{{ts-meta}}</span>
+                            </a>
+                            
+                            <a class="主體-格局-索引-清單-項目" href="#composition-callbacks">
+                                Callbacks <span class="主體-格局-索引-清單-項目-英文">{{ts-button}}</span>
+                            </a>
+                            
+                        </div>
+                        
+                        <button class="主體-格局-索引-回到頂部"><span class="ts-icon is-arrow-up-icon"></span> Back To Top</button>
+                    </div>
+                    <!-- / 側邊索引 -->
+                </div>
+            </div>
+        </div>
+
+        <div class="頁腳">
+            <div class="界限容器">
+                <div class="頁腳-導航列">
+                    <button class="頁腳-導航列-項目 頁腳-導航列-項目_回到頂部"><span class="ts-icon is-arrow-up-icon"></span> Back to Top</button>
+                    <a class="頁腳-導航列-項目" href="https://github.com/teacat/tocas" target="_blank">GitHub</a>
+                    <a class="頁腳-導航列-項目" href="./getting-started.html">Getting Started</a>
+                    <a class="頁腳-導航列-項目" href="./button.html">Components</a>
+                    <a class="頁腳-導航列-項目" href="./examples.html">Examples</a>
+                </div>
+                <div class="頁腳-格局">
+                    <div class="頁腳-格局-資訊">
+                        <div class="頁腳-格局-資訊-文字">Designed by Yami Odymel from <span class="ts-flag is-taiwan-flag is-small"></span> Taiwan, along with the ❤️ from <a href="https://github.com/teacat/tocas/graphs/contributors" target="_blank">contributors</a>. The source code is licensed under <a href="https://github.com/teacat/tocas/blob/master/LICENSE" target="_blank">MIT</a>, and the documentation is under <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.zh_TW" target="_blank">CC 0</a> public domain. Feel free to use, share, or contribute. Tocas UI is a design system for <a href="https://caris.events" target="_blank">Caris Events</a>, part of <a href="https://sorae.co" target="_blank">Sorae & Co., Ltd.</a></div>
+                        <div class="頁腳-格局-資訊-翻譯者">Translators: <a href="https://twitter.com/YamiOdymel" target="_blank">Yami Odymel</a></div>
+                    </div>
+                    <div class="頁腳-格局-商標">
+                        <img class="頁腳-格局-商標-圖片" src="./assets/images/caris-events.svg" alt='Trademark of the owner of Tocas UI' />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

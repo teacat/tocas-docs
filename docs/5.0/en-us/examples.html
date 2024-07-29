@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./assets/style.css" />
+        <link rel="stylesheet" href="./assets/highlight.css" />
+        <link rel="stylesheet" href="./assets/tocas/tocas.min.css" />
+        <script src="./assets/tocas/tocas.min.js"></script>
+        <link rel="stylesheet" href="./assets/examples.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet" />
+        <link rel="canonical" href="https://tocas-ui.com/5.0/en-us/examples.html" />
+        <script src="./assets/script.js"></script>
+        <title>Examples - Tocas UI</title>
+        <!--
+
+
+
+        ▄▄▄        ▄▄████▄
+      ▄█████▄    ▄██▀    ██
+      ▀█▄   ██▄ ██▀      ██
+       ▀██▄▄▄████   ▄▄▄██▀
+          ▀▀▀████▀▀▀▀▀
+             ██
+            ██          ▄█████▄       █████████████          ▄█             █▄
+           ██         ▄█▀     ▀█▄     ██         ██         ██▀█▄         ▄█▀
+           ██        ██         ██    ██         ██        ██  ▀██       ██▀
+           ██        ██         ██    ██         ██      ▄█▀     ██     ▀▀▀▀▀▀▀███
+           ██        ▀█▄       ▄█▀    ██         ██     ██▀       ▀█▄         ██▀
+            ██         ▀███████▀      █████████████    ███▄▄▄▄▄▄▄▄▄███       █▀
+
+
+
+            「你只能死一次，一定要死的轟轟烈烈。」
+
+            沒有人可以做一件事情直到永遠，
+            而一個人的生命也不是永生。
+
+            死亡給予了我們試著活下去的動力，
+            在那之前都應該竭盡所能的向著自己的夢邁進。
+
+            將自己的生命活得淋漓盡致才是最重要的；
+            不要將剛開始的序章放在頁尾。
+
+
+
+        -->
+        <meta name="description" content="Pages built with Tocas UI, where you can view and download the source code." />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Examples - Tocas UI" />
+        <meta name="twitter:description" content="Pages built with Tocas UI, where you can view and download the source code." />
+        <meta name="twitter:image" content="https://tocas-ui.com/5.0/en-us/assets/images/og.png" />
+        <meta property="og:title" content="Examples - Tocas UI" />
+        <meta property="og:type" content="article" />
+        <meta property="og:image" content="https://tocas-ui.com/5.0/en-us/assets/images/og.png" />
+        <meta property="og:url" content="https://tocas-ui.com/5.0/en-us/examples.html" />
+        <meta property="og:image:width" content="1280" />
+        <meta property="og:image:height" content="720" />
+        <meta property="og:description" content="Pages built with Tocas UI, where you can view and download the source code." />
+        <link rel="icon" type="image/png" href="https://tocas-ui.com/5.0/en-us/assets/images/favicons/favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="https://tocas-ui.com/5.0/en-us/assets/images/favicons/favicon-194x194.png" sizes="194x194" />
+        <link rel="icon" type="image/png" href="https://tocas-ui.com/5.0/en-us/assets/images/favicons/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/png" href="https://tocas-ui.com/5.0/en-us/assets/images/favicons/android-chrome-192x192.png" sizes="192x192" />
+        <link rel="icon" type="image/png" href="https://tocas-ui.com/5.0/en-us/assets/images/favicons/favicon-16x16.png" sizes="16x16" />
+    </head>
+    <body>
+        <div class="穹頂">
+            <div class="界限容器">
+                <div class="穹頂-導航列">
+                    <div class="穹頂-導航列-左側">
+                        <a class="穹頂-導航列-項目 穹頂-導航列-項目_主要" href="./index.html">Tocas UI</a>
+                        <a class="穹頂-導航列-項目" href="./getting-started.html">Getting Started</a>
+                        <a class="穹頂-導航列-項目" href="./button.html">Components</a>
+                        <a class="穹頂-導航列-項目" href="./examples.html">Examples</a>
+                    </div>
+                    <div class="穹頂-導航列-右側">
+                        <button class="穹頂-導航列-項目" data-dropdown="dropdown-language">
+                            <span class="ts-flag is-america-flag"></span> English (US)
+                        </button>
+                        <div class="ts-dropdown" id="dropdown-language" data-position="bottom">
+                            
+                            <a class="item is-selected" href="./../en-us/examples.html">
+                                <span class="ts-flag is-america-flag"></span> English (US)
+                            </a>
+                            
+                            <a class="item " href="./../zh-tw/examples.html">
+                                <span class="ts-flag is-taiwan-flag"></span> 台灣正體
+                            </a>
+                            
+                        </div>
+                        <button class="穹頂-導航列-項目" data-dropdown="dropdown-version">
+                            <span class="ts-icon is-code-branch-icon"></span> v5.0
+                        </button>
+                        <div class="ts-dropdown" id="dropdown-version" data-position="bottom">
+                            
+                            <div class="header">Latest</div>
+                            
+                            <a class="item is-selected" href="">v5.0.1</a>
+                            
+                            <div class="divider"></div>
+                            
+                            <div class="header">Older releases</div>
+                            
+                            <a class="item " href="https://tocas-ui.com/4.2/zh-tw/index.html">v4.2.5</a>
+                            
+                            <a class="item " href="https://v2.tocas-ui.com/">v2.3.3</a>
+                            
+                            <div class="divider"></div>
+                            
+                        </div>
+                        <a class="穹頂-導航列-項目" href="https://github.com/teacat/tocas" target="_blank"><span class="ts-icon is-github-icon"></span> GitHub</a>
+                    </div>
+                </div>
+                <div class="穹頂-導航列 穹頂-導航列_手機的">
+                    <div class="穹頂-導航列-左側">
+                        <a class="穹頂-導航列-項目 穹頂-導航列-項目_主要" href="./index.html">Tocas UI</a>
+                    </div>
+                    <div class="穹頂-導航列-右側">
+                        <button class="穹頂-導航列-項目" data-dropdown="dropdown-language-mobile">
+                            <span class="ts-flag is-america-flag"></span> English (US)
+                        </button>
+                        <div class="ts-dropdown" id="dropdown-language-mobile" data-position="bottom">
+                            
+                            <a class="item is-selected" href="./../en-us/examples.html">
+                                <span class="ts-flag is-america-flag"></span> English (US)
+                            </a>
+                            
+                            <a class="item " href="./../zh-tw/examples.html">
+                                <span class="ts-flag is-taiwan-flag"></span> 台灣正體
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="穹頂-標題">
+                    <h1 class="穹頂-標題-主要">Examples</h1>
+                    <div class="穹頂-標題-說明">Pages built with Tocas UI, where you can view and download the source code.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="文件內容">
+            <div class="界限容器">
+                <div class="文件內容-電腦版設計">
+                    <div class="文件內容-電腦版設計-標題">HEADS UP!</div>
+                    <div class="文件內容-電腦版設計-內容">Designed primarily for desktop, these examples may appear distorted or cropped when viewed on mobile devices.</div>
+                </div>
+
+                <div class="文件內容-範例清單">
+                    
+                    <div class="文件內容-範例清單-段落">
+                        <div class="文件內容-範例清單-段落-標題">Applications</div>
+                        <div class="文件內容-範例清單-段落-說明">Similar to single-page, progressive web applications.</div>
+                        <div class="文件內容-範例清單-段落-項目清單">
+                            
+                            <a
+                                href="./examples/chatroom.html"
+                                target="_blank"
+                                class='文件內容-範例清單-段落-項目清單-項目 '
+                            >
+                                <img src="./examples/screenshots/chatroom_dark.png" class="文件內容-範例清單-段落-項目清單-項目-螢幕截圖 has-hidden-light" />
+                                <img src="./examples/screenshots/chatroom_light.png" class="文件內容-範例清單-段落-項目清單-項目-螢幕截圖 has-hidden-dark" />
+                                <div class="文件內容-範例清單-段落-項目清單-項目-標題">Chatroom</div>
+                                <div class="文件內容-範例清單-段落-項目清單-項目-說明">A chatroom with speech bubbles and layout.</div>
+                                <span class="ts-icon is-comments-icon 文件內容-範例清單-段落-項目清單-項目-圖示"></span>
+                            </a>
+                            
+                            <a
+                                href="./examples/dashboard.html"
+                                target="_blank"
+                                class='文件內容-範例清單-段落-項目清單-項目 '
+                            >
+                                <img src="./examples/screenshots/dashboard_dark.png" class="文件內容-範例清單-段落-項目清單-項目-螢幕截圖 has-hidden-light" />
+                                <img src="./examples/screenshots/dashboard_light.png" class="文件內容-範例清單-段落-項目清單-項目-螢幕截圖 has-hidden-dark" />
+                                <div class="文件內容-範例清單-段落-項目清單-項目-標題">Dashboard</div>
+                                <div class="文件內容-範例清單-段落-項目清單-項目-說明">A business dashboard with a sidebar.</div>
+                                <span class="ts-icon is-gauge-high-icon 文件內容-範例清單-段落-項目清單-項目-圖示"></span>
+                            </a>
+                            
+                            <a
+                                href="./examples/feed.html"
+                                target="_blank"
+                                class='文件內容-範例清單-段落-項目清單-項目 '
+                            >
+                                <img src="./examples/screenshots/feed_dark.png" class="文件內容-範例清單-段落-項目清單-項目-螢幕截圖 has-hidden-light" />
+                                <img src="./examples/screenshots/feed_light.png" class="文件內容-範例清單-段落-項目清單-項目-螢幕截圖 has-hidden-dark" />
+                                <div class="文件內容-範例清單-段落-項目清單-項目-標題">News Feed</div>
+                                <div class="文件內容-範例清單-段落-項目清單-項目-說明">A social website with timeline.</div>
+                                <span class="ts-icon is-rss-icon 文件內容-範例清單-段落-項目清單-項目-圖示"></span>
+                            </a>
+                            
+                            <a
+                                href="./examples/inbox.html"
+                                target="_blank"
+                                class='文件內容-範例清單-段落-項目清單-項目 '
+                            >
+                                <img src="./examples/screenshots/inbox_dark.png" class="文件內容-範例清單-段落-項目清單-項目-螢幕截圖 has-hidden-light" />
+                                <img src="./examples/screenshots/inbox_light.png" class="文件內容-範例清單-段落-項目清單-項目-螢幕截圖 has-hidden-dark" />
+                                <div class="文件內容-範例清單-段落-項目清單-項目-標題">Inbox</div>
+                                <div class="文件內容-範例清單-段落-項目清單-項目-說明">A web-based email client with file attachments.</div>
+                                <span class="ts-icon is-inbox-icon 文件內容-範例清單-段落-項目清單-項目-圖示"></span>
+                            </a>
+                            
+                            <a
+                                href="./examples/network-disk.html"
+                                target="_blank"
+                                class='文件內容-範例清單-段落-項目清單-項目 '
+                            >
+                                <img src="./examples/screenshots/network-disk_dark.png" class="文件內容-範例清單-段落-項目清單-項目-螢幕截圖 has-hidden-light" />
+                                <img src="./examples/screenshots/network-disk_light.png" class="文件內容-範例清單-段落-項目清單-項目-螢幕截圖 has-hidden-dark" />
+                                <div class="文件內容-範例清單-段落-項目清單-項目-標題">Cloud Drive</div>
+                                <div class="文件內容-範例清單-段落-項目清單-項目-說明">A cloud drive that lists files in card format.</div>
+                                <span class="ts-icon is-hard-drive-icon 文件內容-範例清單-段落-項目清單-項目-圖示"></span>
+                            </a>
+                            
+                            <a
+                                href="./examples/blog-editor.html"
+                                target="_blank"
+                                class='文件內容-範例清單-段落-項目清單-項目 '
+                            >
+                                <img src="./examples/screenshots/blog-editor_dark.png" class="文件內容-範例清單-段落-項目清單-項目-螢幕截圖 has-hidden-light" />
+                                <img src="./examples/screenshots/blog-editor_light.png" class="文件內容-範例清單-段落-項目清單-項目-螢幕截圖 has-hidden-dark" />
+                                <div class="文件內容-範例清單-段落-項目清單-項目-標題">Blog Editor</div>
+                                <div class="文件內容-範例清單-段落-項目清單-項目-說明">A blog editor made with Simple Markdown Editor for a personal blog.</div>
+                                <span class="ts-icon is-pen-to-square-icon 文件內容-範例清單-段落-項目清單-項目-圖示"></span>
+                            </a>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="文件內容-範例清單-段落">
+                        <div class="文件內容-範例清單-段落-標題">Websites</div>
+                        <div class="文件內容-範例清單-段落-說明">Regular websites that can be used for personal or business purposes.</div>
+                        <div class="文件內容-範例清單-段落-項目清單">
+                            
+                            <a
+                                href="./examples/blog.html"
+                                target="_blank"
+                                class='文件內容-範例清單-段落-項目清單-項目 '
+                            >
+                                <img src="./examples/screenshots/blog_dark.png" class="文件內容-範例清單-段落-項目清單-項目-螢幕截圖 has-hidden-light" />
+                                <img src="./examples/screenshots/blog_light.png" class="文件內容-範例清單-段落-項目清單-項目-螢幕截圖 has-hidden-dark" />
+                                <div class="文件內容-範例清單-段落-項目清單-項目-標題">Blog</div>
+                                <div class="文件內容-範例清單-段落-項目清單-項目-說明">A personal blog website made with text elements and some feature cards.</div>
+                                <span class="ts-icon is-blog-icon 文件內容-範例清單-段落-項目清單-項目-圖示"></span>
+                            </a>
+                            
+                            <a
+                                href="./examples/cms.html"
+                                target="_blank"
+                                class='文件內容-範例清單-段落-項目清單-項目 '
+                            >
+                                <img src="./examples/screenshots/cms_dark.png" class="文件內容-範例清單-段落-項目清單-項目-螢幕截圖 has-hidden-light" />
+                                <img src="./examples/screenshots/cms_light.png" class="文件內容-範例清單-段落-項目清單-項目-螢幕截圖 has-hidden-dark" />
+                                <div class="文件內容-範例清單-段落-項目清單-項目-標題">CMS</div>
+                                <div class="文件內容-範例清單-段落-項目清單-項目-說明">A small business CMS content management website front-end page.</div>
+                                <span class="ts-icon is-list-check-icon 文件內容-範例清單-段落-項目清單-項目-圖示"></span>
+                            </a>
+                            
+                            <a
+                                href="./examples/crowdfunding.html"
+                                target="_blank"
+                                class='文件內容-範例清單-段落-項目清單-項目 '
+                            >
+                                <img src="./examples/screenshots/crowdfunding_dark.png" class="文件內容-範例清單-段落-項目清單-項目-螢幕截圖 has-hidden-light" />
+                                <img src="./examples/screenshots/crowdfunding_light.png" class="文件內容-範例清單-段落-項目清單-項目-螢幕截圖 has-hidden-dark" />
+                                <div class="文件內容-範例清單-段落-項目清單-項目-標題">Crowdfunding</div>
+                                <div class="文件內容-範例清單-段落-項目清單-項目-說明">A crowdfunding platform implemented through a grid system and images.</div>
+                                <span class="ts-icon is-users-icon 文件內容-範例清單-段落-項目清單-項目-圖示"></span>
+                            </a>
+                            
+                            <a
+                                href="./examples/gallery.html"
+                                target="_blank"
+                                class='文件內容-範例清單-段落-項目清單-項目 '
+                            >
+                                <img src="./examples/screenshots/gallery_dark.png" class="文件內容-範例清單-段落-項目清單-項目-螢幕截圖 has-hidden-light" />
+                                <img src="./examples/screenshots/gallery_light.png" class="文件內容-範例清單-段落-項目清單-項目-螢幕截圖 has-hidden-dark" />
+                                <div class="文件內容-範例清單-段落-項目清單-項目-標題">Gallery</div>
+                                <div class="文件內容-範例清單-段落-項目清單-項目-說明">A static website that displays landscape travel photos.</div>
+                                <span class="ts-icon is-images-icon 文件內容-範例清單-段落-項目清單-項目-圖示"></span>
+                            </a>
+                            
+                            <a
+                                href="./examples/news.html"
+                                target="_blank"
+                                class='文件內容-範例清單-段落-項目清單-項目 '
+                            >
+                                <img src="./examples/screenshots/news_dark.png" class="文件內容-範例清單-段落-項目清單-項目-螢幕截圖 has-hidden-light" />
+                                <img src="./examples/screenshots/news_light.png" class="文件內容-範例清單-段落-項目清單-項目-螢幕截圖 has-hidden-dark" />
+                                <div class="文件內容-範例清單-段落-項目清單-項目-標題">News</div>
+                                <div class="文件內容-範例清單-段落-項目清單-項目-說明">A news website with featured content and multiple sections.</div>
+                                <span class="ts-icon is-newspaper-icon 文件內容-範例清單-段落-項目清單-項目-圖示"></span>
+                            </a>
+                            
+                            <a
+                                href="./examples/shopping.html"
+                                target="_blank"
+                                class='文件內容-範例清單-段落-項目清單-項目 '
+                            >
+                                <img src="./examples/screenshots/shopping_dark.png" class="文件內容-範例清單-段落-項目清單-項目-螢幕截圖 has-hidden-light" />
+                                <img src="./examples/screenshots/shopping_light.png" class="文件內容-範例清單-段落-項目清單-項目-螢幕截圖 has-hidden-dark" />
+                                <div class="文件內容-範例清單-段落-項目清單-項目-標題">Shopping</div>
+                                <div class="文件內容-範例清單-段落-項目清單-項目-說明">A shopping website with rich product information and rating.</div>
+                                <span class="ts-icon is-cart-shopping-icon 文件內容-範例清單-段落-項目清單-項目-圖示"></span>
+                            </a>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="文件內容-範例清單-段落">
+                        <div class="文件內容-範例清單-段落-標題">Accessories</div>
+                        <div class="文件內容-範例清單-段落-說明">Basic tools and information pages.</div>
+                        <div class="文件內容-範例清單-段落-項目清單">
+                            
+                            <a
+                                href="./examples/checkout.html"
+                                target="_blank"
+                                class='文件內容-範例清單-段落-項目清單-項目 '
+                            >
+                                <img src="./examples/screenshots/checkout_dark.png" class="文件內容-範例清單-段落-項目清單-項目-螢幕截圖 has-hidden-light" />
+                                <img src="./examples/screenshots/checkout_light.png" class="文件內容-範例清單-段落-項目清單-項目-螢幕截圖 has-hidden-dark" />
+                                <div class="文件內容-範例清單-段落-項目清單-項目-標題">Checkout Form</div>
+                                <div class="文件內容-範例清單-段落-項目清單-項目-說明">A form page that displays shopping cart items and checkout details.</div>
+                                <span class="ts-icon is-basket-shopping-icon 文件內容-範例清單-段落-項目清單-項目-圖示"></span>
+                            </a>
+                            
+                            <a
+                                href="./examples/stock-management.html"
+                                target="_blank"
+                                class='文件內容-範例清單-段落-項目清單-項目 '
+                            >
+                                <img src="./examples/screenshots/stock-management_dark.png" class="文件內容-範例清單-段落-項目清單-項目-螢幕截圖 has-hidden-light" />
+                                <img src="./examples/screenshots/stock-management_light.png" class="文件內容-範例清單-段落-項目清單-項目-螢幕截圖 has-hidden-dark" />
+                                <div class="文件內容-範例清單-段落-項目清單-項目-標題">Stock Management</div>
+                                <div class="文件內容-範例清單-段落-項目清單-項目-說明">A table with expandable details for quick editing of information.</div>
+                                <span class="ts-icon is-table-cells-icon 文件內容-範例清單-段落-項目清單-項目-圖示"></span>
+                            </a>
+                            
+                            <a
+                                href="./examples/files.html"
+                                target="_blank"
+                                class='文件內容-範例清單-段落-項目清單-項目 '
+                            >
+                                <img src="./examples/screenshots/files_dark.png" class="文件內容-範例清單-段落-項目清單-項目-螢幕截圖 has-hidden-light" />
+                                <img src="./examples/screenshots/files_light.png" class="文件內容-範例清單-段落-項目清單-項目-螢幕截圖 has-hidden-dark" />
+                                <div class="文件內容-範例清單-段落-項目清單-項目-標題">Files</div>
+                                <div class="文件內容-範例清單-段落-項目清單-項目-說明">A simple file directory and file information example similar to FTP.</div>
+                                <span class="ts-icon is-folder-tree-icon 文件內容-範例清單-段落-項目清單-項目-圖示"></span>
+                            </a>
+                            
+                            <a
+                                href="./examples/invoice.html"
+                                target="_blank"
+                                class='文件內容-範例清單-段落-項目清單-項目 '
+                            >
+                                <img src="./examples/screenshots/invoice_dark.png" class="文件內容-範例清單-段落-項目清單-項目-螢幕截圖 has-hidden-light" />
+                                <img src="./examples/screenshots/invoice_light.png" class="文件內容-範例清單-段落-項目清單-項目-螢幕截圖 has-hidden-dark" />
+                                <div class="文件內容-範例清單-段落-項目清單-項目-標題">Invoice</div>
+                                <div class="文件內容-範例清單-段落-項目清單-項目-說明">A digital invoice or shipping note issued between companies.</div>
+                                <span class="ts-icon is-file-invoice-icon 文件內容-範例清單-段落-項目清單-項目-圖示"></span>
+                            </a>
+                            
+                            <a
+                                href="./examples/login.html"
+                                target="_blank"
+                                class='文件內容-範例清單-段落-項目清單-項目 '
+                            >
+                                <img src="./examples/screenshots/login_dark.png" class="文件內容-範例清單-段落-項目清單-項目-螢幕截圖 has-hidden-light" />
+                                <img src="./examples/screenshots/login_light.png" class="文件內容-範例清單-段落-項目清單-項目-螢幕截圖 has-hidden-dark" />
+                                <div class="文件內容-範例清單-段落-項目清單-項目-標題">Login</div>
+                                <div class="文件內容-範例清單-段落-項目清單-項目-說明">A basic login page with username and password fields.</div>
+                                <span class="ts-icon is-right-to-bracket-icon 文件內容-範例清單-段落-項目清單-項目-圖示"></span>
+                            </a>
+                            
+                            <a
+                                href="./examples/settings.html"
+                                target="_blank"
+                                class='文件內容-範例清單-段落-項目清單-項目 '
+                            >
+                                <img src="./examples/screenshots/settings_dark.png" class="文件內容-範例清單-段落-項目清單-項目-螢幕截圖 has-hidden-light" />
+                                <img src="./examples/screenshots/settings_light.png" class="文件內容-範例清單-段落-項目清單-項目-螢幕截圖 has-hidden-dark" />
+                                <div class="文件內容-範例清單-段落-項目清單-項目-標題">Preferences</div>
+                                <div class="文件內容-範例清單-段落-項目清單-項目-說明">A system-related settings form for a website or service.</div>
+                                <span class="ts-icon is-gears-icon 文件內容-範例清單-段落-項目清單-項目-圖示"></span>
+                            </a>
+                            
+                            <a
+                                href="./examples/mail.html"
+                                target="_blank"
+                                class='文件內容-範例清單-段落-項目清單-項目 '
+                            >
+                                <img src="./examples/screenshots/mail_dark.png" class="文件內容-範例清單-段落-項目清單-項目-螢幕截圖 has-hidden-light" />
+                                <img src="./examples/screenshots/mail_light.png" class="文件內容-範例清單-段落-項目清單-項目-螢幕截圖 has-hidden-dark" />
+                                <div class="文件內容-範例清單-段落-項目清單-項目-標題">Mail</div>
+                                <div class="文件內容-範例清單-段落-項目清單-項目-說明">A mail template for sending to website members.</div>
+                                <span class="ts-icon is-envelope-icon 文件內容-範例清單-段落-項目清單-項目-圖示"></span>
+                            </a>
+                            
+                            <a
+                                href="./examples/payment.html"
+                                target="_blank"
+                                class='文件內容-範例清單-段落-項目清單-項目 '
+                            >
+                                <img src="./examples/screenshots/payment_dark.png" class="文件內容-範例清單-段落-項目清單-項目-螢幕截圖 has-hidden-light" />
+                                <img src="./examples/screenshots/payment_light.png" class="文件內容-範例清單-段落-項目清單-項目-螢幕截圖 has-hidden-dark" />
+                                <div class="文件內容-範例清單-段落-項目清單-項目-標題">Payment</div>
+                                <div class="文件內容-範例清單-段落-項目清單-項目-說明">A form for entering credit card information and payment details.</div>
+                                <span class="ts-icon is-credit-card-icon 文件內容-範例清單-段落-項目清單-項目-圖示"></span>
+                            </a>
+                            
+                            <a
+                                href="./examples/plans.html"
+                                target="_blank"
+                                class='文件內容-範例清單-段落-項目清單-項目 '
+                            >
+                                <img src="./examples/screenshots/plans_dark.png" class="文件內容-範例清單-段落-項目清單-項目-螢幕截圖 has-hidden-light" />
+                                <img src="./examples/screenshots/plans_light.png" class="文件內容-範例清單-段落-項目清單-項目-螢幕截圖 has-hidden-dark" />
+                                <div class="文件內容-範例清單-段落-項目清單-項目-標題">Pricing Plans</div>
+                                <div class="文件內容-範例清單-段落-項目清單-項目-說明">A pricing plan page that offers customers several different options.</div>
+                                <span class="ts-icon is-money-check-dollar-icon 文件內容-範例清單-段落-項目清單-項目-圖示"></span>
+                            </a>
+                            
+                            <a
+                                href="./examples/registration.html"
+                                target="_blank"
+                                class='文件內容-範例清單-段落-項目清單-項目 '
+                            >
+                                <img src="./examples/screenshots/registration_dark.png" class="文件內容-範例清單-段落-項目清單-項目-螢幕截圖 has-hidden-light" />
+                                <img src="./examples/screenshots/registration_light.png" class="文件內容-範例清單-段落-項目清單-項目-螢幕截圖 has-hidden-dark" />
+                                <div class="文件內容-範例清單-段落-項目清單-項目-標題">Registration</div>
+                                <div class="文件內容-範例清單-段落-項目清單-項目-說明">A basic user registration page.</div>
+                                <span class="ts-icon is-user-plus-icon 文件內容-範例清單-段落-項目清單-項目-圖示"></span>
+                            </a>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="頁腳">
+            <div class="界限容器">
+                <div class="頁腳-導航列">
+                    <button class="頁腳-導航列-項目 頁腳-導航列-項目_回到頂部"><span class="ts-icon is-arrow-up-icon"></span> Back to Top</button>
+                    <a class="頁腳-導航列-項目" href="https://github.com/teacat/tocas" target="_blank">GitHub</a>
+                    <a class="頁腳-導航列-項目" href="./getting-started.html">Getting Started</a>
+                    <a class="頁腳-導航列-項目" href="./button.html">Components</a>
+                    <a class="頁腳-導航列-項目" href="./examples.html">Examples</a>
+                </div>
+                <div class="頁腳-格局">
+                    <div class="頁腳-格局-資訊">
+                        <div class="頁腳-格局-資訊-文字">Designed by Yami Odymel from <span class="ts-flag is-taiwan-flag is-small"></span> Taiwan, along with the ❤️ from <a href="https://github.com/teacat/tocas/graphs/contributors" target="_blank">contributors</a>. The source code is licensed under <a href="https://github.com/teacat/tocas/blob/master/LICENSE" target="_blank">MIT</a>, and the documentation is under <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.zh_TW" target="_blank">CC 0</a> public domain. Feel free to use, share, or contribute. Tocas UI is a design system for <a href="https://caris.events" target="_blank">Caris Events</a>, part of <a href="https://sorae.co" target="_blank">Sorae & Co., Ltd.</a></div>
+                        <div class="頁腳-格局-資訊-翻譯者">Translators: <a href="https://twitter.com/YamiOdymel" target="_blank">Yami Odymel</a></div>
+                    </div>
+                    <div class="頁腳-格局-商標">
+                        <img class="頁腳-格局-商標-圖片" src="./assets/images/caris-events.svg" alt='Trademark of the owner of Tocas UI' />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
