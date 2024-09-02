@@ -208,7 +208,13 @@ Definitions:
                     </div>
                     <div class="{{ts-content}} is-secondary">
                         <div class="{{ts-text}} is-description">yami.io/rog-and-hololive/</div>
-                        <div class="{{ts-header}} is-truncated is-heavy">Asus calls itself a "Chinese company," and block the Japan Asus-Hololive partnership.</div>
-                        <div class="{{ts-text}} is-2-lines is-description">The ROG Weibo account posted that they would do everything possible to stop the collaboration.</div>
+                        <div class="{{ts-header}} is-truncated is-heavy">
+                            Asus calls itself a "Chinese company"
+                            and block the Japan Asus-Hololive partnership.
+                        </div>
+                        <div class="{{ts-text}} is-2-lines is-description">
+                            The ROG Weibo account posted that
+                            they would do everything possible to stop the collaboration.
+                        </div>
                     </div>
                 </div>

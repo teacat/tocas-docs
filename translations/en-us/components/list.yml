@@ -36,7 +36,7 @@ Example:
         <div class="[[ts-list]] is-unordered">
             <div class="item">Orenji</div>
             <div class="item">Caris</div>
-            <div class="item">Haneda Shirone</div>
+            <div class="item">Shirone</div>
         </div>
 
 Definitions:
@@ -51,9 +51,9 @@ Definitions:
                     <div class="item">
                         Alternative Girls
                         <div class="[[ts-list]] is-unordered">
-                            <div class="item">Miyaka Yuki</div>
-                            <div class="item">Hiiragi Tsumugi</div>
-                            <div class="item">Asahina Nono</div>
+                            <div class="item">Yuki</div>
+                            <div class="item">Tsumugi</div>
+                            <div class="item">Asahina</div>
                         </div>
                     </div>
                 </div>
@@ -66,9 +66,9 @@ Definitions:
             Description: A list can be unordered and mark items with a bullet.
             HTML: |
                 <div class="ts-list [[is-unordered]]">
-                    <div class="item">Nanami Shirone</div>
-                    <div class="item">Miyakaze Yuri</div>
-                    <div class="item">Tsumugi Sara</div>
+                    <div class="item">Nanami</div>
+                    <div class="item">Yuri</div>
+                    <div class="item">Sara</div>
                 </div>
 
           - Title: Ordered
@@ -76,8 +76,8 @@ Definitions:
             Description: A list can be ordered numerically.
             HTML: |
                 <div class="ts-list [[is-ordered]]">
-                    <div class="item">Inami Saki</div>
-                    <div class="item">Kurimiya Nozomi</div>
+                    <div class="item">Inami</div>
+                    <div class="item">Kurimiya</div>
                     <div class="item">Utaha</div>
                 </div>
 
@@ -88,19 +88,19 @@ Definitions:
                 - <div class="ts-space"></div>
             HTML: |
                 <div class="ts-list [[is-small]] is-unordered">
-                    <div class="item">Houkigi Hinako</div>
-                    <div class="item">Odate Ruka</div>
-                    <div class="item">Kaizo Momo</div>
+                    <div class="item">Hinako</div>
+                    <div class="item">Ruka</div>
+                    <div class="item">Kaizo</div>
                 </div>
                 <div class="ts-space"></div>
                 <div class="ts-list is-unordered">
-                    <div class="item">Houkigi Hinako</div>
-                    <div class="item">Odate Ruka</div>
-                    <div class="item">Kaizo Momo</div>
+                    <div class="item">Hinako</div>
+                    <div class="item">Ruka</div>
+                    <div class="item">Kaizo</div>
                 </div>
                 <div class="ts-space"></div>
                 <div class="ts-list [[is-large]] is-unordered">
-                    <div class="item">Houkigi Hinako</div>
-                    <div class="item">Odate Ruka</div>
-                    <div class="item">Kaizo Momo</div>
+                    <div class="item">Hinako</div>
+                    <div class="item">Ruka</div>
+                    <div class="item">Kaizo</div>
                 </div>
