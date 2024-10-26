@@ -313,6 +313,39 @@ Definitions:
                     </tbody>
                 </table>
 
+          - Title: 可選擇的
+            Anchor: Selectable
+            Description: 使某個行列在游標移上時有反應。
+            HTML: |
+                <div class="{{ts-box}}">
+                    <table class="ts-table [[is-selectable]]">
+                        <thead>
+                            <tr>
+                                <th>食物</th>
+                                <th>熱量</th>
+                                <th>蛋白質</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>香蕉</td>
+                                <td>88 kcal / 100g</td>
+                                <td>1.1g</td>
+                            </tr>
+                            <tr>
+                                <td>蘋果</td>
+                                <td>52 kcal / 100g</td>
+                                <td>0.3g</td>
+                            </tr>
+                            <tr>
+                                <td>西瓜</td>
+                                <td>30 kcal / 100g</td>
+                                <td>0.6g</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
           - Title: 貼邊的
             Anchor: Sticked
             Description: 使文字左右靠齊邊緣而不會有內距。

@@ -313,6 +313,39 @@ Definitions:
                     </tbody>
                 </table>
 
+          - Title: Selectable
+            Anchor: Selectable
+            Description: A table can have its rows appear selectable.
+            HTML: |
+                <div class="{{ts-box}}">
+                    <table class="ts-table [[is-selectable]]">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Calories</th>
+                                <th>Protein</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Banana</td>
+                                <td>88 kcal / 100g</td>
+                                <td>1.1g</td>
+                            </tr>
+                            <tr>
+                                <td>Apple</td>
+                                <td>52 kcal / 100g</td>
+                                <td>0.3g</td>
+                            </tr>
+                            <tr>
+                                <td>Watermelon</td>
+                                <td>30 kcal / 100g</td>
+                                <td>0.6g</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
           - Title: Sticked
             Anchor: Sticked
             Description: A table can stick its cell contents to the edge of the table.
