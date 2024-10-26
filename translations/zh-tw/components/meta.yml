@@ -43,6 +43,16 @@ Definitions:
                     <a class="item">成海遙香</a>
                 </div>
 
+          - Title: 連結的
+            Anchor: Link
+            Description: 文字以連結顏色呈現。
+            HTML: |
+                <div class="ts-meta [[is-link]]">
+                    <a class="item">幫助</a>
+                    <a class="item">隱私政策</a>
+                    <a class="item">關於</a>
+                </div>
+
           - Title: 文字對齊
             Anchor: Aligns
             Description: 更改文字的對齊方式。

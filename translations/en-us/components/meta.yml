@@ -43,6 +43,16 @@ Definitions:
                     <a class="item">Haruka</a>
                 </div>
 
+          - Title: Link
+            Anchor: Link
+            Description: The metadata items can be presented in link color.
+            HTML: |
+                <div class="ts-meta [[is-link]]">
+                    <a class="item">Help</a>
+                    <a class="item">Privacy Policy</a>
+                    <a class="item">About</a>
+                </div>
+
           - Title: Text Aligns
             Anchor: Aligns
             Description: The metadata items can be aligned to the start, center, or end.
