@@ -235,7 +235,7 @@ Definitions:
                     </table>
                     <div class="{{ts-divider}}"></div>
                     <div class="{{ts-content}} is-dense is-secondary">
-                        <div class="{{ts-grid}} is-compact is-middle-aligned">
+                        <div class="{{ts-grid}} is-middle-aligned">
                             <div class="column is-fluid">
                                 Rows per Page:
                                 <div class="{{ts-select}} is-basic">
