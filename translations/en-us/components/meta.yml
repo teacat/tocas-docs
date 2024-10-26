@@ -48,8 +48,8 @@ Definitions:
             Description: The metadata items can be presented in link color.
             HTML: |
                 <div class="ts-meta [[is-link]]">
-                    <a class="item">Help</a>
-                    <a class="item">Privacy Policy</a>
+                    <a class="item">Support</a>
+                    <a class="item">Statistics</a>
                     <a class="item">About</a>
                 </div>
 
