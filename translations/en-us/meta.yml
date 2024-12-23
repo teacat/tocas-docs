@@ -306,6 +306,7 @@ Components:
           - File
           - Input
           - Radio
+          - Range
           - Select
           - Selection
           - Switch

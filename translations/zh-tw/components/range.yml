@@ -1,0 +1,50 @@
+#=======================================================
+# 標頭
+# Header
+#=======================================================
+
+Title: 範圍滑桿
+Description: 可以在指定範圍內選擇數值的滑桿。
+
+#=======================================================
+# 設定
+# Settings
+#=======================================================
+
+Type: Article
+
+#=======================================================
+# 基本樣式
+# Definitions
+#=======================================================
+
+Example:
+    Centered: true
+    HTML: |
+        <div class="[[ts-range]]">
+            <input type="range">
+        </div>
+
+Definitions:
+    - Title: 種類
+      Description:
+      Sections:
+          - Title: 步進的
+            Anchor: Step
+            Description: |
+                指定 `[step]` 屬性可以讓數值以指定間隔進行變動。
+            HTML: |
+                <div class="ts-range">
+                    <input type="range" min="0" max="5" [[step]]="1">
+                </div>
+
+    - Title: 狀態
+      Description:
+      Sections:
+          - Title: 停用的
+            Anchor: Disabled
+            Description: 使範圍滑桿呈現無法互動、點擊的模樣。
+            HTML: |
+                <div class="ts-range">
+                    <input type="range" [[disabled]]>
+                </div>

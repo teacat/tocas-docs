@@ -1,0 +1,50 @@
+#=======================================================
+# 標頭
+# Header
+#=======================================================
+
+Title: Range
+Description: A slider for selecting a value within a specified range.
+
+#=======================================================
+# 設定
+# Settings
+#=======================================================
+
+Type: Article
+
+#=======================================================
+# 基本樣式
+# Definitions
+#=======================================================
+
+Example:
+    Centered: true
+    HTML: |
+        <div class="[[ts-range]]">
+            <input type="range">
+        </div>
+
+Definitions:
+    - Title: Types
+      Description:
+      Sections:
+          - Title: Step
+            Anchor: Step
+            Description: |
+                The `[step]` attribute allows the value to change in specified intervals.
+            HTML: |
+                <div class="ts-range">
+                    <input type="range" min="0" max="5" [[step]]="1">
+                </div>
+
+    - Title: States
+      Description:
+      Sections:
+          - Title: Disabled
+            Anchor: Disabled
+            Description: A range slider can show it's currently disabled.
+            HTML: |
+                <div class="ts-range">
+                    <input type="range" [[disabled]]>
+                </div>

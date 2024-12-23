@@ -287,6 +287,7 @@ UI:
         AppSidebar: 側邊導覽
         Layout: 格局劃分
         Drawer: 邊緣抽屜
+        Range: 範圍滑桿
 
 Components:
     - Name: Introduction
@@ -310,6 +311,7 @@ Components:
           - File
           - Input
           - Radio
+          - Range
           - Select
           - Selection
           - Switch
