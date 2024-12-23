@@ -25,13 +25,13 @@ Definitions:
                 Add these tags in the `<head>` section to use Tocas UI, or download it from [GitHub](https://github.com/teacat/tocas) for offline use.
             AttachedHTML: |
                 <!-- Core: Tocas UI -->
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocas/5.0.1/tocas.min.css" />
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocas/5.0.1/tocas.min.css">
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/tocas/5.0.1/tocas.min.js"></script>
 
                 <!-- Fonts: Noto Sans TC -->
-                <link rel="preconnect" href="https://fonts.googleapis.com" />
-                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-                <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet" />
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
 
                 <!-- Enable: Responsive -->
                 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">

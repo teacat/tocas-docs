@@ -25,7 +25,7 @@ Example:
     HTML: |
         <div class="[[ts-chip]]">
             <div class="{{ts-image}}">
-                <img src="!-user3-!" />
+                <img src="!-user3-!">
             </div>
             Yami Odymel
             <button class="{{ts-close}}"></button>
@@ -40,15 +40,15 @@ Definitions:
             Description: 將其當作核取方塊或是單選方塊使用，被核取的標籤會有勾選圖示作為視覺輔助。
             HTML: |
                 <label class="ts-chip [[is-input]]">
-                    <input type="checkbox" checked/>
+                    <input type="checkbox" checked>
                     <div class="content">健身</div>
                 </label>
                 <label class="ts-chip [[is-input]]">
-                    <input type="checkbox" />
+                    <input type="checkbox">
                     <div class="content">遊戲</div>
                 </label>
                 <label class="ts-chip [[is-input]]">
-                    <input type="checkbox" />
+                    <input type="checkbox">
                     <div class="content">閱讀新聞</div>
                 </label>
 
@@ -57,11 +57,11 @@ Definitions:
             Description: 切換標籤的開、關狀態。
             HTML: |
                 <label class="ts-chip [[is-toggle]] is-circular">
-                    <input type="checkbox"/>
+                    <input type="checkbox">
                     <div class="content">最近熱門</div>
                 </label>
                 <label class="ts-chip [[is-toggle]] is-circular">
-                    <input type="checkbox" checked/>
+                    <input type="checkbox" checked>
                     <div class="content">沒去過的地點</div>
                 </label>
 
@@ -73,7 +73,7 @@ Definitions:
             Description: 使關聯標籤呈現無法互動、點擊的模樣。若關聯標籤是超連結，則需套用 `.is-disabled` 樣式。
             HTML: |
                 <label class="ts-chip is-input">
-                    <input type="checkbox" [[disabled]]/>
+                    <input type="checkbox" [[disabled]]>
                     <div class="content">核取標籤</div>
                 </label>
                 <button class="ts-chip" [[disabled]]>
@@ -105,7 +105,7 @@ Definitions:
             HTML: |
                 <div class="ts-chip is-circular">
                     <div class="[[{{ts-image}}]] is-circular">
-                        <img src="!-user-!" />
+                        <img src="!-user-!">
                     </div>
                     Yami Odymel
                 </div>
@@ -135,11 +135,11 @@ Definitions:
             Description: 淡化標籤的核取狀態，適合用於較不醒目的地方。
             HTML: |
                 <label class="ts-chip is-toggle is-outlined [[is-secondary]]">
-                    <input type="checkbox" checked/>
+                    <input type="checkbox" checked>
                     <div class="content">👀 8</div>
                 </label>
                 <label class="ts-chip is-input is-outlined [[is-secondary]]">
-                    <input type="checkbox" checked/>
+                    <input type="checkbox" checked>
                     <div class="content">免費 WiFi</div>
                 </label>
 
@@ -157,19 +157,19 @@ Definitions:
                 <div class="{{ts-grid}} is-3-columns">
                     <div class="column">
                         <label class="ts-chip [[is-fluid]] is-input is-outlined">
-                            <input type="checkbox" checked/>
+                            <input type="checkbox" checked>
                             <div class="content">小尺碼</div>
                         </label>
                     </div>
                     <div class="column">
                         <label class="ts-chip [[is-fluid]] is-input is-outlined">
-                            <input type="checkbox" />
+                            <input type="checkbox">
                             <div class="content">中等尺寸</div>
                         </label>
                     </div>
                     <div class="column">
                         <label class="ts-chip [[is-fluid]] is-input is-outlined">
-                            <input type="checkbox" />
+                            <input type="checkbox">
                             <div class="content">最大</div>
                         </label>
                     </div>
@@ -220,17 +220,17 @@ Definitions:
                 - <div class="ts-space"></div>
             HTML: |
                 文章發表者為 <span class="ts-chip [[is-start-spaced]]">
-                    <img src="!-user-!" />
+                    <img src="!-user-!">
                     Mac Taylor
                 </span>
                 <div class="ts-space"></div>
                 <span class="ts-chip [[is-end-spaced]]">
-                    <img src="!-user2-!" />
+                    <img src="!-user2-!">
                     Sciuridae Li
                 </span> 是這個社團的管理員。
                 <div class="ts-space"></div>
                 記得向 <span class="ts-chip [[is-spaced]]">
-                    <img src="!-user3-!" />
+                    <img src="!-user3-!">
                     Sean Wei
                 </span> 說聲早安！
 
@@ -246,11 +246,11 @@ Definitions:
                         <p>如果你有去釣魚大賽，你可能會被禁止進入：「我們不歡迎職業選手」</p>
                         <div class="{{ts-wrap}} is-compact">
                             <label class="[[ts-chip]] is-toggle is-secondary is-outlined">
-                                <input type="checkbox" checked/>
+                                <input type="checkbox" checked>
                                 <div class="content">👌 21</div>
                             </label>
                             <label class="[[ts-chip]] is-toggle is-secondary is-outlined">
-                                <input type="checkbox"/>
+                                <input type="checkbox">
                                 <div class="content">👀 8</div>
                             </label>
                             <div class="[[ts-chip]] is-outlined">

@@ -25,13 +25,13 @@ Definitions:
                 將下列標籤放置於 HTML 中的 `<head> .. </head>` 處即可使用 Tocas UI，你也可以至 [GitHub](https://github.com/teacat/tocas) 下載離線使用。
             AttachedHTML: |
                 <!-- 核心：Tocas UI -->
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocas/5.0.1/tocas.min.css" />
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocas/5.0.1/tocas.min.css">
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/tocas/5.0.1/tocas.min.js"></script>
 
                 <!-- 字體：Noto Sans TC -->
-                <link rel="preconnect" href="https://fonts.googleapis.com" />
-                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-                <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet" />
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
 
                 <!-- 啟用：響應式設計 -->
                 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">

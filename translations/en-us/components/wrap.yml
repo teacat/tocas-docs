@@ -146,22 +146,22 @@ Definitions:
             HTML: |
                 <div class="ts-wrap is-compact">
                     <div class="[[{{ts-chip}}]]">
-                        <img src="!-user-!" /> Yami Odymel
+                        <img src="!-user-!"> Yami Odymel
                     </div>
                     <div class="[[{{ts-chip}}]]">
-                        <img src="!-user2-!" /> Henry Wu
+                        <img src="!-user2-!"> Henry Wu
                     </div>
                     <div class="[[{{ts-chip}}]]">
-                        <img src="!-user-!" /> Sean
+                        <img src="!-user-!"> Sean
                     </div>
                     <div class="[[{{ts-chip}}]]">
-                        <img src="!-user3-!" /> Ming Tsay
+                        <img src="!-user3-!"> Ming Tsay
                     </div>
                     <div class="[[{{ts-chip}}]]">
-                        <img src="!-user-!" /> Mac Taylor
+                        <img src="!-user-!"> Mac Taylor
                     </div>
                     <div class="[[{{ts-chip}}]]">
-                        <img src="!-user2-!" /> Tsundere Chen
+                        <img src="!-user2-!"> Tsundere Chen
                     </div>
                 </div>
 
@@ -173,11 +173,11 @@ Definitions:
                     <div class="{{ts-text}} is-label">Username</div>
                     <div class="{{ts-input}} is-start-icon">
                         <span class="{{ts-icon}} is-user-icon"></span>
-                        <input type="text" />
+                        <input type="text">
                     </div>
                     <div class="{{ts-text}} is-label">Password</div>
                     <div class="{{ts-input}} is-start-icon">
                         <span class="{{ts-icon}} is-lock-icon"></span>
-                        <input type="password" />
+                        <input type="password">
                     </div>
                 </div>

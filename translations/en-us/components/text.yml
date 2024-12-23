@@ -114,7 +114,7 @@ Definitions:
             Description: A text with an asterisk indicates something is required.
             HTML: |
                 <label class="{{ts-checkbox}}">
-                    <input type="checkbox" checked/>
+                    <input type="checkbox" checked>
                     <span class="ts-text [[is-required]]">I am over 18 years old.</span>
                 </label>
 

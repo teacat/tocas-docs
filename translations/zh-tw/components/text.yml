@@ -114,7 +114,7 @@ Definitions:
             Description: 以紅色的星號在文字尾端作為必填提示，通常會和標籤一起搭配表示某個輸入欄位不得留空。
             HTML: |
                 <label class="{{ts-checkbox}}">
-                    <input type="checkbox" checked/>
+                    <input type="checkbox" checked>
                     <span class="ts-text [[is-required]]">我已年滿 18 歲</span>
                 </label>
 

@@ -73,7 +73,7 @@ Definitions:
                     <div class="label">Block Ads</div>
                     <div class="content [[is-padded]]">
                         <label class="ts-switch">
-                            <input type="checkbox" checked />
+                            <input type="checkbox" checked>
                             Enable
                         </label>
                     </div>
@@ -158,7 +158,7 @@ Definitions:
                         <div class="label">Promotions</div>
                         <div class="content is-padded">
                             <label class="{{ts-switch}}">
-                                <input type="checkbox" checked />
+                                <input type="checkbox" checked>
                                 I want to receive email notifications.
                             </label>
                         </div>

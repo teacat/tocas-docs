@@ -25,7 +25,7 @@ Example:
     Centered: true
     HTML: |
         <label class="[[ts-radio]]">
-            <input name="eat" type="radio" checked/>
+            <input name="eat" type="radio" checked>
             早餐
         </label>
 
@@ -38,7 +38,7 @@ Definitions:
             Description: 使單選方塊呈現無法互動、點擊的模樣。
             HTML: |
                 <label class="ts-radio">
-                    <input name="linux" type="radio" [[disabled]]/>
+                    <input name="linux" type="radio" [[disabled]]>
                     Arch Linux
                 </label>
 
@@ -50,7 +50,7 @@ Definitions:
             Description: 表示一個單選方塊可能沒有被選取。
             HTML: |
                 <label class="ts-radio [[is-negative]]">
-                    <input name="love" type="radio" />
+                    <input name="love" type="radio">
                     愛情摩天輪
                 </label>
 
@@ -59,7 +59,7 @@ Definitions:
             Description: 單選方塊如果沒有任何標籤文字，可以將其指定為單獨的單選方塊，藉此來移除多餘的間距。
             HTML: |
                 <label class="ts-radio [[is-solo]]">
-                    <input name="solo" type="radio" />
+                    <input name="solo" type="radio">
                 </label>
 
           - Title: 尺寸
@@ -69,17 +69,17 @@ Definitions:
                 - <div class="ts-space is-small"></div>
             HTML: |
                 <label class="ts-radio [[is-small]]">
-                    <input name="size" type="radio" checked/>
+                    <input name="size" type="radio" checked>
                     小型選項
                 </label>
                 <div class="ts-space is-small"></div>
                 <label class="ts-radio">
-                    <input name="size" type="radio"/>
+                    <input name="size" type="radio">
                     預設選項
                 </label>
                 <div class="ts-space is-small"></div>
                 <label class="ts-radio [[is-large]]">
-                    <input name="size" type="radio"/>
+                    <input name="size" type="radio">
                     大型選項
                 </label>
 
@@ -94,30 +94,30 @@ Definitions:
                     <div class="{{ts-text}} is-label">性別</div>
                     <div class="[[{{ts-wrap}}]]">
                         <label class="ts-radio">
-                            <input name="gender" type="radio" checked/>
+                            <input name="gender" type="radio" checked>
                             男性
                         </label>
                         <label class="ts-radio">
-                            <input name="gender" type="radio" />
+                            <input name="gender" type="radio">
                             女性
                         </label>
                         <label class="ts-radio">
-                            <input name="gender" type="radio" />
+                            <input name="gender" type="radio">
                             其它
                         </label>
                     </div>
                     <div class="{{ts-text}} is-label">來電狀態</div>
                     <div class="[[{{ts-wrap}}]] is-vertical is-compact">
                         <label class="ts-radio">
-                            <input name="ring" type="radio" checked/>
+                            <input name="ring" type="radio" checked>
                             響鈴
                         </label>
                         <label class="ts-radio">
-                            <input name="ring" type="radio" />
+                            <input name="ring" type="radio">
                             震動
                         </label>
                         <label class="ts-radio">
-                            <input name="ring" type="radio" />
+                            <input name="ring" type="radio">
                             靜音
                         </label>
                     </div>

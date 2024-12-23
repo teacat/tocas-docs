@@ -73,7 +73,7 @@ Definitions:
                     <div class="label">封鎖廣告內容</div>
                     <div class="content [[is-padded]]">
                         <label class="ts-switch">
-                            <input type="checkbox" checked />
+                            <input type="checkbox" checked>
                             啟用
                         </label>
                     </div>
@@ -158,7 +158,7 @@ Definitions:
                         <div class="label">行銷通知</div>
                         <div class="content is-padded">
                             <label class="{{ts-switch}}">
-                                <input type="checkbox" checked />
+                                <input type="checkbox" checked>
                                 我想接收到更多的電子信箱通知。
                             </label>
                         </div>

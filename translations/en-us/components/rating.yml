@@ -36,11 +36,11 @@ Definitions:
             Description: A rating can be used as an input, which can be interacted with.
             HTML: |
                 <div class="ts-rating is-yellow [[is-input]]">
-                    <input class="star" type="radio" name="rating" value="1" />
-                    <input class="star" type="radio" name="rating" value="2" checked/>
-                    <input class="star" type="radio" name="rating" value="3" />
-                    <input class="star" type="radio" name="rating" value="4" />
-                    <input class="star" type="radio" name="rating" value="5" />
+                    <input class="star" type="radio" name="rating" value="1">
+                    <input class="star" type="radio" name="rating" value="2" checked>
+                    <input class="star" type="radio" name="rating" value="3">
+                    <input class="star" type="radio" name="rating" value="4">
+                    <input class="star" type="radio" name="rating" value="5">
                 </div>
 
     - Title: States
@@ -51,11 +51,11 @@ Definitions:
             Description: A rating can be started in non-interactive mode by adding `[disabled]` attribute.
             HTML: |
                 <div class="ts-rating is-input is-red">
-                    <input class="heart" type="radio" name="love" value="1" [[disabled]]/>
-                    <input class="heart" type="radio" name="love" value="2" checked [[disabled]]/>
-                    <input class="heart" type="radio" name="love" value="3" [[disabled]]/>
-                    <input class="heart" type="radio" name="love" value="4" [[disabled]]/>
-                    <input class="heart" type="radio" name="love" value="5" [[disabled]]/>
+                    <input class="heart" type="radio" name="love" value="1" [[disabled]]>
+                    <input class="heart" type="radio" name="love" value="2" checked [[disabled]]>
+                    <input class="heart" type="radio" name="love" value="3" [[disabled]]>
+                    <input class="heart" type="radio" name="love" value="4" [[disabled]]>
+                    <input class="heart" type="radio" name="love" value="5" [[disabled]]>
                 </div>
 
           - Title: Active

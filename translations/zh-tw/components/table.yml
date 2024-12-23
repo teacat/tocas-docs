@@ -677,7 +677,7 @@ Definitions:
                             <tr>
                                 <td>
                                     <label class="ts-checkbox">
-                                        <input type="checkbox"/>
+                                        <input type="checkbox">
                                     </label>
                                 </td>
                                 <td>Yan-K</td>
@@ -687,7 +687,7 @@ Definitions:
                             <tr class="[[is-active]]">
                                 <td>
                                     <label class="ts-checkbox">
-                                        <input type="checkbox" checked/>
+                                        <input type="checkbox" checked>
                                     </label>
                                 </td>
                                 <td>Tsundere Chen</td>
@@ -697,7 +697,7 @@ Definitions:
                             <tr>
                                 <td>
                                     <label class="ts-checkbox">
-                                        <input type="checkbox"/>
+                                        <input type="checkbox">
                                     </label>
                                 </td>
                                 <td>Hiram Huang</td>

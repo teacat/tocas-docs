@@ -25,7 +25,7 @@ Example:
     HTML: |
         <div class="[[ts-chip]]">
             <div class="{{ts-image}}">
-                <img src="!-user3-!" />
+                <img src="!-user3-!">
             </div>
             Yami Odymel
             <button class="{{ts-close}}"></button>
@@ -40,15 +40,15 @@ Definitions:
             Description: A chip can be used as a checkbox or radio button. Checked chip will have a checkmark icon.
             HTML: |
                 <label class="ts-chip [[is-input]]">
-                    <input type="checkbox" checked/>
+                    <input type="checkbox" checked>
                     <div class="content">Workout</div>
                 </label>
                 <label class="ts-chip [[is-input]]">
-                    <input type="checkbox" />
+                    <input type="checkbox">
                     <div class="content">Game</div>
                 </label>
                 <label class="ts-chip [[is-input]]">
-                    <input type="checkbox" />
+                    <input type="checkbox">
                     <div class="content">Reading</div>
                 </label>
 
@@ -57,11 +57,11 @@ Definitions:
             Description: A chip can be used as a toggle switch.
             HTML: |
                 <label class="ts-chip [[is-toggle]] is-circular">
-                    <input type="checkbox"/>
+                    <input type="checkbox">
                     <div class="content">Hottest</div>
                 </label>
                 <label class="ts-chip [[is-toggle]] is-circular">
-                    <input type="checkbox" checked/>
+                    <input type="checkbox" checked>
                     <div class="content">Unvisited</div>
                 </label>
 
@@ -73,7 +73,7 @@ Definitions:
             Description: A disabled chip cannot be interacted with. For hyperlinks, use the `.is-disabled` class.
             HTML: |
                 <label class="ts-chip is-input">
-                    <input type="checkbox" [[disabled]]/>
+                    <input type="checkbox" [[disabled]]>
                     <div class="content">Checkbox Chip</div>
                 </label>
                 <button class="ts-chip" [[disabled]]>
@@ -105,7 +105,7 @@ Definitions:
             HTML: |
                 <div class="ts-chip is-circular">
                     <div class="[[{{ts-image}}]] is-circular">
-                        <img src="!-user-!" />
+                        <img src="!-user-!">
                     </div>
                     Yami Odymel
                 </div>
@@ -135,11 +135,11 @@ Definitions:
             Description: A secondary chip has a less visible checked state.
             HTML: |
                 <label class="ts-chip is-toggle is-outlined [[is-secondary]]">
-                    <input type="checkbox" checked/>
+                    <input type="checkbox" checked>
                     <div class="content">👀 8</div>
                 </label>
                 <label class="ts-chip is-input is-outlined [[is-secondary]]">
-                    <input type="checkbox" checked/>
+                    <input type="checkbox" checked>
                     <div class="content">Free WiFi</div>
                 </label>
 
@@ -157,19 +157,19 @@ Definitions:
                 <div class="{{ts-grid}} is-3-columns">
                     <div class="column">
                         <label class="ts-chip [[is-fluid]] is-input is-outlined">
-                            <input type="checkbox" checked/>
+                            <input type="checkbox" checked>
                             <div class="content">Small</div>
                         </label>
                     </div>
                     <div class="column">
                         <label class="ts-chip [[is-fluid]] is-input is-outlined">
-                            <input type="checkbox" />
+                            <input type="checkbox">
                             <div class="content">Medium</div>
                         </label>
                     </div>
                     <div class="column">
                         <label class="ts-chip [[is-fluid]] is-input is-outlined">
-                            <input type="checkbox" />
+                            <input type="checkbox">
                             <div class="content">Large</div>
                         </label>
                     </div>
@@ -220,17 +220,17 @@ Definitions:
                 - <div class="ts-space"></div>
             HTML: |
                 Post author is <span class="ts-chip [[is-start-spaced]]">
-                    <img src="!-user-!" />
+                    <img src="!-user-!">
                     Mac Taylor
                 </span>
                 <div class="ts-space"></div>
                 <span class="ts-chip [[is-end-spaced]]">
-                    <img src="!-user2-!" />
+                    <img src="!-user2-!">
                     Sciuridae Li
                 </span> is the admin.
                 <div class="ts-space"></div>
                 It's <span class="ts-chip [[is-spaced]]">
-                    <img src="!-user3-!" />
+                    <img src="!-user3-!">
                     Sean Wei
                 </span> saying.
 
@@ -247,11 +247,11 @@ Definitions:
                         for being "too pro at baiting online."</p>
                         <div class="{{ts-wrap}} is-compact">
                             <label class="[[ts-chip]] is-toggle is-secondary is-outlined">
-                                <input type="checkbox" checked/>
+                                <input type="checkbox" checked>
                                 <div class="content">👌 21</div>
                             </label>
                             <label class="[[ts-chip]] is-toggle is-secondary is-outlined">
-                                <input type="checkbox"/>
+                                <input type="checkbox">
                                 <div class="content">👀 8</div>
                             </label>
                             <div class="[[ts-chip]] is-outlined">

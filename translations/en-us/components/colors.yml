@@ -565,15 +565,15 @@ Definitions:
     #                            <div class="ts-space"></div>
     #                            <div class="ts-wrap">
     #                                <label class="ts-checkbox is-accent">
-    #                                    <input type="checkbox" checked/>
+    #                                    <input type="checkbox" checked>
     #                                    已售出
     #                                </label>
     #                                <label class="ts-checkbox is-accent">
-    #                                    <input type="checkbox"checked/>
+    #                                    <input type="checkbox"checked>
     #                                    未販售
     #                                </label>
     #                                <label class="ts-checkbox is-accent">
-    #                                    <input type="checkbox" checked/>
+    #                                    <input type="checkbox" checked>
     #                                    空投限定
     #                                </label>
     #                            </div>

@@ -384,7 +384,7 @@ Definitions:
                 <div class="ts-grid">
                     <div class="column [[is-fluid]]">
                         <div class="{{ts-input}}">
-                            <input type="text" class="input" placeholder="Search articles..."/>
+                            <input type="text" class="input" placeholder="Search articles...">
                         </div>
                     </div>
                     <div class="column">

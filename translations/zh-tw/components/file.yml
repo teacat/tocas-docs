@@ -22,7 +22,7 @@ Example:
     Centered: true
     HTML: |
         <div class="[[ts-file]]">
-            <input type="file" />
+            <input type="file">
         </div>
 
 Definitions:
@@ -34,7 +34,7 @@ Definitions:
             Description: 使檔案欄位呈現無法互動、點擊的模樣。
             HTML: |
                 <div class="ts-file">
-                    <input type="file" [[disabled]]/>
+                    <input type="file" [[disabled]]>
                 </div>
 
     - Title: 外觀
@@ -45,7 +45,7 @@ Definitions:
             Description: 帶有實心背景的欄位能更明確地呈現這是可供互動的元素。
             HTML: |
                 <div class="ts-file [[is-solid]]">
-                    <input type="file" />
+                    <input type="file">
                 </div>
 
           - Title: 底線的
@@ -53,7 +53,7 @@ Definitions:
             Description: 以實心背景和底線明顯呈現一個欄位，讓使用者如填寫表單一樣。
             HTML: |
                 <div class="ts-file [[is-underlined]]">
-                    <input type="file" />
+                    <input type="file">
                 </div>
 
           - Title: 負面的
@@ -61,7 +61,7 @@ Definitions:
             Description: 令一個欄位看起來帶有負面或危險的狀態，通常可能是指這個欄位沒有選擇檔案。
             HTML: |
                 <div class="ts-file [[is-negative]]">
-                    <input type="file" />
+                    <input type="file">
                 </div>
 
           - Title: 尺寸
@@ -71,15 +71,15 @@ Definitions:
                 - <div class="ts-space"></div>
             HTML: |
                 <div class="ts-file [[is-small]]">
-                    <input type="file" />
+                    <input type="file">
                 </div>
                 <div class="ts-space"></div>
                 <div class="ts-file">
-                    <input type="file" />
+                    <input type="file">
                 </div>
                 <div class="ts-space"></div>
                 <div class="ts-file [[is-large]]">
-                    <input type="file" />
+                    <input type="file">
                 </div>
 
           - Title: 密度
@@ -89,15 +89,15 @@ Definitions:
                 - <div class="ts-space"></div>
             HTML: |
                 <div class="ts-file [[is-dense]]">
-                    <input type="file" />
+                    <input type="file">
                 </div>
                 <div class="ts-space"></div>
                 <div class="ts-file">
-                    <input type="file" />
+                    <input type="file">
                 </div>
                 <div class="ts-space"></div>
                 <div class="ts-file [[is-relaxed]]">
-                    <input type="file" />
+                    <input type="file">
                 </div>
 
     #- Title: JavaScript 模組
@@ -118,5 +118,5 @@ Definitions:
     #                </div>
     #            </div>
     #            <div class="{{ts-file}} {{has-top-spaced}}">
-    #                <input type="file" id="upload" multiple />
+    #                <input type="file" id="upload" multiple>
     #            </div>

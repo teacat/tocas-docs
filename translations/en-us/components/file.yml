@@ -22,7 +22,7 @@ Example:
     Centered: true
     HTML: |
         <div class="[[ts-file]]">
-            <input type="file" />
+            <input type="file">
         </div>
 
 Definitions:
@@ -34,7 +34,7 @@ Definitions:
             Description: A file input can show it's currently disabled.
             HTML: |
                 <div class="ts-file">
-                    <input type="file" [[disabled]]/>
+                    <input type="file" [[disabled]]>
                 </div>
 
     - Title: Variations
@@ -45,7 +45,7 @@ Definitions:
             Description: A file input can have a solid background.
             HTML: |
                 <div class="ts-file [[is-solid]]">
-                    <input type="file" />
+                    <input type="file">
                 </div>
 
           - Title: Underlined
@@ -53,7 +53,7 @@ Definitions:
             Description: A file input can have a solid background and an underline.
             HTML: |
                 <div class="ts-file [[is-underlined]]">
-                    <input type="file" />
+                    <input type="file">
                 </div>
 
           - Title: Negative
@@ -61,7 +61,7 @@ Definitions:
             Description: A file input can show it's in an invalid state.
             HTML: |
                 <div class="ts-file [[is-negative]]">
-                    <input type="file" />
+                    <input type="file">
                 </div>
 
           - Title: Sizes
@@ -71,15 +71,15 @@ Definitions:
                 - <div class="ts-space"></div>
             HTML: |
                 <div class="ts-file [[is-small]]">
-                    <input type="file" />
+                    <input type="file">
                 </div>
                 <div class="ts-space"></div>
                 <div class="ts-file">
-                    <input type="file" />
+                    <input type="file">
                 </div>
                 <div class="ts-space"></div>
                 <div class="ts-file [[is-large]]">
-                    <input type="file" />
+                    <input type="file">
                 </div>
 
           - Title: Density
@@ -89,15 +89,15 @@ Definitions:
                 - <div class="ts-space"></div>
             HTML: |
                 <div class="ts-file [[is-dense]]">
-                    <input type="file" />
+                    <input type="file">
                 </div>
                 <div class="ts-space"></div>
                 <div class="ts-file">
-                    <input type="file" />
+                    <input type="file">
                 </div>
                 <div class="ts-space"></div>
                 <div class="ts-file [[is-relaxed]]">
-                    <input type="file" />
+                    <input type="file">
                 </div>
 
     #- Title: JavaScript 模組
@@ -118,5 +118,5 @@ Definitions:
     #                </div>
     #            </div>
     #            <div class="{{ts-file}} {{has-top-spaced}}">
-    #                <input type="file" id="upload" multiple />
+    #                <input type="file" id="upload" multiple>
     #            </div>

@@ -63,12 +63,12 @@ Definitions:
                                     <div class="{{ts-text}} is-label">使用者帳號</div>
                                     <div class="{{ts-input}} is-start-icon">
                                         <span class="{{ts-icon}} is-user-icon"></span>
-                                        <input type="text" />
+                                        <input type="text">
                                     </div>
                                     <div class="{{ts-text}} is-label">密碼</div>
                                     <div class="{{ts-input}} is-start-icon">
                                         <span class="{{ts-icon}} is-lock-icon"></span>
-                                        <input type="password" />
+                                        <input type="password">
                                     </div>
                                     <button class="{{ts-button}} is-fluid">登入</button>
                                 </div>

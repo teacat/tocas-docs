@@ -24,7 +24,7 @@ Example:
     Centered: true
     HTML: |
         <label class="[[ts-switch]]">
-            <input type="checkbox" checked/>
+            <input type="checkbox" checked>
             Circuit Breaker
         </label>
 
@@ -37,7 +37,7 @@ Definitions:
             Description: A switch can show it's currently disabled.
             HTML: |
                 <label class="ts-switch">
-                    <input type="checkbox" [[disabled]]/>
+                    <input type="checkbox" [[disabled]]>
                     Advanced Mode
                 </label>
 
@@ -49,7 +49,7 @@ Definitions:
             Description: A switch can show it's in an invalid state.
             HTML: |
                 <label class="ts-switch [[is-negative]]">
-                    <input type="checkbox" />
+                    <input type="checkbox">
                     Spam Filter
                 </label>
 
@@ -58,7 +58,7 @@ Definitions:
             Description: A switch can have no extra spacing without label text.
             HTML: |
                 <label class="ts-switch [[is-solo]]">
-                    <input type="checkbox" />
+                    <input type="checkbox">
                 </label>
 
           - Title: Sizes
@@ -68,16 +68,16 @@ Definitions:
                 - <div class="ts-space"></div>
             HTML: |
                 <label class="ts-switch [[is-small]]">
-                    <input type="checkbox" checked/>
+                    <input type="checkbox" checked>
                     Small
                 </label>
                 <div class="ts-space"></div>
                 <label class="ts-switch">
-                    <input type="checkbox" checked/>
+                    <input type="checkbox" checked>
                     Default
                 </label>
                 <div class="ts-space"></div>
                 <label class="ts-switch [[is-large]]">
-                    <input type="checkbox" checked/>
+                    <input type="checkbox" checked>
                     Large
                 </label>

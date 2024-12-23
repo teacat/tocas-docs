@@ -207,7 +207,7 @@ Definitions:
                         <div class="{{ts-divider}}"></div>
                         <div class="{{ts-content}}">
                             <div class="{{ts-input}}">
-                                <input type="text" value="Yami Odymel"/>
+                                <input type="text" value="Yami Odymel">
                             </div>
                         </div>
                         <div class="{{ts-divider}}"></div>
@@ -257,7 +257,7 @@ Definitions:
                         <div class="{{ts-divider}}"></div>
                         <div class="{{ts-content}}">
                             <label class="{{ts-checkbox}}">
-                                <input type="checkbox" checked />
+                                <input type="checkbox" checked>
                                 我已閱讀上述所有內容且同意。
                             </label>
                         </div>

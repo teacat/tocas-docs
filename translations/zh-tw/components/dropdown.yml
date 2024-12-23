@@ -467,7 +467,7 @@ Definitions:
     #        HTML: |
     #            <div>
     #                <div class="[[{{ts-input}}]]">
-    #                    <input type="text" placeholder="輸入使用者名稱…"/>
+    #                    <input type="text" placeholder="輸入使用者名稱…">
     #                </div>
     #                <div class="ts-dropdown is-bottom is-visible">
     #                    <button class="item">Yami Odymel</button>
@@ -488,14 +488,14 @@ Definitions:
     #                <div class="content">
     #                    <div class="{{ts-chip}}">
     #                        <div class="{{ts-image}}">
-    #                            <img src="!-user-!" />
+    #                            <img src="!-user-!">
     #                        </div>
     #                        蓋歐露易絲
     #                        <button class="{{ts-close}} is-small"></button>
     #                    </div>
     #                    <div class="{{ts-chip}}">
     #                        <div class="{{ts-image}}">
-    #                            <img src="!-user-!" />
+    #                            <img src="!-user-!">
     #                        </div>
     #                        古伊奈
     #                        <button class="{{ts-close}} is-small"></button>
