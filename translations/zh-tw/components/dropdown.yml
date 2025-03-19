@@ -115,20 +115,6 @@ Definitions:
                 <div class="ts-space is-huge"></div>
                 <div class="ts-space is-big"></div>
 
-          - Title: 負面的
-            Anchor: Negative
-            Description: 表示某個項目的行為具有危險性。
-            Remove:
-                - <div class="ts-space is-huge"></div>
-                - <div class="ts-space is-large"></div>
-            HTML: |
-                <div class="ts-dropdown is-visible">
-                    <a class="item">檢視文件</a>
-                    <a class="item [[is-negative]]">刪除</a>
-                </div>
-                <div class="ts-space is-huge"></div>
-                <div class="ts-space is-large"></div>
-
     - Title: 結構
       Description:
       Sections:
@@ -190,6 +176,23 @@ Definitions:
                 </div>
                 <div class="ts-space is-huge"></div>
                 <div class="ts-space is-huge"></div>
+
+    - Title: 項目外觀
+      Description:
+      Sections:
+          - Title: 負面的
+            Anchor: Negative
+            Description: 表示某個項目的行為具有危險性。
+            Remove:
+                - <div class="ts-space is-huge"></div>
+                - <div class="ts-space is-large"></div>
+            HTML: |
+                <div class="ts-dropdown is-visible">
+                    <a class="item">檢視文件</a>
+                    <a class="item [[is-negative]]">刪除</a>
+                </div>
+                <div class="ts-space is-huge"></div>
+                <div class="ts-space is-large"></div>
 
     - Title: 外觀
       Description:

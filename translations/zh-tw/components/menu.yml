@@ -102,6 +102,18 @@ Definitions:
                     </div>
                 </div>
 
+    - Title: 項目外觀
+      Description:
+      Sections:
+          - Title: 負面的
+            Anchor: Negative
+            Description: 表示某個項目的行為具有危險性。
+            HTML: |
+                <div class="ts-menu">
+                    <a class="item">編輯資料</a>
+                    <a class="item [[is-negative]]">關閉此案件</a>
+                </div>
+
     - Title: 外觀
       Description:
       Sections:

@@ -102,6 +102,18 @@ Definitions:
                     </div>
                 </div>
 
+    - Title: Item Variations
+      Description:
+      Sections:
+          - Title: Negative
+            Anchor: Negative
+            Description: The menu item can be negative to indicate a destructive action.
+            HTML: |
+                <div class="ts-menu">
+                    <a class="item">Edit Description</a>
+                    <a class="item [[is-negative]]">Close the Case</a>
+                </div>
+
     - Title: Variations
       Description:
       Sections:

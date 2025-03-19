@@ -115,20 +115,6 @@ Definitions:
                 <div class="ts-space is-huge"></div>
                 <div class="ts-space is-big"></div>
 
-          - Title: Negative
-            Anchor: Negative
-            Description: A dropdown menu can contain a negative item.
-            Remove:
-                - <div class="ts-space is-huge"></div>
-                - <div class="ts-space is-large"></div>
-            HTML: |
-                <div class="ts-dropdown is-visible">
-                    <a class="item">View Document</a>
-                    <a class="item [[is-negative]]">Delete</a>
-                </div>
-                <div class="ts-space is-huge"></div>
-                <div class="ts-space is-large"></div>
-
     - Title: Structure
       Description:
       Sections:
@@ -190,6 +176,23 @@ Definitions:
                 </div>
                 <div class="ts-space is-huge"></div>
                 <div class="ts-space is-huge"></div>
+
+    - Title: Item Variations
+      Description:
+      Sections:
+          - Title: Negative
+            Anchor: Negative
+            Description: The dropdown item can be negative to indicate a destructive action.
+            Remove:
+                - <div class="ts-space is-huge"></div>
+                - <div class="ts-space is-large"></div>
+            HTML: |
+                <div class="ts-dropdown is-visible">
+                    <a class="item">View Document</a>
+                    <a class="item [[is-negative]]">Delete</a>
+                </div>
+                <div class="ts-space is-huge"></div>
+                <div class="ts-space is-large"></div>
 
     - Title: Variations
       Description:
