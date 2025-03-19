@@ -149,6 +149,10 @@
     display: inline-flex;
     gap: 0.25rem;
 }
+button.ts-text.is-icon-link {
+    text-align: left;
+    align-items: center;
+}
 
 /**
  * External Link

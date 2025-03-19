@@ -7,7 +7,7 @@ Information:
     LanguageCode: en-us
     Path: en-us
     Flag: america
-    Version: 5.0.1
+    Version: 5.0.2
     ShortVersion: 5.0
 
 #=======================================================
@@ -25,7 +25,7 @@ Contributors:
 Versions:
     - Name: Latest
       Items:
-          - Name: 5.0.1
+          - Name: 5.0.2
             Website:
     - Name: Older releases
       Items:

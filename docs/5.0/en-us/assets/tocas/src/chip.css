@@ -198,12 +198,14 @@ fieldset:disabled .ts-chip {
 .ts-chip.is-dense {
     padding-top: 0.1rem;
     padding-bottom: 0.1rem;
+    line-height: 1.5;
 }
 
 .ts-chip.is-dense:is(.is-input, .is-toggle) .content {
     min-height: 20px;
     padding-top: 0.1rem;
     padding-bottom: 0.1rem;
+    line-height: 1.5;
 }
 
 /**

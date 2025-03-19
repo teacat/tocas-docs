@@ -97,7 +97,7 @@
                             
                             <div class="header">最新版本</div>
                             
-                            <a class="item is-selected" >v5.0.1</a>
+                            <a class="item is-selected" >v5.0.2</a>
                             
                             <div class="divider"></div>
                             
@@ -229,6 +229,12 @@
                         <a href="./radio.html" class="主體-格局-導覽-項目">
                              Radio 
                             <span class="主體-格局-導覽-項目-英文">單選方塊</span>
+                             
+                        </a>
+                        
+                        <a href="./range.html" class="主體-格局-導覽-項目">
+                             Range 
+                            <span class="主體-格局-導覽-項目-英文">範圍滑桿</span>
                              
                         </a>
                         
@@ -1342,6 +1348,91 @@
                         </div>
                         
                         <div class="主體-格局-內容-單個範例">
+                            <a class="主體-格局-內容-單個範例-錨點" id="selectable"></a>
+                            <div class="主體-格局-內容-單個範例-文字-標題 主體-格局-內容-單個範例-文字-標題_段落">
+                                <a href="#selectable" class="主體-格局-內容-單個範例-文字-標題-連結">可選擇的</a>
+                                
+                                <button class="主體-格局-內容-單個範例-文字-標題-切換原始碼"><span class="ts-icon is-code-icon"></span> 原始碼</button>
+                                
+                            </div>
+                            <div class="主體-格局-內容-單個範例-文字"><p>使某個行列在游標移上時有反應。</p>
+</div>
+
+                            <!-- 範例與程式碼 -->
+                            
+                            <div class="主體-格局-內容-單個範例-範例">
+                                <div class="主體-格局-內容-單個範例-範例-實際效果"><div class="ts-box">
+    <table class="ts-table is-selectable">
+        <thead>
+            <tr>
+                <th>食物</th>
+                <th>熱量</th>
+                <th>蛋白質</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>香蕉</td>
+                <td>88 kcal / 100g</td>
+                <td>1.1g</td>
+            </tr>
+            <tr>
+                <td>蘋果</td>
+                <td>52 kcal / 100g</td>
+                <td>0.3g</td>
+            </tr>
+            <tr>
+                <td>西瓜</td>
+                <td>30 kcal / 100g</td>
+                <td>0.6g</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+                                <div class="主體-格局-內容-單個範例-範例-程式碼"><pre><code class="hljs">&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"<a href="./box.html">ts-box</a>"</span>&gt;
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ts-table <mark>is-selectable</mark>"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">thead</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>食物<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>熱量<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>蛋白質<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>香蕉<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>88 kcal / 100g<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>1.1g<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>蘋果<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>52 kcal / 100g<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>0.3g<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>西瓜<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>30 kcal / 100g<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>0.6g<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span></span>
+&lt;<span class="hljs-regexp">/div&gt;</span></code></pre>
+</div>
+                            </div>
+                            
+                            <!-- / 範例與程式碼 -->
+
+                            <!-- 附帶程式片段 -->
+                            
+                            <!-- / 附帶程式片段 -->
+
+                            <!-- 圖示組 -->
+                            
+                            <!-- / 圖示組 -->
+                        </div>
+                        
+                        <div class="主體-格局-內容-單個範例">
                             <a class="主體-格局-內容-單個範例-錨點" id="sticked"></a>
                             <div class="主體-格局-內容-單個範例-文字-標題 主體-格局-內容-單個範例-文字-標題_段落">
                                 <a href="#sticked" class="主體-格局-內容-單個範例-文字-標題-連結">貼邊的</a>
@@ -2092,7 +2183,7 @@
             <tr>
                 <td>
                     <label class="ts-checkbox">
-                        <input type="checkbox"/>
+                        <input type="checkbox">
                     </label>
                 </td>
                 <td>Yan-K</td>
@@ -2102,7 +2193,7 @@
             <tr class="is-active">
                 <td>
                     <label class="ts-checkbox">
-                        <input type="checkbox" checked/>
+                        <input type="checkbox" checked>
                     </label>
                 </td>
                 <td>Tsundere Chen</td>
@@ -2112,7 +2203,7 @@
             <tr>
                 <td>
                     <label class="ts-checkbox">
-                        <input type="checkbox"/>
+                        <input type="checkbox">
                     </label>
                 </td>
                 <td>Hiram Huang</td>
@@ -2137,7 +2228,7 @@
             <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ts-checkbox"</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> /&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span>&gt;</span>
                     <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Yan-K<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
@@ -2147,7 +2238,7 @@
             <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<mark>is-active</mark>"</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ts-checkbox"</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> <span class="hljs-attr">checked</span> /&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> <span class="hljs-attr">checked</span>&gt;</span>
                     <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Tsundere Chen<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
@@ -2157,7 +2248,7 @@
             <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ts-checkbox"</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> /&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span>&gt;</span>
                     <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Hiram Huang<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
@@ -2976,6 +3067,10 @@
                             
                             <a class="主體-格局-索引-清單-項目" href="#truncated">
                                 截斷的 <span class="主體-格局-索引-清單-項目-英文">is-truncated</span>
+                            </a>
+                            
+                            <a class="主體-格局-索引-清單-項目" href="#selectable">
+                                可選擇的 <span class="主體-格局-索引-清單-項目-英文">is-selectable</span>
                             </a>
                             
                             <a class="主體-格局-索引-清單-項目" href="#sticked">

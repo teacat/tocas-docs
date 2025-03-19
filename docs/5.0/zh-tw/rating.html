@@ -97,7 +97,7 @@
                             
                             <div class="header">最新版本</div>
                             
-                            <a class="item is-selected" >v5.0.1</a>
+                            <a class="item is-selected" >v5.0.2</a>
                             
                             <div class="divider"></div>
                             
@@ -229,6 +229,12 @@
                         <a href="./radio.html" class="主體-格局-導覽-項目">
                              Radio 
                             <span class="主體-格局-導覽-項目-英文">單選方塊</span>
+                             
+                        </a>
+                        
+                        <a href="./range.html" class="主體-格局-導覽-項目">
+                             Range 
+                            <span class="主體-格局-導覽-項目-英文">範圍滑桿</span>
                              
                         </a>
                         
@@ -656,19 +662,19 @@
                             
                             <div class="主體-格局-內容-單個範例-範例">
                                 <div class="主體-格局-內容-單個範例-範例-實際效果"><div class="ts-rating is-yellow is-input">
-    <input class="star" type="radio" name="rating" value="1" />
-    <input class="star" type="radio" name="rating" value="2" checked/>
-    <input class="star" type="radio" name="rating" value="3" />
-    <input class="star" type="radio" name="rating" value="4" />
-    <input class="star" type="radio" name="rating" value="5" />
+    <input class="star" type="radio" name="rating" value="1">
+    <input class="star" type="radio" name="rating" value="2" checked>
+    <input class="star" type="radio" name="rating" value="3">
+    <input class="star" type="radio" name="rating" value="4">
+    <input class="star" type="radio" name="rating" value="5">
 </div>
 </div>
                                 <div class="主體-格局-內容-單個範例-範例-程式碼"><pre><code class="hljs">&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"ts-rating is-yellow <mark>is-input</mark>"</span>&gt;
-    &lt;input <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"star"</span> <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"radio"</span> name=<span class="hljs-string">"rating"</span> value=<span class="hljs-string">"1"</span> /&gt;
-    &lt;input <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"star"</span> <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"radio"</span> name=<span class="hljs-string">"rating"</span> value=<span class="hljs-string">"2"</span> checked /&gt;
-    &lt;input <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"star"</span> <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"radio"</span> name=<span class="hljs-string">"rating"</span> value=<span class="hljs-string">"3"</span> /&gt;
-    &lt;input <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"star"</span> <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"radio"</span> name=<span class="hljs-string">"rating"</span> value=<span class="hljs-string">"4"</span> /&gt;
-    &lt;input <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"star"</span> <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"radio"</span> name=<span class="hljs-string">"rating"</span> value=<span class="hljs-string">"5"</span> /&gt;
+    &lt;input <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"star"</span> <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"radio"</span> name=<span class="hljs-string">"rating"</span> value=<span class="hljs-string">"1"</span>&gt;
+    &lt;input <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"star"</span> <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"radio"</span> name=<span class="hljs-string">"rating"</span> value=<span class="hljs-string">"2"</span> checked&gt;
+    &lt;input <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"star"</span> <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"radio"</span> name=<span class="hljs-string">"rating"</span> value=<span class="hljs-string">"3"</span>&gt;
+    &lt;input <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"star"</span> <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"radio"</span> name=<span class="hljs-string">"rating"</span> value=<span class="hljs-string">"4"</span>&gt;
+    &lt;input <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"star"</span> <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"radio"</span> name=<span class="hljs-string">"rating"</span> value=<span class="hljs-string">"5"</span>&gt;
 &lt;/div&gt;</code></pre>
 </div>
                             </div>
@@ -711,19 +717,19 @@
                             
                             <div class="主體-格局-內容-單個範例-範例">
                                 <div class="主體-格局-內容-單個範例-範例-實際效果"><div class="ts-rating is-input is-red">
-    <input class="heart" type="radio" name="love" value="1" disabled/>
-    <input class="heart" type="radio" name="love" value="2" checked disabled/>
-    <input class="heart" type="radio" name="love" value="3" disabled/>
-    <input class="heart" type="radio" name="love" value="4" disabled/>
-    <input class="heart" type="radio" name="love" value="5" disabled/>
+    <input class="heart" type="radio" name="love" value="1" disabled>
+    <input class="heart" type="radio" name="love" value="2" checked disabled>
+    <input class="heart" type="radio" name="love" value="3" disabled>
+    <input class="heart" type="radio" name="love" value="4" disabled>
+    <input class="heart" type="radio" name="love" value="5" disabled>
 </div>
 </div>
                                 <div class="主體-格局-內容-單個範例-範例-程式碼"><pre><code class="hljs">&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"ts-rating is-input is-red"</span>&gt;
-    &lt;input <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"heart"</span> <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"radio"</span> name=<span class="hljs-string">"love"</span> value=<span class="hljs-string">"1"</span> <span class="hljs-type"><mark>disabled</mark></span> /&gt;
-    &lt;input <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"heart"</span> <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"radio"</span> name=<span class="hljs-string">"love"</span> value=<span class="hljs-string">"2"</span> checked <span class="hljs-type"><mark>disabled</mark></span> /&gt;
-    &lt;input <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"heart"</span> <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"radio"</span> name=<span class="hljs-string">"love"</span> value=<span class="hljs-string">"3"</span> <span class="hljs-type"><mark>disabled</mark></span> /&gt;
-    &lt;input <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"heart"</span> <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"radio"</span> name=<span class="hljs-string">"love"</span> value=<span class="hljs-string">"4"</span> <span class="hljs-type"><mark>disabled</mark></span> /&gt;
-    &lt;input <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"heart"</span> <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"radio"</span> name=<span class="hljs-string">"love"</span> value=<span class="hljs-string">"5"</span> <span class="hljs-type"><mark>disabled</mark></span> /&gt;
+    &lt;input <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"heart"</span> <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"radio"</span> name=<span class="hljs-string">"love"</span> value=<span class="hljs-string">"1"</span> <span class="hljs-type"><mark>disabled</mark></span>&gt;
+    &lt;input <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"heart"</span> <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"radio"</span> name=<span class="hljs-string">"love"</span> value=<span class="hljs-string">"2"</span> checked <span class="hljs-type"><mark>disabled</mark></span>&gt;
+    &lt;input <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"heart"</span> <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"radio"</span> name=<span class="hljs-string">"love"</span> value=<span class="hljs-string">"3"</span> <span class="hljs-type"><mark>disabled</mark></span>&gt;
+    &lt;input <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"heart"</span> <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"radio"</span> name=<span class="hljs-string">"love"</span> value=<span class="hljs-string">"4"</span> <span class="hljs-type"><mark>disabled</mark></span>&gt;
+    &lt;input <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"heart"</span> <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"radio"</span> name=<span class="hljs-string">"love"</span> value=<span class="hljs-string">"5"</span> <span class="hljs-type"><mark>disabled</mark></span>&gt;
 &lt;/div&gt;</code></pre>
 </div>
                             </div>

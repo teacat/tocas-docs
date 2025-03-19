@@ -16,6 +16,7 @@
 .ts-select {
     position: relative;
     display: inline-flex;
+    align-items: center;
     background: var(--ts-gray-50);
     border: 1px solid var(--ts-gray-300);
     border-radius: var(--ts-border-radius-element);
@@ -30,6 +31,7 @@
 .ts-select select {
     border: none;
     margin: 0;
+    height: 100%;
     background: inherit;
     font: inherit;
     outline: none;
@@ -229,8 +231,8 @@
  * Disabled
  */
 
-//.ts-select.is-disabled,
-.ts-select:has(:disabled) {
+/** :has(:disabled) will applied if <option disabled> */
+.ts-select:has(select:disabled) {
     pointer-events: none;
     opacity: 0.5;
     user-select: none;

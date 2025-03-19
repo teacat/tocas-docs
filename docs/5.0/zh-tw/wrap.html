@@ -97,7 +97,7 @@
                             
                             <div class="header">最新版本</div>
                             
-                            <a class="item is-selected" >v5.0.1</a>
+                            <a class="item is-selected" >v5.0.2</a>
                             
                             <div class="divider"></div>
                             
@@ -229,6 +229,12 @@
                         <a href="./radio.html" class="主體-格局-導覽-項目">
                              Radio 
                             <span class="主體-格局-導覽-項目-英文">單選方塊</span>
+                             
+                        </a>
+                        
+                        <a href="./range.html" class="主體-格局-導覽-項目">
+                             Range 
+                            <span class="主體-格局-導覽-項目-英文">範圍滑桿</span>
                              
                         </a>
                         
@@ -913,43 +919,43 @@
                             <div class="主體-格局-內容-單個範例-範例">
                                 <div class="主體-格局-內容-單個範例-範例-實際效果"><div class="ts-wrap is-compact">
     <div class="ts-chip">
-        <img alt='不重要預置圖片，僅作為範例用' src="./assets/images/user.png" /> Yami Odymel
+        <img alt='不重要預置圖片，僅作為範例用' src="./assets/images/user.png"> Yami Odymel
     </div>
     <div class="ts-chip">
-        <img alt='不重要預置圖片，僅作為範例用' src="./assets/images/user2.png" /> Henry Wu
+        <img alt='不重要預置圖片，僅作為範例用' src="./assets/images/user2.png"> Henry Wu
     </div>
     <div class="ts-chip">
-        <img alt='不重要預置圖片，僅作為範例用' src="./assets/images/user.png" /> Sean
+        <img alt='不重要預置圖片，僅作為範例用' src="./assets/images/user.png"> Sean
     </div>
     <div class="ts-chip">
-        <img alt='不重要預置圖片，僅作為範例用' src="./assets/images/user3.png" /> Ming Tsay
+        <img alt='不重要預置圖片，僅作為範例用' src="./assets/images/user3.png"> Ming Tsay
     </div>
     <div class="ts-chip">
-        <img alt='不重要預置圖片，僅作為範例用' src="./assets/images/user.png" /> Mac Taylor
+        <img alt='不重要預置圖片，僅作為範例用' src="./assets/images/user.png"> Mac Taylor
     </div>
     <div class="ts-chip">
-        <img alt='不重要預置圖片，僅作為範例用' src="./assets/images/user2.png" /> Tsundere Chen
+        <img alt='不重要預置圖片，僅作為範例用' src="./assets/images/user2.png"> Tsundere Chen
     </div>
 </div>
 </div>
                                 <div class="主體-格局-內容-單個範例-範例-程式碼"><pre><code class="hljs">&lt;<span class="hljs-selector-tag">div</span> class=<span class="hljs-string">"ts-wrap is-compact"</span>&gt;
     &lt;<span class="hljs-selector-tag">div</span> class=<span class="hljs-string">"<mark><a href="./chip.html">ts-chip</a></mark>"</span>&gt;
-        &lt;<span class="hljs-selector-tag">img</span> src=<span class="hljs-string">"user.png"</span> /&gt; Yami Odymel
+        &lt;<span class="hljs-selector-tag">img</span> src=<span class="hljs-string">"user.png"</span>&gt; Yami Odymel
     &lt;/div&gt;
     &lt;<span class="hljs-selector-tag">div</span> class=<span class="hljs-string">"<mark><a href="./chip.html">ts-chip</a></mark>"</span>&gt;
-        &lt;<span class="hljs-selector-tag">img</span> src=<span class="hljs-string">"user.png"</span> /&gt; Henry Wu
+        &lt;<span class="hljs-selector-tag">img</span> src=<span class="hljs-string">"user.png"</span>&gt; Henry Wu
     &lt;/div&gt;
     &lt;<span class="hljs-selector-tag">div</span> class=<span class="hljs-string">"<mark><a href="./chip.html">ts-chip</a></mark>"</span>&gt;
-        &lt;<span class="hljs-selector-tag">img</span> src=<span class="hljs-string">"user.png"</span> /&gt; Sean
+        &lt;<span class="hljs-selector-tag">img</span> src=<span class="hljs-string">"user.png"</span>&gt; Sean
     &lt;/div&gt;
     &lt;<span class="hljs-selector-tag">div</span> class=<span class="hljs-string">"<mark><a href="./chip.html">ts-chip</a></mark>"</span>&gt;
-        &lt;<span class="hljs-selector-tag">img</span> src=<span class="hljs-string">"user.png"</span> /&gt; Ming Tsay
+        &lt;<span class="hljs-selector-tag">img</span> src=<span class="hljs-string">"user.png"</span>&gt; Ming Tsay
     &lt;/div&gt;
     &lt;<span class="hljs-selector-tag">div</span> class=<span class="hljs-string">"<mark><a href="./chip.html">ts-chip</a></mark>"</span>&gt;
-        &lt;<span class="hljs-selector-tag">img</span> src=<span class="hljs-string">"user.png"</span> /&gt; Mac Taylor
+        &lt;<span class="hljs-selector-tag">img</span> src=<span class="hljs-string">"user.png"</span>&gt; Mac Taylor
     &lt;/div&gt;
     &lt;<span class="hljs-selector-tag">div</span> class=<span class="hljs-string">"<mark><a href="./chip.html">ts-chip</a></mark>"</span>&gt;
-        &lt;<span class="hljs-selector-tag">img</span> src=<span class="hljs-string">"user.png"</span> /&gt; Tsundere Chen
+        &lt;<span class="hljs-selector-tag">img</span> src=<span class="hljs-string">"user.png"</span>&gt; Tsundere Chen
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 </div>
@@ -984,12 +990,12 @@
     <div class="ts-text is-label">使用者帳號</div>
     <div class="ts-input is-start-icon">
         <span class="ts-icon is-user-icon"></span>
-        <input type="text" />
+        <input type="text">
     </div>
     <div class="ts-text is-label">密碼</div>
     <div class="ts-input is-start-icon">
         <span class="ts-icon is-lock-icon"></span>
-        <input type="password" />
+        <input type="password">
     </div>
 </div>
 </div>
@@ -997,12 +1003,12 @@
     &lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"<a href="./text.html">ts-text</a> is-label"</span>&gt;使用者帳號&lt;/div&gt;
     &lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"<a href="./input.html">ts-input</a> is-start-icon"</span>&gt;
         &lt;span <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"<a href="./icon.html">ts-icon</a> is-user-icon"</span>&gt;&lt;/span&gt;
-        &lt;input <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"text"</span> /&gt;
+        &lt;input <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"text"</span>&gt;
     &lt;/div&gt;
     &lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"<a href="./text.html">ts-text</a> is-label"</span>&gt;密碼&lt;/div&gt;
     &lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"<a href="./input.html">ts-input</a> is-start-icon"</span>&gt;
         &lt;span <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"<a href="./icon.html">ts-icon</a> is-lock-icon"</span>&gt;&lt;/span&gt;
-        &lt;input <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"password"</span> /&gt;
+        &lt;input <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"password"</span>&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 </div>
