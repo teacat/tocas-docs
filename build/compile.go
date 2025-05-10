@@ -35,9 +35,8 @@ func compile(c *cli.Context) error {
 			log.Fatal(err)
 		}
 
-		// remove this `@import` line from original `tocas.css`
-		tocas = strings.ReplaceAll(tocas, v[0], "")
-		content += string(b) + "\n"
+		// replace this `@import` line in `tocas.css` with the actual content
+		tocas = strings.ReplaceAll(tocas, v[0], string(b)+"\n")
 	}
 
 	// create `/dist` if not exists
