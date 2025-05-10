@@ -16,6 +16,17 @@ Intro: |
 Type: Article
 
 #=======================================================
+# 變數
+# Variables
+#=======================================================
+
+Variables:
+    - Name: --gap
+      Default: 0
+      Target: .ts-divider
+      Description: The height of the spacing between the divider and the content.
+
+#=======================================================
 # 基本樣式
 # Definitions
 #=======================================================
