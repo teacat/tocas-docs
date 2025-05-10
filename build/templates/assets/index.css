@@ -18,7 +18,7 @@
     font-size: 3rem;
     font-weight: bold;
     display: block;
-    color: var(--ts-gray-800);
+    color: var(--ts-gray-900);
     margin-top: 0;
     line-height: 1;
 }
@@ -26,7 +26,7 @@
 .穹頂-行動號召-容器-副標題 {
     font-size: 1.25rem;
     display: block;
-    color: var(--ts-gray-600);
+    color: var(--ts-gray-800);
     margin-top: 2rem;
 }
 
@@ -39,17 +39,16 @@
     padding: 0.6rem 1.8rem;
     font-weight: 500;
     text-decoration: none;
-    /*border: 3px solid #e0e0e0;*/
-    background: var(--ts-gray-800);
+    background: var(--ts-gray-900);
     color: var(--ts-gray-50);
 }
 
 .穹頂-行動號召-容器-動作:hover {
-    background: var(--ts-gray-700);
+    background: var(--ts-gray-800);
 }
 
 .穹頂-行動號召-容器-動作_次要的 {
-    color: var(--ts-gray-600);
+    color: var(--ts-gray-800);
     background: transparent;
     border: 0;
     margin-left: 1rem;
@@ -65,7 +64,7 @@
 
 .進階宣傳-彈性格局 {
     border: 3px solid var(--ts-gray-300);
-    color: var(--ts-gray-800);
+    color: var(--ts-gray-900);
     font-size: 14px;
     display: flex;
     gap: 0.7rem;
@@ -75,41 +74,26 @@
     width: fit-content;
     margin: 0 auto;
     margin-top: 4rem;
-
-    /*border-color: #6565af;
-    color: #6565af;*/
 }
 
 .進階宣傳-彈性格局-標題 {
     background: var(--ts-gray-300);
-    color: var(--ts-gray-800);
+    color: var(--ts-gray-900);
     border-radius: 100rem;
     padding: 0.45rem 0.8rem;
     line-height: 1;
     font-size: 13px;
-    font-weight: 500;
     white-space: nowrap;
-
-    /*background: #6565af;
-    color: #fff;*/
-}
-
-.進階宣傳-彈性格局-內容 {
 }
 
 .進階宣傳-彈性格局-連結 {
     display: inline-block;
-    /* width: 1rem; */
-    /* height: 1rem; */
     background: #e4e4e4;
     color: #3a3a3a;
     text-decoration: none;
     padding: 0.5rem 0.7rem;
     line-height: 1;
     border-radius: 100rem;
-
-    /*background: #6565af;
-    color: #fff;*/
 }
 
 .主要內容 {
@@ -123,18 +107,18 @@
 }
 
 .主要內容-內容區塊-標題 {
-    font-size: 2rem;
+    font-size: 28px;
     font-weight: 500;
     display: block;
     padding: 0 2rem;
-    color: var(--ts-gray-800);
+    color: var(--ts-gray-900);
     line-height: 1;
 }
 
 .主要內容-內容區塊-說明 {
     display: block;
-    color: var(--ts-gray-600);
-    font-size: 1.25rem;
+    color: var(--ts-gray-800);
+    font-size: 18px;
     padding: 0 2rem;
     margin-top: 1rem;
 }
@@ -156,7 +140,7 @@
     background: transparent;
     padding: 2rem;
     border: 6px solid var(--ts-gray-300);
-    color: var(--ts-gray-800);
+    color: var(--ts-gray-900);
     border-radius: 0.8rem;
 }
 
@@ -167,14 +151,14 @@
     grid-column: span 1;
     background: var(--ts-gray-100);
     padding: 2rem;
-    color: var(--ts-gray-800);
+    color: var(--ts-gray-900);
     border-radius: 0.4rem;
 }
 
 .主要內容-內容區塊-藝廊格局-標題 {
     display: block;
     line-height: 1;
-    color: var(--ts-gray-600);
+    color: var(--ts-gray-700);
 }
 
 .主要內容-內容區塊-藝廊格局-說明 {
@@ -192,7 +176,7 @@
     align-self: flex-start;
     font-size: 1rem;
     font-weight: 500;
-    color: var(--ts-gray-800);
+    color: var(--ts-gray-900);
     border-radius: 0.4rem;
     padding: 0.5rem 1.6rem;
     text-decoration: none;
@@ -207,7 +191,7 @@
 .主要內容-準備區塊 {
     display: block;
     margin-top: 6rem;
-    background: var(--ts-gray-800);
+    background: var(--ts-dark-gray-75);
     padding: 6rem 0;
 }
 
@@ -276,36 +260,7 @@
 .hljs .hljs-addition {
     color: #71e2ff !important;
 }
-/*
-@media (prefers-color-scheme: dark) {
-    .hljs {
-        color: #333 !important;
-        font-size: 1rem !important;
-    }
 
-    .hljs-comment {
-        opacity: 0.5 !important;
-    }
-
-    .hljs .hljs-variable,
-    .hljs .hljs-template-variable,
-    .hljs .hljs-tag,
-    .hljs .hljs-name,
-    .hljs .hljs-selector-id,
-    .hljs .hljs-selector-class,
-    .hljs .hljs-regexp,
-    .hljs .hljs-deletion {
-        color: #333 !important;
-    }
-
-    .hljs .hljs-string,
-    .hljs .hljs-symbol,
-    .hljs .hljs-bullet,
-    .hljs .hljs-addition {
-        color: #2073db !important;
-    }
-}
-*/
 .主要內容-準備區塊-行動號召 {
     text-align: center;
 }
@@ -340,7 +295,7 @@
 
 .主要內容-特色說明-項目-標題 {
     display: block;
-    color: var(--ts-gray-800);
+    color: var(--ts-gray-900);
     font-weight: 500;
     font-size: 1.6rem;
     line-height: 1.4;
@@ -348,8 +303,8 @@
 
 .主要內容-特色說明-項目-說明 {
     display: block;
-    font-size: 1.0625rem;
-    color: var(--ts-gray-600);
+    font-size: 16px;
+    color: var(--ts-gray-800);
     margin-top: 1rem;
     line-height: 1.85;
 }
@@ -358,7 +313,7 @@
     padding: 0;
     text-align: center;
     font-size: 14px;
-    color: var(--ts-gray-600);
+    color: var(--ts-gray-700);
 }
 
 .主要內容-贊助者-清單 {
@@ -382,12 +337,12 @@
     width: 44px;
     filter: grayscale(0.5);
     opacity: 0.9;
-    border: 3px solid var(--ts-gray-300);
+    border: 3px solid var(--ts-gray-200);
     box-sizing: border-box;
 }
 
 .主要內容-贊助者-清單-項目-名稱 {
-    color: var(--ts-gray-800);
+    color: var(--ts-gray-900);
     font-weight: 500;
     font-size: 15px;
 }

@@ -3,7 +3,7 @@
 
 .hljs {
     background: none;
-    color: var(--ts-gray-600);
+    color: var(--ts-gray-800);
     font-size: 0.95rem;
     white-space: break-spaces;
     overflow-x: scroll;
@@ -65,7 +65,7 @@
 .hljs .hljs-selector-class,
 .hljs .hljs-regexp,
 .hljs .hljs-deletion {
-    color: var(--ts-gray-600);
+    color: var(--ts-gray-700);
 }
 
 .hljs .hljs-string,
@@ -80,7 +80,7 @@
 }
 
 .hljs .hljs-important-class {
-    background-color: var(--ts-primary-600);
+    background-color: var(--ts-primary-500);
     padding: 1px 3px;
     border-radius: 4px;
     color: #fff;

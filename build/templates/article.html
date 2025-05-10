@@ -158,18 +158,6 @@
                         <div class="主體-格局-內容-工具列">
                             <div class="主體-格局-內容-工具列-項目 主體-格局-內容-工具列-項目_標題">
                                 {{ "Article_Example_Title" | i18n }}
-                                <!-- 標籤連結
-                                {{ if .Links }}
-                                <div class="主體-格局-內容-工具列-項目-連結標籤">
-                                    {{ range .Links }}
-                                    <div class="主體-格局-內容-工具列-項目-連結標籤-項目">
-                                        <span class="ts-icon is-{{ .Icon }}-icon"></span>
-                                        <div class="主體-格局-內容-工具列-項目-連結標籤-項目-文字">{{ .Title }}</div>
-                                    </div>
-                                    {{ end }}
-                                </div>
-                                {{ end }}
-                                 / 標籤連結 -->
                             </div>
 
                             <!-- 明暗色系 -->
@@ -249,24 +237,26 @@
 
                         <!-- 國家旗幟 -->
                         {{ if .Flags }}
-                        <table class="主體-格局-內容-規格表格">
-                            <thead>
-                                <tr>
-                                    <th></th>
-                                    <th>ISO 3166-2</th>
-                                    <th>{{ "Article_Flag_Alias" | i18n }}</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {{ range $k, $alias := .Flags }}
-                                <tr>
-                                    <td><span class="ts-flag is-{{ $k }}-flag"></span></td>
-                                    <td><code class="主體-格局-內容-規格表格-函式碼">{{$k}}</code></td>
-                                    <td>{{ range $i, $e := $alias }}{{ if $i }}, {{ end }}<code class="主體-格局-內容-規格表格-函式碼">{{ . }}</code>{{ end }}</td>
-                                </tr>
-                                {{ end }}
-                            </tbody>
-                        </table>
+                        <div class="ts-box">
+                            <table class="ts-table is-definition is-celled">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>ISO 3166-2</th>
+                                        <th>{{ "Article_Flag_Alias" | i18n }}</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {{ range $k, $alias := .Flags }}
+                                    <tr>
+                                        <td><span class="ts-flag is-{{ $k }}-flag"></span></td>
+                                        <td><code class="ts-text is-code">{{$k}}</code></td>
+                                        <td>{{ range $i, $e := $alias }}{{ if $i }}, {{ end }}<code class="ts-text is-code">{{ . }}</code>{{ end }}</td>
+                                    </tr>
+                                    {{ end }}
+                                </tbody>
+                            </table>
+                        </div>
                         {{ end }}
                         <!-- / 國家旗幟 -->
 
@@ -415,29 +405,6 @@
                         {{ end }}
                         <!-- / 變數屬性 -->
 
-                        <!-- 額外連結 -->
-                        {{ if .Links }}
-                        <div class="主體-格局-內容-額外連結">
-                            {{ range .Links }}
-                            <div class="主體-格局-內容-額外連結-項目">
-                                <div class="主體-格局-內容-額外連結-項目-主體">
-                                    <div class="主體-格局-內容-額外連結-項目-主體-圖示容器">
-                                        <span class="ts-icon is-{{ .Icon }}-icon"></span>
-                                    </div>
-                                    <div class="主體-格局-內容-額外連結-項目-主體-文字容器">
-                                        <div class="主體-格局-內容-額外連結-項目-主體-文字容器-標題">{{ .Title }}</div>
-                                        <div class="主體-格局-內容-額外連結-項目-主體-文字容器-說明">{{ .Description }}</div>
-                                    </div>
-                                </div>
-                                <div class="主體-格局-內容-額外連結-項目-連結文字">
-                                    <div class="主體-格局-內容-額外連結-項目-連結文字-文字">相關連結</div>
-                                    <div class="主體-格局-內容-額外連結-項目-連結文字-圖示容器"><span class="ts-icon is-arrow-up-right-from-square-icon"></span></div>
-                                </div>
-                            </div>
-                            {{ end }}
-                        </div>
-                        {{ end }}
-                        <!-- / 額外連結 -->
 
                         {{ if .Relatives }}
                         <div class="主體-格局-內容-相關元件">

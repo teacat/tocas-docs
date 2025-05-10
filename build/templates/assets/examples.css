@@ -4,34 +4,6 @@
     flex: 1;
 }
 
-.文件內容-未完成標語 {
-    border: 1px solid var(--ts-gray-300);
-    color: var(--ts-gray-800);
-    font-size: 14px;
-    display: flex;
-    gap: 0.7rem;
-    padding: 0.3rem 0.7rem;
-    align-items: center;
-    border-radius: 0.4rem;
-    margin: 0 auto;
-    margin-bottom: 2rem;
-    margin-top: -2rem;
-}
-
-.文件內容-未完成標語-標題 {
-    background: var(--ts-gray-800);
-    color: var(--ts-gray-50);
-    border-radius: 0.4rem;
-    padding: 0.4rem 0.8rem;
-    line-height: 1;
-    font-size: 13px;
-    font-weight: 500;
-    white-space: nowrap;
-}
-
-.文件內容-未完成標語-內容 {
-}
-
 .文件內容-電腦版設計 {
     border: 1px solid var(--ts-gray-300);
     color: var(--ts-gray-800);
@@ -47,7 +19,7 @@
 }
 
 .文件內容-電腦版設計-標題 {
-    background: var(--ts-gray-800);
+    background: var(--ts-gray-900);
     color: var(--ts-gray-50);
     border-radius: 0.4rem;
     padding: 0.4rem 0.8rem;
@@ -57,7 +29,8 @@
     white-space: nowrap;
 }
 
-.文件內容-電腦版設計-內容 {}
+.文件內容-電腦版設計-內容 {
+}
 
 .文件內容-範例清單 {
     display: block;
@@ -75,13 +48,13 @@
     display: block;
     font-size: 1.6rem;
     font-weight: 500;
-    color: var(--ts-gray-800);
+    color: var(--ts-gray-900);
 }
 
 .文件內容-範例清單-段落-說明 {
     display: block;
     font-size: 1rem;
-    color: var(--ts-gray-600);
+    color: var(--ts-gray-700);
 }
 
 .文件內容-範例清單-段落-項目清單 {
@@ -102,12 +75,9 @@
     position: relative;
     text-decoration: none;
     padding-bottom: 1rem;
-    /*transition: box-shadow 0.1s ease, transform 0.1s ease;*/
 }
 
 .文件內容-範例清單-段落-項目清單-項目:hover {
-    /*box-shadow: 0px 1px 7px 0px #e0e0e082;
-    transform: translateY(-3px);*/
     border-color: var(--ts-gray-400);
 }
 
@@ -125,7 +95,7 @@
     display: block;
     font-size: 1.1rem;
     font-weight: 500;
-    color: var(--ts-gray-800);
+    color: var(--ts-gray-900);
     padding: 1rem 1rem 0;
     line-height: 1;
 }
@@ -137,7 +107,7 @@
 .文件內容-範例清單-段落-項目清單-項目-說明 {
     display: block;
     font-size: 1rem;
-    color: var(--ts-gray-800);
+    color: var(--ts-gray-900);
     padding: 1rem 1rem 0;
 }
 
@@ -165,7 +135,6 @@
         margin-bottom: 1.5rem;
     }
 
-    .文件內容-未完成標語-標題,
     .文件內容-電腦版設計-標題 {
         display: inline-block;
         margin-right: 0.5rem;
@@ -173,7 +142,6 @@
         padding: 0.35rem 0.8rem;
     }
 
-    .文件內容-未完成標語-內容,
     .文件內容-電腦版設計-內容 {
         display: inline;
     }
