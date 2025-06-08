@@ -203,15 +203,8 @@ UI:
 
     ComponentsCategories:
         Introduction: Introduction
-        Layout: Layout
-        Form: Form
-        Paragraphy: Paragraphy
-        Feedback: Feedback
-        Media: Media
-        Data: Data
-        Navigation: Navigation
         Application: Application
-        Interaction: Interaction
+        Components: Components
 
     Components:
         GettingStarted: Getting Started
@@ -292,75 +285,60 @@ Components:
           - Colors
           - Responsive
           - Utilities
-    - Name: Layout
-      Items:
-          - Container
-          - Control
-          - Grid
-          - Wrap
-    - Name: Form
-      Items:
-          - Button
-          - Checkbox
-          - Fieldset
-          - File
-          - Input
-          - Radio
-          - Range
-          - Select
-          - Selection
-          - Switch
-    - Name: Paragraphy
-      Items:
-          - Box
-          - Content
-          - Divider
-          - Header
-          - Quote
-          - Text
-    - Name: Feedback
-      Items:
-          - Blankslate
-          - Gauge
-          - Loading
-          - Mask
-          - Notice
-          - Procedure
-          - Progress
-          - Snackbar
-    - Name: Interaction
+    - Name: Components
       Items:
           - Accordion
+          - Badge
+          - Blankslate
+          - Box
+          - Breadcrumb
+          - Button
+          - Checklist
+          - Chip
+          - Close
+          - Container
+          - Content
+          - Conversation
+          - Control
+          - Divider
           - Dropdown
-          - Modal
-          - Popover
-          - Tooltip
-    - Name: Media
-      Items:
+          - Fieldset
+          - File
           - Flag
+          - Gauge
+          - Grid
+          - Header
           - Icon
           - Iconset
           - Image
           - Imageset
-    - Name: Data
-      Items:
-          - Badge
-          - Checklist
-          - Chip
-          - Close
-          - Conversation
+          - Input
           - List
-          - Meta
-          - Rating
-          - Statistic
-          - Table
-          - Timeline
-    - Name: Navigation
-      Items:
-          - Breadcrumb
+          - Loading
+          - Mask
           - Menu
+          - Meta
+          - Modal
+          - Notice
           - Pagination
+          - Popover
+          - Procedure
+          - Progress
+          - Quote
+          - Radio
+          - Range
+          - Rating
+          - Select
+          - Selection
+          - Snackbar
+          - Statistic
+          - Switch
           - Tab
+          - Table
+          - Text
+          - Timeline
+          - Tooltip
+          - Wrap
     - Name: Application
       Items:
           - AppCenter
