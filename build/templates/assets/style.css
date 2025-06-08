@@ -734,7 +734,7 @@ body:has(dialog.ts-modal[open], dialog.ts-app-drawer[open]) {
     ) {
     background-image: linear-gradient(to bottom, var(--ts-gray-50) 0%, var(--ts-gray-50) 100%), linear-gradient(to bottom, var(--ts-gray-200) 0%, var(--ts-gray-200) 100%);
     background-clip: content-box, padding-box;
-    border: 1px solid var(--ts-gray-300);
+    border: 1px solid var(--ts-gray-200);
 }
 
 .主體-格局-內容-主要範例-實際效果 .ts-app-layout,
@@ -804,6 +804,10 @@ body:has(dialog.ts-modal[open], dialog.ts-app-drawer[open]) {
 
 .主體-格局-內容-相關元件-清單-單個項目-連結 {
     color: var(--ts-link-500);
+    text-decoration: none;
+}
+
+.主體-格局-內容-相關元件-清單-單個項目-連結:hover {
     text-decoration: underline;
 }
 
