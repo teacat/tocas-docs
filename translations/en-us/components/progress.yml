@@ -120,12 +120,6 @@ Definitions:
             Remove:
                 - <div class="ts-space"></div>
             HTML: |
-                <div class="ts-progress [[is-tiny]]">
-                    <div class="bar" style="--value: 50">
-                        <div class="text">50%</div>
-                    </div>
-                </div>
-                <div class="ts-space"></div>
                 <div class="ts-progress [[is-small]]">
                     <div class="bar" style="--value: 50">
                         <div class="text">50%</div>
