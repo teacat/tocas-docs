@@ -88,14 +88,6 @@ Definitions:
                     <div class="bar" style="--value: 50"></div>
                 </div>
 
-          - Title: Queried
-            Anchor: Queried
-            Description: A progress bar can show the task is being queried.
-            HTML: |
-                <div class="ts-progress [[is-queried]]">
-                    <div class="bar" style="--value: 30"></div>
-                </div>
-
     - Title: Variations
       Description:
       Sections:
