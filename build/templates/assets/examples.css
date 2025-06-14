@@ -57,7 +57,8 @@
     white-space: nowrap;
 }
 
-.文件內容-電腦版設計-內容 {}
+.文件內容-電腦版設計-內容 {
+}
 
 .文件內容-範例清單 {
     display: block;
@@ -146,7 +147,7 @@
     font-size: 6rem;
     bottom: -1rem;
     right: -1rem;
-    color: var(--ts-black);
+    color: black;
     opacity: 0.05;
     pointer-events: none;
     line-height: 1;
