@@ -90,7 +90,7 @@ Definitions:
             Anchor: Disabled
             Description: A disabled item can't be interacted with or clicked. For hyperlinks, use the `.is-disabled` class.
             HTML: |
-                <div class="ts-app-navbar is-indicated">
+                <div class="ts-app-navbar">
                     <a class="item">
                         <span class="{{ts-icon}} is-newspaper-icon"></span>
                         <div class="label">News</div>
@@ -108,25 +108,6 @@ Definitions:
     - Title: Variations
       Description:
       Sections:
-          - Title: Indicated
-            Anchor: Indicated
-            Description: An indicated navbar highlights the active item, while inactive items are displayed normally.
-            HTML: |
-                <div class="ts-app-navbar [[is-indicated]]">
-                    <a class="item">
-                        <span class="{{ts-icon}} is-shoe-prints-icon"></span>
-                        <div class="label">Steps</div>
-                    </a>
-                    <a class="item is-active">
-                        <span class="{{ts-icon}} is-stopwatch-icon"></span>
-                        <div class="label">Activities</div>
-                    </a>
-                    <a class="item">
-                        <span class="{{ts-icon}} is-heart-icon"></span>
-                        <div class="label">Heart Rate</div>
-                    </a>
-                </div>
-
           - Title: Unlabeled
             Anchor: Unlabeled
             Description: An unlabeled navbar hides labels for inactive items, reducing its width.
@@ -154,7 +135,7 @@ Definitions:
             Anchor: Vertical
             Description: A navbar can be displayed vertically.
             HTML: |
-                <div class="ts-app-navbar [[is-vertical]] is-indicated">
+                <div class="ts-app-navbar [[is-vertical]]">
                     <a class="item">
                         <span class="{{ts-icon}} is-boxes-stacked-icon"></span>
                         <div class="label">Structure</div>
@@ -192,7 +173,7 @@ Definitions:
             Anchor: Dense
             Description: A dense navbar reduces the padding.
             HTML: |
-                <div class="ts-app-navbar [[is-dense]] is-indicated">
+                <div class="ts-app-navbar [[is-dense]]">
                     <a class="item">
                         <span class="{{ts-icon}} is-envelope-icon"></span>
                         <div class="label">Inbox</div>
