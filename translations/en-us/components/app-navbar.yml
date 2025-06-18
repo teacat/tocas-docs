@@ -108,29 +108,6 @@ Definitions:
     - Title: Variations
       Description:
       Sections:
-          - Title: Unlabeled
-            Anchor: Unlabeled
-            Description: An unlabeled navbar hides labels for inactive items, reducing its width.
-            HTML: |
-                <div class="ts-app-navbar [[is-unlabeled]]">
-                    <a class="item">
-                        <span class="{{ts-icon}} is-image-icon"></span>
-                        <div class="label">Photos</div>
-                    </a>
-                    <a class="item is-active">
-                        <span class="{{ts-icon}} is-magnifying-glass-icon"></span>
-                        <div class="label">Search</div>
-                    </a>
-                    <a class="item">
-                        <span class="{{ts-icon}} is-users-icon"></span>
-                        <div class="label">Share</div>
-                    </a>
-                    <a class="item">
-                        <span class="{{ts-icon}} is-box-archive-icon"></span>
-                        <div class="label">Archive</div>
-                    </a>
-                </div>
-
           - Title: Vertical
             Anchor: Vertical
             Description: A navbar can be displayed vertically.

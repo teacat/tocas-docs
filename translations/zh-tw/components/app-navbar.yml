@@ -108,29 +108,6 @@ Definitions:
     - Title: 外觀
       Description:
       Sections:
-          - Title: 無標籤
-            Anchor: Unlabeled
-            Description: 在這個模式下，所有沒被啟用的項目其標籤都會被隱藏。這可以有效地減短導航列的寬度。
-            HTML: |
-                <div class="ts-app-navbar [[is-unlabeled]]">
-                    <a class="item">
-                        <span class="{{ts-icon}} is-image-icon"></span>
-                        <div class="label">相片</div>
-                    </a>
-                    <a class="item is-active">
-                        <span class="{{ts-icon}} is-magnifying-glass-icon"></span>
-                        <div class="label">搜尋</div>
-                    </a>
-                    <a class="item">
-                        <span class="{{ts-icon}} is-users-icon"></span>
-                        <div class="label">共享</div>
-                    </a>
-                    <a class="item">
-                        <span class="{{ts-icon}} is-box-archive-icon"></span>
-                        <div class="label">彙整</div>
-                    </a>
-                </div>
-
           - Title: 垂直的
             Anchor: Vertical
             Description: 以上下垂直的方式陳列項目。
