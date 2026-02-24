@@ -1,0 +1,184 @@
+/* ==========================================================================
+   Variables
+   ========================================================================== */
+
+.ts-chip {
+    --accent-color: initial;
+    --accent-foreground-color: initial;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+.ts-chip {
+    vertical-align: middle;
+    text-decoration: none;
+    gap: initial;
+    line-height: initial;
+    min-width: initial;
+
+    background: var(--ts-gray-200);
+    padding: 0.1rem 0.6rem;
+    border: 1px solid var(--ts-gray-200);
+    border-radius: var(--ts-border-radius-element);
+    font-size: var(--ts-font-size-14px);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    line-height: 1.75;
+    min-height: 22px;
+    color: var(--accent-color, var(--ts-gray-800));
+}
+
+/* ==========================================================================
+   Structure
+   ========================================================================== */
+
+.ts-chip img {
+    width: 24px;
+    height: 24px;
+    border-radius: var(--ts-border-radius-element);
+    margin-left: -5px;
+}
+
+.ts-chip input {
+    display: none;
+}
+
+/* ==========================================================================
+   Variations
+   ========================================================================== */
+
+/**
+ * Outlined
+ */
+
+.ts-chip.is-outlined {
+    background: transparent;
+    border-color: var(--ts-gray-300);
+}
+
+/**
+ * Circular
+ */
+
+.ts-chip.is-circular {
+    border-radius: 100rem;
+}
+
+/**
+ * Input
+ */
+
+.ts-chip:has(input) {
+    cursor: pointer;
+    user-select: none;
+}
+
+/**
+ * Input
+ */
+
+.ts-chip:has(input:checked) {
+    background: var(--accent-color, var(--ts-primary-700));
+    border-color: var(--accent-color, var(--ts-primary-700));
+    color: var(--accent-foreground-color, white);
+}
+
+.ts-chip:has(input:checked).is-outlined {
+    color: var(--accent-color, var(--ts-primary-600));
+    background: var(--ts-gray-100);
+    border-color: var(--accent-color, var(--ts-primary-600));
+}
+
+.ts-chip:has(input:checked)::before {
+    font-family: "Icons";
+    font-weight: normal;
+    font-style: normal;
+    display: inline;
+    text-decoration: inherit;
+    text-align: center;
+    width: 1.18em;
+    -webkit-font-smoothing: antialiased;
+    backface-visibility: hidden;
+    content: "\f00c";
+    font-size: 12px;
+}
+
+.ts-chip:has(input:checked).is-start-icon::before,
+.ts-chip:has(input:checked).is-end-icon::before {
+    display: none;
+}
+
+.ts-chip:has(input:checked).is-start-icon .ts-icon::before,
+.ts-chip:has(input:checked).is-end-icon .ts-icon::before {
+    content: "\f00c";
+}
+
+/**
+ * Disabled
+ */
+
+.ts-chip:disabled,
+.ts-chip:has(:disabled),
+.ts-chip.is-disabled,
+fieldset:disabled .ts-chip {
+    pointer-events: none;
+    opacity: 0.5;
+    user-select: none;
+}
+
+/**
+ * Fluid
+ */
+
+.ts-chip.is-fluid {
+    display: flex;
+    width: 100%;
+}
+
+/**
+ * Sizes
+ */
+
+.ts-chip.is-small {
+    font-size: var(--ts-font-size-12px);
+}
+
+.ts-chip.is-large {
+    font-size: var(--ts-font-size-16px);
+}
+
+/**
+ * Dense
+ */
+
+.ts-chip.is-dense {
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    line-height: 1.5;
+}
+
+.ts-chip.is-dense:has(input) {
+    min-height: 20px;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    line-height: 1.5;
+}
+
+/**
+ * Spaced
+ */
+
+.ts-chip.is-start-spaced {
+    margin-left: 0.45rem;
+}
+.ts-chip.is-end-spaced {
+    margin-right: 0.45rem;
+}
+.ts-chip.is-spaced {
+    margin-left: 0.45rem;
+    margin-right: 0.45rem;
+}

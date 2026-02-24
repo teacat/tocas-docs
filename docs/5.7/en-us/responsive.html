@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./assets/style.css" />
+        <link rel="stylesheet" href="./assets/highlight.css" />
+        <link rel="stylesheet" href="./assets/tocas/tocas.min.css" />
+        <script src="./assets/tocas/tocas.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet" />
+        <link rel="canonical" href="https://tocas-ui.com/5.7/en-us/responsive.html" />
+        <script src="./assets/script.js"></script>
+        <title>Responsive - Tocas UI</title>
+        <!--
+
+
+
+        ▄▄▄        ▄▄████▄
+      ▄█████▄    ▄██▀    ██
+      ▀█▄   ██▄ ██▀      ██
+       ▀██▄▄▄████   ▄▄▄██▀
+          ▀▀▀████▀▀▀▀▀
+             ██
+            ██          ▄█████▄       █████████████          ▄█             █▄
+           ██         ▄█▀     ▀█▄     ██         ██         ██▀█▄         ▄█▀
+           ██        ██         ██    ██         ██        ██  ▀██       ██▀
+           ██        ██         ██    ██         ██      ▄█▀     ██     ▀▀▀▀▀▀▀███
+           ██        ▀█▄       ▄█▀    ██         ██     ██▀       ▀█▄         ██▀
+            ██         ▀███████▀      █████████████    ███▄▄▄▄▄▄▄▄▄███       █▀
+
+
+
+            「你只能死一次，一定要死的轟轟烈烈。」
+
+            沒有人可以做一件事情直到永遠，
+            而一個人的生命也不是永生。
+
+            死亡給予了我們試著活下去的動力，
+            在那之前都應該竭盡所能的向著自己的夢邁進。
+
+            將自己的生命活得淋漓盡致才是最重要的；
+            不要將剛開始的序章放在頁尾。
+
+
+
+        -->
+        <meta name="description" content="Make your website display optimally on different devices." />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Responsive - Tocas UI" />
+        <meta name="twitter:description" content="Make your website display optimally on different devices." />
+        <meta name="twitter:image" content="https://tocas-ui.com/5.7/en-us/assets/images/og.png" />
+        <meta property="og:title" content="Responsive - Tocas UI" />
+        <meta property="og:type" content="article" />
+        <meta property="og:image" content="https://tocas-ui.com/5.7/en-us/assets/images/og.png" />
+        <meta property="og:url" content="https://tocas-ui.com/5.7/en-us/responsive.html" />
+        <meta property="og:image:width" content="1280" />
+        <meta property="og:image:height" content="720" />
+        <meta property="og:description" content="Make your website display optimally on different devices." />
+        <link rel="icon" type="image/png" href="https://tocas-ui.com/5.7/en-us/assets/images/favicons/favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="https://tocas-ui.com/5.7/en-us/assets/images/favicons/favicon-194x194.png" sizes="194x194" />
+        <link rel="icon" type="image/png" href="https://tocas-ui.com/5.7/en-us/assets/images/favicons/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/png" href="https://tocas-ui.com/5.7/en-us/assets/images/favicons/android-chrome-192x192.png" sizes="192x192" />
+        <link rel="icon" type="image/png" href="https://tocas-ui.com/5.7/en-us/assets/images/favicons/favicon-16x16.png" sizes="16x16" />
+    </head>
+    <body>
+        <div class="穹頂">
+            <div class="界限容器">
+                <div class="穹頂-導航列">
+                    <div class="穹頂-導航列-左側">
+                        <a class="穹頂-導航列-項目 穹頂-導航列-項目_主要" href="./index.html">Tocas UI</a>
+                        <a class="穹頂-導航列-項目" href="./getting-started.html">Getting Started</a>
+                        <a class="穹頂-導航列-項目" href="./button.html">Components</a>
+                        <a class="穹頂-導航列-項目" href="./examples.html">Examples</a>
+                    </div>
+                    <div class="穹頂-導航列-右側">
+                        <button class="穹頂-導航列-項目" data-dropdown="dropdown-language">
+                            <span class="ts-flag is-america-flag"></span> English (US)
+                        </button>
+                        <div class="ts-dropdown" id="dropdown-language" data-position="bottom">
+                            
+                            <a class="item is-selected" href="./../en-us/responsive.html">
+                                <span class="ts-flag is-america-flag"></span> English (US)
+                            </a>
+                            
+                            <a class="item " href="./../zh-tw/responsive.html">
+                                <span class="ts-flag is-taiwan-flag"></span> 台灣正體
+                            </a>
+                            
+                        </div>
+                        <button class="穹頂-導航列-項目" data-dropdown="dropdown-version">
+                            <span class="ts-icon is-code-branch-icon"></span> v5.7
+                        </button>
+                        <div class="ts-dropdown" id="dropdown-version" data-position="bottom">
+                            
+                            <div class="header">Latest</div>
+                            
+                            <a class="item is-selected" >v5.7.0</a>
+                            
+                            <div class="divider"></div>
+                            
+                            <div class="header">Older releases</div>
+                            
+                            <a class="item " href="https://tocas-ui.com/5.0/en-us/index.html" >v5.0.2</a>
+                            
+                            <a class="item " href="https://tocas-ui.com/4.2/zh-tw/index.html" >v4.2.5</a>
+                            
+                            <a class="item " href="https://v2.tocas-ui.com/" >v2.3.3</a>
+                            
+                            <div class="divider"></div>
+                            
+                        </div>
+                        <a class="穹頂-導航列-項目" href="https://github.com/teacat/tocas" target="_blank"><span class="ts-icon is-github-icon"></span> GitHub</a>
+                    </div>
+                </div>
+                <div class="穹頂-導航列 穹頂-導航列_手機的">
+                    <div class="穹頂-導航列-左側">
+                        <a class="穹頂-導航列-項目 穹頂-導航列-項目_主要" href="./index.html">Tocas UI</a>
+                    </div>
+                    <div class="穹頂-導航列-右側">
+                        <button class="穹頂-導航列-項目" data-dropdown="dropdown-language-mobile">
+                            <span class="ts-flag is-america-flag"></span> English (US)
+                        </button>
+                        <div class="ts-dropdown" id="dropdown-language-mobile" data-position="bottom">
+                            
+                            <a class="item is-selected" href="./../en-us/responsive.html">
+                                <span class="ts-flag is-america-flag"></span> English (US)
+                            </a>
+                            
+                            <a class="item " href="./../zh-tw/responsive.html">
+                                <span class="ts-flag is-taiwan-flag"></span> 台灣正體
+                            </a>
+                            
+                        </div>
+                        <button class="穹頂-導航列-項目 穹頂-導航列-項目_選單按鈕" aria-label='Hamburger Menu'>
+                            <span class="ts-icon is-bars-icon"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="穹頂-標題">
+                    <h1 class="穹頂-標題-主要">Responsive</h1>
+                    <div class="穹頂-標題-說明">Make your website display optimally on different devices.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="主體">
+            <div class="界限容器">
+                <div class='主體-格局 '>
+                    <!-- 側邊導覽 -->
+                    <div class="主體-格局-導覽">
+                        
+                        <div class="主體-格局-導覽-標題">Introduction</div>
+                        
+                        <a href="./getting-started.html" class="主體-格局-導覽-項目">
+                             Getting Started 
+                        </a>
+                        
+                        <a href="./colors.html" class="主體-格局-導覽-項目">
+                             Colors 
+                        </a>
+                        
+                        <a href="./responsive.html" class="主體-格局-導覽-項目 主體-格局-導覽-項目_啟用的">
+                             Responsive 
+                        </a>
+                        
+                        <a href="./utilities.html" class="主體-格局-導覽-項目">
+                             Utilities 
+                        </a>
+                         
+                        <div class="主體-格局-導覽-標題">Components</div>
+                        
+                        <a href="./accordion.html" class="主體-格局-導覽-項目">
+                             Accordion  
+                        </a>
+                        
+                        <a href="./badge.html" class="主體-格局-導覽-項目">
+                             Badge  
+                        </a>
+                        
+                        <a href="./blankslate.html" class="主體-格局-導覽-項目">
+                             Blankslate  
+                        </a>
+                        
+                        <a href="./box.html" class="主體-格局-導覽-項目">
+                             Box  
+                        </a>
+                        
+                        <a href="./breadcrumb.html" class="主體-格局-導覽-項目">
+                             Breadcrumb  
+                        </a>
+                        
+                        <a href="./button.html" class="主體-格局-導覽-項目">
+                             Button  
+                        </a>
+                        
+                        <a href="./checkbox.html" class="主體-格局-導覽-項目">
+                             Checkbox  
+                        </a>
+                        
+                        <a href="./checklist.html" class="主體-格局-導覽-項目">
+                             Checklist  
+                        </a>
+                        
+                        <a href="./chip.html" class="主體-格局-導覽-項目">
+                             Chip  
+                        </a>
+                        
+                        <a href="./close.html" class="主體-格局-導覽-項目">
+                             Close  
+                        </a>
+                        
+                        <a href="./container.html" class="主體-格局-導覽-項目">
+                             Container  
+                        </a>
+                        
+                        <a href="./content.html" class="主體-格局-導覽-項目">
+                             Content  
+                        </a>
+                        
+                        <a href="./control.html" class="主體-格局-導覽-項目">
+                             Control  
+                        </a>
+                        
+                        <a href="./conversation.html" class="主體-格局-導覽-項目">
+                             Conversation  
+                        </a>
+                        
+                        <a href="./divider.html" class="主體-格局-導覽-項目">
+                             Divider  
+                        </a>
+                        
+                        <a href="./dropdown.html" class="主體-格局-導覽-項目">
+                             Dropdown  
+                        </a>
+                        
+                        <a href="./fieldset.html" class="主體-格局-導覽-項目">
+                             Fieldset  
+                        </a>
+                        
+                        <a href="./file.html" class="主體-格局-導覽-項目">
+                             File  
+                        </a>
+                        
+                        <a href="./flag.html" class="主體-格局-導覽-項目">
+                             Flag  
+                        </a>
+                        
+                        <a href="./gauge.html" class="主體-格局-導覽-項目">
+                             Gauge  
+                        </a>
+                        
+                        <a href="./grid.html" class="主體-格局-導覽-項目">
+                             Grid  
+                        </a>
+                        
+                        <a href="./header.html" class="主體-格局-導覽-項目">
+                             Header  
+                        </a>
+                        
+                        <a href="./icon.html" class="主體-格局-導覽-項目">
+                             Icon  
+                        </a>
+                        
+                        <a href="./iconset.html" class="主體-格局-導覽-項目">
+                             Iconset  
+                        </a>
+                        
+                        <a href="./image.html" class="主體-格局-導覽-項目">
+                             Image  
+                        </a>
+                        
+                        <a href="./imageset.html" class="主體-格局-導覽-項目">
+                             Imageset  
+                        </a>
+                        
+                        <a href="./input.html" class="主體-格局-導覽-項目">
+                             Input  
+                        </a>
+                        
+                        <a href="./list.html" class="主體-格局-導覽-項目">
+                             List  
+                        </a>
+                        
+                        <a href="./loading.html" class="主體-格局-導覽-項目">
+                             Loading  
+                        </a>
+                        
+                        <a href="./mask.html" class="主體-格局-導覽-項目">
+                             Mask  
+                        </a>
+                        
+                        <a href="./menu.html" class="主體-格局-導覽-項目">
+                             Menu  
+                        </a>
+                        
+                        <a href="./meta.html" class="主體-格局-導覽-項目">
+                             Meta  
+                        </a>
+                        
+                        <a href="./modal.html" class="主體-格局-導覽-項目">
+                             Modal  
+                        </a>
+                        
+                        <a href="./notice.html" class="主體-格局-導覽-項目">
+                             Notice  
+                        </a>
+                        
+                        <a href="./pagination.html" class="主體-格局-導覽-項目">
+                             Pagination  
+                        </a>
+                        
+                        <a href="./popover.html" class="主體-格局-導覽-項目">
+                             Popover  
+                        </a>
+                        
+                        <a href="./procedure.html" class="主體-格局-導覽-項目">
+                             Procedure  
+                        </a>
+                        
+                        <a href="./progress.html" class="主體-格局-導覽-項目">
+                             Progress  
+                        </a>
+                        
+                        <a href="./quote.html" class="主體-格局-導覽-項目">
+                             Quote  
+                        </a>
+                        
+                        <a href="./radio.html" class="主體-格局-導覽-項目">
+                             Radio  
+                        </a>
+                        
+                        <a href="./range.html" class="主體-格局-導覽-項目">
+                             Range 
+                            <span class="主體-格局-導覽-項目-英文"></span>
+                             
+                        </a>
+                        
+                        <a href="./rating.html" class="主體-格局-導覽-項目">
+                             Rating  
+                        </a>
+                        
+                        <a href="./select.html" class="主體-格局-導覽-項目">
+                             Select  
+                        </a>
+                        
+                        <a href="./selection.html" class="主體-格局-導覽-項目">
+                             Selection  
+                        </a>
+                        
+                        <a href="./snackbar.html" class="主體-格局-導覽-項目">
+                             Snackbar  
+                        </a>
+                        
+                        <a href="./statistic.html" class="主體-格局-導覽-項目">
+                             Statistic  
+                        </a>
+                        
+                        <a href="./switch.html" class="主體-格局-導覽-項目">
+                             Switch  
+                        </a>
+                        
+                        <a href="./tab.html" class="主體-格局-導覽-項目">
+                             Tab  
+                        </a>
+                        
+                        <a href="./table.html" class="主體-格局-導覽-項目">
+                             Table  
+                        </a>
+                        
+                        <a href="./text.html" class="主體-格局-導覽-項目">
+                             Text  
+                        </a>
+                        
+                        <a href="./timeline.html" class="主體-格局-導覽-項目">
+                             Timeline  
+                        </a>
+                        
+                        <a href="./tooltip.html" class="主體-格局-導覽-項目">
+                             Tooltip  
+                        </a>
+                        
+                        <a href="./wrap.html" class="主體-格局-導覽-項目">
+                             Wrap  
+                        </a>
+                         
+                        <div class="主體-格局-導覽-標題">Application</div>
+                        
+                        <a href="./app-center.html" class="主體-格局-導覽-項目">
+                             App Center  
+                        </a>
+                        
+                        <a href="./app-drawer.html" class="主體-格局-導覽-項目">
+                             App Drawer  
+                        </a>
+                        
+                        <a href="./app-layout.html" class="主體-格局-導覽-項目">
+                             App Layout  
+                        </a>
+                        
+                        <a href="./app-navbar.html" class="主體-格局-導覽-項目">
+                             App Navbar  
+                        </a>
+                        
+                        <a href="./app-sidebar.html" class="主體-格局-導覽-項目">
+                             App Sidebar  
+                        </a>
+                        
+                        <a href="./app-topbar.html" class="主體-格局-導覽-項目">
+                             App Topbar  
+                        </a>
+                         
+                        <div class="主體-格局-導覽-關閉按鈕">
+                            <span class="ts-icon is-circle-xmark-icon"></span>
+                        </div>
+                    </div>
+                    <!-- / 側邊導覽 -->
+
+                    <!-- 遮罩 -->
+                    <div class="主體-格局-遮罩"></div>
+                    <!-- / 遮罩 -->
+
+                    <main class="主體-格局-內容 主體-格局-內容_網格範例的">
+                        <!-- 文章工具列 -->
+                        
+                        <!-- / 文章工具列 -->
+
+                        <!-- 概要 -->
+                        
+                        <!-- / 概要 -->
+
+                        <!-- 章節 -->
+                        
+                        <div class="主體-格局-內容-標題 主體-格局-內容-標題_章節">Device Definitions</div>
+
+                        
+
+                        <!-- 國家旗幟 -->
+                        
+                        <!-- / 國家旗幟 -->
+
+                        <!-- 段落 -->
+                        
+                        <div class="主體-格局-內容-單個範例">
+                            <a class="主體-格局-內容-單個範例-錨點" id="default-breakpoints"></a>
+                            <div class="主體-格局-內容-單個範例-文字-標題 主體-格局-內容-單個範例-文字-標題_段落">
+                                <a href="#default-breakpoints" class="主體-格局-內容-單個範例-文字-標題-連結">Breakpoints</a>
+                                
+                            </div>
+                            <div class="主體-格局-內容-單個範例-文字"><p>Tocas UI provides four default breakpoints.</p>
+
+<div class="ts-box">
+    <table class="ts-table is-definition is-celled">
+        <thead>
+            <tr>
+                <th class="is-collapsed"></th>
+                <th class="is-collapsed">Indicator</th>
+                <th class="is-collapsed">When screen size...</th>
+                <th>Occurrence</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="is-collapsed">mobile</td>
+                <td class="is-collapsed is-center-aligned">
+                    <div class="ts-badge tablet+:has-hidden">Current</div>
+                </td>
+                <td class="is-collapsed">&ge; 0px and &le; 767px</td>
+                <td>
+                    <div class="ts-list is-unordered">
+                        <div class="item">⮃ Portrait on mobile.</div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="is-collapsed">tablet</td>
+                <td class="is-collapsed is-center-aligned">
+                    <div class="ts-badge mobile:has-hidden desktop+:has-hidden">Current</div>
+                </td>
+                <td class="is-collapsed">&ge; 768px and &le; 1023px</td>
+                <td>
+                    <div class="ts-list is-unordered">
+                        <div class="item">⮂ Landscape for most mobile phones.</div>
+                        <div class="item">⮃ Portrait on tablets.</div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="is-collapsed">desktop</td>
+                <td class="is-collapsed is-center-aligned">
+                    <div class="ts-badge tablet-:has-hidden widescreen:has-hidden">Current</div>
+                </td>
+                <td class="is-collapsed">&ge; 1024px and &le; 1279px</td>
+                <td>
+                    <div class="ts-list is-unordered">
+                        <div class="item">⮂ Landscape on tablets.</div>
+                        <div class="item">Narrowed browser window.</div>
+                        <div class="item">Starting point for computer devices.</div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="is-collapsed">widescreen</td>
+                <td class="is-collapsed is-center-aligned">
+                    <div class="ts-badge desktop-:has-hidden">Current</div>
+                </td>
+                <td class="is-collapsed">&ge; 1280px</td>
+                <td>
+                    <div class="ts-list is-unordered">
+                        <div class="item">⮂ Landscape for large tablets (e.g., iPad Pro or Surface Pro).</div>
+                        <div class="item">Laptops, desktop computers.</div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+
+                            <!-- 範例與程式碼 -->
+                            
+                            <!-- / 範例與程式碼 -->
+
+                            <!-- 附帶程式片段 -->
+                            
+                            <!-- / 附帶程式片段 -->
+
+                            <!-- 圖示組 -->
+                            
+                            <!-- / 圖示組 -->
+                        </div>
+                        
+                        <!-- / 段落 -->
+                        
+                        <div class="主體-格局-內容-標題 主體-格局-內容-標題_章節">Usages</div>
+
+                        
+
+                        <!-- 國家旗幟 -->
+                        
+                        <!-- / 國家旗幟 -->
+
+                        <!-- 段落 -->
+                        
+                        <div class="主體-格局-內容-單個範例">
+                            <a class="主體-格局-內容-單個範例-錨點" id="responsive-usage"></a>
+                            <div class="主體-格局-內容-單個範例-文字-標題 主體-格局-內容-單個範例-文字-標題_段落">
+                                <a href="#responsive-usage" class="主體-格局-內容-單個範例-文字-標題-連結">Basic Usage</a>
+                                
+                            </div>
+                            <div class="主體-格局-內容-單個範例-文字"><p>Apply <code>breakpoint:class</code> to an element for responsive features.</p>
+
+<p><div class="ts-box">
+     <table class="ts-table is-definition is-celled">
+         <thead>
+             <tr>
+                 <th class="is-collapsed"></th>
+                 <th class="is-collapsed">Example</th>
+                 <th>Activated when...</th>
+             </tr>
+         </thead>
+         <tbody>
+             <tr>
+                 <td class="is-collapsed">breakpoint</td>
+                 <td class="is-collapsed">
+                     <code>mobile</code>
+                 </td>
+                 <td>At &quot;a certain breakpoint&quot;.</td>
+             </tr>
+             <tr>
+                 <td class="is-collapsed">breakpoint+</td>
+                 <td class="is-collapsed">
+                     <code>mobile+</code>
+                 </td>
+                 <td>At &quot;a certain breakpoint&quot; and &quot;above&quot;.</td>
+             </tr>
+             <tr>
+                 <td class="is-collapsed">breakpoint-</td>
+                 <td class="is-collapsed">
+                     <code>tablet-</code>
+                 </td>
+                 <td>At &quot;a certain breakpoint&quot; and &quot;below&quot;.</td>
+             </tr>
+             <tr>
+                 <td class="is-collapsed">breakpoint-breakpoint</td>
+                 <td class="is-collapsed">
+                     <code>tablet-widescreen</code>
+                 </td>
+                 <td>Between &quot;a certain breakpoint&quot; and &quot;another certain breakpoint&quot;.</td>
+             </tr>
+         </tbody>
+     </table>
+ </div></p>
+</div>
+
+                            <!-- 範例與程式碼 -->
+                            
+                            <!-- / 範例與程式碼 -->
+
+                            <!-- 附帶程式片段 -->
+                            
+                            <div class="主體-格局-內容-單個範例-附帶程式碼"><pre><code class="hljs"><span class="hljs-comment">&lt;!-- Apply `is-small` only on mobile --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./button.html">ts-button</a> <mark>mobile:is-small</mark>"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- Apply `is-small` on tablet, desktop, widescreen --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./button.html">ts-button</a> <mark>tablet+:is-small</mark>"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+</div>
+                            
+                            <!-- / 附帶程式片段 -->
+
+                            <!-- 圖示組 -->
+                            
+                            <!-- / 圖示組 -->
+                        </div>
+                        
+                        <div class="主體-格局-內容-單個範例">
+                            <a class="主體-格局-內容-單個範例-錨點" id="responsive-arbitrary"></a>
+                            <div class="主體-格局-內容-單個範例-文字-標題 主體-格局-內容-單個範例-文字-標題_段落">
+                                <a href="#responsive-arbitrary" class="主體-格局-內容-單個範例-文字-標題-連結">Arbitrary Sizes</a>
+                                
+                            </div>
+                            <div class="主體-格局-內容-單個範例-文字"><p>Use <code>[size]</code> for arbitrary breakpoints like <code>100px</code> or <code>450px</code>.</p>
+
+<div class="ts-box">
+    <table class="ts-table is-definition is-celled">
+        <thead>
+            <tr>
+                <th class="is-collapsed"></th>
+                <th class="is-collapsed">Example</th>
+                <th>Activated when...</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="is-collapsed">[size+]</td>
+                <td class="is-collapsed">
+                    <code>[450px]+</code>
+                </td>
+                <td>At "a certain size" and "above".</td>
+            </tr>
+            <tr>
+                <td class="is-collapsed">[size-]</td>
+                <td class="is-collapsed">
+                    <code>[800px]-</code>
+                </td>
+                <td>At "a certain size" and "below".</td>
+            </tr>
+            <tr>
+                <td class="is-collapsed">[size-size]</td>
+                <td class="is-collapsed">
+                    <code>[300px-400px]</code>
+                </td>
+                <td>Between "a certain size" and "another certain size".</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+
+                            <!-- 範例與程式碼 -->
+                            
+                            <!-- / 範例與程式碼 -->
+
+                            <!-- 附帶程式片段 -->
+                            
+                            <div class="主體-格局-內容-單個範例-附帶程式碼"><pre><code class="hljs">&lt;!-- Apply `is-small` <span class="hljs-keyword">for</span><span class="hljs-built_in"> screen </span>width of 300px <span class="hljs-keyword">or</span> below --&gt;
+&lt;div <span class="hljs-attribute">class</span>=<span class="hljs-string">"<a href="./button.html">ts-button</a> <mark>[300px]-:is-small</mark>"</span>&gt;&lt;/div&gt;
+
+&lt;!-- Apply `is-small` <span class="hljs-keyword">for</span><span class="hljs-built_in"> screen </span>width between 300px <span class="hljs-keyword">and</span> 400px --&gt;
+&lt;div <span class="hljs-attribute">class</span>=<span class="hljs-string">"<a href="./button.html">ts-button</a> <mark>[300px-400px]:is-small</mark>"</span>&gt;&lt;/div&gt;</code></pre>
+</div>
+                            
+                            <!-- / 附帶程式片段 -->
+
+                            <!-- 圖示組 -->
+                            
+                            <!-- / 圖示組 -->
+                        </div>
+                        
+                        <!-- / 段落 -->
+                        
+                        <div class="主體-格局-內容-標題 主體-格局-內容-標題_章節">Scenarios</div>
+
+                        
+
+                        <!-- 國家旗幟 -->
+                        
+                        <!-- / 國家旗幟 -->
+
+                        <!-- 段落 -->
+                        
+                        <div class="主體-格局-內容-單個範例">
+                            <a class="主體-格局-內容-單個範例-錨點" id="responsive-visibility"></a>
+                            <div class="主體-格局-內容-單個範例-文字-標題 主體-格局-內容-單個範例-文字-標題_段落">
+                                <a href="#responsive-visibility" class="主體-格局-內容-單個範例-文字-標題-連結">Hide/Show Elements at ...</a>
+                                
+                                <button class="主體-格局-內容-單個範例-文字-標題-切換原始碼"><span class="ts-icon is-code-icon"></span> Code</button>
+                                
+                            </div>
+                            <div class="主體-格局-內容-單個範例-文字"><p>Applying <a href="./utilities.html"><code>.has-hidden</code></a> at specific breakpoint hides the element; this also allows elements to be displayed only on certain devices.</p>
+</div>
+
+                            <!-- 範例與程式碼 -->
+                            
+                            <div class="主體-格局-內容-單個範例-範例">
+                                <div class="主體-格局-內容-單個範例-範例-實際效果"><!-- Hide on tablet, desktop, widescreen -->
+<!-- Equivalent to: display only on mobile -->
+<div class="ts-badge tablet+:has-hidden">Mobile 📱</div>
+
+<!-- Hide on mobile, desktop, widescreen -->
+<!-- Equivalent to: display only on tablet -->
+<div class="ts-badge mobile:has-hidden desktop+:has-hidden">Tablet 💻</div>
+
+<!-- Hide on mobile, tablet, widescreen -->
+<!-- Equivalent to: display only on desktop -->
+<div class="ts-badge tablet-:has-hidden widescreen:has-hidden">Desktop 🖥️</div>
+
+<!-- Hide on mobile, tablet, desktop -->
+<!-- Equivalent to: display only on widescreen -->
+<div class="ts-badge desktop-:has-hidden">Widescreen 📺</div>
+</div>
+                                <div class="主體-格局-內容-單個範例-範例-程式碼"><pre><code class="hljs"><span class="hljs-comment">&lt;!-- Hide on tablet, desktop, widescreen --&gt;</span>
+<span class="hljs-comment">&lt;!-- Equivalent to: display only on mobile --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./badge.html">ts-badge</a> <mark>tablet+:has-hidden</mark>"</span>&gt;</span>Mobile 📱<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- Hide on mobile, desktop, widescreen --&gt;</span>
+<span class="hljs-comment">&lt;!-- Equivalent to: display only on tablet --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./badge.html">ts-badge</a> <mark>mobile:has-hidden</mark> <mark>desktop+:has-hidden</mark>"</span>&gt;</span>Tablet 💻<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- Hide on mobile, tablet, widescreen --&gt;</span>
+<span class="hljs-comment">&lt;!-- Equivalent to: display only on desktop --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./badge.html">ts-badge</a> <mark>tablet-:has-hidden</mark> <mark>widescreen:has-hidden</mark>"</span>&gt;</span>Desktop 🖥️<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- Hide on mobile, tablet, desktop --&gt;</span>
+<span class="hljs-comment">&lt;!-- Equivalent to: display only on widescreen --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./badge.html">ts-badge</a> <mark>desktop-:has-hidden</mark>"</span>&gt;</span>Widescreen 📺<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+</div>
+                            </div>
+                            
+                            <!-- / 範例與程式碼 -->
+
+                            <!-- 附帶程式片段 -->
+                            
+                            <!-- / 附帶程式片段 -->
+
+                            <!-- 圖示組 -->
+                            
+                            <!-- / 圖示組 -->
+                        </div>
+                        
+                        <div class="主體-格局-內容-單個範例">
+                            <a class="主體-格局-內容-單個範例-錨點" id="responsive-grid"></a>
+                            <div class="主體-格局-內容-單個範例-文字-標題 主體-格局-內容-單個範例-文字-標題_段落">
+                                <a href="#responsive-grid" class="主體-格局-內容-單個範例-文字-標題-連結">Responsive Grid</a>
+                                
+                                <button class="主體-格局-內容-單個範例-文字-標題-切換原始碼"><span class="ts-icon is-code-icon"></span> Code</button>
+                                
+                            </div>
+                            <div class="主體-格局-內容-單個範例-文字"><p>Adjust column wides with screen size, class set at the <code>mobile</code> breakpoint <strong>do not</strong> cascade upwards, you need to specify classes for each stage.</p>
+</div>
+
+                            <!-- 範例與程式碼 -->
+                            
+                            <div class="主體-格局-內容-單個範例-範例">
+                                <div class="主體-格局-內容-單個範例-範例-實際效果"><div class="ts-grid">
+    <div class="column mobile:is-16-wide tablet+:is-8-wide"></div>
+    <div class="column mobile:is-16-wide tablet+:is-8-wide"></div>
+    <div class="column mobile:is-16-wide tablet+:is-8-wide"></div>
+    <div class="column mobile:is-16-wide tablet+:is-8-wide"></div>
+</div>
+</div>
+                                <div class="主體-格局-內容-單個範例-範例-程式碼"><pre><code class="hljs">&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"<a href="./grid.html">ts-grid</a>"</span>&gt;
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"column <mark>mobile:is-16-wide</mark> <mark>tablet+:is-8-wide</mark>"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+    &lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"column <mark>mobile:is-16-wide</mark> <mark>tablet+:is-8-wide</mark>"</span>&gt;<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+    &lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"column <mark>mobile:is-16-wide</mark> <mark>tablet+:is-8-wide</mark>"</span>&gt;<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+    &lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"column <mark>mobile:is-16-wide</mark> <mark>tablet+:is-8-wide</mark>"</span>&gt;<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+&lt;<span class="hljs-regexp">/div&gt;</span></code></pre>
+</div>
+                            </div>
+                            
+                            <!-- / 範例與程式碼 -->
+
+                            <!-- 附帶程式片段 -->
+                            
+                            <!-- / 附帶程式片段 -->
+
+                            <!-- 圖示組 -->
+                            
+                            <!-- / 圖示組 -->
+                        </div>
+                        
+                        <!-- / 段落 -->
+                        
+                        <div class="主體-格局-內容-標題 主體-格局-內容-標題_章節">Advanced Features</div>
+
+                        
+
+                        <!-- 國家旗幟 -->
+                        
+                        <!-- / 國家旗幟 -->
+
+                        <!-- 段落 -->
+                        
+                        <div class="主體-格局-內容-單個範例">
+                            <a class="主體-格局-內容-單個範例-錨點" id="responsive-customize"></a>
+                            <div class="主體-格局-內容-單個範例-文字-標題 主體-格局-內容-單個範例-文字-標題_段落">
+                                <a href="#responsive-customize" class="主體-格局-內容-單個範例-文字-標題-連結">Custom Breakpoints</a>
+                                
+                            </div>
+                            <div class="主體-格局-內容-單個範例-文字"><p>At least two CSS variables must be specified when overriding or adding a breakpoint:</p>
+
+<div class="ts-list is-unordered">
+    <div class="item">
+        <code>--ts-breakpoint-NAME-min</code>: The minimum, starting size.
+    </div>
+    <div class="item">
+        <code>--ts-breakpoint-NAME-min</code>: The maximum, ending size.
+    </div>
+</div>
+
+<p>The closest breakpoint definition to this element will be used for responsive decisions.</p>
+</div>
+
+                            <!-- 範例與程式碼 -->
+                            
+                            <!-- / 範例與程式碼 -->
+
+                            <!-- 附帶程式片段 -->
+                            
+                            <div class="主體-格局-內容-單個範例-附帶程式碼"><pre><code class="hljs"><span class="hljs-tag">&lt;<span class="hljs-name">style</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text/css"</span>&gt;</span><span class="css">
+    <span class="hljs-selector-tag">html</span> {
+        <span class="hljs-comment">/** Create a "computer" breakpoint */</span>
+        <span class="hljs-attribute">--ts-breakpoint-computer-min</span>: <span class="hljs-number">768px</span>;
+        <span class="hljs-attribute">--ts-breakpoint-computer-max</span>: <span class="hljs-number">1280px</span>;
+    }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- Apply `is-small` class for screen width between 768px and 1280px --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./button.html">ts-button</a> <mark>computer:is-small</mark>"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+</div>
+                            
+                            <!-- / 附帶程式片段 -->
+
+                            <!-- 圖示組 -->
+                            
+                            <!-- / 圖示組 -->
+                        </div>
+                        
+                        <div class="主體-格局-內容-單個範例">
+                            <a class="主體-格局-內容-單個範例-錨點" id="responsive-container-query"></a>
+                            <div class="主體-格局-內容-單個範例-文字-標題 主體-格局-內容-單個範例-文字-標題_段落">
+                                <a href="#responsive-container-query" class="主體-格局-內容-單個範例-文字-標題-連結">Container Query</a>
+                                
+                            </div>
+                            <div class="主體-格局-內容-單個範例-文字"><p>Breakpoints can be based on container width, not screen size.</p>
+
+<p>The nearest <code>@container</code> width will be the basis for responsive conditions if breakpoints are prefixed with <code>@</code> (e.g., <code>@mobile</code>, <code>@[400px]+</code>).</p>
+</div>
+
+                            <!-- 範例與程式碼 -->
+                            
+                            <!-- / 範例與程式碼 -->
+
+                            <!-- 附帶程式片段 -->
+                            
+                            <div class="主體-格局-內容-單個範例-附帶程式碼"><pre><code class="hljs">&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"<a href="./content.html">ts-content</a> <mark>@container</mark>"</span>&gt;
+    <span class="xml"><span class="hljs-comment">&lt;!-- Apply `is-small` if the width of `.ts-content` is 300px or above --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./button.html">ts-button</a> <mark>@[300px+]:is-small</mark>"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></code></pre>
+</div>
+                            
+                            <!-- / 附帶程式片段 -->
+
+                            <!-- 圖示組 -->
+                            
+                            <!-- / 圖示組 -->
+                        </div>
+                        
+                        <!-- / 段落 -->
+                        
+                        <!-- / 章節 -->
+
+                        <!-- HTML 屬性 -->
+                        
+                        <!-- / HTML 屬性 -->
+
+                        <!-- 變數屬性 -->
+                        
+                        <!-- / 變數屬性 -->
+
+                        <!-- 額外連結 -->
+                        
+                        <!-- / 額外連結 -->
+
+                        
+                    </main>
+
+                    <!-- 側邊索引 -->
+                    <div class="主體-格局-索引">
+                        
+                        <div class="主體-格局-索引-標題">Device Definitions</div>
+                        <div class="主體-格局-索引-清單">
+                            
+                            <a class="主體-格局-索引-清單-項目" href="#default-breakpoints">
+                                Breakpoints <span class="主體-格局-索引-清單-項目-英文"></span>
+                            </a>
+                            
+                        </div>
+                        
+                        <div class="主體-格局-索引-標題">Usages</div>
+                        <div class="主體-格局-索引-清單">
+                            
+                            <a class="主體-格局-索引-清單-項目" href="#responsive-usage">
+                                Basic Usage <span class="主體-格局-索引-清單-項目-英文"></span>
+                            </a>
+                            
+                            <a class="主體-格局-索引-清單-項目" href="#responsive-arbitrary">
+                                Arbitrary Sizes <span class="主體-格局-索引-清單-項目-英文"></span>
+                            </a>
+                            
+                        </div>
+                        
+                        <div class="主體-格局-索引-標題">Scenarios</div>
+                        <div class="主體-格局-索引-清單">
+                            
+                            <a class="主體-格局-索引-清單-項目" href="#responsive-visibility">
+                                Hide/Show Elements at ... <span class="主體-格局-索引-清單-項目-英文">tablet+:has-hidden</span>
+                            </a>
+                            
+                            <a class="主體-格局-索引-清單-項目" href="#responsive-grid">
+                                Responsive Grid <span class="主體-格局-索引-清單-項目-英文">mobile:is-16-wide</span>
+                            </a>
+                            
+                        </div>
+                        
+                        <div class="主體-格局-索引-標題">Advanced Features</div>
+                        <div class="主體-格局-索引-清單">
+                            
+                            <a class="主體-格局-索引-清單-項目" href="#responsive-customize">
+                                Custom Breakpoints <span class="主體-格局-索引-清單-項目-英文"></span>
+                            </a>
+                            
+                            <a class="主體-格局-索引-清單-項目" href="#responsive-container-query">
+                                Container Query <span class="主體-格局-索引-清單-項目-英文"></span>
+                            </a>
+                            
+                        </div>
+                        
+                        <button class="主體-格局-索引-回到頂部"><span class="ts-icon is-arrow-up-icon"></span> Back To Top</button>
+                    </div>
+                    <!-- / 側邊索引 -->
+                </div>
+            </div>
+        </div>
+
+        <div class="頁腳">
+            <div class="界限容器">
+                <div class="頁腳-導航列">
+                    <button class="頁腳-導航列-項目 頁腳-導航列-項目_回到頂部"><span class="ts-icon is-arrow-up-icon"></span> Back to Top</button>
+                    <a class="頁腳-導航列-項目" href="https://github.com/teacat/tocas" target="_blank">GitHub</a>
+                    <a class="頁腳-導航列-項目" href="./getting-started.html">Getting Started</a>
+                    <a class="頁腳-導航列-項目" href="./button.html">Components</a>
+                    <a class="頁腳-導航列-項目" href="./examples.html">Examples</a>
+                </div>
+                <div class="頁腳-格局">
+                    <div class="頁腳-格局-資訊">
+                        <div class="頁腳-格局-資訊-文字">Designed by Yami Odymel from <span class="ts-flag is-taiwan-flag is-small"></span> Taiwan, along with the ❤️ from <a href="https://github.com/teacat/tocas/graphs/contributors" target="_blank">contributors</a>. The source code is licensed under <a href="https://github.com/teacat/tocas/blob/master/LICENSE" target="_blank">MIT</a>, and the documentation is under <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.zh_TW" target="_blank">CC 0</a> public domain. Feel free to use, share, or contribute. Tocas UI is a design system for <a href="https://caris.events" target="_blank">Caris Events</a>, part of <a href="https://sorae.co" target="_blank">Sorae & Co., Ltd.</a></div>
+                        <div class="頁腳-格局-資訊-翻譯者">Translators: <a href="https://twitter.com/YamiOdymel" target="_blank">Yami Odymel</a></div>
+                    </div>
+                    <div class="頁腳-格局-商標">
+                        <img class="頁腳-格局-商標-圖片" src="./assets/images/caris-events.svg" alt='Trademark of the owner of Tocas UI' />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
