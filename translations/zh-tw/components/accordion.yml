@@ -40,7 +40,7 @@ Definitions:
 
           - Title: 群組的
             Anchor: Name
-            Description: 相同 `[name]` 的可折疊內容會被視為同個群組，同個群組裡同時只能展開一個可折疊內容。Firefox 目前尚未支援此功能。
+            Description: 相同 `[name]` 的可折疊內容會被視為同個群組，同個群組裡同時只能展開一個可折疊內容。
             HTML: |
                 <details class="ts-accordion" [[name]]="help">
                     <summary>此遊戲可在哪些作業系統上遊玩？</summary>
@@ -50,4 +50,16 @@ Definitions:
                 <details class="ts-accordion" [[name]]="help">
                     <summary>遊戲的檔案大小為何？</summary>
                     若要安裝此遊戲，請確保至少有 20 GB 的可用空間。
+                </details>
+
+    - Title: 外觀
+      Description:
+      Sections:
+          - Title: 加號的
+            Anchor: Plus Sign
+            Description: 可折疊內容會以加、減號圖示來表示其開關狀態。
+            HTML: |
+                <details class="ts-accordion [[is-plus-sign]]">
+                    <summary>此服務是否提供退費？</summary>
+                    很抱歉，本服務一經購買後，恕不提供退費。
                 </details>

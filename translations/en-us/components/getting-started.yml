@@ -25,8 +25,8 @@ Definitions:
                 Add these tags in the `<head>` section to use Tocas UI, or download it from [GitHub](https://github.com/teacat/tocas) for offline use.
             AttachedHTML: |
                 <!-- Core: Tocas UI -->
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocas/5.0.2/tocas.min.css">
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/tocas/5.0.2/tocas.min.js"></script>
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocas/5.7.0/tocas.min.css">
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/tocas/5.7.0/tocas.min.js"></script>
 
                 <!-- Fonts: Noto Sans TC -->
                 <link rel="preconnect" href="https://fonts.googleapis.com">

@@ -25,8 +25,8 @@ Definitions:
                 將下列標籤放置於 HTML 中的 `<head> .. </head>` 處即可使用 Tocas UI，你也可以至 [GitHub](https://github.com/teacat/tocas) 下載離線使用。
             AttachedHTML: |
                 <!-- 核心：Tocas UI -->
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocas/5.0.2/tocas.min.css">
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/tocas/5.0.2/tocas.min.js"></script>
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocas/5.7.0/tocas.min.css">
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/tocas/5.7.0/tocas.min.js"></script>
 
                 <!-- 字體：Noto Sans TC -->
                 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -66,7 +66,7 @@ Definitions:
                 </div>
             AttachedHTML: |
                 <!-- 指定 `is-dark` 會讓整個頁面使用暗色主題 -->
-                <html class="[[is-dark]]">
+                <body class="[[is-dark]]">
 
           - Title: 圓角程度
             Anchor: Roundness
@@ -103,7 +103,7 @@ Definitions:
                 </div>
             AttachedHTML: |
                 <!-- 指定 `is-sharp` 會移除頁面裡所有元件的圓角 -->
-                <html class="[[is-sharp]]">
+                <body class="[[is-sharp]]">
 
           - Title: 字體大小
             Anchor: Scales
@@ -140,4 +140,4 @@ Definitions:
                 </div>
             AttachedHTML: |
                 <!-- 指定 `is-large` 會讓網頁使用 16px 字體基礎 -->
-                <html class="[[is-large]]">
+                <body class="[[is-large]]">

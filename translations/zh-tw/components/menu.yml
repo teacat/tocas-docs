@@ -81,23 +81,23 @@ Definitions:
       Sections:
           - Title: 計數徽章
             Anchor: Badge
-            Description: 在項目裡擺放[計數徽章](./badge.html)會自動移至最尾端。
+            Description: 在項目裡擺放計數徽章表示數量。
             HTML: |
-                <div class="{{ts-box}} is-collapsed">
-                    <div class="ts-menu is-collapsed is-start-icon">
+                <div class="{{ts-box}}">
+                    <div class="ts-menu is-start-icon">
                         <a class="item is-active">
                             <span class="{{ts-icon}} is-inbox-icon"></span>
                             收件匣
-                            <div class="[[{{ts-badge}}]] {{has-inverted}} is-small is-dense">3</div>
+                            <div class="[[badge]]">3</div>
                         </a>
                         <a class="item">
                             <span class="{{ts-icon}} is-bookmark-icon"></span>
                             重要郵件
-                            </a>
+                        </a>
                         <a class="item">
                             <span class="{{ts-icon}} is-circle-exclamation-icon"></span>
                             垃圾郵件
-                            <div class="[[{{ts-badge}}]] is-small is-dense">64</div>
+                            <div class="[[badge]]">64</div>
                         </a>
                     </div>
                 </div>
@@ -117,6 +117,22 @@ Definitions:
     - Title: 外觀
       Description:
       Sections:
+          - Title: 次要的
+            Anchor: Secondary
+            Description: 使啟用的項目會以次要的樣式呈現。
+            HTML: |
+                <div class="ts-menu [[is-secondary]] is-start-icon">
+                    <a class="item">
+                        <span class="{{ts-icon}} is-list-icon"></span> 概覽
+                    </a>
+                    <a class="item is-active">
+                        <span class="{{ts-icon}} is-note-sticky-icon"></span> 筆記
+                    </a>
+                    <a class="item">
+                        <span class="{{ts-icon}} is-car-icon"></span> 行程
+                    </a>
+                </div>
+
           - Title: 分開的
             Anchor: Separated
             Description: 使項目之間有空白間隔區分而不會相黏。
@@ -131,6 +147,24 @@ Definitions:
                     <a class="item">
                         <span class="{{ts-icon}} is-newspaper-icon"></span> 新聞
                     </a>
+                </div>
+
+          - Title: 標記的
+            Anchor: Indicated
+            Description: 使啟用的項目在某一側有特別標記的樣式。如果與「分開的」樣式搭配，則會移除側邊框。
+            Remove:
+                - <div class="ts-space"></div>
+            HTML: |
+                <div class="ts-menu [[is-start-indicated]]">
+                    <a class="item">收藏</a>
+                    <a class="item is-active">影片</a>
+                    <a class="item">音樂</a>
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-menu [[is-end-indicated]] is-separated">
+                    <a class="item">收藏</a>
+                    <a class="item is-active">影片</a>
+                    <a class="item">音樂</a>
                 </div>
 
           - Title: 最小寬度的

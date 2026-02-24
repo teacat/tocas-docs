@@ -244,175 +244,115 @@ Definitions:
                         <thead>
                             <tr>
                                 <th class="is-collapsed"></th>
-                                <th class="is-collapsed">gray</th>
-                                <th class="is-collapsed">primary</th>
-                                <th class="is-collapsed">warning</th>
-                                <th class="is-collapsed">positive</th>
-                                <th class="is-collapsed">negative</th>
+                                <th class="is-collapsed">light-gray</th>
+                                <th class="is-collapsed">dark-gray</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td class="is-collapsed">ts-static-x-50</td>
+                                <td class="is-collapsed">ts-x-50</td>
                                 <td class="is-collapsed is-middle-aligned">
-                                    <div class="色票預覽" style="background: var(--ts-static-gray-50)"></div>
-                                </td>
-                                <td class="is-middle-aligned"></td>
-                                <td class="is-middle-aligned"></td>
-                                <td class="is-middle-aligned"></td>
-                                <td class="is-middle-aligned"></td>
-                            </tr>
-                            <tr>
-                                <td class="is-collapsed">ts-static-x-75</td>
-                                <td class="is-collapsed is-middle-aligned">
-                                    <div class="色票預覽" style="background: var(--ts-static-gray-75)"></div>
-                                </td>
-                                <td class="is-middle-aligned"></td>
-                                <td class="is-middle-aligned"></td>
-                                <td class="is-middle-aligned"></td>
-                                <td class="is-middle-aligned"></td>
-                            </tr>
-                            <tr>
-                                <td class="is-collapsed">ts-static-x-100</td>
-                                <td class="is-collapsed is-middle-aligned">
-                                    <div class="色票預覽" style="background: var(--ts-static-gray-100)"></div>
-                                </td>
-                                <td class="is-middle-aligned"></td>
-                                <td class="is-middle-aligned"></td>
-                                <td class="is-middle-aligned"></td>
-                                <td class="is-middle-aligned"></td>
-                            </tr>
-                            <tr>
-                                <td class="is-collapsed">ts-static-x-200</td>
-                                <td class="is-collapsed is-middle-aligned">
-                                    <div class="色票預覽" style="background: var(--ts-static-gray-200)"></div>
-                                </td>
-                                <td class="is-middle-aligned"></td>
-                                <td class="is-middle-aligned"></td>
-                                <td class="is-middle-aligned"></td>
-                                <td class="is-middle-aligned"></td>
-                            </tr>
-                            <tr>
-                                <td class="is-collapsed">ts-static-x-300</td>
-                                <td class="is-collapsed is-middle-aligned">
-                                    <div class="色票預覽" style="background: var(--ts-static-gray-300)"></div>
-                                </td>
-                                <td class="is-middle-aligned"></td>
-                                <td class="is-middle-aligned"></td>
-                                <td class="is-middle-aligned"></td>
-                                <td class="is-middle-aligned"></td>
-                            </tr>
-                            <tr>
-                                <td class="is-collapsed">ts-static-x-400</td>
-                                <td class="is-collapsed is-middle-aligned">
-                                    <div class="色票預覽" style="background: var(--ts-static-gray-400)"></div>
+                                    <div class="色票預覽" style="background: var(--ts-light-gray-50)"></div>
                                 </td>
                                 <td class="is-middle-aligned">
-                                    <div class="色票預覽" style="background: var(--ts-static-primary-400)"></div>
-                                </td>
-                                <td class="is-middle-aligned">
-                                    <div class="色票預覽" style="background: var(--ts-static-warning-400)"></div>
-                                </td>
-                                <td class="is-middle-aligned">
-                                    <div class="色票預覽" style="background: var(--ts-static-positive-400)"></div>
-                                </td>
-                                <td class="is-middle-aligned">
-                                    <div class="色票預覽" style="background: var(--ts-static-negative-400)"></div>
+                                    <div class="色票預覽" style="background: var(--ts-dark-gray-50)"></div>
                                 </td>
                             </tr>
                             <tr>
-                                <td class="is-collapsed">ts-static-x-500</td>
+                                <td class="is-collapsed">ts-x-75</td>
                                 <td class="is-collapsed is-middle-aligned">
-                                    <div class="色票預覽" style="background: var(--ts-static-gray-500)"></div>
+                                    <div class="色票預覽" style="background: var(--ts-light-gray-75)"></div>
                                 </td>
-                                <td class="is-middle-aligned">
-                                    <div class="色票預覽" style="background: var(--ts-static-primary-500)"></div>
-                                </td>
-                                <td class="is-middle-aligned">
-                                    <div class="色票預覽" style="background: var(--ts-static-warning-500)"></div>
-                                </td>
-                                <td class="is-middle-aligned">
-                                    <div class="色票預覽" style="background: var(--ts-static-positive-500)"></div>
-                                </td>
-                                <td class="is-middle-aligned">
-                                    <div class="色票預覽" style="background: var(--ts-static-negative-500)"></div>
+                                <td class="is-collapsed is-middle-aligned">
+                                    <div class="色票預覽" style="background: var(--ts-dark-gray-75)"></div>
                                 </td>
                             </tr>
                             <tr>
-                                <td class="is-collapsed">ts-static-x-600</td>
+                                <td class="is-collapsed">ts-x-100</td>
                                 <td class="is-collapsed is-middle-aligned">
-                                    <div class="色票預覽" style="background: var(--ts-static-gray-600)"></div>
+                                    <div class="色票預覽" style="background: var(--ts-light-gray-100)"></div>
                                 </td>
-                                <td class="is-middle-aligned">
-                                    <div class="色票預覽" style="background: var(--ts-static-primary-600)"></div>
-                                </td>
-                                <td class="is-middle-aligned">
-                                    <div class="色票預覽" style="background: var(--ts-static-warning-600)"></div>
-                                </td>
-                                <td class="is-middle-aligned">
-                                    <div class="色票預覽" style="background: var(--ts-static-positive-600)"></div>
-                                </td>
-                                <td class="is-middle-aligned">
-                                    <div class="色票預覽" style="background: var(--ts-static-negative-600)"></div>
+                                <td class="is-collapsed is-middle-aligned">
+                                    <div class="色票預覽" style="background: var(--ts-dark-gray-100)"></div>
                                 </td>
                             </tr>
                             <tr>
-                                <td class="is-collapsed">ts-static-x-700</td>
+                                <td class="is-collapsed">ts-x-200</td>
                                 <td class="is-collapsed is-middle-aligned">
-                                    <div class="色票預覽" style="background: var(--ts-static-gray-700)"></div>
+                                    <div class="色票預覽" style="background: var(--ts-light-gray-200)"></div>
                                 </td>
-                                <td class="is-middle-aligned">
-                                    <div class="色票預覽" style="background: var(--ts-static-primary-700)"></div>
-                                </td>
-                                <td class="is-middle-aligned">
-                                    <div class="色票預覽" style="background: var(--ts-static-warning-700)"></div>
-                                </td>
-                                <td class="is-middle-aligned">
-                                    <div class="色票預覽" style="background: var(--ts-static-positive-700)"></div>
-                                </td>
-                                <td class="is-middle-aligned">
-                                    <div class="色票預覽" style="background: var(--ts-static-negative-700)"></div>
+                                <td class="is-collapsed is-middle-aligned">
+                                    <div class="色票預覽" style="background: var(--ts-dark-gray-200)"></div>
                                 </td>
                             </tr>
                             <tr>
-                                <td class="is-collapsed">ts-static-x-800</td>
+                                <td class="is-collapsed">ts-x-300</td>
                                 <td class="is-collapsed is-middle-aligned">
-                                    <div class="色票預覽" style="background: var(--ts-static-gray-800)"></div>
+                                    <div class="色票預覽" style="background: var(--ts-light-gray-300)"></div>
                                 </td>
-                                <td class="is-middle-aligned">
-                                    <div class="色票預覽" style="background: var(--ts-static-primary-800)"></div>
-                                </td>
-                                <td class="is-middle-aligned">
-                                    <div class="色票預覽" style="background: var(--ts-static-warning-800)"></div>
-                                </td>
-                                <td class="is-middle-aligned">
-                                    <div class="色票預覽" style="background: var(--ts-static-positive-800)"></div>
-                                </td>
-                                <td class="is-middle-aligned">
-                                    <div class="色票預覽" style="background: var(--ts-static-negative-800)"></div>
+                                <td class="is-collapsed is-middle-aligned">
+                                    <div class="色票預覽" style="background: var(--ts-dark-gray-300)"></div>
                                 </td>
                             </tr>
                             <tr>
-                                <td class="is-collapsed">ts-static-x-900</td>
+                                <td class="is-collapsed">ts-x-400</td>
                                 <td class="is-collapsed is-middle-aligned">
-                                    <div class="色票預覽" style="background: var(--ts-static-gray-900)"></div>
+                                    <div class="色票預覽" style="background: var(--ts-light-gray-400)"></div>
                                 </td>
-                                <td class="is-middle-aligned">
-                                    <div class="色票預覽" style="background: var(--ts-static-primary-900)"></div>
+                                <td class="is-collapsed is-middle-aligned">
+                                    <div class="色票預覽" style="background: var(--ts-dark-gray-400)"></div>
                                 </td>
-                                <td class="is-middle-aligned">
-                                    <div class="色票預覽" style="background: var(--ts-static-warning-900)"></div>
+                            </tr>
+                            <tr>
+                                <td class="is-collapsed">ts-x-500</td>
+                                <td class="is-collapsed is-middle-aligned">
+                                    <div class="色票預覽" style="background: var(--ts-light-gray-500)"></div>
                                 </td>
-                                <td class="is-middle-aligned">
-                                    <div class="色票預覽" style="background: var(--ts-static-positive-900)"></div>
+                                <td class="is-collapsed is-middle-aligned">
+                                    <div class="色票預覽" style="background: var(--ts-dark-gray-500)"></div>
                                 </td>
-                                <td class="is-middle-aligned">
-                                    <div class="色票預覽" style="background: var(--ts-static-negative-900)"></div>
+                            </tr>
+                            <tr>
+                                <td class="is-collapsed">ts-x-600</td>
+                                <td class="is-collapsed is-middle-aligned">
+                                    <div class="色票預覽" style="background: var(--ts-light-gray-600)"></div>
+                                </td>
+                                <td class="is-collapsed is-middle-aligned">
+                                    <div class="色票預覽" style="background: var(--ts-dark-gray-600)"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="is-collapsed">ts-x-700</td>
+                                <td class="is-collapsed is-middle-aligned">
+                                    <div class="色票預覽" style="background: var(--ts-light-gray-700)"></div>
+                                </td>
+                                <td class="is-collapsed is-middle-aligned">
+                                    <div class="色票預覽" style="background: var(--ts-dark-gray-700)"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="is-collapsed">ts-x-800</td>
+                                <td class="is-collapsed is-middle-aligned">
+                                    <div class="色票預覽" style="background: var(--ts-light-gray-800)"></div>
+                                </td>
+                                <td class="is-collapsed is-middle-aligned">
+                                    <div class="色票預覽" style="background: var(--ts-dark-gray-800)"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="is-collapsed">ts-x-900</td>
+                                <td class="is-collapsed is-middle-aligned">
+                                    <div class="色票預覽" style="background: var(--ts-light-gray-900)"></div>
+                                </td>
+                                <td class="is-collapsed is-middle-aligned">
+                                    <div class="色票預覽" style="background: var(--ts-dark-gray-900)"></div>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
+            AttachedHTML: |
+                <div [[style]]="color: var(--ts-light-gray-300)">這樣套用 CSS 變數作為顏色</div>
 
     - Title: 輔助樣式
       Description: |

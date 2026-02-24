@@ -83,12 +83,12 @@ Definitions:
             Anchor: Badge
             Description: A [Badge](./badge.html) can be placed inside a menu item.
             HTML: |
-                <div class="{{ts-box}} is-collapsed">
-                    <div class="ts-menu is-collapsed is-start-icon">
+                <div class="{{ts-box}}">
+                    <div class="ts-menu is-start-icon">
                         <a class="item is-active">
                             <span class="{{ts-icon}} is-inbox-icon"></span>
                             Inbox
-                            <div class="[[{{ts-badge}}]] {{has-inverted}} is-small is-dense">3</div>
+                            <div class="[[badge]]">3</div>
                         </a>
                         <a class="item">
                             <span class="{{ts-icon}} is-bookmark-icon"></span>
@@ -97,7 +97,7 @@ Definitions:
                         <a class="item">
                             <span class="{{ts-icon}} is-circle-exclamation-icon"></span>
                             Spam
-                            <div class="[[{{ts-badge}}]] is-small is-dense">64</div>
+                            <div class="[[badge]]">64</div>
                         </a>
                     </div>
                 </div>
@@ -117,6 +117,22 @@ Definitions:
     - Title: Variations
       Description:
       Sections:
+          - Title: Secondary
+            Anchor: Secondary
+            Description: A menu can have active items displayed in a secondary style.
+            HTML: |
+                <div class="ts-menu [[is-secondary]] is-start-icon">
+                    <a class="item">
+                        <span class="{{ts-icon}} is-list-icon"></span> Overview
+                    </a>
+                    <a class="item is-active">
+                        <span class="{{ts-icon}} is-note-sticky-icon"></span> Notes
+                    </a>
+                    <a class="item">
+                        <span class="{{ts-icon}} is-car-icon"></span> Schedules
+                    </a>
+                </div>
+
           - Title: Separated
             Anchor: Separated
             Description: A menu can have items separated by gaps.
@@ -131,6 +147,24 @@ Definitions:
                     <a class="item">
                         <span class="{{ts-icon}} is-newspaper-icon"></span> News
                     </a>
+                </div>
+
+          - Title: Indicated
+            Anchor: Indicated
+            Description: A menu item can be indicated to show its active state. Border will be removed if the menu is separated.
+            Remove:
+                - <div class="ts-space"></div>
+            HTML: |
+                <div class="ts-menu [[is-start-indicated]]">
+                    <a class="item">Favorites</a>
+                    <a class="item is-active">Videos</a>
+                    <a class="item">Music</a>
+                </div>
+                <div class="ts-space"></div>
+                <div class="ts-menu [[is-end-indicated]] is-separated">
+                    <a class="item">Favorites</a>
+                    <a class="item is-active">Videos</a>
+                    <a class="item">Music</a>
                 </div>
 
           - Title: Collapsed

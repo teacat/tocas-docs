@@ -47,6 +47,15 @@ Properties:
           - `bottom`
           - `bottom-start`
           - `bottom-end`
+          -
+    - Name: "[data-collapse]"
+      Default: "trigger item"
+      Target: .ts-dropdown
+      Description: |
+          Specifies when the dropdown should close, separated by space (e.g., `trigger item`):
+
+          - `trigger` when the trigger button is pressed.
+          - `item` when an item is pressed.
 
 #=======================================================
 # 基本樣式

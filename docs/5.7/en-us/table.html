@@ -1,0 +1,3048 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./assets/style.css" />
+        <link rel="stylesheet" href="./assets/highlight.css" />
+        <link rel="stylesheet" href="./assets/tocas/tocas.min.css" />
+        <script src="./assets/tocas/tocas.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet" />
+        <link rel="canonical" href="https://tocas-ui.com/5.7/en-us/table.html" />
+        <script src="./assets/script.js"></script>
+        <title>Table - Tocas UI</title>
+        <!--
+
+
+
+        ▄▄▄        ▄▄████▄
+      ▄█████▄    ▄██▀    ██
+      ▀█▄   ██▄ ██▀      ██
+       ▀██▄▄▄████   ▄▄▄██▀
+          ▀▀▀████▀▀▀▀▀
+             ██
+            ██          ▄█████▄       █████████████          ▄█             █▄
+           ██         ▄█▀     ▀█▄     ██         ██         ██▀█▄         ▄█▀
+           ██        ██         ██    ██         ██        ██  ▀██       ██▀
+           ██        ██         ██    ██         ██      ▄█▀     ██     ▀▀▀▀▀▀▀███
+           ██        ▀█▄       ▄█▀    ██         ██     ██▀       ▀█▄         ██▀
+            ██         ▀███████▀      █████████████    ███▄▄▄▄▄▄▄▄▄███       █▀
+
+
+
+            「你只能死一次，一定要死的轟轟烈烈。」
+
+            沒有人可以做一件事情直到永遠，
+            而一個人的生命也不是永生。
+
+            死亡給予了我們試著活下去的動力，
+            在那之前都應該竭盡所能的向著自己的夢邁進。
+
+            將自己的生命活得淋漓盡致才是最重要的；
+            不要將剛開始的序章放在頁尾。
+
+
+
+        -->
+        <meta name="description" content="A table displays a collections of data grouped into rows." />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Table - Tocas UI" />
+        <meta name="twitter:description" content="A table displays a collections of data grouped into rows." />
+        <meta name="twitter:image" content="https://tocas-ui.com/5.7/en-us/assets/images/og.png" />
+        <meta property="og:title" content="Table - Tocas UI" />
+        <meta property="og:type" content="article" />
+        <meta property="og:image" content="https://tocas-ui.com/5.7/en-us/assets/images/og.png" />
+        <meta property="og:url" content="https://tocas-ui.com/5.7/en-us/table.html" />
+        <meta property="og:image:width" content="1280" />
+        <meta property="og:image:height" content="720" />
+        <meta property="og:description" content="A table displays a collections of data grouped into rows." />
+        <link rel="icon" type="image/png" href="https://tocas-ui.com/5.7/en-us/assets/images/favicons/favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="https://tocas-ui.com/5.7/en-us/assets/images/favicons/favicon-194x194.png" sizes="194x194" />
+        <link rel="icon" type="image/png" href="https://tocas-ui.com/5.7/en-us/assets/images/favicons/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/png" href="https://tocas-ui.com/5.7/en-us/assets/images/favicons/android-chrome-192x192.png" sizes="192x192" />
+        <link rel="icon" type="image/png" href="https://tocas-ui.com/5.7/en-us/assets/images/favicons/favicon-16x16.png" sizes="16x16" />
+    </head>
+    <body>
+        <div class="穹頂">
+            <div class="界限容器">
+                <div class="穹頂-導航列">
+                    <div class="穹頂-導航列-左側">
+                        <a class="穹頂-導航列-項目 穹頂-導航列-項目_主要" href="./index.html">Tocas UI</a>
+                        <a class="穹頂-導航列-項目" href="./getting-started.html">Getting Started</a>
+                        <a class="穹頂-導航列-項目" href="./button.html">Components</a>
+                        <a class="穹頂-導航列-項目" href="./examples.html">Examples</a>
+                    </div>
+                    <div class="穹頂-導航列-右側">
+                        <button class="穹頂-導航列-項目" data-dropdown="dropdown-language">
+                            <span class="ts-flag is-america-flag"></span> English (US)
+                        </button>
+                        <div class="ts-dropdown" id="dropdown-language" data-position="bottom">
+                            
+                            <a class="item is-selected" href="./../en-us/table.html">
+                                <span class="ts-flag is-america-flag"></span> English (US)
+                            </a>
+                            
+                            <a class="item " href="./../zh-tw/table.html">
+                                <span class="ts-flag is-taiwan-flag"></span> 台灣正體
+                            </a>
+                            
+                        </div>
+                        <button class="穹頂-導航列-項目" data-dropdown="dropdown-version">
+                            <span class="ts-icon is-code-branch-icon"></span> v5.7
+                        </button>
+                        <div class="ts-dropdown" id="dropdown-version" data-position="bottom">
+                            
+                            <div class="header">Latest</div>
+                            
+                            <a class="item is-selected" >v5.7.0</a>
+                            
+                            <div class="divider"></div>
+                            
+                            <div class="header">Older releases</div>
+                            
+                            <a class="item " href="https://tocas-ui.com/5.0/en-us/index.html" >v5.0.2</a>
+                            
+                            <a class="item " href="https://tocas-ui.com/4.2/zh-tw/index.html" >v4.2.5</a>
+                            
+                            <a class="item " href="https://v2.tocas-ui.com/" >v2.3.3</a>
+                            
+                            <div class="divider"></div>
+                            
+                        </div>
+                        <a class="穹頂-導航列-項目" href="https://github.com/teacat/tocas" target="_blank"><span class="ts-icon is-github-icon"></span> GitHub</a>
+                    </div>
+                </div>
+                <div class="穹頂-導航列 穹頂-導航列_手機的">
+                    <div class="穹頂-導航列-左側">
+                        <a class="穹頂-導航列-項目 穹頂-導航列-項目_主要" href="./index.html">Tocas UI</a>
+                    </div>
+                    <div class="穹頂-導航列-右側">
+                        <button class="穹頂-導航列-項目" data-dropdown="dropdown-language-mobile">
+                            <span class="ts-flag is-america-flag"></span> English (US)
+                        </button>
+                        <div class="ts-dropdown" id="dropdown-language-mobile" data-position="bottom">
+                            
+                            <a class="item is-selected" href="./../en-us/table.html">
+                                <span class="ts-flag is-america-flag"></span> English (US)
+                            </a>
+                            
+                            <a class="item " href="./../zh-tw/table.html">
+                                <span class="ts-flag is-taiwan-flag"></span> 台灣正體
+                            </a>
+                            
+                        </div>
+                        <button class="穹頂-導航列-項目 穹頂-導航列-項目_選單按鈕" aria-label='Hamburger Menu'>
+                            <span class="ts-icon is-bars-icon"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="穹頂-標題">
+                    <h1 class="穹頂-標題-主要">Table</h1>
+                    <div class="穹頂-標題-說明">A table displays a collections of data grouped into rows.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="主體">
+            <div class="界限容器">
+                <div class='主體-格局 '>
+                    <!-- 側邊導覽 -->
+                    <div class="主體-格局-導覽">
+                        
+                        <div class="主體-格局-導覽-標題">Introduction</div>
+                        
+                        <a href="./getting-started.html" class="主體-格局-導覽-項目">
+                             Getting Started 
+                        </a>
+                        
+                        <a href="./colors.html" class="主體-格局-導覽-項目">
+                             Colors 
+                        </a>
+                        
+                        <a href="./responsive.html" class="主體-格局-導覽-項目">
+                             Responsive 
+                        </a>
+                        
+                        <a href="./utilities.html" class="主體-格局-導覽-項目">
+                             Utilities 
+                        </a>
+                         
+                        <div class="主體-格局-導覽-標題">Components</div>
+                        
+                        <a href="./accordion.html" class="主體-格局-導覽-項目">
+                             Accordion  
+                        </a>
+                        
+                        <a href="./badge.html" class="主體-格局-導覽-項目">
+                             Badge  
+                        </a>
+                        
+                        <a href="./blankslate.html" class="主體-格局-導覽-項目">
+                             Blankslate  
+                        </a>
+                        
+                        <a href="./box.html" class="主體-格局-導覽-項目">
+                             Box  
+                        </a>
+                        
+                        <a href="./breadcrumb.html" class="主體-格局-導覽-項目">
+                             Breadcrumb  
+                        </a>
+                        
+                        <a href="./button.html" class="主體-格局-導覽-項目">
+                             Button  
+                        </a>
+                        
+                        <a href="./checkbox.html" class="主體-格局-導覽-項目">
+                             Checkbox  
+                        </a>
+                        
+                        <a href="./checklist.html" class="主體-格局-導覽-項目">
+                             Checklist  
+                        </a>
+                        
+                        <a href="./chip.html" class="主體-格局-導覽-項目">
+                             Chip  
+                        </a>
+                        
+                        <a href="./close.html" class="主體-格局-導覽-項目">
+                             Close  
+                        </a>
+                        
+                        <a href="./container.html" class="主體-格局-導覽-項目">
+                             Container  
+                        </a>
+                        
+                        <a href="./content.html" class="主體-格局-導覽-項目">
+                             Content  
+                        </a>
+                        
+                        <a href="./control.html" class="主體-格局-導覽-項目">
+                             Control  
+                        </a>
+                        
+                        <a href="./conversation.html" class="主體-格局-導覽-項目">
+                             Conversation  
+                        </a>
+                        
+                        <a href="./divider.html" class="主體-格局-導覽-項目">
+                             Divider  
+                        </a>
+                        
+                        <a href="./dropdown.html" class="主體-格局-導覽-項目">
+                             Dropdown  
+                        </a>
+                        
+                        <a href="./fieldset.html" class="主體-格局-導覽-項目">
+                             Fieldset  
+                        </a>
+                        
+                        <a href="./file.html" class="主體-格局-導覽-項目">
+                             File  
+                        </a>
+                        
+                        <a href="./flag.html" class="主體-格局-導覽-項目">
+                             Flag  
+                        </a>
+                        
+                        <a href="./gauge.html" class="主體-格局-導覽-項目">
+                             Gauge  
+                        </a>
+                        
+                        <a href="./grid.html" class="主體-格局-導覽-項目">
+                             Grid  
+                        </a>
+                        
+                        <a href="./header.html" class="主體-格局-導覽-項目">
+                             Header  
+                        </a>
+                        
+                        <a href="./icon.html" class="主體-格局-導覽-項目">
+                             Icon  
+                        </a>
+                        
+                        <a href="./iconset.html" class="主體-格局-導覽-項目">
+                             Iconset  
+                        </a>
+                        
+                        <a href="./image.html" class="主體-格局-導覽-項目">
+                             Image  
+                        </a>
+                        
+                        <a href="./imageset.html" class="主體-格局-導覽-項目">
+                             Imageset  
+                        </a>
+                        
+                        <a href="./input.html" class="主體-格局-導覽-項目">
+                             Input  
+                        </a>
+                        
+                        <a href="./list.html" class="主體-格局-導覽-項目">
+                             List  
+                        </a>
+                        
+                        <a href="./loading.html" class="主體-格局-導覽-項目">
+                             Loading  
+                        </a>
+                        
+                        <a href="./mask.html" class="主體-格局-導覽-項目">
+                             Mask  
+                        </a>
+                        
+                        <a href="./menu.html" class="主體-格局-導覽-項目">
+                             Menu  
+                        </a>
+                        
+                        <a href="./meta.html" class="主體-格局-導覽-項目">
+                             Meta  
+                        </a>
+                        
+                        <a href="./modal.html" class="主體-格局-導覽-項目">
+                             Modal  
+                        </a>
+                        
+                        <a href="./notice.html" class="主體-格局-導覽-項目">
+                             Notice  
+                        </a>
+                        
+                        <a href="./pagination.html" class="主體-格局-導覽-項目">
+                             Pagination  
+                        </a>
+                        
+                        <a href="./popover.html" class="主體-格局-導覽-項目">
+                             Popover  
+                        </a>
+                        
+                        <a href="./procedure.html" class="主體-格局-導覽-項目">
+                             Procedure  
+                        </a>
+                        
+                        <a href="./progress.html" class="主體-格局-導覽-項目">
+                             Progress  
+                        </a>
+                        
+                        <a href="./quote.html" class="主體-格局-導覽-項目">
+                             Quote  
+                        </a>
+                        
+                        <a href="./radio.html" class="主體-格局-導覽-項目">
+                             Radio  
+                        </a>
+                        
+                        <a href="./range.html" class="主體-格局-導覽-項目">
+                             Range 
+                            <span class="主體-格局-導覽-項目-英文"></span>
+                             
+                        </a>
+                        
+                        <a href="./rating.html" class="主體-格局-導覽-項目">
+                             Rating  
+                        </a>
+                        
+                        <a href="./select.html" class="主體-格局-導覽-項目">
+                             Select  
+                        </a>
+                        
+                        <a href="./selection.html" class="主體-格局-導覽-項目">
+                             Selection  
+                        </a>
+                        
+                        <a href="./snackbar.html" class="主體-格局-導覽-項目">
+                             Snackbar  
+                        </a>
+                        
+                        <a href="./statistic.html" class="主體-格局-導覽-項目">
+                             Statistic  
+                        </a>
+                        
+                        <a href="./switch.html" class="主體-格局-導覽-項目">
+                             Switch  
+                        </a>
+                        
+                        <a href="./tab.html" class="主體-格局-導覽-項目">
+                             Tab  
+                        </a>
+                        
+                        <a href="./table.html" class="主體-格局-導覽-項目 主體-格局-導覽-項目_啟用的">
+                             Table  
+                        </a>
+                        
+                        <a href="./text.html" class="主體-格局-導覽-項目">
+                             Text  
+                        </a>
+                        
+                        <a href="./timeline.html" class="主體-格局-導覽-項目">
+                             Timeline  
+                        </a>
+                        
+                        <a href="./tooltip.html" class="主體-格局-導覽-項目">
+                             Tooltip  
+                        </a>
+                        
+                        <a href="./wrap.html" class="主體-格局-導覽-項目">
+                             Wrap  
+                        </a>
+                         
+                        <div class="主體-格局-導覽-標題">Application</div>
+                        
+                        <a href="./app-center.html" class="主體-格局-導覽-項目">
+                             App Center  
+                        </a>
+                        
+                        <a href="./app-drawer.html" class="主體-格局-導覽-項目">
+                             App Drawer  
+                        </a>
+                        
+                        <a href="./app-layout.html" class="主體-格局-導覽-項目">
+                             App Layout  
+                        </a>
+                        
+                        <a href="./app-navbar.html" class="主體-格局-導覽-項目">
+                             App Navbar  
+                        </a>
+                        
+                        <a href="./app-sidebar.html" class="主體-格局-導覽-項目">
+                             App Sidebar  
+                        </a>
+                        
+                        <a href="./app-topbar.html" class="主體-格局-導覽-項目">
+                             App Topbar  
+                        </a>
+                         
+                        <div class="主體-格局-導覽-關閉按鈕">
+                            <span class="ts-icon is-circle-xmark-icon"></span>
+                        </div>
+                    </div>
+                    <!-- / 側邊導覽 -->
+
+                    <!-- 遮罩 -->
+                    <div class="主體-格局-遮罩"></div>
+                    <!-- / 遮罩 -->
+
+                    <main class="主體-格局-內容">
+                        <!-- 文章工具列 -->
+                        
+                        <div class="主體-格局-內容-工具列">
+                            <div class="主體-格局-內容-工具列-項目 主體-格局-內容-工具列-項目_標題">
+                                Example
+                                <!-- 標籤連結
+                                
+                                 / 標籤連結 -->
+                            </div>
+
+                            <!-- 明暗色系 -->
+                            <div class="主體-格局-內容-工具列-項目">
+                                <div class="主體-格局-內容-工具列-項目-標籤">Theme</div>
+                                <div class="主體-格局-內容-工具列-項目-下拉式選單">
+                                    <div class="主體-格局-內容-工具列-項目-下拉式選單-文字">
+                                        <span class="主體-格局-內容-工具列-項目-下拉式選單-文字-標籤">Auto</span>
+                                        <span class="主體-格局-內容-工具列-項目-下拉式選單-文字-圖示 ts-icon is-chevron-down-icon"></span>
+                                    </div>
+                                    <div class="主體-格局-內容-工具列-項目-下拉式選單-群組">
+                                        <div
+                                            data-value="is-light,is-dark"
+                                            class="主體-格局-內容-工具列-項目-下拉式選單-群組-項目 主體-格局-內容-工具列-項目-下拉式選單-群組-項目_啟用的"
+                                        >
+                                            Auto
+                                        </div>
+                                        <div data-value="is-dark;is-light" class="主體-格局-內容-工具列-項目-下拉式選單-群組-項目">Light</div>
+                                        <div data-value="is-light;is-dark" class="主體-格局-內容-工具列-項目-下拉式選單-群組-項目">Dark</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- / 明暗色系 -->
+
+                            <!-- 縮放項目 -->
+                            <div class="主體-格局-內容-工具列-項目">
+                                <div class="主體-格局-內容-工具列-項目-標籤">Scale</div>
+                                <div class="主體-格局-內容-工具列-項目-下拉式選單">
+                                    <div class="主體-格局-內容-工具列-項目-下拉式選單-文字">
+                                        <span class="主體-格局-內容-工具列-項目-下拉式選單-文字-標籤">Medium</span>
+                                        <span class="主體-格局-內容-工具列-項目-下拉式選單-文字-圖示 ts-icon is-chevron-down-icon"></span>
+                                    </div>
+                                    <div class="主體-格局-內容-工具列-項目-下拉式選單-群組">
+                                        <div data-value="is-small,is-medium;is-large" class="主體-格局-內容-工具列-項目-下拉式選單-群組-項目">
+                                            Large
+                                        </div>
+                                        <div
+                                            data-value="is-large,is-small;is-medium"
+                                            class="主體-格局-內容-工具列-項目-下拉式選單-群組-項目 主體-格局-內容-工具列-項目-下拉式選單-群組-項目_啟用的"
+                                        >
+                                            Medium
+                                        </div>
+                                        <div data-value="is-large,is-medium;is-small" class="主體-格局-內容-工具列-項目-下拉式選單-群組-項目">
+                                            Small
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- / 縮放項目 -->
+                        </div>
+
+                        <!-- 主要範例 -->
+                        <div class="主體-格局-內容-主要範例">
+                            <div class="主體-格局-內容-主要範例-實際效果 ">
+                                <div class="主體-格局-內容-主要範例-實際效果-置中容器"><div class="ts-box">
+    <table class="ts-table">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Common</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Sorae & Co., Ltd.</td>
+                <td>對空音商事株式会社</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Caris Events</td>
+                <td>カリス・イベント</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="3">Total Count: 2</th>
+            </tr>
+        </tfoot>
+    </table>
+</div>
+</div>
+                            </div>
+                            <div class="主體-格局-內容-主要範例-程式碼"><pre><code class="hljs">&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"<a href="./box.html">ts-box</a>"</span>&gt;
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<mark>ts-table</mark>"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">thead</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>#<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Name<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Common<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Sorae &amp; Co., Ltd.<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>對空音商事株式会社<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Caris Events<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>カリス・イベント<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">tfoot</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">colspan</span>=<span class="hljs-string">"3"</span>&gt;</span>Total Count: 2<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">tfoot</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span></span>
+&lt;<span class="hljs-regexp">/div&gt;</span></code></pre>
+</div>
+                        </div>
+                        <!-- / 主要範例 -->
+                        
+                        <!-- / 文章工具列 -->
+
+                        <!-- 概要 -->
+                        
+                        <div class="主體-格局-內容-標題 主體-格局-內容-標題_章節">Introduction</div>
+                        <div class="主體-格局-內容-文字"><p>A table with no border takes up the full width. Wrap it in a <a href="./box.html">Box</a> to add borders.</p>
+</div>
+                        
+                        <!-- / 概要 -->
+
+                        <!-- 章節 -->
+                        
+                        <div class="主體-格局-內容-標題 主體-格局-內容-標題_章節">Types</div>
+
+                        
+
+                        <!-- 國家旗幟 -->
+                        
+                        <!-- / 國家旗幟 -->
+
+                        <!-- 段落 -->
+                        
+                        <div class="主體-格局-內容-單個範例">
+                            <a class="主體-格局-內容-單個範例-錨點" id="definition"></a>
+                            <div class="主體-格局-內容-單個範例-文字-標題 主體-格局-內容-單個範例-文字-標題_段落">
+                                <a href="#definition" class="主體-格局-內容-單個範例-文字-標題-連結">Definition</a>
+                                
+                                <button class="主體-格局-內容-單個範例-文字-標題-切換原始碼"><span class="ts-icon is-code-icon"></span> Code</button>
+                                
+                            </div>
+                            <div class="主體-格局-內容-單個範例-文字"><p>A table may be formatted to emphasize a first column that defines a rows content.</p>
+</div>
+
+                            <!-- 範例與程式碼 -->
+                            
+                            <div class="主體-格局-內容-單個範例-範例">
+                                <div class="主體-格局-內容-單個範例-範例-實際效果"><div class="ts-box">
+    <table class="ts-table is-definition">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Arguments</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>header()</td>
+                <td>title[<em>string</em>]</td>
+                <td>Output the page header.</td>
+            </tr>
+            <tr>
+                <td>footer()</td>
+                <td>path[<em>string</em>]</td>
+                <td>Echo the footer content.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+                                <div class="主體-格局-內容-單個範例-範例-程式碼"><pre><code class="hljs">&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"<a href="./box.html">ts-box</a>"</span>&gt;
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ts-table <mark>is-definition</mark>"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">thead</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Arguments<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Description<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>header()<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>title[<span class="hljs-tag">&lt;<span class="hljs-name">em</span>&gt;</span>string<span class="hljs-tag">&lt;/<span class="hljs-name">em</span>&gt;</span>]<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Output the page header.<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>footer()<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>path[<span class="hljs-tag">&lt;<span class="hljs-name">em</span>&gt;</span>string<span class="hljs-tag">&lt;/<span class="hljs-name">em</span>&gt;</span>]<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Echo the footer content.<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span></span>
+&lt;<span class="hljs-regexp">/div&gt;</span></code></pre>
+</div>
+                            </div>
+                            
+                            <!-- / 範例與程式碼 -->
+
+                            <!-- 附帶程式片段 -->
+                            
+                            <!-- / 附帶程式片段 -->
+
+                            <!-- 圖示組 -->
+                            
+                            <!-- / 圖示組 -->
+                        </div>
+                        
+                        <div class="主體-格局-內容-單個範例">
+                            <a class="主體-格局-內容-單個範例-錨點" id="celled"></a>
+                            <div class="主體-格局-內容-單個範例-文字-標題 主體-格局-內容-單個範例-文字-標題_段落">
+                                <a href="#celled" class="主體-格局-內容-單個範例-文字-標題-連結">Celled</a>
+                                
+                                <button class="主體-格局-內容-單個範例-文字-標題-切換原始碼"><span class="ts-icon is-code-icon"></span> Code</button>
+                                
+                            </div>
+                            <div class="主體-格局-內容-單個範例-文字"><p>A table may be divided each row into separate cells.</p>
+</div>
+
+                            <!-- 範例與程式碼 -->
+                            
+                            <div class="主體-格局-內容-單個範例-範例">
+                                <div class="主體-格局-內容-單個範例-範例-實際效果"><div class="ts-box">
+    <table class="ts-table is-celled is-striped">
+        <thead>
+            <tr>
+                <th colspan="3">Git Repository</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="is-collapsed">
+                    <span class="ts-icon is-folder-icon is-end-spaced"></span>
+                    node_modules
+                </td>
+                <td>First commit!</td>
+                <td class="is-collapsed">10 hours ago</td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="ts-icon is-folder-icon is-end-spaced"></span>
+                    build
+                </td>
+                <td>First commit!</td>
+                <td class="is-collapsed">10 hours ago</td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="ts-icon is-file-icon is-regular is-end-spaced"></span>
+                    package.json
+                </td>
+                <td>First commit!</td>
+                <td class="is-collapsed">10 hours ago</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+                                <div class="主體-格局-內容-單個範例-範例-程式碼"><pre><code class="hljs">&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"<a href="./box.html">ts-box</a>"</span>&gt;
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ts-table <mark>is-celled</mark> is-striped"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">thead</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">colspan</span>=<span class="hljs-string">"3"</span>&gt;</span>Git Repository<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"is-collapsed"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./icon.html">ts-icon</a> is-folder-icon is-end-spaced"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                    node_modules
+                <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>First commit!<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"is-collapsed"</span>&gt;</span>10 hours ago<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./icon.html">ts-icon</a> is-folder-icon is-end-spaced"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                    build
+                <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>First commit!<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"is-collapsed"</span>&gt;</span>10 hours ago<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./icon.html">ts-icon</a> is-file-icon is-regular is-end-spaced"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                    package.json
+                <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>First commit!<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"is-collapsed"</span>&gt;</span>10 hours ago<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span></span>
+&lt;<span class="hljs-regexp">/div&gt;</span></code></pre>
+</div>
+                            </div>
+                            
+                            <!-- / 範例與程式碼 -->
+
+                            <!-- 附帶程式片段 -->
+                            
+                            <!-- / 附帶程式片段 -->
+
+                            <!-- 圖示組 -->
+                            
+                            <!-- / 圖示組 -->
+                        </div>
+                        
+                        <div class="主體-格局-內容-單個範例">
+                            <a class="主體-格局-內容-單個範例-錨點" id="basic"></a>
+                            <div class="主體-格局-內容-單個範例-文字-標題 主體-格局-內容-單個範例-文字-標題_段落">
+                                <a href="#basic" class="主體-格局-內容-單個範例-文字-標題-連結">Basic</a>
+                                
+                                <button class="主體-格局-內容-單個範例-文字-標題-切換原始碼"><span class="ts-icon is-code-icon"></span> Code</button>
+                                
+                            </div>
+                            <div class="主體-格局-內容-單個範例-文字"><p>A table can reduce its complexity to increase readability.</p>
+</div>
+
+                            <!-- 範例與程式碼 -->
+                            
+                            <div class="主體-格局-內容-單個範例-範例">
+                                <div class="主體-格局-內容-單個範例-範例-實際效果"><div class="ts-box">
+    <table class="ts-table is-basic">
+        <thead>
+            <tr>
+                <th>Filename</th>
+                <th>Category</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>file.php</td>
+                <td>Controller</td>
+                <td>File handlers.</td>
+            </tr>
+            <tr>
+                <td>star.php</td>
+                <td>Controller</td>
+                <td>For handling user favorites.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="ts-space"></div>
+<div class="ts-box">
+    <table class="ts-table is-very-basic">
+        <thead>
+            <tr>
+                <th>Filename</th>
+                <th>Category</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>file.php</td>
+                <td>Controller</td>
+                <td>File handlers.</td>
+            </tr>
+            <tr>
+                <td>star.php</td>
+                <td>Controller</td>
+                <td>For handling user favorites.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+                                <div class="主體-格局-內容-單個範例-範例-程式碼"><pre><code class="hljs"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./box.html">ts-box</a>"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ts-table <mark>is-basic</mark>"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">thead</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Filename<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Category<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Description<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>file.php<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Controller<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>File handlers.<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>star.php<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Controller<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>For handling user favorites.<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./box.html">ts-box</a>"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ts-table <mark>is-very-basic</mark>"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">thead</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Filename<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Category<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Description<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>file.php<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Controller<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>File handlers.<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>star.php<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Controller<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>For handling user favorites.<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+</div>
+                            </div>
+                            
+                            <!-- / 範例與程式碼 -->
+
+                            <!-- 附帶程式片段 -->
+                            
+                            <!-- / 附帶程式片段 -->
+
+                            <!-- 圖示組 -->
+                            
+                            <!-- / 圖示組 -->
+                        </div>
+                        
+                        <div class="主體-格局-內容-單個範例">
+                            <a class="主體-格局-內容-單個範例-錨點" id="striped"></a>
+                            <div class="主體-格局-內容-單個範例-文字-標題 主體-格局-內容-單個範例-文字-標題_段落">
+                                <a href="#striped" class="主體-格局-內容-單個範例-文字-標題-連結">Striped</a>
+                                
+                                <button class="主體-格局-內容-單個範例-文字-標題-切換原始碼"><span class="ts-icon is-code-icon"></span> Code</button>
+                                
+                            </div>
+                            <div class="主體-格局-內容-單個範例-文字"><p>A table can stripe alternate rows of content with a darker color to increase contrast.</p>
+</div>
+
+                            <!-- 範例與程式碼 -->
+                            
+                            <div class="主體-格局-內容-單個範例-範例">
+                                <div class="主體-格局-內容-單個範例-範例-實際效果"><div class="ts-box">
+    <table class="ts-table is-striped">
+        <thead>
+            <tr>
+                <th>IP Address</th>
+                <th>Protocol</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>164.17.183.5</td>
+                <td>HTTP</td>
+                <td>Yami's virtual machine.</td>
+            </tr>
+            <tr>
+                <td>186.173.16.34</td>
+                <td>HTTP</td>
+                <td>Blogs hosted in Taipei.</td>
+            </tr>
+            <tr>
+                <td>204.57.189.23</td>
+                <td>HTTP</td>
+                <td>Test servers.</td>
+            </tr>
+            <tr>
+                <td>183.46.31.8</td>
+                <td>HTTP</td>
+                <td>For hospitals in Hong Kong.</td>
+            </tr>
+            <tr>
+                <td>89.42.6.1</td>
+                <td>HTTP</td>
+                <td>Backup servers for Japan companies.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+                                <div class="主體-格局-內容-單個範例-範例-程式碼"><pre><code class="hljs">&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"<a href="./box.html">ts-box</a>"</span>&gt;
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ts-table <mark>is-striped</mark>"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">thead</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>IP Address<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Protocol<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Description<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>164.17.183.5<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>HTTP<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Yami's virtual machine.<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>186.173.16.34<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>HTTP<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Blogs hosted in Taipei.<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>204.57.189.23<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>HTTP<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Test servers.<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>183.46.31.8<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>HTTP<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>For hospitals in Hong Kong.<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>89.42.6.1<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>HTTP<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Backup servers for Japan companies.<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span></span>
+&lt;<span class="hljs-regexp">/div&gt;</span></code></pre>
+</div>
+                            </div>
+                            
+                            <!-- / 範例與程式碼 -->
+
+                            <!-- 附帶程式片段 -->
+                            
+                            <!-- / 附帶程式片段 -->
+
+                            <!-- 圖示組 -->
+                            
+                            <!-- / 圖示組 -->
+                        </div>
+                        
+                        <!-- / 段落 -->
+                        
+                        <div class="主體-格局-內容-標題 主體-格局-內容-標題_章節">Variations</div>
+
+                        
+
+                        <!-- 國家旗幟 -->
+                        
+                        <!-- / 國家旗幟 -->
+
+                        <!-- 段落 -->
+                        
+                        <div class="主體-格局-內容-單個範例">
+                            <a class="主體-格局-內容-單個範例-錨點" id="collapsed-table"></a>
+                            <div class="主體-格局-內容-單個範例-文字-標題 主體-格局-內容-單個範例-文字-標題_段落">
+                                <a href="#collapsed-table" class="主體-格局-內容-單個範例-文字-標題-連結">Collapsed</a>
+                                
+                                <button class="主體-格局-內容-單個範例-文字-標題-切換原始碼"><span class="ts-icon is-code-icon"></span> Code</button>
+                                
+                            </div>
+                            <div class="主體-格局-內容-單個範例-文字"><p>A table can be collapsed, taking up only as much space as its rows.</p>
+</div>
+
+                            <!-- 範例與程式碼 -->
+                            
+                            <div class="主體-格局-內容-單個範例-範例">
+                                <div class="主體-格局-內容-單個範例-範例-實際效果"><div class="ts-box is-collapsed">
+    <table class="ts-table is-collapsed">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Common</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Caris</td>
+                <td>カリス</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Orenji</td>
+                <td>トウキ</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Shirone</td>
+                <td>シロネ</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+                                <div class="主體-格局-內容-單個範例-範例-程式碼"><pre><code class="hljs">&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"<a href="./box.html">ts-box</a> is-collapsed"</span>&gt;
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ts-table <mark>is-collapsed</mark>"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">thead</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>#<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Name<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Common<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Caris<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>カリス<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Orenji<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>トウキ<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Shirone<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>シロネ<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span></span>
+&lt;<span class="hljs-regexp">/div&gt;</span></code></pre>
+</div>
+                            </div>
+                            
+                            <!-- / 範例與程式碼 -->
+
+                            <!-- 附帶程式片段 -->
+                            
+                            <!-- / 附帶程式片段 -->
+
+                            <!-- 圖示組 -->
+                            
+                            <!-- / 圖示組 -->
+                        </div>
+                        
+                        <div class="主體-格局-內容-單個範例">
+                            <a class="主體-格局-內容-單個範例-錨點" id="single-line"></a>
+                            <div class="主體-格局-內容-單個範例-文字-標題 主體-格局-內容-單個範例-文字-標題_段落">
+                                <a href="#single-line" class="主體-格局-內容-單個範例-文字-標題-連結">Single Line</a>
+                                
+                                <button class="主體-格局-內容-單個範例-文字-標題-切換原始碼"><span class="ts-icon is-code-icon"></span> Code</button>
+                                
+                            </div>
+                            <div class="主體-格局-內容-單個範例-文字"><p>A table can specify that its cell contents should remain on a single line, and not wrap.</p>
+</div>
+
+                            <!-- 範例與程式碼 -->
+                            
+                            <div class="主體-格局-內容-單個範例-範例">
+                                <div class="主體-格局-內容-單個範例-範例-實際效果"><table class="ts-table is-single-line">
+    <thead>
+        <tr>
+            <th>Post Title</th>
+            <th>Description</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Bibendum</td>
+            <td>Et venenatis orci placerat vitae. Sed posuere auctor.</td>
+            <td>Approved</td>
+        </tr>
+        <tr>
+            <td>Feugiat</td>
+            <td>Aliquam varius, mi ut convallis rhoncus, nunc dolor feugiat mi.</td>
+            <td>Rejected</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+                                <div class="主體-格局-內容-單個範例-範例-程式碼"><pre><code class="hljs"><span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ts-table <mark>is-single-line</mark>"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">thead</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Post Title<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Description<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Status<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Bibendum<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Et venenatis orci placerat vitae. Sed posuere auctor.<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Approved<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Feugiat<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Aliquam varius, mi ut convallis rhoncus, nunc dolor feugiat mi.<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Rejected<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span></code></pre>
+</div>
+                            </div>
+                            
+                            <!-- / 範例與程式碼 -->
+
+                            <!-- 附帶程式片段 -->
+                            
+                            <!-- / 附帶程式片段 -->
+
+                            <!-- 圖示組 -->
+                            
+                            <!-- / 圖示組 -->
+                        </div>
+                        
+                        <div class="主體-格局-內容-單個範例">
+                            <a class="主體-格局-內容-單個範例-錨點" id="truncated"></a>
+                            <div class="主體-格局-內容-單個範例-文字-標題 主體-格局-內容-單個範例-文字-標題_段落">
+                                <a href="#truncated" class="主體-格局-內容-單個範例-文字-標題-連結">Truncated</a>
+                                
+                                <button class="主體-格局-內容-單個範例-文字-標題-切換原始碼"><span class="ts-icon is-code-icon"></span> Code</button>
+                                
+                            </div>
+                            <div class="主體-格局-內容-單個範例-文字"><p>A table can truncate its cell contents to prevent text from wrapping.</p>
+</div>
+
+                            <!-- 範例與程式碼 -->
+                            
+                            <div class="主體-格局-內容-單個範例-範例">
+                                <div class="主體-格局-內容-單個範例-範例-實際效果"><table class="ts-table is-truncated is-basic">
+    <thead>
+        <tr>
+            <th>Post Title</th>
+            <th>Description</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Lorem Ipsum</td>
+            <td>Approved</td>
+            <td>Etiam aliquet pulvinar sapien, et venenatis orci placerat vitae. Sed posuere bibendum ante et porttitor. Fusce auctor.</td>
+        </tr>
+        <tr>
+            <td>Etiam aliquet</td>
+            <td>Approved</td>
+            <td>Nulla sed ex eget ligula gravida condimentum non id dui. Donec rutrum accumsan augue vitae pretium.</td>
+        </tr>
+        <tr>
+            <td>Aliquam</td>
+            <td>Rejected</td>
+            <td>Curabitur volutpat tristique erat ut pulvinar. Aliquam varius, mi ut convallis rhoncus, nunc dolor feugiat mi.</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+                                <div class="主體-格局-內容-單個範例-範例-程式碼"><pre><code class="hljs"><span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ts-table <mark>is-truncated</mark> is-basic"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">thead</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Post Title<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Description<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Status<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Lorem Ipsum<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Approved<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Etiam aliquet pulvinar sapien, et venenatis orci placerat vitae. Sed posuere bibendum ante et porttitor. Fusce auctor.<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Etiam aliquet<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Approved<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Nulla sed ex eget ligula gravida condimentum non id dui. Donec rutrum accumsan augue vitae pretium.<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Aliquam<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Rejected<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Curabitur volutpat tristique erat ut pulvinar. Aliquam varius, mi ut convallis rhoncus, nunc dolor feugiat mi.<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span></code></pre>
+</div>
+                            </div>
+                            
+                            <!-- / 範例與程式碼 -->
+
+                            <!-- 附帶程式片段 -->
+                            
+                            <!-- / 附帶程式片段 -->
+
+                            <!-- 圖示組 -->
+                            
+                            <!-- / 圖示組 -->
+                        </div>
+                        
+                        <div class="主體-格局-內容-單個範例">
+                            <a class="主體-格局-內容-單個範例-錨點" id="selectable"></a>
+                            <div class="主體-格局-內容-單個範例-文字-標題 主體-格局-內容-單個範例-文字-標題_段落">
+                                <a href="#selectable" class="主體-格局-內容-單個範例-文字-標題-連結">Selectable</a>
+                                
+                                <button class="主體-格局-內容-單個範例-文字-標題-切換原始碼"><span class="ts-icon is-code-icon"></span> Code</button>
+                                
+                            </div>
+                            <div class="主體-格局-內容-單個範例-文字"><p>A table can have its rows appear selectable.</p>
+</div>
+
+                            <!-- 範例與程式碼 -->
+                            
+                            <div class="主體-格局-內容-單個範例-範例">
+                                <div class="主體-格局-內容-單個範例-範例-實際效果"><div class="ts-box">
+    <table class="ts-table is-selectable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Calories</th>
+                <th>Protein</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Banana</td>
+                <td>88 kcal / 100g</td>
+                <td>1.1g</td>
+            </tr>
+            <tr>
+                <td>Apple</td>
+                <td>52 kcal / 100g</td>
+                <td>0.3g</td>
+            </tr>
+            <tr>
+                <td>Watermelon</td>
+                <td>30 kcal / 100g</td>
+                <td>0.6g</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+                                <div class="主體-格局-內容-單個範例-範例-程式碼"><pre><code class="hljs">&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"<a href="./box.html">ts-box</a>"</span>&gt;
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ts-table <mark>is-selectable</mark>"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">thead</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Name<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Calories<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Protein<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Banana<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>88 kcal / 100g<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>1.1g<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Apple<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>52 kcal / 100g<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>0.3g<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Watermelon<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>30 kcal / 100g<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>0.6g<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span></span>
+&lt;<span class="hljs-regexp">/div&gt;</span></code></pre>
+</div>
+                            </div>
+                            
+                            <!-- / 範例與程式碼 -->
+
+                            <!-- 附帶程式片段 -->
+                            
+                            <!-- / 附帶程式片段 -->
+
+                            <!-- 圖示組 -->
+                            
+                            <!-- / 圖示組 -->
+                        </div>
+                        
+                        <div class="主體-格局-內容-單個範例">
+                            <a class="主體-格局-內容-單個範例-錨點" id="sticked"></a>
+                            <div class="主體-格局-內容-單個範例-文字-標題 主體-格局-內容-單個範例-文字-標題_段落">
+                                <a href="#sticked" class="主體-格局-內容-單個範例-文字-標題-連結">Sticked</a>
+                                
+                                <button class="主體-格局-內容-單個範例-文字-標題-切換原始碼"><span class="ts-icon is-code-icon"></span> Code</button>
+                                
+                            </div>
+                            <div class="主體-格局-內容-單個範例-文字"><p>A table can stick its cell contents to the edge of the table.</p>
+</div>
+
+                            <!-- 範例與程式碼 -->
+                            
+                            <div class="主體-格局-內容-單個範例-範例">
+                                <div class="主體-格局-內容-單個範例-範例-實際效果"><table class="ts-table is-sticked is-basic">
+    <tbody>
+        <tr>
+            <td><strong>Total:</strong></td>
+            <td>340,953</td>
+        </tr>
+        <tr>
+            <td><strong>Taxes (9.3%):</strong></td>
+            <td>31,708</td>
+        </tr>
+        <tr>
+            <td><strong>Shipping Fees:</strong></td>
+            <td>4,102</td>
+        </tr>
+        <tr>
+            <td><strong>Grand Total:</strong></td>
+            <td>376,763</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+                                <div class="主體-格局-內容-單個範例-範例-程式碼"><pre><code class="hljs">&lt;table <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"ts-table <mark>is-sticked</mark> is-basic"</span>&gt;
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">tbody</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>Total:<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>340,953<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>Taxes (9.3%):<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>31,708<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>Shipping Fees:<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>4,102<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>Grand Total:<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>376,763<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span></span>
+&lt;<span class="hljs-regexp">/table&gt;</span></code></pre>
+</div>
+                            </div>
+                            
+                            <!-- / 範例與程式碼 -->
+
+                            <!-- 附帶程式片段 -->
+                            
+                            <!-- / 附帶程式片段 -->
+
+                            <!-- 圖示組 -->
+                            
+                            <!-- / 圖示組 -->
+                        </div>
+                        
+                        <div class="主體-格局-內容-單個範例">
+                            <a class="主體-格局-內容-單個範例-錨點" id="sizes"></a>
+                            <div class="主體-格局-內容-單個範例-文字-標題 主體-格局-內容-單個範例-文字-標題_段落">
+                                <a href="#sizes" class="主體-格局-內容-單個範例-文字-標題-連結">Sizes</a>
+                                
+                                <button class="主體-格局-內容-單個範例-文字-標題-切換原始碼"><span class="ts-icon is-code-icon"></span> Code</button>
+                                
+                            </div>
+                            <div class="主體-格局-內容-單個範例-文字"><p>A table can also be small or large.</p>
+</div>
+
+                            <!-- 範例與程式碼 -->
+                            
+                            <div class="主體-格局-內容-單個範例-範例">
+                                <div class="主體-格局-內容-單個範例-範例-實際效果"><div class="ts-box">
+    <table class="ts-table is-small">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Common</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Sorae & Co., Ltd.</td>
+                <td>對空音商事株式会社</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="ts-space"></div>
+<div class="ts-box">
+    <table class="ts-table">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Common</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Sorae & Co., Ltd.</td>
+                <td>對空音商事株式会社</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="ts-space"></div>
+<div class="ts-box">
+    <table class="ts-table is-large">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Common</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Sorae & Co., Ltd.</td>
+                <td>對空音商事株式会社</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+                                <div class="主體-格局-內容-單個範例-範例-程式碼"><pre><code class="hljs"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./box.html">ts-box</a>"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ts-table <mark>is-small</mark>"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">thead</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>#<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Name<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Common<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Sorae &amp; Co., Ltd.<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>對空音商事株式会社<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./box.html">ts-box</a>"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ts-table"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">thead</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>#<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Name<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Common<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Sorae &amp; Co., Ltd.<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>對空音商事株式会社<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./box.html">ts-box</a>"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ts-table <mark>is-large</mark>"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">thead</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>#<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Name<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Common<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Sorae &amp; Co., Ltd.<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>對空音商事株式会社<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+</div>
+                            </div>
+                            
+                            <!-- / 範例與程式碼 -->
+
+                            <!-- 附帶程式片段 -->
+                            
+                            <!-- / 附帶程式片段 -->
+
+                            <!-- 圖示組 -->
+                            
+                            <!-- / 圖示組 -->
+                        </div>
+                        
+                        <div class="主體-格局-內容-單個範例">
+                            <a class="主體-格局-內容-單個範例-錨點" id="padded"></a>
+                            <div class="主體-格局-內容-單個範例-文字-標題 主體-格局-內容-單個範例-文字-標題_段落">
+                                <a href="#padded" class="主體-格局-內容-單個範例-文字-標題-連結">Padded</a>
+                                
+                                <button class="主體-格局-內容-單個範例-文字-標題-切換原始碼"><span class="ts-icon is-code-icon"></span> Code</button>
+                                
+                            </div>
+                            <div class="主體-格局-內容-單個範例-文字"><p>A table may sometimes need to be more padded for legibility.</p>
+</div>
+
+                            <!-- 範例與程式碼 -->
+                            
+                            <div class="主體-格局-內容-單個範例-範例">
+                                <div class="主體-格局-內容-單個範例-範例-實際效果"><div class="ts-box">
+    <table class="ts-table">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Common</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Caris Events</td>
+                <td>カリス・イベント</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="ts-space"></div>
+<div class="ts-box">
+    <table class="ts-table is-padded">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Common</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Caris Events</td>
+                <td>カリス・イベント</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="ts-space"></div>
+<div class="ts-box">
+    <table class="ts-table is-horizontally-padded">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Common</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Caris Events</td>
+                <td>カリス・イベント</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+                                <div class="主體-格局-內容-單個範例-範例-程式碼"><pre><code class="hljs"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./box.html">ts-box</a>"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ts-table"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">thead</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>#<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Name<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Common<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Caris Events<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>カリス・イベント<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./box.html">ts-box</a>"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ts-table <mark>is-padded</mark>"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">thead</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>#<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Name<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Common<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Caris Events<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>カリス・イベント<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./box.html">ts-box</a>"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ts-table <mark>is-horizontally-padded</mark>"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">thead</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>#<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Name<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Common<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Caris Events<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>カリス・イベント<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+</div>
+                            </div>
+                            
+                            <!-- / 範例與程式碼 -->
+
+                            <!-- 附帶程式片段 -->
+                            
+                            <!-- / 附帶程式片段 -->
+
+                            <!-- 圖示組 -->
+                            
+                            <!-- / 圖示組 -->
+                        </div>
+                        
+                        <div class="主體-格局-內容-單個範例">
+                            <a class="主體-格局-內容-單個範例-錨點" id="fitted"></a>
+                            <div class="主體-格局-內容-單個範例-文字-標題 主體-格局-內容-單個範例-文字-標題_段落">
+                                <a href="#fitted" class="主體-格局-內容-單個範例-文字-標題-連結">Fitted</a>
+                                
+                                <button class="主體-格局-內容-單個範例-文字-標題-切換原始碼"><span class="ts-icon is-code-icon"></span> Code</button>
+                                
+                            </div>
+                            <div class="主體-格局-內容-單個範例-文字"><p>A table can be fitted to the width of its container.</p>
+</div>
+
+                            <!-- 範例與程式碼 -->
+                            
+                            <div class="主體-格局-內容-單個範例-範例">
+                                <div class="主體-格局-內容-單個範例-範例-實際效果"><table class="ts-table is-fitted">
+    <tbody>
+        <tr>
+            <td><strong>Order No.:</strong></td>
+            <td>123718975123</td>
+        </tr>
+        <tr>
+            <td><strong>Issued Date:</strong></td>
+            <td>2022-12-05 16:26:01 UTC</td>
+        </tr>
+        <tr>
+            <td><strong>Paid Date:</strong></td>
+            <td>Unpaid</td>
+        </tr>
+        <tr>
+            <td><strong>Username:</strong></td>
+            <td>yamiodymel</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+                                <div class="主體-格局-內容-單個範例-範例-程式碼"><pre><code class="hljs">&lt;table <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"ts-table <mark>is-fitted</mark>"</span>&gt;
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">tbody</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>Order No.:<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>123718975123<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>Issued Date:<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>2022-12-05 16:26:01 UTC<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>Paid Date:<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Unpaid<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>Username:<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>yamiodymel<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span></span>
+&lt;<span class="hljs-regexp">/table&gt;</span></code></pre>
+</div>
+                            </div>
+                            
+                            <!-- / 範例與程式碼 -->
+
+                            <!-- 附帶程式片段 -->
+                            
+                            <!-- / 附帶程式片段 -->
+
+                            <!-- 圖示組 -->
+                            
+                            <!-- / 圖示組 -->
+                        </div>
+                        
+                        <div class="主體-格局-內容-單個範例">
+                            <a class="主體-格局-內容-單個範例-錨點" id="density"></a>
+                            <div class="主體-格局-內容-單個範例-文字-標題 主體-格局-內容-單個範例-文字-標題_段落">
+                                <a href="#density" class="主體-格局-內容-單個範例-文字-標題-連結">Density</a>
+                                
+                                <button class="主體-格局-內容-單個範例-文字-標題-切換原始碼"><span class="ts-icon is-code-icon"></span> Code</button>
+                                
+                            </div>
+                            <div class="主體-格局-內容-單個範例-文字"><p>A table can have a relaxed or dense appearance.</p>
+</div>
+
+                            <!-- 範例與程式碼 -->
+                            
+                            <div class="主體-格局-內容-單個範例-範例">
+                                <div class="主體-格局-內容-單個範例-範例-實際效果"><div class="ts-box">
+    <table class="ts-table is-relaxed">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Common Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Flat Bank</td>
+                <td>半音金庫</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Sorae & Co., Ltd.</td>
+                <td>對空音商事株式会社</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="ts-space"></div>
+<div class="ts-box">
+    <table class="ts-table">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Common Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Flat Bank</td>
+                <td>半音金庫</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Sorae & Co., Ltd.</td>
+                <td>對空音商事株式会社</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="ts-space"></div>
+<div class="ts-box">
+    <table class="ts-table is-dense">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Common Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Flat Bank</td>
+                <td>半音金庫</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Sorae & Co., Ltd.</td>
+                <td>對空音商事株式会社</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+                                <div class="主體-格局-內容-單個範例-範例-程式碼"><pre><code class="hljs"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./box.html">ts-box</a>"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ts-table <mark>is-relaxed</mark>"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">thead</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>#<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Name<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Common Name<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Flat Bank<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>半音金庫<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Sorae &amp; Co., Ltd.<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>對空音商事株式会社<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./box.html">ts-box</a>"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ts-table"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">thead</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>#<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Name<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Common Name<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Flat Bank<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>半音金庫<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Sorae &amp; Co., Ltd.<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>對空音商事株式会社<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./box.html">ts-box</a>"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ts-table <mark>is-dense</mark>"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">thead</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>#<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Name<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Common Name<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Flat Bank<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>半音金庫<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Sorae &amp; Co., Ltd.<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>對空音商事株式会社<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+</div>
+                            </div>
+                            
+                            <!-- / 範例與程式碼 -->
+
+                            <!-- 附帶程式片段 -->
+                            
+                            <!-- / 附帶程式片段 -->
+
+                            <!-- 圖示組 -->
+                            
+                            <!-- / 圖示組 -->
+                        </div>
+                        
+                        <div class="主體-格局-內容-單個範例">
+                            <a class="主體-格局-內容-單個範例-錨點" id="horizontal-density"></a>
+                            <div class="主體-格局-內容-單個範例-文字-標題 主體-格局-內容-單個範例-文字-標題_段落">
+                                <a href="#horizontal-density" class="主體-格局-內容-單個範例-文字-標題-連結">Compact</a>
+                                
+                                <button class="主體-格局-內容-單個範例-文字-標題-切換原始碼"><span class="ts-icon is-code-icon"></span> Code</button>
+                                
+                            </div>
+                            <div class="主體-格局-內容-單個範例-文字"><p>A table can have its rows appear more compact.</p>
+</div>
+
+                            <!-- 範例與程式碼 -->
+                            
+                            <div class="主體-格局-內容-單個範例-範例">
+                                <div class="主體-格局-內容-單個範例-範例-實際效果"><div class="ts-box">
+    <table class="ts-table is-celled">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>URL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <div class="ts-input">
+                        <input type="text">
+                    </div>
+                </td>
+                <td>
+                    <div class="ts-input">
+                        <input type="text">
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="ts-space"></div>
+<div class="ts-box">
+    <table class="ts-table is-compact is-celled">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>URL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <div class="ts-input">
+                        <input type="text">
+                    </div>
+                </td>
+                <td>
+                    <div class="ts-input">
+                        <input type="text">
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+                                <div class="主體-格局-內容-單個範例-範例-程式碼"><pre><code class="hljs"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./box.html">ts-box</a>"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ts-table is-celled"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">thead</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Name<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>URL<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./input.html">ts-input</a>"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./input.html">ts-input</a>"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./box.html">ts-box</a>"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ts-table <mark>is-compact</mark> is-celled"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">thead</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Name<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>URL<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./input.html">ts-input</a>"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./input.html">ts-input</a>"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+</div>
+                            </div>
+                            
+                            <!-- / 範例與程式碼 -->
+
+                            <!-- 附帶程式片段 -->
+                            
+                            <!-- / 附帶程式片段 -->
+
+                            <!-- 圖示組 -->
+                            
+                            <!-- / 圖示組 -->
+                        </div>
+                        
+                        <!-- / 段落 -->
+                        
+                        <div class="主體-格局-內容-標題 主體-格局-內容-標題_章節">Column States</div>
+
+                        
+
+                        <!-- 國家旗幟 -->
+                        
+                        <!-- / 國家旗幟 -->
+
+                        <!-- 段落 -->
+                        
+                        <div class="主體-格局-內容-單個範例">
+                            <a class="主體-格局-內容-單個範例-錨點" id="active"></a>
+                            <div class="主體-格局-內容-單個範例-文字-標題 主體-格局-內容-單個範例-文字-標題_段落">
+                                <a href="#active" class="主體-格局-內容-單個範例-文字-標題-連結">Active</a>
+                                
+                                <button class="主體-格局-內容-單個範例-文字-標題-切換原始碼"><span class="ts-icon is-code-icon"></span> Code</button>
+                                
+                            </div>
+                            <div class="主體-格局-內容-單個範例-文字"><p>A cell or row can be active or selected by a user.</p>
+</div>
+
+                            <!-- 範例與程式碼 -->
+                            
+                            <div class="主體-格局-內容-單個範例-範例">
+                                <div class="主體-格局-內容-單個範例-範例-實際效果"><div class="ts-box">
+    <table class="ts-table">
+        <thead>
+            <tr>
+                <th class="is-collapsed"></th>
+                <th>Username</th>
+                <th>Status</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <label class="ts-checkbox">
+                        <input type="checkbox">
+                    </label>
+                </td>
+                <td>Yan-K</td>
+                <td>Checking</td>
+                <td>Requires age check.</td>
+            </tr>
+            <tr class="is-active">
+                <td>
+                    <label class="ts-checkbox">
+                        <input type="checkbox" checked>
+                    </label>
+                </td>
+                <td>Tsundere Chen</td>
+                <td>Checking</td>
+                <td>Level 32.</td>
+            </tr>
+            <tr>
+                <td>
+                    <label class="ts-checkbox">
+                        <input type="checkbox">
+                    </label>
+                </td>
+                <td>Hiram Huang</td>
+                <td>Passed</td>
+                <td>None</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+                                <div class="主體-格局-內容-單個範例-範例-程式碼"><pre><code class="hljs"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./box.html">ts-box</a>"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ts-table"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">thead</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"is-collapsed"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Username<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Status<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Description<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ts-checkbox"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Yan-K<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Checking<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Requires age check.<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<mark>is-active</mark>"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ts-checkbox"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> <span class="hljs-attr">checked</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Tsundere Chen<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Checking<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Level 32.<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ts-checkbox"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Hiram Huang<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Passed<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>None<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+</div>
+                            </div>
+                            
+                            <!-- / 範例與程式碼 -->
+
+                            <!-- 附帶程式片段 -->
+                            
+                            <!-- / 附帶程式片段 -->
+
+                            <!-- 圖示組 -->
+                            
+                            <!-- / 圖示組 -->
+                        </div>
+                        
+                        <div class="主體-格局-內容-單個範例">
+                            <a class="主體-格局-內容-單個範例-錨點" id="secondary"></a>
+                            <div class="主體-格局-內容-單個範例-文字-標題 主體-格局-內容-單個範例-文字-標題_段落">
+                                <a href="#secondary" class="主體-格局-內容-單個範例-文字-標題-連結">Secondary</a>
+                                
+                                <button class="主體-格局-內容-單個範例-文字-標題-切換原始碼"><span class="ts-icon is-code-icon"></span> Code</button>
+                                
+                            </div>
+                            <div class="主體-格局-內容-單個範例-文字"><p>A cell or row can be faded or less important.</p>
+</div>
+
+                            <!-- 範例與程式碼 -->
+                            
+                            <div class="主體-格局-內容-單個範例-範例">
+                                <div class="主體-格局-內容-單個範例-範例-實際效果"><div class="ts-box">
+    <table class="ts-table is-celled">
+        <thead>
+            <tr>
+                <th>Username</th>
+                <th>Status</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Yan-K</td>
+                <td class="is-secondary">Checking</td>
+                <td>Requires age check.</td>
+            </tr>
+            <tr>
+                <td>Fan Kangtai</td>
+                <td>Passed</td>
+                <td>None</td>
+            </tr>
+            <tr class="is-secondary">
+                <td>Tsundere Chen</td>
+                <td>Checking</td>
+                <td>Level 32.</td>
+            </tr>
+            <tr>
+                <td>Hiram Huang</td>
+                <td>Passed</td>
+                <td>None</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+                                <div class="主體-格局-內容-單個範例-範例-程式碼"><pre><code class="hljs">&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"<a href="./box.html">ts-box</a>"</span>&gt;
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ts-table is-celled"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">thead</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Username<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Status<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Description<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Yan-K<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<mark>is-secondary</mark>"</span>&gt;</span>Checking<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Requires age check.<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Fan Kangtai<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Passed<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>None<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<mark>is-secondary</mark>"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Tsundere Chen<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Checking<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Level 32.<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Hiram Huang<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Passed<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>None<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span></span>
+&lt;<span class="hljs-regexp">/div&gt;</span></code></pre>
+</div>
+                            </div>
+                            
+                            <!-- / 範例與程式碼 -->
+
+                            <!-- 附帶程式片段 -->
+                            
+                            <!-- / 附帶程式片段 -->
+
+                            <!-- 圖示組 -->
+                            
+                            <!-- / 圖示組 -->
+                        </div>
+                        
+                        <div class="主體-格局-內容-單個範例">
+                            <a class="主體-格局-內容-單個範例-錨點" id="tertiary"></a>
+                            <div class="主體-格局-內容-單個範例-文字-標題 主體-格局-內容-單個範例-文字-標題_段落">
+                                <a href="#tertiary" class="主體-格局-內容-單個範例-文字-標題-連結">Tertiary</a>
+                                
+                                <button class="主體-格局-內容-單個範例-文字-標題-切換原始碼"><span class="ts-icon is-code-icon"></span> Code</button>
+                                
+                            </div>
+                            <div class="主體-格局-內容-單個範例-文字"><p>A cell or row can be more darkened or unimportant.</p>
+</div>
+
+                            <!-- 範例與程式碼 -->
+                            
+                            <div class="主體-格局-內容-單個範例-範例">
+                                <div class="主體-格局-內容-單個範例-範例-實際效果"><div class="ts-box">
+    <table class="ts-table">
+        <thead>
+            <tr>
+                <th>Started Date</th>
+                <th>App Name</th>
+                <th>Transaction Fee</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>2021/01/03</td>
+                <td class="is-tertiary">Flat Bank</td>
+                <td>TWD $80</td>
+            </tr>
+            <tr class="is-tertiary">
+                <td>2021/02/15</td>
+                <td>Google Play</td>
+                <td>TWD $4,500</td>
+            </tr>
+            <tr>
+                <td>2021/03/19</td>
+                <td>App Store</td>
+                <td>TWD $1,200</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+                                <div class="主體-格局-內容-單個範例-範例-程式碼"><pre><code class="hljs">&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"<a href="./box.html">ts-box</a>"</span>&gt;
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ts-table"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">thead</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Started Date<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>App Name<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Transaction Fee<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>2021/01/03<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<mark>is-tertiary</mark>"</span>&gt;</span>Flat Bank<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>TWD $80<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<mark>is-tertiary</mark>"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>2021/02/15<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Google Play<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>TWD $4,500<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>2021/03/19<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>App Store<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>TWD $1,200<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span></span>
+&lt;<span class="hljs-regexp">/div&gt;</span></code></pre>
+</div>
+                            </div>
+                            
+                            <!-- / 範例與程式碼 -->
+
+                            <!-- 附帶程式片段 -->
+                            
+                            <!-- / 附帶程式片段 -->
+
+                            <!-- 圖示組 -->
+                            
+                            <!-- / 圖示組 -->
+                        </div>
+                        
+                        <div class="主體-格局-內容-單個範例">
+                            <a class="主體-格局-內容-單個範例-錨點" id="indicated"></a>
+                            <div class="主體-格局-內容-單個範例-文字-標題 主體-格局-內容-單個範例-文字-標題_段落">
+                                <a href="#indicated" class="主體-格局-內容-單個範例-文字-標題-連結">Indicated</a>
+                                
+                                <button class="主體-格局-內容-單個範例-文字-標題-切換原始碼"><span class="ts-icon is-code-icon"></span> Code</button>
+                                
+                            </div>
+                            <div class="主體-格局-內容-單個範例-文字"><p>A table can highlight rows or columns in a special way.</p>
+</div>
+
+                            <!-- 範例與程式碼 -->
+                            
+                            <div class="主體-格局-內容-單個範例-範例">
+                                <div class="主體-格局-內容-單個範例-範例-實際效果"><div class="ts-box">
+    <table class="ts-table is-celled is-single-line">
+        <thead>
+            <tr>
+                <th>Anime Name</th>
+                <th>Show Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>WorldEnd: What do you do at the end of the world?</td>
+                <td>Apr 11, 2017</td>
+            </tr>
+            <tr class="is-indicated">
+                <td>Eromanga Sensei</td>
+                <td>Apr 09, 2017</td>
+            </tr>
+            <tr class="is-negative is-indicated">
+                <td>Armed Girl's Machiavellism</td>
+                <td>Apr 05, 2017</td>
+            </tr>
+            <tr>
+                <td>Grimoire of Zero</td>
+                <td class="is-positive is-indicated">Apr 10, 2017</td>
+            </tr>
+            <tr>
+                <td>Attack on Titan Season 2</td>
+                <td>Apr 01, 2017</td>
+            </tr>
+            <tr class="is-warning is-indicated">
+                <td>Akashic Records of Bastard Magic Instructor;</td>
+                <td>Apr 04, 2017</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+                                <div class="主體-格局-內容-單個範例-範例-程式碼"><pre><code class="hljs">&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"<a href="./box.html">ts-box</a>"</span>&gt;
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ts-table is-celled is-single-line"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">thead</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Anime Name<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Show Date<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>WorldEnd: What do you do at the end of the world?<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Apr 11, 2017<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<mark>is-indicated</mark>"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Eromanga Sensei<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Apr 09, 2017<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"is-negative <mark>is-indicated</mark>"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Armed Girl's Machiavellism<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Apr 05, 2017<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Grimoire of Zero<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"is-positive <mark>is-indicated</mark>"</span>&gt;</span>Apr 10, 2017<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Attack on Titan Season 2<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Apr 01, 2017<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"is-warning <mark>is-indicated</mark>"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Akashic Records of Bastard Magic Instructor;<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Apr 04, 2017<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span></span>
+&lt;<span class="hljs-regexp">/div&gt;</span></code></pre>
+</div>
+                            </div>
+                            
+                            <!-- / 範例與程式碼 -->
+
+                            <!-- 附帶程式片段 -->
+                            
+                            <!-- / 附帶程式片段 -->
+
+                            <!-- 圖示組 -->
+                            
+                            <!-- / 圖示組 -->
+                        </div>
+                        
+                        <div class="主體-格局-內容-單個範例">
+                            <a class="主體-格局-內容-單個範例-錨點" id="disabled"></a>
+                            <div class="主體-格局-內容-單個範例-文字-標題 主體-格局-內容-單個範例-文字-標題_段落">
+                                <a href="#disabled" class="主體-格局-內容-單個範例-文字-標題-連結">Disabled</a>
+                                
+                                <button class="主體-格局-內容-單個範例-文字-標題-切換原始碼"><span class="ts-icon is-code-icon"></span> Code</button>
+                                
+                            </div>
+                            <div class="主體-格局-內容-單個範例-文字"><p>A cell or row can be disabled so that a user cannot interact with it.</p>
+</div>
+
+                            <!-- 範例與程式碼 -->
+                            
+                            <div class="主體-格局-內容-單個範例-範例">
+                                <div class="主體-格局-內容-單個範例-範例-實際效果"><div class="ts-box">
+    <table class="ts-table">
+        <thead>
+            <tr>
+                <th>Username</th>
+                <th>Email Address</th>
+                <th>Activated At</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="is-disabled">
+                <td>yamiodymel</td>
+                <td>yamiodymel@example.com</td>
+                <td>2013/09/14</td>
+            </tr>
+            <tr>
+                <td>karisu</td>
+                <td>superkari007@example.com</td>
+                <td>2020/11/03</td>
+            </tr>
+            <tr>
+                <td class="is-disabled">shiroteacat</td>
+                <td>shiroteacat@example.com</td>
+                <td>2009/07/15</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+                                <div class="主體-格局-內容-單個範例-範例-程式碼"><pre><code class="hljs">&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"<a href="./box.html">ts-box</a>"</span>&gt;
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ts-table"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">thead</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Username<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Email Address<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Activated At<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<mark>is-disabled</mark>"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>yamiodymel<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>yamiodymel@example.com<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>2013/09/14<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>karisu<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>superkari007@example.com<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>2020/11/03<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<mark>is-disabled</mark>"</span>&gt;</span>shiroteacat<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>shiroteacat@example.com<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>2009/07/15<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span></span>
+&lt;<span class="hljs-regexp">/div&gt;</span></code></pre>
+</div>
+                            </div>
+                            
+                            <!-- / 範例與程式碼 -->
+
+                            <!-- 附帶程式片段 -->
+                            
+                            <!-- / 附帶程式片段 -->
+
+                            <!-- 圖示組 -->
+                            
+                            <!-- / 圖示組 -->
+                        </div>
+                        
+                        <!-- / 段落 -->
+                        
+                        <div class="主體-格局-內容-標題 主體-格局-內容-標題_章節">Column Variations</div>
+
+                        
+
+                        <!-- 國家旗幟 -->
+                        
+                        <!-- / 國家旗幟 -->
+
+                        <!-- 段落 -->
+                        
+                        <div class="主體-格局-內容-單個範例">
+                            <a class="主體-格局-內容-單個範例-錨點" id="collapsed"></a>
+                            <div class="主體-格局-內容-單個範例-文字-標題 主體-格局-內容-單個範例-文字-標題_段落">
+                                <a href="#collapsed" class="主體-格局-內容-單個範例-文字-標題-連結">Collapsed</a>
+                                
+                                <button class="主體-格局-內容-單個範例-文字-標題-切換原始碼"><span class="ts-icon is-code-icon"></span> Code</button>
+                                
+                            </div>
+                            <div class="主體-格局-內容-單個範例-文字"><p>A table can have its columns collapsed, taking up only as much space as its content.</p>
+</div>
+
+                            <!-- 範例與程式碼 -->
+                            
+                            <div class="主體-格局-內容-單個範例-範例">
+                                <div class="主體-格局-內容-單個範例-範例-實際效果"><div class="ts-box">
+    <table class="ts-table">
+        <thead>
+            <tr>
+                <th>Hospital</th>
+                <th>Particulars</th>
+                <th class="is-collapsed">Created At</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="is-collapsed">Tokyo AH Hospital</td>
+                <td>Medical Supplies</td>
+                <td>2021/08/01</td>
+            </tr>
+            <tr>
+                <td class="is-collapsed">Tokyo AH Hospital</td>
+                <td>Standard ECG</td>
+                <td>2021/08/01</td>
+            </tr>
+            <tr>
+                <td class="is-collapsed">Jiritsu Institute</td>
+                <td>Radiation Therapy</td>
+                <td>2021/06/13</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+                                <div class="主體-格局-內容-單個範例-範例-程式碼"><pre><code class="hljs">&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"<a href="./box.html">ts-box</a>"</span>&gt;
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ts-table"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">thead</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Hospital<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Particulars<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<mark>is-collapsed</mark>"</span>&gt;</span>Created At<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<mark>is-collapsed</mark>"</span>&gt;</span>Tokyo AH Hospital<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Medical Supplies<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>2021/08/01<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<mark>is-collapsed</mark>"</span>&gt;</span>Tokyo AH Hospital<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Standard ECG<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>2021/08/01<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<mark>is-collapsed</mark>"</span>&gt;</span>Jiritsu Institute<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Radiation Therapy<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>2021/06/13<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span></span>
+&lt;<span class="hljs-regexp">/div&gt;</span></code></pre>
+</div>
+                            </div>
+                            
+                            <!-- / 範例與程式碼 -->
+
+                            <!-- 附帶程式片段 -->
+                            
+                            <!-- / 附帶程式片段 -->
+
+                            <!-- 圖示組 -->
+                            
+                            <!-- / 圖示組 -->
+                        </div>
+                        
+                        <div class="主體-格局-內容-單個範例">
+                            <a class="主體-格局-內容-單個範例-錨點" id="insetted"></a>
+                            <div class="主體-格局-內容-單個範例-文字-標題 主體-格局-內容-單個範例-文字-標題_段落">
+                                <a href="#insetted" class="主體-格局-內容-單個範例-文字-標題-連結">Insetted</a>
+                                
+                                <button class="主體-格局-內容-單個範例-文字-標題-切換原始碼"><span class="ts-icon is-code-icon"></span> Code</button>
+                                
+                            </div>
+                            <div class="主體-格局-內容-單個範例-文字"><p>A column can appear inset to expand on a row's content.</p>
+</div>
+
+                            <!-- 範例與程式碼 -->
+                            
+                            <div class="主體-格局-內容-單個範例-範例">
+                                <div class="主體-格局-內容-單個範例-範例-實際效果"><div class="ts-box">
+    <table class="ts-table">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Shop Name</th>
+                <th>Amount</th>
+                <th class="is-collapsed"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>2021/02/03</td>
+                <td>Mego Trade</td>
+                <td>TWD $80</td>
+                <td>
+                    <button class="ts-button is-outlined">View</button>
+                </td>
+            </tr>
+            <tr>
+                <td class="is-secondary is-padded is-insetted" colspan="4">
+                    The next payment date: 2022/01/02 (monthly)
+                </td>
+            </tr>
+            <tr>
+                <td>2021/05/18</td>
+                <td>Taiwan Advancement Committee</td>
+                <td>TWD $40</td>
+                <td>
+                    <button class="ts-button is-outlined">View</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+                                <div class="主體-格局-內容-單個範例-範例-程式碼"><pre><code class="hljs">&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"<a href="./box.html">ts-box</a>"</span>&gt;
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ts-table"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">thead</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Date<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Shop Name<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Amount<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"is-collapsed"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>2021/02/03<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Mego Trade<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>TWD $80<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./button.html">ts-button</a> is-outlined"</span>&gt;</span>View<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"is-secondary is-padded <mark>is-insetted</mark>"</span> <span class="hljs-attr">colspan</span>=<span class="hljs-string">"4"</span>&gt;</span>
+                    The next payment date: 2022/01/02 (monthly)
+                <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>2021/05/18<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Taiwan Advancement Committee<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>TWD $40<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<a href="./button.html">ts-button</a> is-outlined"</span>&gt;</span>View<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span></span>
+&lt;<span class="hljs-regexp">/div&gt;</span></code></pre>
+</div>
+                            </div>
+                            
+                            <!-- / 範例與程式碼 -->
+
+                            <!-- 附帶程式片段 -->
+                            
+                            <!-- / 附帶程式片段 -->
+
+                            <!-- 圖示組 -->
+                            
+                            <!-- / 圖示組 -->
+                        </div>
+                        
+                        <div class="主體-格局-內容-單個範例">
+                            <a class="主體-格局-內容-單個範例-錨點" id="empty"></a>
+                            <div class="主體-格局-內容-單個範例-文字-標題 主體-格局-內容-單個範例-文字-標題_段落">
+                                <a href="#empty" class="主體-格局-內容-單個範例-文字-標題-連結">Empty</a>
+                                
+                                <button class="主體-格局-內容-單個範例-文字-標題-切換原始碼"><span class="ts-icon is-code-icon"></span> Code</button>
+                                
+                            </div>
+                            <div class="主體-格局-內容-單個範例-文字"><p>A column can be marked as empty to indicate that it has no content.</p>
+</div>
+
+                            <!-- 範例與程式碼 -->
+                            
+                            <div class="主體-格局-內容-單個範例-範例">
+                                <div class="主體-格局-內容-單個範例-範例-實際效果"><div class="ts-box">
+    <table class="ts-table">
+        <thead>
+            <tr>
+                <th>Username</th>
+                <th>Last Active At</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>yamiodymel</td>
+                <td>2022/01/30</td>
+            </tr>
+            <tr>
+                <td>haneda_shirone</td>
+                <td class="is-empty"></td>
+            </tr>
+            <tr>
+                <td>karisu-events</td>
+                <td class="is-empty"></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+                                <div class="主體-格局-內容-單個範例-範例-程式碼"><pre><code class="hljs">&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"<a href="./box.html">ts-box</a>"</span>&gt;
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ts-table"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">thead</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Username<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Last Active At<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>yamiodymel<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>2022/01/30<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>haneda_shirone<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<mark>is-empty</mark>"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>karisu-events<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<mark>is-empty</mark>"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span></span>
+&lt;<span class="hljs-regexp">/div&gt;</span></code></pre>
+</div>
+                            </div>
+                            
+                            <!-- / 範例與程式碼 -->
+
+                            <!-- 附帶程式片段 -->
+                            
+                            <!-- / 附帶程式片段 -->
+
+                            <!-- 圖示組 -->
+                            
+                            <!-- / 圖示組 -->
+                        </div>
+                        
+                        <div class="主體-格局-內容-單個範例">
+                            <a class="主體-格局-內容-單個範例-錨點" id="aligns"></a>
+                            <div class="主體-格局-內容-單個範例-文字-標題 主體-格局-內容-單個範例-文字-標題_段落">
+                                <a href="#aligns" class="主體-格局-內容-單個範例-文字-標題-連結">Text Aligns</a>
+                                
+                                <button class="主體-格局-內容-單個範例-文字-標題-切換原始碼"><span class="ts-icon is-code-icon"></span> Code</button>
+                                
+                            </div>
+                            <div class="主體-格局-內容-單個範例-文字"><p>A table header, row, or cell can adjust its text alignment.</p>
+</div>
+
+                            <!-- 範例與程式碼 -->
+                            
+                            <div class="主體-格局-內容-單個範例-範例">
+                                <div class="主體-格局-內容-單個範例-範例-實際效果"><div class="ts-box">
+    <table class="ts-table is-celled">
+        <thead>
+            <tr>
+                <th>Column #1</th>
+                <th>Column #2</th>
+                <th>Column #3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="is-top-aligned">
+                    <p>Top Aligned</p>
+                    <p>&nbsp;</p>
+                </td>
+                <td class="is-middle-aligned">
+                    <p>Middle Aligned</p>
+                </td>
+                <td class="is-bottom-aligned">
+                    <p>Bottom Aligned</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="is-start-aligned">
+                    <p>Start Aligned</p>
+                </td>
+                <td class="is-center-aligned">
+                    <p>Center Aligned</p>
+                </td>
+                <td class="is-end-aligned">
+                    <p>End Aligned</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div></div>
+                                <div class="主體-格局-內容-單個範例-範例-程式碼"><pre><code class="hljs">&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"<a href="./box.html">ts-box</a>"</span>&gt;
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ts-table is-celled"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">thead</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Column #1<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Column #2<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Column #3<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<mark>is-top-aligned</mark>"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Top Aligned<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>&amp;nbsp;<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<mark>is-middle-aligned</mark>"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Middle Aligned<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<mark>is-bottom-aligned</mark>"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Bottom Aligned<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<mark>is-start-aligned</mark>"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Start Aligned<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<mark>is-center-aligned</mark>"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Center Aligned<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"<mark>is-end-aligned</mark>"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>End Aligned<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span></span>
+&lt;<span class="hljs-regexp">/div&gt;</span></code></pre>
+</div>
+                            </div>
+                            
+                            <!-- / 範例與程式碼 -->
+
+                            <!-- 附帶程式片段 -->
+                            
+                            <!-- / 附帶程式片段 -->
+
+                            <!-- 圖示組 -->
+                            
+                            <!-- / 圖示組 -->
+                        </div>
+                        
+                        <!-- / 段落 -->
+                        
+                        <!-- / 章節 -->
+
+                        <!-- HTML 屬性 -->
+                        
+                        <!-- / HTML 屬性 -->
+
+                        <!-- 變數屬性 -->
+                        
+                        <!-- / 變數屬性 -->
+
+                        <!-- 額外連結 -->
+                        
+                        <!-- / 額外連結 -->
+
+                        
+                    </main>
+
+                    <!-- 側邊索引 -->
+                    <div class="主體-格局-索引">
+                        
+                        <div class="主體-格局-索引-標題">Types</div>
+                        <div class="主體-格局-索引-清單">
+                            
+                            <a class="主體-格局-索引-清單-項目" href="#definition">
+                                Definition <span class="主體-格局-索引-清單-項目-英文">is-definition</span>
+                            </a>
+                            
+                            <a class="主體-格局-索引-清單-項目" href="#celled">
+                                Celled <span class="主體-格局-索引-清單-項目-英文">is-celled</span>
+                            </a>
+                            
+                            <a class="主體-格局-索引-清單-項目" href="#basic">
+                                Basic <span class="主體-格局-索引-清單-項目-英文">is-basic</span>
+                            </a>
+                            
+                            <a class="主體-格局-索引-清單-項目" href="#striped">
+                                Striped <span class="主體-格局-索引-清單-項目-英文">is-striped</span>
+                            </a>
+                            
+                        </div>
+                        
+                        <div class="主體-格局-索引-標題">Variations</div>
+                        <div class="主體-格局-索引-清單">
+                            
+                            <a class="主體-格局-索引-清單-項目" href="#collapsed-table">
+                                Collapsed <span class="主體-格局-索引-清單-項目-英文">is-collapsed</span>
+                            </a>
+                            
+                            <a class="主體-格局-索引-清單-項目" href="#single-line">
+                                Single Line <span class="主體-格局-索引-清單-項目-英文">is-single-line</span>
+                            </a>
+                            
+                            <a class="主體-格局-索引-清單-項目" href="#truncated">
+                                Truncated <span class="主體-格局-索引-清單-項目-英文">is-truncated</span>
+                            </a>
+                            
+                            <a class="主體-格局-索引-清單-項目" href="#selectable">
+                                Selectable <span class="主體-格局-索引-清單-項目-英文">is-selectable</span>
+                            </a>
+                            
+                            <a class="主體-格局-索引-清單-項目" href="#sticked">
+                                Sticked <span class="主體-格局-索引-清單-項目-英文">is-sticked</span>
+                            </a>
+                            
+                            <a class="主體-格局-索引-清單-項目" href="#sizes">
+                                Sizes <span class="主體-格局-索引-清單-項目-英文">is-small</span>
+                            </a>
+                            
+                            <a class="主體-格局-索引-清單-項目" href="#padded">
+                                Padded <span class="主體-格局-索引-清單-項目-英文">is-padded</span>
+                            </a>
+                            
+                            <a class="主體-格局-索引-清單-項目" href="#fitted">
+                                Fitted <span class="主體-格局-索引-清單-項目-英文">is-fitted</span>
+                            </a>
+                            
+                            <a class="主體-格局-索引-清單-項目" href="#density">
+                                Density <span class="主體-格局-索引-清單-項目-英文">is-relaxed</span>
+                            </a>
+                            
+                            <a class="主體-格局-索引-清單-項目" href="#horizontal-density">
+                                Compact <span class="主體-格局-索引-清單-項目-英文">is-compact</span>
+                            </a>
+                            
+                        </div>
+                        
+                        <div class="主體-格局-索引-標題">Column States</div>
+                        <div class="主體-格局-索引-清單">
+                            
+                            <a class="主體-格局-索引-清單-項目" href="#active">
+                                Active <span class="主體-格局-索引-清單-項目-英文">is-active</span>
+                            </a>
+                            
+                            <a class="主體-格局-索引-清單-項目" href="#secondary">
+                                Secondary <span class="主體-格局-索引-清單-項目-英文">is-secondary</span>
+                            </a>
+                            
+                            <a class="主體-格局-索引-清單-項目" href="#tertiary">
+                                Tertiary <span class="主體-格局-索引-清單-項目-英文">is-tertiary</span>
+                            </a>
+                            
+                            <a class="主體-格局-索引-清單-項目" href="#indicated">
+                                Indicated <span class="主體-格局-索引-清單-項目-英文">is-indicated</span>
+                            </a>
+                            
+                            <a class="主體-格局-索引-清單-項目" href="#disabled">
+                                Disabled <span class="主體-格局-索引-清單-項目-英文">is-disabled</span>
+                            </a>
+                            
+                        </div>
+                        
+                        <div class="主體-格局-索引-標題">Column Variations</div>
+                        <div class="主體-格局-索引-清單">
+                            
+                            <a class="主體-格局-索引-清單-項目" href="#collapsed">
+                                Collapsed <span class="主體-格局-索引-清單-項目-英文">is-collapsed</span>
+                            </a>
+                            
+                            <a class="主體-格局-索引-清單-項目" href="#insetted">
+                                Insetted <span class="主體-格局-索引-清單-項目-英文">is-insetted</span>
+                            </a>
+                            
+                            <a class="主體-格局-索引-清單-項目" href="#empty">
+                                Empty <span class="主體-格局-索引-清單-項目-英文">is-empty</span>
+                            </a>
+                            
+                            <a class="主體-格局-索引-清單-項目" href="#aligns">
+                                Text Aligns <span class="主體-格局-索引-清單-項目-英文">is-top-aligned</span>
+                            </a>
+                            
+                        </div>
+                        
+                        <button class="主體-格局-索引-回到頂部"><span class="ts-icon is-arrow-up-icon"></span> Back To Top</button>
+                    </div>
+                    <!-- / 側邊索引 -->
+                </div>
+            </div>
+        </div>
+
+        <div class="頁腳">
+            <div class="界限容器">
+                <div class="頁腳-導航列">
+                    <button class="頁腳-導航列-項目 頁腳-導航列-項目_回到頂部"><span class="ts-icon is-arrow-up-icon"></span> Back to Top</button>
+                    <a class="頁腳-導航列-項目" href="https://github.com/teacat/tocas" target="_blank">GitHub</a>
+                    <a class="頁腳-導航列-項目" href="./getting-started.html">Getting Started</a>
+                    <a class="頁腳-導航列-項目" href="./button.html">Components</a>
+                    <a class="頁腳-導航列-項目" href="./examples.html">Examples</a>
+                </div>
+                <div class="頁腳-格局">
+                    <div class="頁腳-格局-資訊">
+                        <div class="頁腳-格局-資訊-文字">Designed by Yami Odymel from <span class="ts-flag is-taiwan-flag is-small"></span> Taiwan, along with the ❤️ from <a href="https://github.com/teacat/tocas/graphs/contributors" target="_blank">contributors</a>. The source code is licensed under <a href="https://github.com/teacat/tocas/blob/master/LICENSE" target="_blank">MIT</a>, and the documentation is under <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.zh_TW" target="_blank">CC 0</a> public domain. Feel free to use, share, or contribute. Tocas UI is a design system for <a href="https://caris.events" target="_blank">Caris Events</a>, part of <a href="https://sorae.co" target="_blank">Sorae & Co., Ltd.</a></div>
+                        <div class="頁腳-格局-資訊-翻譯者">Translators: <a href="https://twitter.com/YamiOdymel" target="_blank">Yami Odymel</a></div>
+                    </div>
+                    <div class="頁腳-格局-商標">
+                        <img class="頁腳-格局-商標-圖片" src="./assets/images/caris-events.svg" alt='Trademark of the owner of Tocas UI' />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

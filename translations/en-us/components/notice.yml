@@ -72,12 +72,3 @@ Definitions:
                     <div class="title">Large</div>
                     <div class="content">Here is the message.</div>
                 </div>
-
-          - Title: Dense
-            Anchor: Dense
-            Description: A notice can reduce its height to look tighter.
-            HTML: |
-                <div class="ts-notice [[is-dense]]">
-                    <div class="title">Request Accepted</div>
-                    <div class="content">You'll be able to see thier online status.</div>
-                </div>

@@ -88,14 +88,6 @@ Definitions:
                     <div class="bar" style="--value: 50"></div>
                 </div>
 
-          - Title: 佇列的
-            Anchor: Queried
-            Description: 正在等待伺服器回傳結果。
-            HTML: |
-                <div class="ts-progress [[is-queried]]">
-                    <div class="bar" style="--value: 30"></div>
-                </div>
-
     - Title: 外觀
       Description:
       Sections:
@@ -128,12 +120,6 @@ Definitions:
             Remove:
                 - <div class="ts-space"></div>
             HTML: |
-                <div class="ts-progress [[is-tiny]]">
-                    <div class="bar" style="--value: 50">
-                        <div class="text">50%</div>
-                    </div>
-                </div>
-                <div class="ts-space"></div>
                 <div class="ts-progress [[is-small]]">
                     <div class="bar" style="--value: 50">
                         <div class="text">50%</div>

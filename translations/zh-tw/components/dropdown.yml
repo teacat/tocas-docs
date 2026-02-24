@@ -48,6 +48,16 @@ Properties:
           - `bottom-start`
           - `bottom-end`
 
+    - Name: "[data-collapse]"
+      Default: "trigger item"
+      Target: .ts-dropdown
+      Description: |
+          指定選單何時會關閉，<br>
+          使用空白分隔多個觸發方式，如：`trigger item`。
+
+          - `trigger` 當觸發按鈕被按下。
+          - `item` 當項目被按下。
+
 #=======================================================
 # 基本樣式
 # Definitions

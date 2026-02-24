@@ -40,7 +40,7 @@ Definitions:
 
           - Title: Group
             Anchor: Name
-            Description: Accordions with the same `[name]` attribute will be grouped, with only one expanded at a time. This feature isn't supported in Firefox.
+            Description: Accordions with the same `[name]` attribute will be grouped, with only one expanded at a time.
             HTML: |
                 <details class="ts-accordion" [[name]]="help">
                     <summary>On which operating systems can this game be played?</summary>
@@ -50,4 +50,16 @@ Definitions:
                 <details class="ts-accordion" [[name]]="help">
                     <summary>What's the required disk space for the game?</summary>
                     At least 20 GB of available space.
+                </details>
+
+    - Title: Variations
+      Description:
+      Sections:
+          - Title: Plus Sign
+            Anchor: Plus Sign
+            Description: An accordion uses plus and minus icons to indicate its open and close states.
+            HTML: |
+                <details class="ts-accordion [[is-plus-sign]]">
+                    <summary>Does this service offer refunds?</summary>
+                    Sorry, no refunds are provided once the service is purchased.
                 </details>
