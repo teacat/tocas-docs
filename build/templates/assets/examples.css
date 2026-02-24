@@ -6,7 +6,7 @@
 
 .文件內容-未完成標語 {
     border: 1px solid var(--ts-gray-300);
-    color: var(--ts-gray-800);
+    color: var(--ts-gray-900);
     font-size: 14px;
     display: flex;
     gap: 0.7rem;
@@ -19,7 +19,7 @@
 }
 
 .文件內容-未完成標語-標題 {
-    background: var(--ts-gray-800);
+    background: var(--ts-gray-900);
     color: var(--ts-gray-50);
     border-radius: 0.4rem;
     padding: 0.4rem 0.8rem;
@@ -34,7 +34,7 @@
 
 .文件內容-電腦版設計 {
     border: 1px solid var(--ts-gray-300);
-    color: var(--ts-gray-800);
+    color: var(--ts-gray-900);
     font-size: 14px;
     display: flex;
     gap: 0.7rem;
@@ -47,7 +47,7 @@
 }
 
 .文件內容-電腦版設計-標題 {
-    background: var(--ts-gray-800);
+    background: var(--ts-gray-900);
     color: var(--ts-gray-50);
     border-radius: 0.4rem;
     padding: 0.4rem 0.8rem;
@@ -76,7 +76,7 @@
     display: block;
     font-size: 1.6rem;
     font-weight: 500;
-    color: var(--ts-gray-800);
+    color: var(--ts-gray-900);
 }
 
 .文件內容-範例清單-段落-說明 {
@@ -126,7 +126,7 @@
     display: block;
     font-size: 1.1rem;
     font-weight: 500;
-    color: var(--ts-gray-800);
+    color: var(--ts-gray-900);
     padding: 1rem 1rem 0;
     line-height: 1;
 }
@@ -138,7 +138,7 @@
 .文件內容-範例清單-段落-項目清單-項目-說明 {
     display: block;
     font-size: 1rem;
-    color: var(--ts-gray-800);
+    color: var(--ts-gray-900);
     padding: 1rem 1rem 0;
 }
 

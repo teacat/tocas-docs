@@ -145,22 +145,3 @@ Definitions:
                         <div class="label">Notification</div>
                     </a>
                 </div>
-
-          - Title: Dense
-            Anchor: Dense
-            Description: A dense navbar reduces the padding.
-            HTML: |
-                <div class="ts-app-navbar [[is-dense]]">
-                    <a class="item">
-                        <span class="{{ts-icon}} is-envelope-icon"></span>
-                        <div class="label">Inbox</div>
-                    </a>
-                    <a class="item is-active">
-                        <span class="{{ts-icon}} is-comment-icon"></span>
-                        <div class="label">Chat</div>
-                    </a>
-                    <a class="item">
-                        <span class="{{ts-icon}} is-users-icon"></span>
-                        <div class="label">Community</div>
-                    </a>
-                </div>

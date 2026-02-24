@@ -145,22 +145,3 @@ Definitions:
                         <div class="label">通知</div>
                     </a>
                 </div>
-
-          - Title: 較密的
-            Anchor: Dense
-            Description: 變更元件的內距，令元素之間看起來更密集。
-            HTML: |
-                <div class="ts-app-navbar [[is-dense]]">
-                    <a class="item">
-                        <span class="{{ts-icon}} is-envelope-icon"></span>
-                        <div class="label">信件</div>
-                    </a>
-                    <a class="item is-active">
-                        <span class="{{ts-icon}} is-comment-icon"></span>
-                        <div class="label">聊天</div>
-                    </a>
-                    <a class="item">
-                        <span class="{{ts-icon}} is-users-icon"></span>
-                        <div class="label">社群</div>
-                    </a>
-                </div>

@@ -3,13 +3,14 @@
 
 .hljs {
     background: none;
-    color: var(--ts-gray-600);
+    color: var(--ts-gray-800);
     font-size: 0.95rem;
     white-space: break-spaces;
     overflow-x: scroll;
-    font-family: "Ubuntu Mono", "Noto Sans TC", "Noto Sans CJK TC", "SF Pro TC", "SF Pro Text", "PingFang TC", "Helvetica Neue", "Helvetica", "Arial", "Microsoft JhengHei",
-        wf_SegoeUI, "Segoe UI", Segoe, "Segoe WP", Tahoma, Verdana, Ubuntu, "Bitstream Vera Sans", "DejaVu Sans", 微軟正黑體, "LiHei Pro", "WenQuanYi Micro Hei",
-        "Droid Sans Fallback", "AR PL UMing TW", Roboto, "Hiragino Maru Gothic ProN", メイリオ, "ヒラギノ丸ゴ ProN W4", Meiryo, "Droid Sans", sans-serif;
+    font-family:
+        "Ubuntu Mono", "Noto Sans TC", "Noto Sans CJK TC", "SF Pro TC", "SF Pro Text", "PingFang TC", "Helvetica Neue", "Helvetica", "Arial", "Microsoft JhengHei", wf_SegoeUI,
+        "Segoe UI", Segoe, "Segoe WP", Tahoma, Verdana, Ubuntu, "Bitstream Vera Sans", "DejaVu Sans", 微軟正黑體, "LiHei Pro", "WenQuanYi Micro Hei", "Droid Sans Fallback",
+        "AR PL UMing TW", Roboto, "Hiragino Maru Gothic ProN", メイリオ, "ヒラギノ丸ゴ ProN W4", Meiryo, "Droid Sans", sans-serif;
     word-spacing: 2px;
     letter-spacing: 0em;
 
@@ -65,7 +66,7 @@
 .hljs .hljs-selector-class,
 .hljs .hljs-regexp,
 .hljs .hljs-deletion {
-    color: var(--ts-gray-600);
+    color: var(--ts-gray-800);
 }
 
 .hljs .hljs-string,
@@ -115,7 +116,7 @@ code.hljs.javascript {
     }
 }
 
-html.is-dark .hljs {
+body.is-dark .hljs {
     --hljs-link-color: #a6a6f6;
     --hljs-semantic-color: #a6a6f6;
     --hljs-mark-background-color: #4f4fb1;
@@ -123,7 +124,7 @@ html.is-dark .hljs {
     --hljs-secondary-mark-background-color: #4c4c4c;
 }
 
-html.is-light .hljs {
+body.is-light .hljs {
     --hljs-link-color: #503efc;
     --hljs-semantic-color: #503efc;
     --hljs-secondary-mark-color: #4a4a4a;

@@ -7,8 +7,8 @@ Information:
     LanguageCode: zh-tw
     Path: zh-tw
     Flag: taiwan
-    Version: 5.0.2
-    ShortVersion: 5.0
+    Version: 5.7.0
+    ShortVersion: 5.7
 
 #=======================================================
 # Contributors
@@ -29,10 +29,12 @@ Contributors:
 Versions:
     - Name: 最新版本
       Items:
-          - Name: 5.0.2
+          - Name: 5.7.0
             Website:
     - Name: 過往版本
       Items:
+          - Name: 5.0.2
+            Website: https://tocas-ui.com/5.0/zh-tw/index.html
           - Name: 4.2.5
             Website: https://tocas-ui.com/4.2/zh-tw/index.html
           - Name: 2.3.3
@@ -216,6 +218,7 @@ UI:
         Navigation: 導覽
         Application: 應用程式
         Interaction: 互動元素
+        Components: 元件
 
     Components:
         GettingStarted: 開始使用
@@ -297,75 +300,61 @@ Components:
           - Colors
           - Responsive
           - Utilities
-    - Name: Layout
-      Items:
-          - Container
-          - Control
-          - Grid
-          - Wrap
-    - Name: Form
-      Items:
-          - Button
-          - Checkbox
-          - Fieldset
-          - File
-          - Input
-          - Radio
-          - Range
-          - Select
-          - Selection
-          - Switch
-    - Name: Paragraphy
-      Items:
-          - Box
-          - Content
-          - Divider
-          - Header
-          - Quote
-          - Text
-    - Name: Feedback
-      Items:
-          - Blankslate
-          - Gauge
-          - Loading
-          - Mask
-          - Notice
-          - Procedure
-          - Progress
-          - Snackbar
-    - Name: Interaction
+    - Name: Components
       Items:
           - Accordion
+          - Badge
+          - Blankslate
+          - Box
+          - Breadcrumb
+          - Button
+          - Checkbox
+          - Checklist
+          - Chip
+          - Close
+          - Container
+          - Content
+          - Control
+          - Conversation
+          - Divider
           - Dropdown
-          - Modal
-          - Popover
-          - Tooltip
-    - Name: Media
-      Items:
+          - Fieldset
+          - File
           - Flag
+          - Gauge
+          - Grid
+          - Header
           - Icon
           - Iconset
           - Image
           - Imageset
-    - Name: Data
-      Items:
-          - Badge
-          - Checklist
-          - Chip
-          - Close
-          - Conversation
+          - Input
           - List
-          - Meta
-          - Rating
-          - Statistic
-          - Table
-          - Timeline
-    - Name: Navigation
-      Items:
-          - Breadcrumb
+          - Loading
+          - Mask
           - Menu
+          - Meta
+          - Modal
+          - Notice
           - Pagination
+          - Popover
+          - Procedure
+          - Progress
+          - Quote
+          - Radio
+          - Range
+          - Rating
+          - Select
+          - Selection
+          - Snackbar
+          - Statistic
+          - Switch
           - Tab
+          - Table
+          - Text
+          - Timeline
+          - Tooltip
+          - Wrap
     - Name: Application
       Items:
           - AppCenter

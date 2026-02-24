@@ -39,30 +39,17 @@ Definitions:
             Anchor: Input
             Description: A chip can be used as a checkbox or radio button. Checked chip will have a checkmark icon.
             HTML: |
-                <label class="ts-chip [[is-input]]">
-                    <input type="checkbox" checked>
-                    <div class="content">Workout</div>
+                <label class="ts-chip">
+                    <[[input]] type="checkbox" checked />
+                    Workout
                 </label>
-                <label class="ts-chip [[is-input]]">
-                    <input type="checkbox">
-                    <div class="content">Game</div>
+                <label class="ts-chip">
+                    <[[input]] type="checkbox" />
+                    Game
                 </label>
-                <label class="ts-chip [[is-input]]">
-                    <input type="checkbox">
-                    <div class="content">Reading</div>
-                </label>
-
-          - Title: Toggle
-            Anchor: Toggle
-            Description: A chip can be used as a toggle switch.
-            HTML: |
-                <label class="ts-chip [[is-toggle]] is-circular">
-                    <input type="checkbox">
-                    <div class="content">Hottest</div>
-                </label>
-                <label class="ts-chip [[is-toggle]] is-circular">
-                    <input type="checkbox" checked>
-                    <div class="content">Unvisited</div>
+                <label class="ts-chip">
+                    <[[input]] type="checkbox" />
+                    Reading
                 </label>
 
     - Title: States
@@ -72,7 +59,7 @@ Definitions:
             Anchor: Disabled
             Description: A disabled chip cannot be interacted with. For hyperlinks, use the `.is-disabled` class.
             HTML: |
-                <label class="ts-chip is-input">
+                <label class="ts-chip">
                     <input type="checkbox" [[disabled]]>
                     <div class="content">Checkbox Chip</div>
                 </label>
@@ -118,30 +105,17 @@ Definitions:
             Description: A chip can be outlined.
             HTML: |
                 <div class="ts-chip [[is-outlined]]">
-                    <span class="{{ts-flag}} is-taiwan-flag is-rounded"></span>
+                    <span class="{{ts-flag}} is-taiwan-flag"></span>
                     Taiwan
                 </div>
                 <div class="ts-chip [[is-outlined]]">
-                    <span class="{{ts-flag}} is-america-flag is-rounded"></span>
+                    <span class="{{ts-flag}} is-america-flag"></span>
                     United States
                 </div>
                 <div class="ts-chip [[is-outlined]]">
-                    <span class="{{ts-flag}} is-hong-kong-flag is-rounded"></span>
+                    <span class="{{ts-flag}} is-hong-kong-flag"></span>
                     Hong Kong
                 </div>
-
-          - Title: Secondary
-            Anchor: Secondary
-            Description: A secondary chip has a less visible checked state.
-            HTML: |
-                <label class="ts-chip is-toggle is-outlined [[is-secondary]]">
-                    <input type="checkbox" checked>
-                    <div class="content">👀 8</div>
-                </label>
-                <label class="ts-chip is-input is-outlined [[is-secondary]]">
-                    <input type="checkbox" checked>
-                    <div class="content">Free WiFi</div>
-                </label>
 
           - Title: Circular
             Anchor: Circular
@@ -156,21 +130,21 @@ Definitions:
             HTML: |
                 <div class="{{ts-grid}} is-3-columns">
                     <div class="column">
-                        <label class="ts-chip [[is-fluid]] is-input is-outlined">
+                        <label class="ts-chip [[is-fluid]] is-outlined">
                             <input type="checkbox" checked>
-                            <div class="content">Small</div>
+                            Small
                         </label>
                     </div>
                     <div class="column">
-                        <label class="ts-chip [[is-fluid]] is-input is-outlined">
+                        <label class="ts-chip [[is-fluid]] is-outlined">
                             <input type="checkbox">
-                            <div class="content">Medium</div>
+                            Medium
                         </label>
                     </div>
                     <div class="column">
-                        <label class="ts-chip [[is-fluid]] is-input is-outlined">
+                        <label class="ts-chip [[is-fluid]] is-outlined">
                             <input type="checkbox">
-                            <div class="content">Large</div>
+                            Large
                         </label>
                     </div>
                 </div>
@@ -237,29 +211,29 @@ Definitions:
     - Title: Compositions
       Description:
       Sections:
-          - Title: Reactions
-            Anchor: Composition Reactions
-            Description: Chips can be used to display reactions to a message.
-            HTML: |
-                <div class="{{ts-box}}">
-                    <div class="{{ts-content}}">
-                        <p>You're banned from the fishing competition
-                        for being "too pro at baiting online."</p>
-                        <div class="{{ts-wrap}} is-compact">
-                            <label class="[[ts-chip]] is-toggle is-secondary is-outlined">
-                                <input type="checkbox" checked>
-                                <div class="content">👌 21</div>
-                            </label>
-                            <label class="[[ts-chip]] is-toggle is-secondary is-outlined">
-                                <input type="checkbox">
-                                <div class="content">👀 8</div>
-                            </label>
-                            <div class="[[ts-chip]] is-outlined">
-                                <span class="{{ts-icon}} is-plus-icon"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        #   - Title: Reactions
+        #     Anchor: Composition Reactions
+        #     Description: Chips can be used to display reactions to a message.
+        #     HTML: |
+        #         <div class="{{ts-box}}">
+        #             <div class="{{ts-content}}">
+        #                 <p>You're banned from the fishing competition
+        #                 for being "too pro at baiting online."</p>
+        #                 <div class="{{ts-wrap}} is-compact">
+        #                     <label class="[[ts-chip]] is-outlined">
+        #                         <input type="checkbox" checked>
+        #                         👌 21
+        #                     </label>
+        #                     <label class="[[ts-chip]] is-outlined">
+        #                         <input type="checkbox">
+        #                         👀 8
+        #                     </label>
+        #                     <div class="[[ts-chip]] is-outlined">
+        #                         <span class="{{ts-icon}} is-plus-icon"></span>
+        #                     </div>
+        #                 </div>
+        #             </div>
+        #         </div>
 
           - Title: Extra Actions
             Anchor: Composition Header
@@ -323,8 +297,8 @@ Definitions:
                         <div class="{{ts-input}}">
                             <textarea placeholder="Reply the mail..."></textarea>
                         </div>
-                        <div class="{{ts-grid}} is-compact {{has-top-spaced}}">
-                            <div class="column">
+                        <div class="{{ts-grid}} {{has-top-spaced}}">
+                            <div class="column is-fluid">
                                 <div class="{{ts-wrap}} is-compact">
                                     <button class="[[ts-chip]] is-circular">
                                         No problem!
@@ -334,7 +308,7 @@ Definitions:
                                     </button>
                                 </div>
                             </div>
-                            <div class="column is-fluid is-end-aligned">
+                            <div class="column">
                                 <button class="ts-button">Submit</button>
                             </div>
                         </div>

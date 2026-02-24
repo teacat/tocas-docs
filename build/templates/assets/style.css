@@ -9,7 +9,7 @@ html {
 body {
     display: flex;
     flex-direction: column;
-    background: var(--ts-gray-50);
+    background: var(--ts-page-background-default);
 }
 
 body:has(dialog#modal[open], dialog#drawer[open]) {
@@ -44,9 +44,8 @@ body:has(dialog.ts-modal[open], dialog.ts-app-drawer[open]) {
 }
 
 .色票預覽 {
-    width: 60px;
+    width: 100%;
     height: 30px;
-    border-radius: 0.4rem;
 }
 
 .界限容器 {
@@ -97,7 +96,7 @@ body:has(dialog.ts-modal[open], dialog.ts-app-drawer[open]) {
 }
 
 .穹頂-導航列-項目 {
-    color: var(--ts-gray-600);
+    color: var(--ts-gray-900);
     text-decoration: none;
 }
 
@@ -127,11 +126,11 @@ body:has(dialog.ts-modal[open], dialog.ts-app-drawer[open]) {
 }
 
 .穹頂-導航列-項目_啟用 {
-    color: var(--ts-gray-800);
+    color: var(--ts-gray-900);
 }
 
 .穹頂-導航列-項目_主要 {
-    color: var(--ts-gray-800);
+    color: var(--ts-gray-900);
     font-weight: 500;
 }
 
@@ -143,12 +142,12 @@ body:has(dialog.ts-modal[open], dialog.ts-app-drawer[open]) {
     line-height: initial;
     font-size: 2rem;
     font-weight: 500;
-    color: var(--ts-gray-800);
+    color: var(--ts-gray-900);
 }
 
 .穹頂-標題-說明 {
     margin-top: 1rem;
-    color: var(--ts-gray-600);
+    color: var(--ts-gray-700);
     font-size: 1.15rem;
 }
 
@@ -199,7 +198,7 @@ body:has(dialog.ts-modal[open], dialog.ts-app-drawer[open]) {
 }
 
 .主體-格局-導覽-關閉按鈕 {
-    color: var(--ts-gray-800);
+    color: var(--ts-gray-900);
     font-size: 1.5rem;
     line-height: 1;
     position: absolute;
@@ -211,7 +210,7 @@ body:has(dialog.ts-modal[open], dialog.ts-app-drawer[open]) {
 .主體-格局-導覽-標題 {
     font-size: 1.15rem;
     font-weight: 500;
-    color: var(--ts-gray-500);
+    color: var(--ts-gray-700);
     margin-top: 2rem;
     border-bottom: 1px solid var(--ts-gray-300);
     padding-bottom: 10px;
@@ -227,14 +226,14 @@ body:has(dialog.ts-modal[open], dialog.ts-app-drawer[open]) {
 
 .主體-格局-導覽-項目 {
     text-decoration: none;
-    color: var(--ts-gray-700);
+    color: var(--ts-gray-900);
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
 .主體-格局-導覽-項目_啟用的 {
-    background: var(--ts-gray-800);
+    background: var(--ts-gray-900);
     color: var(--ts-gray-50);
     padding: 0.45rem 1rem;
     border-radius: 0.4rem;
@@ -243,13 +242,13 @@ body:has(dialog.ts-modal[open], dialog.ts-app-drawer[open]) {
 }
 
 .主體-格局-導覽-項目_啟用的 .主體-格局-導覽-項目-英文 {
-    color: var(--ts-gray-300);
+    color: var(--ts-gray-200);
 }
 
 .主體-格局-導覽-項目-模組 {
     display: inline-flex;
     background: var(--ts-gray-300);
-    color: var(--ts-gray-800);
+    color: var(--ts-gray-900);
     line-height: 1;
     align-items: center;
     justify-content: center;
@@ -261,7 +260,7 @@ body:has(dialog.ts-modal[open], dialog.ts-app-drawer[open]) {
 }
 
 .主體-格局-導覽-項目-英文 {
-    color: var(--ts-gray-500);
+    color: var(--ts-gray-700);
     opacity: 0.8;
     font-size: 0.9rem;
     margin-left: 0.5rem;
@@ -488,7 +487,7 @@ body:has(dialog.ts-modal[open], dialog.ts-app-drawer[open]) {
 }*/
 
 .主體-格局-內容-文字 {
-    color: var(--ts-gray-800);
+    color: var(--ts-gray-900);
     line-height: 2;
 }
 
@@ -501,7 +500,7 @@ body:has(dialog.ts-modal[open], dialog.ts-app-drawer[open]) {
 .主體-格局-內容-工具列 {
     display: flex;
     justify-content: flex-end;
-    color: var(--ts-gray-800);
+    color: var(--ts-gray-900);
     align-items: flex-end;
     margin-bottom: 2rem;
     padding-bottom: 1rem;
@@ -514,7 +513,7 @@ body:has(dialog.ts-modal[open], dialog.ts-app-drawer[open]) {
 
 .主體-格局-內容-工具列-項目-標籤 {
     font-size: 14px;
-    color: var(--ts-gray-600);
+    color: var(--ts-gray-700);
     margin-bottom: 0.45rem;
     padding-right: 18px;
 }
@@ -568,7 +567,7 @@ body:has(dialog.ts-modal[open], dialog.ts-app-drawer[open]) {
 }
 
 .主體-格局-內容-工具列-項目-下拉式選單-群組-項目.主體-格局-內容-工具列-項目-下拉式選單-群組-項目_啟用的 {
-    background: var(--ts-gray-800);
+    background: var(--ts-gray-900);
     color: var(--ts-gray-50);
 }
 
@@ -580,7 +579,7 @@ body:has(dialog.ts-modal[open], dialog.ts-app-drawer[open]) {
     font-size: 1.6rem;
     line-height: 1.2;
     font-weight: 500;
-    color: var(--ts-gray-800);
+    color: var(--ts-gray-900);
     margin-right: auto;
     margin-left: initial;
     text-align: left;
@@ -602,7 +601,7 @@ body:has(dialog.ts-modal[open], dialog.ts-app-drawer[open]) {
     gap: 0.5rem;
     font-weight: normal;
     line-height: 1;
-    color: var(--ts-gray-800);
+    color: var(--ts-gray-900);
 }
 
 .主體-格局-內容-工具列-項目-連結標籤-項目-文字 {
@@ -660,7 +659,7 @@ body:has(dialog.ts-modal[open], dialog.ts-app-drawer[open]) {
     border-bottom: 2px solid var(--ts-gray-300);
     margin-bottom: 2rem;
     font-weight: 500;
-    color: var(--ts-gray-800);
+    color: var(--ts-gray-900);
 }
 
 .主體-格局-內容-標題_範例的 {
@@ -677,7 +676,7 @@ body:has(dialog.ts-modal[open], dialog.ts-app-drawer[open]) {
 }
 
 .主體-格局-內容-單個範例-文字 {
-    color: var(--ts-gray-800);
+    color: var(--ts-gray-900);
     line-height: 2;
 }
 
@@ -735,7 +734,7 @@ body:has(dialog.ts-modal[open], dialog.ts-app-drawer[open]) {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--ts-gray-800);
+    color: var(--ts-gray-900);
     border-radius: 100em;
 }
 
@@ -748,7 +747,7 @@ body:has(dialog.ts-modal[open], dialog.ts-app-drawer[open]) {
 .主體-格局-內容-額外連結-項目-主體-文字容器-標題 {
     font-weight: bold;
     font-size: 14px;
-    color: var(--ts-gray-800);
+    color: var(--ts-gray-900);
     line-height: 1.2;
 }
 
@@ -794,7 +793,7 @@ body:has(dialog.ts-modal[open], dialog.ts-app-drawer[open]) {
     border-radius: 0.3rem;
     line-height: 1.4;
     background-color: var(--ts-gray-200);
-    color: var(--ts-gray-800);
+    color: var(--ts-gray-900);
     font-family: "Ubuntu Mono", "Noto Sans TC", "Noto Sans CJK TC", "SF Pro TC", "SF Pro Text", "PingFang TC", "Helvetica Neue", "Helvetica", "Arial", "Microsoft JhengHei",
         wf_SegoeUI, "Segoe UI", Segoe, "Segoe WP", Tahoma, Verdana, Ubuntu, "Bitstream Vera Sans", "DejaVu Sans", 微軟正黑體, "LiHei Pro", "WenQuanYi Micro Hei",
         "Droid Sans Fallback", "AR PL UMing TW", Roboto, "Hiragino Maru Gothic ProN", メイリオ, "ヒラギノ丸ゴ ProN W4", Meiryo, "Droid Sans", sans-serif;
@@ -835,7 +834,7 @@ body:has(dialog.ts-modal[open], dialog.ts-app-drawer[open]) {
 }
 
 .主體-格局-內容-單個範例-文字-標題-連結 {
-    color: var(--ts-gray-800);
+    color: var(--ts-gray-900);
     text-decoration: none;
 }
 
@@ -845,7 +844,7 @@ body:has(dialog.ts-modal[open], dialog.ts-app-drawer[open]) {
 
 .主體-格局-內容-單個範例-文字-標題_段落 {
     margin-top: 8rem;
-    color: var(--ts-gray-800);
+    color: var(--ts-gray-900);
     font-size: 1.26rem;
     margin-bottom: 1rem;
     font-weight: bold;
@@ -860,7 +859,7 @@ body:has(dialog.ts-modal[open], dialog.ts-app-drawer[open]) {
 .主體-格局-內容-單個範例-文字-標題_段落::after {
     content: " ";
     height: 40px;
-    background: var(--ts-gray-500);
+    background: var(--ts-gray-600);
     border: 6px solid var(--ts-gray-50);
     border-left: 0;
     border-right: 0;
@@ -880,7 +879,7 @@ body:has(dialog.ts-modal[open], dialog.ts-app-drawer[open]) {
     appearance: none;
     border: 0;
     border-radius: 0.4rem;
-    /* background: var(--ts-gray-800); */
+    /* background: var(--ts-gray-900); */
     /* color: var(--ts-gray-50); */
     color: var(--ts-gray-700);
     background: transparent;
@@ -901,9 +900,9 @@ body:has(dialog.ts-modal[open], dialog.ts-app-drawer[open]) {
 }
 
 .主體-格局-內容-單個範例_檢視原始碼中 .主體-格局-內容-單個範例-文字-標題-切換原始碼 {
-    background: var(--ts-gray-800);
+    background: var(--ts-gray-900);
     color: var(--ts-gray-50);
-    border-color: var(--ts-gray-800);
+    border-color: var(--ts-gray-900);
 }
 
 .主體-格局-內容-單個範例-範例 {
@@ -984,7 +983,7 @@ body:has(dialog.ts-modal[open], dialog.ts-app-drawer[open]) {
     margin-top: 8rem;
     background: var(--ts-gray-100);
     border-radius: 0.8rem;
-    color: var(--ts-gray-800);
+    color: var(--ts-gray-900);
 }
 
 .主體-格局-內容-額外連結 + .主體-格局-內容-相關元件 {
@@ -992,7 +991,7 @@ body:has(dialog.ts-modal[open], dialog.ts-app-drawer[open]) {
 }
 
 .主體-格局-內容-相關元件-標題 {
-    color: var(--ts-gray-800);
+    color: var(--ts-gray-900);
     font-weight: 500;
 }
 
@@ -1006,7 +1005,7 @@ body:has(dialog.ts-modal[open], dialog.ts-app-drawer[open]) {
 }
 
 .主體-格局-內容-相關元件-清單-單個項目-連結 {
-    color: var(--ts-gray-800);
+    color: var(--ts-gray-900);
     text-decoration: underline;
     text-underline-offset: 2px;
 }
@@ -1027,7 +1026,7 @@ body:has(dialog.ts-modal[open], dialog.ts-app-drawer[open]) {
     text-align: left;
     background: var(--ts-gray-100);
     font-weight: 500;
-    color: var(--ts-gray-800);
+    color: var(--ts-gray-900);
 }
 
 .主體-格局-內容-規格表格 thead tr th:first-child {
@@ -1041,13 +1040,13 @@ body:has(dialog.ts-modal[open], dialog.ts-app-drawer[open]) {
     padding: 1rem 1rem;
     border: 1px solid var(--ts-gray-300);
     text-align: left;
-    color: var(--ts-gray-800);
+    color: var(--ts-gray-900);
     vertical-align: top;
 }
 
 .主體-格局-內容-規格表格 tbody tr td:first-child {
     background: var(--ts-gray-100);
-    color: var(--ts-gray-800);
+    color: var(--ts-gray-900);
     font-weight: 500;
     vertical-align: top;
 }
@@ -1060,7 +1059,7 @@ body:has(dialog.ts-modal[open], dialog.ts-app-drawer[open]) {
 
 .主體-格局-內容-規格表格-參數清單 {
     font-size: 0.9rem;
-    color: var(--ts-gray-800);
+    color: var(--ts-gray-900);
     margin: 1rem 0 0;
     list-style: none;
     padding: 0;
@@ -1077,7 +1076,7 @@ body:has(dialog.ts-modal[open], dialog.ts-app-drawer[open]) {
 .主體-格局-內容-規格表格-參數清單-項目::before {
     content: "•";
     font-family: "Lato";
-    color: var(--ts-gray-800);
+    color: var(--ts-gray-900);
     margin-left: -1rem;
     margin-right: 0.4rem;
 }
@@ -1126,7 +1125,7 @@ body:has(dialog.ts-modal[open], dialog.ts-app-drawer[open]) {
     justify-content: flex-start;
     flex-direction: column;
     margin: 0.8rem 1rem;
-    color: var(--ts-gray-800);
+    color: var(--ts-gray-900);
     box-sizing: border-box;
 }
 
@@ -1161,7 +1160,7 @@ body:has(dialog.ts-modal[open], dialog.ts-app-drawer[open]) {
 
 .主體-格局-索引-標題 {
     font-weight: 500;
-    color: var(--ts-gray-600);
+    color: var(--ts-gray-700);
     margin-top: 3rem;
 }
 
@@ -1181,11 +1180,11 @@ body:has(dialog.ts-modal[open], dialog.ts-app-drawer[open]) {
 
 .主體-格局-索引-清單-項目 {
     text-decoration: none;
-    color: var(--ts-gray-700);
+    color: var(--ts-gray-800);
 }
 
 .主體-格局-索引-清單-項目-英文 {
-    color: var(--ts-gray-500);
+    color: var(--ts-gray-700);
     font-size: 0.9rem;
     margin-left: 0.5rem;
 }
@@ -1201,7 +1200,7 @@ body:has(dialog.ts-modal[open], dialog.ts-app-drawer[open]) {
     border-radius: 0.4rem;
     appearance: none;
     border: 2px solid var(--ts-gray-300);
-    color: var(--ts-gray-600);
+    color: var(--ts-gray-800);
     border-radius: 0.4rem;
     padding: 0.4rem 1.2rem;
     font-size: 14px;
@@ -1248,12 +1247,8 @@ body:has(dialog.ts-modal[open], dialog.ts-app-drawer[open]) {
 }
 
 .頁腳-導航列-項目 {
-    color: var(--ts-gray-600);
+    color: var(--ts-gray-900);
     text-decoration: none;
-}
-
-.頁腳-導航列-項目_回到頂部 {
-    color: var(--ts-gray-500);
 }
 
 .頁腳-導航列-項目_回到頂部 .ts-icon {
@@ -1262,7 +1257,7 @@ body:has(dialog.ts-modal[open], dialog.ts-app-drawer[open]) {
 }
 
 .頁腳-格局-資訊-文字 {
-    color: var(--ts-gray-600);
+    color: var(--ts-gray-900);
     font-size: 0.95rem;
     line-height: 2;
     margin-top: 2rem;
@@ -1275,7 +1270,7 @@ body:has(dialog.ts-modal[open], dialog.ts-app-drawer[open]) {
 }
 
 .頁腳-格局-資訊-文字 a {
-    color: var(--ts-gray-700);
+    color: var(--ts-gray-900);
     text-underline-offset: 2px;
 }
 
@@ -1283,13 +1278,13 @@ body:has(dialog.ts-modal[open], dialog.ts-app-drawer[open]) {
     display: block;
     margin-top: 2rem;
     font-size: 0.95rem;
-    color: var(--ts-gray-600);
+    color: var(--ts-gray-900);
     line-height: 2;
     max-width: 50rem;
 }
 
 .頁腳-格局-資訊-翻譯者 a {
-    color: var(--ts-gray-800); /* 108ee9*/
+    color: var(--ts-gray-900); /* 108ee9*/
     text-decoration: underline;
     text-underline-offset: 2px;
 }
@@ -1303,12 +1298,12 @@ body:has(dialog.ts-modal[open], dialog.ts-app-drawer[open]) {
     width: 130px;
 }
 
-*:is([data-scheme="dark"], [data-scheme="darkest"]) .頁腳-格局-商標-圖片 {
+html.is-dark .頁腳-格局-商標-圖片 {
     filter: invert(1) contrast(0.8);
 }
 
 @media (prefers-color-scheme: dark) {
-    html:not([data-scheme="light"]) .頁腳-格局-商標-圖片 {
+    html:not(.is-light) .頁腳-格局-商標-圖片 {
         filter: invert(1) contrast(0.8);
     }
 }

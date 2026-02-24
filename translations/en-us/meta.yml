@@ -7,8 +7,8 @@ Information:
     LanguageCode: en-us
     Path: en-us
     Flag: america
-    Version: 5.0.2
-    ShortVersion: 5.0
+    Version: 5.7.0
+    ShortVersion: 5.7
 
 #=======================================================
 # Contributors
@@ -25,10 +25,12 @@ Contributors:
 Versions:
     - Name: Latest
       Items:
-          - Name: 5.0.2
+          - Name: 5.7.0
             Website:
     - Name: Older releases
       Items:
+          - Name: 5.0.2
+            Website: https://tocas-ui.com/5.0/en-us/index.html
           - Name: 4.2.5
             Website: https://tocas-ui.com/4.2/zh-tw/index.html
           - Name: 2.3.3
@@ -212,6 +214,7 @@ UI:
         Navigation: Navigation
         Application: Application
         Interaction: Interaction
+        Components: Components
 
     Components:
         GettingStarted: Getting Started
@@ -292,75 +295,61 @@ Components:
           - Colors
           - Responsive
           - Utilities
-    - Name: Layout
-      Items:
-          - Container
-          - Control
-          - Grid
-          - Wrap
-    - Name: Form
-      Items:
-          - Button
-          - Checkbox
-          - Fieldset
-          - File
-          - Input
-          - Radio
-          - Range
-          - Select
-          - Selection
-          - Switch
-    - Name: Paragraphy
-      Items:
-          - Box
-          - Content
-          - Divider
-          - Header
-          - Quote
-          - Text
-    - Name: Feedback
-      Items:
-          - Blankslate
-          - Gauge
-          - Loading
-          - Mask
-          - Notice
-          - Procedure
-          - Progress
-          - Snackbar
-    - Name: Interaction
+    - Name: Components
       Items:
           - Accordion
+          - Badge
+          - Blankslate
+          - Box
+          - Breadcrumb
+          - Button
+          - Checkbox
+          - Checklist
+          - Chip
+          - Close
+          - Container
+          - Content
+          - Control
+          - Conversation
+          - Divider
           - Dropdown
-          - Modal
-          - Popover
-          - Tooltip
-    - Name: Media
-      Items:
+          - Fieldset
+          - File
           - Flag
+          - Gauge
+          - Grid
+          - Header
           - Icon
           - Iconset
           - Image
           - Imageset
-    - Name: Data
-      Items:
-          - Badge
-          - Checklist
-          - Chip
-          - Close
-          - Conversation
+          - Input
           - List
-          - Meta
-          - Rating
-          - Statistic
-          - Table
-          - Timeline
-    - Name: Navigation
-      Items:
-          - Breadcrumb
+          - Loading
+          - Mask
           - Menu
+          - Meta
+          - Modal
+          - Notice
           - Pagination
+          - Popover
+          - Procedure
+          - Progress
+          - Quote
+          - Radio
+          - Range
+          - Rating
+          - Select
+          - Selection
+          - Snackbar
+          - Statistic
+          - Switch
           - Tab
+          - Table
+          - Text
+          - Timeline
+          - Tooltip
+          - Wrap
     - Name: Application
       Items:
           - AppCenter
