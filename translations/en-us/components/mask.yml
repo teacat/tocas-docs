@@ -24,7 +24,7 @@ Example:
         <div class="{{ts-image}}">
             <img src="!-16:9-!" style="max-width: 450px">
             <div class="[[ts-mask]] is-centered">
-                <div class="{{ts-loading}} is-large"></div>
+                <div class="{{ts-loading}} is-large" style="color: #FFF"></div>
             </div>
         </div>
 
